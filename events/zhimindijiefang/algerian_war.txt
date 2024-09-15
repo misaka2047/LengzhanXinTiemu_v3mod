@@ -140,6 +140,10 @@ algerian_war.4 = {
                 years = 2
             }
         }
+		change_relations = { 
+			country = c:ALD
+			value = 30 
+		}
         default_option = true
     }
     option = {
@@ -153,6 +157,10 @@ algerian_war.4 = {
                 years = 2
             }
         }
+		change_relations = { 
+			country = c:ALD
+			value = 30 
+		}
         default_option = true
     }
     option = {
