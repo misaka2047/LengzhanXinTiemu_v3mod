@@ -7,14 +7,16 @@ je_algerian_affair_main = {
 		has_law = law_type:law_multicultural 
         has_law = law_type:law_total_separation
 		every_scope_state = {
-            OR = {
-                state_region = {
-                    is_homeland = cu:maghreb
-                }
-                state_region = {
-                     is_homeland = cu:berber
-                }
-             }
+			limit = {
+				OR = {
+					state_region = {
+						is_homeland = cu:maghreb
+					}
+					state_region = {
+						is_homeland = cu:berber
+					}
+				}
+			}
 			radical_fraction = {
 				value < 0.1
 			}
