@@ -1,0 +1,66 @@
+bic_out_of_control_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    country_legitimacy_base_add = -20
+    state_turmoil_effects_mult = 0.50
+    state_radicals_from_sol_change_mult = 0.5
+    state_loyalists_from_sol_change_mult = -0.5
+    country_prestige_mult = -0.25
+	unit_offense_mult = -0.33
+	country_prestige_from_army_power_projection_mult = -0.5
+}
+
+bic_consolidation_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    country_prestige_mult = 0.25
+    country_legitimacy_base_add = 10
+}
+
+bic_exploitation_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    tax_income_add = 0.2
+    state_poor_standard_of_living_add = -1
+    building_group_bg_agriculture_throughput_add = 0.6
+	building_group_bg_plantations_throughput_add = 0.6
+}
+
+bic_kindness_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    country_prestige_mult = 0.25
+    state_poor_standard_of_living_add = 3
+    state_loyalists_from_sol_change_mult = 0.5
+}
+
+bic_partition_authority_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    country_authority_mult = -0.15
+}
+
+bic_partition_sunni_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    state_sunni_standard_of_living_add = -4
+}
+
+bic_partition_hindu_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    state_hindu_standard_of_living_add = -4
+}
+
+bic_partition_sikh_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    state_sikh_standard_of_living_add = -4
+}
+
+hnd_expansion_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    country_prestige_mult = 0.25
+}
+
+bic_partition_ksh_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    country_authority_mult = -0.15
+}
+
+bic_partition_boundary_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    state_radicals_from_discrimination_mult = 0.5
+}

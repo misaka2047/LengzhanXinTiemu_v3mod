@@ -1,0 +1,31 @@
+﻿CHARACTERS = {
+	c:HUN = {
+		create_character = {
+			#蒂尔迪·佐尔坦
+			historical = yes
+			first_name = "Tildi"
+			last_name = "Zoltan"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1889.11.29
+			interest_group = ig_rural_folk #老农
+			ideology = ideology_land_reformer #土地改革者
+			traits = {
+			}
+		}		
+
+		create_character = {
+			#拉科西·马加什
+			first_name = "Rakosi"
+			last_name = "Matyas"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1892.3.9
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+			}
+		}	
+	}
+}

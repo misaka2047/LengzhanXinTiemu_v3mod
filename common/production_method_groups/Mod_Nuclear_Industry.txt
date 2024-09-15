@@ -1,0 +1,151 @@
+﻿pmg_base_building_nuclear_processing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_chemical_nuclear_processing #Use Coal
+		pm_electrical_nuclear_processing #Use Electricity and tool
+	}
+}
+
+#Ownership Not yet changed
+pmg_ownership_capital_building_nuclear_processing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_nuclear_industries
+		pm_privately_owned_nuclear_industries
+		pm_publicly_traded_nuclear_industries
+		pm_government_run_nuclear_industries
+		pm_worker_cooperative_nuclear_industries
+	}
+}
+
+
+pmg_base_building_nuclear_fuel_refinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_backyard_nuclear_refinement #Use electricity and tools  #Unlocked with 
+		pm_sophisticated_nuclear_refinement #Use electricity, tools, and engine
+		pm_advanced_nuclear_refinement #Use electricity and nuclear engine
+	}
+}
+
+pmg_ownership_capital_building_nuclear_fuel_refinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_nuclear_industries
+		pm_privately_owned_nuclear_industries
+		pm_publicly_traded_nuclear_industries
+		pm_government_run_nuclear_industries
+		pm_worker_cooperative_nuclear_industries
+	}
+}
+
+
+pmg_base_building_nuclear_engine_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#All these Use nuclear fuel and engine
+		pm_converted_nuclear_engine  #No additional material
+		pm_reinforced_nuclear_engine  #Use additional steel and lead
+		pm_holographic_forged_nuclear_engines
+	}
+}
+
+pmg_material_additives_building_nuclear_engine_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_baseline_steel_no_additives
+		pm_electric_arc_forging
+		pm_irradiated_material_additives
+		pm_glass_fiber_additives
+		pm_macromolecule_polymer_additives
+		pm_extra_steel_reinforcement_additives
+		pm_electronic_reactor_regulator_additives
+	}
+}
+
+pmg_ownership_capital_building_nuclear_engine_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_nuclear_industries
+		pm_privately_owned_nuclear_industries
+		pm_publicly_traded_nuclear_industries
+		pm_government_run_nuclear_industries
+		pm_worker_cooperative_nuclear_industries
+	}
+}
+
+pmg_hull_building_vehicle_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Change the ratio between rubber and steel
+		pm_hull_wheeled_vehicle
+		pm_hull_half_track
+		pm_hull_tracked_vehicle
+	}
+}
+
+pmg_engine_type_building_vehicle_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Change the ratio between rubber and steel
+		pm_gasoline_engine_vehicle_industry
+		pm_gasoline_nuclear_mixed_engine_vehicle_industry
+		pm_nuclear_engine_vehicle_industry
+	}
+}
+
+pmg_electronics_building_vehicle_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Change the ratio between rubber and steel
+		pm_automobiles_disabled ## Does nothing anyways
+		pm_vehicular_electronic_overhual
+	}
+}
+
+pmg_material_additives_building_nuclear_engine_industry = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_baseline_steel_no_additives
+		pm_electric_arc_forging
+		pm_glass_fiber_additives
+		pm_extra_diesel_engine_additives
+		pm_extra_steel_reinforcement_additives
+		pm_electronic_reactor_regulator_additives
+	}
+}
+
+pmg_base_building_nuclear_jet_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		# All these needs steel, glass(plastic) and nuclear engine, tools.
+		pm_basic_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_electro_mechanic_nuclear_jet  #Uses more tools and electricity. Unlock with "Improved Nuclear Ramjet"
+	}
+}
+
+pmg_assisting_system_building_nuclear_jet_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"	
+	production_methods = {
+		# Defualt: use default
+		pm_defualt_assist_system_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_oil_assist_ramjet_nuclear_jet  #Use more oil to produce more. Unlock with "Nuclear Ramjet" Tech
+		pm_electric_controlled_ramjet_nuclear_jet  #Use more electricity to produce more. Unlock with "Improved Nuclear Ramjet"
+		pm_steel_reinforced_ramjet_nuclear_jet
+		pm_afterburner_ramjet_nuclear_jet
+		pm_electronic_control_systems_nuclear_jet
+	}
+
+}
+
+pmg_ownership_capital_building_nuclear_jet_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_privately_owned_nuclear_industries
+		pm_publicly_traded_nuclear_industries
+		pm_government_run_nuclear_industries
+		pm_worker_cooperative_nuclear_industries
+	}
+}
+
+

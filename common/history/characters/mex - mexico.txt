@@ -1,0 +1,47 @@
+﻿CHARACTERS = {
+	c:MEX = {
+		create_character = { #米格尔·阿莱曼
+			first_name = Miguel
+			last_name = Aleman
+			birth_date = 1902.9.29
+			dna = dna_king_frederik_william_03
+			historical = yes
+			ruler = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_market_liberal #市场自由主义者
+			traits = {
+				charismatic #魅力四射
+				innovative #创新精神
+			}		
+		}
+
+		create_character = { #拉萨罗·卡德纳斯
+			first_name = Lazaro
+			last_name = Cardenas
+			birth_date = 1895.5.21
+			historical = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_land_reformer #土地改革者
+			is_general = yes
+			commander_rank = commander_rank_5
+			traits = {
+				innovative #创新精神
+			}
+		}
+
+		create_character = { #阿维拉·卡马乔
+			first_name = avila
+			last_name = Camacho
+			birth_date = 1897.4.24
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_reformer
+			is_general = yes
+			commander_rank = commander_rank_4
+			traits = {
+				innovative #创新精神
+			}		
+		}
+	}
+}

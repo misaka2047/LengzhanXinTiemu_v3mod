@@ -1,0 +1,136 @@
+﻿CAR = {
+	
+	states = {
+		STATE_UBANGI_SHARI
+	}
+                required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+
+CDW = {
+	
+	states = {
+		STATE_WINDWARD_COAST
+		STATE_IVORY_COAST
+	}
+
+	required_num_states = 2
+	ai_will_do = { always = no }
+	
+}
+
+CHD = {
+	
+	states = {
+		STATE_CHAD
+        STATE_WADDAI
+	}
+                required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+GAB = {
+	states = {
+		STATE_GABON
+	}
+
+	ai_will_do = { always = no }
+	
+}
+
+GNI = {
+	
+	states = {
+		STATE_GUINEA
+	}
+                required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+
+MTY = {
+	
+	states = {
+		STATE_MAURITANIA
+		STATE_INNER_MAURITANIA
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+	
+}
+
+NGR = {
+	
+	states = {
+		STATE_OUTER_HAUSALAND
+		STATE_NIGER
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+	
+}
+
+NMB = {
+	
+	states = {
+		STATE_NAMAQUALAND
+		STATE_HEREROLAND
+	}
+	required_num_states = 2
+	ai_will_do = { always = no }
+	
+}
+
+SNJ = {
+	
+	states = {
+		STATE_SENEGAL
+        STATE_GAMBIA
+	}
+                required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+
+SSD = {
+	
+	states = {
+		STATE_EQUATORIA
+	}
+                required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+
+TGO = {
+	
+	states = {
+		STATE_TOGO
+	}
+    required_num_states = 1
+
+	ai_will_do = { always = no }
+	
+}
+
+MAL = {
+	states = {
+		STATE_TIMBUKTU
+		STATE_WESTERN_MALI
+		STATE_EASTERN_MALI
+		STATE_SENEGAL
+		STATE_GUINEA
+		STATE_GAMBIA
+		STATE_VOLTA
+	}
+	
+	required_num_states = 4
+
+	ai_will_do = { always = no }
+}

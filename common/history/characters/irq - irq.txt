@@ -1,0 +1,60 @@
+﻿CHARACTERS = {
+	c:IRQ = {
+		create_character = {
+			#费萨尔二世
+			historical = yes
+			first_name = "Faisal_II"
+			last_name = "Hashim"
+			ruler = yes
+			birth_date = 1935.1.1
+			religion = rel:sunni #逊尼派
+			interest_group = ig_landowners
+			ideology = ideology_jingoist_leader #意识形态沙文主义者
+		}		
+
+		create_character = {
+			ig_leader = yes #利益集团领袖
+			religion = rel:sunni #逊尼派
+			interest_group = ig_intelligentsia #知识分子
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:sunni #逊尼派
+			interest_group = ig_armed_forces #军队
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:sunni #逊尼派
+			interest_group = ig_petty_bourgeoisie #小市民
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:sunni #逊尼派
+			interest_group = ig_rural_folk #乡村民众
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:sunni #逊尼派
+			interest_group = ig_landowners #地主
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:sunni #逊尼派
+			interest_group = ig_industrialists #实业家
+		}
+
+		create_character = {
+			religion = rel:sunni #逊尼派
+			interest_group = ig_trade_unions #利益集团工会
+			ig_leader = yes #利益集团领袖
+		}
+	}
+}
+

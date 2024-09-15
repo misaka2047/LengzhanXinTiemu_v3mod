@@ -1,0 +1,501 @@
+﻿l_english:
+
+# New Buildings in Mod
+
+## Mines
+
+ ### Uranium Mine
+ pmg_mining_equipment_building_uranium_mine:0 "Mining Equipment"
+
+ pm_picks_and_shovels_building_uranium_mine:0 "Picks and Shovels"
+ pm_atmospheric_engine_pump_building_uranium_mine:0 "Atmospheric Engine Pump"
+ pm_condensing_engine_pump_building_uranium_mine:0 "Condensing Engine Pump"
+ pm_diesel_pump_building_uranium_mine:0 "Diesel Pump"	
+ pm_nuclear_pump_building_uranium_mine:0 "Nuclear-Powered Pump"
+ pm_automated_mining_machine_building_uranium_mine:0 "Automated Mining Machine"
+
+ pmg_explosives_building_uranium_mine:0 "Explosives"
+ pm_nitroglycerin_building_uranium_mine:0 "Nitroglycerin"
+ pm_dynamite_building_uranium_mine:0 "Dynamite"	
+ pm_nuclear_dynamite_uranium_mine:0 "Nuclear Fission Dynamite"
+ 
+ pmg_steam_automation_building_uranium_mine:0 "Uranium Mine Automation"
+ pm_heavy_nuclear_lifter_mine:0 "Atomic-Powered Heavy Lifter"
+
+ pmg_train_automation_building_uranium_mine:0 "Transportation Method"
+ pm_lead_sealed_cart_uranium_mine:0 "Lead-Sealed Railroad Cart"
+
+pmg_ownership_capital_building_uranium_mine:0 "Ownership"
+pm_merchant_guilds_building_uranium_mine:0 "Merchant Guilds"
+pm_privately_owned_building_uranium_mine:0 "Privately Owned"
+pm_publicly_traded_building_uranium_mine:0 "Publicly Traded"
+pm_government_run_building_uranium_mine:0 "Government Run"
+pm_worker_cooperative_building_uranium_mine:0 "Miners' Cooperative"
+
+### Rad-fungus cave farm
+pmg_base_building_rad_fungus_cave_farm:0 "Base Production Method"
+pm_naturally_grown_rad_fungus:0 "Natual Radiation Fungus"
+pm_radiation_mutated_rad_fungus:0 "Radiation-Mutated Rad Fungus"
+pm_radiation_engineered_rad_fungus:0 "Bio-Engineered Rad-Fungus"
+pmg_train_automation_building_rad_fungus_cave_farm:0 "Railroad Transportation"
+pmg_ownership_capital_building_rad_fungus_cave_farm:0 "Ownership"
+
+pmg_mechanized_harvesting_building_rad_fungus_cave_farm:0 "Harvesting and Refining"
+pm_cave_tractor_building_rad_fungus_cave_farm:0 "Cave-Use Tractor"
+pm_nuclear_powered_thresher_building_rad_fungus_cave_farm:0 "Nuclear-Powered Machineries"
+
+### Fungus Colony
+pmg_base_rad_fungus_colony:0 "Radiation Fungus Colony"
+pm_default_rad_fungus_colony:0 "Radiation Fungus Colony"
+pmg_base_heart_of_appalachia:0 "Heart of Appalachia"
+pm_default_heart_of_appalachia:0 "Massive Radiation Fungus Colony"
+
+### Scavenge
+pmg_base_building_ancient_arsenal_scavenge:0 "Scavenge Equipment"
+pm_default_ancient_arsenal_scavenge:0 "Basic Powered Tools"
+pm_protected_equipment_ancient_arsenal_scavenge:0 "Protected Exoskeleton"
+pm_lead_sealed_cart_ancient_arsenal_scavenge:0 "Lead-Sealed Railroad Cart"
+
+pmg_train_automation_building_ancient_arsenal_scavenge:0 "Railroad Transportation"
+pmg_ownership_capital_building_ancient_arsenal_scavenge:0 "Ownership"
+pm_merchant_guilds_building_ancient_arsenal_scavenge:0 "Merchant Guilds"
+pm_privately_owned_building_ancient_arsenal_scavenge:0 "Privately Owned"
+pm_publicly_traded_building_ancient_arsenal_scavenge:0 "Publicly Traded"
+pm_government_run_building_ancient_arsenal_scavenge:0 "Government Run"
+pm_worker_cooperative_building_ancient_arsenal_scavenge:0 "Workers' Cooperative"
+
+## Industries
+pmg_base_building_nuclear_processing:0 "Processing Methods"
+pm_chemical_nuclear_processing:0 "Rudimentary Chemical Processing"
+pm_electrical_nuclear_processing:0 "Electric Processing Machines"
+
+pmg_ownership_capital_building_nuclear_processing:0 "Ownership"
+pm_merchant_guilds_nuclear_industries:0 "Merchant Guilds"
+pm_privately_owned_nuclear_industries:0 "Privately Owned"
+pm_publicly_traded_nuclear_industries:0 "Publicly Traded"
+pm_government_run_nuclear_industries:0 "Government Run"
+pm_worker_cooperative_nuclear_industries:0 "Workers' Cooperative"
+
+pmg_base_building_nuclear_fuel_refinery:0 "Refining Methods"
+pm_backyard_nuclear_refinement:0 "Homebrew Nuclear Fuel"
+pm_sophisticated_nuclear_refinement:0 "Standardized Nuclear Fuel"
+pm_advanced_nuclear_refinement:0 "Advanced Fuel Refining"
+
+pmg_ownership_capital_building_nuclear_fuel_refinery:0 "Ownership"
+
+pmg_base_building_nuclear_bomb_factory:0 "Type of Product"
+pm_backyard_uncontrolled_fission:0 "Garage Fission Bombs"
+pm_fission_explosive:0 "Plutonium Fission Dynamite"
+pm_fusion_explosive:0 "Nuclear Fusion Dynamite"
+pm_shaped_fusion_explosives:0 "Shaped Fusion Dynamite"
+
+pmg_ownership_capital_building_nuclear_bomb_factory:0 "Ownership"
+
+
+pmg_hull_building_vehicle_industry:0 "Vehicle Hull"
+pm_hull_wheeled_vehicle:0 "Wheeled Vehicle"
+pm_hull_half_track:0 "Half-Track"
+pm_hull_tracked_vehicle:0 "Tracked Vehicle"
+
+pmg_engine_type_building_vehicle_industry:0 "Engine Type"
+pm_gasoline_engine_vehicle_industry:0 "Gasoline Engine"
+pm_gasoline_nuclear_mixed_engine_vehicle_industry:0 "Nuclear-Gasoline Mixed Engine"
+pm_nuclear_engine_vehicle_industry:0 "Miniaturized Nuclear Reactors"
+
+pmg_electronics_building_vehicle_industry:0 "Electronic Control System"
+pm_vehicular_electronic_overhual:0 "Electronic Control System"
+
+pmg_base_building_nuclear_engine_industry:0 "Base"
+pm_converted_nuclear_engine:0 "Converted Nuclear Engines"
+pm_reinforced_nuclear_engine:0 "Reinforced Nuclear Engines"
+pm_holographic_forged_nuclear_engines:0 "Holographically Forged Nuclear Engines"
+
+pmg_material_additives_building_nuclear_engine_industry:0 "Secondary Materials"
+pm_baseline_steel_no_additives:0 "Use Baseline Steel"
+pm_electric_arc_forging:0 "Electric Arc Forging"
+pm_irradiated_material_additives:0 "Irradiated Materials Additives"
+pm_glass_fiber_additives:0 "Lightweight Glass Fibers"
+pm_macromolecule_polymer_additives:0 "Macromolecule Polymer"
+pm_organic_synthetics_additives:0 "Organic Synthetics"
+pm_extra_steel_reinforcement_additives:0 "Extra Steel Reinforcement"
+pm_electronic_reactor_regulator_additives:0 "Electronic Reactor Regulator"
+
+pmg_ownership_capital_building_nuclear_engine_industry:0 "Ownership"
+
+pmg_base_building_nuclear_jet_industry:0 "Base"
+pm_basic_nuclear_jet:0 "Rudimentary Nuclear Jet"
+pm_electro_mechanic_nuclear_jet:0 "Electro-Mechanic Nuclear Jet"
+
+
+pmg_assisting_system_building_nuclear_jet_industry:0 "Auxilary System"
+pm_defualt_assist_system_nuclear_jet:0 "No Auxilary System"
+pm_oil_assist_ramjet_nuclear_jet:0 "Gasoline-Assisted Burning Chamber"
+pm_electric_controlled_ramjet_nuclear_jet:0 "Electric Control System"
+pm_steel_reinforced_ramjet_nuclear_jet:0 "Reinforced Steel Frame"
+pm_afterburner_ramjet_nuclear_jet:0 "Afterburner"
+pm_electronic_control_systems_nuclear_jet:0 "Electronic Flight Instrument System"
+
+pmg_ownership_capital_building_nuclear_jet_industry:0 "Ownership"
+
+### Industries Ownership (Same methods used all over)
+pmg_ownership_advanced_nuclear_industry:0 "Ownership"
+pm_privately_owned_advanced_nuclear_industry:0 "Privately Owned"
+pm_publicly_traded_advanced_nuclear_industry:0 "Publicly Traded"
+pm_government_run_advanced_nuclear_industry:0 "Government Run"
+pm_worker_cooperative_advanced_nuclear_industry:0 "Workers' Cooperative"
+
+## Electronic Techs
+pmg_base_circuit_printing:0 "Circuit Manufacturing"
+pm_rudimentary_circuit_board:0 "Rudimentary Circuit Board"
+pm_printed_circuit_board:0 "Printed Circuit Board"
+
+pmg_silicon_refinery:0 "Silicon Refinery"
+pm_advanced_optical_lithography:0 "Advanced Optical Lithography"
+pm_acid_surface_cleaning:0 "Acid Surface Cleaning"
+pm_alternative_semiconductive_materials:0 "Alternative Semiconductive Materials"
+
+pmg_cybernetics_production:0 "Cybernetics Production"
+pm_no_cybernetics:0 "No Cybernetics"
+pm_organic_material_cybernetics:0 "Organic Material Cybernetics"
+pm_stainless_steel_and_glass_cybernetics:0 "Stainless Steel and Glass"
+
+pmg_base_electronics_factory:0 "Electronic Processor Manufacturing"
+pm_default_electronics_factory:0 "General Electronic Processors"
+
+pmg_performance_improver:0 "Performance Improvement"
+pm_extra_processors:0 "Extra Processors"
+pm_nuclear_fuel_cells:0 "Internal Nuclear Fuel-Cell"
+pm_extra_internal_memory:0 "Extra RAM sticks"
+
+pmg_base_household_electronics_factory:0 "Household Electronics Factory"
+pm_default_household_electronics:0 "Household Electronics"
+
+pmg_base_exoskeleton_assembly:0 "Exoskeleton Assembly"
+pm_default_household_exoskeleton:0 "Household Exoskeleton"
+
+pmg_integrated_circuits:0 "Integrated Circuit for Consumer Goods"
+pm_integrated_circuit_board:0 "Integrated Circuit Board"
+pm_command_line_interface:0 "Command Line Interface"
+
+pmg_base_network_center:0 "Network Center"
+pm_default_network_center:0 "Regional Server Center"
+
+pmg_network_center_additional_processors:0 "Additional Processors for Network Center"
+pm_computing_stations:0 "Scientific Computing Stations"
+pm_distributed_terminals:0 "Distributed User Terminals"
+pm_bio_computing_units:0 "Bio-Computing Units"
+
+
+## Automation
+pmg_automation_nuclear_industry_simple:0 "Automation (Less Complex Industry)"
+pm_assembly_lines_mod_nuclear_industry_simple:0 "Assembly Lines"
+pm_integrated_circuitry_mod_nuclear_industry_simple:0 "Integrated Device Assembly Line"
+pm_automated_production_line_mod_nuclear_industry_simple:0 "Automatic Device Assembly Line"
+
+pmg_automation_nuclear_industry_complex:0 "Automation (Complex Industry)"
+pm_assembly_lines_mod_nuclear_industry_complex:0 "Assembly Lines"
+pm_integrated_circuitry_mod_nuclear_industry_complex:0 "Integrated Device Assembly Line"
+pm_automated_production_line_mod_nuclear_industry_complex:0 "Automatic Device Assembly Line"
+
+## Electronics and Automation
+pmg_automation_advanced_nuclear_industry:0 "Automation for Nuclear Industries"
+pm_automation_disabled:0 "No Automation"
+pm_assembly_lines_mod_nuclear_industry:0 "Basic Assembly Lines"
+pm_integrated_circuitry_mod_nuclear_industry:0 "Integrated Control Circuit"
+pm_automated_production_line_mod_nuclear_industry:0 "Automated Production Lines"
+
+pmg_automation_nuclear_reactor:0 "Automated Reactor Control"
+pm_integrated_reactor_control_circuit:0 "Integrated Control Circuit"
+pm_automated_survillance_system:0 "Automated Survillance System"
+
+pmg_automation_airport:0 "Airport Service Automation"
+pm_automated_cargo_handler:0 "Automated Cargo Handlers"
+pm_algorithmic_flight_control:0 "Algorithmic Flight Control"
+
+
+## Reactors, Art Institute, Urban Center, Train, and Airport
+pmg_base_building_nuclear_reactor:0 "Reactor Model"
+pm_backyard_pile_nuclear_reactor:0 "Home-Made Fission Generator"
+pm_specialized_generating_nuclear_reactor:0 "Specialized Nuclear Reactor"
+
+pmg_waste_building_nuclear_reactor:0 "Nuclear Waste Handling"
+pm_waste_discard:0 "Dump 'em"
+pm_waste_recycling_nuclear_reactor:0 "Recycle Depleted Material"
+pm_waste_refinement_nuclear_reactor:0 "Depleted Material Refinement"
+
+pm_alternative_material_art:0 "Alternative-Material Art"
+pm_collective_emotional_link:0 "Collective Emotional Link (CEL) System"
+
+## Urban Center
+pm_vertical_cities:0 "Vertical Urban Planning"
+pm_aviation_integrated_public_transit:0 "Aviation-Integrated Public Transit"
+pm_automated_trading_systems:0 "Automated Trading Systems"
+
+## Railroad
+pm_atomic_powered_trains:0 "Atomic Powered Cargo Trains"
+pm_atomic_powered_trains_2:0 "Atomic Powered Passenger Trains"
+pm_maglev_railroad_1:0 "MagLev Express Cargo Trains"
+pm_maglev_railroad_2:0 "MagLev Express Trains"
+
+
+pmg_base_building_nuclear_jet_airport:0 "Portion of International Flights"
+pm_focus_domestic_flight_nuclear_jet_airport:0 "Focus Domestic Flight"
+pm_focus_international_flight_nuclear_jet_airport:0 "Focus International Flight"
+
+## Private Research Contractors
+pmg_research_contractor_computations:0 "Computation Methods"
+pm_research_contractor_computations_suanpan:0 "Suanpan"
+pm_research_contractor_computations_newtons_method:0 "Newton's Method"
+pm_research_contractor_computations_mechanical_computing:0 "Mechanical Computing"
+pm_research_contractor_computations_experimental_electronic_computing:0 "Experimental Electronic Computing"
+pm_research_contractor_computations_parallel_computing:0 "Parallel Computing"
+
+pmg_research_contractor_mathematics:0 "Mathematics and Statistics Foundations"
+pm_research_contractor_math_pre_calculus_and_discrete_probabilities:0 "Pre-Calculus and Discrete Probabilities"
+pm_research_contractor_math_calculus_and_central_limit_theorem:0 "Calculus and Central Limit Theorem"
+pm_research_contractor_math_differential_equations_and_multilinear_regression:0 "Differential Equations and Multilinear Regression"
+pm_research_contractor_math_group_theory_and_time_series_analysis:0 "Group Theory and Time-Series Analysis"
+pm_research_contractor_math_differential_geometry_and_stochastic_calculus:0 "Differential Geometry and Stochastic Calculus"
+
+pmg_research_contractor_physics:0 "Physics Theory"
+pm_research_contractor_physics_medieval_mechanics:0 "Medieval Mechanics"
+pm_research_contractor_physics_newtonian_mechanics:0 "Newtonian Mechanics"
+pm_research_contractor_physics_maxwell_equations:0 "Maxwell Equations"
+pm_research_contractor_physics_nuclear_physics:0 "Nuclear Physics"
+pm_research_contractor_physics_computational_physics:0 "Computational Physics"
+
+pmg_research_contractor_engineering:0 "Engineering Support"
+pm_research_contractor_engineering_archimedian_era_machines:0 "Aechimedian Era Machines"
+pm_research_contractor_engineering_atmospheric_engines:0 "Atmospheric Engines"
+pm_research_contractor_engineering_electric_engineering:0 "Electric Engineering"
+pm_research_contractor_engineering_nuclear_reactor_engineering:0 "Nuclear Reactor Engineering"
+pm_research_contractor_engineering_electronic_engineering:0 "Electronic Engineering"
+
+pmg_research_contractor_ownership:0 "Ownership"
+pm_research_contractor_ownership_academic_guild:0 "Academic Guild"
+pm_research_contractor_ownership_privately_owned:0 "Privately Owned"
+pm_research_contractor_ownership_publicly_traded:0 "Publicly Traded"
+pm_research_contractor_ownership_government_run:0 "Government Run"
+
+## Advanced Raw Material Aquirement
+
+pmg_base_vertical_farm:0 "Portion of Grain Production"
+pm_vertical_farm_all_wheat:0 "Produce only grain"
+pm_vertical_farm_three_quarter_wheat:0 "3/4 production to grain"
+pm_vertical_farm_half_wheat:0 "1/2 production to grain"
+
+pmg_energy_advanced_agriculture:0 "Energy for Industrialized Farm"
+pm_reinforced_green_house:0 "Reinforced Green House"
+pm_man_made_sun:0 "Artificial Sun/Nuclear Reactor"
+pm_agriculture_use_light_bulb:0 "LED Simulated Sunlight"
+
+pmg_base_synthetic_food:0 "Synthetic Food Factory"
+pm_synthetic_organic_rubber:0 "Synthetic Organic Rubber"
+pm_synthetic_food_lab_grown_meat:0 "Lab-Grown Meat"
+pm_synthetic_food_corn_syrup:0 "Corn Syrup"
+pm_synthetic_food_industrial_alcohol:0 "Industrial Alcohol"
+
+pmg_base_mega_greehouse:0 "Mega Greenhouse"
+pm_mega_greenhouse_weed_greenhouse:0 "Weed Greenhouse"
+pm_mega_greenhouse_coffee:0 "Coffee Greenhouse"
+pm_mega_greenhouse_tea:0 "Cloned Tea Tree"
+pm_mega_greenhouse_berries:0 "Genetically Modified Orange"
+pm_mega_greenhouse_orchard:0 "Industrial Wine Orchard"
+pm_mega_greenhouse_tobacco:0 "Tobacco with Radiation Exposure"
+
+pmg_base_submerged_farm:0 "Submerged Farm Product"
+pm_submerged_farm_plankton:0 "Animal-Feed Plankton"
+pm_submerged_farm_salmonade:0 "Salmonade"
+pm_submerged_farm_fish:0 "GMO trout"
+
+pmg_water_and_fertilizer_source:0 "Water and Fertilizer Usage"
+pm_default_water_source:0 "Default"
+pm_transported_water:0 "Transported Water"
+pm_interstate_water_pipe:0 "Interstate Water Pipe"
+pm_standardized_fertilizer_distribution:0 "Standardized Fertilizer Distribution"
+
+pmg_alternative_labor_source:0 "Labor Force Composition"
+pm_skilled_labor_force:0 "Skilled Crew"
+pm_unskilled_auxilary:0 "Crew with Unskilled Auxilary"
+pm_mixed_labor_force:0 "Unskilled Workers under Supervision"
+pm_unskilled_labor_force:0 "Unskilled Laborer over Automation"
+
+pmg_agricultural_automation:0 "Agricultural Automation"
+pm_skilled_labor_force:0 "Skilled Labor Force"
+pm_programmable_irrigation:0 "Programmable Irrigation"
+pm_algorithmic_growth_planning:0 "Algorithmic Growth Planning"
+
+
+pmg_wetwire_augmentation:0 "Labor Augmentation"
+pm_no_wetwire_usage:0 "No Augmentation"
+pm_basic_augmentation_assorted_drinks:0 "Basic Augmentation for tea trees"
+pm_basic_augmentation_food:0 "Basic Augmentation for wheat"
+pm_basic_augmentation_weed:0 "Basic Augmentation for Weed"
+
+pm_extensive_augmentation_assorted_drinks:0 "Extensive Augmentation for tea trees"
+pm_extensive_augmentation_food:0 "Extensive Augmentation for wheat"
+pm_extensive_augmentation_weed:0 "Extensive Augmentation for Weed"
+
+
+pmg_base_ocean_mining_operation:0 "Seabed Mining Operations"
+pm_ocean_mining_uranium:0 "Harvest Uranium Mine"
+pm_ocean_mining_iron:0 "Explore Iron Mine"
+pm_ocean_mining_sulfur:0 "Utilize Submerged Volcanos"
+pm_ocean_mining_oil:0 "Oil Drill Rigs"
+pm_ocean_mining_lead:0 "Extract for Lead"
+
+pmg_seabed_cracking_method:0 "Seabed Cracking Method"
+pm_mechanical_cracking:0 "Mechanical Cracking"
+pm_unmanned_drill:0 "Unmanned Drill"
+pm_thermonuclear_seabed_dynamite:0 "Thermonuclear Seabed Dynamite"
+pm_ocean_mining_labor_intensive:0 "Labor Intensive Seabed Mines"
+
+pmg_ocean_mining_operation_automation:0 "Ocean Mining Operation Automation"
+pm_programmed_dynamites:0 "Programmed Dynamites"
+pm_automated_submarine_freighters:0 "Automated Submarine Freighters"
+
+## Cloning Vats
+pmg_cloning_vats:0 "Cloning Vats"
+pm_basic_cloning:0 "Basic Cloning"
+pm_cybernetics_integrated_cloning:0 "Cybernetics-Integrated Cloning"
+pm_automated_cloning:0 "Self-Help Cloning"
+
+# Improved Vanilla Production Methods
+
+## Power Generation
+pm_specialized_generating_vanilla_power_plant_lv_1:0 "Specialized Nuclear Reactor"
+pm_specialized_generating_vanilla_power_plant_lv_2:0 "Nuclear Reactor Booster"
+pm_automated_generating_vanilla_power_plant:0 "Self-Regulating Fission Reactor"
+
+## Construction
+pm_terrestrial_sculping:0 "Terrestrial Sculping"
+  
+## Mines
+pm_nuclear_pump_building_coal_mine:0 "Nuclear-Powered Pump"
+ pm_automated_mining_machine_building_coal_mine:0 "Automated Mining Machine"
+pm_nuclear_dynamite_coal_mine:0 "Nuclear Dynamite"
+
+pm_nuclear_pump_building_iron_mine:0 "Nuclear-Powered Pump"
+ pm_automated_mining_machine_building_iron_mine:0 "Automated Mining Machine"
+pm_nuclear_dynamite_iron_mine:0 "Nuclear Dynamite"
+
+pm_nuclear_pump_building_lead_mine:0 "Nuclear-Powered Pump"
+ pm_automated_mining_machine_building_lead_mine:0 "Automated Mining Machine"
+pm_nuclear_dynamite_lead_mine:0 "Nuclear Dynamite"
+
+pm_nuclear_pump_building_sulfur_mine:0 "Nuclear-Powered Pump"
+ pm_automated_mining_machine_building_sulfur_mine:0 "Automated Mining Machine"
+pm_nuclear_dynamite_sulfur_mine:0 "Nuclear Dynamite"
+
+pm_nuclear_pump_building_gold_mine:0 "Nuclear-Powered Pump"
+pm_automated_mining_machine_building_gold_mine:0 "Automated Mining Machine"
+pm_nuclear_dynamite_gold_mine:0 "Nuclear Dynamite"
+
+## Agricultural
+pm_radioactive_fertilizer:0 "Radioactive Fertilizer"
+pm_radioactive_fertilizer_building_rice_farm:0 "Radiation-Mutated Rice"
+pm_radioactive_fertilizer_building_maize_farm:0 "Radioactive Fertilizer for Corn"
+
+pm_aerial_sowing_and_tractor:0 "Aerial Sowing and Tractor"
+pm_aerial_sowing_rice:0 "Aerial Sowing for Rice"
+
+pm_genetically_modified_cattle:0 "Genetically Modified Cattle"
+pm_fur_to_meat_ratio_quarter:0 "1/4 Meat to Fur"
+pm_fur_to_meat_ratio_half:0 "1/2 Meat to Fur"
+pm_fur_to_meat_ratio_three_quarter:0 "3/4 Meat to Fur"
+pm_aerial_surveillance:0 "Aerial Surveillance"
+
+mega_greenhouse_building_coffee_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_coffee_plantation:0 "Augmented Workforce"
+
+genetically_modified_cotton_building_cotton_plantation:0 "GMO Cotton"
+
+mega_greenhouse_building_dye_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_dye_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_opium_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_opium_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_tea_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_tea_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_vineyard_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_vineyard_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_tobacco_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_tobacco_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_sugar_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_sugar_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_banana_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_banana_plantation:0 "Augmented Workforce"
+
+mega_greenhouse_building_silk_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_silk_plantation:0 "Augmented Workforce"
+
+## Additional Resource
+pm_hydralic_fracturing:0 "Hydralic Fracturing"
+
+mega_greenhouse_building_rubber_plantation:0 "Mega-Greenhouse"
+augmented_workforce_building_rubber_plantation:0 "Augmented Workforce"
+
+## Industrial
+pm_airlift_fresh_groceries:0 "Airlifted Fresh Groceries"
+pm_whiskey:0 "Whiskey"
+pm_rum:0 "Rum"
+pm_wine:0 "Wine"
+pm_nuka_cola:0 "Nuka-Cola"
+pm_instant_fission_food:0 "Instant Fission Packaged Food"
+pm_instant_fission_liquor:0 "Instant Fission Packaged Liquor"
+
+pm_shining_silk:0 "Shining Silk"
+
+pm_depleted_uranium_lathe:0 "Depleted Uranium Lathe"
+pm_cobalt_steel_furniture:0 "Cobalt-Steel Furniture"
+pm_household_electronics:0 "Household Electronics"
+
+pm_radiant_plastics:0 "Radiant Plastics"
+pm_glowing_blue_porcelain:0 "Glowing-Blue Porcelain"
+pm_extra_glass_additives:0 "Extra Glass Additives"
+pm_programmable_bottle_blowers:0 "Programmable Bottle Blowers"
+
+pm_duranium_steel_tools:0 "DUranium Steel Tools"
+pm_automated_machines:0 "Automated Production Machines"
+pm_electronic_controller_tools:0 "Electronically Controlled Tools"
+
+pm_living_fertilizer:0 "Radiation-Mutated Bio-Fertilizer"
+pm_automated_process_for_fertilizer:0 "Automated Fertilizer Mixer"
+
+pm_glowing_dyes:0 "Glowing Dyes"
+pm_Halifax_worm_silk:0 "Mutated Silk Worms"
+
+pm_New_England_duranium_steel:0 "New England DUranium Steel"
+pm_automated_duranium_foundry:0 "Autoamted DUranium Steel Foundry"
+
+pm_instant_holographic_forging:0 "Instant Holographic Alloys Forging"
+pm_microchips_engine_addon:0 "Microchips engine add-on"
+
+pm_atomic_powered_vessel:0 "Atomic Powered Vessels"
+pm_automated_shipyard:0 "Automated Shipyard"
+pm_atomic_powered_vessel_military:0 "Atomic Powered Ironclad"
+pm_automated_shipyard_military:0 "Automated Military Shipyard"
+
+pm_radios:0 "Wireless Telephone"
+pm_advanced_telephones:0 "Advanced Wireless Telephone"
+pm_telephone_with_integrated_processor:0 "Telephone with Integrated Processors"
+
+pm_depleted_uranium_rifle:0 "Depleted Uranium Rifles"
+pm_nuclear_powered_auto_ordanance:0 "Nuclear-Powered Auto-Ordanance Guns"
+
+pm_dirty_bomb_shells:0 "Dirty Bomb and fission explosives"
+
+## Military
+pm_cybernetics_conscript_training:0 "Enforced Cybernetics Implants"
+pm_cybernetics_integrated_training:0 "Military-Grade Implants"
+pm_naval_gunnery_computers:0 "Naval Gunnery Computers"
+
+
+## Other stuff
+pm_powered_exoskeleton_building_gold_fields:0 "Powered Exoskeleton"
+

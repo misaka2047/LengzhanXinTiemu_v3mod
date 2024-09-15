@@ -1,0 +1,22 @@
+﻿stalin_inheritance = {
+
+	group = je_group_internal_affairs
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    is_shown_when_inactive = { #显示
+        exists = c:RUS
+        THIS = c:RUS
+    }
+	possible = { #激活条件
+		game_date >= 1946.7.1
+	}
+	complete = { #完成条件
+		game_date >= 1952.10.5
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.4 } #苏联共产党第十九次代表大会
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

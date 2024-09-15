@@ -1,0 +1,200 @@
+PRU = { # Prussia
+	flag_definition = {
+		coa = PRU	
+		subject_canton = PRU
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = PRU_teutonic_order
+		subject_canton = PRU_teutonic_order
+		allow_overlord_canton = yes
+		overlord_canton_scale = { @canton_scale_cross_x @canton_scale_cross_y }
+		priority = 5		
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = PRU_republic
+		subject_canton = PRU_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_absolute_monarchy
+		subject_canton = PRU_absolute_monarchy
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = PRU_subject	
+		overlord_canton_scale = { 0.337 0.337 }				
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRU_fascist
+		subject_canton = PRU_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+    flag_definition = {
+		coa = GERO
+		subject_canton = GERO
+        	allow_overlord_canton = yes #加上宗主国旗帜
+		priority = 10000
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+
+BAV = { # Bavaria
+	flag_definition = {
+		coa = BAV
+		subject_canton = BAV
+		allow_overlord_canton = yes
+		priority = 1
+	}
+	flag_definition = {
+		coa = BAV_republic
+		subject_canton = BAV_republic
+        allow_overlord_canton = yes
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_absolute_monarchy
+		subject_canton = BAV_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_theocracy
+		subject_canton = BAV_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = BAV_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = BAV_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}	
+    flag_definition = {
+		coa = GERO
+		subject_canton = GERO
+        allow_overlord_canton = yes
+		priority = 10000
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}	
+}
+
+HAN = { # Hannover
+	flag_definition = {
+		coa = HAN
+		allow_overlord_canton = yes		
+		subject_canton = HAN
+		priority = 1
+	}
+    flag_definition = {
+		coa = GERO
+		subject_canton = GERO
+        allow_overlord_canton = yes
+		priority = 10000
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_absolute_monarchy
+		subject_canton = HAN_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_republic
+		subject_canton = HAN_republic
+		allow_overlord_canton = yes		
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = HAN_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = HAN_subject_PRU
+		priority = 50
+		trigger = { 
+			coa_def_prussian_ensign_trigger = yes
+		}
+	}
+}
+
+RHN = {
+	flag_definition = {
+		coa = RHN	
+		subject_canton = RHN
+		priority = 1
+	}
+	flag_definition = {
+		coa = RHN_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+    flag_definition = {
+		coa = RHN_republic
+		subject_canton = RHN_republic
+		allow_overlord_canton = yes			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+    flag_definition = {
+		coa = GERO
+		subject_canton = GERO
+        allow_overlord_canton = yes
+		priority = 10000
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}

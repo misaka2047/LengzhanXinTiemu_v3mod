@@ -1,0 +1,1219 @@
+
+tech_ammunition_manufacturing = {#弹药制造
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_large_caliber_bullets = {#大口径子弹
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_ammunition_manufacturing
+	}
+modifier = {
+		unit_kill_rate_mult = 0.1
+	}
+}
+tech_high_energy_bullet = {#高能子弹
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_large_caliber_bullets
+	}
+modifier = {
+		unit_kill_rate_mult = 0.1
+	}
+}
+tech_intelligent_ammunition = {#智能化弹药
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_high_energy_bullet
+	}
+modifier = {
+		unit_kill_rate_mult = 0.1
+	}
+}
+tech_weapon_manufacturing = {#武器制造
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_assault_rifles = {#突击步枪
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_weapon_manufacturing
+	}
+modifier = {
+		unit_army_offense_mult = 0.1
+	}
+}
+tech_modularized_light_weapons = {#模块化轻武器
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_assault_rifles
+	}
+modifier = {
+		unit_army_offense_mult = 0.1
+	}
+}
+tech_intelligent_weapons = {#智能化武器
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_modularized_light_weapons
+	}
+modifier = {
+		unit_army_offense_mult = 0.1
+	}
+}
+tech_world_war_ii_military_ships = {#二战军用舰船
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_cold_war_naval_ships = {#冷战海军舰船
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_world_war_ii_military_ships
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_informationized_naval_ships = {#信息化海军舰船
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_cold_war_naval_ships
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_new_informationized_naval_ships = {#新型信息化海军舰船
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_informationized_naval_ships
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_world_war_ii_artillery = {#二战火炮
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_informationized_long_range_strike_system = {#信息化远程打击系统
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_world_war_ii_artillery
+	}
+modifier = {
+		unit_morale_damage_mult = 0.1
+	}
+}
+tech_intelligent_firepower_strike_system = {#智能化火力打击系统
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_informationized_long_range_strike_system
+	}
+modifier = {
+		unit_morale_damage_mult = 0.1
+	}
+}
+tech_the_return_of_the_artillery_era = {#大炮时代归来
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_intelligent_firepower_strike_system
+	}
+modifier = {
+		unit_morale_damage_mult = 0.1
+	}
+}
+tech_world_war_ii_tanks = {#二战坦克
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_laser_ranging_fire_control_system = {#激光测距火控系统
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_world_war_ii_tanks
+	}
+modifier = {
+		unit_provinces_captured_mult = 0.05
+	}
+}
+tech_automatic_sensing_system = {#自动传感系统
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_laser_ranging_fire_control_system
+	}
+modifier = {
+		unit_provinces_captured_mult = 0.05
+	}
+}
+tech_intelligent_unmanned_turrets = {#智能化无人炮塔
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_automatic_sensing_system
+	}
+modifier = {
+		unit_provinces_captured_mult = 0.05
+	}
+}
+tech_guerrilla_warfare = {#游击战
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_nine_principles_of_battles = {#9条战役原则
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_guerrilla_warfare
+	}
+}
+tech_modernized_depth = {#现代化大纵深
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_nine_principles_of_battles
+	}
+}
+tech_battle_theory = {#战役学理论
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_modernized_depth
+	}
+}
+tech_air_ground_integrated_combat_system = {#空地一体化作战体系
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_battle_theory
+	}
+}
+tech_informationized_synthetic_tactical_corps = {#信息化合成战术兵团
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_air_ground_integrated_combat_system
+	}
+}
+tech_navy_concept = {#海军概念
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 15
+	}
+}
+tech_world_war_ii_naval_strategic_thinking = {#二战海军战略思想
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_navy_concept
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 5
+	}
+}
+tech_sea_power_theory = {#海权论
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_world_war_ii_naval_strategic_thinking
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 5
+	}
+}
+tech_ocean_strategy = {#远洋战略
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_sea_power_theory
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 5
+	}
+}
+tech_nearshore_defense_and_anti_access_strategy = {#近海防御及反介入战略
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_ocean_strategy
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 5
+	}
+}
+tech_informationized_modern_naval_thinking = {#信息化现代海军思想
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_nearshore_defense_and_anti_access_strategy
+	}
+modifier = {
+		state_building_naval_base_max_level_add = 5
+	}
+}
+tech_efficient_supply = {#高效补给
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_military_concept
+	}
+}
+tech_sugar_supply = {#糖分补给
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_food_supply = {#食品补给
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_tobacco_supply = {#烟草补给
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_liquor_supply = {#烈酒补给
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_drug_supply = {#药物补给
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_individual_system = {#单兵系统
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_efficient_supply
+	}
+}
+tech_motorized_reconnaissance = {#机动化侦查
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_individual_system
+	}
+}
+tech_aerial_reconnaissance = {#空中侦查
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_motorized_reconnaissance
+	}
+}
+tech_advanced_communication_equipment = {#先进通信设备
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_aerial_reconnaissance
+	}
+}
+tech_uav_reconnaissance = {#无人机侦查
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_advanced_communication_equipment
+	}
+}
+tech_auxiliary_equipment = {#辅助装备
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	modifier = {
+		unit_morale_loss_mult = -0.1
+	}
+	unlocking_technologies = {
+		tech_individual_system
+	}
+}
+tech_anti_tank_and_anti_aircraft_equipment_equipment = {#反坦克与防空装备
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_auxiliary_equipment
+	}
+}
+tech_javelin_missiles = {#标枪导弹
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_anti_tank_and_anti_aircraft_equipment_equipment
+	}
+}
+tech_drone_strikes = {#无人机袭击
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_javelin_missiles
+	}
+}
+tech_military_logistics = {#军事后勤学
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		unit_morale_loss_mult = -0.1
+	}
+}
+tech_antibiotics = {#抗生素
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_military_logistics
+	}
+}
+tech_targeted_drugs = {#靶向药物
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_antibiotics
+	}
+}
+tech_trenches = {#堑壕工事
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_targeted_drugs
+	}
+modifier = {
+		state_conscription_rate_mult = 0.1
+unit_army_defense_mult = 0.1
+	}
+}
+tech_concrete_fortifications = {#混凝土工事
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_trenches
+	}
+modifier = {
+		state_conscription_rate_mult = 0.1
+unit_army_defense_mult = 0.1
+	}
+}
+tech_modern_military_defense_system = {#现代军事防御体系
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_concrete_fortifications
+	}
+modifier = {
+		state_conscription_rate_mult = 0.1
+unit_army_defense_mult = 0.1
+	}
+}
+tech_truck_transport = {#卡车运输
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_military_logistics
+	}
+}
+tech_rail_transport = {#铁路运输
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_truck_transport
+	}
+}
+tech_helicopter_transport = {#直升机运输
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_rail_transport
+	}
+}
+tech_mobile_infantry = {#机动步兵
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_ammunition_manufacturing
+tech_weapon_manufacturing
+tech_ammunition_manufacturing
+	}
+}
+tech_mechanized_infantry = {#机械化步兵
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_mobile_infantry
+	}
+}
+tech_combined_arms_army = {#综合兵种军
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_mechanized_infantry
+	}
+}
+tech_advanced_armored_battalion = {#高级装甲营
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_combined_arms_army
+	}
+}
+tech_mobile_team = {#机动战队
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_advanced_armored_battalion
+	}
+}
+tech_field_artillery = {#野战炮
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_ammunition_manufacturing
+tech_world_war_ii_artillery
+tech_world_war_ii_tanks
+	}
+}
+tech_self_propelled_artillery = {#自行火炮
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_field_artillery
+	}
+}
+tech_multiple_rocket_launchers = {#多管火箭炮
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_self_propelled_artillery
+	}
+}
+tech_digital_artillery = {#数字化火炮
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_multiple_rocket_launchers
+	}
+}
+tech_railgun = {#轨道炮
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_digital_artillery
+	}
+}
+tech_biplane = {#双翼飞机
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_military_concept
+	}
+}
+tech_fighter_aircraft = {#战斗机
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_biplane
+	}
+}
+tech_jet_fighter_aircraft = {#喷气战斗机
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_fighter_aircraft
+	}
+}
+tech_combat_drones = {#战斗无人机
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_jet_fighter_aircraft
+	}
+}
+tech_flying_fortress = {#空中堡垒
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_combat_drones
+	}
+}
+tech_destroyer = {#驱逐舰
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_navy_concept
+tech_world_war_ii_military_ships
+	}
+}
+tech_submarine = {#潜艇
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_destroyer
+	}
+}
+tech_cold_war_submarine = {#冷战潜艇
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_submarine
+	}
+}
+tech_modern_submarine = {#现代潜艇
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_cold_war_submarine
+	}
+}
+tech_stealth_submarine = {#隐形潜艇
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_modern_submarine
+	}
+}
+tech_dreadnought = {#无畏舰
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_navy_concept
+tech_world_war_ii_military_ships
+	}
+}
+tech_battleship = {#战列舰
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_dreadnought
+	}
+}
+tech_missile_cruiser = {#导弹巡洋舰
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_battleship
+	}
+}
+tech_battlecruiser = {#战巡舰
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_missile_cruiser
+	}
+}
+tech_littoral_combat_ship = {#滨海战斗舰
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_battlecruiser
+	}
+}
+tech_aircraft_carrier = {#航母
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_navy_concept
+tech_world_war_ii_military_ships
+	}
+}
+tech_light_aircraft_carrier = {#轻型航母
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_aircraft_carrier
+	}
+}
+tech_fleet_carrier = {#舰队航母
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_light_aircraft_carrier
+	}
+}
+tech_modern_aircraft_carrier = {#现代航母
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_fleet_carrier
+	}
+}
+tech_nuclear_powered_aircraft_carrier = {#核动力航母
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_modern_aircraft_carrier
+	}
+}
+tech_basic_military_concept = {#基本军队概念
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		building_mobilization_cost_mult = -0.05
+	}
+}
+tech_professional_army = {#职业军队
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_military_concept
+	}
+modifier = {
+		building_mobilization_cost_mult = -0.05
+	}
+}
+tech_massive_conscription = {#大规模征兵
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_military_concept
+	}
+modifier = {
+		building_mobilization_cost_mult = -0.05
+	}
+}
+tech_political_army = {#政治化军队
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_military_concept
+	}
+modifier = {
+		building_mobilization_cost_mult = -0.05
+	}
+}
+tech_conscription_propaganda = {#征兵宣传
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_political_army
+	}
+modifier = {
+		building_mobilization_cost_mult = -0.05
+	}
+}
+tech_uranium_mining_and_refining = {#铀矿开采与精炼
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_large_caliber_bullets
+	}
+}
+tech_enrichment_and_purification_of_deuterium_and_tritium = {#氘与氚的浓缩与提纯
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_uranium_mining_and_refining
+	}
+}
+tech_uranium_refining_by_centrifuge = {#离心法铀精炼
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_enrichment_and_purification_of_deuterium_and_tritium
+	}
+}
+tech_nuclear_power_technology = {#核电技术
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_uranium_mining_and_refining
+	}
+}
+tech_advanced_nuclear_power_technology = {#先进核电技术
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_nuclear_power_technology
+	}
+}
+tech_modern_nuclear_power_technology = {#现代核电技术
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_advanced_nuclear_power_technology
+	}
+}
+tech_nuclear_weapons = {#核武器
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_uranium_mining_and_refining
+	}
+	modifier = {
+		country_prestige_mult = 0.05 #国家威望修正
+		country_max_declared_interests_add = 1
+	}
+}
+tech_hydrogen_bombs = {#氢弹
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_nuclear_weapons
+	}
+	modifier = {
+		country_prestige_mult = 0.05 #国家威望修正
+		country_max_declared_interests_add = 1
+	}
+}
+tech_tactical_nuclear_weapons = {#战术核武器
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = military
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_hydrogen_bombs
+	}
+	modifier = {
+		country_prestige_mult = 0.05 #国家威望修正
+		country_max_declared_interests_add = 1
+	}
+}

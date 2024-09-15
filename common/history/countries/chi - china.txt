@@ -1,0 +1,78 @@
+﻿COUNTRIES = {
+	c:CHI = { #中华民国
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = sericulture
+		
+		set_market_capital = STATE_GUANGDONG	
+
+		set_tariffs_export_priority = g:grain
+		set_tariffs_import_priority = g:fabric
+		set_tariffs_import_priority = g:wood
+		set_tariffs_import_priority = g:hardwood
+
+		set_tax_level = medium
+
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:luxury_clothes
+		add_taxed_goods = g:luxury_furniture
+		add_taxed_goods = g:tea
+
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_multi_party_cooperation_system #一党专政
+		activate_law = law_type:law_open_door #门户开放
+		activate_law = law_type:law_encourage_fertility #鼓励抚养
+		activate_law = law_type:law_professional_army #职业军队
+		activate_law = law_type:law_women_in_the_workplace #女性工作
+		activate_law = law_type:law_militarized_police #军事化警察
+		activate_law = law_type:law_private_capital_support #私人资本扶植（科研）
+		activate_law = law_type:law_secret_police #秘密警察
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_outlawed_dissent #异议非法
+		activate_law = law_type:law_private_schools #私立学校
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_serfdom_banned
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_interventionism #经济干预
+		activate_law = law_type:law_unrestricted_labor #无限制劳动
+
+		ig:ig_intelligentsia = { #文人
+			add_ideology = ideology_anti_clerical #反教权主义者
+		}
+
+		ig:ig_industrialists = { #官僚资产阶级
+			set_interest_group_name = ig_bureaucratic_bourgeoisie
+		}
+
+		ig:ig_petty_bourgeoisie = { #民族资产阶级
+			set_interest_group_name = ig_national_bourgeoisie
+		}
+
+		ig:ig_landowners = { #地主
+			set_interest_group_name = ig_landowners
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police #执法
+			level = 1
+		}
+
+		add_modifier = {
+			name = anti_japanese_injury #抗日之伤
+			months = very_long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = the_peoples_liberation_army_controls_half_of_the_country #解放军掌握半壁江山
+		}
+		add_modifier = {
+			name = military_science_assistance_from_the_united_states #来自美国的军科援助
+			years = 15
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = ununified_china #未统一的祖国
+		}
+	}
+}

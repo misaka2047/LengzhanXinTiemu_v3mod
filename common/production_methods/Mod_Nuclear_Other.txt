@@ -1,0 +1,697 @@
+﻿
+# We shall decide based on base price of these stuff
+
+#Coal cost $30
+#Electricity cost $30
+#Tools cost $40
+#sulfur cost $50
+#radioactive_ore cost $40 (Same as iron ore
+#irradiated_material cost $50
+#nuclear_fuel $50
+#electricity $30
+
+
+
+# We should now do Nuclear Reactor.
+# Aim around $2,400 profit
+pm_backyard_pile_nuclear_reactor = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/backyard_pile_nuclear_reactor.jpg"
+
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_engines_add = 15 ## 900
+			goods_input_tools_add = 12 ## 480
+			goods_input_nuclear_fuel_add = 60 ##3,000
+			# Cost: $4,380
+			
+			goods_output_electricity_add = 200
+			# Gain: $6,000
+			# Profit: $1,620
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.2
+			building_machinists_mortality_mult = 0.15
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+# Aim around $3,200 profit
+pm_specialized_generating_nuclear_reactor = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/specialized_generating_nuclear_reactor.jpg"
+
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+
+	
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_nuclear_engines_add = 20 ## 1,200
+			goods_input_nuclear_fuel_add = 80 ##4,000
+			# Cost: $5,200
+			
+			goods_output_electricity_add = 240
+			# Gain: $7,200
+			# Profit: $2,000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 1100
+		}
+
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+############ Waste Processing
+
+pm_waste_discard = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/waste_discard_nuclear_reactor.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+#Nuclear Material costs $50
+
+pm_waste_recycling_nuclear_reactor = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/waste_recycling_nuclear_reactor.jpg"
+
+	unlocking_production_methods = {
+		pm_specialized_generating_nuclear_reactor
+	}
+
+	unlocking_technologies = {
+		depleted_material_reprocess
+	}
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_engines_add = 2
+
+			goods_output_irradiated_material_add = 12
+			# Additional cost: $180
+			# Additional Gain: $600
+			# Profit: $420
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -300
+			building_employment_engineers_add = 150
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_waste_refinement_nuclear_reactor = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/waste_refinement_nuclear_reactor.jpg"
+
+	unlocking_production_methods = {
+		pm_specialized_generating_nuclear_reactor
+	}
+
+	unlocking_technologies = {
+		depleted_material_reprocess
+	}
+
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_engines_add = 2
+
+			goods_output_electricity_add = 20
+
+			# Additional cost: $120
+			# Additional Gain: $600
+			# Profit: $480
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -300
+			building_employment_engineers_add = 150
+		}
+	}
+	
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+
+############# For Vanilla Power Plants
+# Aim around $3,200 profit
+pm_specialized_generating_vanilla_power_plant_lv_1 = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/specialized_generating_nuclear_reactor.jpg"
+
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+
+	
+	
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_nuclear_engines_add = 20 ## 1,200
+			goods_input_nuclear_fuel_add = 80 ##4,000
+			# Cost: $5,200
+			
+			goods_output_electricity_add = 240
+			# Gain: $7,200
+			# Profit: $2,000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 1100
+		}
+
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+pm_specialized_generating_vanilla_power_plant_lv_2 = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/waste_recycling_nuclear_reactor.jpg"
+	unlocking_technologies = {
+		depleted_material_reprocess
+	}
+
+	
+	building_modifiers = { 
+		workforce_scaled = {
+			goods_input_nuclear_engines_add = 22 ## 1,320
+			goods_input_nuclear_fuel_add = 80 ##4,000
+			
+			goods_output_electricity_add = 260
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 300
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 1250
+		}
+
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+
+pm_automated_generating_vanilla_power_plant = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/waste_refinement_nuclear_reactor.jpg"
+
+	unlocking_technologies = {
+		automated_systems
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_engines_add = 25 
+			goods_input_research_and_engineering_add = 4 #160
+			goods_input_nuclear_fuel_add = 85 ##4,250
+			goods_input_programmables_add = 28 #840
+
+			goods_output_electricity_add = 310
+
+			# Cost: $5,200
+			# Gain: 9,000
+			# Profit: $3,800
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+		}
+
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+############# Atomic-Powered Trains
+pm_atomic_powered_trains = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_trains.jpg"
+
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			#cost: 25 * 110 = 2,750
+
+			goods_input_nuclear_engines_add = 3 #$180
+			goods_input_engines_add = 2 #$120
+			goods_input_nuclear_fuel_add = 9	#450
+
+			goods_output_transportation_add = 70 # 2100
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 750
+		}
+
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 50 ## Replacing Compression Ignition
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.2
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+
+	}
+
+}
+
+pm_atomic_powered_trains_2 = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_trains.jpg"
+
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			#cost: 25 * 110 = 2,750
+
+			goods_input_nuclear_engines_add = 3 #$180
+			goods_input_engines_add = 2 #$120
+			goods_input_nuclear_fuel_add = 9	#450
+
+			goods_output_transportation_add = 50 #1500
+			goods_output_services_add = 20 ## 600
+			## Same profit as airport, with steel passenger trains on
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 750
+		}
+
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 50 ## Replacing Compression Ignition
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.2
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+
+	}
+
+}
+
+
+pm_maglev_railroad_1 = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_trains.jpg"
+
+	unlocking_technologies = {
+		magnetic_levitation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_nuclear_engines_add = 3 #$180
+			goods_input_engines_add = 2 #$120
+			goods_input_electricity_add = 15  #450
+			goods_input_radios_add = 3 #240
+			goods_input_programmables_add = 2 #60
+
+			goods_output_transportation_add = 80 # 2400
+			## Same profit as airport, with steel passenger trains on
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 200
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 75 
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.25
+		}
+	}
+
+}
+
+pm_maglev_railroad_2 = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_trains.jpg"
+
+	unlocking_technologies = {
+		magnetic_levitation
+	}
+	
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_nuclear_engines_add = 3 #$180
+			goods_input_engines_add = 2 #$120
+			goods_input_electricity_add = 15  #450
+			goods_input_radios_add = 3 #240
+			goods_input_programmables_add = 2 #60
+
+			goods_output_transportation_add = 55 #1650
+			goods_output_services_add = 25 ## 750
+			## Same profit as airport, with steel passenger trains on
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 400
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 200
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 75 
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.25
+		}
+	}
+
+}
+
+############## Nuclear Jet Airport
+#############
+
+# Profit Aim: $2,500 
+pm_focus_domestic_flight_nuclear_jet_airport = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/nuclear_jet_airport.jpg"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			#Cost: 20*60 (engine) + 20*40 (oil) = $2,000
+			#Output: $3,000
+
+			goods_input_nuclear_jet_add = 10 #$1,200
+			goods_input_nuclear_fuel_add = 10
+
+			goods_output_transportation_add = 85 #2100
+		}
+
+
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 750
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 60
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.2
+		}
+
+	}
+
+}
+
+pm_focus_international_flight_nuclear_jet_airport = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/nuclear_jet_airport.jpg"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			#Cost: 20*60 (engine) + 20*40 (oil) = $2,000
+			#Output: $3,000
+
+			goods_input_nuclear_jet_add = 10 #$1,200
+			goods_input_nuclear_fuel_add = 10
+
+			goods_output_transportation_add = 85 #2100
+		}
+
+
+
+		level_scaled = {
+			building_employment_laborers_add = 500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 100
+			building_employment_clerks_add = 750
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 30
+		}
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+		unscaled = {
+			state_market_access_price_impact = 0.2
+		}
+
+	}
+
+	country_modifiers = {
+		level_scaled = {
+			country_convoys_capacity_add = 400 ####
+		}
+	}
+}
+
+##### Airport Automation
+
+### Airport Automation Methods
+pm_automated_cargo_handler = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/integrated_circuitry_automation.dds"
+	unlocking_technologies = {
+		magnetic_levitation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_programmables_add = 16 #480
+
+			goods_output_transportation_add = 16 #$480
+
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = -550
+			building_employment_laborers_add = -100
+			building_employment_engineers_add = -100
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 25 
+		}
+	}
+}
+
+pm_algorithmic_flight_control = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_production_line.jpg"
+
+	unlocking_technologies = {
+		magnetic_levitation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_radios_add = 6 #480
+			goods_output_transportation_add = 16 #$480
+
+		}
+
+		level_scaled = {
+			building_employment_clerks_add = -550
+			building_employment_laborers_add = -100
+			building_employment_engineers_add = -100
+		}
+	}
+
+	state_modifiers = {
+		level_scaled = {
+			state_infrastructure_add = 25 
+		}
+	}
+}
+
+
+######### Ownership for airports
+
+
+
+pm_privately_owned_advanced_nuclear_industry = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_advanced_nuclear_industry = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_advanced_nuclear_industry = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_advanced_nuclear_industry = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+
+
+################## Reference: Output of normal power plant

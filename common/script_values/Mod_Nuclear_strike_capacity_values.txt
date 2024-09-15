@@ -1,0 +1,158 @@
+﻿strike_capacity_current_stockpile_sv = {
+	if = {
+		limit = {
+			has_journal_entry = je_Mod_Nuclear_Delivery_Capacity_Tracker
+		}
+		value = var:strike_capacity_current_stockpile
+		round = yes
+	}
+	else = {
+		value = 0
+	}
+}
+
+
+### A great power are expected to have about 4,000 warheads and about 1,000 delivery capacity.
+### For a usual 20-state nation, at 10% monthly depreciation this would mean a 100 yearly loss of warheads.
+### 
+
+
+strike_capacity_monthly_add = {
+	value = 0
+    	every_scope_state = {
+        	limit = {
+			OR = {
+           			has_building = building_strategic_strike_base
+				has_building = building_strategic_strike_squadron
+			}
+       		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_base
+					production_method = pm_kamikaze_squad
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_base
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_base
+					production_method = pm_jet_strategic_bomber
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_base
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 3
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_base
+					production_method = pm_ICBM
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_base
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 4
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_base
+					production_method = pm_orbital_nuclear_weapon
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_base
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 5
+		}
+
+		## Naval Stuff
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_squadron
+					production_method = pm_hellebranders
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_squadron
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_squadron
+					production_method = pm_strategic_siege_monitors
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_squadron
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_squadron
+					production_method = pm_ocean_based_nuclear_rocket
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_squadron
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 4
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_strategic_strike_squadron
+					production_method = pm_SSBN
+				}
+				any_scope_building = {
+					is_building_type = building_strategic_strike_squadron
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 5
+		}
+
+	}
+}
+
+strike_capacity_monthly_depreciation = {
+	value = strike_capacity_current_stockpile_sv
+	multiply = 0.05
+	round = yes
+}
+
+strike_capacity_monthly_net_change = {
+	value = strike_capacity_monthly_add
+	subtract = strike_capacity_monthly_depreciation
+	round = yes
+}
+

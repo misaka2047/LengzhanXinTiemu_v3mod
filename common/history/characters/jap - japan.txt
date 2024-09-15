@@ -1,0 +1,117 @@
+﻿CHARACTERS = {
+	c:JAP = {
+		create_character = { #招核天皇
+			historical = yes
+			ruler = yes
+			ig_leader = yes #利益集团领袖
+			first_name = Yuren
+			last_name = Yamato
+			birth_date = 1901.4.29
+			religion = rel:shinto #神道教
+			dna = dna_emperor_minh_mang
+			interest_group = ig_intelligentsia #官僚
+			ideology = ideology_royalist #保皇主义者
+			traits = {
+				tactful #圆滑
+				pillager #掠夺者
+				grifter #骗子
+				bandit #强盗
+				demagogue #煽动者
+				cruel #残暴
+			}
+		}
+
+		create_character = { #三岛由纪夫
+			first_name = Youjifu
+			last_name = Sandao
+			birth_date = 1925.1.14
+			historical = yes
+    			is_agitator = yes #鼓动者
+			interest_group = ig_devout #虔信者
+			ideology = ideology_national_socialists #国社主义者
+			traits = {
+				demagogue #煽动者
+				literary #文学家
+			}
+		}
+
+		create_character = { #日共第一书记德田球一
+			first_name = Qiuyi
+			last_name = Detian
+			birth_date = 1894.10.14
+			historical = yes
+			ig_leader = yes
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_communist #意识形态共产主义者
+			traits = {
+				masterful_diplomat #外交大师
+				charismatic #魅力四射
+				brave #勇敢
+			}
+		}
+
+		create_character = { #三木武夫
+			first_name = Wufu
+			last_name = Sanmu
+			birth_date = 1907.3.17
+			historical = yes
+			ig_leader = yes
+			religion = rel:shinto #神道教
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				basic_diplomat #外交家
+			}
+		}
+
+		create_character = { #石桥湛山
+			first_name = Zhanshan
+			last_name = Shiqiao
+			birth_date = 1884.9.25
+			historical = yes
+			ig_leader = yes
+			religion = rel:shinto #神道教
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_pacifist #和平主义者
+			traits = {
+				masterful_diplomat #外交大师
+				charismatic #魅力四射
+				brave #勇敢
+			}
+		}
+
+		create_character = { #日本五星天皇道格拉斯·麦克阿瑟
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			first_name = Douglas
+			last_name = MacArthur 
+			culture = cu:dixie
+			birth_date = 1880.1.26
+			dna = dna_king_leopold_01
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				strong #健硕
+				hedonist #享乐主义者
+				celebrity_commander #明星指挥官
+			}
+		}
+
+		create_character = { #吉田茂
+			first_name = Mao2
+			last_name = Jitian
+			birth_date = 1878.9.22
+			historical = yes
+			ig_leader = yes
+			religion = rel:shinto #神道教
+			interest_group = ig_intelligentsia #官僚
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				strong #健硕
+				masterful_diplomat #外交大师
+				expert_political_operator #政治运作专家
+			}
+		}
+	}
+}

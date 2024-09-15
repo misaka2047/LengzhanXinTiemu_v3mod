@@ -1,0 +1,8 @@
+JCP_flag = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+		texture = "EMPJAP.dds"
+	}
+}

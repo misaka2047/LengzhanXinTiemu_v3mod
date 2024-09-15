@@ -1,0 +1,95 @@
+﻿# To ensure the game rule 'monument_effects' works properly, the game rule needs to be amended with flags disabling any new monuments' Base method
+# PM Groups should have the 'is_hidden_when_unavailable' flag to ensure only one alternative is visible at any time (unless the player actually has an option they can switch to)
+
+pm_default_heart_of_appalachia = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 10
+			country_weekly_innovation_add = 15
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.05
+			goods_output_nuclear_fuel_mult = 0.03
+			goods_output_irradiated_material_mult = 0.03
+			goods_output_radioactive_ore_mult = 0.03
+			state_pollution_generation_add = 10
+		}	
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_paper_add = 20 # 600
+			goods_input_explosives_add = 50 # 2,500
+			goods_input_coal_add = 50 #1,500
+			goods_input_electricity_add = 50 #1,500
+			goods_input_engines_add = 20 #1,200
+			# Total 7,300
+
+			goods_output_radioactive_ore_add = 380 #15,200
+
+		}
+		
+		level_scaled = {
+
+		# About 8,000 People
+			building_employment_clerks_add = 2000
+			building_employment_academics_add = 1000
+			building_employment_bureaucrats_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1000
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+
+pm_default_rad_fungus_colony = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 10
+			country_weekly_innovation_add = 10
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.05
+			goods_output_nuclear_fuel_mult = 0.02
+			goods_output_irradiated_material_mult = 0.02
+			goods_output_radioactive_ore_mult = 0.02
+			state_pollution_generation_add = 10
+		}	
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_paper_add = 10 # 300
+			goods_input_explosives_add = 40 # 2,000
+			goods_input_coal_add = 40 #1,200
+			goods_input_electricity_add = 40 #1,200
+			goods_input_engines_add = 20 #1,200
+			# Total 5,900
+
+			goods_output_radioactive_ore_add = 340 #13,600
+
+		}
+		
+		level_scaled = {
+
+		# About 8,000 People
+			building_employment_clerks_add = 2000
+			building_employment_academics_add = 1000
+			building_employment_bureaucrats_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1000
+			building_employment_laborers_add = 1000
+		}
+	}
+}

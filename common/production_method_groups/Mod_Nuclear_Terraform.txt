@@ -1,0 +1,106 @@
+﻿# To ensure the game rule 'monument_effects' works properly, new monument buildings added should be given the optional base methods
+# 	pm_monument_prestige_only
+#	pm_monument_no_effects
+# 
+# 'monument_effects' additionally needs to be amended with flags disabling the new monument's Base method
+# PM Groups for Monuments should have the 'is_hidden_when_unavailable' flag to ensure only one alternative is visible at any time (unless the player actually has an option they can switch to)
+
+pmg_base_californian_water_exchange = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_californian_aqueduct
+	}
+}
+
+pmg_base_midwest_aqueduct = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_midwest_aqueduct
+	}
+}
+
+pmg_base_Industrial_Canal = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_Industrial_Canal
+	}
+}
+
+pmg_base_Minning_Canal = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_Mining_Canal
+	}
+}
+
+pmg_base_rainmaking_array = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_rainmaking_array
+	}
+}
+
+pmg_base_moisture_control = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_moisture_control
+	}
+}
+
+
+pmg_base_swamp_drain = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_swamp_drain
+	}
+}
+
+pmg_base_great_dam = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_great_dam
+	}
+}
+
+pmg_base_hydralic_fracturing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_hydralic_fracturing
+	}
+}
+
+pmg_base_mega_shipyard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_mega_shipyard
+	}
+}
+
+
+
+pmg_military_production_mega_shipyard = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_military_production_mega_shipyard_lv_0
+		pm_military_production_mega_shipyard_lv_1
+		pm_military_production_mega_shipyard_lv_2
+		pm_military_production_mega_shipyard_lv_3
+		pm_military_production_mega_shipyard_lv_4
+		pm_military_production_mega_shipyard_lv_5
+		pm_military_production_mega_shipyard_lv_6
+	}
+}
+
+pmg_base_floating_city = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_floating_city
+	}
+}
+
+pmg_base_sea_dykes = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_sea_dykes
+	}
+}

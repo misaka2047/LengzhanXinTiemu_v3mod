@@ -1,0 +1,80 @@
+﻿pmg_base_vertical_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Input: Steel, Fertilizer, irradiated material (small amount), glass (small amount)
+		pm_vertical_farm_all_wheat
+		pm_vertical_farm_three_quarter_wheat
+		pm_vertical_farm_half_wheat
+	}
+}
+
+pmg_energy_advanced_agriculture = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_reinforced_green_house #Steel and glass
+		pm_man_made_sun #nuclear engine and fuel
+		pm_agriculture_use_light_bulb #Hell load of electricity
+	}
+}
+
+pmg_water_and_fertilizer_source = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_water_source
+		pm_transported_water #+10 Transportation, -10 fertilizer
+		pm_interstate_water_pipe #+16 transportation, -16 fertilizer
+		pm_standardized_fertilizer_distribution #-10 transportation, +10 fertilizer
+	}
+}
+
+pmg_agricultural_automation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_skilled_labor_force #Default
+		pm_programmable_irrigation
+		pm_algorithmic_growth_planning
+	}
+
+}
+
+pmg_wetwire_augmentation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_wetwire_usage #Default
+		
+		# Basics
+		pm_basic_augmentation_assorted_drinks
+		pm_basic_augmentation_food
+		pm_basic_augmentation_weed 
+
+		# Advanced
+		pm_extensive_augmentation_assorted_drinks
+		pm_extensive_augmentation_food
+		pm_extensive_augmentation_weed
+	}
+}
+
+pmg_base_synthetic_food = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Input: Steel, Fertilizer, irradiated material (small amount)
+		pm_synthetic_food_lab_grown_meat #wheat, electricity, and irradiated material to meat
+		pm_synthetic_organic_rubber #wheat and electricity to meat
+		pm_synthetic_food_corn_syrup #wheat, irradiated material, engine, electricity to sugar
+		pm_synthetic_food_industrial_alcohol
+	}
+}
+
+pmg_base_mega_greehouse = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Input: steel, electricity, glass, fertilizer, irradiated material
+		pm_mega_greenhouse_weed_greenhouse # (produce opium)
+		pm_mega_greenhouse_coffee #(produce coffee)
+		pm_mega_greenhouse_tea #(produce tea)
+		pm_mega_greenhouse_berries #(produce fruit)
+		pm_mega_greenhouse_orchard #Produce wine
+		pm_mega_greenhouse_tobacco #Produce tobacco
+	}
+}
+

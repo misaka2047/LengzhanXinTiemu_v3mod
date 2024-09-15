@@ -1,0 +1,35 @@
+﻿CHARACTERS = {
+	c:CUB = {
+		create_character = { #拉蒙·格劳·圣马丁
+			first_name = "Ramon·Glau"
+			last_name = "Saint_Martin"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1887.9.13
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				charismatic #魅力四射
+				brave #勇敢
+			}
+		}		
+
+		create_character = { #富尔亨西奥·巴蒂斯塔
+			first_name = "Fulgencio"
+			last_name = "Batista"
+			historical = yes
+			is_general = yes
+			ig_leader = yes
+			commander_rank = commander_rank_4
+			birth_date = 1901.1.16
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				celebrity_commander #明星指挥官
+				imperious #盛气凌人
+				bigoted #偏执
+			}
+		}	
+	}
+}

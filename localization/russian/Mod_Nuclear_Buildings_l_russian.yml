@@ -1,0 +1,102 @@
+﻿l_russian:
+
+# New Buildings
+
+building_rad_fungus_cave_farm:0 "Радиационная-Грибковая ферма"
+building_rad_fungus_cave_farm_lens_option:0 "Разместить $строительство_рад_грибковой_фермы$"
+
+building_rad_fungus_colony:0 "Радиационно-грибковая колония"
+building_rad_fungus_colony_lens_option:0 "Разместить $строительство_рад_грибковой_колонии$"
+
+building_heart_of_appalachia:0 "Рад-Грибная колония в сердце Аппалачей"
+building_heart_of_appalachia_lens_option:0 "Исследовать $Здание_Сердца_Аппалачии$"
+
+building_uranium_mine:0 "Урановый рудник"
+building_uranium_mine_lens_option:0 "Разместить $Строительство_Урановой_Шахты$"
+
+building_ancient_arsenal_scavenge:0 "Древний арсенал"
+building_ancient_arsenal_scavenge_lens_option:0 "Поиск Новых Древних Арсеналов"
+
+building_nuclear_reactor:0 "Ядерный реактор"
+building_nuclear_reactor_lens_option:0 "Разместить $строительство_ядерного_реактора$"
+
+building_nuclear_jet_airport:0 "Аэропорт Ядерной Реактивной Авиации"
+building_nuclear_jet_airport_lens_option:0 "Разместить $строительство_ядерного_реактивного_аэродрома$"
+
+building_nuclear_processing_complex:0 "Ядерный Технологический Комплекс"
+building_nuclear_processing_complex_lens_option:0 "Разместить $здание_ядерного_перерабатывающего_комплекса$"
+
+building_nuclear_fuel_refinery:0 "Перерабатывающий Завод Ядерного Топлива"
+building_nuclear_fuel_refinery_lens_option:0 "Разместить $строительство_ядерного_топливного_завода$"
+
+building_nuclear_bomb_factory:0 "Завод Ядерной Бомбы"
+building_nuclear_bomb_factory_lens_option:0 "Разместить $строительство_завода_ядерной_бомбы$"
+
+building_nuclear_engine_industry:0 "Завод ядерных двигателей"
+building_nuclear_engine_industry_lens_option:0 "Разместить $строительство_промышленности_ядерных_двигателей$"
+
+building_nuclear_jet_industry:0 "Завод по производству ядерных реактивных двигателей"
+building_nuclear_jet_industry_lens_option:0 "Разместить $строительство_ядерной_реактивной_индустрии$"
+
+building_wetwires_factory:0 "Завод по производству имплантатов Дэка"
+building_wetwires_factory_lens_option:0 "Разместить $строительство_фабрики_по производству_имплантов_Дэка$"
+
+building_augmentation_facility:0 "Аугментариум"
+building_augmentation_facility_lens_option:0 "Разместить $здание_аугментации_объекта$"
+
+building_vertical_farm:0 "Вертикальная ферма"
+building_vertical_farm_lens_option:0 "Построить еще одну $строительство_вертикальных_ферм$"
+
+building_synthetic_food_plant:0 "Завод по производству синтетических продуктов питания"
+building_synthetic_food_plant_lens_option:0 "Разместить $строительство_синтетической_пищевой_фабрики$"
+
+building_mega_greenhouse:0 "Мега Теплица"
+building_mega_greenhouse_lens_option:0 "Построить еще одну $строительство_Мега_Теплицы$"
+
+building_submerged_farm:0 "Подводное хозяйство"
+building_submerged_farm_lens_option:0 "Комиссия $строительство_подводной_фермы$"
+
+building_ocean_mining_operation:0 "Эксплуатация Океанических Месторождений"
+building_ocean_mining_operation_lens_option:0 "Утвердить дополнительные $строительство_океанской_добывающей_операции$"
+
+### Terraform Station
+building_Californian_Water_Exchange_Program:0 "Калифорнийская система водообмена"
+building_Californian_Water_Exchange_Program_lens_option:0 "Комиссия $По_строительству_Калифорнийской_водообменной_программы$"
+
+building_Midwest_Aqueduct:0 "Акведук Среднего Запада"
+building_Midwest_Aqueduct_lens_option:0 "здание_Среднезападного_Акведука$"
+
+building_Illinois_Michigan_Canal:0 "Канал Иллинойс - Мичиган"
+building_Illinois_Michigan_Canal_lens_option:0 "Расширить старый $здание_Иллинойс_Мичиган_канал$"
+
+building_New_York_Erie_Canal:0 "Канал Гудзон-Лейк-Эри"
+building_New_York_Erie_Canal_desc:0 "Расширить канал  $здание_Нью_Йорк_Эри_Канал$ система"
+
+building_Detroit_Sault_Ste_Marie_Canal:0 "Канал Детройт-Солт-Сент-Мари"
+building_Detroit_Sault_Ste_Marie_Canal_desc:0 "Модернизация $Здание_Детройт_Солт_Стен_Мари_Канал$ система"
+
+building_Colorado_rainmaking_array:0 "Массив дождя в Колорадо"
+building_Colorado_rainmaking_array_lens_option:0 "Развертывание $строительство_колорадского_дождевого_производства$"
+
+building_Oregon_Moisture_Control:0 "Орегонская система контроля влажности"
+building_Oregon_Moisture_Control_lens_option:0 "Построить $здание_Контроль_влажности_Орегон$"
+
+building_Louisiana_Swamp_Control:0 "Система осушения болот Луизианы"
+building_Louisiana_Swamp_Control_lens_option:0 "Избавиться от болот и топей Луизианы."
+
+building_hoover_dam:0 "Дамба Гувера"
+building_hoover_dam_lens_option:0 "Построить Дамбу Гувера"
+
+building_hydraulic_fracturing_station:0 "Юго-западная система гидроразрыва пласта"
+building_hydraulic_fracturing_station_lens_option:0 "Построить $здание_станции_гидравлического_разрыва пласта$"
+
+building_greater_boston_naval_yard:0 "Бостонская пароходная мега-верфь"
+building_greater_boston_naval_yard_lens_option:0 "Начать строительство мега-верфи в Бостоне"
+
+building_vickers_armstrong_shipyard:0 "Верфь Виккерс-Армстронг"
+building_vickers_armstrong_shipyard_lens_option:0 "Значительно расширить верфь Виккерс-Армстронг"
+
+building_second_new_york:0 "Второй Нью-Йорк"
+building_second_new_york_lens_option:0 "Построить $здание_второй_новостройки_Нью_Йорка$"
+
+

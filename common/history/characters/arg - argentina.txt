@@ -1,0 +1,25 @@
+﻿CHARACTERS = {
+	c:ARG = {
+		create_character = {
+			#胡安·庇隆
+			first_name = "Juan"
+			last_name = "Peron"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			is_general = yes
+			birth_date = 1895.10.8
+			dna = dna_president_manuel_de_rosas
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #独裁主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			culture=cu:north_german #北德
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+		}
+	}
+}

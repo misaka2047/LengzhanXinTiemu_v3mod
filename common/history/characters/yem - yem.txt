@@ -1,0 +1,93 @@
+﻿CHARACTERS = {
+	c:YEM = {
+		create_character = {
+			#国王叶海亚一世
+			historical = yes
+			first_name = "Yahya·Mohammed"
+			last_name = "HamidDing"
+			ruler = yes
+			noble = yes
+			birth_date = 1867.1.1
+			interest_group = ig_devout
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+			}
+		}	
+
+		create_character = {
+			#王储艾哈迈德·本·叶海亚
+			historical = yes
+			first_name = "Ahmad"
+			last_name = "Yahya"
+			heir = yes
+			noble = yes
+			birth_date = 1897.1.16
+			interest_group = ig_devout
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				expensive_tastes #昂贵嗜好
+				hedonist #享乐主义者
+				innovative #创新精神
+			}
+		}	
+
+		create_character = {
+			#王子阿卜杜拉·叶海亚
+			historical = yes
+			first_name = "Abdallah"
+			last_name = "Yahya"
+			ig_leader = yes #利益集团领袖
+			noble = yes
+			birth_date = 1897.1.16
+			interest_group = ig_devout
+			ideology = ideology_market_liberal #市场自由主义者
+			traits = {
+				innovative #创新精神
+			}
+		}	
+
+		create_character = {
+			ig_leader = yes #利益集团领袖
+			culture = cu:turkish
+			interest_group = ig_intelligentsia #知识分子
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:turkish
+			interest_group = ig_armed_forces #军队
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:turkish
+			interest_group = ig_petty_bourgeoisie #小市民
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:turkish
+			interest_group = ig_rural_folk #乡村民众
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:turkish
+			interest_group = ig_landowners #地主
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:turkish
+			interest_group = ig_industrialists #实业家
+		}
+
+		create_character = {
+			culture = cu:turkish
+			interest_group = ig_trade_unions #利益集团工会
+			ig_leader = yes #利益集团领袖
+		}
+	}
+}

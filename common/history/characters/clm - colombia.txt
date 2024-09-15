@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:CLM = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			dna = dna_francisco_de_paula_santander
+		}
+	}
+}

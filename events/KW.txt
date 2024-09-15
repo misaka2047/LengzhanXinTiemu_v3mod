@@ -1,0 +1,243 @@
+﻿namespace = KW_event
+
+KW_event.1 = {
+    type = country_event
+
+    title = korean_war.t 								
+    desc = korean_war.d 								
+    flavor = korean_war.f 							
+
+    event_image = { video = "gfx/event_pictures/middleeast_battlefield_trenches.bk2" }
+
+    icon = "gfx/interface/icons/event_icons/bicorne_hat.dds" 	
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear" 	
+
+    duration = 1 # Duration to fire if triggers are met
+	
+	trigger = {												
+		
+		#Overlord conditions
+		exists = c:PRK this = c:PRK
+		c:PRK = { 											
+			is_a_communist_government = yes 
+			is_at_war = no
+			is_sufficiently_independent = yes
+		}
+		
+		# Event has not been fired before
+		NOT = { has_variable = korean_war_hiw }
+		
+		exists = c:KOR 									
+		game_date > 1950.5.25																	
+		
+		NOT = { is_a_communist_government = yes }							
+		is_sufficiently_independent = yes								
+		is_at_war = no											
+		
+		can_go_to_war = yes										
+		
+							
+		
+    }
+	
+	immediate = {
+	
+		# Fire only once
+		set_variable = korean_war_hiw						
+		
+	}
+    
+    option = {
+        name = historical_interstate_wars.option.1				
+        highlighted_option = yes
+		
+		c:KOR = { 
+			if = {
+				limit = { has_state_in_state_region = STATE_PYONGYANG }
+				random_scope_state = {
+					limit = { state_region = s:STATE_PYONGYANG }
+					set_state_owner = c:PRK
+				}
+			}
+		}
+		c:PRK = {
+			if = {
+				limit = { has_state_in_state_region = STATE_SEOUL }
+				random_scope_state = {
+					limit = { state_region = s:STATE_SEOUL }
+					set_state_owner = c:KOR
+				}
+			}
+		}
+		
+			create_diplomatic_play = {
+				name = korean_war
+				type = dp_annex_war_historical
+				target_country = c:KOR
+				
+				#war = yes
+				
+				#TEMP
+				add_war_goal = {
+					holder = c:KOR
+					type = annex_country
+					target_country = c:PRK
+				}
+				add_war_goal = {
+					holder = c:PRK
+					type = annex_country
+					target_country = c:KOR
+				}
+			}
+		    random_diplomatic_play = { limit = { name = korean_war } add_escalation = 90 }
+		}
+		
+		# Fire only once	# Change variable ****
+		
+		ai_chance = { 
+			base = 90 
+		}
+		
+    }
+	
+
+KW_event.2 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = war.kwussr.t
+	desc = war.kwussr.d
+	flavor = war.kwussr.f
+
+	event_image = {
+		video = "southamerica_war_civilians"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
+	
+	trigger = { game_date > 1950.5.31
+		      this = c:RUS
+			  NOT = { has_variable = korean_war_ussr }	
+			  c:PRK = {
+				has_variable = korean_war_hiw				
+			  }
+    }
+	
+	immediate = {
+	
+		# Fire only once
+		set_variable = korean_war_ussr						
+		
+	}		
+
+	option = {
+		name = war.kwussr.a
+		default_option = yes
+		random_diplomatic_play = { limit = { name = korean_war } add_initiator_backers = { c:RUS } }
+	}	
+
+	option = {
+		name = war.kwussr.b
+	}
+}
+
+KW_event.3 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = war.kwusa.t
+	desc = war.kwusa.d
+	flavor = war.kwusa.f
+
+	event_image = {
+		video = "southamerica_war_civilians"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
+	
+	trigger = { game_date > 1950.5.31
+		      this = c:USA
+			  NOT = { has_variable = korean_war_usa }	
+			  c:PRK = {
+				has_variable = korean_war_hiw				
+			  }				
+    }
+	
+	immediate = {
+	
+		# Fire only once
+		set_variable = korean_war_usa						
+	}		
+
+	option = {
+		name = war.kwusa.a
+		default_option = yes
+		random_diplomatic_play = { limit = { name = korean_war } add_target_backers = { c:USA } }
+	}	
+
+	option = {
+		name = war.kwusa.b
+	}
+ }
+
+
+KW_event.4 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = war.kwchn.t
+	desc = war.kwchn.d
+	flavor = war.kwchn.f
+
+	event_image = {
+		video = "southamerica_war_civilians"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
+	
+	trigger = { game_date > 1950.6.25
+		      this = c:PRC	
+			  NOT = { has_variable = korean_war_chn }	
+			  c:PRK = {
+				has_variable = korean_war_hiw				
+			  }		
+			  c:USA = {
+				has_variable = korean_war_usa				
+			  }		
+    }
+	
+	immediate = {
+	
+		# Fire only once
+		set_variable = korean_war_chn						
+		
+	}	
+
+	
+	option = {
+		name = war.kwchn.a
+		default_option = yes
+		random_diplomatic_play = { limit = { name = korean_war } add_initiator_backers = { c:PRC } }
+		add_diplomatic_play_war_support = { target = c:PRK value = 75 }
+		aadd_modifier = {
+			name = the_korea_war_against_america
+			months = 24
+		}
+	}	
+
+	option = {
+		name = war.kwchn.b
+	}
+}

@@ -1,0 +1,8 @@
+pmg_transportation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_transportation_1
+		pm_transportation_2
+		pm_transportation_3
+}
+}

@@ -1,0 +1,26 @@
+﻿ddr_decision = { #成立东德
+	is_shown = { 
+		this = c:RUS
+		exists = c:BRD
+		NOT = { exists = c:DDR }
+	}
+	possible = {
+		game_date > 1949.1.1
+	}
+	cooldown = {
+		years = -1
+	}
+	
+	when_taken = {
+    	trigger_event = {
+    		id = ger_events.3
+    		days = 1
+    	}
+    }
+	ai_chance = {
+		base = 50
+	}
+}
+
+
+

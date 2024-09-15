@@ -1,0 +1,396 @@
+﻿goods_input_services_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_transportation_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_grain_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_meat_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_sugar_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_tobacco_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_liquor_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_fabric_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_rubber_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_iron_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_sulfur_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_oil_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_coal_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_gold_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_electricity_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_groceries_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_plastic_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_furniture_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_paper_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_clothes_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_steel_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_glass_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_tools_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_dye_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_petrol_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_ammunition_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_housing_services_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_machine_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_luxury_furniture_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_radios_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_opium_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_engines_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_fine_art_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_steamers_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_small_arms_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_automobiles_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_equipment_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_telephones_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_tanks_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_artillery_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_aeroplanes_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_computer_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_ironclads_add = {
+	good = yes
+	percent = no
+}
+
+goods_input_spacecraft_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_services_add = {
+good = yes
+percent = no
+}
+goods_output_transportation_add = {
+good = yes
+percent = no
+}
+goods_output_grain_add = {
+good = yes
+percent = no
+}
+goods_output_meat_add = {
+good = yes
+percent = no
+}
+goods_output_sugar_add = {
+good = yes
+percent = no
+}
+goods_output_tobacco_add = {
+good = yes
+percent = no
+}
+goods_output_liquor_add = {
+good = yes
+percent = no
+}
+goods_output_fabric_add = {
+good = yes
+percent = no
+}
+goods_output_rubber_add = {
+good = yes
+percent = no
+}
+goods_output_iron_add = {
+good = yes
+percent = no
+}
+goods_output_sulfur_add = {
+good = yes
+percent = no
+}
+goods_output_oil_add = {
+good = yes
+percent = no
+}
+goods_output_coal_add = {
+good = yes
+percent = no
+}
+goods_output_gold_add = {
+good = yes
+percent = no
+}
+goods_output_electricity_add = {
+good = yes
+percent = no
+}
+goods_output_groceries_add = {
+good = yes
+percent = no
+}
+goods_output_plastic_add = {
+good = yes
+percent = no
+}
+goods_output_furniture_add = {
+good = yes
+percent = no
+}
+goods_output_paper_add = {
+good = yes
+percent = no
+}
+goods_output_clothes_add = {
+good = yes
+percent = no
+}
+goods_output_steel_add = {
+good = yes
+percent = no
+}
+goods_output_glass_add = {
+good = yes
+percent = no
+}
+goods_output_tools_add = {
+good = yes
+percent = no
+}
+goods_output_dye_add = {
+good = yes
+percent = no
+}
+goods_output_petrol_add = {
+good = yes
+percent = no
+}
+goods_output_ammunition_add = {
+good = yes
+percent = no
+}
+goods_output_housing_services_add = {
+good = yes
+percent = no
+}
+goods_output_machine_add = {
+good = yes
+percent = no
+}
+goods_output_luxury_furniture_add = {
+good = yes
+percent = no
+}
+goods_output_radios_add = {
+good = yes
+percent = no
+}
+goods_output_opium_add = {
+good = yes
+percent = no
+}
+goods_output_engines_add = {
+good = yes
+percent = no
+}
+goods_output_fine_art_add = {
+good = yes
+percent = no
+}
+goods_output_steamers_add = {
+good = yes
+percent = no
+}
+goods_output_small_arms_add = {
+good = yes
+percent = no
+}
+goods_output_automobiles_add = {
+good = yes
+percent = no
+}
+goods_output_equipment_add = {
+good = yes
+percent = no
+}
+goods_output_telephones_add = {
+good = yes
+percent = no
+}
+goods_output_tanks_add = {
+good = yes
+percent = no
+}
+goods_output_artillery_add = {
+good = yes
+percent = no
+}
+goods_output_aeroplanes_add = {
+good = yes
+percent = no
+}
+goods_output_computer_add = {
+good = yes
+percent = no
+}
+goods_output_ironclads_add = {
+good = yes
+percent = no
+}
+goods_output_spacecraft_add = {
+good = yes
+percent = no
+}

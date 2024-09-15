@@ -1,0 +1,144 @@
+﻿namespace = xinanjiaofei
+
+xinanjiaofei.1 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = xinanjiaofei.1.t
+	desc = xinanjiaofei.1.d
+	flavor = xinanjiaofei.1.f
+
+	event_image = {
+		video = "unspecific_armored_train"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	trigger = {
+	
+	}
+	
+	immediate = {
+		change_variable = {
+			name = xinanjiaofei_var
+			add = 10
+		}
+	}
+	
+	option = {
+		name = xinanjiaofei.1.a
+		default_option = yes
+	}
+	
+}
+
+
+xinanjiaofei.2 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = xinanjiaofei.2.t
+	desc = xinanjiaofei.2.d
+	flavor = xinanjiaofei.2.f
+
+	event_image = {
+		video = "unspecific_armored_train"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = xinanjiaofei.2.a
+		default_option = yes
+		change_variable = {
+			name = xinanjiaofei_var
+			add = -10
+		}
+	}
+	
+	option = {
+		name = xinanjiaofei.2.b
+		add_modifier = {
+			name = himalayan_expenses
+			multiplier = money_amount_multiplier_small
+			months = short_modifier_time
+		}
+		change_variable = {
+			name = xinanjiaofei_var
+			add = 20
+		}
+	}	
+}
+
+
+
+xinanjiaofei.3 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = xinanjiaofei.3.t
+	desc = xinanjiaofei.3.d
+	flavor = xinanjiaofei.3.f
+
+	event_image = {
+		video = "unspecific_armored_train"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+	
+	trigger = {
+	
+	}
+	
+	immediate = {
+		random_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_YUNNAN
+					state_region = s:STATE_SICHUAN
+					state_region = s:STATE_GUIZHOU
+					state_region = s:STATE_CHONGQING
+				}
+			}
+			add_modifier = {
+				name = modifier_attacked_supply_train
+				months = short_modifier_time
+			}
+		}
+	}
+	option = {
+		name = xinanjiaofei.3.a
+		default_option = yes
+	}
+
+	option = {
+		name = xinanjiaofei.3.b
+		add_modifier = {
+				name = qinglitufei_modifier
+				months = short_modifier_time
+		}
+		change_variable = {
+			name = xinanjiaofei_var
+			add = 20
+		}
+	}
+	
+}
+
+

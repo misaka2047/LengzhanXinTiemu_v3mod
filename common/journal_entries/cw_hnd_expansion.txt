@@ -1,0 +1,140 @@
+# 印度扩张日志
+# 一阶段，得到克什米尔，果阿，本地治里
+je_hnd_expansion_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+    complete = {
+        owns_entire_state_region = STATE_BOMBAY
+        owns_entire_state_region = STATE_MADRAS  
+        owns_entire_state_region = STATE_KASHMIR 
+    }
+	
+	on_complete = {
+		add_modifier = {
+			name = hnd_expansion_modifier
+            months = -1
+		}
+		trigger_event = {
+			id = hnd_expansion.6
+		}
+	}
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}
+# 二阶段，征服巴基斯坦，孟加拉和喜马拉雅
+je_bht_expansion_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+    complete = {
+        owns_entire_state_region = STATE_NORTH_BENGAL
+        owns_entire_state_region = STATE_SOUTH_BENGAL  
+        owns_entire_state_region = STATE_PUNJAB 
+        owns_entire_state_region = STATE_BALUCHISTAN
+        owns_entire_state_region = STATE_PASHTUNISTAN
+        owns_entire_state_region = STATE_SINDH
+        owns_entire_state_region = STATE_HIMALAYAS 
+        c:BHT ?= this
+    }
+
+    on_complete = {
+		add_modifier = {
+			name = bht_expansion_modifier
+            months = -1
+		}
+		trigger_event = {
+			id = bht_expansion.1
+		}
+	}
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+# 三阶段，征服或控制缅甸、阿富汗、西藏地区，征服锡兰
+
+je_bht_expansion_second_main = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+    complete = {
+        owns_entire_state_region = STATE_CEYLON
+        OR = {
+            owns_entire_state_region = STATE_LHASA
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_LHASA
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_NGARI
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_NGARI
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_WESTERN_AFGHANISTAN
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_WESTERN_AFGHANISTAN
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_EASTERN_AFGHANISTAN
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_EASTERN_AFGHANISTAN
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_KACHIN
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_KACHIN
+            }
+        }
+        OR = {
+            owns_entire_state_region = STATE_PEGU
+            any_country = {
+                is_subject_of = c:BHT
+                owns_entire_state_region = STATE_PEGU
+            }
+        }      
+    }
+    on_complete = {
+		add_modifier = {
+			name = bht_expansion_second_modifier
+            months = -1
+		}
+		trigger_event = {
+			id = bht_expansion_second.3
+		}
+	}
+    fail = {
+			custom_tooltip = {
+				text = lost_war_tt
+				OR = {
+					has_variable = recently_lost_war
+					AND = {
+						has_variable = recently_had_war
+						NOT = {
+							has_variable = recently_won_war
+						}
+					}
+				}
+			}
+    }
+    on_fail = {
+		trigger_event = {
+			id = bht_expansion_second.2
+		}
+	}
+    weight = 1000
+    should_be_pinned_by_default = yes    
+}

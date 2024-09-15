@@ -1,0 +1,44 @@
+AOF = { # 西非
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AOFREP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AOF_absolute_monarchy = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AOFEMP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AOF_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AOFREP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AOF_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AOF_communist .dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AOF_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AOFEMP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AOF_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_AOF.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}

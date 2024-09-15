@@ -1,0 +1,8 @@
+taizu_template = {
+    historical = yes
+    ruler = yes
+    birth_date = 1893.12.26
+    dna = dna_taizu
+    culture = cu:han
+    interest_group = ig_rural_folk
+}

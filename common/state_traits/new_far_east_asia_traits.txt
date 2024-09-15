@@ -1,0 +1,455 @@
+﻿state_trait_the_loess_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_the_red_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_seto_inland_sea = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_pearl_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+	}
+}
+
+state_trait_yangtze_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+		state_market_access_price_impact = 0.05
+	}
+}
+
+state_trait_yellow_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+		state_market_access_price_impact = 0.05
+	}
+}
+
+state_trait_gobi_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+	  
+	modifier = {
+        building_group_bg_ranching_throughput_add = -0.1
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+    }
+}
+
+
+state_trait_taklamakan_desert = {
+	icon = "gfx/interface/icons/state_trait_icons/dry_climate.dds"
+	
+	modifier = {
+        building_group_bg_ranching_throughput_add = -0.1
+		building_group_bg_agriculture_throughput_add = -0.2
+		building_group_bg_plantations_throughput_add = -0.2
+		state_construction_mult = -0.25
+		state_infrastructure_mult = -0.25
+    }
+}
+
+state_trait_siberian_terrain = {
+	icon = "gfx/interface/icons/state_trait_icons/cold_climate.dds"
+	
+	modifier = {
+		building_group_bg_ranching_throughput_add = -0.1
+		state_construction_mult = -0.2
+		state_infrastructure_mult = -0.2
+		state_migration_pull_mult = -0.5
+	}
+}
+
+state_trait_eastern_steppe = {
+	icon = "gfx/interface/icons/state_trait_icons/poor_soils.dds"
+
+	modifier = {
+		building_group_bg_ranching_throughput_add = 0.1
+		building_group_bg_agriculture_throughput_add = -0.1
+		building_group_bg_plantations_throughput_add = -0.1
+	}
+}
+
+state_trait_kaiping_coalfield = {
+    	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_edo_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_chikuho_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_ishikari_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+}
+
+state_trait_nara_basin = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		state_infrastructure_add = 10
+		building_rice_farm_throughput_add = 0.1
+	}
+}
+
+state_trait_golden_horn_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_kanto_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		state_infrastructure_add = 15
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+}
+
+state_trait_honam_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		state_infrastructure_add = 5
+		building_group_bg_agriculture_throughput_add = 0.1
+	}
+}
+
+state_trait_dalian_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_nagasaki_bay = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+##########
+state_trait_grand_cannel = {
+    icon = "gfx/interface/icons/state_trait_icons/grand_cannel.dds"
+	modifier = {
+		state_infrastructure_add = 20
+		state_construction_mult = 0.20
+		state_market_access_price_impact = 0.15
+	}
+}
+
+state_trait_northern_china_plain = {
+    icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_sorthern_china_plain = {
+    icon = "gfx/interface/icons/state_trait_icons/great_plains.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_beijing = {
+    icon = "gfx/interface/icons/state_trait_icons/beijing.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_service_throughput_add = 0.40
+		state_construction_mult = 0.20
+		state_migration_pull_mult = 0.15
+	}
+}
+
+state_trait_jiangdong = {
+    icon = "gfx/interface/icons/state_trait_icons/nanjing.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.30
+		building_group_bg_service_throughput_add = 0.30
+		state_construction_mult = 0.15
+		state_migration_pull_mult = 0.20
+	}
+}
+
+state_trait_guangzhou13hang = {
+    icon = "gfx/interface/icons/state_trait_icons/guangzhou13hang.dds"
+	modifier = {
+	building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_service_throughput_add = 0.35
+		state_migration_pull_mult = 0.10
+		state_construction_mult = 0.10
+	}
+}
+
+state_trait_xian = {
+    icon = "gfx/interface/icons/state_trait_icons/xian.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.15
+		state_migration_pull_mult = 0.15
+		state_construction_mult = 0.15
+	}
+}
+
+state_trait_shengjing = {
+    icon = "gfx/interface/icons/state_trait_icons/shengjing.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.15
+		state_migration_pull_mult = 0.15
+		state_construction_mult = 0.15
+	}
+}
+
+state_trait_dujiangyan = {
+    icon = "gfx/interface/icons/state_trait_icons/dujiangyan.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+		state_construction_mult = 0.15
+	}
+}
+
+state_trait_tokyo = {
+    icon = "gfx/interface/icons/state_trait_icons/jianghu.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_service_throughput_add = 0.30
+		state_construction_mult = 0.15
+		state_migration_pull_mult = 0.20
+	}
+}
+
+state_trait_osaka = {
+    icon = "gfx/interface/icons/state_trait_icons/osaka.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.20
+		building_group_bg_service_throughput_add = 0.20
+		state_construction_mult = 0.15
+		state_migration_pull_mult = 0.20
+	}
+}
+
+state_trait_seoul = {
+    icon = "gfx/interface/icons/state_trait_icons/seoul.dds"
+	modifier = {
+		building_group_bg_manufacturing_throughput_add = 0.15
+		building_group_bg_service_throughput_add = 0.15
+		state_construction_mult = 0.10
+		state_migration_pull_mult = 0.20
+	}
+}
+
+state_trait_tokyo_harbor = {
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.20
+		state_building_port_max_level_add = 8
+		state_building_naval_base_max_level_add = 18
+	}
+}
+
+state_trait_the_KANTO_plain = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.10
+		building_group_bg_plantations_throughput_add = 0.10
+	}
+}
+
+state_trait_budalagong = {
+    icon = "gfx/interface/icons/state_trait_icons/budalagong.dds"
+	modifier = {
+		state_migration_pull_mult = 0.10
+		state_conversion_mult = 0.50
+	}
+}
+
+state_trait_kongmiao = {
+    icon = "gfx/interface/icons/state_trait_icons/kongmiao.dds"
+	modifier = {
+		state_education_access_wealth_add = 0.010
+		state_migration_pull_mult = 0.10
+		state_conversion_mult = 0.50
+	}
+}
+
+state_trait_shanxi_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.25
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_inner_Mongolia_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.18
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_inner_great_henan_coalfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_coal_mine_throughput_add = 0.20
+		building_group_bg_oil_extraction_throughput_add = 0.20
+	}
+}
+
+state_trait_manchuria_forest = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+	}
+}
+
+state_trait_royalpark = {
+	icon = "gfx/interface/icons/state_trait_icons/royalpark.dds"
+	
+	modifier = {
+		state_tax_capacity_add = 500
+		building_group_bg_service_throughput_add = 0.30
+	}
+}
+
+state_trait_manchu_black_soil = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.30
+		building_group_bg_ranching_throughput_add = 0.30
+		building_group_bg_plantations_throughput_add = 0.30
+	}
+}
+
+state_trait_yungui_plateau = {
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	modifier = {
+		state_construction_mult = -0.10
+		state_infrastructure_mult = -0.10
+	}
+}
+
+state_trait_panzhihua_ironmine = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	modifier = {
+		building_iron_mine_throughput_add = 0.40
+	}
+}
+
+state_trait_jidong_ironmine = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	modifier = {
+		building_iron_mine_throughput_add = 0.30
+	}
+}
+
+state_trait_anben_ironmine = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	modifier = {
+		building_iron_mine_throughput_add = 0.20
+	}
+}
+
+state_trait_yellowsea_fishfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.25
+	}
+}
+
+state_trait_eastsea_fishfield = {
+    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.30
+	}
+}
+
+state_trait_southeast_hilly = {
+    icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_hengduan_mountains = {
+	icon = "gfx/interface/icons/state_trait_icons/waterfall.dds"
+	modifier = {
+		goods_output_electricity_mult = 0.75
+	}
+}

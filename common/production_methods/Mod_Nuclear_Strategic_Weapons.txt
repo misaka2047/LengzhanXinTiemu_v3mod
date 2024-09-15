@@ -1,0 +1,374 @@
+﻿
+# Squad infantry cost: $240
+# Mechanized Infantry cost: $410
+
+
+
+pm_converted_mining_dynamite = {
+	texture = "gfx/interface/icons/goods_icons/explosives.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 5500
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_explosives_add = 50 #2,000
+			goods_input_steel_add = 16 #800
+			goods_input_tools_add = 30 #800
+			goods_input_electricity_add = 30 #900
+
+			## No Use, implemented in scripted_value
+			building_monthly_warhead_production = 1
+		}
+
+		level_scaled = {
+			## About 5,000 people
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_academics_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+pm_military_fission_warhead = {
+	texture = "gfx/interface/icons/production_method_icons/percussion_caps.dds"
+	unlocking_technologies = {
+		strategic_nuclear_catapult
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 6,700
+			goods_input_nuclear_fuel_add = 40 #1,000
+			goods_input_explosives_add = 50 #2,500
+			goods_input_tools_add = 40 #800
+			goods_input_electricity_add = 40 #1200
+
+			## No Use, implemented in scripted_value
+			building_monthly_warhead_production = 2
+		}
+
+		level_scaled = {
+			## About 5,000 people
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_academics_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+pm_military_fusion_warhead = {
+	texture = "gfx/interface/icons/production_method_icons/explosive_shells.dds"
+	unlocking_technologies = {
+		strategic_nuclear_catapult
+		uncontrolled_fusion
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 8,000
+			goods_input_nuclear_fuel_add = 45 #1,250
+			goods_input_explosives_add = 75 #3,750
+			goods_input_tools_add = 40 #800
+			goods_input_electricity_add = 40 #1200
+
+			## No Use, implemented in scripted_value
+			building_monthly_warhead_production = 3
+		}
+
+		level_scaled = {
+			## About 4,000 people
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_officers_add = 500
+			building_employment_academics_add = 1000
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+pm_programmed_fusion_warhead = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Tech_Icons/fusion_explosive.dds"
+	unlocking_technologies = {
+		autonomous_guiding_system
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 11,000
+			goods_input_nuclear_fuel_add = 40 #1,000
+			goods_input_explosives_add = 60 #3,000
+			goods_input_tools_add = 40 #1,600
+			goods_input_electricity_add = 40 #1200
+			goods_input_radios_add = 20 #1,600
+			goods_input_programmables_add = 40 #1,200
+
+			## No Use, implemented in scripted_value
+			building_monthly_warhead_production = 5
+		}
+
+		level_scaled = {
+			## About 3,500 people
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 1000
+			building_employment_officers_add = 500
+			building_employment_academics_add = 1000
+			building_employment_bureaucrats_add = 500
+		}
+	}
+}
+
+
+## Land-Based
+### Ammunition, Light Arms, and Artillery costs 50, 60, and 70 each
+
+pm_kamikaze_squad = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_base_kamikaze_squad.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 6000
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_tools_add = 25 #1000
+			goods_input_engines_add = 10 #600
+			goods_input_ammunition_add = 6
+			goods_input_small_arms_add = 6
+			goods_input_artillery_add = 6 ## All these costs $900
+			goods_input_liquor_add = 30 #900 
+			goods_input_groceries_add = 30 #900
+			goods_input_clothes_add = 20
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 1
+		}
+
+		level_scaled = {
+			## About 5,000 people
+
+			building_employment_laborers_add = 2000
+			building_employment_soldiers_add = 3000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+		}
+
+	}
+}
+
+
+pm_jet_strategic_bomber = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_base_jet_strategic_bomber.jpg"
+	unlocking_technologies = {
+		advanced_nuclear_ramjet
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 8,000
+
+			goods_input_nuclear_jet_add = 70 #$3,500	
+			goods_input_nuclear_fuel_add = 50 #$2,500
+			goods_input_tools_add = 20 #800
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 3
+		}
+
+		level_scaled = {
+			## About 5,000 people
+			building_employment_soldiers_add = 2000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+	}
+}
+
+pm_ICBM = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_base_ICBM.jpg"
+	unlocking_technologies = {
+		nuclear_thermal_rockets
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 10,000
+
+			goods_input_nuclear_fuel_add = 60 #$3,000
+			goods_input_oil_add = 10 #$400
+			goods_input_tools_add = 30 #1,200
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 4
+		}
+
+		level_scaled = {
+			## About 4,500 people
+			building_employment_soldiers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+	}
+}
+
+pm_orbital_nuclear_weapon = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_base_orbital_nuclear_weapon.jpg"
+	unlocking_technologies = {
+		programmed_ballistic_missiles
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 11,600
+
+			goods_input_nuclear_fuel_add = 100 #$2,500
+			goods_input_oil_add = 15 #$600	
+			goods_input_tools_add = 40 #1,600
+			goods_input_radios_add = 20 #1,600
+			
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 5
+		}
+
+		level_scaled = {
+			## About 3,000 people
+			building_employment_soldiers_add = 1000
+			building_employment_engineers_add = 1000
+			building_employment_officers_add = 1000
+			building_employment_bureaucrats_add = 500
+		}
+	}
+}
+
+###
+pm_hellebranders = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/strategic_strike_squadron_hellebranders.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 6000
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_coal_add = 30 #900
+			goods_input_engines_add = 10 #600
+			goods_input_ironclads_add = 40 #2800
+			goods_input_liquor_add = 20 #600 
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 1
+		}
+
+		level_scaled = {
+			## About 5,000 people
+
+			building_employment_laborers_add = 1000
+			building_employment_soldiers_add = 2000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_academics_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+
+pm_strategic_siege_monitors = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_squadron_strategic_siege_monitors.dds"
+	unlocking_technologies = {
+		strategic_nuclear_catapult
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 6,200
+			goods_input_nuclear_fuel_add = 50 #600
+			goods_input_coal_add = 30 #900
+			goods_input_artillery_add = 10 #700
+			goods_input_ammunition_add = 10 #500
+			goods_input_ironclads_add = 50 #3,500
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 2
+		}
+
+		level_scaled = {
+			## About 5,000 people
+
+			building_employment_machinists_add = 1000
+			building_employment_soldiers_add = 2000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_academics_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+
+pm_ocean_based_nuclear_rocket = {
+	texture = "gfx/interface/icons/Mod_Nuclear_production_method_icons/strategic_strike_squadron_ocean_based_nuclear_rocket.jpg"
+	unlocking_technologies = {
+		nuclear_thermal_rockets
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 10,000
+			goods_input_nuclear_fuel_add = 90 #2,500
+			goods_input_oil_add = 10 #$400
+			goods_input_ironclads_add = 40 #2,800
+			goods_input_tools_add = 30 #1,200
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 4
+		}
+
+		level_scaled = {
+			## About 4,500 people
+			building_employment_soldiers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+			building_employment_officers_add = 500
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+
+pm_SSBN = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/strategic_strike_squadron_SSBN.dds"
+	unlocking_technologies = {
+		programmed_ballistic_missiles
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			## Cost about 11,200
+
+			goods_input_nuclear_fuel_add = 70 #$2,000
+			goods_input_oil_add = 10 #$400
+			goods_input_ironclads_add = 50 #3,500
+			goods_input_tools_add = 30 #1,200
+			goods_input_radios_add = 25 #2,000
+			
+
+			## No Use, implemented in scripted_value
+			building_monthly_delivery_capacity_production = 5
+		}
+
+		level_scaled = {
+			## About 3,000 people
+			building_employment_soldiers_add = 500
+			building_employment_engineers_add = 1000
+			building_employment_officers_add = 1000
+			building_employment_bureaucrats_add = 500
+		}
+
+	}
+}
+
+

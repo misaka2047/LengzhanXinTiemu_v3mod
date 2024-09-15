@@ -1,0 +1,55 @@
+﻿NAI = {
+	DEFAULT_STRATEGY_STRING = "ai_strategy_default"
+
+	STRATEGY_RANDOM_FACTOR = 15.0 # The higher this is, the more random AI strategy selection will be
+	
+	TICKS_FOR_FULL_SPENDING_UPDATE = 40 # The higher this is, the less often AIs will update their spending priorities 
+		
+	MIN_SUBJECT_TYPE_VALUE = 1 # ai_value for a subject type is never below this
+
+	DECLARE_BANKRUPTCY_MIN_DAYS_IN_DEFAULT = 30 # After this many days in default, the AI will declare bankruptcy
+
+	MIN_AVAILABLE_LABOR_FOR_NEW_BUILDING = 0		# If state has less than this in available labor, we should be much less likely to build something (multiplied by 1 + number of ongoing constructions)
+
+	BASE_AGGRESSION = 2 # Base chance that AI will consider starting a diplo play each time the goal is checked (1 = 1%)
+	UNIFICATION_AGGRESSION_MULT_HIGHER_TIER = 20 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of a higher tier
+	UNIFICATION_AGGRESSION_MULT_SAME_TIER = 10 # AI aggression is multiplied by this for calculating whether they should try to start a unification/leadership play, if the country would end up forming a nation of the same tier
+	
+	CONSTRUCTION_MAX_NUM_PRODUCTION_BUILDING_CONSTRUCTIONS_BASE = 2 # If country has this number of production building constructions queued, don't add anymore (base)
+	CONSTRUCTION_MAX_NUM_PRODUCTION_BUILDING_CONSTRUCTIONS_SCALED = 0.05 # If country has this number of production building constructions queued, don't add anymore (scaled by construction production)
+	CONSTRUCTION_MAX_NUM_PRODUCTION_BUILDING_CONSTRUCTIONS_SCALED_MAX = 499 # CONSTRUCTION_MAX_NUM_PRODUCTION_BUILDING_CONSTRUCTIONS_SCALED can't be higher than this	
+	CONSTRUCTION_MAX_NUM_GOVERNMENT_BUILDING_CONSTRUCTIONS_BASE = 1 # If country has this number of government building constructions queued, don't add anymore (base)
+	CONSTRUCTION_MAX_NUM_GOVERNMENT_BUILDING_CONSTRUCTIONS_SCALED = 0.05 # If country has this number of government building constructions queued, don't add anymore (scaled by construction production)
+	CONSTRUCTION_MAX_NUM_GOVERNMENT_BUILDING_CONSTRUCTIONS_SCALED_MAX = 99 # CONSTRUCTION_MAX_NUM_GOVERNMENT_CONSTRUCTIONS_SCALED can't be higher than this	
+	CONSTRUCTION_RESERVES_NEW_CONSTRUCTIONS = -0.5 # If gold reserves are less than this after adding the cost of a new construction, don't queue it
+	CONSTRUCTION_DEBT_RESUME = 0.60 # If constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE = 0.75 # If in this much relative debt to debt ceiling, pause all non-critical constructions 	
+	CONSTRUCTION_DEBT_RESUME_CRITICAL_CONSTRUCTION = 0.8 # If critical constructions are paused, resume once debt is this low relative to ceiling
+	CONSTRUCTION_DEBT_PAUSE_CRITICAL_CONSTRUCTION = 0.9 # If in this much relative debt to debt ceiling, pause all critical constructions 	
+	CONTAINMENT_PLAY_PARTICIPATION_RANK = 10 # Ranks of this value or above should be keen on joining containment plays to beat down threats
+	START_DIPLO_PLAY_RANDOM_FACTOR = 1.5 # The higher this is, the more random AI will be on where to target when starting diplo plays
+
+	AI_PEACE_DESIRE_FROM_DEBT_LEVEL = 25 # Add this amount of peace desire at 100% debt level
+}
+
+NEconomy = {
+		
+	REINVESTMENT_EFFICIENCY_MAX = 3.0					# Maximum conversion of reinvestment to investment pool
+	REINVESTMENT_EFFICIENCY_MIN = 0.8					# Minimum conversion of reinvestment to investment pool
+	REINVESTMENT_FALLOFF_START = 10000000				# Below this amount of GDP, increase reinvestment multiplier on a linear scale up to REINVESTMENT_EFFICIENCY_MAX at 0
+	REINVESTMENT_FALLOFF_END = 200000000				# Above REINVESTMENT_FALLOFF_START but below this, apply minimum reinvestment multiplier on a linear scale down to REINVESTMENT_EFFICIENCY_MIN, above this always use REINVESTMENT_EFFICIENCY_MIN
+	TRADE_ROUTE_MAX_LEVEL = 1000 #100		# Trade routes cannot be higher level than this
+
+}
+
+NDiplomacy = {
+	DEFAULT_TRUCE_MONTHS = 40
+	PEACE_DEAL_DURATION_IN_DAYS = 30
+	PEACE_DEAL_COOLDOWN_IN_DAYS = 120
+	PACT_REQUIRES_APPROVAL_MIN_FORCED_MONTHS = 12 		# Diplomatic pacts that require approval always have at least this cooldown period before they can be broken
+	OBLIGATION_FORCED_PACT_MONTHS = 120
+	SWAY_FORCED_PACT_MONTHS = 120
+	EXPEL_DIPLOMATS_MONTHS = 60
+	OBLIGATION_MONTHS = 120
+
+}

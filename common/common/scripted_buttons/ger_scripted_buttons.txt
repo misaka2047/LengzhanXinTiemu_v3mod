@@ -1,0 +1,65 @@
+﻿je_button_vote = {
+	name = "je_button_vote"
+	desc = "je_button_vote_desc"
+
+	visible = {
+		always = yes
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		NOT = { exists = c:BRD }
+		NOT = {
+			has_variable = je_button_vote_taken
+		}
+	}
+
+	effect = {
+		set_variable = je_button_vote_taken
+		if = {
+			limit = {
+				c:HAN = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		else_if = {
+			limit = {
+				c:RHN = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		else_if = {
+			limit = {
+				c:GBR = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		else_if = {
+			limit = {
+				c:BAV = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		else_if = {
+			limit = {
+				c:USA = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		else_if = {
+			limit = {
+				c:FRA = { is_player = yes }
+			}
+			set_variable = country_is_player_var
+		}
+		c:BAV = { trigger_event = { id = ger_events.1 days = 1 } }
+		c:RHN = { trigger_event = { id = ger_events.1 days = 1 } }
+		c:HAN = { trigger_event = { id = ger_events.1 days = 1 } }
+		c:USA = { trigger_event = { id = ger_events.1 days = 1 } }
+		c:GBR = { trigger_event = { id = ger_events.1 days = 1 } }
+		c:FRA = { trigger_event = { id = ger_events.1 days = 1 } }
+    }
+}

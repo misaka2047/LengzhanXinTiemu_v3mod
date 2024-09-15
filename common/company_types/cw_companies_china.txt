@@ -1,0 +1,343 @@
+#腾讯
+company_tencent = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/TX.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_electrics_industry
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SHAOZHOU
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_SHAOZHOU		
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_electrics_industry
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_tech_spread_mult = 0.15 #科技扩散
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#拼多多
+company_pinduoduo = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/PDD.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_furniture_manufacturies
+		building_tooling_workshops
+		building_textile_mills
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SUZHOU
+			}
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_tooling_workshops
+					is_building_type = building_glassworks
+					is_building_type = building_furniture_manufacturies
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_market_access_price_impact = 0.15 #市场接入度的价格影响
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#中国烟草总公司
+company_china_nional_tobacco_corporation = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ZYC.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_tobacco_plantation
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BEIJING
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BEIJING	
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tobacco_plantation
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_tax_collection_mult = 0.1 
+		state_mortality_mult = 0.03
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#国家电网
+company_state_grid = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ZDW.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_power_plant
+		building_clean_energy_power_station
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BEIJING
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BEIJING	
+			is_incorporated = yes
+			any_scope_building = {
+			OR = {
+				is_building_type = building_power_plant
+				is_building_type = building_clean_energy_power_station
+			}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.1 #生活水平提高带来的效忠派（百分比）
+		state_radicals_from_sol_change_mult = -0.1
+		building_power_plant_throughput_add = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#中国石油
+company_china_petroleum = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ZSY.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_oil_rig
+		building_refinery
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BEIJING
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BEIJING	
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_oil_rig
+					is_building_type = building_refinery
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.1 #生活水平提高带来的效忠派（百分比）
+		state_radicals_from_sol_change_mult = -0.1
+		state_tax_collection_mult = 0.1 
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#贵州茅台
+company_maotai = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/MT.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_food_industry
+		building_rice_farm
+		building_wheat_farm
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_GUIZHOU
+			}
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_food_industry
+					is_building_type = building_rice_farm
+					is_building_type = building_wheat_farm
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_tax_collection_mult = 0.05
+		country_prestige_mult = 0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#三一重工
+company_sany_heavy_industry = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/SY.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = { 
+		building_motor_industry
+		building_steel_mills
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_HUNAN
+			}
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_motor_industry
+					is_building_type = building_steel_mills
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_construction_mult = 0.15 #地区建造效率修正（百分比）
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#广东南洋烟草公司
+guangdong_nanyang_tobacco_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/HK.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_tobacco_plantation
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_south_china
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_GUANGDONG
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+			region = sr:region_south_china
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_tobacco_plantation
+				level >= 5
+			}
+			count >= 4
+		}
+	}
+	
+	prosperity_modifier = {
+		country_tech_spread_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

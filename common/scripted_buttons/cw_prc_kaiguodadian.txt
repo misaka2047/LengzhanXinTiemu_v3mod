@@ -1,0 +1,121 @@
+xinanjiaofei_button_key = {
+
+	name = "xinanjiaofei_button_key"
+	desc = "xinanjiaofei_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:xinanfeihuan_start_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_xinanjiaofei }
+		change_variable = {
+			name = xinanfeihuan_start_var
+			add = 1
+		}
+	}
+}
+
+kaiguodadadian_button_key = {
+
+	name = "kaiguodadadian_button_key"
+	desc = "kaiguodadadian_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:kaiguodadadian_var = 0
+		var:xinanfeihuan_end_var >= 1
+		var:waijiaozhengce_var >= 1
+	}
+	effect = {
+		trigger_event = { id = kaiguodadian.1 days = 0 popup = yes }
+		change_variable = {
+			name = kaiguodadadian_var
+			add = 1
+		}
+	}
+}
+
+waijiaozhengce_button_key = {
+
+	name = "waijiaozhengce_button_key"
+	desc = "waijiaozhengce_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:waijiaozhengce_var = 0
+	}
+	effect = {
+		trigger_event = { id = waijiaozhengce.1 days = 0 popup = yes }
+		change_variable = {
+			name = waijiaozhengce_var
+			add = 1
+		}
+	}
+}
+
+tudigaige_button_key = {
+
+	name = "tudigaige_button_key"
+	desc = "tudigaige_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:tudigaige_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_tudigaige }
+		change_variable = {
+			name = tudigaige_var
+			add = 1
+		}
+	}
+}
+
+wunianjihua_button_key = {
+
+	name = "wunianjihua_button_key"
+	desc = "wunianjihua_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:wunianjihua_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_5_year_plan }
+		change_variable = {
+			name = wunianjihua_var
+			add = 1
+		}
+	}
+}

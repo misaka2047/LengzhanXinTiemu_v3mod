@@ -1,0 +1,51 @@
+﻿CHARACTERS = {
+	c:DAI = {
+		create_character = {
+			first_name = "Zhiming"
+			last_name = "Hu" 
+			birth_date = 1890.5.19
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			dna = dna_emperor_minh_mang
+			interest_group = ig_rural_folk
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				innovative #创新精神
+			}		
+		}	
+
+		create_character = {
+			first_name = "Sun1"
+			last_name = "HX076" 
+			birth_date = 1907.4.7
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_trade_unions
+			ideology = ideology_ethno_nationalist #意识形态族裔民族主义者
+			traits = {
+				expert_political_operator #政治运作专家
+			}		
+		}	
+
+		create_character = {
+			first_name = "Yuanjia"
+			last_name = "HX150" 
+			birth_date = 1911.8.25
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			is_general = yes
+			commander_rank = commander_rank_5
+			traits = {
+				strong #健硕
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}		
+		}	
+	}
+}

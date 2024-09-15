@@ -1,0 +1,12 @@
+= = {
+	map_color = { 0 0 0 }
+	states = {
+		
+	}
+}
+STATE_CAMBODIA = {
+	map_color = { 0 0 0 }
+	states = {
+		
+	}
+}

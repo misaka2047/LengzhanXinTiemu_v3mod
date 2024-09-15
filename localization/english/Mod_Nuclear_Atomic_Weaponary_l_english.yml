@@ -1,0 +1,232 @@
+﻿ l_english:
+
+develop_nuclear_weapon:0 "Develop Nuclear Weapon"
+develop_nuclear_weapon_desc:0 "Time to get some *big* fireworks."
+
+## Concepts
+
+concept_standard_warhead:0 "Standard Warhead(s)"
+concept_standard_warhead_desc:0 "Standard Warhead(s) is an international standard unit for quantifying a nation's nuclear arsenal.\nOne Standard Warhead is as destructive as One 1-Million ton warhead.\nModern nuclear weapons can take various forms, from second-hand converted mining dynamite of poorer nations, to self-guiding nuclear fusion warheads. Standard Warhead converts these varied arsenal into a single standard for easy comparison. \nOne Standard Warhead requires One [concept_delivery_capacity] to be used in [concept_nuclear_war]."
+
+concept_delivery_capacity:0 "Delivery Capacity"
+concept_delivery_capacity_desc:0 "Delivery Capacity is an international standard unit for quantifying a nation's capability to deliver its [concept_standard_warhead].\nOne Delivery Capacity delivers One [concept_standard_warhead] to anywhere on earth. \nThere are various ways to deliver nuclear weapons, from ordering an elite infiltrator squad to ICBMs and orbital nuclear weapon platforms. However, as long as it delivers, it is part of your Delivery Capacity. \nNote that, without correspounding [concept_standard_warhead], your ICBM is nothing but a glorified stick!"
+
+concept_nuclear_war:0 "Nuclear War"
+concept_nuclear_war_desc:0 "You can initiate a nuclear strike towards your enemy in diplomacy tab, provided that you are in opposing side of a diplomatic play or war. \nYou can threaten for peace or victory before launching strikes, and the amount of nukes you can use depends on the smaller of your current [concept_standard_warhead] and [concept_delivery_capacity]."
+
+concept_monthly_nuclear_arsenal_depreciation:0 "Monthly Nuclear Arsenal Depreciation"
+concept_monthly_nuclear_arsenal_depreciation_desc:0 "You lose 2% of your [concept_standard_warhead] and 5% of your [concept_delivery_capacity] per month, which is to be filled by your production. \n\n This represents various reasons for losing [concept_standard_warhead] and [concept_delivery_capacity], both expected and unexpected, including but not limited to natual decay of fissile, need for upgrade, need for personnel training, accidental firing, accounting error, ICBM mechanical failure, orbital weapon platforms losing signal, and so on."
+
+je_group_nuclear_arsenal:0 "Nuclear Arsenal"
+je_Mod_Nuclear_Atomic_Weapon_Tracker:0 "Nuclear Arsenal"
+je_Mod_Nuclear_Atomic_Weapon_Tracker_reason:1 "This bar tracks your current stockpile of [concept_standard_warhead] for [concept_nuclear_war]. \n\n You Currently Have #v [ROOT.ScriptValue('warhead_current_stockpile_sv')]#! [concept_standard_warhead]. \n\n Your [concept_monthly_nuclear_arsenal_depreciation] is #v [ROOT.ScriptValue('warhead_monthly_depreciation')]#! Warheads.\n\n You produce #v [ROOT.ScriptValue('warhead_monthly_add')]#! warheads per month. \n\n This leads to a net #v [ROOT.ScriptValue('warhead_monthly_net_change')]#! monthly change in your nuclear arsenal."
+
+je_Mod_Nuclear_Delivery_Capacity_Tracker:0 "Strategic Delivery Capacity"
+je_Mod_Nuclear_Delivery_Capacity_Tracker_reason:1 "This bar tracks your current stockpile of [concept_delivery_capacity] for [concept_nuclear_war]. You cannot deliver more warheads than your current delivery capacity in war. \n\n You Currently Have #v [ROOT.ScriptValue('strike_capacity_current_stockpile_sv')]#! Unit of [concept_delivery_capacity].\n\n  Your [concept_monthly_nuclear_arsenal_depreciation] is #v [ROOT.ScriptValue('strike_capacity_monthly_depreciation')]#! units of strike capacity. \n\n You produce #v [ROOT.ScriptValue('strike_capacity_monthly_add')]#! units of strike capacity per month. \n\n This leads to a net #v [ROOT.ScriptValue('strike_capacity_monthly_net_change')]#! monthly change in your strategic strike capacity."
+
+
+Mod_Nuclear_Warheads_Prestige_modifier:0 "Prestige from Having Warheads"
+Mod_Nuclear_Warheads_Prestige_modifier_desc:0 "The [ROOT.GetCountry.GetName] currently have [ROOT.ScriptValue('warhead_current_stockpile_sv')] warheads."
+
+Mod_Nuclear_Delivery_Capacity_Prestige_modifier:0 "Prestige from Having Delivery Capacity"
+Mod_Nuclear_Delivery_Capacity_Prestige_modifier_desc:0 "The [ROOT.GetCountry.GetName] currently have [ROOT.ScriptValue('strike_capacity_current_stockpile_sv')] warheads."
+
+### UI Stuff
+PANEL_NUM_DELIVERY_CAPACITY:0 "[concept_delivery_capacity]"
+PANEL_NUM_DELIVERY_CAPACITY_TOOLTIP:0 "This is current stockpile of [concept_delivery_capacity] of this nation. One Unit of Delivery Capacity Delivers One [concept_standard_warhead] to anywhere on Earth."
+
+PANEL_NUM_WARHEAD:0 "[concept_standard_warhead]"
+PANEL_NUM_WARHEAD_TOOLTIP:0 "This is current stockpile of [concept_standard_warhead] of this nation. One Unit of [concept_delivery_capacity] Delivers One Standard Warhead to anywhere on Earth."
+
+
+### Modifier
+modifier_building_monthly_warhead_production:0 "Monthly Standard Warheads Production"
+modifier_building_monthly_warhead_production_desc:0 "How many [concept_standard_warhead] are produced each month. \n\n This is a dummy modifier and have no actual effect other than helping you evaluate. Check journal entry 'Nuclear Arsenal' for actual information. \n\n The actual monthly production is the maximum production shown here, given that occupacy is over 60% and no shortage."
+
+modifier_building_monthly_delivery_capacity_production:0 "Monthly Delivery Capacity Production"
+modifier_building_monthly_delivery_capacity_production_desc:0 "How many Units of [concept_delivery_capacity] are produced each month.  \n\n This is a dummy modifier and have no actual effect other than helping your evaluate. Check journal entry 'Strategic Delivery Capacity' for actual information. \n\n The actual monthly production is the maximum production shown here, given that occupacy is over 60% and no shortage."
+
+
+### Buildings and Production Methods
+building_warhead_manufactory:0 "Warhead Manufactory"
+building_strategic_strike_base:0 "Strategic Strike Base"
+building_strategic_strike_squadron:0 "Strategic Strike Squadron"
+
+pmg_base_warhead_manufactory:0 "Warhead Model"
+pm_converted_mining_dynamite:0 "Converted Mining Dynamite"
+pm_military_fission_warhead:0 "Military Fission Warhead"
+pm_military_fusion_warhead:0 "Military Fusion Warhead"
+pm_programmed_fusion_warhead:0 "Programmed Fusion Warhead"
+
+pmg_base_strategic_strike_base_land:0 "Land-Based Delivery Methods"
+pm_kamikaze_squad:0 "Kamikaze Infiltrator Squad"
+pm_jet_strategic_bomber:0 "Jet Bomber Squadron"
+pm_ICBM:0 "Inter-Continental Ballistic Missile"
+pm_orbital_nuclear_weapon:0 "Orbital Nuclear Weapon"
+
+pmg_base_strategic_strike_base_sea:0 "Sea-Based Delivery Methods"
+pm_hellebranders:0 "Hellebranders"
+pm_strategic_siege_monitors:0 "Strategic Siege Monitors"
+pm_ocean_based_nuclear_rocket:0 "Sea-Based Nuclear Rockets"
+pm_SSBN:0 "Ballistic missile submarine"
+
+
+## Techs
+theories_of_strategic_strike:0 "Theories of Strategic Strike"
+theories_of_strategic_strike_desc:0 "Strategic Destruction is an art worthy investigating."
+
+strategic_nuclear_catapult:0 "Strategic Nuclear Catapult"
+strategic_nuclear_catapult_desc:0 "The name 'Catapult' is rather a disguise. Since early nukes are huge, no ordinary guns can fit them in, not even the largest of cannons. Therefore, early nuclear weapons were launched by oversized mortars, known commonly as a 'catapult'. It is also due to such advancement that new generation of smaller warheads were developed."
+
+nuclear_thermal_rockets:0 "Nuclear Thermal Rockets"
+nuclear_thermal_rockets_desc:0 "Like an atomic turbojet engine, a Nuclear Thermal Rocket provide tremendous thrust by superheating propellant with open-air reactors. However, a piece of NTR carries its propellant, therefore allowing it to operate outside atmosphere. The propellant itself, usually leftover hydrogen of deuterium refining and liquid oxygen, also burns and provide thrust. \n\n Since these rockets are single-use and expensive, they are used only to deliver the MOST VALUABLE cargo----such as a piece of nuclear warhead."
+
+autonomous_guiding_system:0 "Autonomous Guiding System"
+autonomous_guiding_system_desc:0 "Operator of strategic strike division are not expected to survive in a nuclear war. Therefore, it is important to have certain self-control in warheads so that an efficient fire-and-die method can be implemented. \n\n The new pre-programmed warheads iteratively receive automated update in target area and always change the ballistic to most valuable target undestroyed in target area, thus exponentially increasing the effectiveness of warheads."
+
+programmed_ballistic_missiles:0 "Pre-Programmed Ballistic Missiles"
+programmed_ballistic_missiles_desc:0 "A nuclear weapon should fire whenever an order to fire is given, with or without necessary crew. Therefore, self-checking and launching computers are installed to our newst assortment of ballistic missiles. \n\n This allowed for construction of SSBNs and orbital nuclear weapon platforms, which can strike with stealth in a timely manner. I mean, you ain't expecting an engineer to be in space or in a submarine anytime you need, right?"
+
+
+### Diplo action
+mod_nuclear_launch_strikes:0 "Launch Nuclear Strikes"
+mod_nuclear_launch_strikes_action_name:0 "Launch Nuclear Strikes"
+mod_nuclear_launch_strikes_desc:0 "Threaten them to yield for white peace with nuclear weapons, or outright begin a [concept_nuclear_war]."
+
+mod_nuclear_launch_strikes_action_notification_name:0 "[INITIATOR_COUNTRY.GetName] Threatens [TARGET_COUNTRY.GetName] with Nuclear Weapons!"
+mod_nuclear_launch_strikes_action_notification_desc:0 "Situation has escalated as [INITIATOR_COUNTRY.GetName] threatens [TARGET_COUNTRY.GetName] with potential nuclear attack. It remains unclear if the crisis will resolve in peace or a all-out nuclear war."
+
+### Notifications
+notification_mod_nuclear_strategic_strike_notification_name:0 "Nuclear Weapon Used!"
+notification_mod_nuclear_strategic_strike_notification_desc:0 "As an act of war, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] has used nuclear weapons against [SCOPE.sC('target_country').GetName]."
+
+notification_mod_nuclear_threaten_white_peace_notification_name:0 "Peace after threatening with Nuclear Weapons!"
+notification_mod_nuclear_threaten_white_peace_notification_desc:0 "During the recent conflict, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] threatened [SCOPE.sC('target_country').GetName] to accept a white peace, otherwise nuclear weapons will be used. [SCOPE.sC('target_country').GetName] yielded to the demand."
+
+notification_mod_nuclear_threaten_surrender_notification_name:0 "Surrendering after threatening with Nuclear Weapons!"
+notification_mod_nuclear_threaten_surrender_notification_desc:0 "During the recent conflict, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] threatened [SCOPE.sC('target_country').GetName] to surrender, otherwise nuclear weapons will be used. [SCOPE.sC('target_country').GetName] yielded to the demand."
+
+notification_mod_nuclear_strategic_strike_retaliation_notification_name:0 "Nuclear Retaliation!"
+notification_mod_nuclear_strategic_strike_retaliation_notification_desc:0 "As an act of war, [SCOPE.sC('target_country').GetName] used nuclear weapon in retaliation of earlier nuclear strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]."
+
+### Third Party Notification
+notification_mod_nuclear_strategic_strike_notification_third_party_name:0 "[SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] Used Nuclear Weapon!"
+notification_mod_nuclear_strategic_strike_notification_third_party_desc:0 "As an act of war, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] has used nuclear weapons against [SCOPE.sC('target_country').GetName]."
+
+notification_mod_nuclear_threaten_white_peace_notification_third_party_name:0 "Peace after threatening with Nuclear Weapons!"
+notification_mod_nuclear_threaten_white_peace_notification_third_party_desc:0 "During the recent conflict, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] threatened [SCOPE.sC('target_country').GetName] to accept a white peace, otherwise nuclear weapons will be used. [SCOPE.sC('target_country').GetName] yielded to the demand."
+
+notification_mod_nuclear_threaten_surrender_notification_third_party_name:0 "Surrendering after threatening with Nuclear Weapons!"
+notification_mod_nuclear_threaten_surrender_notification_third_party_desc:0 "During the recent conflict, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] threatened [SCOPE.sC('target_country').GetName] to surrender, otherwise nuclear weapons will be used. [SCOPE.sC('target_country').GetName] yielded to the demand."
+
+notification_mod_nuclear_strategic_strike_retaliation_notification_third_party_name:0 "[SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] Suffered Nuclear Retaliation!"
+notification_mod_nuclear_strategic_strike_retaliation_notification_third_party_desc:0 "As an act of war, [SCOPE.sC('target_country').GetName] used nuclear weapon in retaliation of earlier nuclear strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]."
+
+
+### Events
+mod_nuclear_strategic_strike.1000.t:0 "Launch Strike onto [SCOPE.sC('target_country').GetName]?"
+mod_nuclear_strategic_strike.1000.d:0 "As we are facing [SCOPE.sC('target_country').GetName] in the recent conflict, some believe that we can utilize our [concept_standard_warhead] and [concept_delivery_capacity] in a more.....direct manner. What do you say, [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]?"
+mod_nuclear_strategic_strike.1000.f:0 "This decision cannot be made easily."
+mod_nuclear_strategic_strike.1000.1:0 "Write a kindly-worded letter for White Peace."
+mod_nuclear_strategic_strike.1000.2:0 "Write a kindly-worded letter for them to Surrender!"
+mod_nuclear_strategic_strike.1000.3:0 "Say no more. Begin Launch Sequence!"
+mod_nuclear_strategic_strike.1000.4:0 "Stand Down."
+
+
+mod_nuclear_strategic_strike.101.t:0 "[SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] Threaten us for White Peace!"
+mod_nuclear_strategic_strike.101.d:0 "Dear [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName]: \n\n After careful consideration, we regret to inform you that your demand in recent conflict is no longer considered. To foster a healthy international community, we kindly ask you to exit the conflict, so a white peace may be ensured. \nFailure to comply will lead to automatic forfeiture of [ROOT.GetCountry.GetAdjectiveNoFormatting] asset, population, and international rights. A mandatory liquification program, known otherwise as [concept_nuclear_war] will be installed. [ROOT.GetCountry.GetAdjectiveNoFormatting] Asset will be carefully assessed, so that maximum damage and loss of life may be dealt in the liquification program. \nAny reply other than a desired one, including failure to reply, will be considered refusal. The Decision is Final and Non-Disputable. \n\n Yours Sincerely, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]"
+mod_nuclear_strategic_strike.101.f:0 "\nIn addition, should a liquification program is to be installed, you are responsbile to pay for the material and man-hour cost of our liquification agent, compounded at 3% per week. \nAny question must be forwarded to the Supreme Court of [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]"
+mod_nuclear_strategic_strike.101.1:0 "We have no choice but to comply."
+mod_nuclear_strategic_strike.101.2:0 "Nuts!"
+
+mod_nuclear_strategic_strike.102.t:0 "[SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName] Threaten us to Surrender!"
+mod_nuclear_strategic_strike.102.d:0 "Dear [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName]: \n\n After careful consideration, we regret to inform you that your demand in recent conflict is no longer considered. To foster a healthy international community, we kindly ask you to exit the conflict by forfeiting all your unreasonable demand, and comply to our benevolent terms. \nFailure to comply will lead to automatic forfeiture of [ROOT.GetCountry.GetAdjectiveNoFormatting] asset, population, and international rights. A mandatory liquification program, known otherwise as [concept_nuclear_war] will be installed. [ROOT.GetCountry.GetAdjectiveNoFormatting] Asset will be carefully assessed, so that maximum damage and loss of life may be dealt in the liquification program. \nAny reply other than a desired one, including failure to reply, will be considered refusal. The Decision is Final and Non-Disputable. \n\n Yours Sincerely, [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetRuler.GetPrimaryRoleTitle] of [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]"
+mod_nuclear_strategic_strike.102.f:0 "\nIn addition, should a liquification program is to be installed, you are responsbile to pay for the material and man-hour cost of our liquification agent, compounded at 3% per week. \nAny question must be forwarded to the Supreme Court of [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]"
+mod_nuclear_strategic_strike.102.1:0 "We have no choice but to comply."
+mod_nuclear_strategic_strike.102.2:0 "Nuts!"
+
+mod_nuclear_strategic_strike.110.t:0 "[SCOPE.sC('target_country').GetName] Accepts White Peace!"
+mod_nuclear_strategic_strike.110.d:0 "[SCOPE.sC('target_country').GetName] has delivered a favorable reply. Nuclear War has been averted."
+mod_nuclear_strategic_strike.110.1:0 "Peace is here!"
+mod_nuclear_strategic_strike.110.1:0 "Peace through Power!"
+
+mod_nuclear_strategic_strike.120.t:0 "[SCOPE.sC('target_country').GetName] Yielded!"
+mod_nuclear_strategic_strike.120.d:0 "[SCOPE.sC('target_country').GetName] has delivered a favorable reply. Nuclear War has been averted."
+mod_nuclear_strategic_strike.110.1:0 "Peace is here!"
+mod_nuclear_strategic_strike.120.1:0 "Wait, they really accepted?"
+
+
+
+### Strike Events
+mod_nuclear_strategic_strike.2.t:0 "Nuclear Strike Towards [SCOPE.sC('target_country').GetName]"
+mod_nuclear_strategic_strike.2.d:0 "The atrocity of [SCOPE.sC('target_country').GetName] has angered [ROOT.GetCountry.GetName] gravely. There is nothing that can stop these unreasonable mobs, except the most devastating weapons in our arsenal. \n\n #bold Begining Launch Sequence#! \n #bold Biometrics Verified: #! [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle] [ROOT.GetCountry.GetRuler.GetLastName]\n #bold Launch Code Verified: 0x****************#!  \n #bold Begin Self-Check.....#!  \n ICBM Base....Normal; Railroad Launch Regiment......Normal \n Bomber Squadron...17/17 Normal.... \n Orbital Nuclear Arsenal Uplink.....Full Power  \n Submarine Squadron Check....  \n #bold All Check Completed. #! \n #bold Verifying DEFCON level: DEFCON 1#!  \n #bold Please Select Number of Warhead to be Launched:#!"
+mod_nuclear_strategic_strike.2.f:0 "There's no turning back now."
+mod_nuclear_strategic_strike.2.1:0 "Barrage: 1 Warhead"
+mod_nuclear_strategic_strike.2.2:0 "Barrage: 5 Warheads"
+mod_nuclear_strategic_strike.2.3:0 "Barrage: 10 Warheads"
+mod_nuclear_strategic_strike.2.4:0 "Barrage: 20 Warheads"
+mod_nuclear_strategic_strike.2.5:0 "Barrage: 50 Warheads"
+mod_nuclear_strategic_strike.2.6:0 "Barrage: 100 Warheads"
+mod_nuclear_strategic_strike.2.7:0 "Barrage: 200 Warheads"
+mod_nuclear_strategic_strike.2.9:0 "Terminate Launch Sequence."
+
+mod_nuclear_strategic_strike.10.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 1 Warhead"
+mod_nuclear_strategic_strike.10.d:0 "Nuclear Strike Inbound!"
+mod_nuclear_strategic_strike.10.f:0 "Brace for Impact!"
+mod_nuclear_strategic_strike.10.1:0 "Nuclear Retaliation, NOW."
+mod_nuclear_strategic_strike.10.2:0 "We will fight back....later."
+mod_nuclear_strategic_strike.10.3:0 "Unfortunately, we do not have any nuclear weapon now."
+
+mod_nuclear_strategic_strike.11.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 5 Warhead"
+mod_nuclear_strategic_strike.12.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 10 Warhead"
+mod_nuclear_strategic_strike.13.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 20 Warhead"
+mod_nuclear_strategic_strike.14.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 50 Warhead"
+mod_nuclear_strategic_strike.15.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 100 Warhead"
+mod_nuclear_strategic_strike.16.t:0 "Nuclear Strike from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]: 200 Warhead"
+
+mod_nuclear_strategic_strike.100.t:0 "Nuclear Retaliation Against [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName]"
+mod_nuclear_strategic_strike.100.d:0 "We have suffered a devastating nuclear attack from [SCOPE.sC('scope_mod_nuclear_strike_initiator').GetName], but fortunately our nuclear arsenal has remained intact. The problem is not if we are retaliating or not. The problem is how many warheads are we using."
+mod_nuclear_strategic_strike.100.f:0 "There's no turning back now."
+
+mod_nuclear_strategic_strike.20.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 1 Warhead"
+mod_nuclear_strategic_strike.20.d:0 "Nuclear Strike Inbound!"
+mod_nuclear_strategic_strike.20.f:0 "Brace for Impact!"
+mod_nuclear_strategic_strike.20.1:0 "As Expected."
+
+mod_nuclear_strategic_strike.21.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 5 Warhead"
+mod_nuclear_strategic_strike.22.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 10 Warhead"
+mod_nuclear_strategic_strike.23.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 20 Warhead"
+mod_nuclear_strategic_strike.24.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 50 Warhead"
+mod_nuclear_strategic_strike.25.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 100 Warhead"
+mod_nuclear_strategic_strike.26.t:0 "Nuclear Retaliation from [SCOPE.sC('target_country').GetName]: 200 Warhead"
+
+
+### Ecological Disaster Events
+
+mod_nuclear_ecological_disaster.21.t:0 "Global Ecological Collapse"
+mod_nuclear_ecological_disaster.21.d:0 "It seems that the global nuclear war have induced a more devastating result than we have estimated. With severe fallout dust blocking sunlight and extinction of keystone species in affected regions, the global eco-system is on the verge of collapsing. \n While modern industrialized farms and advanced agricultural facilities such as $building_vertical_farm$ and $building_mega_greenhouse$ are less affected, many estimates a devastating effect on subsistence farming. Raising radiation level is also expected to cause more deaths. \n\n ALL STATES across the globe suffer from different levels of devastation."
+mod_nuclear_ecological_disaster.21.f:0 "This won't end up good."
+mod_nuclear_ecological_disaster.21.1:0 "What a disaster!"
+
+### Global Ecological Disaster Modifiers
+
+
+mod_nuclear_state_severe_fallout:0 "Severe Fallout"
+mod_nuclear_state_severe_fallout_desc:0 "Severe Fallout from nuclear weapon makes it hard to survive."
+
+mod_nuclear_state_infrastructure_collapse:0 "Infrastructure Collapse"
+mod_nuclear_state_infrastructure_collapse_desc:0 "Nuclear Attack Crippled local infrastructure."
+
+mod_nuclear_state_rampant_anarchy:0 "Rampant Anarchy"
+mod_nuclear_state_rampant_anarchy_desc:0 "Any city become a battlefield of gangs and cults within one week after mass disaster if no government intervention is enacted."
+
+mod_nuclear_state_total_energy_grid_meltdown:0 "Total Energy Grid Meltdown"
+mod_nuclear_state_total_energy_grid_meltdown_desc:0 "Reactor Meltdown dealt mortal blow to local electric grid."
+
+mod_nuclear_state_nuclear_famine:0 "Nuclear Famine"
+mod_nuclear_state_nuclear_famine_desc:0 "Contaminated Water supply, mass looting, and erratic weather patterns caused total agricultural downfall."
+
+mod_nuclear_state_mutated_flora_and_fauna:0 "Mutated Flora and Fauna"
+mod_nuclear_state_mutated_flora_and_fauna_desc:0 "Excessive fallout lead to severe mutation of local flora and fauna, hampering agricultural production as ecological systems were irrecoverably altered."
+
+mod_nuclear_state_ecological_collapse_base:0 "Nuclear Winter"

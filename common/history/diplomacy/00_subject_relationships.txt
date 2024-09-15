@@ -1,0 +1,279 @@
+﻿DIPLOMACY = { #附庸
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:PHI
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:ETL #美属奥地利
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:KOR #南朝鲜
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:BAV #美占德国
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JAP #日本
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:CUB #古巴
+			type = protectorate #保护国
+		}
+	}
+	c:RUS = { #苏联
+		create_diplomatic_pact = {
+			country = c:AUS #苏属奥地利
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:PRK #北朝鲜
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:PRU #苏占德国
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:KUR #库尔德斯坦
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:AZB #阿塞拜疆人民政府
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MGL
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:POL
+			type = dominion #自治领
+		}	
+		create_diplomatic_pact = {
+			country = c:CZH
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:HUN
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:ROM
+			type = dominion #自治领
+		}	
+		create_diplomatic_pact = {
+			country = c:BUL
+			type = dominion #自治领
+		}
+	}
+	c:CHI = {
+		create_diplomatic_pact = {
+			country = c:TIB
+			type = dominion #自治领
+		}			
+	}
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:BUR #缅甸
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:STY #英属奥地利
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:SEL #新加坡
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:HAN #英占德国
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ARB #科威特
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:KAT #亚丁
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:ABU #特鲁西尔诸国
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:BHN #巴林
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:OMA #阿曼
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:PAL #巴勒斯坦
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:SIK #锡金
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:BIC #印度
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:JOH #马来亚联邦
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:CAN #加拿大
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:TRI #利比亚
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:AST #澳大利亚
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:NZL #新西兰
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:SAF #南非
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:SUD #苏丹
+			type = dominion #自治领
+		}
+		create_diplomatic_pact = {
+			country = c:UGA #乌干达
+			type = dominion #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:KNY #肯尼亚
+			type = puppet
+	}
+	    create_diplomatic_pact = {
+			country = c:BTW #博茨瓦纳
+			type = puppet
+	}
+	    create_diplomatic_pact = {
+			country = c:ZIM #津巴布韦
+			type = dominion #自治领
+	}
+	    create_diplomatic_pact = {
+			country = c:ZAM #赞比亚
+			type = puppet
+	}
+	    create_diplomatic_pact = {
+			country = c:TAN #坦噶尼喀
+			type = puppet
+	}
+	    create_diplomatic_pact = {
+			country = c:NIG #尼日利亚
+			type = puppet
+	}
+	create_diplomatic_pact = {
+			country = c:SRL #塞拉利昂
+			type = puppet
+	}
+	create_diplomatic_pact = {
+			country = c:ERT #厄立特里亚
+			type = puppet
+	}
+	create_diplomatic_pact = {
+			country = c:SML #索马里
+			type = puppet
+	}
+	create_diplomatic_pact = {
+			country = c:GHA #黄金海岸
+			type = puppet
+	}
+	create_diplomatic_pact = {
+			country = c:GAM #冈比亚
+			type = puppet
+	}
+}
+
+	c:FRA = {
+		create_diplomatic_pact = {
+			country = c:LAO #老挝
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:CAM #柬埔寨
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:NTL #法属奥地利
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:RHN #法占德国
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:AOF #法属西非
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:VIE #印度支那
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MOR #法属摩洛哥
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:TUN #法属突尼斯
+			type = protectorate #保护国
+		}
+		create_diplomatic_pact = {
+			country = c:AEF #法属赤道非洲
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MAD #法属马达加斯加
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:CMR #法属喀麦隆
+			type = puppet
+		}
+	}
+	c:BEL = {
+		create_diplomatic_pact = {
+			country = c:KON #刚果
+			type = puppet
+		}
+    }
+	c:POR = {
+		create_diplomatic_pact = {
+			country = c:AGJ #安哥拉
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MOZ #莫桑比克
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:GNB #几内亚
+			type = puppet
+		}
+    }
+	c:SPA = {
+		create_diplomatic_pact = {
+			country = c:EGU #赤道内几亚
+			type = puppet
+		}
+	}
+}

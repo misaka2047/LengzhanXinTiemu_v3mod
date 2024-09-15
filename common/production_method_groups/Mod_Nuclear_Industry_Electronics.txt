@@ -1,0 +1,99 @@
+﻿## Circuit Printing
+pmg_base_circuit_printing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Electricity, tools, glass, steel, irradiated materials
+
+		pm_rudimentary_circuit_board
+		pm_printed_circuit_board
+	}
+}
+
+pmg_cybernetics_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_cybernetics
+		pm_organic_material_cybernetics ## Use meat
+		pm_stainless_steel_and_glass_cybernetics ## Use glass and steel
+	}
+}
+
+pmg_silicon_refinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_advanced_optical_lithography
+		pm_acid_surface_cleaning
+		pm_alternative_semiconductive_materials
+	}
+}
+
+## Electronic Processors
+pmg_base_electronics_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_default_electronics_factory
+	}
+}
+
+pmg_performance_improver = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_extra_processors #programmables
+		pm_nuclear_fuel_cells #nuclear fuel
+		pm_extra_internal_memory #programmables, iron, and irradiated materials
+	}
+}
+
+## Consumer Industry--Silicon Foundry
+pmg_base_silicon_foundry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_default_silicon_foundry
+	}
+}
+
+
+pmg_base_household_electronics_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_default_household_electronics
+	}
+}
+
+pmg_base_exoskeleton_assembly = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_default_household_exoskeleton
+	}
+}
+
+pmg_integrated_circuits = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_integrated_circuit_board
+		pm_command_line_interface
+	}
+}
+
+pmg_base_network_center = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_default_network_center
+	}
+}
+
+pmg_network_center_additional_processors = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Programmables and others
+		pm_computing_stations #Use programmables
+		pm_distributed_terminals #Use electronics (radios)
+		pm_bio_computing_units #Use programmables and meat
+	}
+}

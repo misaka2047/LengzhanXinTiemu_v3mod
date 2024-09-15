@@ -1,0 +1,78 @@
+﻿COUNTRIES = {
+	c:JAP = {
+		set_next_election_date = 1946.7.1
+		effect_starting_technology_tier_2_tech = yes
+
+		add_technology_researched = sericulture #古代技艺
+		#add_technology_researched = sericulture #自行火炮
+		#add_technology_researched = sericulture #战斗机
+		set_tax_level = medium
+		
+		# Laws 
+		activate_law = law_type:law_monarchy #君主制
+		activate_law = law_type:law_non_militarized_country #非军事化国家
+		activate_law = law_type:law_total_separation #完全分离
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系	
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_free_trade #自由贸易
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_local_police #地方警察部队
+            	activate_law = law_type:law_public_health_insurance
+            	activate_law = law_type:law_womens_suffrage
+            	activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_poor_laws
+            	activate_law = law_type:law_compulsory_primary_school
+            	activate_law = law_type:law_8_hour_working_system
+		
+		add_company = company_type:company_mitsubishi #三菱
+		company:company_mitsubishi = {
+			set_company_establishment_date = 1870.10.1
+		}
+
+		add_company = company_type:company_toshiba #东芝株式会社
+		company:company_toshiba = {
+			set_company_establishment_date = 1875.7.1
+		}
+
+		add_company = company_type:company_kawasaki #川崎重工
+		company:company_kawasaki = {
+			set_company_establishment_date = 1878.1.1
+		}
+
+
+
+		set_institution_investment_level = {
+			institution = institution_schools #教育
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police #执法
+			level = 3
+		}
+
+		ig:ig_armed_forces = {
+			remove_ideology = ideology_bakufu
+			set_interest_group_name = ig_militia #莓果驻军		
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_rural_folk = {
+			set_interest_group_name = ig_peasants #平民
+		}
+
+		ig:ig_intelligentsia = {
+			set_interest_group_name = ig_bureaucracy #官僚
+		}
+		trigger_event = {
+			id = japan_mac.1
+			days = 7
+		}
+	}
+}

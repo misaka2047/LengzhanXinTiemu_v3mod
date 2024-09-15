@@ -1,0 +1,1186 @@
+sericulture = { #古代技艺
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/sericulture.dds"
+	category = production
+	can_research = no
+	
+	modifier = {
+		building_silk_plantation_throughput_add = 0.13 #丝绸种植园吞吐量
+		building_glassworks_throughput_add = 0.13
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+tech_basic_light_industry = {#基本轻工业
+	era = era_1
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_agricultural_production
+	}
+}
+tech_basic_food_industry = {#基本食品工业
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+}
+
+pasteurization = { #食品杀菌
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/pasteurization.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		tech_basic_food_industry
+	}
+	
+	modifier = {
+		state_standard_of_living_add = 0.5 #生活水平
+	}
+
+	ai_weight = {
+		value = 1
+	}
+}
+
+tech_mature_food_industry = {#成熟食品工业
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		pasteurization
+	}
+}
+tech_advanced_food_industry = {#先进食品工业
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_mature_food_industry
+	}
+}
+tech_modern_food_industry = {#现代食品工业
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_advanced_food_industry
+	}
+}
+tech_basic_civil_light_industry = {#基本民用轻工业
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+}
+tech_mature_civil_light_industry = {#成熟民用轻工业
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_civil_light_industry
+	}
+}
+tech_advanced_civil_light_industry = {#先进民用轻工业
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_mature_civil_light_industry
+	}
+}
+tech_modern_civil_light_industry = {#现代民用轻工业
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_advanced_civil_light_industry
+	}
+}
+tech_basic_agricultural_production = {#基本农业生产
+	era = era_1
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	}
+tech_fertilizer_synthesis = {#化肥合成
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_agricultural_production
+tech_basic_chemical_industry
+	}
+}
+tech_greenhouse_technology = {#温室技术
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_fertilizer_synthesis
+tech_engine_manufacturing
+	}
+}
+tech_basic_mining = {#基本矿业
+	era = era_1
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	}
+tech_diverse_handheld_tools = {#多样手持工具
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_mining
+	}
+}
+tech_explosives = {#爆破物
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_diverse_handheld_tools
+	}
+}
+tech_mine_construction = {#矿井构建
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_explosives
+	}
+}
+tech_security_equipment = {#安全设备
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_mine_construction
+	}
+}
+tech_unified_tool_standards = {#统一工具标准
+	era = era_1
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	}
+tech_steel_tools = {#钢制工具
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+}
+tech_rubber_accessories = {#橡胶配件
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_steel_tools
+	}
+}
+tech_electric_tools = {#电力工具
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_rubber_accessories
+	}
+}
+tech_electronic_tools = {#电子化工具
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_electric_tools
+	}
+}
+tech_petroleum_extraction_and_application = {#石油提取与应用
+	era = era_1
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	}
+tech_metal_oxide_catalysts = {#金属氧化物催化剂
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_petroleum_extraction_and_application
+	}
+}
+tech_integrated_petroleum_exploration_technology = {#石油综合勘探技术
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_metal_oxide_catalysts
+	}
+}
+tech_hydraulic_fracturing_ = {#水力压裂技术
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_integrated_petroleum_exploration_technology
+	}
+}
+tech_shale_oil_and_gas_extraction = {#页岩油气开采
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_hydraulic_fracturing_
+	}
+}
+tech_basic_power_generation = {#基本发电
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_basic_mining
+	}
+}
+tech_refined_fuel = {#精炼燃料
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_basic_power_generation
+	}
+}
+tech_combined_combustion_support = {#化合助燃
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_refined_fuel
+	}
+}
+tech_clean_energy = {#清洁能源
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_combined_combustion_support
+	}
+}
+tech_advanced_clean_energy = {#先进清洁能源
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_clean_energy
+	}
+}
+tech_basic_chemical_industry = {#基本化工产业
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_petroleum_extraction_and_application
+	}
+}
+tech_gas_chromatography = {#气相色谱法
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+}
+tech_quantum_chemistry = {#量子化学
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_gas_chromatography
+	}
+}
+tech_organic_chemistry = {#有机化学
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_quantum_chemistry
+	}
+}
+tech_synthesis_of_conductive_materials = {#导电材料合成
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_organic_chemistry
+	}
+}
+tech_pet = {#PET
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_gas_chromatography
+	}
+}
+tech_eps = {#EPS
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_pet
+	}
+}
+tech_glass_blowing = {#玻璃吹制
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_mining
+	}
+}
+tech_rolling_method = {#卷压法
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_glass_blowing
+	}
+}
+tech_float_glass_process = {#浮法玻璃制程
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_rolling_method
+	}
+}
+tech_melt_down_process = {#熔融下拉制程
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_float_glass_process
+	}
+}
+tech_electric_glass = {#电玻璃
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_melt_down_process
+	}
+}
+tech_basic_steel_smelting = {#基本钢铁冶炼
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_mining
+tech_basic_chemical_industry
+	}
+}
+tech_mature_steel_smelting = {#成熟钢铁冶炼
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+	}
+}
+tech_open_hearth_steelmaking_method = {#平炉炼钢法
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_mature_steel_smelting
+	}
+}
+tech_oxygen_top_blown_converter_steelmaking_method = {#氧气顶吹转炉炼钢法
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_open_hearth_steelmaking_method
+	}
+}
+tech_electric_arc_furnace_steelmaking_method = {#电弧炉炼钢法
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_oxygen_top_blown_converter_steelmaking_method
+	}
+}
+tech_engine_manufacturing = {#引擎制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_petroleum_extraction_and_application
+tech_basic_mining
+	}
+}
+tech_alloy_engine = {#合金引擎
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_engine_manufacturing
+tech_basic_steel_smelting
+	}
+}
+tech_electronic_control_engine = {#电控发动机
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_alloy_engine
+	}
+}
+tech_oil_electric_engine = {#油电发动机
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_electronic_control_engine
+	}
+}
+tech_vehicle_motor = {#车用电机
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_oil_electric_engine
+	}
+}
+tech_train = {#火车
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_engine_manufacturing
+	}
+}
+tech_power_railway = {#动力铁路
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_train
+	}
+}
+tech_electric_railway = {#电力铁路
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_power_railway
+	}
+}
+tech_shipbuilding = {#船舶制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+	}
+}
+tech_special_ship_coatings = {#特种船舶涂料
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_shipbuilding
+	}
+}
+tech_large_cargo_ships = {#大型货轮
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_shipbuilding
+	}
+}
+tech_modern_cruise_ships = {#现代邮轮
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_special_ship_coatings
+tech_large_cargo_ships
+	}
+}
+tech_household_appliance_manufacturing = {#家电制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+tech_basic_power_generation
+	}
+}
+tech_color_tv = {#彩色电视
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_household_appliance_manufacturing
+	}
+}
+tech_lcd_tv = {#液晶电视
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_color_tv
+	}
+}
+tech_smart_tv = {#智能电视
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_lcd_tv
+	}
+}
+tech_automobile_manufacturing = {#汽车制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_engine_manufacturing
+	}
+}
+tech_automotive_radar = {#汽车雷达
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_automobile_manufacturing
+	}
+}
+tech_navigation_system = {#导航系统
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_automotive_radar
+	}
+}
+tech_electronic_product = {#电子产品
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+	}
+}
+tech_semiconductor = {#半导体
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_electronic_product
+	}
+}
+tech_integrated_circuit = {#集成电路
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_semiconductor
+	}
+}
+tech_smart_chip = {#智能芯片
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_integrated_circuit
+	}
+}
+tech_mobile_phone = {#移动电话
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_semiconductor
+	}
+}
+tech_intelligent_mobile_phone = {#智能手机
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_mobile_phone
+	}
+}
+tech_machine_building = {#机器制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+		tech_basic_power_generation
+	}
+}
+tech_gantry_planer = {#龙门刨床
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_machine_building
+	}
+}
+tech_numerical_control_machine = {#数控机床
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_gantry_planer
+	}
+}
+tech_adaptive_control_machine_tool = {#自适控制机床
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_numerical_control_machine
+	}
+}
+tech_aircraft_manufacturing = {#飞机制造
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_engine_manufacturing
+	}
+}
+tech_modern_aircraft = {#现代飞机
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_aircraft_manufacturing
+tech_first_generation_supercomputers
+	}
+}
+tech_large_scale_equipment_manufacturing = {#大型设备制造
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_machine_building
+	}
+}
+tech_industrial_robot = {#工业机器人
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_large_scale_equipment_manufacturing
+	}
+}
+tech_intelligent_giant_production_equipment = {#智能化巨型生产设备
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_industrial_robot
+	}
+}
+tech_first_generation_supercomputers = {#第一代超级计算机
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_electronic_product
+	}
+}
+tech_modern_supercomputers = {#现代超级计算机
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_first_generation_supercomputers
+	}
+}
+tech_rocket_engineering = {#火箭工程
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_electronic_product
+	}
+}
+tech_modern_rockets = {#现代火箭
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_rocket_engineering
+	}
+}
+tech_semi_mechanized_mining = {#半机械化矿业
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+}
+tech_coal_planer_and_segmented_support = {#刨煤机和节式支架
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_semi_mechanized_mining
+	}
+}
+tech_electrohydraulic_control_hydraulic_support = {#电液控液压支架
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_coal_planer_and_segmented_support
+	}
+}
+tech_small_agricultural_machinery = {#小型农业机械
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_machine_building
+	}
+}
+tech_popularization_of_tractors = {#拖拉机普及
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_small_agricultural_machinery
+tech_large_scale_equipment_manufacturing
+	}
+}
+tech_light_industrial_tools = {#轻工业工具
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+}
+tech_light_industrial_machinery = {#轻工业机械
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_light_industrial_tools
+tech_machine_building
+	}
+}
+tech_light_industrial_equipment = {#轻工业设备
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_light_industrial_machinery
+tech_large_scale_equipment_manufacturing
+	}
+}
+tech_heavy_industrial_tools = {#重工业工具
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+}
+tech_heavy_industrial_machinery = {#重工业机械
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_heavy_industrial_tools
+tech_machine_building
+	}
+}
+tech_heavy_industrial_equipment = {#重工业设备
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_heavy_industrial_machinery
+tech_large_scale_equipment_manufacturing
+	}
+}
+tech_chemical_tools = {#化工工具
+	era = era_2
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+}
+tech_chemical_machinery = {#化工机械
+	era = era_3
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_chemical_tools
+tech_machine_building
+	}
+}
+tech_chemical_equipment = {#化工设备
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_chemical_machinery
+tech_large_scale_equipment_manufacturing
+	}
+}
+tech_complex_industrial_machinery = {#复杂工业机械
+	era = era_4
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_heavy_industrial_machinery
+tech_machine_building
+	}
+}
+tech_complex_industrial_equipment = {#复杂工业设备
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_complex_industrial_machinery
+tech_large_scale_equipment_manufacturing
+	}
+}
+tech_cutting_edge_industrial_equipment = {#尖端工业设备
+	era = era_5
+	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_complex_industrial_equipment
+tech_large_scale_equipment_manufacturing
+	}
+}

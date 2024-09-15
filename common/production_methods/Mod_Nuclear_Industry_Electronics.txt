@@ -1,0 +1,481 @@
+﻿# We shall decide based on base price of these stuff
+
+#Coal cost $30
+#Electricity cost $30
+#Tools cost $40
+#sulfur cost $50
+#radioactive_ore cost $40 (Same as iron ore
+#irradiated_material cost $50
+
+
+#Idea: Chemical processing should be quite rudimentary while electrical processing
+#ain't much more advanced
+
+#A bit better than sewing machines
+
+### Range would be: 2000-3600, per 4,500 employees
+
+####################### Computers, Wetwires, etc.
+
+###################### Circuit Printing#############
+### There are two parts of profit for
+### circuit printing: the base and the cybernetics
+### Cybernetics earns about 500, and base earns about 2500 to 3000.
+### Cybernetics unlocked by tech and pm.
+### All costs lowered by 1,200 in base, to provide place for
+### silicon refinery methods.
+
+pm_rudimentary_circuit_board = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/rudimentary_circuit_board.jpg"
+	
+	unlocking_technologies = {
+		programmables_tech
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_electricity_add = 35 #$1050
+			goods_input_glass_add = 20 #800
+			goods_input_steel_add = 30 #1,500
+			goods_input_tools_add = 25 #1000
+			goods_input_nuclear_fuel_add = 5 #250
+			goods_input_research_and_engineering_add = 25 #1,000
+
+
+			#Total Cost $5,600
+			
+			# output goods
+
+			goods_output_programmables_add = 280
+			#Total Gain $8400
+			#Profit $2,000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1000
+			building_employment_clerks_add = 400
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+pm_printed_circuit_board = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/printed_circuit_board.jpg"
+
+	unlocking_technologies = {
+		art_of_silicon
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 50 #$1500
+			goods_input_glass_add = 30 #1,200
+			goods_input_steel_add = 34 #1,700
+			goods_input_irradiated_material_add = 6 #300
+			goods_input_nuclear_fuel_add = 5 #250
+			goods_input_tools_add = 25 #1000
+			goods_input_research_and_engineering_add = 35 #1,400
+
+
+			#Total Cost $7,350
+			## Add 1,200 Silicon
+			
+			# output goods
+
+			goods_output_programmables_add = 340
+			#Total Gain $10,800
+			#Profit $2,250
+			## Plus 300 from cybernetics
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 1100
+			building_employment_academics_add = 100
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+### All silicon refining methods cost 1,200
+pm_advanced_optical_lithography = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/advanced_optical_lithography.dds"
+	
+	unlocking_technologies = {
+		programmables_tech
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_glass_add = 15 #600
+			goods_input_tools_add = 6 #240
+			goods_input_electricity_add = 12 #360
+		}
+	}
+}
+
+pm_acid_surface_cleaning = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/acid_surface_cleaning.dds"
+	
+	unlocking_technologies = {
+		programmables_tech
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_sulfur_add = 20 #1000
+			goods_input_fertilizer_add = 5 ## 150
+			goods_input_irradiated_material_add = 1 #50
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_alternative_semiconductive_materials = {
+	texture = "gfx/interface/icons/goods_icons/irradiated_material.dds"
+	
+	unlocking_technologies = {
+		programmables_tech
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 10 #300
+			goods_input_irradiated_material_add = 12 #600
+			goods_input_steel_add = 6 #300
+		}
+	}
+
+}
+
+pm_no_cybernetics = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+}
+
+
+pm_organic_material_cybernetics = {
+	texture = "gfx/interface/icons/goods_icons/meat.dds"
+
+	unlocking_technologies = {
+		cybernetics_circuitry
+	}
+	
+	unlocking_production_methods = {
+		pm_printed_circuit_board
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_meat_add = 12 #360
+			goods_input_research_and_engineering_add = 12 #480
+
+			goods_output_programmables_add = 38
+			#300 profit
+		}
+	}
+}
+
+pm_stainless_steel_and_glass_cybernetics = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/stainless_steel_and_glass_cybernetics.dds"
+
+	unlocking_technologies = {
+		cybernetics_circuitry
+	}
+	
+	unlocking_production_methods = {
+		pm_printed_circuit_board
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_steel_add = 4 #160
+			goods_input_glass_add = 4 #160
+			goods_input_research_and_engineering_add = 12 #480
+
+			goods_output_programmables_add = 38
+			#300 profit
+		}
+	}
+}
+
+###### Computer Factory
+
+pm_default_electronics_factory = {
+	texture = "gfx/interface/icons/goods_icons/radios.dds"
+
+	unlocking_technologies = {
+		electronic_processors
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+
+
+
+			goods_input_steel_add = 10 #500
+			goods_input_rubber_add = 12.5 #500
+			goods_input_electricity_add = 25 #750
+			goods_input_programmables_add = 110 #3,300
+			goods_input_research_and_engineering_add = 20 #800
+			goods_input_glass_add = 10 #400
+
+			#Total Cost $6,250
+			## Add 1,200 performance improver
+
+			goods_output_radios_add = 125 #10000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 1100
+			building_employment_academics_add = 100
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+### Three secondary "performance improver" pms will cost 1,200
+pm_extra_processors = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/extra_processors.png"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 24 #720
+			goods_input_research_and_engineering_add = 12 #480
+		}
+	}
+}
+
+pm_nuclear_fuel_cells = {
+	texture = "gfx/interface/icons/goods_icons/nuclear_fuel.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_nuclear_engines_add = 3 #180
+			goods_input_research_and_engineering_add = 13 #540
+		}
+	}
+}
+
+pm_extra_internal_memory = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/extra_internal_memory.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 14 #420
+			goods_input_steel_add = 4 #200
+			goods_input_irradiated_material_add = 2 #100
+			goods_input_research_and_engineering_add = 12 #480
+		}
+	}
+}
+
+
+#### Consumer Industries
+#### Again, "Integrated Circuits" pm cost 1,200
+
+pm_default_household_electronics = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/default_household_electronics.jpg"
+
+	unlocking_technologies = {
+		consumer_electronics
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_programmables_add = 40 #1200
+			goods_input_radios_add = 20 #1600
+			goods_input_electricity_add = 25 #$750
+			goods_input_steel_add = 18 #$900
+			goods_input_rubber_add = 20 #800	
+			goods_input_glass_add = 20 #800
+			goods_input_research_and_engineering_add = 15 #600
+
+			#Total Cost $6650
+			## Add 1,200 performance improver
+			
+			# output goods
+
+			goods_output_luxury_furniture_add = 170
+			#Total Gain $10,200
+		}
+
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 1100
+			building_employment_academics_add = 100
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+pm_default_household_exoskeleton = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/default_household_exoskeleton.jpg"
+
+	unlocking_technologies = {
+		powered_exoskeletons
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_programmables_add = 40 #1200
+			goods_input_radios_add = 20 #1600
+			goods_input_electricity_add = 25 #$750
+			goods_input_steel_add = 14 #$700
+			goods_input_rubber_add = 25 #1000	
+			goods_input_glass_add = 10 #400
+			goods_input_research_and_engineering_add = 25 #1000
+
+			#Total Cost $6650
+			## Add 1,200 performance improver
+
+			
+			# output goods
+
+			goods_output_luxury_clothes_add = 170
+			#Total Gain $10,200
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1600
+			building_employment_engineers_add = 1200
+			building_employment_clerks_add = 300
+			building_employment_academics_add = 300	
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+### Three secondary "performance improver" pms will cost 1,200
+pm_integrated_circuit_board = {
+	texture = "gfx/interface/icons/goods_icons/programmables.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 40
+		}
+	}
+}
+
+pm_command_line_interface = {
+	texture = "gfx/interface/icons/goods_icons/radios.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 15
+		}
+	}
+}
+
+
+pm_default_network_center = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/default_network_center.jpg"
+
+	unlocking_technologies = {
+		consumer_electronics
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_programmables_add = 60 #1,800
+			goods_input_radios_add = 25 #2,000
+			goods_input_electricity_add = 38 #$1140
+			goods_input_research_and_engineering_add = 10 #400
+
+			#Total Cost $5340
+			## Add 1,200 performance improver
+			
+			# output goods
+
+			goods_output_services_add = 270
+			#Total Gain $8,100
+		}
+
+
+		level_scaled = {
+			building_employment_clerks_add = 500
+			building_employment_academics_add = 200
+			building_employment_shopkeepers_add = 200
+			building_employment_engineers_add = 300
+		}
+	}
+}
+
+## Each costs about 2,400
+pm_computing_stations = {
+	texture = "gfx/interface/icons/goods_icons/programmables.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 40 #1,200
+		}
+	}
+}
+
+pm_distributed_terminals = {
+	texture = "gfx/interface/icons/goods_icons/radios.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 12.5 #1,200
+		}
+	}
+}
+
+pm_bio_computing_units = {
+	texture = "gfx/interface/icons/goods_icons/meat.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 30
+			goods_input_meat_add = 10
+		}
+	}
+}

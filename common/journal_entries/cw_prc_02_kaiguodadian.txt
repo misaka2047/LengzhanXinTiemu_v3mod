@@ -1,0 +1,315 @@
+
+je_kaiguodadian = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_internal_affairs
+	
+	is_shown_when_inactive = {
+		exists = c:PRC
+		c:PRC = ROOT
+	}
+	
+	possible = {
+		exists = c:PRC
+		c:PRC = ROOT
+		owns_entire_state_region = STATE_NANJING
+		owns_entire_state_region = STATE_BEIJING
+	}
+
+	should_be_pinned_by_default = yes
+	
+	immediate = {
+		every_scope_state = {
+			limit = {
+				OR = {
+					state_region = s:STATE_YUNNAN
+					state_region = s:STATE_SICHUAN
+					state_region = s:STATE_GUIZHOU
+					state_region = s:STATE_CHONGQING
+				}
+			}
+			add_modifier = {
+				name = xinanfeihuan_modifier
+				months = long_modifier_time
+			}
+		}
+		set_variable = {
+			name = kaiguodadian_var
+			value = 0
+		}
+		set_variable = {
+			name = xinanfeihuan_start_var
+			value = 0
+		}
+		set_variable = {
+			name = xinanfeihuan_end_var
+			value = 0
+		}
+		set_variable = {
+			name = kaiguodadadian_var
+			value = 0
+		}
+		set_variable = {
+			name = waijiaozhengce_var
+			value = 0
+		}
+		
+		set_variable = {
+			name = tudigaige_var
+			value = 0
+		}
+		
+		set_variable = {
+			name = wunianjihua_var
+			value = 0
+		}
+		
+	}
+	
+	complete = {
+		var:xinanfeihuan_start_var >= 1
+		var:kaiguodadadian_var >= 1
+		var:waijiaozhengce_var >= 1
+		var:tudigaige_var >= 1
+		var:wunianjihua_var >= 1
+	}
+
+	scripted_button = xinanjiaofei_button_key
+	scripted_button = kaiguodadadian_button_key
+	scripted_button = waijiaozhengce_button_key
+	scripted_button = tudigaige_button_key
+	scripted_button = wunianjihua_button_key
+}
+
+je_xinanjiaofei = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_internal_affairs
+	
+	immediate = {
+		set_variable = {
+			name = xinanjiaofei_var
+			value = 0
+		}
+	}
+	
+	on_monthly_pulse = {
+		random_events = {
+			100 = 0
+			20 = xinanjiaofei.1 
+			20 = xinanjiaofei.2 
+			20 = xinanjiaofei.3 
+		}
+	
+		effect = {
+			if = {
+				limit = {
+					AND = {
+						any_scope_state = {
+							state_region = s:STATE_YUNNAN
+							any_scope_building = {
+								is_building_type = building_barracks
+								level >= 10			
+							}
+							is_incorporated = yes
+						}
+						any_scope_state = {
+							state_region = s:STATE_SICHUAN
+							any_scope_building = {
+								is_building_type = building_barracks
+								level >= 10			
+							}
+							is_incorporated = yes
+						}
+						any_scope_state = {
+							state_region = s:STATE_GUIZHOU
+							any_scope_building = {
+								is_building_type = building_barracks
+								level >= 10			
+							}
+							is_incorporated = yes
+						}
+						any_scope_state = {
+							state_region = s:STATE_CHONGQING
+							any_scope_building = {
+								is_building_type = building_barracks
+								level >= 10			
+							}
+							is_incorporated = yes
+						}				
+					}
+				}
+
+				change_variable = {
+					name = xinanjiaofei_var
+					add = 10
+				}
+			}
+		}
+	}
+	
+	current_value = {
+		value = root.var:xinanjiaofei_var
+	}
+
+	goal_add_value = {
+		add = 100
+	}
+		
+	progressbar = yes
+	
+	weight = 100
+	
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		every_scope_state = {
+			if = {
+				limit = {
+					has_modifier = xinanfeihuan_modifier
+				}
+				remove_modifier = xinanfeihuan_modifier
+				add_modifier = {
+					name = feihuanqingchu_modifier
+					months = long_modifier_time
+				}
+			}
+		}
+		change_variable = {
+			name = xinanfeihuan_end_var
+			add = 1
+		}
+	}
+
+	should_be_pinned_by_default = yes
+
+}
+
+
+
+je_tudigaige = {
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_internal_affairs
+
+	complete = {
+		has_law = law_type:law_collectivized_agriculture
+		any_scope_state = {
+			owner = ROOT
+			OR = {
+				AND = {
+					any_scope_building = {
+						is_building_type = building_manor_house
+						level <= 100
+					}
+					any_scope_building = {
+						is_building_type = building_financial_district
+						level <= 100
+					}
+				}
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_manufacturing
+						is_building_group = bg_mining
+					}
+					levels_owned_by_country = {  
+						target = ROOT 
+						value  >= 2
+					}
+				}
+			}
+			count = all
+		}
+		any_scope_state = {
+			owner = ROOT
+			OR = {
+				AND = {
+					any_scope_building = {
+						is_building_type = building_manor_house
+						level <= 100
+					}
+					any_scope_building = {
+						is_building_type = building_financial_district
+						level <= 100
+					}
+				}
+				any_scope_building = {
+					OR = {
+						is_building_group = bg_agriculture
+						is_building_group = bg_ranching
+						is_building_group = bg_plantations
+					}
+					levels_owned_by_country = {  
+						target = ROOT 
+						value  >= 1
+					}
+				}
+			}
+			count = all
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = tugaiwancheng_modifier
+			months = long_modifier_time
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+
+je_5_year_plan = {  #五年计划
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_internal_affairs
+
+	immediate = {
+		root = {
+			save_scope_as = five_year_plan_country
+		}
+	}
+
+	complete = {
+		OR = {
+			has_law = law_type:law_command_economy
+			has_law = law_type:law_cooperative_ownership
+		}
+		custom_tooltip = {
+			text = custom_loc_five_year_plan_goal
+				scope:journal_entry = {
+				is_goal_complete = yes
+			}
+		}
+		in_default = no
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = five_year_plan_welfare_mod
+			months = long_modifier_time
+		}
+	}
+
+	current_value = {
+		value = root.gdp
+	}
+
+	goal_add_value = {
+		value = root.gdp
+		multiply = 0.25
+	}
+
+	fail = {
+		NOT = { has_law = law_type:law_council_republic }
+	}
+
+	progressbar = yes
+}

@@ -1,0 +1,30 @@
+﻿CHARACTERS = {
+	c:SIK = {
+		create_character = {
+			first_name = "Tash"
+			last_name = "Namgal"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1900.1.1
+			interest_group = ig_landowners
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				arrogant
+			}
+		}	
+
+		create_character = { #印度派来的首相拉尔
+			historical = yes
+			religion = rel:atheist #无神论
+			culture = cu:kashmiri
+			first_name = "Jawaharlal"
+			last_name = "Rahl"
+			ig_leader = yes
+			interest_group = ig_landowners
+			traits = {
+			}
+		}
+
+	}
+}

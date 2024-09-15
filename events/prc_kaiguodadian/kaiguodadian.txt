@@ -1,0 +1,42 @@
+namespace = kaiguodadian
+
+
+
+
+kaiguodadian.1 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = formation.cn.t
+	desc = formation.cn.d
+	flavor = formation.cn.f
+
+	event_image = {
+		video = "china_uni"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = formation.cn.a
+		default_option = yes
+		add_modifier = {
+			name = kaiguodadian_modifier
+			months = 12
+		}
+		c:PRC = {
+			set_variable = {
+				name = kaiguodadadadian_var
+				value = 1
+			}
+		}
+	}	
+}

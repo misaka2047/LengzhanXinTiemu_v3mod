@@ -1,0 +1,8 @@
+﻿
+assault_rifle_trigger = {
+has_technology_researched = tech_weapon_manufacturing
+}
+
+
+
+

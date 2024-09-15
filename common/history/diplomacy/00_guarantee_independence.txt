@@ -1,0 +1,8 @@
+﻿DIPLOMACY = { #保独
+	c:USA ?= {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = guarantee_independence
+		}	
+	}				
+}

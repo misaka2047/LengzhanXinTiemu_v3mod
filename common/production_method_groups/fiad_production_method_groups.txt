@@ -1,0 +1,51 @@
+### building_food_industry
+pmg_can_meterial = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_meat_and_fish_can
+		pm_fish_can
+		pm_increased_fish_can
+		pm_meat_can
+		pm_increased_meat_can
+		pm_mix_can
+		pm_increased_mix_can
+	}
+}
+### building_distillery
+pmg_base_building_distillery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_simple_stills
+		pm_pot_stills
+		pm_patent_stills
+	}
+}
+pmg_grains_and_sugar = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_grain_distillation
+		pm_sugar_usage
+		pm_increased_sugar_usage
+		pm_maltose
+		pm_increased_maltose
+		pm_acidolysis
+	}
+}
+pmg_automation_building_distillery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_manual_bottling
+		pm_bottler
+		pm_automated_bottling
+	}
+}
+pmg_ownership_capital_building_distillery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_building_distillery
+		pm_privately_owned_building_distillery
+		pm_publicly_traded_building_distillery
+		pm_government_run_building_distillery
+		pm_worker_cooperative_building_distillery
+	}
+}

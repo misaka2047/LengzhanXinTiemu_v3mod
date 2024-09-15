@@ -1,0 +1,1554 @@
+namespace = space_race
+space_race.1 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.1.t
+	desc = space_race.1.d
+	flavor = space_race.1.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = space_race.1.a
+		add_journal_entry = {
+			type = je_space_race_main
+		}
+		add_technology_progress = { 
+			progress = 6000 
+			technology = tech_rocket_engineering
+		}
+		default_option = yes
+    }
+}
+
+space_race.2 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.2.t
+	desc = space_race.2.d
+	flavor = space_race.2.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = space_race.2.a
+		add_journal_entry = {
+			type = je_satellite
+		}
+		default_option = yes
+    }
+}
+
+space_race.3 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.3.t
+	desc = space_race.3.d
+	flavor = space_race.3.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = space_race.3.a
+		add_journal_entry = {
+			type = je_manned_space_flight
+		}
+		default_option = yes
+    }
+}
+
+space_race.4 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.4.t
+	desc = space_race.4.d
+	flavor = space_race.4.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = space_race.4.a
+		add_journal_entry = {
+			type = je_lunarlanding
+		}
+		default_option = yes
+    }
+}
+
+space_race.5 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.5.t
+	desc = space_race.5.d
+	flavor = space_race.5.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = space_race.5.a
+		add_journal_entry = {
+			type = je_space_station
+		}
+		default_option = yes
+    }
+}
+
+space_race.181 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.18.t
+	desc = space_race.18.d
+	flavor = space_race.18.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.18.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.182 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.18.t
+	desc = space_race.18.d
+	flavor = space_race.18.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.18.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.183 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.18.t
+	desc = space_race.18.d
+	flavor = space_race.18.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.18.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.184 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.18.t
+	desc = space_race.18.d
+	flavor = space_race.18.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.18.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.191 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.19.t
+	desc = space_race.19.d
+	flavor = space_race.19.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.19.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = 2
+        }
+        change_variable = {
+            name = satellite_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.192 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.19.t
+	desc = space_race.19.d
+	flavor = space_race.19.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.19.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 2
+        }
+        change_variable = {
+            name = manned_space_flight_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.193 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.19.t
+	desc = space_race.19.d
+	flavor = space_race.19.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.19.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.194 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.19.t
+	desc = space_race.19.d
+	flavor = space_race.19.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.19.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.201 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.20.t
+	desc = space_race.20.d
+	flavor = space_race.20.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.20.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = -2
+        }
+        change_variable = {
+            name = satellite_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.202 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.20.t
+	desc = space_race.20.d
+	flavor = space_race.20.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.20.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = -2
+        }
+        change_variable = {
+            name = manned_space_flight_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.203 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.20.t
+	desc = space_race.20.d
+	flavor = space_race.20.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.20.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.204 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.20.t
+	desc = space_race.20.d
+	flavor = space_race.20.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = space_race.20.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = 1
+        }
+    }
+}
+
+space_race.161 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.16.t
+	desc = space_race.16.d
+	flavor = space_race.16.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+    option = {
+		name = space_race.16.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = satellite_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.16.b
+		default_option = no
+        change_variable = {
+            name = satellite_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = satellite_peril_var
+            add = 2
+        }
+    }
+}
+
+space_race.162 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.16.t
+	desc = space_race.16.d
+	flavor = space_race.16.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+    option = {
+		name = space_race.16.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = manned_space_flight_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.16.b
+		default_option = no
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = manned_space_flight_peril_var
+            add = 2
+        }
+    }
+}
+
+space_race.163 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.16.t
+	desc = space_race.16.d
+	flavor = space_race.16.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+    option = {
+		name = space_race.16.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.16.b
+		default_option = no
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = 2
+        }
+    }
+}
+
+space_race.164 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.16.t
+	desc = space_race.16.d
+	flavor = space_race.16.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+    option = {
+		name = space_race.16.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = -2
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.16.b
+		default_option = no
+        change_variable = {
+            name = space_station_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = 2
+        }
+    }
+}
+
+space_race.121 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.12.t
+	desc = space_race.12.d
+	flavor = space_race.12.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.12.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = satellite_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.12.b
+		default_option = no
+    }
+}
+
+space_race.122 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.12.t
+	desc = space_race.12.d
+	flavor = space_race.12.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.12.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = manned_space_flight_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.12.b
+		default_option = no
+    }
+}
+
+space_race.123 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.12.t
+	desc = space_race.12.d
+	flavor = space_race.12.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.12.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.12.b
+		default_option = no
+    }
+}
+
+space_race.124 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.12.t
+	desc = space_race.12.d
+	flavor = space_race.12.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.12.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = 2
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = -1
+        }
+    }
+	option = {
+		name = space_race.12.b
+		default_option = no
+    }
+}
+
+space_race.131 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.13.t
+	desc = space_race.13.d
+	flavor = space_race.13.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.13.a
+		default_option = yes
+        change_variable = {
+            name = satellite_progression_var
+            add = -2
+        }
+    }
+	option = {
+		name = space_race.13.b
+		default_option = no
+        change_variable = {
+            name = satellite_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = satellite_peril_var
+            add = 1
+        }
+    }
+	option = {
+		name = space_race.13.c
+		default_option = no
+        change_variable = {
+            name = satellite_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.132 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.13.t
+	desc = space_race.13.d
+	flavor = space_race.13.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.13.a
+		default_option = yes
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = -2
+        }
+    }
+	option = {
+		name = space_race.13.b
+		default_option = no
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = manned_space_flight_peril_var
+            add = 1
+        }
+    }
+	option = {
+		name = space_race.13.c
+		default_option = no
+        change_variable = {
+            name = manned_space_flight_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.133 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.13.t
+	desc = space_race.13.d
+	flavor = space_race.13.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.13.a
+		default_option = yes
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = -2
+        }
+    }
+	option = {
+		name = space_race.13.b
+		default_option = no
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = lunarlanding_peril_var
+            add = 1
+        }
+    }
+	option = {
+		name = space_race.13.c
+		default_option = no
+        change_variable = {
+            name = lunarlanding_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.134 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.13.t
+	desc = space_race.13.d
+	flavor = space_race.13.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.13.a
+		default_option = yes
+        change_variable = {
+            name = space_station_progression_var
+            add = -2
+        }
+    }
+	option = {
+		name = space_race.13.b
+		default_option = no
+        change_variable = {
+            name = space_station_progression_var
+            add = 1
+        }
+		change_variable = {
+            name = space_station_peril_var
+            add = 1
+        }
+    }
+	option = {
+		name = space_race.13.c
+		default_option = no
+        change_variable = {
+            name = space_station_progression_var
+            add = 2
+        }
+    }
+}
+
+space_race.6 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.6.t
+	desc = space_race.6.d
+	flavor = space_race.6.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = success_in_satellite_first_global }
+			}
+			set_global_variable = success_in_satellite_first_global
+			set_variable = success_in_satellite_first
+		}
+    }
+	option = {
+		name = space_race.6.a
+		default_option = yes
+		set_variable = {
+			name = have_launched_satellite
+			months = -1
+		}
+		set_variable = {
+			name = have_launched_satellite_first_triggered
+			months = -1
+		}
+		add_modifier = {
+			name = success_in_satellite_first_modifier
+			months = -1
+		}
+		trigger = {
+			has_variable = success_in_satellite_first
+			NOT = {
+				has_variable = have_launched_satellite_first_triggered
+			}
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_25 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_25 = yes
+		}		
+    }
+	option = {
+		name = space_race.6.b
+		default_option = yes
+		set_variable = {
+			name = have_launched_satellite
+			months = -1
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					has_variable = success_in_satellite_first
+				}
+				has_variable = have_launched_satellite_first_triggered
+			}
+		}
+		add_modifier = {
+			name = success_in_satellite_modifier
+			months = 24
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_10 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_10 = yes
+		}		
+    }
+}
+
+space_race.7 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.7.t
+	desc = space_race.7.d
+	flavor = space_race.7.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.7.a
+		default_option = yes
+		trigger_event = {
+			id = space_race.8
+			days = 1
+		}
+    }
+}
+
+space_race.8 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.8.t
+	desc = space_race.8.d
+	flavor = space_race.8.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect ="event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = success_in_manned_first_global }
+			}
+			set_global_variable = success_in_manned_first_global
+			set_variable = success_in_manned_first
+		}
+    }
+	
+	option = {
+		name = space_race.8.b
+		default_option = yes
+		set_variable = {
+			name = have_launched_astronaut
+			months = -1
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					has_variable = success_in_manned_first
+				}
+				has_variable = have_launched_astronaut_first_triggered
+			}
+		}
+		add_modifier = {
+			name = success_in_manned_space_flight_modifier
+			months = 24
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_15 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_15 = yes
+		}	
+    }
+	option = {
+		name = space_race.8.a
+		default_option = yes
+		set_variable = {
+			name = have_launched_astronaut_first_triggered
+			months = -1
+		}
+		set_variable = {
+			name = have_launched_astronaut
+			months = -1
+		}
+		trigger = {
+				has_variable = success_in_manned_first
+				NOT = {
+					has_variable = have_launched_astronaut_first_triggered
+				}
+		}
+		add_modifier = {
+			name = success_in_manned_space_flight_first_modifier
+			months = -1
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_50 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_50 = yes
+		}
+    }
+}
+
+space_race.9 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.9.t
+	desc = space_race.9.d
+	flavor = space_race.9.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+	
+	option = {
+		name = space_race.9.a
+		default_option = yes
+		set_variable = {
+			name = have_launched_space_station
+			months = -1
+		}
+		add_modifier = {
+			name = success_in_space_station_modifier
+			months = -1
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_50 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_50 = yes
+		}
+    }
+}
+
+space_race.10 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.10.t
+	desc = space_race.10.d
+	flavor = space_race.10.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = success_in_lunarlanding_first_global }
+			}
+			set_global_variable = success_in_lunarlanding_first_global
+			set_variable = success_in_lunarlanding_first
+		}
+    }
+	
+	option = {
+		name = space_race.10.b
+		default_option = yes
+		set_variable = {
+			name = have_landed_on_moon
+			months = -1
+		}
+		add_modifier = {
+			name = success_in_lunarlanding_modifier
+			months = 36
+		}
+		trigger = {
+			OR = {
+				NOT = {
+					has_variable = success_in_lunarlanding_first
+				}
+				has_variable = have_landed_on_moon_first_triggered
+			}
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_25 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_25 = yes
+		}
+    }
+
+	option = {
+		name = space_race.10.a
+		default_option = yes
+		add_modifier = {
+			name = success_in_lunarlanding_first_modifier
+			months = -1
+		}
+		set_variable = {
+			name = have_landed_on_moon
+			months = -1
+		}
+		set_variable = {
+			name = have_landed_on_moon_first_triggered
+			months = -1
+		}
+		trigger = {
+			has_variable = success_in_lunarlanding_first
+			NOT = {
+				has_variable = have_landed_on_moon_first_triggered
+			}
+		}
+		if = {
+			limit = {
+				c:USA ?= this
+			}
+			space_race_usa_progress_75 = yes
+		}
+		if = {
+			limit = {
+				c:RUS ?= this
+			}
+			space_race_ussr_progress_75 = yes
+		}
+	}
+
+}
+
+space_race.14 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.14.t
+	desc = space_race.14.d
+	flavor = space_race.14.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	immediate = {}	
+	trigger = {}
+	option = {
+		name = space_race.14.a
+		default_option = yes
+		add_modifier ={
+			name = failure_in_space_task_modifier
+			months = 12
+		}
+	}	
+}
+space_race.15 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.15.t
+	desc = space_race.15.d
+	flavor = space_race.15.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	immediate = {}	
+	trigger = {}
+	option = {
+		name = space_race.15.a
+		default_option = yes
+		add_modifier ={
+			name = failure_in_space_task_modifier
+			months = 12
+		}
+	}	
+}
+
+space_race.17 = {
+	type = country_event
+	placement = root
+	
+	title = space_race.17.t
+	desc = space_race.17.d
+	flavor = space_race.17.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	immediate = {}	
+	trigger = {}
+	option = {
+		name = space_race.17.a
+		default_option = yes
+		add_modifier ={
+			name = failure_in_space_task_modifier
+			months = 12
+		}
+	}	
+}

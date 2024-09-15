@@ -1,0 +1,244 @@
+namespace = GER_event
+
+GER_event.1 = { #成立西德
+	type = country_event
+	orphan = yes
+	
+	title = BRD.1.t
+	desc = BRD.1.d
+	flavor = BRD.1.f
+
+	event_image = { #事件图像
+		texture = "gfx/event_pictures/BRD.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 0
+	
+	trigger = { 
+	}
+
+	option = {
+		name = BRD.1.a
+		default_option = yes
+		add_modifier = {
+			name = the_country_of_our_ancestors_modifier
+			years = 1
+		}
+		if ={
+            limit ={
+                OR ={
+                    AND ={
+                        exists =C:RHN
+                        this=c:RHN
+                        c:RHN ?= {is player= yes}
+			}
+                    AND ={
+                        exists =C:HAN
+                        this=c:HAN
+                        c:HAN ?= {is player= yes}
+			}
+		}
+	}
+			play_as = c:BAV
+}
+	c:BAV = { change_tag = BRD 
+		          annex = c:RHN
+				  annex = c:HAN
+				  make_independent = yes}
+	set_capital = STATE_NORTH_RHINE
+		create_character = {
+			ruler = yes
+			}
+		create_character = {
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+		}
+	}
+
+	option = {
+		name = BRD.1.b
+		add_modifier = {
+			name = the_country_of_our_ancestors_modifier
+			years = 1
+		}
+		if ={
+            limit ={
+                OR ={
+                    AND ={
+                        exists =C:RHN
+                        this=c:RHN
+                        c:RHN ?= {is player= yes}
+			}
+                    AND ={
+                        exists =C:HAN
+                        this=c:HAN
+                        c:HAN ?= {is player= yes}
+			}
+		}
+	}
+			play_as = c:BAV
+}
+	c:BAV = { 
+			change_tag = BRD 
+		        annex = c:RHN
+			annex = c:HAN
+			}
+	set_capital = STATE_NORTH_RHINE
+		create_character = {
+			ruler = yes
+			}
+		create_character = {
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+		}
+	c:USA = {
+		          create_diplomatic_pact = {
+				  country = c:BRD 
+				  type = protectorate
+			}
+		}
+	}
+
+	option = {
+		name = BRD.1.c
+	}
+}
+
+GER_event.2 = { #成立东德
+	type = country_event
+	orphan = yes
+	
+	title = DDR.1.t
+	desc = DDR.1.d
+	flavor = DDR.1.f
+
+	event_image = { #事件图像
+		texture = "gfx/event_pictures/DDR.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 0
+	
+	trigger = { 
+	}
+
+	option = {
+		name = DDR.1.a
+		default_option = yes
+		add_modifier = {
+			name = the_country_of_our_ancestors_modifier
+			years = 1
+		}
+		c:PRU = { change_tag = DDR }
+		c:RUS = { create_diplomatic_pact = { country = c:DDR type = protectorate } }
+		create_character = {
+			#威廉·皮克
+			first_name = "William"
+			last_name = "pike"
+			historical = yes
+			ruler = yes # both ruler and general
+			birth_date = 1876.1.3
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+		create_character = {
+			heir = yes	
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+		create_character = {
+			is_general = yes
+			ig_leader = yes
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+	}
+
+	option = {
+		name = DDR.1.b
+	}
+}
+
+GER_event.3 = { #德国统一
+	type = country_event
+	placement = root
+	duration = 3
+
+	title = GER_event.3.t
+	desc = GER_event.3.d
+	flavor = GER_event.3.f
+
+	event_image = { #事件图像
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		# Triggered by JE
+	}
+
+	immediate = {
+		
+	}
+
+	option = {
+		default_option = yes
+		name = GER_event.3.a
+		add_loyalists = {
+			value = large_radicals
+		}
+		add_modifier = {
+			name = modifier_chinese_warlord_era
+		}
+		every_state_region = {
+			limit = {
+				NOT = {
+					any_scope_state = {
+						owner = root
+					}
+				}
+				OR = {
+					is_homeland = cu:north_german
+					is_homeland = cu:south_german
+				}
+			}
+			add_claim = ROOT
+		}
+	}
+
+	option = {
+		name = GER_event.3.b
+		add_loyalists = {
+			value = large_radicals
+		}
+		add_modifier = {
+			name = modifier_end_of_warlord_period
+			months = normal_modifier_time
+		}
+	}
+}

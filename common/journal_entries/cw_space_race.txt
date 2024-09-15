@@ -1,0 +1,363 @@
+je_space_race_main = {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/objectives/space_race.dds"
+
+	group = je_group_objectives
+
+	scripted_progress_bar = space_race_core_progress_bar
+	scripted_button = space_race_satellite_button
+	scripted_button = space_race_manned_space_flight_button
+	scripted_button = space_race_lunarlanding_button
+	scripted_button = space_race_space_station_button
+    immediate = {
+		set_global_variable = { name = space_race_usa_progress value = 100 }
+		set_global_variable = { name = space_race_rus_progress value = 100 }
+		if = {
+			limit = {
+				OR = {
+					c:USA ?= this
+					c:RUS ?= this
+				}
+			}
+			set_variable = { name = space_race_no_longer_power_bloc_leader_var value = 0 }
+		}
+		else = {
+			set_variable = { name = space_race_subjected_var value = 0 }
+		}
+		
+		if = {
+			limit = {
+				is_player = yes
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						c:RUS ?= this
+						c:USA ?= this
+					}
+					is_player = no
+					NOT = {
+						has_journal_entry = je_space_race_main
+					}
+				}
+				add_journal_entry = { type = je_space_race_main }
+			}
+		}
+    }
+    complete = {
+		trigger_if = {
+			limit = {
+				OR = {
+					c:USA ?= this
+					c:RUS ?= this
+				}
+			}
+			OR = {
+				trigger_if = {
+					limit = {
+						c:RUS ?= this
+					}
+					c:USA ?= {
+						country_rank < rank_value:great_power
+					}
+				}
+				trigger_if = {
+					limit = {
+						c:USA ?= this
+					}
+					c:RUS ?= {
+						country_rank < rank_value:great_power
+					}
+				}
+			}
+		}
+    }
+
+    on_complete = {
+
+    }
+	
+	weight = 1000
+	transferable = yes
+}
+
+je_satellite = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = satellite_progression_var value = 0 }
+		set_variable = { name = satellite_peril_var value = 0 }
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = space_race.6
+		}
+	}
+
+
+	current_value = {
+		value = var:satellite_progression_var
+	}
+
+	goal_add_value = {
+		add = 15
+	}
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			20 = space_race.181
+			5 = space_race.191
+			5 = space_race.201
+			5 = space_race.121
+			5 = space_race.131
+			5 = space_race.161
+		}
+	}
+	invalid = {
+
+	}
+
+	on_invalid = {
+
+	}
+
+	fail = {
+		satellite_peril_var >= 8
+		satellite_progression_var >= 10
+	}
+
+	on_fail = {
+		random_events = {
+			5 = space_race.14
+			5 = space_race.15
+			5 = space_race.17
+		}
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+
+}
+
+je_manned_space_flight = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = manned_space_flight_progression_var value = 0 }
+		set_variable = { name = manned_space_flight_peril_var value = 0 }
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = space_race.7
+		}
+	}
+
+
+	current_value = {
+		value = var:manned_space_flight_progression_var
+	}
+
+	goal_add_value = {
+		add = 15
+	}
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			20 = space_race.182
+			5 = space_race.192
+			5 = space_race.202
+			5 = space_race.122
+			5 = space_race.132
+			5 = space_race.162
+		}
+	}
+	invalid = {
+
+	}
+
+	on_invalid = {
+
+	}
+
+	fail = {
+		manned_space_flight_peril_var >= 8
+		manned_space_flight_progression_var >= 14
+	}
+
+	on_fail = {
+		random_events = {
+			5 = space_race.14
+			5 = space_race.15
+			5 = space_race.17
+		}
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+
+}
+
+je_lunarlanding = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = lunarlanding_progression_var value = 0 }
+		set_variable = { name = lunarlanding_peril_var value = 0 }
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = space_race.10
+		}
+	}
+
+
+	current_value = {
+		value = var:lunarlanding_progression_var
+	}
+
+	goal_add_value = {
+		add = 15
+	}
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			20 = space_race.183
+			5 = space_race.193
+			5 = space_race.203
+			5 = space_race.123
+			5 = space_race.133
+			5 = space_race.163
+		}
+	}
+	invalid = {
+
+	}
+
+	on_invalid = {
+
+	}
+
+	fail = {
+		lunarlanding_peril_var >= 8
+		lunarlanding_progression_var >= 14
+	}
+
+	on_fail = {
+		random_events = {
+			5 = space_race.14
+			5 = space_race.15
+			5 = space_race.17
+		}
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+
+}
+
+je_space_station = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	immediate = {
+		set_variable = { name = space_station_progression_var value = 0 }
+		set_variable = { name = space_station_peril_var value = 0 }
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = space_race.9
+		}
+	}
+
+
+	current_value = {
+		value = var:space_station_progression_var
+	}
+
+	goal_add_value = {
+		add = 15
+	}
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			20 = space_race.184
+			5 = space_race.194
+			5 = space_race.204
+			5 = space_race.124
+			5 = space_race.134
+			5 = space_race.164
+		}
+	}
+	invalid = {
+
+	}
+
+	on_invalid = {
+
+	}
+
+	fail = {
+		space_station_peril_var >= 8
+		space_station_progression_var >= 14
+	}
+
+	on_fail = {
+		random_events = {
+			5 = space_race.14
+			5 = space_race.15
+			5 = space_race.17
+		}
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+
+}

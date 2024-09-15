@@ -1,0 +1,269 @@
+﻿MILITARY_FORMATIONS = {
+	c:USA = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = "正规陆军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_TENNESSEE
+				count = 35
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_SOUTH_CAROLINA
+				count = 35
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
+				state_region = s:STATE_NEW_YORK
+				count = 35
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_NEW_YORK
+				count = 34
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_new_england
+			name = "陆军后备队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NEW_YORK
+				count = 14
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_OHIO
+				count = 11
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_KENTUCKY
+				count = 11
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_PENNSYLVANIA
+				count = 11
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_MASSACHUSETTS
+				count = 11
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_NORTH_CAROLINA
+				count = 11
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
+				state_region = s:STATE_ILLINOIS
+				count = 35
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_ILLINOIS
+				count = 34
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = "国民警卫队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_ALABAMA
+				count = 69
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery #自行火炮
+				state_region = s:STATE_GEORGIA
+				count = 35
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cuirassiers #喷气战斗机
+				state_region = s:STATE_GEORGIA
+				count = 34
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_dixie
+			name = "大西洋舰队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_VIRGINIA
+				count = 23
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
+				state_region = s:STATE_VIRGINIA
+				count = 10
+			}
+			combat_unit = { # Ahistorical
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_WASHINGTON
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_new_england
+			name = "太平洋舰队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_WASHINGTON
+				count = 21
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
+				state_region = s:STATE_NEW_YORK
+				count = 10
+			}
+
+			combat_unit = { # Ahistorical
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_NEW_YORK
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_new_england
+			name = "欧洲舰队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_OREGON
+				count = 21
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
+				state_region = s:STATE_MASSACHUSETTS
+				count = 10
+			}
+
+			combat_unit = { # Ahistorical
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_MASSACHUSETTS
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_dixie
+			name = "海军预备队"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_2
+				state_region = s:STATE_OREGON
+				count = 21
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_2
+				state_region = s:STATE_MASSACHUSETTS
+				count = 10
+			}
+			combat_unit = { # Ahistorical
+				type = unit_type:combat_unit_type_carrier_1
+				state_region = s:STATE_MASSACHUSETTS
+				count = 10
+			}
+		}
+
+	}
+
+	c:MEX = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_dixie
+			name = "陆军司令部"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MEXICO
+				count = 3
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YUCATAN
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_VERACRUZ
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_GUERRERO
+				count = 1
+			}
+			save_scope_as = operaciones_army
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_mexico
+			name = "墨西哥陆军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OAXACA
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZACATECAS
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_OAXACA
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_mexico
+			name = "墨西哥海军"
+
+			combat_unit = { # Libertad
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_VERACRUZ
+				count = 1
+			}
+		}
+	}
+}

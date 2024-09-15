@@ -1,0 +1,17 @@
+mikado_is_lackluster_army_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    country_soldiers_pol_str_mult = -0.95
+    country_officers_pol_str_mult = -0.95
+}
+mikado_is_lackluster_traditional_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    country_aristocrats_pol_str_mult = -0.75
+    country_soldiers_pol_str_mult = -0.75
+    country_clergymen_pol_str_mult = -0.75
+    country_officers_pol_str_mult = -0.75
+}
+
+modifier_japan_mac_17 = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+    state_poor_standard_of_living_add = 1
+}

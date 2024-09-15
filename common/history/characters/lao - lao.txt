@@ -1,0 +1,11 @@
+﻿CHARACTERS = {
+	c:LAO = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			female=no #不是女性
+			traits = {
+			}
+		}	
+	}
+}

@@ -1,0 +1,63 @@
+﻿COUNTRIES = {
+	c:BRZ = { #巴西
+		set_next_election_date = 1946.7.1
+		
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+
+		activate_law = law_type:law_presidential_republic #总统共和制
+		activate_law = law_type:law_universal_suffrage #普选制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_right_of_assembly #集会权
+		activate_law = law_type:law_appointed_bureaucrats #任命官僚制
+		activate_law = law_type:law_womens_suffrage #妇女选举权
+		activate_law = law_type:law_public_schools #公立学校
+		activate_law = law_type:law_compulsory_primary_school #义务小学
+		activate_law = law_type:law_dedicated_police #专职警察部队
+		activate_law = law_type:law_public_health_insurance #公共医疗保险
+		activate_law = law_type:law_poor_laws #济贫法
+		activate_law = law_type:law_no_migration_controls #无移民控制
+		activate_law = law_type:law_freedom_of_conscience
+		activate_law = law_type:law_slavery_banned #禁止蓄奴
+		activate_law = law_type:law_multicultural #文化多元
+		activate_law = law_type:law_protectionism #贸易保护
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_national_guard
+		activate_law = law_type:law_interventionism #经济干预
+            activate_law = law_type:law_10_hour_working_system
+	
+		set_institution_investment_level = {
+			institution = institution_social_security #社会保障
+			level = 2
+		}
+	
+		set_institution_investment_level = {
+			institution = institution_schools #教育
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police #执法
+			level = 1
+		}
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms
+
+		add_taxed_goods = g:liquor
+
+		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_caudillismo
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_paternalistic
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

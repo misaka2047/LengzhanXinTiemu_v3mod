@@ -1,0 +1,19 @@
+﻿##############
+# INDUSTRIAL #
+##############
+
+radioactive_ore = {
+	texture = "gfx/interface/icons/goods_icons/radioactive_ore.dds"
+	cost = 40
+	category = staple
+	
+	prestige_factor = 5
+}
+
+nuclear_fuel = {
+	texture = "gfx/interface/icons/goods_icons/nuclear_fuel.dds"
+	cost = 50
+	category = industrial
+	
+	prestige_factor = 5
+}

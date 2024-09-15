@@ -1,0 +1,104 @@
+﻿CHARACTERS = {
+	c:ROM = {
+		create_character = {
+			#米哈伊一世
+			first_name = "Mihai_I"
+			last_name = "Hohenzollern-Sigmaringen"
+			ruler = yes
+			historical = yes
+			birth_date = 1921.10.25
+			interest_group = ig_rural_folk #农民
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				brave #勇敢
+				innovative #创新精神
+				strong #健硕
+			}
+		}	
+
+		create_character = {
+			#彼得鲁·格罗查
+			first_name = "Petro"
+			last_name = "Grocha"
+			religion = rel:atheist #无神论
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1884.12.7
+			interest_group = ig_rural_folk #农民
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			#格奥尔基·乔治乌-德治
+			first_name = "Georgi"
+			last_name = "Gheorghiu-Dej"
+			religion = rel:atheist #无神论
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1901.11.8
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				expensive_tastes #昂贵嗜好
+			}
+		}	
+
+		create_character = {
+			#安娜·波克尔
+			first_name = "Anna"
+			last_name = "Pokel"
+			historical = yes
+    			female = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1893.2.13
+			culture=cu:ashkenazi #犹太
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				firebrand #煽动大师
+			}
+		}	
+
+		create_character = {
+			#格奥尔基·阿波斯托尔
+			first_name = "Georgi"
+			last_name = "Apostol"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1913.5.16
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+				strong #健硕
+				charismatic #魅力四射
+				inspirational_orator #鼓舞人心的演说家
+				firebrand #煽动大师
+			}
+		}	
+
+		create_character = {
+			#埃米尔·波德纳拉希
+			first_name = "Emile"
+			last_name = "Podnarash"
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1904.2.10
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+			}
+		}		
+	}
+}

@@ -1,0 +1,896 @@
+﻿#Cost of relavant stuff:
+# tools: $40
+# engines: $60
+# nuclear engines: $60
+# coal: $30
+# oil: $40
+# lead: $40
+# radioactive_ore: $40
+# (Reference) iron: $40
+# irradiated_material: $50
+# nuclear_fuel: $50
+
+
+pm_picks_and_shovels_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/picks_and_shovels.dds"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			
+			# output goods
+			goods_output_radioactive_ore_add = 20
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4500
+		}
+	}
+}
+
+pm_atmospheric_engine_pump_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/pumps.dds"
+
+	unlocking_technologies = {
+		atmospheric_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10
+			goods_input_coal_add = 10
+
+			# Input cost: $700
+			
+			# output goods
+			goods_output_radioactive_ore_add = 40
+			# Produce: $1,600
+
+			# Profit: $900
+			
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_machinists_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+}
+
+pm_condensing_engine_pump_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/condensing_engine_pump.dds"
+
+	unlocking_technologies = {
+		watertube_boiler
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_coal_add = 15
+
+			# Input cost: 15*40 + 15*30 = $1,050
+			
+			# output goods
+			goods_output_radioactive_ore_add = 60
+			
+			# Produce: $2,400
+			# Profit: $1,350
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_diesel_pump_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/diesel_pump.dds"
+
+	unlocking_technologies = {
+		combustion_engine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
+
+			# Input cost: 15*$40 (tools) + 10*40 (oil) = 800
+			
+			# output goods
+			goods_output_radioactive_ore_add = 70
+			# Output: 70*40 = $2,800
+			# Profit: $2,000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}
+
+
+pm_nuclear_pump_building_uranium_mine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/nuclear_pump.jpg"
+
+	unlocking_technologies = {
+		atomic_powered_mining_machine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_fuel_add = 10 ## 500
+			goods_input_nuclear_engines_add = 7 ## 420
+			goods_input_tools_add = 12 ## 480
+
+			# total cost: $1400
+			
+			# output goods
+			goods_output_radioactive_ore_add = 75
+			# Output: 75*40 = $3,000
+			# Profit: $1,600
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 500
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.05
+			building_machinists_mortality_mult = 0.025
+			building_engineers_mortality_mult = 0.01
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+
+pm_automated_mining_machine_building_uranium_mine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/wetwire_assisted_mining_machine.jpg"
+
+	unlocking_technologies = {
+		consumer_electronics
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_fuel_add = 10 #$500
+			goods_input_nuclear_engines_add = 6 #$360
+			goods_input_tools_add = 12 ## 480
+			goods_input_radios_add = 5 #$400
+			# total $1,740
+			
+			# output goods
+			goods_output_radioactive_ore_add = 85
+			# Output: 90*40 = $3,400
+			# Profit: $1,660
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 500
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.05
+			building_machinists_mortality_mult = 0.025
+			building_engineers_mortality_mult = 0.01
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+
+
+
+########### Changes in Dynamite
+
+pm_no_explosives = {
+	texture = "gfx/interface/icons/production_method_icons/no_explosives.dds"
+}
+
+pm_nitroglycerin_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/nitroglycerin.dds"
+
+	unlocking_technologies = {
+	 	nitroglycerin
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_explosives_add = 5
+			# cost: $250
+			
+			# output goods
+			goods_output_radioactive_ore_add = 12	
+			# gain: $400
+			# profit: $150
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 250
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.3
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+}
+
+pm_dynamite_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/dynamite.dds"
+
+	unlocking_technologies = {
+		dynamite
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_explosives_add = 10
+			# cost: $500
+			
+			# output goods
+			goods_output_radioactive_ore_add = 20	
+			# gain: $800
+			# profit: $300
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}	
+
+pm_nuclear_dynamite_uranium_mine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/nuclear_dynamite.jpg"
+
+	unlocking_technologies = {
+		nuclear_dynamite_for_mining
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_explosives_add = 11
+			goods_input_nuclear_fuel_add = 0.5
+			# cost: $625
+			
+			# output goods
+			goods_output_radioactive_ore_add = 30
+			# gain: $1,200
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+##############
+#  Automation Method for all mines.
+#  As a reference, steam donkey saves 1,500 laborer with 250 mechanist
+#  With cost of $210
+#  
+
+pm_heavy_nuclear_lifter_mine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/heavy_nuclear_lifter_mine.jpg"
+		
+	unlocking_technologies = {
+		atomic_powered_mining_machine
+	}
+		
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods					
+			goods_input_nuclear_engines_add = 1.25 ## 75 Sorry for gross math here
+			goods_input_nuclear_fuel_add = 2.5 ## 125
+			# Cost: $200
+			# Comparison: Steam Donkey cost $180, but we fired 250 more machinists.
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+			building_employment_machinists_add = -250
+
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+#### Ownership of Uranium Mine
+pm_merchant_guilds_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_picks_and_shovels_building_uranium_mine
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}
+
+pm_privately_owned_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_uranium_mine
+		pm_condensing_engine_pump_building_uranium_mine
+		pm_diesel_pump_building_uranium_mine
+		pm_nuclear_pump_building_uranium_mine
+		pm_automated_mining_machine_building_uranium_mine
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_uranium_mine
+		pm_condensing_engine_pump_building_uranium_mine
+		pm_diesel_pump_building_uranium_mine
+		pm_nuclear_pump_building_uranium_mine
+		pm_automated_mining_machine_building_uranium_mine
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_uranium_mine
+		pm_condensing_engine_pump_building_uranium_mine
+		pm_diesel_pump_building_uranium_mine
+		pm_nuclear_pump_building_uranium_mine
+		pm_automated_mining_machine_building_uranium_mine
+	}
+
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+
+pm_worker_cooperative_building_uranium_mine = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_production_methods = {
+		pm_atmospheric_engine_pump_building_uranium_mine
+		pm_condensing_engine_pump_building_uranium_mine
+		pm_diesel_pump_building_uranium_mine
+		pm_nuclear_pump_building_uranium_mine
+		pm_automated_mining_machine_building_uranium_mine
+	}
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+
+
+
+###################### Ancient Nuclear Arsenal Scavenge
+###### produce mainly nuclear fuel and some nuclear material
+
+#profit aim: about $1,300 - $1,400
+
+pm_default_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/default_ancient_arsenal_scavenge.jpg"
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_electricity_add = 25
+			goods_input_lead_add = 5
+			goods_input_tools_add = 25
+
+			# total cost: $1,950
+			
+			# output goods
+			# Both at price $50
+			goods_output_irradiated_material_add = 16
+			goods_output_nuclear_fuel_add = 50
+
+			# Output: 50*66 = $3,300
+			# Profit: $1,350
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2200
+			building_employment_machinists_add = 1100
+			building_employment_engineers_add = 600
+		}
+
+		unscaled = {
+			# It is likely that they touched a big red buttom during extraction and....
+			# And there's no more extraction site to speak of.
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.125
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+#aim about $2,000 profit
+pm_protected_equipment_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/protected_equipment_ancient_arsenal_scavenge.jpg"
+
+	unlocking_technologies = {
+		atomic_powered_mining_machine
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_fuel_add = 10
+			goods_input_electricity_add = 25
+			goods_input_lead_add = 12
+			goods_input_nuclear_engines_add = 15
+
+			# total cost: $2,630
+			
+			# output goods
+			# Both at price $50
+			goods_output_irradiated_material_add = 20
+			goods_output_nuclear_fuel_add = 80
+
+			# Output: 100*50 = $5,000
+			# Profit: $2,4700
+		}
+
+		level_scaled = {
+			# about 3,450 people
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 250
+		}
+
+		unscaled = {
+			# It is likely that they touched a big red buttom during extraction and....
+			# And there's no more extraction site to speak of.
+			building_laborers_mortality_mult = 0.1
+			building_machinists_mortality_mult = 0.05
+			building_engineers_mortality_mult = 0.025
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+
+}
+
+###### Railroad Transport (specifically for ancient arsenal scavenge)
+
+
+#### Ownership of Scavenge Site
+pm_merchant_guilds_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_default_ancient_arsenal_scavenge
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+		}
+	}
+}
+
+pm_privately_owned_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_protected_equipment_ancient_arsenal_scavenge
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_protected_equipment_ancient_arsenal_scavenge
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+
+pm_worker_cooperative_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+
+
+######## Rad-Fungus Farm
+
+## Reference
+# Fertilization: cost $600, gain $1,500, profit $900
+
+pm_naturally_grown_rad_fungus = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/naturally_grown_rad_fungus.jpg"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			goods_input_fertilizer_add = 50
+			# cost: $1,500	
+			
+			# output goods												   
+			goods_output_radioactive_ore_add = 75
+			# gain: $3,000			
+		}
+
+		level_scaled = {
+			# earnings														
+			building_employment_laborers_add = 3500
+			building_employment_farmers_add = 1250
+			building_employment_clergymen_add = 150
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+pm_radiation_mutated_rad_fungus = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/radiation_mutated_rad_fungus.jpg"
+	
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			goods_input_fertilizer_add = 25
+			goods_input_electricity_add = 25
+			goods_input_irradiated_material_add = 6
+			goods_input_nuclear_fuel_add = 4
+			# cost: $1,900	
+			
+			# output goods												   
+			goods_output_radioactive_ore_add = 100
+			# gain: $4,000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 500
+			building_employment_farmers_add = 1400
+			building_employment_engineers_add = 500
+		}
+
+		unscaled = {
+			# It is likely that they touched a big red buttom during extraction and....
+			# And there's no more extraction site to speak of.
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.125
+			building_farmers_mortality_mult = 0.125
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+pm_radiation_engineered_rad_fungus = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/radiation_engineered_rad_fungus.jpg"
+
+	unlocking_technologies = {
+		radiation_assisted_bio_engineering
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods													
+			goods_input_fertilizer_add = 20
+			goods_input_electricity_add = 20
+			goods_input_nuclear_fuel_add = 10
+			goods_input_research_and_engineering_add = 15 #600
+			# cost: $2,300
+			
+			# output goods												   
+			goods_output_radioactive_ore_add = 120
+			# gain: $4,800
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 500
+			building_employment_farmers_add = 1400
+			building_employment_engineers_add = 500
+		}
+
+		unscaled = {
+			# It is likely that they touched a big red buttom during extraction and....
+			# And there's no more extraction site to speak of.
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.125
+			building_farmers_mortality_mult = 0.125
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+pm_cave_tractor_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/production_method_icons/tractors.dds"
+
+
+	unlocking_technologies = {
+		mechanized_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			# vanilla tractor cost 300 (coal) + 60 (engine) = 360
+							
+			goods_input_oil_add = 5		
+			goods_input_engines_add = 3	
+			goods_input_tools_add = 3
+			# ours cost $500
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_drone_cave_harvestor_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/production_method_icons/compression_ignition_tractors.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors		
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			# vanilla tractor cost 300 (coal) + 60 (engine) = 360
+							
+			goods_input_nuclear_fuel_add = 2
+			goods_input_tools_add = 4
+			goods_input_radios_add = 3
+			# ours cost $500
+
+			goods_output_radioactive_ore_add = 10
+			# get $400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2000
+			building_employment_farmers_add = -200
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = -100
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}

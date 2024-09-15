@@ -1,0 +1,41 @@
+﻿COUNTRIES = {
+	c:MEX = {
+		set_next_election_date = 1946.7.1
+		effect_starting_technology_tier_3_tech = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_census_voting #资格性选举制
+		activate_law = law_type:law_professional_army #职业军队
+		activate_law = law_type:law_protectionism #贸易保护
+		activate_law = law_type:law_graduated_taxation #累进税制
+		activate_law = law_type:law_migration_controls #移民控制
+		activate_law = law_type:law_women_in_the_workplace #女性工作
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_total_separation #完全分离
+  		activate_law = law_type:law_public_schools #公立学校
+ 		activate_law = law_type:law_restricted_child_labor #限制童工
+		activate_law = law_type:law_laissez_faire #自由放任
+                activate_law = law_type:law_private_health_insurance #私人医疗保险
+		activate_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_colonial_exploitation
+		activate_law = law_type:law_no_police
+		
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms		
+
+		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_caudillismo
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_paternalistic
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

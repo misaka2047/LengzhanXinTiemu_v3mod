@@ -1,0 +1,26 @@
+﻿CHARACTERS = {
+	c:SYR = {
+		create_character = {
+			#舒克里·库阿特利
+			historical = yes
+			first_name = "Shukri"
+			last_name = "Kuatli"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1892.5.6
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_republican_leader #意识形态共和主义者
+		}		
+
+		create_character = {
+			#苏丹·阿特拉什
+			historical = yes
+			first_name = "sudan"
+			last_name = "al-Atrash"
+			ig_leader = yes #利益集团领袖
+			birth_date = 1891.3.5
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_republican_leader #意识形态共和主义者
+		}		
+	}
+}

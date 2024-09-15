@@ -1,0 +1,48 @@
+﻿PRK_decision = { #成立朝鲜
+	is_shown = { 
+		NOT = { 
+			has_modifier = the_country_of_our_ancestors_modifier
+		}
+		is_subject = yes
+		OR = {
+		    c:PRK ?= THIS		
+		}
+	}
+	possible = { 
+		game_date > 1948.9.9
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = PRK_event.1
+			popup = yes
+	    }
+    }
+	ai_chance = {
+		base = 90}
+}
+
+KOR_decision = { #成立韩国
+	is_shown = { 
+		NOT = { 
+			has_modifier = the_country_of_our_ancestors_modifier
+		}
+		is_subject = yes
+		OR = {
+		    c:KOR ?= THIS		
+		}
+	}
+	possible = { 
+		game_date > 1948.8.15
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = PRK_event.2
+			popup = yes
+	    }
+    }
+	ai_chance = {
+		base = 90}
+}
+

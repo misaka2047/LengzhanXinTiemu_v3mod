@@ -1,0 +1,43 @@
+namespace = waijiaozhengce
+
+
+
+
+waijiaozhengce.1 = {
+	type = country_event
+	placement = ROOT
+	
+	duration = 1
+
+	title = waijiaozhengce.1.t
+	desc = waijiaozhengce.1.d
+	flavor = waijiaozhengce.1.f
+
+	event_image = {
+		video = "votp_hostile_court"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	
+	trigger = {
+	
+	}
+	
+	option = {
+		name = waijiaozhengce.1.a
+		default_option = yes
+		set_relations = { country = c:USA value = -30 }
+		set_relations = { country = c:RUS value = 30 }
+		add_modifier = {
+			name = quedingwaijiaozhengce_modifier
+			months = 360
+		}
+	}
+
+	option = {
+		name = waijiaozhengce.1.b
+	}
+	
+}

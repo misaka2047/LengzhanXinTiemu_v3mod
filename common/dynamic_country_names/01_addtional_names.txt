@@ -1,0 +1,9457 @@
+### Try to keep tags in alphabetical order if it's not too far gone, please.
+
+################################################################
+## DEFAULT COUNTRY NAMES EXAMPLE CAN BE USED WITH ANY COUNTRY ##
+#
+
+BAF = { #巴尔干联邦
+	dynamic_country_name = {#巴尔干社会主义联邦共和国
+		name = dyn_c_societ_republic_BAF
+		
+		adjective = BAF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = { #巴尔干神权国
+		name = dyn_shenquan_BAF
+		
+		adjective = BAF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+
+KUK = { #多瑙联邦
+	dynamic_country_name = {#多瑙人民联邦
+		name = dyn_c_KUK_societ_republic
+		
+		adjective = KUK_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = { #多瑙神权国
+		name = dyn_shenquan_KUK
+		
+		adjective = KUK_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+
+RUS = { # 俄罗斯
+	dynamic_country_name = {
+		name = dyn_c_russian_empire
+		adjective = RUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_russian_republic
+		adjective = RUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_russian_shenquan
+		adjective = RUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_russian_societ_republic
+		adjective = dyn_c_soviet_union_adj
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			OR = { exists = c:UKR
+			exists = c:BYE } 
+		}
+	} 
+	dynamic_country_name = {
+		name = dyn_c_soviet_union
+		adjective = dyn_c_soviet_union_adj
+		adjective = dyn_c_soviet_union_adj
+		#is_main_tag_only = yes
+		priority = 10
+		 
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			NOT = { exists = c:UKR }
+			NOT = { exists = c:BYE }
+		}
+	}	
+}
+FRA = { # 法兰西
+	dynamic_country_name = {
+		name = dyn_c_french_empire
+		
+		adjective = FRA_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_variable = bonapartist_restoration_var
+#				has_variable = one_true_french_dynasty
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_french_kingdom
+		adjective = FRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+#			exists = scope:actor
+#			scope:actor = {
+#				has_law = law_type:law_monarchy
+#				OR = {
+#					has_variable = orleanist_restoration_var
+#					has_variable = legitimist_restoration_var
+#				}
+#				has_variable = one_true_french_dynasty
+#      }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_french_republic
+		adjective = FRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+		OR = {
+			coa_def_republic_flag_trigger = yes
+			has_law = law_type:law_semi_presidential_republic
+		}
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_FRA
+		adjective = FRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_FRA
+		adjective = FRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+GBR = { # 不列颠
+	dynamic_country_name = {
+		name = dyn_c_gbr_united_kingdom_ireland
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+			owns_entire_state_region = STATE_LEINSTER }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_gbr_united_kingdom_north_ireland
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+			owns_entire_state_region = STATE_ULSTER_GBR
+			OR ={
+			NOT = { owns_entire_state_region = STATE_MUNSTER }
+			NOT = { owns_entire_state_region = STATE_LEINSTER }
+			NOT = { owns_entire_state_region = STATE_CONNAUGHT }
+			NOT = { owns_entire_state_region = STATE_ULSTER_IRE } }
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_gbr_united_kingdom
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+			NOT = { owns_entire_state_region = STATE_ULSTER_GBR }
+			NOT = { owns_entire_state_region = STATE_LEINSTER } }
+		}
+	}	
+	
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GBR
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GBR
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_british_republic
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor = { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+		}
+	}	
+	dynamic_country_name = {
+		name = dyn_c_british_commonwealth
+		adjective = dyn_c_british_commonwealth_adj
+		adjective = GBR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	dynamic_country_name = {
+		name = dyn_c_greater_manchester
+		adjective = dyn_c_greater_manchester_adj
+		#is_main_tag_only = yes
+		priority = 10
+		trigger = {
+			exists = scope:actor
+			NOT = { has_game_rule = plausible_formable_nations }
+			scope:actor = { 
+				NOT = { has_law = law_type:law_council_republic }
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE } 
+			}
+		}
+	}	
+	dynamic_country_name = {
+		name = dyn_c_mancunian_commune
+		adjective = dyn_c_mancunian_commune_adj
+		#is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor = { 
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE } 
+			}
+		}
+	}
+} 
+GER = { # Germany
+	dynamic_country_name = {
+		name = dyn_c_german_empire
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_fascistc_GER
+		
+		adjective = GER_ADJ
+
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+PRU = { # 普鲁士
+	dynamic_country_name = {
+		name = dyn_c_occupying_germany
+		adjective = SGF_ADJ
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_prussia_kingdom
+		adjective = PRU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_prussia_republic
+		adjective = PRU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_prussia_societ_republic
+		adjective = PRU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PRU
+		adjective = PRU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+AUS = { # 奥地利
+	dynamic_country_name = {
+		name = dyn_c_austria_empire
+		adjective = AUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			NOT = {
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austria_republic
+		adjective = AUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			NOT = {
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_austria_societ_republic
+		adjective = AUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			NOT = {
+				scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AUS
+		adjective = AUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			NOT = {
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+			} 
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austria-hungary_jzz
+		adjective = dyn_c_austria-hungary_adj
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+				scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austria-hungary_ghg
+		adjective = dyn_c_austria-hungary_adj
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austria-hungary_shzy
+		adjective = dyn_c_austria-hungary_adj
+		
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+		coa_def_communist_flag_trigger = yes
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austria-hungary_sqz
+		adjective = dyn_c_austria-hungary_adj
+		
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			 	scope:actor = {
+				country_has_primary_culture = cu:hungarian 			}
+		}
+	}
+}
+
+MEC = { # 梅克伦堡
+	dynamic_country_name = {
+		name = dyn_c_jzz_mklb
+		adjective = MEC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_mklb
+		adjective = MEC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_mklb
+		adjective = MEC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_mklb
+		adjective = MEC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ANH = { # 安哈尔特
+	dynamic_country_name = {
+		name = dyn_c_jzz_ANH
+		adjective = ANH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ANH
+		adjective = ANH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ANH
+		adjective = ANH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ANH
+		adjective = ANH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BAV = { # 巴伐利亚
+	dynamic_country_name = {
+		name = dyn_c_occupying_germany
+		adjective = SGF_ADJ
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_BAV
+		adjective = BAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_bavarian_raterepublic
+		adjective = BAV_ADJ
+		is_main_tag_only = no # good name for a communist revolution
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BAV
+		adjective = BAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BAV
+		adjective = BAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BAD = { # 巴登
+	dynamic_country_name = {
+		name = dyn_c_jzz_BAD
+		adjective = BAD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BAD
+		adjective = BAD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BAD
+		adjective = BAD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BAD
+		adjective = BAD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WUR = { # 符腾堡
+	dynamic_country_name = {
+		name = dyn_c_jzz_WUR
+		adjective = WUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WUR
+		adjective = WUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WUR
+		adjective = WUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WUR
+		adjective = WUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SAX = { # 萨克森
+	dynamic_country_name = {
+		name = dyn_c_jzz_SAX
+		adjective = SAX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SAX
+		adjective = SAX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SAX
+		adjective = SAX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SAX
+		adjective = SAX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HES = { # 黑森
+	dynamic_country_name = {
+		name = dyn_c_jzz_HES
+		adjective = HES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HES
+		adjective = HES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HES
+		adjective = HES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HES
+		adjective = HES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MST = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MST
+		adjective = MST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MST
+		adjective = MST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MST
+		adjective = MST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MST
+		adjective = MST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+OLD = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_OLD
+		adjective = OLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_OLD
+		adjective = OLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_OLD
+		adjective = OLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_OLD
+		adjective = OLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WEI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WEI
+		adjective = WEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WEI
+		adjective = WEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WEI
+		adjective = WEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WEI
+		adjective = WEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BRA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BRA
+		adjective = BRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BRA
+		adjective = BRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BRA
+		adjective = BRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BRA
+		adjective = BRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+COB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_COB
+		adjective = COB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_COB
+		adjective = COB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_COB
+		adjective = COB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_COB
+		adjective = COB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MEI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MEI
+		adjective = MEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MEI
+		adjective = MEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MEI
+		adjective = MEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MEI
+		adjective = MEI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+FRM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_FRM
+		adjective = FRM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_FRM
+		adjective = FRM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_FRM
+		adjective = FRM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_FRM
+		adjective = FRM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LIP = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LIP
+		
+		adjective = LIP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LIP
+		adjective = LIP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LIP
+		adjective = LIP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LIP
+		adjective = LIP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SCM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCM
+		adjective = SCM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCM
+		adjective = SCM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCM
+		adjective = SCM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCM
+		adjective = SCM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SCW = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCW
+		adjective = SCW_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCW
+		adjective = SCW_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCW
+		adjective = SCW_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCW
+		adjective = SCW_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WLD = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WLD
+		adjective = WLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WLD
+		adjective = WLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WLD
+		adjective = WLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WLD
+		adjective = WLD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BRE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BRE
+		adjective = BRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BRE
+		adjective = BRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BRE
+		adjective = BRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BRE
+		adjective = BRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HAM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HAM
+		adjective = HAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HAM
+		adjective = HAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HAM
+		adjective = HAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HAM
+		adjective = HAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LUB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LUB
+		adjective = LUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LUB
+		adjective = LUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LUB
+		adjective = LUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LUB
+		adjective = LUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HAN = { 
+	dynamic_country_name = {
+		name = dyn_c_occupying_germany
+		adjective = SGF_ADJ
+		use_overlord_prefix = yes
+
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_HAN
+		adjective = HAN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HAN
+		adjective = HAN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HAN
+		adjective = HAN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HAN
+		adjective = HAN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LUX = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LUX
+		adjective = LUX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LUX
+		adjective = LUX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LUX
+		adjective = LUX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LUX
+		adjective = LUX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HOL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HOL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HOL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HOL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HOL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCHL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCHL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCHL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCHL
+		adjective = HOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+}
+SCH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCH
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCH
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCH
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCH
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			NOT = {
+			AND = {
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			   }
+			  }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCHL
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCHL
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCHL
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCHL
+		adjective = SCH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+			}
+		}
+	}
+}
+BEL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BEL
+		adjective = BEL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BEL
+		adjective = BEL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BEL
+		adjective = BEL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BEL
+		adjective = BEL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+NET = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NET
+		adjective = NET_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NET
+		adjective = NET_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NET
+		adjective = NET_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NET
+		adjective = NET_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SWE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SWE
+		adjective = SWE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SWE
+		adjective = SWE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SWE
+		adjective = SWE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SWE
+		adjective = SWE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+NOR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NOR
+		adjective = NOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NOR
+		adjective = NOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NOR
+		adjective = NOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NOR
+		adjective = NOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+DEN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_DEN
+		adjective = DEN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_DEN
+		adjective = DEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_DEN
+		adjective = DEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_DEN
+		adjective = DEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SPA = { # 西班牙
+	dynamic_country_name = {
+		name = dyn_c_kingdom_of_spain #西班牙王国
+		adjective = SPA_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = { 
+		name = dyn_c_republic_of_spain #西班牙共和国
+		adjective = SPA_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+				NOT = { has_law = law_type:law_autocracy }
+		     OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = { #西班牙国
+		name = dyn_c_spain
+		adjective = SPA_ADJ
+		
+		is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			scope:actor ?= {
+		     has_law = law_type:law_autocracy 
+		     OR = {
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_socialist_republic_of_spain #西班牙社会主义共和国
+		adjective = SPA_ADJ
+		
+		is_main_tag_only = no # good name for a communist revolution
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+}
+HEK = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HEK
+		adjective = HEK_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HEK
+		adjective = HEK_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HEK
+		adjective = HEK_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HEK
+		adjective = HEK_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+NAS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NAS
+		adjective = NAS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NAS
+		adjective = NAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NAS
+		adjective = NAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NAS
+		adjective = NAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HOH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HOH
+		adjective = HOH_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HOH
+		adjective = HOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HOH
+		adjective = HOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HOH
+		adjective = HOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SAR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SAR
+		adjective = SAR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SAR
+		adjective = SAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SAR
+		adjective = SAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SAR
+		adjective = SAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+PAR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PAR
+		adjective = PAR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PAR
+		adjective = PAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PAR
+		adjective = PAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PAR
+		adjective = PAR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MOD = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MOD
+		adjective = MOD_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MOD
+		adjective = MOD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MOD
+		adjective = MOD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MOD
+		adjective = MOD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LUC = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LUC
+		adjective = LUC_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LUC
+		adjective = LUC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LUC
+		adjective = LUC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LUC
+		adjective = LUC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+TUS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TUS
+		adjective = TUS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TUS
+		adjective = TUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TUS
+		adjective = TUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TUS
+		adjective = TUS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+
+PAP = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PAP
+		adjective = PAP_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PAP
+		adjective = PAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		 
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_papal_states
+		adjective = dyn_c_papal_states_adj
+		adjective = PAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_roman_republic
+    adjective = PAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes } 
+		}
+	}
+}
+SIC = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_SICNAP
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes 
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CAMPANIA
+				NOT = { owns_entire_state_region = STATE_SICILY }
+		  }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SICNAP
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CAMPANIA
+				NOT = { owns_entire_state_region = STATE_SICILY }
+		  }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SICNAP
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CAMPANIA
+				NOT = { owns_entire_state_region = STATE_SICILY }
+		  }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SICNAP
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_CAMPANIA
+				NOT = { owns_entire_state_region = STATE_SICILY }
+		  }
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_jzz_SICSIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SICILY
+				NOT = { owns_entire_state_region = STATE_CAMPANIA }
+		  }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SICSIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SICILY
+				NOT = { owns_entire_state_region = STATE_CAMPANIA }
+		  }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SICSIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SICILY
+				NOT = { owns_entire_state_region = STATE_CAMPANIA }
+		  }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SICSIC
+		adjective = SIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			exists = scope:actor
+			scope:actor = {
+				owns_entire_state_region = STATE_SICILY
+				NOT = { owns_entire_state_region = STATE_CAMPANIA }
+		  }
+		}
+	}
+}
+
+POR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_POR
+		adjective = POR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_POR
+		adjective = POR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_POR
+		adjective = POR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_POR
+		adjective = POR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_PORBRZ
+adjective = POR_ADJ
+		
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_RIO_DE_JANEIRO
+				owns_entire_state_region = STATE_SAO_PAULO
+			}
+			NOT = { exists = c:BRZ }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PORBRZ
+adjective = POR_ADJ
+		
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			scope:actor = {
+				owns_entire_state_region = STATE_RIO_DE_JANEIRO
+				owns_entire_state_region = STATE_SAO_PAULO
+			}
+			NOT = { exists = c:BRZ }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PORBRZ
+adjective = POR_ADJ
+		
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_RIO_DE_JANEIRO
+				owns_entire_state_region = STATE_SAO_PAULO
+			}
+			NOT = { exists = c:BRZ }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PORBRZ
+		adjective = POR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_RIO_DE_JANEIRO
+				owns_entire_state_region = STATE_SAO_PAULO
+			}
+			NOT = { exists = c:BRZ }
+		}
+	}
+}
+ITA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ITA
+		adjective = ITA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ITA
+		adjective = ITA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ITA
+		adjective = ITA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ITA
+		adjective = ITA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+IBE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_IBE
+		adjective = IBE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_IBE
+		adjective = IBE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_IBE
+		adjective = IBE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_IBE
+		adjective = IBE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+NAV = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NAV
+		adjective = NAV_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NAV
+		adjective = NAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NAV
+		adjective = NAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NAV
+		adjective = NAV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+CAT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CAT
+		adjective = CAT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CAT
+		adjective = CAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CAT
+		adjective = CAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CAT
+		adjective = CAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+CAS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CAS
+		adjective = CAS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CAS
+		adjective = CAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CAS
+		adjective = CAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CAS
+		adjective = CAS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ANL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ANL
+		
+		adjective = ANL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ANL
+		
+		adjective = ANL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ANL
+		
+		adjective = ANL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ANL
+		
+		adjective = ANL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+GLI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GLI
+		
+		adjective = GLI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GLI
+		
+		adjective = GLI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GLI
+		
+		adjective = GLI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GLI
+		
+		adjective = GLI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+GRE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GRE
+		
+		adjective = GRE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GRE
+		
+		adjective = GRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GRE
+		
+		adjective = GRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GRE
+		
+		adjective = GRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SER = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SER
+		
+		adjective = SER_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SER
+		
+		adjective = SER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SER
+		
+		adjective = SER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SER
+		
+		adjective = SER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BUL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BUL
+		
+		adjective = BUL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BUL
+		
+		adjective = BUL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BUL
+		
+		adjective = BUL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BUL
+		
+		adjective = BUL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MON = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MON
+		
+		adjective = MON_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MON
+		
+		adjective = MON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MON
+		
+		adjective = MON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MON
+		
+		adjective = MON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BOS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BOS
+		
+		adjective = BOS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BOS
+		
+		adjective = BOS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BOS
+		
+		adjective = BOS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BOS
+		
+		adjective = BOS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+CRO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CRO
+		
+		adjective = CRO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CRO
+		
+		adjective = CRO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CRO
+		
+		adjective = CRO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CRO
+		
+		adjective = CRO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SLO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SLO
+		
+		adjective = SLO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SLO
+		
+		adjective = SLO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SLO
+		
+		adjective = SLO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SLO
+		
+		adjective = SLO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+TRE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TRE
+		
+		adjective = TRE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TRE
+		
+		adjective = TRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TRE
+		
+		adjective = TRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TRE
+		
+		adjective = TRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+VEN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_VEN
+		
+		adjective = VEN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				NOT = { owns_entire_state_region = STATE_LOMBARDY }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_LOMVEN
+		
+		adjective = LOMVEN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_LOMBARDY
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_VEN
+		
+		adjective = VEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_VEN
+		
+		adjective = VEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_VEN
+		
+		adjective = VEN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LOM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LOM
+		
+		adjective = LOM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				NOT = { owns_entire_state_region = STATE_VENETIA }
+			}
+		}
+	} 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LOMVEN
+		
+		adjective = LOMVEN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_VENETIA
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LOM
+		
+		adjective = LOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LOM
+		
+		adjective = LOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LOM
+		
+		adjective = LOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+YUG = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_YUG
+		
+		adjective = YUG_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_YUG
+		
+		adjective = YUG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_YUG
+		
+		adjective = YUG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_YUG
+		
+		adjective = YUG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HUN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HUN
+		
+		adjective = HUN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HUN
+		
+		adjective = HUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HUN
+		
+		adjective = HUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HUN
+		
+		adjective = HUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BOH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BOH
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BOH
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+			scope:actor = {
+				NOT = { owns_entire_state_region = STATE_WEST_SLOVAKIA }
+				NOT = { owns_entire_state_region = STATE_EAST_SLOVAKIA }
+			}
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BOH
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor = {
+				NOT = { owns_entire_state_region = STATE_WEST_SLOVAKIA }
+				NOT = { owns_entire_state_region = STATE_EAST_SLOVAKIA }
+			}
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_republic_BOHSLV
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BOHSLV
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_WEST_SLOVAKIA
+				owns_entire_state_region = STATE_EAST_SLOVAKIA
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BOH
+		
+		adjective = BOH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_WEST_SLOVAKIA
+				owns_entire_state_region = STATE_EAST_SLOVAKIA
+			}
+		}
+	}
+}
+SLV = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SLV
+		
+		adjective = SLV_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SLV
+		
+		adjective = SLV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SLV
+		
+		adjective = SLV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SLV
+		
+		adjective = SLV_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+TRS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TRS
+		
+		adjective = TRS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TRS
+		
+		adjective = TRS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TRS
+		
+		adjective = TRS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TRS
+		
+		adjective = TRS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WAL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WAL
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WAL
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WAL
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WAL
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_united_principalities
+		adjective = dyn_c_united_principalities_adj
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_wallachia_and_moldavia
+		adjective = dyn_c_wallachia_and_moldavia_adj
+		
+		adjective = WAL_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+			c:MOL ?= {
+				is_subject_of = scope:actor
+			}
+		}
+	}
+}
+MOL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MOL
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MOL
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MOL
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MOL
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_united_principalities
+		adjective = dyn_c_united_principalities_adj
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_moldavia_and_wallachia
+		adjective = dyn_c_moldavia_and_wallachia_adj
+		
+		adjective = MOL_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+			scope:actor = {
+				has_variable = ROM_united_principality
+			}
+			c:WAL ?= {
+				is_subject_of = scope:actor
+			}
+		}
+	}
+}
+ROM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ROM
+		
+		adjective = ROM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_ROMTUR
+		
+		adjective = ROM_ADJ
+		#is_main_tag_only = yes 
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = c:TUR
+			c:TUR = {
+			OR = {
+				has_diplomatic_pact = {
+					who = c:ROM
+					type = puppet
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:ROM
+					type = dominion
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:ROM
+					type = tributary
+					is_initiator = yes
+				}
+			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ROM
+		
+		adjective = ROM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ROM
+		
+		adjective = ROM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ROM
+		
+		adjective = ROM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+GAL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GAL
+		
+		adjective = GAL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GAL
+		
+		adjective = GAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GAL
+		
+		adjective = GAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GAL
+		
+		adjective = GAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+POL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_POL
+		
+		adjective = POL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_POL
+		
+		adjective = POL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_POL
+		
+		adjective = POL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_POL
+		
+		adjective = POL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+KRA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_KRA
+		
+		adjective = KRA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_KRA
+		
+		adjective = KRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_KRA
+		
+		adjective = KRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_KRA
+		
+		adjective = KRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+POM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_POM
+		
+		adjective = POM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_POM
+		
+		adjective = POM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_POM
+		
+		adjective = POM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_POM
+		
+		adjective = POM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WES = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WES
+		
+		adjective = WES_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WES
+		
+		adjective = WES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WES
+		
+		adjective = WES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WES
+		
+		adjective = WES_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+OCC = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_OCC
+		
+		adjective = OCC_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_OCC
+		
+		adjective = OCC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_OCC
+		
+		adjective = OCC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_OCC
+		
+		adjective = OCC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BRI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BRI
+		
+		adjective = BRI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BRI
+		
+		adjective = BRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BRI
+		
+		adjective = BRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BRI
+		
+		adjective = BRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SCO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCO
+		
+		adjective = SCO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCO
+		
+		adjective = SCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCO
+		
+		adjective = SCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCO
+		
+		adjective = SCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+IRE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_IRE
+		
+		adjective = IRE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_IRE
+		
+		adjective = IRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_IRE
+		
+		adjective = IRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_IRE
+		
+		adjective = IRE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WLS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WLS
+		
+		adjective = WLS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WLS
+		
+		adjective = WLS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WLS
+		
+		adjective = WLS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WLS
+		
+		adjective = WLS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ENG = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ENG
+		
+		adjective = ENG_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ENG
+		
+		adjective = ENG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ENG
+		
+		adjective = ENG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ENG
+		
+		adjective = ENG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+FLA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_FLA
+		
+		adjective = FLA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_FLA
+		
+		adjective = FLA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_FLA
+		
+		adjective = FLA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_FLA
+		
+		adjective = FLA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+WLL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WLL
+		
+		adjective = WLL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WLL
+		
+		adjective = WLL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WLL
+		
+		adjective = WLL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WLL
+		
+		adjective = WLL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ALB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ALB
+		
+		adjective = ALB_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ALB
+		
+		adjective = ALB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ALB
+		
+		adjective = ALB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ALB
+		
+		adjective = ALB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ION = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ION
+		
+		adjective = ION_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ION
+		
+		adjective = ION_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ION
+		
+		adjective = ION_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ION
+		
+		adjective = ION_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+UKR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_UKR
+		
+		adjective = UKR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_UKR
+		
+		adjective = UKR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_UKR
+		
+		adjective = UKR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_UKR
+		
+		adjective = UKR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SCA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SCA
+		
+		adjective = SCA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SCA
+		
+		adjective = SCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SCA
+		
+		adjective = SCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SCA
+		
+		adjective = SCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BYE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BYE
+		
+		adjective = BYE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BYE
+		
+		adjective = BYE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BYE
+		
+		adjective = BYE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BYE
+		
+		adjective = BYE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LIT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LIT
+		
+		adjective = LIT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LIT
+		
+		adjective = LIT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LIT
+		
+		adjective = LIT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LIT
+		
+		adjective = LIT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LAT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LAT
+		
+		adjective = LAT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LAT
+		
+		adjective = LAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LAT
+		
+		adjective = LAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LAT
+		
+		adjective = LAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_courland
+		adjective = dyn_c_courland_adj
+		
+		#is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			coa_def_german_ensign_trigger = yes
+		}
+	}
+}
+EST = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_EST
+		
+		adjective = EST_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_EST
+		
+		adjective = EST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_EST
+		
+		adjective = EST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_EST
+		
+		adjective = EST_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+UBD = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_UBD
+		
+		adjective = UBD_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_UBDRUS
+		
+		adjective = UBD_ADJ
+		#is_main_tag_only = yes 
+		priority = 5
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = c:RUS
+			c:RUS = {
+				has_diplomatic_pact = {
+					who = c:UBD
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}  
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_UBD
+		
+		adjective = UBD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_UBD
+		
+		adjective = UBD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_UBD 
+		
+		adjective = UBD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	
+}
+EGY = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_EGY
+		
+		adjective = EGY_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_EGY
+		
+		adjective = EGY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_EGY
+		
+		adjective = EGY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_EGY
+		
+		adjective = EGY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BYZ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BYZ
+		
+		adjective = BYZ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BYZ
+		
+		adjective = BYZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BYZ
+		
+		adjective = BYZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BYZ
+		
+		adjective = BYZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MLT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MLT
+		
+		adjective = MLT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MLT
+		
+		adjective = MLT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MLT
+		
+		adjective = MLT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MLT
+		
+		adjective = MLT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+COR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_COR
+		
+		adjective = COR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_COR
+		
+		adjective = COR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_COR
+		
+		adjective = COR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_COR
+		
+		adjective = COR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MOR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MOR
+		
+		adjective = MOR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MOR
+
+		adjective = MOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MOR
+		
+		adjective = MOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MOR
+		
+		adjective = MOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = MOR
+		
+		adjective = MOR_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+ALD = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ALD
+		
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_jzz_ALDTUR
+		
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes 
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = c:TUR
+			c:TUR = {
+			OR = {
+				has_diplomatic_pact = {
+					who = c:ALD
+					type = puppet
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:ALD
+					type = dominion
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:ALD
+					type = tributary
+					is_initiator = yes
+				}
+			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ALD
+		
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ALD
+		
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ALD
+		
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_regency_of_algiers
+		adjective = dyn_c_regency_of_algiers_adj
+
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_law = law_type:law_monarchy
+				has_variable = algeria_deylik_restored
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_barbary
+		adjective = dyn_c_barbary_adj
+
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_variable = algeria_barbary_restored
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_maghreb
+		adjective = dyn_c_maghreb_adj
+
+		adjective = ALD_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				has_variable = algeria_maghreb_restored
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = ALD
+		
+		adjective = ALD_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+TUN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TUN
+		
+		adjective = TUN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TUN
+		
+		adjective = TUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TUN
+		
+		adjective = TUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TUN
+		
+		adjective = TUN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = TUN
+		
+		adjective = TUN_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+TRI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TRI
+		
+		adjective = TRI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_TRITUR
+		
+		adjective = TRI_ADJ
+		#is_main_tag_only = yes 
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			exists = c:TUR
+			c:TUR = {
+				has_diplomatic_pact = {
+					who = c:TRI 
+					type = puppet 
+					is_initiator = yes 
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TRI
+		
+		adjective = TRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TRI
+		
+		adjective = TRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TRI
+		
+		adjective = TRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_SHENG_TRI
+		
+		adjective = TRI_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+CYP = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CYP
+		
+		adjective = CYP_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CYP
+		
+		adjective = CYP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CYP
+		
+		adjective = CYP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CYP
+		
+		adjective = CYP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+SYR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_SYR
+		
+		adjective = SYR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_SYR
+		
+		adjective = SYR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_SYR
+		
+		adjective = SYR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_SYR
+		
+		adjective = SYR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LEB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LEB
+		
+		adjective = LEB_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LEB
+		
+		adjective = LEB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LEB
+		
+		adjective = LEB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LEB
+		
+		adjective = LEB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+EOT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_EOT
+		
+		adjective = EOT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_EOT
+		
+		adjective = EOT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_EOT
+		
+		adjective = EOT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_EOT
+		
+		adjective = EOT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+PAL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PAL
+		
+		adjective = PAL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PAL
+		
+		adjective = PAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PAL
+		
+		adjective = PAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PAL
+		
+		adjective = PAL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ISR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ISR
+		
+		adjective = ISR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ISR
+		
+		adjective = ISR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ISR
+		
+		adjective = ISR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ISR
+		
+		adjective = ISR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ASS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ASS
+		
+		adjective = ASS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ASS
+		
+		adjective = ASS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ASS
+		
+		adjective = ASS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ASS
+		
+		adjective = ASS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+KUR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_KUR
+		
+		adjective = KUR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_KUR
+		
+		adjective = KUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_KUR
+		
+		adjective = KUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_KUR
+		
+		adjective = KUR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+IRQ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_IRQ
+		
+		adjective = IRQ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_IRQ
+		
+		adjective = IRQ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_IRQ
+		
+		adjective = IRQ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_IRQ
+		
+		adjective = IRQ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+JAB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_JAB
+		
+		adjective = JAB_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_JAB
+		
+		adjective = JAB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_JAB
+		
+		adjective = JAB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_JAB
+		
+		adjective = JAB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+HDJ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HDJ
+		
+		adjective = HDJ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HDJ
+		
+		adjective = HDJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HDJ
+		
+		adjective = HDJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HDJ
+		
+		adjective = HDJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+NEJ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NEJ
+		
+		adjective = NEJ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = NEJ
+		
+		adjective = NEJ_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes 
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NEJ
+		
+		adjective = NEJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NEJ
+		
+		adjective = NEJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NEJ
+		
+		adjective = NEJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_saudi_arabia
+		adjective = dyn_c_saudi_arabia_adj
+		
+		#is_main_tag_only = yes
+		priority = 1
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor = {
+				owns_entire_state_region = STATE_HEDJAZ
+			}
+		}
+	}
+}
+ARA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ARA
+		
+		adjective = ARA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ARA
+		
+		adjective = ARA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ARA
+		
+		adjective = ARA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ARA
+		
+		adjective = ARA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BHN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BHN
+		
+		adjective = BHN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BHN
+		
+		adjective = BHN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BHN
+		
+		adjective = BHN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BHN
+		
+		adjective = BHN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ABU = { 
+	dynamic_country_name = {
+		name = dyn_c_SHENG_ABU #特鲁西尔诸国
+		
+		adjective = ABU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_ABU
+		
+		adjective = ABU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ABU
+		
+		adjective = ABU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ABU
+		
+		adjective = ABU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ABU
+		
+		adjective = ABU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+OMA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_OMA
+		
+		adjective = OMA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_OMA
+		
+		adjective = OMA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_OMA
+		
+		adjective = OMA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_OMA
+		
+		adjective = OMA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MAH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MAH
+		
+		adjective = MAH_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MAH
+		
+		adjective = MAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MAH
+		
+		adjective = MAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MAH
+		
+		adjective = MAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+KAT = { 
+	dynamic_country_name = {
+		name = dyn_c_SHENG_KAT #亚丁
+		
+		adjective = KAT_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_KAT
+		
+		adjective = KAT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_KAT
+		
+		adjective = KAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_KAT
+		
+		adjective = KAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_KAT
+		
+		adjective = KAT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+LAH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LAH
+		
+		adjective = LAH_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LAH
+		
+		adjective = LAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LAH
+		
+		adjective = LAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LAH
+		
+		adjective = LAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+ZAI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ZAI
+		
+		adjective = ZAI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ZAI
+		
+		adjective = ZAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ZAI
+		
+		adjective = ZAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ZAI
+		
+		adjective = ZAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+YEM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_YEM
+		
+		adjective = YEM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_YEM
+		
+		adjective = YEM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_YEM
+		
+		adjective = YEM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_YEM
+		
+		adjective = YEM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+PER = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PER
+		
+		adjective = PER_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PER
+		
+		adjective = PER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PER
+		
+		adjective = PER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PER
+		
+		adjective = PER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+KOR = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_KOR
+		
+		adjective = KOR_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = KOR
+		
+		adjective = KOR_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 1000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_KORCHI
+		
+		adjective = KORCHI_ADJ
+		#is_main_tag_only = yes 
+		priority = 5
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			coa_def_independent_trigger = no
+			any_country = {
+			OR = {
+			 country_has_primary_culture = cu:han 
+			 country_has_primary_culture = cu:yue 
+			 country_has_primary_culture = cu:min 
+			 country_has_primary_culture = cu:hakka 
+			 country_has_primary_culture = cu:manchu 
+			}
+			OR = {
+				has_diplomatic_pact = {
+					who = c:KOR
+					type = puppet
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:KOR
+					type = dominion
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:KOR
+					type = tributary
+					is_initiator = yes
+				}
+			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_KOR
+		
+		adjective = KOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_KOR
+		
+		adjective = KOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_KOR
+		
+		adjective = KOR_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+DAI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_DAI
+		
+		adjective = DAI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_DAICHI
+		
+		adjective = DAICHI_ADJ
+		#is_main_tag_only = yes 
+		priority = 5
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			coa_def_independent_trigger = no
+			any_country = {
+			OR = {
+			 country_has_primary_culture = cu:han 
+			 country_has_primary_culture = cu:yue 
+			 country_has_primary_culture = cu:min 
+			 country_has_primary_culture = cu:hakka 
+			 country_has_primary_culture = cu:manchu 
+			}
+			OR = {
+				has_diplomatic_pact = {
+					who = c:DAI
+					type = puppet
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:DAI
+					type = dominion
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:DAI
+					type = tributary
+					is_initiator = yes
+				}
+			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_DAI
+		
+		adjective = DAICHI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_DAI
+		
+		adjective = DAICHI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_DAI
+		
+		adjective = DAICHI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+JAP = { 
+	dynamic_country_name = {
+		name = dyn_c_japan_shogunate
+		adjective = dyn_c_japan_shogunate_adj
+
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				NOT = { has_variable = meiji_var }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes 
+		priority = 0 
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+				exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				has_variable = meiji_var 
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_JAPCHI
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes 
+		priority = 5
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			coa_def_independent_trigger = no
+			any_country = {
+			OR = {
+			 country_has_primary_culture = cu:han 
+			 country_has_primary_culture = cu:yue 
+			 country_has_primary_culture = cu:min 
+			 country_has_primary_culture = cu:hakka 
+			 country_has_primary_culture = cu:manchu 
+			}
+			OR = {
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = puppet
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = dominion
+					is_initiator = yes
+				}
+				has_diplomatic_pact = {
+					who = c:JAP
+					type = tributary
+					is_initiator = yes
+				}
+			}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+EZO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_EZO
+		
+		adjective = EZO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_EZO
+		
+		adjective = EZO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_EZO
+		
+		adjective = EZO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_EZO
+		
+		adjective = EZO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+BRZ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BRZ
+		
+		adjective = BRZ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BRZ
+		
+		adjective = BRZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BRZ
+		
+		adjective = BRZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BRZ
+		
+		adjective = BRZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+UCA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_UCA
+		
+		adjective = UCA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_UCA
+		
+		adjective = UCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_UCA
+		
+		adjective = UCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_UCA
+		
+		adjective = UCA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+}
+MEX = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MEX
+		
+		adjective = MEX_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MEX
+
+		adjective = MEX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MEX
+		
+		adjective = MEX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MEX
+		
+		adjective = MEX_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+ARG = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ARG
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ARG
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ARG
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ARG
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_ARGLAP
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes 
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_BUENOS_AIRES
+				owns_entire_state_region = STATE_BAJO_PARAGUAY
+				owns_entire_state_region = STATE_URUGUAY
+			}
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ARGLAP
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_BUENOS_AIRES
+				owns_entire_state_region = STATE_BAJO_PARAGUAY
+				owns_entire_state_region = STATE_URUGUAY
+			}
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ARGLAP
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_BUENOS_AIRES
+				owns_entire_state_region = STATE_BAJO_PARAGUAY
+				owns_entire_state_region = STATE_URUGUAY
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ARGLAP
+		
+		adjective = ARG_ADJ
+		#is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_BUENOS_AIRES
+				owns_entire_state_region = STATE_BAJO_PARAGUAY
+				owns_entire_state_region = STATE_URUGUAY
+			}
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+URU = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_URU
+		
+		adjective = URU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_URU
+		
+		adjective = URU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_URU
+		
+		adjective = URU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_URU
+		
+		adjective = URU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+PRG = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PRG
+		
+		adjective = PRG_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PRG
+		
+		adjective = PRG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PRG
+		
+		adjective = PRG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PRG
+		
+		adjective = PRG_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+PNI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PNI
+		
+		adjective = PNI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PNI
+		
+		adjective = PNI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PNI
+		
+		adjective = PNI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PNI
+		
+		adjective = PNI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+PRA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PRA
+		
+		adjective = PRA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PRA
+		
+		adjective = PRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PRA
+		
+		adjective = PRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PRA
+		
+		adjective = PRA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+CHL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CHL
+		
+		adjective = CHL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CHL
+		
+		adjective = CHL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CHL
+		
+		adjective = CHL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CHL
+		
+		adjective = CHL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+BOL = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BOL
+		
+		adjective = BOL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BOL
+		
+		adjective = BOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BOL
+		
+		adjective = BOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BOL
+		
+		adjective = BOL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_peru_boliviaA
+		adjective = dyn_c_peru_bolivia_adj
+		
+		adjective = BOL_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_LA_PAZ
+				owns_entire_state_region = STATE_LIMA
+			}
+		}
+	}
+} 
+PEU = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PEU
+		
+		adjective = PEU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PEU
+		
+		adjective = PEU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PEU
+		
+		adjective = PEU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PEU
+		
+		adjective = PEU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_peru_boliviaA
+		adjective = dyn_c_peru_bolivia_adj
+		
+		adjective = PEU_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				owns_entire_state_region = STATE_LA_PAZ
+				owns_entire_state_region = STATE_LIMA
+			}
+		}
+	}
+} 
+ECU = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ECU
+		
+		adjective = ECU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ECU
+		
+		adjective = ECU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ECU
+		
+		adjective = ECU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ECU
+		
+		adjective = ECU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+CLM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CLM
+		
+		adjective = CLM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CLM
+		
+		adjective = CLM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes } 
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CLM
+		
+		adjective = CLM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CLM
+		
+		adjective = CLM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	
+	dynamic_country_name = {
+		name = dyn_c_new_granada
+		adjective = dyn_c_new_granada_adj
+
+		adjective = dyn_c_new_granada_adj
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor = {
+				OR = {
+					has_law = law_type:law_legacy_slavery
+					has_law = law_type:law_slave_trade
+				}
+			}
+		}
+	}
+} 
+VNZ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_VNZ
+		
+		adjective = VNZ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_VNZ
+		
+		adjective = VNZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_VNZ
+		
+		adjective = VNZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_VNZ
+		
+		adjective = VNZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+GCO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GCO
+		
+		adjective = GCO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GCO
+		
+		adjective = GCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GCO
+		
+		adjective = GCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GCO
+		
+		adjective = GCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+PNM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PNM
+		
+		adjective = PNM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PNM
+		
+		adjective = PNM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PNM
+		
+		adjective = PNM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PNM
+		
+		adjective = PNM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+AGJ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_AGJ
+		
+		adjective = AGJ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_AGJ
+		
+		adjective = AGJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_AGJ
+		
+		adjective = AGJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AGJ
+		
+		adjective = AGJ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = AGJ
+		
+		adjective = AGJ_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+} 
+AMZ = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_AMZ
+		
+		adjective = AMZ_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_AMZ
+		
+		adjective = AMZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_AMZ
+		
+		adjective = AMZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AMZ
+		
+		adjective = AMZ_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+GRI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GRI
+		
+		adjective = GRI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GRI
+		
+		adjective = GRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GRI
+		
+		adjective = GRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GRI
+		
+		adjective = GRI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+TWT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_TWT
+		
+		adjective = TWT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_TWT
+		
+		adjective = TWT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_TWT
+		
+		adjective = TWT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_TWT
+		
+		adjective = TWT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+AYM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_AYM
+		
+		adjective = AYM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_AYM
+		
+		adjective = AYM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_AYM
+		
+		adjective = AYM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AYM
+		
+		adjective = AYM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+ASA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ASA
+		
+		adjective = ASA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ASA
+		
+		adjective = ASA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ASA
+		
+		adjective = ASA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ASA
+		
+		adjective = ASA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+LOU = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_LOU
+		
+		adjective = LOU_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_LOU
+		
+		adjective = LOU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_LOU
+		
+		adjective = LOU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_LOU
+		
+		adjective = LOU_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+CHE = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CHE
+		
+		adjective = CHE_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CHE
+		
+		adjective = CHE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CHE
+		
+		adjective = CHE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CHE
+		
+		adjective = CHE_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+HAI = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HAI
+		
+		adjective = HAI_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HAI
+		
+		adjective = HAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HAI
+		
+		adjective = HAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HAI
+		
+		adjective = HAI_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_saint-domingue
+		adjective = dyn_c_saint-domingue_adj
+		
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			coa_def_french_ensign_trigger = yes
+		}
+	}	
+
+} 
+DOM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_DOM
+		
+		adjective = DOM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_DOM
+		
+		adjective = DOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_DOM
+		
+		adjective = DOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_DOM
+		
+		adjective = DOM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+WIN = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_WIN
+		
+		adjective = WIN_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_WIN
+		
+		adjective = WIN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_WIN
+		
+		adjective = WIN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_WIN
+		
+		adjective = WIN_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+MAY = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MAY
+		
+		adjective = MAY_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MAY
+		
+		adjective = MAY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MAY
+		
+		adjective = MAY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MAY
+		
+		adjective = MAY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+GUA = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GUA
+		
+		adjective = GUA_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GUA
+		
+		adjective = GUA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GUA
+		
+		adjective = GUA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GUA
+		
+		adjective = GUA_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+ELS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ELS
+		
+		adjective = ELS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ELS
+		
+		adjective = ELS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ELS
+		
+		adjective = ELS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ELS
+		
+		adjective = ELS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+HON = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_HON
+		
+		adjective = HON_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_HON
+		
+		adjective = HON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_HON
+		
+		adjective = HON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_HON
+		
+		adjective = HON_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+NIC = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_NIC
+		
+		adjective = NIC_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NIC
+		
+		adjective = NIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NIC
+		
+		adjective = NIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NIC
+		
+		adjective = NIC_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+COS = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_COS
+		
+		adjective = COS_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_COS
+		
+		adjective = COS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_COS
+		
+		adjective = COS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_COS
+		
+		adjective = COS_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+MKT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_MKT
+		
+		adjective = MKT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_MKT
+		
+		adjective = MKT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_MKT
+		
+		adjective = MKT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_MKT
+		
+		adjective = MKT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+CUB = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_CUB
+		
+		adjective = CUB_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_CUB
+		
+		adjective = CUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_CUB
+		
+		adjective = CUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_CUB
+		
+		adjective = CUB_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_SHENG_CUB
+
+		adjective = CUB_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = c:SPA
+			c:SPA = {
+				has_diplomatic_pact = {
+					who = c:CUB
+					type = puppet
+					is_initiator = yes
+				}
+			}
+		}
+	}
+} 
+JAM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_JAM
+		
+		adjective = JAM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_JAM
+		
+		adjective = JAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_JAM
+		
+		adjective = JAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_JAM
+		
+		adjective = JAM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+PCO = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_PCO
+		
+		adjective = PCO_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_PCO
+		
+		adjective = PCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_PCO
+		
+		adjective = PCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_PCO
+		
+		adjective = PCO_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+BAH = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_BAH
+		
+		adjective = BAH_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_BAH
+		
+		adjective = BAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_BAH
+		
+		adjective = BAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_BAH
+		
+		adjective = BAH_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+ALT = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_ALT
+		
+		adjective = ALT_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ALT
+		
+		adjective = ALT_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ALT
+		
+		adjective = ALT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ALT
+		
+		adjective = ALT_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+NTL = { 
+	dynamic_country_name = {
+		name = dyn_c_occupying_austria
+		
+		adjective = NTL_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes 
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_NTL
+		
+		adjective = NTL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_NTL
+		
+		adjective = NTL_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_NTL
+		
+		adjective = NTL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_NTL
+		
+		adjective = NTL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+ETL = { 
+	dynamic_country_name = {
+		name = dyn_c_occupying_austria
+		
+		adjective = ETL_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes 
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_ETL
+		
+		adjective = ETL_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_ETL
+		
+		adjective = ETL_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_ETL
+		
+		adjective = ETL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_ETL
+		
+		adjective = ETL_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+STY = { 
+	dynamic_country_name = {
+		name = dyn_c_occupying_austria
+		
+		adjective = STY_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes 
+		priority = 10
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_STY
+		
+		adjective = STY_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_STY
+		
+		adjective = STY_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_STY
+		
+		adjective = STY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_STY
+		
+		adjective = STY_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+GTM = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_GTM
+		
+		adjective = GTM_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_GTM
+		
+		adjective = GTM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GTM
+		
+		adjective = GTM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GTM
+		
+		adjective = GTM_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 
+AEF = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_AEF
+		
+		adjective = AEF_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_AEF
+		
+		adjective = AEF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_AEF
+		
+		adjective = AEF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AEF
+		
+		adjective = AEF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = AEF
+		
+		adjective = AEF_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}
+
+BRD = { # BRD Germany
+	dynamic_country_name = {
+		name = dyn_c_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_fascistc_GER
+		
+		adjective = GER_ADJ
+
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}
+
+DDR = { # DDR Germany
+	dynamic_country_name = {
+		name = dyn_c_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0 
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_GER
+		adjective = GER_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_fascistc_GER
+		
+		adjective = GER_ADJ
+
+		#is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			scope:actor = {
+				coa_fascist_trigger = yes
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,73 @@
+﻿pmg_base_building_power_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_hydroelectric_plant
+		pm_coal-fired_plant
+		pm_oil-fired_plant
+
+		### Added so AI can use them somehow
+		pm_backyard_pile_nuclear_reactor
+		pm_specialized_generating_vanilla_power_plant_lv_1 #Use Nuclear Engine
+		pm_specialized_generating_vanilla_power_plant_lv_2 # Use Nuclear Engine
+
+		pm_automated_generating_vanilla_power_plant #Equivalent to reactor automation
+	}
+}
+
+pmg_base_building_nuclear_reactor = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		# All these requires nuclear fuel as input
+		pm_backyard_pile_nuclear_reactor #small amount of tools and engine
+		pm_specialized_generating_nuclear_reactor #Use Nuclear Engine
+	}
+}
+
+pmg_waste_building_nuclear_reactor = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		# Waste option
+		pm_waste_discard #No waste, high pollution.
+		pm_waste_recycling_nuclear_reactor #Produce irradiated material as side-product
+		pm_waste_refinement_nuclear_reactor #Produce more electricity
+	}
+}
+
+pmg_base_building_railway = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_steam_trains
+		pm_electric_trains
+		pm_diesel_trains
+
+		## Newly Added
+		pm_atomic_powered_trains
+		pm_atomic_powered_trains_2
+		pm_maglev_railroad_1
+		pm_maglev_railroad_2
+	}
+}
+
+pmg_base_building_nuclear_jet_airport = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		# Domestic or international flight
+		# Both use same amount of nuclear jet and nuclear fuel
+		# Produce same amount of transportation, but different buff
+		
+		pm_focus_domestic_flight_nuclear_jet_airport
+		pm_focus_international_flight_nuclear_jet_airport
+	}
+}
+
+pmg_ownership_advanced_nuclear_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_privately_owned_advanced_nuclear_industry
+		pm_publicly_traded_advanced_nuclear_industry
+		pm_government_run_advanced_nuclear_industry
+		pm_worker_cooperative_advanced_nuclear_industry
+	}
+}

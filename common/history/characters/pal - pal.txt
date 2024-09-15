@@ -1,0 +1,49 @@
+﻿CHARACTERS = {
+	c:PAL = {
+		create_character = {
+			ruler = yes
+			ig_leader = yes
+			culture = cu:british
+			interest_group = ig_landowners #地主
+			historical = yes
+		}	
+		create_character = {
+			ig_leader = yes #利益集团领袖
+			culture = cu:british
+			interest_group = ig_intelligentsia #知识分子
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			interest_group = ig_armed_forces #军队
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			interest_group = ig_petty_bourgeoisie #小市民
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			interest_group = ig_rural_folk #乡村民众
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			interest_group = ig_industrialists #实业家
+		}
+
+		create_character = {
+			culture = cu:british
+			interest_group = ig_trade_unions #利益集团工会
+			ig_leader = yes #利益集团领袖
+		}
+
+	}
+}

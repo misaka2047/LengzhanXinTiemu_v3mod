@@ -1,0 +1,56 @@
+﻿CHARACTERS = {
+	c:SWE = {
+		create_character = {
+			#古斯塔夫五世
+			first_name = "Gustav_V"
+			last_name = "Bernadotte"
+			historical = yes
+			ruler = yes
+			noble = yes
+			birth_date = 1858.6.16
+			dna = dna_king_leopold_01
+    			religion = rel:protestant
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_moderate
+			traits = {
+				strong #健硕
+			}
+		}	
+
+		create_character = {
+			first_name = Per·Albin
+			last_name = Hansen
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1885.10.28
+    			religion = rel:protestant
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				expert_political_operator #政治运作专家
+				master_bureaucrat #高明官僚
+				sickly #多病
+			}
+		}
+
+		create_character = {
+			first_name = Tage
+			last_name = Irad
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1901.10.11
+    			religion = rel:protestant
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				strong #健硕
+			}
+		}
+
+		create_character = {
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_social_democrat #社民主义者
+			ig_leader = yes #利益集团领袖
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:CHL = {
+		create_character = {
+			#加夫列尔·冈萨雷斯·魏地拉
+			first_name = "Gabriel_gonzalez"
+			last_name = "Videla"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1898.11.22
+			dna = dna_president_joaquin_prieto
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_radical #激进主义者
+			traits = {
+			}
+		}
+	}
+}

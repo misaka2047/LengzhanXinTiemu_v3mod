@@ -1,0 +1,41 @@
+﻿pmg_base_submerged_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Input: Steamer, Fertilizer ,wheat if producing meat/fish, irradiated material, electricity
+		pm_submerged_farm_salmonade #produce meat
+		pm_submerged_farm_plankton #produce wheat
+		pm_submerged_farm_fish #produce fish
+	}
+}
+
+pmg_base_ocean_mining_operation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		#Input: Steamer, steel, electricity, irradiated material.
+		pm_ocean_mining_oil #produce gasoline
+		pm_ocean_mining_uranium #produce uranium
+		pm_ocean_mining_iron #produce iron
+		pm_ocean_mining_sulfur #produce sulfur
+		pm_ocean_mining_lead #produce lead
+	}
+}
+
+pmg_seabed_cracking_method = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_mechanical_cracking #use steamer, nuclear engine and nuclear fuel
+		pm_unmanned_drill #use steamer and radio
+		pm_thermonuclear_seabed_dynamite 
+			#Use nuclear engine, nuclear fuel, hell load of explosives
+		pm_ocean_mining_labor_intensive #Use labor. Use slaves if possible.
+	}
+}
+
+pmg_ocean_mining_operation_automation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_automation_disabled 
+		pm_programmed_dynamites
+		pm_automated_submarine_freighters
+	}
+}

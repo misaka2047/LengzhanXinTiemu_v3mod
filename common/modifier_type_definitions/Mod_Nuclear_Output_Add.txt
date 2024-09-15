@@ -1,0 +1,99 @@
+﻿### Outpus
+
+goods_output_radioactive_ore_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_nuclear_engines_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_irradiated_material_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_nuclear_fuel_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_nuclear_jet_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_programmables_add = {
+	good = yes
+	percent = no
+}
+
+goods_output_research_and_engineering_add = {
+	good = yes
+	percent = no	
+}
+
+### Input
+goods_input_services_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_research_and_engineering_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_radioactive_ore_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_nuclear_engines_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_irradiated_material_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_nuclear_fuel_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_nuclear_jet_add = {
+	good = no
+	percent = no	
+}
+
+goods_input_programmables_add = {
+	good = no
+	percent = no
+}
+
+
+### Other Stuff
+goods_output_services_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_radios_mult = {
+	good = yes
+	percent = yes
+}
+
+
+
+#### Labor Intensive Industries
+building_slaves_mortality_mult = {
+	good = no
+	percent = yes
+}
+
+

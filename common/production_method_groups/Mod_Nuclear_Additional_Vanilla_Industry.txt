@@ -1,0 +1,334 @@
+﻿pmg_base_building_food_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_bakery
+		pm_sweeteners
+		pm_baking_powder
+		
+		# Additional Producing Method	
+		pm_airlift_fresh_groceries #Consumes additional nuclear jet and little bit of nuclear fuel for more groceries.
+	}
+}
+
+pmg_distillery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_disabled_distillery
+		pm_pot_stills
+		pm_patent_stills
+		
+		# Additional Producing Method	
+		pm_rum
+		pm_wine
+		
+		pm_nuka_cola
+		#Tech: Eco-Friendly Nuclear additives. Uses irradiated material and a bit of nuclear fuel to produce more liquor
+		pm_instant_fission_liquor
+		pm_instant_fission_food
+	}
+}
+
+pmg_luxury_building_textile_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_luxury_clothes
+		pm_craftsman_sewing
+		pm_elastics
+
+		# Additional Producing Method	
+		pm_shining_silk
+		#Tech: Eco-Friendly Nuclear additives. Uses irradiated material to replace silk for luxury clothing
+
+		
+	}
+}
+
+
+pmg_base_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_handcrafted_furniture
+		pm_lathe
+		pm_mechanized_workshops
+
+		# Additional Producing Method	
+		pm_depleted_uranium_lathe
+		#Tech: Commercial-level radioactive materials
+		# Produce furniture with tools, electricity, wood, and irradiated material
+	}
+}
+
+pmg_luxury_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_luxuries
+		pm_luxury_furniture
+		pm_precision_tools
+
+		# Additional Producing Method	
+		pm_cobalt_steel_furniture
+	}
+}
+
+pmg_base_building_glassworks = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_forest_glass
+		pm_leaded_glass
+		pm_crystal_glass
+		pm_houseware_plastics
+
+		# Additional Producing Method	
+		pm_radiant_plastics
+		#Tech: Commercial-level radioactive materials
+		# Produce more glass by replacing some oil with irradiated material
+	}
+}
+
+pmg_glassblowing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_manual_glassblowing
+		pm_automatic_bottle_blowers
+
+		## Additional
+		pm_programmable_bottle_blowers
+	}
+}
+
+pmg_luxury_building_glassworks = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_disabled_ceramics
+		pm_ceramics
+		pm_bone_china
+
+		# Additional Producing Method	
+		pm_glowing_blue_porcelain
+		pm_extra_glass_additives
+		#Tech: Commercial-level radioactive materials
+		# Produce more procelian by replacing some dye with irradiated materials and electricity
+	}
+}
+
+
+
+pmg_base_building_tooling_workshops = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_crude_tools
+		pm_pig_iron
+		pm_steel
+		pm_rubber_grips
+
+		# Additional Producing Method	
+		pm_duranium_steel_tools
+		#Tech: duranium steel
+		# produce more tools by adding irradiated material and electricity with less steel
+	
+		pm_automated_machines
+		pm_electronic_controller_tools
+	}
+}
+
+
+pmg_fertilizer_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_artificial_fertilizers
+		pm_improved_fertilizer
+		pm_nitrogen_fixation
+
+		# Additional Producing Method	
+		pm_living_fertilizer
+		#Tech: radiation assist bio-engineering
+		# produce more fertilizer by adding irradiated material
+
+		pm_automated_process_for_fertilizer
+	}
+}
+
+
+pmg_explosives_building_chemical_plants = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		## Vanilla Basics
+		pm_leblanc_process
+		pm_ammonia-soda_process
+		pm_vacuum_evaporation
+		pm_brine_electrolysis
+
+		#Copy as if it's from the fertilizer plant
+
+		## pm_backyard_uncontrolled_fission  #Use explosive and steel
+		pm_fission_explosive  #Use explosive, steel, and electricity
+		pm_fusion_explosive  #Use explosive, electricity, and nuclear engine
+		pm_shaped_fusion_explosives
+	}
+}
+
+
+pmg_synthetic_dyes = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_dye_production
+
+		# Additional Producing Method	
+		pm_glowing_dyes
+		#Tech: commercial_level nuclear material
+		# produce more dye and replace oil with nuclear material
+	}
+}
+
+pmg_synthetic_silk = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_artificial_fibers
+		pm_rayon
+
+		# Additional Producing Method	
+		pm_Halifax_worm_silk
+		#Tech: radiation-assisted bio-engineering
+		# produce more silk by using nuclear material
+	}
+}
+
+
+pmg_steelmaking_process = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_blister_steel_process
+		pm_bessemer_process
+		pm_open_hearth_process
+		pm_electric_arc_process
+
+		# Additional Producing Method	
+		pm_New_England_duranium_steel
+		pm_automated_duranium_foundry
+		#Tech: duranium steel
+		# produce more steel by using electricity, irradiated material, and tiny amount of nuclear fuel
+	}
+}
+
+pmg_base_building_motor_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_steam_engines
+		pm_electric_engines
+		pm_diesel_engines
+
+		# Additional Producing Method	
+		pm_instant_holographic_forging
+		#Tech: ultrahigh_temperature_forging
+	}
+}
+
+
+pmg_automobile_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_automobiles_disabled
+		## pm_automobile_production
+
+		pm_microchips_engine_addon
+	}
+}
+
+
+pmg_base_building_shipyards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_basic_shipbuilding
+		pm_complex_shipbuilding
+		pm_metal_shipbuilding
+		pm_arc_welding_shipbuilding
+
+		# Additional Producing Method	
+		pm_atomic_powered_vessel
+		pm_automated_shipyard
+
+	}
+}
+
+## Military Shipyard
+pmg_military_base = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_military.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_military_shipbuilding_wooden
+		pm_military_shipbuilding_wooden_2
+		pm_military_shipbuilding_steam
+		pm_military_shipbuilding_steam_2
+
+		# Additional Producing Method	
+		pm_atomic_powered_vessel_military
+		pm_automated_shipyard_military
+	}
+}
+
+
+pmg_radios_category = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_radios
+		pm_radios
+		
+		## Mod Added
+		pm_advanced_telephones
+		pm_telephone_with_integrated_processor
+	}
+}
+
+pmg_firearms_manufacturing = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_muskets
+		pm_rifles
+		pm_repeaters
+		pm_bolt_action_rifles
+
+
+		# Additional Producing Method	
+		pm_depleted_uranium_rifle
+		#Tech: depleted material re-process
+		# more firearms with irradiated materials
+	}
+}
+
+
+pmg_foundries = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_cannons
+		pm_smoothbores
+		pm_breech_loaders
+		pm_recoiled_barrels
+
+		# Additional Producing Method	
+		pm_nuclear_powered_auto_ordanance
+		#Tech: nuclear artillery
+		# more artillery with irradiated materials, tiny bit of nuclear fuel and nuclear engine
+	}
+}
+
+pmg_base_building_munition_plants = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_percussion_caps
+		pm_explosive_shells
+
+		# Additional Producing Method	
+		pm_dirty_bomb_shells
+		#Tech: high radiation warfare
+		# more shells with irradiated materials, tiny bit of nuclear fuel.
+	}
+}

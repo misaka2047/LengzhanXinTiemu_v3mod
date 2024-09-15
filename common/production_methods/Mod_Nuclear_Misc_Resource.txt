@@ -1,0 +1,110 @@
+﻿pm_hydralic_fracturing = {
+	texture = "gfx/interface/icons/production_method_icons/combustion_derricks.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 45
+		}
+	}
+
+	unlocking_technologies = {
+		theories_of_terraforming
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 5
+			goods_input_explosives_add = 10
+			goods_input_nuclear_engines_add = 5
+			goods_input_nuclear_fuel_add = 4
+			## 1,300
+			
+			# output goods
+			goods_output_oil_add = 120 ## 4,800
+			## Profit: 3,500
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1000
+		}
+	}
+}
+
+
+
+
+mega_greenhouse_building_rubber_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_rubber_add = 90
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_rubber_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_rubber_add = 105
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}

@@ -1,0 +1,22 @@
+the_people's_army = {
+
+	group = je_group_internal_affairs
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+
+    on_complete = {
+        activate_law = law_type:law_national_guard #改变法律为国民警卫队
+        activate_law = law_type:law_cooperative_ownership #改变法律为合作社所有制
+		add_modifier = {
+			name = the_voice_of_the_people #人民之声
+			years = 20
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

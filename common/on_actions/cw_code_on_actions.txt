@@ -1,0 +1,12 @@
+# Root = Country
+on_monthly_pulse_country = {
+	events = {
+		bttw.2
+		africa_breakup.1
+		africa_breakup.2
+		KW_event.1
+		KW_event.2
+		KW_event.3
+		KW_event.4
+	}
+}

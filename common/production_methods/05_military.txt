@@ -1,0 +1,397 @@
+﻿pm_no_organization = {
+	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
+	is_default = yes
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 970
+			building_employment_officers_add = 30
+			building_training_rate_add = 10
+		}
+	}
+}
+
+pm_general_training = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	is_default = yes
+	unlocking_technologies = {
+		tech_guerrilla_warfare
+	}
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 950
+			building_employment_officers_add = 50
+			building_training_rate_add = 18
+		}
+	}
+}
+
+pm_advanced_tactics_training = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		tech_nine_principles_of_battles
+	}
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 900
+			building_employment_officers_add = 100
+			building_training_rate_add = 21
+		}
+	}
+}
+
+pm_training_streamlining = {
+	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+	unlocking_technologies = {
+		tech_modernized_depth
+	}
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 850
+			building_employment_officers_add = 150
+			building_training_rate_add = 24
+		}
+	}
+}
+
+pm_nco_incorporation = {
+	texture = "gfx/interface/icons/production_method_icons/nco_incorporation.dds"
+	unlocking_technologies = {
+		tech_battle_theory
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 27
+		}		
+	}
+}
+
+pm_mobile_warfare_tactics = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	unlocking_technologies = {
+		tech_air_ground_integrated_combat_system
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 750
+			building_employment_officers_add = 250
+			building_training_rate_add = 30
+		}		
+	}
+}
+
+pm_cybernetics_integrated_training = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		tech_informationized_synthetic_tactical_corps
+	}
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 700
+			building_employment_officers_add = 300
+			building_training_rate_add = 35
+		}
+	}
+
+	possible = {
+		error_check = {
+			severity = fail
+			is_incorporated = yes
+		}
+	}
+}
+
+
+pm_no_organization_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
+	is_default = yes
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 970
+			building_employment_officers_add = 30
+			building_training_rate_add = 10
+		}
+	}
+}
+
+pm_general_training_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	is_default = yes
+	unlocking_technologies = {
+		tech_guerrilla_warfare
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 950
+			building_employment_officers_add = 50
+			building_training_rate_add = 18
+		}
+	}
+}
+
+pm_advanced_tactics_training_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		tech_nine_principles_of_battles
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 900
+			building_employment_officers_add = 100
+			building_training_rate_add = 21
+		}
+	}
+}
+
+pm_training_streamlining_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
+	unlocking_technologies = {
+		tech_modernized_depth
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 850
+			building_employment_officers_add = 150
+			building_training_rate_add = 24
+		}
+	}
+}
+
+pm_nco_incorporation_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/nco_incorporation.dds"
+	unlocking_technologies = {
+		tech_battle_theory
+	}
+	disallowing_laws = {
+		law_peasant_levies
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 27
+		}
+	}
+}
+
+pm_mobile_warfare_tactics_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/motorised_logistics.dds"
+	unlocking_technologies = {
+		tech_air_ground_integrated_combat_system
+	}
+	building_modifiers = {
+		workforce_scaled = {
+		}
+
+		level_scaled = {
+			building_employment_soldiers_add = 750
+			building_employment_officers_add = 250
+			building_training_rate_add = 30
+		}		
+	}
+}
+
+pm_cybernetics_conscript_training = {
+	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
+	unlocking_technologies = {
+		tech_informationized_synthetic_tactical_corps
+	}
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_soldiers_add = 700
+			building_employment_officers_add = 300
+			## In this way you can use it in colonies where qualifications is hard to come by.
+			building_training_rate_add = 33
+		}
+	}
+
+	possible = {
+		error_check = {
+			severity = fail
+			is_incorporated = no
+		}
+	}
+}
+
+
+pm_no_naval_theory = {
+	texture = "gfx/interface/icons/production_method_icons/no_naval_theory.dds"
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 900
+			building_employment_officers_add = 100
+			building_training_rate_add = 4
+		}
+	}
+}
+
+pm_power_of_the_purse = {
+	texture = "gfx/interface/icons/production_method_icons/power_of_the_purse.dds"
+	unlocking_technologies = {
+		tech_world_war_ii_naval_strategic_thinking
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 875
+			building_employment_officers_add = 125
+			building_training_rate_add = 5
+		}
+
+		unscaled = {
+			unit_morale_loss_mult = -0.05
+			unit_morale_damage_mult = 0.1
+		}
+	}
+}
+
+pm_jeune_ecole = {
+	texture = "gfx/interface/icons/production_method_icons/jeune_ecole.dds"
+	unlocking_technologies = {
+		tech_sea_power_theory
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 850
+			building_employment_officers_add = 150
+			building_training_rate_add = 6
+		}
+
+		unscaled = {
+			unit_morale_loss_mult = -0.1
+			unit_morale_damage_mult = 0.2
+		}
+	}
+}
+
+pm_sea_lane_strategies = {
+	texture = "gfx/interface/icons/production_method_icons/mahanian_thought.dds"
+	unlocking_technologies = {
+		tech_ocean_strategy
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 825
+			building_employment_officers_add = 175
+			building_training_rate_add = 7
+		}
+
+		unscaled = {
+			unit_morale_loss_mult = -0.15
+			unit_morale_damage_mult = 0.3
+		}
+	}
+}
+
+pm_battlefleet_tactics = {
+	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
+	unlocking_technologies = {
+		tech_nearshore_defense_and_anti_access_strategy
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 800
+			building_employment_officers_add = 200
+			building_training_rate_add = 8
+		}
+
+		unscaled = {
+			unit_morale_loss_mult = -0.2
+			unit_morale_damage_mult = 0.4
+		}
+	}
+}
+
+pm_naval_gunnery_computers = {
+	texture = "gfx/interface/icons/production_method_icons/battlefleet_tactics.dds"
+	unlocking_technologies = {
+		tech_informationized_modern_naval_thinking
+	}
+	building_modifiers = {
+		level_scaled = {
+			building_employment_soldiers_add = 750
+			building_employment_officers_add = 250
+			building_training_rate_add = 10
+		}
+		unscaled = {
+			unit_morale_loss_mult = -0.15
+			unit_morale_damage_mult = 0.5
+		}
+	}
+}
+
+pm_peasant_levies = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	unlocking_laws = { law_peasant_levies }
+
+	state_modifiers = {
+		level_scaled = {
+			state_conscription_rate_add = 0.005
+		}
+	}
+}
+
+pm_professional_army = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	unlocking_laws = { law_professional_army }
+
+	state_modifiers = {
+		level_scaled = {
+			state_conscription_rate_add = 0.01
+		}
+	}
+}
+
+pm_national_militia = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	unlocking_laws = { law_national_militia }
+
+	state_modifiers = {
+		level_scaled = {
+			state_conscription_rate_add = 0.01
+		}
+	}
+}
+
+
+pm_mass_conscription = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	unlocking_laws = { law_mass_conscription }
+
+	state_modifiers = {
+		level_scaled = {
+			state_conscription_rate_add = 0.015
+		}
+	}
+}
+
+pm_politicized_military = {
+	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
+	unlocking_laws = { law_politicized_military }
+
+	state_modifiers = {
+		level_scaled = {
+			state_conscription_rate_add = 0.015
+		}
+	}
+}
+
+

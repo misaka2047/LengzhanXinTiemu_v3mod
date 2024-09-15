@@ -1,0 +1,345 @@
+﻿popneed_basic_food = { #食品
+	default = grain #粮食
+
+	entry = {
+		goods = grain
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.1
+	}
+	
+	entry = {
+		goods = meat #肉类
+		
+		weight = 2
+		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = sugar #糖
+		
+		weight = 2
+		max_supply_share = 0.3
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = groceries #加工食品
+		
+		weight = 8
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+}
+
+popneed_luxury_drinks = { #饮品
+	default = liquor
+
+	entry = {
+		goods = liquor
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+}
+
+popneed_heating = { #供暖与燃料（煤炭、纤维、烃类能源、精炼燃料、电）
+	default = coal
+
+	entry = {
+		goods = coal
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = fabric
+		
+		weight = 0.25
+		max_supply_share = 0.1
+		min_supply_share = 0.0
+	}	
+	
+	entry = {
+		goods = oil #烃类能源
+		
+		weight = 1
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = petrol #精炼燃料
+		
+		weight = 2
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = electricity
+		
+		weight = 4
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+}
+
+popneed_household_items = { #居家日用
+	default = furniture
+
+	entry = {
+		goods = furniture
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0
+	}
+	
+	entry = {
+		goods = luxury_furniture
+		
+		weight = 2
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}	
+}
+
+popneed_crude_items = { #日常消耗（纸、玻璃、塑料）
+	default = paper
+
+	entry = {
+		goods = paper
+		
+		weight = 1
+		max_supply_share = 0.8
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = plastic
+		
+		weight = 1
+		max_supply_share = 0.8
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = glass
+		
+		weight = 1
+		max_supply_share = 0.8
+		min_supply_share = 0.0
+	}
+}
+
+popneed_leisure = { #社交娱乐
+	default = services
+
+	entry = {
+		goods = services
+		
+		weight = 0.25
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = fine_art
+		
+		weight = 4
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = telephones
+		
+		weight = 4
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+}
+
+popneed_standard_clothing = { #服装
+	default = clothes
+
+	entry = {
+		goods = clothes
+
+		weight = 1
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+}
+
+popneed_free_movement = {
+	default = transportation
+
+	entry = {
+		goods = transportation #运力
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = steamers #船舶
+		
+		weight = 2
+		max_supply_share = 0.1
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = automobiles #汽车
+		
+		weight = 2
+		max_supply_share = 1.0
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = aeroplanes #飞机
+		
+		weight = 2
+		max_supply_share = 0.1
+		min_supply_share = 0.0
+	}
+}
+
+popneed_intoxicants = { #成瘾品
+	default = tobacco
+
+	entry = {
+		goods = tobacco
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+}
+
+popneed_art = { #医疗
+	default = opium
+	
+	entry = {
+		goods = opium
+		
+		weight = 1
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = services
+		
+		weight = 0.25
+		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+}
+popneed_simple_clothing = { #房产（服务、住房服务）
+	default = housing_services
+
+	entry = {
+		goods = housing_services
+		
+		weight = 4
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = services
+		
+		weight = 0.25
+		max_supply_share = 0.5
+		min_supply_share = 0.0
+	}
+}
+
+popneed_luxury_items = { #奢侈品（服务、家电、电子产品、汽车、飞机、文娱产品、住房、船舶、轻武器）
+	default = luxury_furniture
+	
+	entry = {
+		goods = services
+		
+		weight = 0.25
+		max_supply_share = 0.2
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = luxury_furniture #家电
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+	
+	entry = {
+		goods = telephones #电子产品
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = automobiles #汽车
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = aeroplanes #飞机
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = fine_art #文娱产品
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = housing_services
+		
+		weight = 4
+		max_supply_share = 1
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = steamers #船舶
+		
+		weight = 4
+		max_supply_share = 0.4
+		min_supply_share = 0.0
+	}
+
+	entry = {
+		goods = small_arms #轻武器
+		
+		weight = 1
+		max_supply_share = 0.2
+		min_supply_share = 0.0
+	}
+}
+
+
+

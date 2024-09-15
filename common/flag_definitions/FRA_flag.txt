@@ -1,0 +1,42 @@
+AOF = { # 西非
+	flag_definition = {
+		coa = AOF_absolute_monarchy
+		subject_canton = AOF_absolute_monarchy			
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AOF_republic
+		subject_canton = AOF_republic
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AOF_theocracy
+		subject_canton = AOF_theocracy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = AOF_communist
+		subject_canton = AOF_communist
+		priority = 50
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = AOF_subject
+		allow_overlord_canton = yes
+		priority = 200
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+}

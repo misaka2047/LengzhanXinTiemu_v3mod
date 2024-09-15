@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:SIA = {
+		create_character = {
+			first_name = "Bhumibol"
+			last_name = "Adud"
+			ruler = yes
+			is_general = yes
+			ig_leader = yes
+			historical = yes
+			birth_date = 1927.12.5
+			dna = dna_king_rama_03
+			interest_group = ig_armed_forces
+			ideology = ideology_humanitarian #人道主义者
+			traits = {
+				strong #健硕
+				charismatic
+			}
+		}	
+	}
+}

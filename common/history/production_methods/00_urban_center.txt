@@ -1,0 +1,72 @@
+﻿PRODUCTION_METHODS = {
+	c:USA = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_base_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_automation_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_transportation_2
+		}
+	}
+	c:CAN = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_base_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_automation_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_transportation_2
+		}
+	}
+	c:GBR = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_base_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_automation_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_transportation_2
+		}
+	}	
+	c:FRA = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_base_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_automation_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_transportation_2
+		}
+	}
+	c:RUS = {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_base_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_automation_building_urban_center_2
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_transportation_2
+		}
+	}	
+}

@@ -1,0 +1,277 @@
+﻿MILITARY_FORMATIONS = {
+	c:PRC = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "西北野战军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANXI
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SHANXI
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "中原野战军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_HENAN
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_HENAN
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "华东野战军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANDONG
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SHANDONG
+				count = 5
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "东北野战军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SOUTHERN_MANCHURIA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SOUTHERN_MANCHURIA
+				count = 5
+			}
+		}
+}
+
+	c:CHI = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "中央军嫡系"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NANJING
+				count = 30
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_NANJING
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "中央军旁系"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_NANJING
+				count = 20
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_NANJING
+				count = 10
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_south_china
+			name = "杂牌军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_GUANGXI
+				count = 10
+			}
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_south_china
+			name = "福建海军"
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_1
+				state_region = s:STATE_FUJIAN
+				count = 4
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_china
+			name = "中原海军"
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_1
+				state_region = s:STATE_HENAN
+				count = 3
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_north_china
+			name = "青岛海军"
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_1
+				state_region = s:STATE_SHANDONG
+				count = 3
+			}
+		}
+	}
+
+	c:PER = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+			name = "伊朗皇家军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_IRAKAJEMI
+				count = 4
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_IRAKAJEMI
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_IRAKAJEMI
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+			name = "伊朗边防军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_MAZANDARAN
+				count = 2
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_MAZANDARAN
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_persia
+			name = "伊朗地方军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_TABRIZ
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_TABRIZ
+				count = 1
+			}
+		}
+
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_persia
+			name = "伊朗王家舰队"
+		
+			combat_unit = {
+				type = unit_type:combat_unit_type_capital_ship_1
+				state_region = s:STATE_MAZANDARAN
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_light_ship_1
+				state_region = s:STATE_MAZANDARAN
+				count = 3
+			}
+		}
+	}
+	c:PRK = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_manchuria
+			name = "朝鲜义勇军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SARIWON
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_PYONGYANG
+				count = 10
+			}
+		}
+	}
+	c:KOR = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_manchuria
+			name = "南朝鲜陆军"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_YANGHO
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_BUSAN
+				count = 5
+			}
+		}
+	}
+}

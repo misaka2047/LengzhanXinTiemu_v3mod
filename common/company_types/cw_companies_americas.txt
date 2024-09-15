@@ -1,0 +1,251 @@
+﻿# 微软公司
+company_microsoft = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/microsoft.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_electrics_industry #电子产品厂
+		building_computer_factory #计算机工厂
+	}
+	
+	potential = {
+		OR = {
+			has_interest_marker_in_region = region_great_plains
+			has_interest_marker_in_region = region_pacific_coast
+		}
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					region = sr:region_great_plains
+					region = sr:region_pacific_coast
+				}
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				OR = {
+					region = sr:region_great_plains
+					region = sr:region_pacific_coast
+				}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_computer_factory #计算机工厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_bureaucracy_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 苹果公司
+company_apple = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/apple.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_electrics_industry #电子产品厂
+		building_home_appliance_factory #家电工厂
+		building_computer_factory #计算机工厂
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_pacific_coast
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_pacific_coast
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_pacific_coast
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_computer_factory #计算机工厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_weekly_innovation_max_add = 30 #科技進度上限/最大创新力投入
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 可口可乐公司
+coca_cola_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/coca_cola.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_beverage_factory #饮料工厂
+		building_food_industry #食品厂
+		building_sugar_factory #制糖厂
+		building_sugar_plantation #糖料作物种植园
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_dixie
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_dixie
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_dixie
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_beverage_factory #饮料工厂
+					is_building_type = building_food_industry #食品厂
+					is_building_type = building_sugar_factory #制糖厂
+					is_building_type = building_sugar_plantation #糖料作物种植园
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_radicals_from_sol_change_mult = -0.1 #生活水平降低所带来的的激进派
+		unit_morale_recovery_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 百事公司
+pepsi_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/pepsi.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_beverage_factory #饮料工厂
+		building_food_industry #食品厂
+		building_sugar_factory #制糖厂
+		building_sugar_plantation #糖料作物种植园
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_new_england
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_new_england
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_new_england
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_beverage_factory #饮料工厂
+					is_building_type = building_food_industry #食品厂
+					is_building_type = building_sugar_factory #制糖厂
+					is_building_type = building_sugar_plantation #糖料作物种植园
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_standard_of_living_add = 1
+		unit_supply_consumption_mult = -0.05
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 联合太平洋公司
+united_pacific_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/UPC.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_railway
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_the_midwest
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_the_midwest
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_the_midwest
+			is_incorporated = yes
+			has_building = building_railway
+			count >= 6
+		}
+	}
+	
+	prosperity_modifier = {
+		state_infrastructure_from_population_add = 0.5
+		state_infrastructure_from_population_max_add = 20
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+

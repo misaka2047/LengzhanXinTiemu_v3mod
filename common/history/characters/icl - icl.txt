@@ -1,0 +1,36 @@
+﻿CHARACTERS = {
+	c:ICL = { #冰岛
+		create_character = {
+			#总理奥拉维尔·索尔斯
+			historical = yes
+			first_name = "Olafur"
+			last_name = "Thors"
+			ruler = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1890.12.16
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_republican_leader #共和主义者
+			traits = {
+			}
+		}
+		create_character = {
+			#总统斯温·比约恩松
+			historical = yes
+			first_name = "ZongtongSveinn"
+			last_name = "Bjornsson"
+			ig_leader = yes #利益集团领袖
+			birth_date = 1890.12.16
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_republican_leader #共和主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			last_name = "Hansen"
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_social_democrat #社民主义者
+			ig_leader = yes #利益集团领袖
+		}
+	}
+}

@@ -1,0 +1,52 @@
+﻿CHARACTERS = {
+	c:PER = {
+		create_character = {
+			first_name = "Mohammed·Reza"
+			last_name = "Balevi"
+			historical = yes
+			ruler = yes
+			is_general = yes
+			ig_leader = yes
+			birth_date = 1919.10.26
+			culture = cu:persian
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			#穆罕默德·摩萨台
+			historical = yes
+			ig_leader = yes
+			first_name = Muhammad
+			last_name = Mossadai
+			birth_date = 1882.6.16
+			culture = cu:persian
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_ethno_nationalist #族裔民族主义者
+			traits = {
+				basic_political_operator #政治运作者
+				honorable #体面
+				literary #文学家
+			}
+		}
+
+		create_character = {
+			first_name = "Ruholla·Mousavi"
+			last_name = "Khomeini"
+			historical = yes
+			ig_leader = yes
+			birth_date = 1900.5.17
+			culture = cu:persian
+			interest_group = ig_devout #虔信者
+			ideology = ideology_theocrat #神权政治主义者
+			traits = {
+				    strong #健硕
+				    charismatic #魅力四射
+		                    ambitious #雄心勃勃
+				    innovative #创新精神
+			}
+		}
+	}
+}

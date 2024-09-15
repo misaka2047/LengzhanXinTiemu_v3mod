@@ -1,0 +1,38 @@
+﻿l_simp_chinese:
+#普通修正
+ goods_input_petrol_add:0 "@petrol!精炼燃料投入"
+ goods_input_petrol_add_desc:0 "建筑消费的@petrol!精炼燃料数量"
+
+ goods_input_computer_add:0 "@computer!计算机投入"
+ goods_input_computer_add_desc:0 "建筑消费的@computer!计算机数量"
+
+ goods_input_spacecraft_add:0 "@spacecraft!航天飞行器投入"
+ goods_input_spacecraft_add_desc:0 "建筑消费的@spacecraft!航天飞行器数量"
+
+ goods_input_artillery_add: "@artillery!$artillery$投入" #远程武器
+ goods_input_artillery_add_desc: "建筑消费的@artillery!$artillery$数量"
+
+ goods_input_tanks_add: "@tanks!$tanks$投入" #装甲单位
+ goods_input_tanks_add_desc: "建筑消费的@tanks!$tanks$数量"
+
+ goods_input_telephones_add: "@telephones!$telephones$投入" #电子产品
+ goods_input_telephones_add_desc: "建筑消费的@telephones!$telephones$数量"
+
+ goods_input_radios_add: "@radios!$radios$投入" #电子零件
+ goods_input_radios_add_desc: "建筑消费的@radios!$radios$数量"
+
+ goods_input_opium_add:0 "@opium!药物投入"
+ goods_input_opium_add_desc:0 "建筑消费的@opium!药物数量"
+
+ goods_input_engines_add: "@engines!$engines$投入" #引擎投入
+ goods_input_engines_add_desc: "建筑消费的@engines!$engines$数量"
+
+#百分比修正
+ goods_input_artillery_mult: "@artillery!$artillery$投入" #远程武器
+ goods_input_artillery_mult_desc: "建筑消费的@artillery!$artillery$数量"
+
+ goods_input_tanks_mult: "@tanks!$tanks$投入" #装甲单位
+ goods_input_tanks_mult_desc: "建筑消费的@tanks!$tanks$数量"
+
+ goods_input_radios_mult: "@radios!$radios$投入" #电子零件
+ goods_input_radios_mult_desc: "建筑消费的@radios!$radios$数量"

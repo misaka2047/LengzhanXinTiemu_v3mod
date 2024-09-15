@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:NOR = {
+		create_character = {
+			#哈康七世
+			first_name = "Haakon_VII"
+			last_name = "Glücksburg"
+			birth_date = 1872.8.3
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist #保皇主义者
+			traits = {
+			}
+		}
+	}
+}

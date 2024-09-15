@@ -1,0 +1,15 @@
+﻿# 国家自定义
+# common\country_definitions\00_countries.txt
+
+# 琉球
+RKI = {
+    color = hsv{ 158 95 205 }
+    
+    country_type = unrecognized
+    
+    tier = kingdom # 专制君主
+    
+    cultures = { japanese han }
+    religion = shinto
+    capital = STATE_RYUKYU_ISLANDS
+}

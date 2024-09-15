@@ -1,0 +1,20 @@
+stalin's_funeral = {
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+    is_shown_when_inactive = { #显示
+        exists = c:RUS
+        THIS = c:RUS
+    }
+	complete = { #完成条件
+		game_date >= 1953.3.6
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.9 } #斯大林的葬礼
+	add_journal_entry = { type = kremlin_ministerial_conference }
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

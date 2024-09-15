@@ -1,0 +1,53 @@
+﻿COUNTRIES = {
+	c:BEL = {
+		set_next_election_date = 1946.2.1
+
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_liberal = yes
+		# Laws
+		activate_law = law_type:law_monarchy #君主制
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_dedicated_police
+            	activate_law = law_type:law_public_health_insurance
+            	activate_law = law_type:law_womens_suffrage
+           	activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_poor_laws
+            	activate_law = law_type:law_compulsory_primary_school
+            	activate_law = law_type:law_8_hour_working_system
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+
+		ig:ig_trade_unions = { #工会
+			remove_ideology = ideology_proletarian #无产阶级主义者
+			add_ideology = ideology_social_democrats #社民主义者
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_petty_bourgeoisie = {
+			add_ruling_interest_group = yes
+		}
+	}
+}

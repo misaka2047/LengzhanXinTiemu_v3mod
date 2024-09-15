@@ -1,0 +1,13 @@
+﻿CHARACTERS = {
+	c:BHN = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}	
+
+	}
+}

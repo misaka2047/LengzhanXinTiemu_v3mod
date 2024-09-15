@@ -1,0 +1,114 @@
+﻿COUNTRIES = {
+	c:RUS = { #苏联
+		effect_starting_technology_tier_1_tech = yes
+
+		# Laws 
+		activate_law = law_type:law_council_republic #委员会共和制
+		activate_law = law_type:law_multi_party_cooperation_system #一党专政
+		activate_law = law_type:law_encourage_fertility #鼓励抚养
+		activate_law = law_type:law_cultural_exclusion #文化排斥
+		activate_law = law_type:law_state_atheism #国家无神论
+ 		activate_law = law_type:law_compulsory_primary_school
+		activate_law = law_type:law_10_hour_working_system
+		activate_law = law_type:law_state_led #科学院主导
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_collectivized_agriculture #集体化农业
+		activate_law = law_type:law_worker_protections #工人保障
+		activate_law = law_type:law_womens_suffrage
+		activate_law = law_type:law_graduated_taxation #累进税制
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_command_economy
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_militarized_police #军事化警察
+		activate_law = law_type:law_politicized_military #政治化军队
+		activate_law = law_type:law_secret_police
+		activate_law = law_type:law_public_health_insurance
+		activate_law = law_type:law_8_hour_working_system
+		activate_law = law_type:law_old_age_pension #养老金
+		activate_law = law_type:law_migration_controls #移民控制
+			
+		add_company = company_type:magnitogorsk_steel_plant #马钢
+		company:magnitogorsk_steel_plant = {
+			set_company_establishment_date = 1929.1.1
+		}
+
+		add_company = company_type:stalingrad_tractor_plant #斯大林格勒拖拉机厂
+		company:stalingrad_tractor_plant = {
+			set_company_establishment_date = 1930.6.17
+		}
+
+		add_company = company_type:sukhoi_design_bureau #苏霍伊设计局
+		company:sukhoi_design_bureau = {
+			set_company_establishment_date = 1939.7.29
+		}
+
+		add_company = company_type:ural_locomotive_works #乌拉尔机车厂
+		company:ural_locomotive_works = {
+			set_company_establishment_date = 1931.1.1
+		}
+
+		add_company = company_type:azerbaijan_oil_company #阿塞拜疆石油公司
+		company:azerbaijan_oil_company = {
+			set_company_establishment_date = 1917.11.8
+		}
+
+		set_tax_level = medium
+
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:luxury_clothes
+		add_taxed_goods = g:luxury_furniture
+		add_taxed_goods = g:tea
+		add_taxed_goods = g:tobacco
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+	
+		ig:ig_intelligentsia = {
+			set_interest_group_name = ig_bureaucracy #苏共官僚
+			remove_ideology = ideology_liberal #自由主义
+			add_ideology = ideology_proletarian #无产阶级主义者
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_orthodox_church
+			remove_ideology = ideology_patriarchal
+			add_ideology = ideology_russian_patriarch
+		}
+
+		ig:ig_landowners = {
+			set_interest_group_name = ig_landowners
+		}
+
+		ig:ig_armed_forces = { #军队
+			set_interest_group_name = ig_workers_and_peasants_red_army
+			remove_ideology = ideology_loyalist #效忠派
+			add_ideology = ideology_proletarian #无产阶级主义者
+		}
+		add_journal_entry = { type = stalin's_funeral }
+
+		add_modifier = {
+			name = the_birthplace_of_revolution #革命始源地
+		}
+		add_modifier = {
+			name = the_fourth_five_year_plan #四五计划
+		}
+		add_modifier = {
+			name = politicized_military #政治化的军队
+		}
+		add_modifier = {
+			name = a_divided_leadership_team #分裂的领导班子
+		}
+
+		trigger_event = {
+			id = space_race.1
+		}
+	}
+}

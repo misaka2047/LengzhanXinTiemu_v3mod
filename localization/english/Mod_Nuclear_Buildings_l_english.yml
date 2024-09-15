@@ -1,0 +1,79 @@
+﻿l_english:
+
+# New Buildings
+
+building_rad_fungus_cave_farm:0 "Radiation-Fungus Farm"
+building_rad_fungus_cave_farm_lens_option:0 "Expand $building_rad_fungus_cave_farm$"
+
+building_rad_fungus_colony:0 "Radiation-Fungus Colony"
+building_rad_fungus_colony_lens_option:0 "Expand $building_rad_fungus_colony$"
+
+building_heart_of_appalachia:0 "Rad-Fungus Colony 'Heart of Appalachia'"
+building_heart_of_appalachia_lens_option:0 "Explore $building_heart_of_appalachia$"
+
+building_uranium_mine:0 "Uranium Mine"
+building_uranium_mine_lens_option:0 "Expand $building_uranium_mine$"
+
+building_ancient_arsenal_scavenge:0 "Ancient Arsenal Scavenge"
+building_ancient_arsenal_scavenge_lens_option:0 "Find New Ancient Arsenals"
+
+building_nuclear_reactor:0 "Nuclear Reactor"
+building_nuclear_reactor_lens_option:0 "Expand $building_nuclear_reactor$"
+
+building_nuclear_jet_airport:0 "Nuclear Jet Airport"
+building_nuclear_jet_airport_lens_option:0 "Expand $building_nuclear_jet_airport$"
+
+building_nuclear_processing_complex:0 "Nuclear Processing Complex"
+building_nuclear_processing_complex_lens_option:0 "Expand $building_nuclear_processing_complex$"
+
+building_nuclear_fuel_refinery:0 "Nuclear Fuel Refinery"
+building_nuclear_fuel_refinery_lens_option:0 "Expand $building_nuclear_fuel_refinery$"
+
+building_nuclear_bomb_factory:0 "Nuclear Dynamite Factory"
+building_nuclear_bomb_factory_lens_option:0 "Expand $building_nuclear_bomb_factory$"
+
+building_nuclear_engine_industry:0 "Nuclear Engine Factory"
+building_nuclear_engine_industry_lens_option:0 "Expand $building_nuclear_engine_industry$"
+
+building_vehicle_industry:0 "Vehicle Factory"
+building_vehicle_industry_lens_option:0 "Expand $building_vehicle_industry$"
+
+building_nuclear_jet_industry:0 "Nuclear Jet Factory"
+building_nuclear_jet_industry_lens_option:0 "Expand $building_nuclear_jet_industry$"
+
+building_circuit_printing:0 "Circuit Printing"
+building_circuit_printing_lens_option:0 "Build $building_circuit_printing$"
+
+building_electronic_processors_factory:0 "Electronic Processors Factory"
+building_electronic_processors_factory_lens_option:0 "Build $building_electronic_processors_factory$"
+
+building_household_electronics_factory:0 "Household Electronics Factory"
+building_household_electronics_factory_lens_option:0 "Build $building_household_electronics_factory$"
+
+building_exoskeleton_assembly:0 "Exoskeleton Assembly"
+building_exoskeleton_assembly_lens_option:0 "Build $building_exoskeleton_assembly$"
+
+building_network_center:0 "Network Center"
+building_network_center_lens_option:0 "Expand $building_network_center$ Server Array"
+
+building_research_contractor:0 "Research Contractor"
+building_research_contractor_lens_option:0 "Expand $building_research_contractor$ Operations"
+
+building_vertical_farm:0 "Vertical Farm"
+building_vertical_farm_lens_option:0 "Build Another $building_vertical_farm$"
+
+building_synthetic_food_plant:0 "Synthetic Food Factory"
+building_synthetic_food_plant_lens_option:0 "Expand $building_synthetic_food_plant$"
+
+building_mega_greenhouse:0 "Mega Greenhouse"
+building_mega_greenhouse_lens_option:0 "Build Another $building_mega_greenhouse$"
+
+building_submerged_farm:0 "Submerged Farm"
+building_submerged_farm_lens_option:0 "Commission Another $building_submerged_farm$"
+
+building_ocean_mining_operation:0 "Ocean Mining Operation"
+building_ocean_mining_operation_lens_option:0 "Approve Additional $building_ocean_mining_operation$"
+
+building_cloning_vats:0 "Cloning Vats"
+building_cloning_vats_lens_option:0 "Build another $building_cloning_vats$"
+

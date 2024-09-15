@@ -1,0 +1,78 @@
+﻿COUNTRIES = {
+	c:ITA = {
+		set_next_election_date = 1946.7.1
+		
+		effect_starting_technology_tier_1_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:wine
+		
+		# Laws
+		activate_law = law_type:law_parliamentary_republic #议会共和制      
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_dedicated_police
+            activate_law = law_type:law_public_health_insurance
+            activate_law = law_type:law_womens_suffrage
+            activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_poor_laws
+            activate_law = law_type:law_compulsory_primary_school
+            activate_law = law_type:law_8_hour_working_system
+
+		add_company = company_type:maserati #玛莎拉蒂
+		company:maserati = {
+			set_company_establishment_date = 1914.12.1
+		}
+
+		add_company = company_type:company_fiat #菲亚特
+		company:company_fiat = {
+			set_company_establishment_date = 1899.7.11
+		}
+
+		add_company = company_type:ducati #杜卡迪
+		company:ducati = {
+			set_company_establishment_date = 1926.7.4
+		}
+
+		add_company = company_type:biaqiao_group #比亚乔集团
+		company:biaqiao_group = {
+			set_company_establishment_date = 1884.1.1
+		}
+
+		add_company = company_type:company_ansaldo #安萨尔多
+		company:company_ansaldo = {
+			set_company_establishment_date = 1853.1.1
+		}
+
+		add_company = company_type:otto·meilela #奥托·梅莱拉
+		company:otto·meilela = {
+			set_company_establishment_date = 1905.1.1
+		}
+
+		ig:ig_trade_unions = { #工会
+			remove_ideology = ideology_proletarian #无产阶级主义者
+			add_ideology = ideology_social_democrats #社民主义者
+		}
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+	}
+}

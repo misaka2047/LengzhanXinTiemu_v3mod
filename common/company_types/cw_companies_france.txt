@@ -1,0 +1,46 @@
+﻿#维多兄弟公司
+vito_brothers_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/VD.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+	
+	building_types = {  
+		building_furniture_manufacturies
+		building_glassworks
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_france
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_france
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+					region = sr:region_france
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_glassworks
+					is_building_type = building_furniture_manufacturies
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

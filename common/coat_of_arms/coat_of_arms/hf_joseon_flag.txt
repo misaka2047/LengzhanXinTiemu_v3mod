@@ -1,0 +1,103 @@
+﻿KOR = { # 南朝鲜
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "KOR.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+
+KOR_monarchy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "KOR_monarchy.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+
+PRK_joseon = { 
+	# Flag of the Joseon Dynasty
+	
+	pattern = "pattern_border_of_4.dds"
+	color1 = "red"
+	color2 = "golden"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+        instance = { position = { 0.5 0.5 } scale = { 0.9 0.9 } }		
+	}
+	colored_emblem = {
+		texture = "ce_joseon_centre_element.dds"
+		color1 = "golden"
+		color2 = "white"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}
+	colored_emblem = {
+		texture = "ce_joseon_trigrams.dds"
+		color1 = "golden"
+		color2 = "golden"
+        instance = { position = { 0.5 0.5 } scale = { 1.0 1.0 } }		
+	}	
+}
+
+PRK = { 
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1 0.70 } }
+	}			
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"		
+		instance = { position = { 0.5 0.5 } scale = { 1 0.60 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.33 0.5 } scale = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.33 0.5 } scale = { 0.45 0.45 } }
+	}
+}
+PRK_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "white"
+		instance = { position = { 0.5 0.5 } scale = { 1 0.70 } }
+	}			
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"		
+		instance = { position = { 0.5 0.5 } scale = { 1 0.60 } }
+	}
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { 0.33 0.5 } scale = { 0.5 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.33 0.5 } scale = { 0.45 0.45 } }
+	}
+}
+PRK_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "PRK_subject.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}

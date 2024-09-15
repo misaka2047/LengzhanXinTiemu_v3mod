@@ -1,0 +1,147 @@
+﻿l_simp_chinese:
+ japan_mac.1.t: "五星上将抵达东京"
+ japan_mac.1.d: "[ROOT.GetCountry.GetName]在第二次世界大战中战败，接受了美国占领。当年接受[ROOT.GetCountry.GetName]投降书的道格拉斯·麦克阿瑟，今日已经抵达东京。白宫授予了他至高无上的权力，全权委任其进行[ROOT.GetCountry.GetName]的战后改造。"
+ japan_mac.1.f: "天皇和日本政府统治国家的权力从属于你之下……由于你的权力至高无上，在权限上无须接受日方的任何异议。"
+ japan_mac.1.a: "在美国你叫我大帅，我不挑你理。到了[ROOT.GetCountry.GetName]，你该叫我什么？"
+
+ japan_mac.2.t: "[ROOT.GetCountry.GetRuler.GetLastName]宪法"
+ japan_mac.2.d: "[ROOT.GetCountry.GetRuler.GetFullName]指示日本国政府进行一系列改革，以确保日本不再是一个军国主义国家。改革目标被明确载入其本人授意下通过的《日本国宪法》之中。"
+ japan_mac.2.f: "日本的军国主义政权已经被推翻，但不代表日本国内残存的军国主义势力已经被彻底清除。我们有必要将日本变成一个和平、安定、对我们再无威胁的国家，而不是一个潜在的敌人。如果有可能，我们希望将这里建成冷战的桥头堡，一个对抗共产主义在东亚扩张的民主堡垒。"
+ japan_mac.2.a: "好的，[ROOT.GetCountry.GetRuler.GetLastName]陛下。"
+
+ japan_mac.3.t: "人间宣言"
+ japan_mac.3.d: "昭和天皇裕仁在盟军总司令部的授意下进行演讲，意在对天皇制度进行祛魅，通过否定天皇神格的方式，纠正长期以此为基础的军国主义思想和愚忠思想。"
+ japan_mac.3.f: "朕和诸等国民之间的纽带，是依靠互相信赖互相敬爱所形成\n\n并非是单靠神话传说而生出\n\n而说朕是神，日本民族有比其他民族更优越的素质，拥有能扩张统治世界的命运，这种架空事实的观念，也是无根据的\n\n"
+ japan_mac.3.a: "军国主义偶像塌房了？"
+ japan_mac.3.b: "旧时代的神话不要再提起了。"
+
+ mikado_is_lackluster_army_modifier: "军国主义大挫败"
+ mikado_is_lackluster_traditional_modifier: "旧时代的糟粕被抛弃" 
+ 
+ je_japan_mac: "占领时期"
+ je_japan_mac_goal: "完成一系列改革目标。"
+ je_japan_mac_reason: "在[ROOT.GetCountry.GetRuler.GetLastName]的领导下，日本国正进行一场彻底的、全方位的改革。通过民生改革、土地改革和去军事化改革，以及建立民主政体的方式，将战后的日本建设成和平安定的民主政治典范。"
+
+ je_japan_mac_demilitarization: "去军事化改革"
+ je_japan_mac_demilitarization_reason: "在[ROOT.GetCountry.GetRuler.GetLastName]的领导下，日本国需要实现将军事力量限制在国土防卫的范围之内的目标。"
+ je_japan_mac_demilitarization_goal: "通过裁军和通过非军事化法律，完成去军事化改革。"
+
+ je_japan_mac_landreform: "农地改革"
+ je_japan_mac_landreform_reason: "实现土地的公平分配，废除封建的土地制度，保障农民的权益，有利于日本国走上和平道路。"
+ je_japan_mac_landreform_goal: "通过法律，完成农地改革，并投资农业生产。"
+
+ je_japan_mac_livelihood: "民生与现代化改革"
+ je_japan_mac_livelihood_reason: "富裕的人民才会懂得珍视和平，尽全力提高日本人民的生活水平，有利于日本国走向和平道路。"
+ je_japan_mac_livelihood_goal: "提升日本的平均生活水平，并投资建设现代化工厂，通过一系列法律。"
+
+ je_japan_mac_democratization: "民主改革"
+ je_japan_mac_democratization_reason: "实现民主政治，保障国民的政治权益，有利于避免法西斯主义者再度掌控日本。"
+ je_japan_mac_democratization_goal: "通过公平的选举法律。"
+
+ japan_mac.4.t: "去军事化"
+ japan_mac.4.d: "在[ROOT.GetCountry.GetRuler.GetLastName]的领导下，日本国政府宣布将日本国的军队完全解散，将军事力量限制在国土防卫的范围之内。"
+ japan_mac.4.f: "日本国民衷心谋求基于正义与秩序的国际和平，永远放弃以国权发动战争、武力威胁或武力行使，作为解决国际争端的手段。\n\n为达到前项目的，不保持陆海空军及其他战争力量，不承认国家的交战权。"
+ japan_mac.4.a: "绞杀军国主义的鹰犬！"
+
+ japan_mac.5.t: "民主化改革"
+ japan_mac.5.d: "在[ROOT.GetCountry.GetRuler.GetLastName]的领导下，所有以华族为中心的封建制度，包括世袭亲王家、旧皇族的权利、贵族院都废除。以议会民主制为基础的民主政体在[ROOT.GetCountry.GetName]建立。"
+ japan_mac.5.f: "……贵族及其他贵族地位，不予承认。\n国会为国权之最高机关，并为国家唯一之立法机关。\n国会以众议院及参议院之两议院构成之。\n两议院由代表全体国民之当选议员组成之。\n两议院议员之名额，以法律定之。\n两议院之议员及其选举人之资格，以法律定之。但不得因人种、信仰、性别、社会地位、门第、教育、财产或收入而有差别……"
+ japan_mac.5.a: "民主的曙光！"
+
+ japan_mac.6.t: "民生改革"
+ japan_mac.6.d: "[ROOT.GetCountry.GetRuler.GetLastName]领导了日本的战后重建工作，推行了一系列改革，改善了日本国民的生活水平。"
+ japan_mac.6.f: "……国家应为国民之健康及文化之向上，尽力保障之。\n国家应为国民之生活水准之提高，尽力实现之。\n国家应为国民之教育之普及及向上，尽力努力之。\n国家应为国民之居住及就业之安定，尽力保障之。\n国家应为国民之社会保障及社会福利之增进，尽力实现之……"
+ japan_mac.6.a: "富裕带来安定。"
+
+ japan_mac.7.t: "农地改革"
+ japan_mac.7.d: "[ROOT.GetCountry.GetRuler.GetLastName]领导了日本的土地改革事业，以确保土地的公平分配，保障农民的权益。"
+ japan_mac.7.f: "走共产主义分子的路，让共产主义分子无路可走！对此，五星天皇麦克阿瑟评论道：“你不土改，难道要等到共产主义分子来土改，共产主义分子带着农民把我们赶走，日本变成苏联的加盟国吗？好吧，有点夸张了，但总之是这个意思。”"
+ japan_mac.7.a: "[ROOT.GetCountry.GetRuler.GetLastName]恐怕是最受农民欢迎的“天皇”了。"
+
+ japan_mac.8.t: "[ROOT.GetCountry.GetRuler.GetLastName]的闲暇日"
+ japan_mac.8.d: "[ROOT.GetCountry.GetRuler.GetLastName]将军最近没什么安排。"
+ japan_mac.8.f: "对此，五星上将麦克阿瑟评论道：“我不知道今天该做什么，但肯定不会去一个叫bilibili的网站上拍纪录片。”大型纪录片《麦克阿瑟上将不拍纪录片》正在播出。"
+ japan_mac.8.a: "调查一下大帅在日本有多受欢迎。"
+ japan_mac.8.c: "在盟军总司令部睡一觉。"
+ japan_mac.8.d: "去找大帅的日本情人原节子。"
+
+ japan_mac.9.t: "[ROOT.GetCountry.GetRuler.GetLastName]躺在床上"
+ japan_mac.9.d: "[ROOT.GetCountry.GetRuler.GetLastName]将军试图睡觉，但是他的脑海中总是浮现出一些不愉快的回忆。"
+ japan_mac.9.f: "对此，五星上将麦克阿瑟评论道：“对此，五星上将麦克阿瑟评论道：‘……’”大型纪录片《大型纪录片》正在播出……"
+ japan_mac.9.a: "睡不着了，起床！"
+ japan_mac.9.b: "继续躺着，看看能不能睡着。"
+
+ japan_mac.10.t: "诡异的梦"
+ japan_mac.10.d: "[ROOT.GetCountry.GetRuler.GetLastName]将军做了一个难以言说的梦，梦中出现了很多他难以理解的场景。"
+ japan_mac.10.f: "哈吉米，哈吉米，胖宝宝，哎呦小白手套，老爷爷我给你踩背来喽，铸币吧怎么这么菜啊……一叶一叶，漂亮的很呐，叮咚鸡叮咚鸡，大狗大狗叫叫叫……哎呦你别笑哈哈哈哈哈哈哈哈哈，曼波，曼波，欧码吉利曼波，man！what can I say！"
+ japan_mac.10.a: "我怎么从直升机上掉下来了？"
+
+ japan_mac.11.t: "梦醒了"
+ japan_mac.11.d: "[ROOT.GetCountry.GetRuler.GetLastName]将军从梦中醒来。"
+ japan_mac.11.f: "卧槽，头好痛！什么东西！这都是什么东西！"
+ japan_mac.11.a: "今天不太适合睡觉。"
+
+ japan_mac.12.t: "[ROOT.GetCountry.GetRuler.GetLastName]颇受欢迎"
+ japan_mac.12.d: "日本国民对[ROOT.GetCountry.GetRuler.GetLastName]的改革措施表示支持。"
+ japan_mac.12.f: "我们的改革措施得到了日本国民的支持，这是我们的胜利。"
+ japan_mac.12.a: "已阅。"
+
+ japan_mac.13.t: "反应平平"
+ japan_mac.13.d: "日本国民对[ROOT.GetCountry.GetRuler.GetLastName]的改革措施表示冷漠。"
+ japan_mac.13.f: "我们的改革措施并未获得太多反响。"
+ japan_mac.13.a: "已阅。"
+
+ japan_mac.14.t: "[ROOT.GetCountry.GetRuler.GetLastName]狂热"
+ japan_mac.14.d: "日本国民对[ROOT.GetCountry.GetRuler.GetLastName]的改革措施表示狂热支持，有人甚至将他视为日本社会的救世主。"
+ japan_mac.14.f: "“是真的，大帅，大街小巷都贴着您的海报和照片，叼着玉米烟斗的人随处可见！”我们的人继续报告道，“比他们曾经对天皇的崇拜更甚了！他们称您是日本的领袖、先驱、解放者！”"
+ japan_mac.14.a: "啊？"
+
+ japan_mac.15.t: "纪录片导演来访"
+ japan_mac.15.d: "一位著名美国导演来到盟军总司令部，希望拍摄一部以[ROOT.GetCountry.GetRuler.GetLastName]为题材的纪录片。"
+ japan_mac.15.f: "这个事件每月的触发率不足千分之一，恭喜你触发了一个彩蛋。"
+ japan_mac.15.a: "不拍！总感觉会发生什么不好的事情！"
+ 
+ japan_mac.16.t: "对日和平条约"
+ japan_mac.16.d: "日本代表和同盟国集团签订了《旧金山和约》，日本再次成为一个独立国家。盟军总司令部已经做好撤离准备。"
+ japan_mac.16.f: "日本在和约前言的部分，请求加入联合国并遵守《联合国宪章》。随着这份和约的正式生效，日本结束长达七年的盟军占领时期，并恢复正常国家地位。"
+ japan_mac.16.a: "五星天皇今日告别他忠诚的日本。"
+ japan_mac.16.b: "那是美国政府的决定，不是我[ROOT.GetCountry.GetRuler.GetLastName]的决定。"
+ 
+ japan_mac.17.t: "来自美国的粮食援助"
+ japan_mac.17.d: "美国运来大量粮食，用以支援[ROOT.GetCountry.GetRuler.GetLastName]的改革事业。"
+ japan_mac.17.f: "美国粮食大量涌入，犹如及时雨般滋润了这片土地。大量日本人因此得以温饱，粮食危机在这样的助力下有了解决的希望。"
+ japan_mac.17.a: "今天他们改吃面包了。"
+ modifier_japan_mac_17: "美国的粮食援助"
+
+
+ japan_red_alert.1.t: "日本共产党的重组"
+ japan_red_alert.1.d: "随着盟军占领日本，推翻了军国主义政权，原来被日本军国主义法西斯政府所囚禁的共产主义活动家们得以重获自由。日本共产党得以重组。"
+ japan_red_alert.1.f: "美国在战后根据《开罗宣言》等方针的精神在日本推动民主改革。220余名被逮捕的日本共产党员在战后得以全部出狱。"
+ japan_red_alert.1.a: "劳动者是防止专制政府死灰复燃的最有力的壁垒。"
+ japan_red_alert.1.b: "共产主义？在我们的占领之下？！"
+
+ japan_red_alert.2.t: "爱尔斯声明"
+ japan_red_alert.2.d: "驻日盟军总司令部民间情报教育局的顾问近日在一所大学的成立仪式上致贺词，其中提到应该把大学中宣扬共产主义的教授全部解职。随后，各地学校将宣扬共产主义的教授解职。"
+ japan_red_alert.2.f: "学校是意识形态斗争的重要阵地，如果我们不对学校进行反赤化，那么共产主义思想就会在学校中蔓延，最终影响到整个社会。"
+ japan_red_alert.2.a: "对待赤色分子不能手软！"
+
+ japan_red_alert.3.t: "日本共产党分裂"
+ japan_red_alert.3.d: "由于中国共产党、苏联工人党情报局批判日共的和平革命理论，日共内部分裂为两派——反对国外意见的“所感派”与支持国外意见的“国际派”。"
+ japan_red_alert.3.f: "自有共产主义运动以来的历史，特别是二战以来的历史，都是和历来的反动派，和各国帝国主义，和现在的美国帝国主义的一切妄想背道而驰。反动派的历史都是失败的历史，革命人民的历史都是胜利的历史。反动派有时也很猖獗，取得一些镇压人民的所谓胜利，但最后无不失败。革命人民有时会遭受一些挫折，但最后无不胜利。"
+ japan_red_alert.3.a: "他们陷入了内斗，优势在我！"
+
+ japan_red_alert.4.t: "乡下的赤色武装力量"
+ japan_red_alert.4.d: "日本乡下的一些地区出现了赤色武装力量，他们试图推翻日本政府，以暴力手段建立一个社会主义政权。"
+ japan_red_alert.4.f: "乡下的治安状况不容乐观，赤色分子袭击我们的派出所，制造燃烧弹袭击我们的警察，这是对我们的挑衅。"
+ japan_red_alert.4.a: "这已经不是一般的共产主义分子了，必须要出重拳！"
+
+ japan_red_alert.5.t: "攻打盟军司令部"
+ japan_red_alert.5.d: "我们失败的措施最终导致我们失去了掌控局面的能力。赤色武装一面攻入议会，一面控制了交通、电力、广播等重要部门。同时，盟军司令部也被赤色武装所包围。我们在日本的占领已经彻底失败。"
+ japan_red_alert.5.f: "反动派有时也很猖獗，取得一些镇压人民的所谓胜利，但最后无不失败。革命人民有时会遭受一些挫折，但最后无不胜利。全世界的历史都是这样写的，无一例外。"
+ japan_red_alert.5.a: "这是政变！起飞！我们要去华盛顿！"
+ japan_red_alert.5.b: "[ROOT.GetCountry.GetRuler.GetLastName]同志今日递交了入党申请书。"
+
+ japan_red_alert.6.t: "赤色整肃"
+ japan_red_alert.6.d: "我们的政策和措施使得日本共产党在[ROOT.GetCountry.GetName]逐渐失去生存的土壤。我们顺理成章地宣布其为非法政党，取缔了他们的一切活动。"
+ japan_red_alert.6.f: "日共组织其支持者5万多名，占领东京的皇居前广场表示抗议，是为人民广场事件。警方来到了广场，与示威人士产生冲突。随后，日共唆使示威学生向警方投掷石块。翌日，日本颁布首都禁止集会、示威的命令。随后逮捕数人，将事件平息。此后，盟军司令部顺理成章地取缔了日共的一切组织，清洗了日共的一批活动家。"
+ japan_red_alert.6.a: "我们的民主堡垒牢不可破！"

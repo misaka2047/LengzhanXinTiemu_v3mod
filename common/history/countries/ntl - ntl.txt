@@ -1,0 +1,53 @@
+﻿COUNTRIES = {
+	c:NTL = {
+		set_next_election_date = 1946.7.1
+		effect_starting_technology_tier_1_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:wine
+		
+		# Laws
+		activate_law = law_type:law_parliamentary_republic #议会共和制      
+		activate_law = law_type:law_professional_army #职业军队
+		activate_law = law_type:law_encourage_immigration #鼓励移民
+		activate_law = law_type:law_old_age_pension #养老金
+		activate_law = law_type:law_womens_suffrage #妇女选举权
+		activate_law = law_type:law_encourage_fertility #鼓励抚养
+		activate_law = law_type:law_regulatory_bodies #国家监管机构
+		activate_law = law_type:law_right_of_assembly #集会权
+		activate_law = law_type:law_public_health_insurance #公共医疗保险
+		activate_law = law_type:law_state_led #科学院主导
+  		activate_law = law_type:law_secret_police #秘密警察
+  		activate_law = law_type:law_cultural_exclusion #文化排斥
+		activate_law = law_type:law_commercialized_small_farmers #商品化小农制
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_dedicated_police
+            	activate_law = law_type:law_universal_suffrage
+           	activate_law = law_type:law_compulsory_primary_school
+            	activate_law = law_type:law_8_hour_working_system
+
+		ig:ig_trade_unions = { #工会
+			remove_ideology = ideology_proletarian #无产阶级主义者
+			add_ideology = ideology_social_democrats #社民主义者
+		}
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+	}
+}

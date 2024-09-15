@@ -1,0 +1,56 @@
+﻿COUNTRIES = {
+	c:POR = {
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+		add_taxed_goods = g:liquor
+		add_taxed_goods = g:coffee
+		set_next_election_date = 1946.7.1
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms	
+	
+		# Laws
+		activate_law = law_type:law_parliamentary_republic #议会共和制            
+		activate_law = law_type:law_autocracy #独裁制
+		activate_law = law_type:law_secret_police #秘密警察
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_appointed_bureaucrats #任命官僚制
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_censorship #出版物审查
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_dedicated_police
+            activate_law = law_type:law_public_health_insurance
+            activate_law = law_type:law_womens_suffrage
+		activate_law = law_type:law_poor_laws
+            activate_law = law_type:law_compulsory_primary_school
+            activate_law = law_type:law_8_hour_working_system
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 3
+		}
+
+		set_tax_level = medium
+
+		ig:ig_trade_unions = { #工会
+			remove_ideology = ideology_proletarian #无产阶级主义者
+			add_ideology = ideology_social_democrats #社民主义者
+		}
+
+		ig:ig_devout = {
+			set_ig_suppression = yes
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

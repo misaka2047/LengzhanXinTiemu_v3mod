@@ -1,0 +1,2 @@
+GetCustom('SNO_GetFullName')
+GetCustom('SNO_GetFullNameNoFormatting')

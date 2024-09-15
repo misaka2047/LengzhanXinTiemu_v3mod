@@ -1,0 +1,292 @@
+world_tension_add_10 = {
+
+
+	ai_is_valid = {
+        always = no
+    } 
+
+
+	effect = {		
+		change_global_variable = {
+		name = world_tension 
+		add = 10 
+		}
+	}
+
+
+}
+
+world_tension_sub_10 = {
+
+
+	ai_is_valid = {
+        always = no
+    } 
+	is_valid = {
+		always = yes
+	}
+
+	effect = {		
+		change_global_variable = { 
+		name = world_tension
+		add = -10
+		}
+	}
+}
+
+
+
+
+
+
+world_tension_0 = {
+	scope = country
+	
+	is_shown = {
+		global_var:world_tension > 10
+    } 		# is it visible on the UI?
+    
+	ai_is_valid = {
+        always = no
+    } 		# is the AI allowed to use it? Disabled by default.
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension < 10
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_10 = {
+	scope = country
+	
+	is_shown = {
+		global_var:world_tension > 10
+    } 		# is it visible on the UI?
+    
+	ai_is_valid = {
+        always = no
+    } 		# is the AI allowed to use it? Disabled by default.
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 9 
+		global_var:world_tension < 20
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_20 = {
+	scope = country
+	
+	is_shown = {
+		always = no
+    }
+	ai_is_valid = {
+        always = no
+    } 		# is the AI allowed to use it? Disabled by default.
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 19 
+		global_var:world_tension < 30
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+
+world_tension_30 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 29 
+		global_var:world_tension < 40
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+
+world_tension_40 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 39 
+		global_var:world_tension < 50
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_50 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 49 
+		global_var:world_tension < 60
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_60 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 59 
+		global_var:world_tension < 70
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_70 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 69 
+		global_var:world_tension < 80
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_80 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 79 
+		global_var:world_tension < 90
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_90 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 89 
+		global_var:world_tension < 100
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}
+
+world_tension_100 = {
+	scope = country
+	
+	is_shown = {
+	
+	}
+    
+	ai_is_valid = {
+        always = no
+    }
+
+	is_valid = {
+        AND = { 
+		global_var:world_tension > 99 
+		}
+    } 
+
+	effect = {		
+	 
+	}
+}

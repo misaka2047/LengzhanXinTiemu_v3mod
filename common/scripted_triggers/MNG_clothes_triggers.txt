@@ -1,0 +1,136 @@
+﻿chinese_han_clothes_trigger = { #明角色
+exists = scope:character
+scope:character = {
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }
+}
+}
+
+chinese_han_clothes_pop_trigger = { #明人群
+exists = scope:pop
+scope:pop = {
+culture = { has_discrimination_trait = han_chinese }
+}
+}
+
+chinese_han_imperial_clothes_trigger = { #明皇帝
+exists = scope:character
+scope:character = {
+is_ruler = yes
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }
+culture = { has_discrimination_trait = han_chinese }
+}
+}
+
+chinese_heir_clothes_trigger = { #明太子
+exists = scope:character
+scope:character = {
+is_heir = yes
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } ruler = { culture = { has_discrimination_trait = han_chinese } } }
+}
+}
+
+chinese_han_court_clothes_trigger = { #明官员
+exists = scope:character
+scope:character = {
+is_ruler = no is_heir = no
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+culture = { has_discrimination_trait = han_chinese }
+}	
+}
+
+oversea_han_monarchy_clothes_trigger = { #海外君主制汉人领袖
+exists = scope:character
+scope:character = {
+OR = { is_ruler = yes is_heir = yes }
+AND = {
+	exists = c:CHI
+	NOT = { owner = c:CHI }
+}
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy }  }	
+culture = { has_discrimination_trait = han_chinese }
+}	
+}
+
+chinese_han_general_clothes_trigger = { #明陆军将领通用
+exists = scope:character
+scope:character = { 
+owner = { 
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+AND = { exists = c:CHI owner = c:CHI } 
+}
+has_role = general
+commander_rank >= 0
+} 
+}
+
+chinese_han_admiral_clothes_trigger = { #明海军将领通用
+exists = scope:character
+scope:character = { 
+owner = { 
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+AND = { exists = c:CHI owner = c:CHI } 
+}
+has_role = admiral
+commander_rank >= 0
+} 
+}
+
+chinese_han_ig_army_clothes_trigger = { #明军队集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+interest_group = { is_interest_group_type = ig_armed_forces }
+AND = { exists = c:CHI owner = c:CHI } 
+}	
+}
+
+
+
+
+han_poor_clothes_pop_trigger = { #明贫穷人群
+exists = scope:pop
+scope:pop = {
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy }  }	
+OR = { is_pop_type = farmers is_pop_type = peasants is_pop_type = laborers is_pop_type = machinists }
+}   
+}
+
+han_middle_clothes_pop_trigger = { #明中产人群
+exists = scope:pop
+scope:pop = {
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy }  }	
+OR = { is_pop_type = clerks is_pop_type = engineers is_pop_type = bureaucrats is_pop_type = shopkeepers is_pop_type = clergymen }
+}  
+}
+
+han_upper_clothes_pop_trigger = { #明富裕人群
+exists = scope:pop
+scope:pop = {
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy }  }	
+OR = { is_pop_type = aristocrats is_pop_type = capitalists is_pop_type = academics }
+}  
+}
+
+han_soldier_clothes_pop_trigger = { #明士兵人群
+exists = scope:pop
+scope:pop = { 
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+is_pop_type = soldiers
+}
+}
+
+han_officers_clothes_pop_trigger = { #明军官人群
+exists = scope:pop
+scope:pop = { 
+culture = { has_discrimination_trait = han_chinese }
+owner = { OR = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy } NOT = { country_has_primary_culture = cu:manchu } }	
+is_pop_type = officers
+} 
+}

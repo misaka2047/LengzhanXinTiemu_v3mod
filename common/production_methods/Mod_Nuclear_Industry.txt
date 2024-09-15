@@ -1,0 +1,1403 @@
+﻿
+# We shall decide based on base price of these stuff
+
+#Coal cost $30
+#Electricity cost $30
+#Tools cost $40
+#sulfur cost $50
+#radioactive_ore cost $40 (Same as iron ore
+#irradiated_material cost $50
+
+
+
+## The Base Production, EXCLUDING any
+## interference from automation, Should refer to the general design document.
+
+## Specifically, giving no change for automation methods,
+## We have:
+
+
+
+
+
+pm_chemical_nuclear_processing = {
+	texture = "gfx/interface/icons/production_method_icons/sewing_machines.dds"
+	
+	unlocking_technologies = {
+		# mechanized_workshops
+		nuclear_material_process
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radioactive_ore_add = 52   ##2080
+			goods_input_coal_add = 25  ## 750
+			goods_input_tools_add = 15  ## 600
+			#Total Cost $3,430
+
+			# output goods
+			goods_output_irradiated_material_add = 100
+			#Total Gain $5,000
+			#Profit $1,570
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.2
+			building_machinists_mortality_mult = 0.15
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 50
+		}
+	}
+}
+
+#Aim a cost of about 2,900
+#and a gain of about 3,750
+
+pm_electrical_nuclear_processing = {
+	texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+	
+	unlocking_technologies = {
+		nuclear_mechanized_economy
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radioactive_ore_add = 65 #$2,600
+			goods_input_electricity_add = 30 #$900
+			goods_input_tools_add = 10 #$400
+			goods_input_research_and_engineering_add = 5 #200
+
+			#Total cost $4,100
+			
+			# output goods1
+
+			goods_output_irradiated_material_add = 120
+			#Total Gain $6,000
+			#Profit $1,900
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 600
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+			building_machinists_mortality_mult = 0.05
+			building_engineers_mortality_mult = 0.05
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+
+############Nuclear Refinery
+#Idea: Chemical processing should be quite rudimentary while electrical processing
+#ain't much more advanced
+
+#A bit better than sewing machines
+
+
+pm_backyard_nuclear_refinement = {
+	texture = "gfx/interface/icons/production_method_icons/vaccum_brine_electrolysis.dds"
+	
+	unlocking_technologies = {
+		# mechanized_workshops
+		nuclear_fuel_refinement
+	}
+	
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods
+			goods_input_radioactive_ore_add = 52   ##2080
+			goods_input_coal_add = 15  ## 450
+			goods_input_electricity_add = 10 #$300
+			goods_input_tools_add = 15  ## 600
+			#Total Cost $3,430
+
+			# output goods
+			goods_output_nuclear_fuel_add = 100
+			#Total Gain $5,000
+			#Profit $1,570
+		}
+
+		
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+
+
+		unscaled = {
+			# Yes trying to extract nuclear fuel in backyard is FAR from safe.
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.15
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+#Engine and nuclear_engines both cost $60.
+#nuclear_fuel cost $50
+
+pm_sophisticated_nuclear_refinement = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/sophisticated_nuclear_refinement.jpg"
+	
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radioactive_ore_add = 65  ##2600
+			goods_input_lead_add = 2  ## 80
+			goods_input_electricity_add = 16  ## 480
+			goods_input_engines_add = 6  ## 360
+			goods_input_tools_add = 7  ## 280
+
+			#Total cost $3,800
+			
+			# output goods
+
+			goods_output_nuclear_fuel_add = 110
+			#Total Gain $5,500
+			#Profit $1,700
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 600
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.20
+			building_machinists_mortality_mult = 0.1
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 50
+		}
+	}
+}
+
+# Aim for about 2200 profit
+
+pm_advanced_nuclear_refinement = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/advanced_nuclear_refinement.jpg"
+	unlocking_technologies = {
+		depleted_material_reprocess
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radioactive_ore_add = 70 ##2,800
+			goods_input_lead_add = 2  ## 80
+			goods_input_electricity_add = 25  ## 750
+			goods_input_nuclear_engines_add = 5  ##300
+			goods_input_tools_add = 5  ## 200
+			goods_input_research_and_engineering_add = 10 #400
+
+			# Total Cost $4,530
+
+			# output goods
+		
+			goods_output_nuclear_fuel_add = 130
+			# Total Gain $6,500
+			# Profit: $1,970
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 600
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+			building_machinists_mortality_mult = 0.1
+			building_engineers_mortality_mult = 0.05
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 50
+		}
+	}
+}
+
+
+###############################Nuclear Bomb Factory
+
+#Nuclear Bomb Factory:
+
+#Again, this shall be profit level from around $2,000, $2,500, and $3,000
+#Cost of Nuclear Fuel: $50
+#Cost of explosive: $50
+#Cost of Steel: $50
+
+#Perhaps I should add random event when a nuclear bomb factory randomly explodes
+#Decimating local population and cause great devastation.....Actually, maybe later.
+
+pm_fission_explosive = {
+	texture = "gfx/interface/icons/production_method_icons/percussion_caps.dds"
+
+	unlocking_technologies = {
+		nuclear_dynamite_for_mining
+	}
+
+	## Copied from Brine Electrolysis
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_fuel_add = 50
+			goods_input_steel_add = 10
+			goods_input_explosives_add = 10
+			#Total Cost $4,000
+
+			# output goods
+			goods_output_explosives_add = 120
+			#Total Gain $6,000
+			#Profit $2,000
+		}
+
+		
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 1000
+		}
+
+		unscaled = {
+			# You wanna build a nuke in your garage and get away?
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.2
+			building_engineers_mortality_mult = 0.15
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+#Engine and nuclear_engines both cost $60.
+#nuclear_fuel cost $50
+## Copied from the 
+
+pm_fusion_explosive = {
+	texture = "gfx/interface/icons/production_method_icons/explosive_shells.dds"
+	
+	unlocking_technologies = {
+		uncontrolled_fusion
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_electricity_add = 16
+			goods_input_nuclear_fuel_add = 65 
+			goods_input_nuclear_engines_add = 10
+			goods_input_research_and_engineering_add = 8 #320
+			goods_input_explosives_add = 6
+
+			#Total cost $4,950
+			
+			# output goods
+
+			goods_output_explosives_add = 150
+			#Total Gain $7,500
+			#Profit $2,550
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 1200
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.15
+			building_machinists_mortality_mult = 0.10
+			building_engineers_mortality_mult = 0.1
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+pm_shaped_fusion_explosives = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Tech_Icons/fusion_explosive.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_electricity_add = 16 ## 480
+			goods_input_nuclear_fuel_add = 70  ## 3500
+			goods_input_nuclear_engines_add = 10  ## 600
+			goods_input_research_and_engineering_add = 12 #480
+			goods_input_radios_add =10  #800
+			goods_input_programmables_add = 12 #360
+
+			#Total cost $6,220
+
+
+			# output goods
+		
+			goods_output_explosives_add = 170
+			# Total Gain $8500
+			#Profit $2700
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 900
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = 1000
+		}
+
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+			building_machinists_mortality_mult = 0.05
+			building_engineers_mortality_mult = 0.05
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 50
+		}
+	}
+}
+
+
+
+
+####################### Vehicles
+pm_hull_wheeled_vehicle = {
+	texture = "gfx/interface/icons/production_method_icons/automobiles.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+
+			goods_input_rubber_add = 15  ## 600
+			goods_input_electricity_add = 10 ## 300
+			goods_input_glass_add = 5 ## 200
+			goods_input_steel_add = 22 ## 1,100
+			goods_input_tools_add = 15 ## 600
+
+			#Total cost $2,800
+			
+			# output goods
+
+			goods_output_automobiles_add = 80
+			#Total Gain $8,000
+			#Profit $2200-3200 ## Depending on secondary
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_hull_half_track = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/pm_hull_half_track.jpg"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+
+			goods_input_rubber_add = 10  ## 400
+			goods_input_electricity_add = 10 ## 300
+			goods_input_glass_add = 5 ## 200
+			goods_input_steel_add = 28 ## 1,400
+			goods_input_tools_add = 15 ## 600
+
+			#Total cost $2,900
+			
+			# output goods
+
+			goods_output_automobiles_add = 80
+			#Total Gain $8,000
+			#Profit $2200-3200 ## Depending on secondary
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+pm_hull_tracked_vehicle = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/pm_hull_tracked_vehicle.jpg"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+
+			goods_input_rubber_add = 5  ## 200
+			goods_input_electricity_add = 10 ## 300
+			goods_input_glass_add = 5 ## 200
+			goods_input_steel_add = 34 ## 1,700
+			goods_input_tools_add = 15 ## 600
+
+			#Total cost $3,000
+			
+			# output goods
+
+			goods_output_automobiles_add = 80
+			#Total Gain $8,000
+			#Profit $2200-3200 ## Depending on secondary
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_gasoline_engine_vehicle_industry = {
+	texture = "gfx/interface/icons/goods_icons/oil.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_oil_add = 40 ## 1,600
+			goods_input_engines_add = 20 ## 1,200
+			goods_input_research_and_engineering_add = 5 #200
+			## About 3,000
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+		}
+	}
+}
+
+pm_gasoline_nuclear_mixed_engine_vehicle_industry = {
+	texture = "gfx/interface/icons/goods_icons/locomotives.dds"
+	
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_oil_add = 15 ## 600
+			goods_input_nuclear_fuel_add = 10 ## 500
+			goods_input_nuclear_engines_add = 10 ## 600
+			goods_input_engines_add = 10 ## 600
+			goods_input_research_and_engineering_add = 8 #320
+
+			## 2,620
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_nuclear_engine_vehicle_industry = {
+	texture = "gfx/interface/icons/goods_icons/nuclear_fuel.dds"
+	
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_nuclear_fuel_add = 22 ## 1,200
+			goods_input_nuclear_engines_add = 20 ## 1200
+			goods_input_research_and_engineering_add = 10 #400
+			##2,800
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_vehicular_electronic_overhual = {
+	texture = "gfx/interface/icons/goods_icons/radios.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors		
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radios_add = 5 #480
+			goods_input_programmables_add = 12 #360
+			goods_input_research_and_engineering_add = 8 #320				
+
+			goods_output_automobiles_add = 12
+		}
+
+		level_scaled = {
+
+			building_employment_engineers_add = -100
+		}
+	}
+}
+
+
+####################### Nuclear Engine
+
+#Input:
+# nuclear_fuel, $50
+# engines, $60
+# tools, $40
+# steel, $50
+
+pm_converted_nuclear_engine = {
+	texture = "gfx/interface/icons/production_method_icons/steamworks.dds"
+	
+	unlocking_technologies = {
+		miniaturized_nuclear_reactor
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_engines_add = 40 #2,400
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_steel_add = 5 #250
+			#Total cost $3,150
+			
+			# output goods
+
+			goods_output_nuclear_engines_add = 80
+			#Total Gain $4800
+			#Profit $1,650
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.25
+			building_machinists_mortality_mult = 0.125
+			building_engineers_mortality_mult = 0.075
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+
+# Cost of lead: 40
+
+#Aim for around $3,000 profit
+pm_reinforced_nuclear_engine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/armored_trains.dds"
+
+	unlocking_technologies = {
+		nuclear_mechanized_economy
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			# Finally! They know that they should use Lead
+			# with ANYTHING nuclear-related. 
+			# input goods
+			goods_input_engines_add = 45 #2,700
+			goods_input_nuclear_fuel_add = 8 #400
+			goods_input_steel_add = 8 #400
+			goods_input_research_and_engineering_add = 10 #200
+			goods_input_lead_add = 10 #400
+			goods_input_electricity_add = 8 ## 300
+			# $4,400
+
+
+			# output goods
+		
+			goods_output_nuclear_engines_add = 106
+			#Total Gain $6360
+			#Profit $1,960
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.1
+			building_machinists_mortality_mult = 0.01
+			building_engineers_mortality_mult = 0.05
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+
+pm_holographic_forged_nuclear_engines = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/holographic_forged_nuclear_engines.jpg"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			# Finally! They know that they should use Lead
+			# with ANYTHING nuclear-related. 
+			# input goods
+			goods_input_engines_add = 50 #3000
+			goods_input_electricity_add = 10 #300
+			goods_input_nuclear_fuel_add = 10 #500
+			goods_input_steel_add = 8 #400
+			goods_input_research_and_engineering_add = 15 #600
+			goods_input_lead_add = 10 #800
+			# $5600
+
+
+			# output goods
+		
+			goods_output_nuclear_engines_add = 130
+			#Total Gain $7800
+			#Profit $2,200
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.05
+			building_machinists_mortality_mult = 0.05
+			building_engineers_mortality_mult = 0.04
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}
+
+####### Nuclear Engines Secondary Production method (special material additives
+pm_baseline_steel_no_additives = {
+	texture = "gfx/interface/icons/production_method_icons/no_explosives.dds"
+}
+
+pm_electric_arc_forging = {
+	texture = "gfx/interface/icons/goods_icons/electricity.dds"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			
+			goods_input_electricity_add = 20
+			# output goods
+		
+			goods_output_nuclear_engines_add = 16
+			#Total Gain $960
+			#Profit $360
+		}
+	}
+}
+
+pm_irradiated_material_additives = {
+	texture = "gfx/interface/icons/goods_icons/irradiated_material.dds"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			
+			goods_input_irradiated_material_add = 12
+			# output goods
+		
+			goods_output_nuclear_engines_add = 16
+			#Total Gain $960
+			#Profit $360
+		}
+	}
+}
+
+pm_glass_fiber_additives = {
+	texture = "gfx/interface/icons/goods_icons/glass.dds"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			
+			goods_input_glass_add = 15
+			# output goods
+		
+			goods_output_nuclear_engines_add = 16
+			#Total Gain $960
+			#Profit $360
+		}
+	}
+}
+
+pm_macromolecule_polymer_additives = {
+	texture = "gfx/interface/icons/goods_icons/oil.dds"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_oil_add = 15
+			# output goods
+		
+			goods_output_nuclear_engines_add = 16
+			#Total Gain $960
+			#Profit $360
+		}
+	}
+}
+
+pm_extra_steel_reinforcement_additives = {
+	texture = "gfx/interface/icons/goods_icons/steel.dds"
+
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+	}
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_steel_add = 12
+			# output goods
+		
+			goods_output_nuclear_engines_add = 16
+			#Total Gain $960
+			#Profit $360
+		}
+	}
+}
+
+pm_electronic_reactor_regulator_additives = {
+	texture = "gfx/interface/icons/goods_icons/radios.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors		
+	}
+
+
+	unlocking_production_methods = {
+		pm_holographic_forged_nuclear_engines
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radios_add = 5 #480
+			goods_input_programmables_add = 12 #360
+			goods_input_research_and_engineering_add = 8 #320				
+
+			goods_output_nuclear_engines_add = 26 #1560	
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = -100
+		}
+	}
+}
+
+############### Nuclear Ramjet Base Production Method
+
+#Cost:
+# nuclear_engine: $60
+# steel: $50
+# glass (USed as plastic here): $40
+# tools: $40
+# Electricity: $30
+
+#Aim for around $2,200 profit
+pm_basic_nuclear_jet = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/basic_nuclear_jet.jpg"
+
+	unlocking_technologies = {
+		nuclear_mechanized_economy
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+
+			# Aim: profit $2,200
+			
+			goods_input_nuclear_engines_add = 46 ## 2,760
+			goods_input_research_and_engineering_add = 6 ##240
+			goods_input_rubber_add = 5 ## 200
+			goods_input_glass_add = 10 ## 400
+			goods_input_steel_add = 20 ## 1,000
+			goods_input_tools_add = 20 ## 800
+			# $5,400
+
+			# output goods
+		
+			goods_output_nuclear_jet_add = 105
+			#Total Gain $7,350
+			#Profit $1,950
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.2
+			building_machinists_mortality_mult = 0.1
+			building_engineers_mortality_mult = 0.1
+		}
+
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+#Aim for around $3,000 profit
+pm_electro_mechanic_nuclear_jet = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/electro_mechanic_nuclear_jet.jpg"
+	unlocking_technologies = {
+		advanced_nuclear_ramjet
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_nuclear_engines_add = 50 #3,000
+			goods_input_rubber_add = 5 ## 200
+			goods_input_glass_add = 10 ## 400
+			goods_input_steel_add = 18 ## 900
+			goods_input_tools_add = 20 ## 800
+			goods_input_electricity_add = 10 ## 300
+			goods_input_research_and_engineering_add = 15 ##600
+			# $6,200
+
+
+			# output goods
+		
+			goods_output_nuclear_jet_add = 120
+			#Total Gain $8,400
+			#Profit $2,200
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1700
+			building_employment_engineers_add = 1000
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+
+############### Nuclear Ramjet Assisting System Production Method
+
+pm_defualt_assist_system_nuclear_jet = {
+	
+	texture = "gfx/interface/icons/production_method_icons/no_explosives.dds"
+}
+
+
+pm_oil_assist_ramjet_nuclear_jet = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+
+	unlocking_technologies = {
+		advanced_nuclear_ramjet			
+	}
+
+
+	unlocking_production_methods = {
+		pm_electro_mechanic_nuclear_jet
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = 15
+			
+
+			goods_output_nuclear_jet_add = 14
+			# Cost: $600
+			# Gain: $980
+			# Profit: $380
+			
+			
+		}
+
+	}
+}
+
+pm_electric_controlled_ramjet_nuclear_jet = {	
+	texture = "gfx/interface/icons/production_method_icons/power_plant.dds"
+
+
+	unlocking_technologies = {
+		advanced_nuclear_ramjet			
+	}
+
+	unlocking_production_methods = {
+		pm_electro_mechanic_nuclear_jet
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_electricity_add = 20
+
+			goods_output_nuclear_jet_add = 14
+			# Cost: $600
+			# Gain: $980
+			# Profit: $380
+			
+			
+		}
+
+	}
+}
+
+
+pm_steel_reinforced_ramjet_nuclear_jet = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+
+	unlocking_technologies = {
+		advanced_nuclear_ramjet			
+	}
+
+	unlocking_production_methods = {
+		pm_electro_mechanic_nuclear_jet
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 10
+			goods_input_irradiated_material_add = 2 #$600
+			
+
+			goods_output_nuclear_jet_add = 14
+			# Cost: $600
+			# Gain: $980
+			# Profit: $380
+			
+			
+		}
+	}
+}
+
+pm_afterburner_ramjet_nuclear_jet = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+
+	unlocking_technologies = {
+		advanced_nuclear_ramjet			
+	}
+
+	unlocking_production_methods = {
+		pm_electro_mechanic_nuclear_jet
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_fuel_add = 6
+			goods_input_nuclear_engines_add = 5 #$300			
+
+			goods_output_nuclear_jet_add = 14
+			# Cost: $600
+			# Gain: $1,400
+			# Profit: $380			
+		}
+
+	}
+}
+
+pm_electronic_control_systems_nuclear_jet = {
+	texture = "gfx/interface/icons/production_method_icons/tanker_cars.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors		
+	}
+
+	unlocking_production_methods = {
+		pm_electro_mechanic_nuclear_jet
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radios_add = 10 #800
+			goods_input_programmables_add = 8 ##240
+			goods_input_research_and_engineering_add = 8 #320		
+
+			goods_output_nuclear_jet_add = 30 #2,100
+			# Cost: $1,420
+			# Gain: $2100
+			# Profit: $680			
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = -50
+		}
+	}
+}
+
+############### Unique ownership methods
+############ Idea: same code for 'em all
+############ Merchant guild unlocked only by most rudimentary production methods
+############ While other ownership are unlocked by others.
+
+pm_merchant_guilds_nuclear_industries = {
+	texture = "gfx/interface/icons/production_method_icons/merchant_guilds.dds"
+
+	unlocking_production_methods = {
+		pm_chemical_nuclear_processing #Nuclear processing factory
+		pm_backyard_nuclear_refinement #Nuclear fuel refinement
+		pm_backyard_uncontrolled_fission #Nuclear bomb factory
+		pm_converted_nuclear_engine #Nuclear fuel refinement
+		pm_backyard_pile_nuclear_reactor #Nuclear Reactor
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 500
+		}
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+		}
+	}
+}
+
+
+pm_privately_owned_nuclear_industries = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	unlocking_production_methods = {
+		pm_electrical_nuclear_processing
+		pm_sophisticated_nuclear_refinement #Use electricity, tools, and engine
+		pm_advanced_nuclear_refinement
+		pm_fission_explosive  #Use explosive, steel, and electricity
+		pm_fusion_explosive  #Use explosive, electricity, and nuclear engine
+		pm_reinforced_nuclear_engine  #Use additional steel and lead
+		pm_holographic_forged_nuclear_engines
+		pm_basic_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_electro_mechanic_nuclear_jet  #Uses more tools and electricity. Unlock with "Improved Nuclear Ramjet"
+		pm_specialized_generating_nuclear_reactor #Advanced method for nuclear reactor	
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_publicly_traded_nuclear_industries = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_production_methods = {
+		pm_electrical_nuclear_processing
+		pm_sophisticated_nuclear_refinement #Use electricity, tools, and engine
+		pm_advanced_nuclear_refinement
+		pm_fission_explosive  #Use explosive, steel, and electricity
+		pm_fusion_explosive  #Use explosive, electricity, and nuclear engine
+		pm_reinforced_nuclear_engine  #Use additional steel and lead
+		pm_holographic_forged_nuclear_engines
+		pm_basic_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_electro_mechanic_nuclear_jet  #Uses more tools and electricity. Unlock with "Improved Nuclear Ramjet"
+		pm_specialized_generating_nuclear_reactor #Advanced method for nuclear reactor	
+		
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_government_run_nuclear_industries = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_production_methods = {
+		pm_electrical_nuclear_processing
+		pm_sophisticated_nuclear_refinement #Use electricity, tools, and engine
+		pm_advanced_nuclear_refinement
+		pm_fission_explosive  #Use explosive, steel, and electricity
+		pm_fusion_explosive  #Use explosive, electricity, and nuclear engine
+		pm_reinforced_nuclear_engine  #Use additional steel and lead
+		pm_holographic_forged_nuclear_engines
+		pm_basic_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_electro_mechanic_nuclear_jet  #Uses more tools and electricity. Unlock with "Improved Nuclear Ramjet"		
+		pm_specialized_generating_nuclear_reactor #Advanced method for nuclear reactor	
+	}
+	
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_worker_cooperative_nuclear_industries = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_production_methods = {
+		pm_electrical_nuclear_processing
+		pm_sophisticated_nuclear_refinement #Use electricity, tools, and engine
+		pm_advanced_nuclear_refinement
+		pm_fission_explosive  #Use explosive, steel, and electricity
+		pm_fusion_explosive  #Use explosive, electricity, and nuclear engine
+		pm_reinforced_nuclear_engine  #Use additional steel and lead
+		pm_holographic_forged_nuclear_engines
+		pm_basic_nuclear_jet #No additional stuff. Unlock with "Nuclear Ramjet" Tech
+		pm_electro_mechanic_nuclear_jet  #Uses more tools and electricity. Unlock with "Improved Nuclear Ramjet"		
+		pm_specialized_generating_nuclear_reactor #Advanced method for nuclear reactor	
+	}
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_shopkeepers_add = 250
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+
+
+
+
+###############References
+
+#Value copied from sewing machines (level 3, texitile mile)
+#Input cost: 50*20 (fabric) + 20*40 (dye) + 5*40 (tools) = 2,000
+#Output cost: 90*30(clothes) = 2,700
+# profit/Wage: $700
+
+
+#Values copied from level 4(electric sew mill) from textile mill
+#Input cost: 60*20(fabric) + 25*40(dye) + 10*40 (tools) + 10*30(electricity)
+# = 2,900
+#Output value: 125*30 = 3,750
+#Profit/wage: $850
+
+
+#######################Reference: Cost of Furniture
+
+# level 2 of furniture industry.
+#Cost: 35*20(wood) + 15*20(clothes) + 5*40 (tools) = 1,200
+#Production: 65*30 = 1,950
+#Profit: $750
+
+#Level 3 of mechanized workshops for furniture industry
+#Cost: 40*20 (wood) + 20*20 (fabric) + 10*40 (tools) + 15*40 (oil) = 2,200
+#Production: 110*30(furniture) = 3,300
+#Profit: 1,100
+
+
+#######################Reference: Cost of glass, normal and plastic
+
+# level 2 of glasswork
+# Cost: 15*20(wood) + 15*40 = 900
+# Gain: 45*40(glass) = 1,800
+# Profit: 900
+
+# level 4 of glasswork
+# Cost: 50*40(wood) + 35*40(lead = 3,400
+# Gain: 150*40(glass) = 6,000
+# Profit: 2,600

@@ -1,0 +1,4 @@
+colors = {
+	joseon_yellow = rgb{ 240 173 115 }
+	joseon_red = rgb{ 192 13 69 }
+}

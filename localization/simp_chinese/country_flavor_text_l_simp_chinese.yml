@@ -1,0 +1,346 @@
+﻿l_simp_chinese:
+ SEL_FLAVOR_TEXT:0 "在第二次世界大战结束后，英国恢复了对新加坡的控制，并在1946年4月1日正式将新加坡从海峡殖民地中分离出来，设立为独立的直辖殖民地，由新加坡总督管理。"
+
+ KOR_FLAVOR_TEXT:0 "1946年，南朝鲜（即现在的韩国）处于战后的政治重组和社会动荡时期。美国在1945年9月8日登陆朝鲜半岛后，对北纬三十八度线以南的地区实施了军事占领。在美军的控制下，南朝鲜的政治和经济陷入混乱，民众对美国的政策日益不满，爆发了多次示威、抗议、罢工和武装起义。此时的南朝鲜军官腐败，士官无能，官僚堕落，使得无数双眼睛注视着即将再度掀起大战的朝鲜地区，而一个问题则始终困扰着国内外的所有人：谁将取得最后的胜利？"
+
+ PRK_FLAVOR_TEXT:0 "1946年，北朝鲜（现朝鲜）处于苏联占领和政治重组的阶段。苏联在1945年8月15日全面进入北朝鲜，并建议朝鲜人自己成立人民政府。同年，北朝鲜的共产党和新民党合并为朝鲜劳动党，金日成为委员长。北朝鲜开始清理日本统治时期残余势力，将工厂矿产等国有化，土地分给农民，这一系列措施得到了广大农民的支持。作为社会主义阵营的一分子，朝鲜在冷战的未来会怎样？"
+
+ IDN_FLAVOR_TEXT:1 "1946年，印尼正处于争取独立和结束荷兰殖民统治的关键时期。1945年8月17日，印尼宣布独立，并成立了印度尼西亚共和国，苏加诺和哈达分别出任总统和副总统。然而，荷兰拒绝接受印尼的独立宣言，并试图重新夺回对印尼的控制权。这一变化究竟将为印尼带来壮大的机遇，还是引向战争的深渊？”
+
+ GBR_FLAVOR_TEXT:0 "历时六年，大英帝国终于取得了第二次世界大战的胜利。然而残酷的战争也使英国的国力不断跌落，维多利亚时代进步的车轮连带着火车的鸣笛声而逐渐嘶哑，似乎象征着太阳的落下。在内部，独立的呼声在帝国治下的各地爆发，正撼动着不列颠治世的基石。在外部，美苏的崛起使英国不得不重新考虑外交政策：在这冷战的新时代中，英国究竟会作为超级大国而维持昔日的荣光，还是放弃那业已沉重到令人步履维艰的帝国皇冠？"
+
+ BEL_FLAVOR_TEXT:0 "六年前，随着德军在法国北部的决定性胜利，比利时不得不放下武器投降，国王利奥波德也逃亡到刚果继续抗战。随着战争的胜利，比利时获得了解放。作为自由主义阵营的一分子，比利时在冷战的未来会怎样？"
+
+ CHI_FLAVOR_TEXT:1 "1945年10月，日本向中国投降，宣告了八年抗战的胜利。然而战争的胜利并未为中国人民带来期待已久的和平，尽管暂时超脱于冷战之外，国民党和共产党之间争夺中华统一的矛盾却是愈演愈烈，眼下已是一触即发。此时的国民党军官腐败，士官无能，官僚堕落，使得无数双眼睛注视着即将再度掀起大战的中华大地，而一个问题则始终困扰着国内外的所有人：谁将取得最后的胜利？”
+
+ TIB_FLAVOR_TEXT:0 "西藏自清朝之后一直接受中国的统治，1911年辛亥革命推翻了帝制，次年建立了中华民国。《临时约法》中规定了西藏作为中华民国22行省之一的身份。抗日战争之中，西藏由于地理的遥远而未受到什么波及，成为了达赖喇嘛神权统治的独立王国。但在眼前这场近在咫尺的内战之中，西藏还能置身事外吗？"
+
+ FRA_FLAVOR_TEXT:0 "现在，在法国的内部，经济的不容乐观正导致立宪议会正围绕着议会共和与总统共和的的政体而争论不休，眼见不得不用全民公决来解决争端。而在法国众多的殖民地上，由于戴高乐将军当年许下的独立承诺，脱离法国统治的呼声业已逐渐高涨。不止如此，在越南北部，胡志明正领导着一支社会主义的军队宣布独立，战争更是早已爆发。内外交困之下，法国是选择从殖民帝国的席位上黯然隐退，又或是找出一条新的道路来维持法兰西的力量？"
+
+ RUS_FLAVOR_TEXT:0 "战后，苏联和英美建立了雅尔塔体系以维持强权之间脆弱的和平，但是放眼望去，这新秩序下暗潮涌动，冷战两极早已开始暗地较劲，宣称自己才是真正的霸主——无论如何，历经政治的劫波和战争的艰辛，红色的巨熊即将再一次站起来，准备和资本主义的对手们一较高下。"
+
+ DDR_FLAVOR_TEXT:0 "二战结束后，苏联在德国占领区内进行了大规模的去工业化和资源征用，这一行为对德国的经济和社会造成了严重破坏。改造产业结构和恢复经济建设毫无疑问是政府的首件大事。在国际上，美苏之间的矛盾逐渐白热化，德国正成为双方对峙的桥头堡，这一变化究竟将为德国带来复兴的机遇，还是引向战争的深渊？"
+
+ PRU_FLAVOR_TEXT:0 "二战结束后，苏联在德国占领区内进行了大规模的去工业化和资源征用，这一行为对德国的经济和社会造成了严重破坏。改造产业结构和恢复经济建设毫无疑问是政府的首件大事。在国际上，美苏之间的矛盾逐渐白热化，德国正成为双方对峙的桥头堡，这一变化究竟将为德国带来复兴的机遇，还是引向战争的深渊？"
+
+ JAP_FLAVOR_TEXT:0 "现在的日本正处于美国的军事占领之中，尽管昭和天皇并未被审判，但美军远东总司令麦克阿瑟还是决心将日本改造为一个东亚的民主国家，将昔日被崇拜的天皇推下神坛。战后，日本的政党如雨后春笋一样大量成立，在美国的压力下，吉田茂出任首相负责修改明治宪法的事宜，第一次大选也将在四月召开。将眼光着眼于政治之外，日本战后的经济局势已经危如累卵，通货膨胀带来了物价高涨，工业生产几乎停滞。改造产业结构和促进经济建设毫无疑问是新政府的首件大事。在国际上，美苏之间的矛盾逐渐白热化，日本正成为双方对峙的桥头堡，这一变化究竟将为日本带来复兴的机遇，还是引向战争的深渊？"
+
+ PER_FLAVOR_TEXT:0 "伊朗刚刚才从英苏的占领之中解放，巴列维王朝重新获得了国家的权力。守望着波斯湾的海风，伊朗能够重新崛起吗？"
+
+ AUS_FLAVOR_TEXT:0 "奥地利是一个议会制民主共和国，拥有悠久的历史和文化。在1938年的德奥合并之后，奥地利臣服于德国的统治下业已七年，最近才刚刚从德国人手中独立。然而冷战的乌云正缓缓迫近，在两大阵营的夹缝之间，奥地利能够保卫自己的中立吗？"
+
+ USA_FLAVOR_TEXT:1 "现在，作为当前世界上最强大的国家和冷战的一极，掌握着核威慑的美国正压制着对这种毁灭性武器恐惧不已的苏联，强大的经济和人口也给予了这个国家蓬勃的活力与生机，昭昭天命的自豪使美国人认定自己作为民主摇篮所象征的价值观而拒绝妥协。现在的美国正带领自由主义阵营揭开冷战的序幕，面对来自红色苏联的挑战，迫切地角逐着世界霸主的尊位。"
+
+ TUR_FLAVOR_TEXT:0 "凯末尔所建立的世俗化的土耳其延续其中立政策而得以置身于世界大战之外，在现任总统伊诺努的治下，土耳其正按照阿塔图尔克的愿望走上民主化的道路。然而随着铁幕在欧洲大陆徐徐降下，掌握着博斯普鲁斯海峡的土耳其再度成为了两大阵营争夺的焦点。现下，土耳其的情况仍然不容乐观，面临着内忧外患。而尽管过去的辉煌已经是过眼云烟，但土耳其人民心中仍然怀揣着一个坚定的理想：不仅仅要成为一个地区性的强国，更要让土耳其民族再度屹立于世界民族之林，复兴奥斯曼帝国的荣光！"
+
+ SPA_FLAVOR_TEXT:1 "1939年1月，在德国和意大利的帮助下，弗朗哥带领的长枪党人取得了西班牙内战的胜利。同年9月，不想卷入世界大战之中的西班牙拒绝了轴心国的拉拢，宣布中立于战争之外。作为世界上最后一个仅存的法西斯独裁者，弗朗哥尽管稳固了自己在国内的统治，但却在国际上被孤立。面对着巨大的外交困境，西班牙的处境似乎岌岌可危，痛恨法西斯的各国随时都可能打着扫荡余孽的旗号入侵西班牙。伊比利亚的未来会怎样？"
+
+ BRZ_FLAVOR_TEXT:0 "丰塞卡将军推翻帝制而成立的巴西合众国在世界大战之中维持了中立，只在同盟国的胜利前夕对德宣战。但是由于战争和经济危机的影响，依靠消费产品出口而维持的“咖啡经济”受到了沉痛的打击，随之而来的政变，独裁统治和君主立宪的风波使得政治陷入一片混乱之中。现在，军人的权力正不断增长，巴西会落入军政府的统治中吗？"
+
+ MEX_FLAVOR_TEXT:0 "墨西哥在世界大战期间再次拒绝了德国的拉拢，并在德国即将战败之时对德宣战。作为美国门罗主义精神最关键的一环，墨西哥长久以来承受着北方帝国的压力，而内部又混乱不堪。墨西哥还有崛起的希望吗？"
+
+ NET_FLAVOR_TEXT:0 "荷兰王国在世界大战中的命运和比利时相似，作为德军打击法国的必经之路，荷兰仅仅进行了象征性的抵抗，威廉明娜女王则流亡印度尼西亚继续抵抗。战争结束后，荷兰从德国的统治中得以解放，但却在七月革命中失去了印尼殖民地。冷战近在眼前，作为自由阵营中实力相对弱小的国家，荷兰又会选择怎样的道路？"
+
+ POR_FLAVOR_TEXT:0 "葡萄牙在上次世界大战中保持了中立，游走于两大集团之间。总理萨拉查将75%的钨卖给德国，但却又把亚速尔群岛交给英国使用。中立的政策为葡萄牙带来了不小的好处，与两大集团的贸易也助长了葡萄牙的经济。然而冷战的乌云已经迫在眉睫，殖民统治的锁链也已脆弱无比。在这新的国际格局中，葡萄牙又该选择怎样的道路？"
+
+ SAR_FLAVOR_TEXT:0 "在萨丁皮埃蒙特，保守主义的反法君主在过去三十年都统治着这个国家，其鼓励贵族与教会归来，同时着手解体拿破仑改革。这种形势还会持续下去吗？抑或更自由的国家将会浮现？"
+
+ PAN_FLAVOR_TEXT:0 "锡克帝国正处于对外征服期，胜利一场接着一场。不过帝国的未来将会如何呢？"
+
+ DEN_FLAVOR_TEXT:0 "丹麦在世界大战中仅仅抵抗了一个小时就宣布投降，沦于德国的占领之下。战争结束后，丹麦重新获得了自由和独立，面对着冷战的变局，丹麦会偕同斯堪的纳维亚各国继续维持光荣的中立，抑或是选择一条新的道路？"
+
+ SWE_FLAVOR_TEXT:0 "瑞典在上次世界大战中秉持中立，并且通过与德国的铁矿贸易赚取了大量的利润，国家经济一路向好。作为斯堪的纳维亚最具吸引力的自由主义国家，面对着仅仅一个芬兰之隔的俄国巨熊，等待着瑞典的是和平与安宁，抑或是战争与动乱？"
+
+ POL_FLAVOR_TEXT:0 "波兰在世界大战中成为了德国战争机器的首个目标，上百万的波兰军队在一个月内被德军所击溃。1939年9月，随着首都华沙的陷落和波莫瑞集团军的覆灭，苏联撕毁了和波兰的互不侵犯条约向西进军并制造了卡廷惨案，使得波兰政府不得不流亡罗马尼亚，剩余的战士们则活跃于不列颠空战和地下抵抗组织的起义中。随着德国战败投降，波兰爱国联盟在苏联的指导下成立了社会主义的波兰政府，在冷战的新格局中与昔日的世仇苏联站在一起。然而在表面的卑躬屈膝之下，昔日荣光的骄傲与灵魂却深深地铭刻在曾经数次亡国的波兰心中，波兰民族对独立和自由的追求不会停止，正如国歌所歌颂的那样：波兰永不灭亡！"
+  
+ objective_tutorial_name_PER:0 "伊朗"
+
+ objective_tutorial_desc_PER:0 "伊朗刚刚才从英苏的占领之中解放，萨法维王朝重新获得了国家的权力。守望着波斯湾的海风，伊朗能够重新崛起吗？"
+
+ objective_hegemon_name_YUG:0 "南斯拉夫"
+
+ objective_hegemon_desc_YUG:0 "南斯拉夫是一个由塞尔维亚，波斯尼亚，斯洛文尼亚，黑山和克罗地亚等多国所组成的联盟。1941年，德军入侵并迅速占领了君主制下的南斯拉夫，铁托带领游击队奋起反抗，相继发动了多次起义运动。1944年9月，苏联红军与南斯拉夫联军解放了贝尔格莱德，并在七个月前宣布成立了崭新的南联盟。作为社会主义在巴尔干的头号强国，南联盟的局势却并不乐观：苏联试图傀儡联盟的独立于莫斯科的旗下，美国则试图瓦解联盟而成为多个国家。联盟的内部百废待兴，民族的创伤亟待愈合，南联盟会如何书写巴尔干乃至世界的命运？"
+
+ YUG_FLAVOR_TEXT:1 "南斯拉夫是一个由塞尔维亚，波斯尼亚，斯洛文尼亚，黑山和克罗地亚等多国所组成的联盟。1941年，德军入侵并迅速占领了君主制下的南斯拉夫，铁托带领游击队奋起反抗，相继发动了多次起义运动。1944年9月，苏联红军与南斯拉夫联军解放了贝尔格莱德，并在七个月前宣布成立了崭新的南联盟。作为社会主义在巴尔干的头号强国，南联盟的局势却并不乐观：苏联试图傀儡联盟的独立于莫斯科的旗下，美国则试图瓦解联盟而成为多个国家。联盟的内部百废待兴，民族的创伤亟待愈合，南联盟会如何书写巴尔干乃至世界的命运？"
+
+ objective_egalitarian_society_name_PRC:0 "中国"
+
+ objective_egalitarian_society_desc_PRC:0 "战争结束前的共产党，情况相比围剿之时已然改善良多，既有着朱德和刘伯承等名将，又有着一批意志坚定、战力强悍的士兵。通过土地改革的手段，毛泽东主持下的共产党成功以农村包围城市为主旨获得了农民的支持。随着日本的投降，中国迎来了短暂的安宁，但是内战的风暴已经蓄势待发。尽管双方仍然在就和平建国进行着讨论，但毛泽东和蒋介石都清楚：天无二日，国无二主，这既是中国统一之争，亦是意识形态之争。美苏为首的两极也冷冷地注视着古老的中华大地，看着两头猛虎即将开展的厮杀。"
+
+ PRC_FLAVOR_TEXT:1 "战争结束前的共产党，情况相比围剿之时已然改善良多，既有着朱德和刘伯承等名将，又有着一批意志坚定、战力强悍的士兵。通过土地改革的手段，毛泽东主持下的共产党成功以农村包围城市为主旨获得了农民的支持。随着日本的投降，中国迎来了短暂的安宁，但是内战的风暴已经蓄势待发。尽管双方仍然在就和平建国进行着讨论，但毛泽东和蒋介石都清楚：天无二日，国无二主，这既是中国统一之争，亦是意识形态之争。美苏为首的两极也冷冷地注视着古老的中华大地，看着两头猛虎即将开展的厮杀。"
+
+  # South-East Asia
+ LAN_FLAVOR_TEXT:0 "兰芳共和国由希望开发婆罗洲金矿的民主华人矿工企业联合成立。兰芳能否抵御荷兰人的推进并取得预想中的繁荣？"
+ ACE_FLAVOR_TEXT:0 "在亲王的努力下，亚齐苏丹国正经历复兴。面对荷兰的扩张势头，亚齐能否恢复帝国并维持独立地位？"
+ BRU_FLAVOR_TEXT:0 "文莱直至目前都击退了殖民势力侵犯其主权的试探。文莱会陷入衰退和卑微，还是能再度成为区域强国？"
+ JOH_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？马来亚被英国殖民，还能否重新独立自强？"
+ SIA_FLAVOR_TEXT:0 "1945年8月15日，日本投降，暹罗在翌日宣布《暹罗1942年1月25日对英美宣战宣言》无效，被同盟国承认。但暹罗能成功改革其经济社会以适应现代吗？"
+ DAI_FLAVOR_TEXT:0 "新近重新独立的越南刚刚从法国的殖民统治下脱身。越南能否巩固自身、打造强盛大国，还是会注定再次陷入外国控制？"
+ BUR_FLAVOR_TEXT:0 "1946年的缅甸正处于民族解放和独立斗争的关键时期，国内外政治动态和社会经济状况都在为即将到来的独立铺平道路。缅甸人的国家还能否再度独立自强，抑或这黑暗时代将永久持续？"
+ CAM_FLAVOR_TEXT:0 "柬埔寨早已弗如高棉帝国的黄金时代远甚。高棉人的国家还能否再度崛起，抑或这黑暗时代将永久持续？"
+ LUA_FLAVOR_TEXT:0 "琅勃拉邦一度曾是强大的澜沧王国的都城，如今不过是昔日辉煌的残影。老挝被地区强权大南和暹罗分裂，还能否重新独立自强？"
+  
+  # Australia
+ UNT_FLAVOR_TEXT:0 "联合部落已宣布自身的主权独立，尽管他们实际上受不列颠帝国摆布。能够信任不列颠人会遵守与毛利人的条约吗？"
+ NSW_FLAVOR_TEXT:0 "新南威尔士正处于从流放殖民地转变为直辖殖民地期间，却因为其他省份获得自己的行政权而导致领土缩小。澳大利亚的未来会如何？"
+ SAS_FLAVOR_TEXT:0 "南澳大利亚两年前才从新南威尔士中分离获得自己的行政权。澳大利亚的未来会如何？"
+ WAS_FLAVOR_TEXT:0 "天鹅河的殖民者大举入侵原住民的传统土地，这一举动导致的平贾拉大屠杀才过去了两年。殖民地会如何平息这场冲突？"
+ TAS_FLAVOR_TEXT:0 "范迪门地是不列颠属澳大利亚的主要流放殖民地。这片罪犯的殖民地的未来会如何？"
+ AST_FLAVOR_TEXT:0 "作为大英帝国的自治领，澳大利亚尽管身在遥远的太平洋也无法幸免于战争的灾难。在英国的号召下，澳大利亚与新西兰一同派出了澳新军团奔赴北非战场。在太平洋，美国和澳大利亚紧密合作，最终击败了日本帝国。随着战争的结束，澳大利亚再次回归了宁静，这片土地上的人民正试图在冷战之中寻求安逸的和平。前进吧，美丽的澳大利亚！"
+ NZL_FLAVOR_TEXT:0 "作为大英帝国的自治领，新西兰尽管身在遥远的太平洋也无法幸免于战争的灾难。在英国的号召下，新西兰与澳大利亚一同派出了澳新军团奔赴北非战场。在缅甸战场上，新西兰也协助盟军击败了日本帝国。尽管世界即将再度动荡不安，但这似乎和这个遥远的岛国毫无关联，新西兰的未来会怎样？"
+
+  # Balkans
+ SER_FLAVOR_TEXT:0 "塞尔维亚为自身的独立曾努力奋战，而且必然要继续斗争来维护独立。楔子一般塞在列强之间的塞尔维亚会成为欧洲火药桶吗？"
+ GRE_FLAVOR_TEXT:0 "1944年10月德军撤出希腊后，英国军队以对德作战的名义在希腊登陆，并护送希腊流亡政府回到雅典，但内战仍在继续。希腊会被内战之火吞噬吗？"
+ WAL_FLAVOR_TEXT:0 "罗马尼亚领土统一和政治独立的呼声导致地区政治复杂万分，因为俄罗斯与奥斯曼都希望保持现状。罗马尼亚能赢得自由吗？"
+ MOL_FLAVOR_TEXT:0 "罗马尼亚领土统一和政治独立的呼声导致地区政治复杂万分，因为俄罗斯与奥斯曼都希望保持现状。罗马尼亚能赢得自由吗？"
+ ION_FLAVOR_TEXT:0 "在过去的30年间，群岛挣脱了奥斯曼的桎梏，在俄罗斯和法兰西手中流走，最后迎入了不列颠的怀抱。岛屿上的居民能否与新生的希腊国家统合，还是会在不列颠的指引下走上一条崭新的道路？"
+  
+  # Italy
+ PAP_FLAVOR_TEXT:0 "尽管天主教会的政治权力几个世纪来一直在衰退，教宗仍管辖着教宗国。信仰能继续统治人心吗？"
+ TUS_FLAVOR_TEXT:0 "不受欢迎的莱奥波尔多大公希望大公国能自由化，但他的统治遭到了巨大的反对。自由主义和民族主义争夺着意大利人的心智，托斯卡纳未来的道路会走向何方？"
+ SIC_FLAVOR_TEXT:0 "政治上抑制自由派和西西里分裂分子已被证明无效，两种运动都在暗中发展获取支持者。等到情势难以避免地发展到不可收拾的地步，两西西里会变成什么样子？"
+ PAR_FLAVOR_TEXT:0 "维也纳会议确立了拿破仑的第二任妻子玛丽·路易丝对大公国的终身统治权。在这民族主义与动乱的时代，她能够守住自己的土地吗？"
+ LUC_FLAVOR_TEXT:1 "波旁-帕尔马家族从自己理应拥有的帕尔马土地上割裂出卢卡这片地方，继续自己的统治；直到玛丽·路易丝死后，他们才能再度夺回其位于帕尔马领内的正统宝座。随着意大利民族主义兴起，这样的异常现象又能持续多久呢？"
+ MOD_FLAVOR_TEXT:1 "摩德纳大公国受到哈布斯堡家族成员的统治，政治上也臣服于哈布斯堡家族以及奥地利帝国。摩德纳会否挣脱家族效忠的锁链，抑或这锁链绑得太紧难以挣脱？"
+  
+  # Germans
+ BAV_FLAVOR_TEXT:0 "二战结束后，美国部分高级官员表示了对德国经济复兴的重视。改造产业结构和恢复经济建设毫无疑问是政府的首件大事。在国际上，美苏之间的矛盾逐渐白热化，德国正成为双方对峙的桥头堡，这一变化究竟将为德国带来复兴的机遇，还是引向战争的深渊？"
+ SWI_FLAVOR_TEXT:0 "瑞士是一个中立国家，拥有较为强大的经济实力。联合国承认了瑞士的中立国地位，在欧洲政治的舞台上赋予了他们一定程度的安全。瑞士会否保持其中立，还是开辟出一条不同的道路？"
+ HAN_FLAVOR_TEXT:0 "随着第二次世界大战的结束，德国也随着德意志的荣耀一起逝去，成为了历史名词。尽管如今再现世间，德国又能再度走向德意志的奋斗之路吗？"
+ GERMAN_FLAVOR_TEXT:0 "维也纳会议设立了德意志邦联，意图用这个松散的德意志邦国联合来保持中欧的和平。但邦联实际上被奥地利和普鲁士的仇恨对立主导着。小国们能在即将到来的冲突中幸存下来吗？"
+ LUB_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ HAM_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ BRE_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ OLD_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ MEC_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ ANH_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ SAX_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ BRA_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ HES_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ NAS_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ FRM_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ BAD_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ WUR_FLAVOR_TEXT:1 "$GERMAN_FLAVOR_TEXT$"
+ LIP_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ MST_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ SCM_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ SCW_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ HOH_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ WLD_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ MEI_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ WEI_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ HEK_FLAVOR_TEXT:0 "$GERMAN_FLAVOR_TEXT$"
+ 
+ # Poland
+ KRA_FLAVOR_TEXT:1 "克拉科夫自由邦沉重地肩负着波兰民族的传承，不受组建该邦的强国信任，还被奥地利占领。一个新的波兰国家能否浴火重生？"
+  
+  # North America
+ QUE_FLAVOR_TEXT:0 "新法兰西殖民地沦于不列颠之手，成了下加拿大。主流的法兰西裔人口和殖民政府间的紧张态势恐怕会在最近继续升级，和平解决的几率渺茫。魁北克会赢得自由吗？"
+ ONT_FLAVOR_TEXT:0 "下加拿大紧张态势不断升级给上加拿大人民提供了胆量，准备要反抗殖民政府。安大略会赢得自由吗？"
+ HBC_FLAVOR_TEXT:0 "哈得孙湾公司已准备好用任何必要手段保卫其对于毛皮贸易的垄断权。只要公司觉得合适，就会随时与原住民族签订又撕毁合约，除了利润之外没有别的动机。这样的无情足够保卫公司吗？"
+ NBS_FLAVOR_TEXT:0 "新不伦瑞克殖民地正在建设兴旺发展的造船业，来自苏格兰和爱尔兰的殖民者前来加工原木。新不伦瑞克会领导一个统一的加拿大吗？"
+ ORG_FLAVOR_TEXT:0 "哥伦比亚地区目前有着相对自治的行政权，哈得孙湾公司和美国政府都盯上了这片有争议的区域。这两方势力之一会获胜，抑或会出现一个独立的俄勒冈？"
+ TEX_FLAVOR_TEXT:0 "新近成立的得克萨斯共和国与它的墨西哥宗主打着一场似乎不可能获胜的战争。奇迹能拯救孤星之国吗？"
+ HAI_FLAVOR_TEXT:0 "1946年的海地经历了政治动荡，当年发生了军事政变，迪马瑟·埃斯蒂梅成为总统。这一时期的海地社会经济状况受到了政治不稳定的负面影响。
+这个前奴隶组成的国家能否实现自由，抑或海底注定要陷于专制？"
+ CUB_FLAVOR_TEXT:0 "为了应对共产主义浪潮，古巴政府转向美国和独裁统治。但革命的火焰在暗处燃烧，古巴革命会不可避免吗？"
+ CAN_FLAVOR_TEXT:0 "作为大英帝国的自治领，身在美洲的加拿大自然无法置身于战争之外。在英国的号召下，加拿大前后派出了十万余人奔赴欧洲战场。经济上，由于英国本土遭到轰炸，大量的欧洲国家的工厂以及技术人员纷纷转移到了加拿大，来自英国和美国等地的订单让加拿大的工业和经济获得了飞速的增长。到战争结束时，加拿大已经成为了世界第四大工业强国。与此同时，随着大英帝国的衰弱，加拿大的未来也变得不确定起来——尽管如此，加拿大人总会以他们独特的勇敢，通过泥土和鲜血，到达绿野的彼端。"
+
+  #Central Asia
+ KHI_FLAVOR_TEXT:0 "希瓦同时反抗着波斯和俄罗斯，是一个在大汗治下繁荣昌盛的独立政权。希瓦能保护自身的独立吗？"
+ BUK_FLAVOR_TEXT:0 "不像邻近的各汗国，布哈拉历任埃米尔接纳了伊斯兰教法，而不将其合法性基于成吉思汗后裔的血脉。信仰会赢得胜利吗？"
+ KOK_FLAVOR_TEXT:0 "浩罕与大汗宫廷中的分裂与不和斗争着。浩罕能成为中亚的主导势力吗？"
+ AFG_FLAVOR_TEXT:0 "崛起之中的苏维埃联盟正贪婪地注视着阿富汗，寻求着南下印度洋的道路。阿富汗还会是帝国坟场吗？"
+  
+  # Maghreb
+ TRI_FLAVOR_TEXT:1 "利比亚在世界大战之后终于摆脱了意大利的统治，巴巴里的人民还能再度迈向繁荣吗？"
+ TUN_FLAVOR_TEXT:0 "突尼斯被迫停止庇护海盗劫掠，经济一落千丈。贝伊能重获繁荣吗？"
+ ALD_FLAVOR_TEXT:0 "阿尔及利亚因为巴巴里战争割让大片海岸线给法兰西。该国残部还能击退法兰西的入侵吗？"
+ MOR_FLAVOR_TEXT:0 "摩洛哥不再受奥斯曼保护，极易受法兰西和西班牙扩张政策的伤害。摩洛哥能否活过帝国主义的猛烈进攻？"
+  # Africa
+ SOK_FLAVOR_TEXT:0 "索科托哈里发国在富拉尼吉哈德的战旗下快速扩张。索科托能统一西非并抵御西方列强吗？"
+ GREAT_LAKES_FLAVOR_TEXT:0 "大湖区的人民建立了许多羽翼未丰的帝国，主宰着水面与陆地。其中会崛起一个大国吗？"
+ BUG_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ ACH_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ BNY_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ ANK_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ ETH_FLAVOR_TEXT:0 "被意大利侵略军赶出祖国的皇帝海尔塞拉西终于回归到了这个古老的国度，重新坐上了所罗门王的宝座。世界大战的不懈抵抗使得埃塞俄比亚获得了厄立特里亚的领土，被视为民族英雄的塞拉西皇帝也正大刀阔斧地推行着改革。埃塞俄比亚会在非洲事务中扮演怎样的角色？"
+ WLO_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ BGM_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ GJM_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ WLG_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ KFA_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ SHW_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ SDM_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ BRN_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ HAR_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ AWS_FLAVOR_TEXT:0 "$TGR_FLAVOR_TEXT$"
+ SAF_FLAVOR_TEXT:0 "作为大英帝国的自治领，当英国进入战争之中后，南非自然也无法置身于战争之外。前后三十余万的布尔士兵被招募起来，送到埃及和不列颠接受训练并参与到战争之中。作为世界上头号黄金钻石的生产国，战争的胜利并未为南非带来什么好处，反而使得国内的种族分歧愈演愈烈，目前的殖民当局正迫切寻求英国政府的支持以维持在南非的统治，然而伦敦却迟迟不做答复。南非的人民会获得一个平等的新处境吗？"
+  
+  # India
+ objective_hegemon_name_BIC:0 "印度"
+
+ objective_hegemon_desc_BIC:0 "印度是不列颠帝国皇冠上的宝石，然而英国君主在印度的权力早在一战之后就处于不断的缩水之中，到目前，印度当局已经面临着独立爆发的边缘。有着圣雄之称的甘地与尼赫鲁一同发起了非暴力不合作运动，带领印度国大党不断呼吁着英国势力的撤出。但是印度与英国经济早已高度绑定，印度的产品输入英国的市场，为印度企业创造了财富。同时，印度产业的发展都从一开始就面临着资本短缺的困境，从创办到生产等都要仰赖于英国资本的支持，经济上的捆绑迫使印度不得不和英国经济紧密地结合在一起。印度会走向摆脱不列颠统治的道路，又或是探索新的未来？"
+
+ BIC_FLAVOR_TEXT:1 "印度是不列颠帝国皇冠上的宝石，然而英国君主在印度的权力早在一战之后就处于不断的缩水之中，到目前，印度当局已经面临着独立爆发的边缘。有着圣雄之称的甘地与尼赫鲁一同发起了非暴力不合作运动，带领印度国大党不断呼吁着英国势力的撤出。但是印度与英国经济早已高度绑定，印度的产品输入英国的市场，为印度企业创造了财富。同时，印度产业的发展都从一开始就面临着资本短缺的困境，从创办到生产等都要仰赖于英国资本的支持，经济上的捆绑迫使印度不得不和英国经济紧密地结合在一起。印度会走向摆脱不列颠统治的道路，又或是探索新的未来？"
+
+ JAS_FLAVOR_TEXT:0 "几乎整个印度现在都处于英属印度的直接控制之下。各土邦的纳瓦卜们仍对各自的领土施展着强力的统治权，但最终还是听命于英属印度政府。印度能摆脱不列颠统治吗？"
+ JOD_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ BIK_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ JAI_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ MEW_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ GWA_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ IND_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ BER_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ CUT_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ AWA_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ BUN_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ ORI_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ NAG_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ BAS_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ HYD_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ MYS_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ TRA_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ SIN_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ NEP_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ SIK_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+ KUT_FLAVOR_TEXT:0 "$JAS_FLAVOR_TEXT$"
+  
+  # Middle-East
+ EGY_FLAVOR_TEXT:0 "随着大英帝国的衰败，埃及的未来变得前所未有的不明朗。新的势力会从沙漠中崛起吗？"
+ HDJ_FLAVOR_TEXT:0 "随着大英帝国的衰败，阿拉伯的未来变得前所未有的不明朗。新的势力会从沙漠中崛起吗？"
+ NEJ_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ YEM_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ ABU_FLAVOR_TEXT:0 "$HDJ_FLAVOR_TEXT$"
+ OMA_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+
+ KOR_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ NOR_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ FIN_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+  
+  #South and Central America
+ UCA_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ CLM_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？哥伦比亚还能再次伟大吗？"
+ VNZ_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ ECU_FLAVOR_TEXT:0 "冲突在南美酝酿，厄瓜多尔已卷入其中。厄瓜多尔能避免被更强大的邻国吞并吗？"
+ PEU_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ BOL_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ ARG_FLAVOR_TEXT:0 "1946年，阿根廷处于胡安·多明戈·庇隆的领导之下，他在当年的总统选举中获胜，并开始了他的第一个总统任期。庇隆的政治运动被称为庇隆主义，他的政策旨在促进国家工业化和社会福利，同时减少外国资本的影响。在他的领导下，阿根廷实施了一系列经济和社会改革，这些改革在一定程度上改变了国家的面貌，但也引发了经济和政治上的争议。"
+ CHL_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？智利的未来将会如何？"
+ PNI_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+  
+ GENERIC_FLAVOR_TEXT:0 "二战的硝烟才刚刚散去，从波罗的海的斯德丁到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕就已徐徐落下。脆弱的新秩序在冷战的对峙中风雨飘摇，在未来等待着全球各国的究竟是美好的天堂之路，抑或是绝望的地狱之门？"
+ REV_GENERIC_FLAVOR_TEXT:1 "这些革命者对于所谓建制政府所指定的方向不满，决定拿起武器推翻它。他们是会成功夺权，还是会如同过去无数被遗忘的革命一般被粉碎？"
+ DECENTRALIZED_FLAVOR_TEXT:0 "该国被更有组织的势力蚕食，努力维持自治。它们会看到新世纪的黎明，抑或名字只存在于历史书上？"
+
+ # Nonsense Countries
+ GLI_FLAVOR_TEXT:2 "加利西亚是一个不起眼而普通的国家，上面居住着一群大教堂狂热爱好者。加利西亚会重获过去的荣光吗？"
+
+
+  #Decentralized
+ TUA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ AHG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ OUA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ADG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ AIR_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ TBI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BOR_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ TRZ_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ FTR_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ CAY_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ SRR_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KBU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BND_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KRT_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ FTJ_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ SSU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MDK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KBD_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KRU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ AYI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MSN_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ SGU_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ KNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ASH_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ EWE_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DAH_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ OYO_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ BEN_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ IBO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ HAU_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ BGI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ WAD_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ DFR_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ ISQ_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ WSG_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ WJT_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ HOB_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ GLD_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ KKY_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ TRK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ TPS_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NUE_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DNK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DFT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ZND_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DAK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DLA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BOB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ TKE_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KON_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ YKA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KBA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LBA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LGA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ HMB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KRG_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ RWD_FLAVOR_TEXT:1 "$GREAT_LAKES_FLAVOR_TEXT$"
+ BRD_FLAVOR_TEXT:1 "二战结束后，美国部分高级官员表示了对德国经济复兴的重视。改造产业结构和恢复经济建设毫无疑问是政府的首件大事。在国际上，美苏之间的矛盾逐渐白热化，德国正成为双方对峙的桥头堡，这一变化究竟将为德国带来复兴的机遇，还是引向战争的深渊？"
+ NYM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MSI_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ GGO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ HHE_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ SNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BMB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MSK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MNC_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MSH_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MTB_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ZUL_FLAVOR_TEXT:1 "$GENERIC_FLAVOR_TEXT$"
+ TSW_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NAM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ HRO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LZO_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ CHK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ OVM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LND_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KZM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KSN_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NTU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ PPU_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ SKH_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KAZ_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ IRC_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NZP_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ ABS_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ DKT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ LKT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ NVJ_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ COM_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ PAT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BST_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ BLE_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ FNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ HLA_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ JLF_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ KNK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ MJT_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ PLY_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ TNG_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ THL_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"
+ SLK_FLAVOR_TEXT:0 "$DECENTRALIZED_FLAVOR_TEXT$"

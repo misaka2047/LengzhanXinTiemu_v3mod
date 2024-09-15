@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:ECU = {
+		create_character = {
+			first_name = "Jose·Maria·Belasco"
+			last_name = "Ibarra"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1893.1.1
+			interest_group = ig_intelligentsia
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				meticulous
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:CHI = {
+		create_diplomatic_play = {
+			name = war_for_the_mandate_of_heaven
+		
+			target_country = c:PRC
+			
+			war = yes
+			
+			type = dp_war_of_china
+			
+			add_war_goal = {
+				holder = c:PRC
+				type = conquer_state
+				target_state = s:STATE_NANJING.region_state:CHI
+			}			
+		}	
+	}
+}

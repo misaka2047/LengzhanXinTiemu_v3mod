@@ -1,0 +1,31 @@
+﻿CHARACTERS = {
+	c:POR = {
+		create_character = {
+			#安东尼奥·萨拉查，“最伟大的”以及“最糟糕的”葡萄牙人
+			historical = yes
+			first_name = "Antonio"
+			last_name = "Salazar"
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1889.4.28
+			interest_group = ig_devout #教会
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+			}
+		}
+		create_character = {
+			#安东尼奥·奥斯卡·德·弗拉戈索·卡尔莫纳
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_5
+			first_name = "Antonio·Oscar·de·Fragoso"
+			last_name = "Karmona"
+			ig_leader = yes
+			birth_date = 1869.11.24
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+			}
+		}
+	}
+}

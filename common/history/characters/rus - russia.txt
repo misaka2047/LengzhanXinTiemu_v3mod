@@ -1,0 +1,399 @@
+﻿CHARACTERS = {
+	c:RUS = { #苏联
+		create_character = {
+			# “慈父”斯大林
+			dna = dna_tsar_alexander_02
+			first_name = Joseph
+			last_name = Stalin
+			historical = yes
+			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1878.12.18
+			traits = { #特质
+				strong #健硕
+				charismatic #魅力四射
+				inspirational_orator #鼓舞人心的演说家
+				brave
+				ambitious
+				bigoted
+                                experienced_political_operator
+			}
+		}
+
+		create_character = {
+			#安德烈·亚历山德罗维奇·日丹诺夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_4
+			first_name = Andrei·Alexandrovich
+			last_name = Ridanov
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			birth_date = 1896.2.26
+			ig_leader = yes
+			historical = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				alcoholic #酗酒
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+
+		create_character = {
+			#“灰衣主教”米哈伊尔·安德烈耶维奇·苏斯洛夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_3
+			first_name = Mikhail·Andreyevich
+			last_name = Suslov
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			birth_date = 1902.11.7
+			historical = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+
+		create_character = {
+			#莫洛托夫
+			first_name = Vyacheslav·Mikhaylovich
+			last_name = Molotov
+			birth_date = 1890.3.9
+    			dna = dna_roosevelt
+			heir = yes			
+			historical = yes
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+				masterful_diplomat #外交大师
+				brave #勇敢
+			}
+		}
+
+		create_character = {
+			#拉扎尔·莫伊谢耶维奇·卡冈诺维奇
+			is_general = yes
+			commander_rank = commander_rank_4
+			first_name = Lazar·Moisheyevich
+			last_name = Kagonovich
+			historical = yes
+			culture=cu:ashkenazi #犹太
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			birth_date = 1893.11.22
+    			dna = dna_roosevelt
+			traits = { #特质
+				charismatic #魅力四射
+				inspirational_orator #鼓舞人心的演说家
+			}
+		}
+
+		create_character = {
+			#潘捷列伊蒙·康德拉季耶维奇·波诺马连科
+			is_general = yes
+			commander_rank = commander_rank_3
+			first_name = Panteleimon·Kondratievich
+			last_name = Bonomalianae
+			historical = yes
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			birth_date = 1902.8.9
+			traits = { #特质
+				charismatic #魅力四射
+				inspirational_orator #鼓舞人心的演说家
+			}
+		}
+
+		create_character = {
+			#亚历山大·米哈伊洛维奇·华西列夫斯基
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Alexander·Mikhailovich
+			last_name = Vasilevsky
+			birth_date = 1895.9.30
+			ig_leader = yes
+			historical = yes
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#朱可夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Georgy·Konstantinovich
+			last_name = Zhukov
+			birth_date = 1896.12.1
+			historical = yes
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				direct
+				persistent
+                                defense_in_depth_specialist
+                                expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#伊万·斯捷潘诺维奇·科涅夫元帅
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Ivan·Stepanovich
+			last_name = Konev
+			birth_date = 1897.12.28
+			historical = yes
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#罗季翁·雅科夫列维奇·马利诺夫斯基
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Rodion·Yakovevich
+			last_name = Malinovsky
+			birth_date = 1898.11.23
+			historical = yes
+			culture=cu:sephardic #犹太
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#德米特里·费多罗维奇·乌斯季诺夫
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Dmitry·Fedorovich
+			last_name = Ustinov
+			birth_date = 1908.10.17
+			historical = yes
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+
+		create_character = {
+			#贝利亚
+			is_general = yes
+			hq = region_caucasus #高加索战区总部
+			commander_rank = commander_rank_5
+			first_name = Lavrenti·Pavlovich
+			last_name = Berial
+			historical = yes
+			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
+			birth_date = 1899.3.29
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				cruel #残暴
+				reserved
+				ambitious #雄心勃勃
+				tactful #圆滑
+			}
+		}
+
+		create_character = {
+			#格奥尔基·马克西米连诺维奇·马林科夫
+			ig_leader = yes
+			first_name = Georgi·Maximilianovich
+			last_name = Marinkov
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			birth_date = 1902.1.8
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+
+		create_character = {
+			#赫鲁晓夫
+            		dna = dna_tsar_nicolas_01
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_3
+			first_name = Nikita·Sergeyevich
+			last_name = Khrushchev
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			birth_date = 1894.4.17
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_communist #共产主义者
+			traits = {
+				hedonist #享乐主义者
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+
+		create_character = {
+			#安东·伊万诺维奇·邓尼金
+			first_name = Anton·Ivanovich
+			last_name = Denikin
+			culture=cu:russian #俄罗斯
+			historical = yes
+			birth_date = 1872.12.16
+			ig_leader = yes
+			interest_group = ig_landowners #地主
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				cruel #残暴
+				reserved
+				ambitious #雄心勃勃
+				tactful #圆滑
+			}
+		}
+
+		create_character = {
+			#阿列克谢·尼古拉耶维奇·柯西金
+			historical = yes
+			first_name = Alexei·Nikolayevich
+			last_name = Kosygin
+			birth_date = 1904.2.21
+			ig_leader = yes
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			interest_group = ig_industrialists #实业家
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				brave
+			}
+		}
+		
+		create_character = {
+			#阿列克谢一世
+			historical = yes
+			first_name = Alexei_I
+			last_name = Szymanski
+			birth_date = 1877.11.8
+			ig_leader = yes
+			culture=cu:russian #俄罗斯
+			interest_group = ig_devout #教会
+			ideology = ideology_enlightened_theocrats #开明神权主义者
+			traits = {
+				strong #健硕
+			}
+		}
+
+		create_character = { #谢苗·米哈伊洛维奇·布琼尼
+			is_general = yes
+			first_name = Semyon·Mikhailovich
+			last_name = Budyonny
+			birth_date = 1883.4.25
+			hq = region_dnieper
+			commander_rank = commander_rank_5
+			historical = yes
+			religion = rel:atheist #无神论
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				expert_offensive_planner
+                                                                    pillager
+				surveyor
+                                                                    traditionalist_commander
+			}
+		}
+		
+		create_character = { #克利缅特·叶夫列莫维奇·伏罗希洛夫
+			is_general = yes
+			first_name = Clemente·Yevremovich
+			last_name = Voroshilov
+			birth_date = 1881.1.23
+			hq = region_poland
+			commander_rank = commander_rank_5
+			historical = yes
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				expert_defensive_strategist
+				charismatic #魅力四射
+				trench_rat
+				masterful_diplomat #外交大师，克利缅特·叶夫列莫维奇·伏罗希洛夫同志是伟大苏联人民的代表，我们深信，他的访问一定会进一步增进中苏两国人民的伟大友谊。并且有利于促进世界和平和人类进步的崇高事业。
+				tactful
+			}
+		}
+		
+		create_character = { #海军元帅库兹涅佐夫
+			is_admiral = yes
+			first_name = Nikolai·Grassimovich
+			last_name = kuznetsov
+			birth_date = 1902.7.24
+			hq = region_dnieper
+			commander_rank = commander_rank_5
+			historical = yes
+			religion = rel:atheist #无神论
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+			 	expert_naval_commander #海军指挥专家
+				dockyard_master
+				innovative #创新精神
+				brave #勇敢
+			 }
+		 }
+	}
+}

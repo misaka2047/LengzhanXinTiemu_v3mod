@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:BUR = { #缅甸
+		create_character = {
+			historical = yes
+			culture=cu:british #英格兰
+			ruler = yes
+			ig_leader = yes
+			traits = {
+			}
+		}
+		create_character = {
+			culture=cu:british #英格兰
+			ig_leader = yes
+			interest_group = ig_devout #教会
+		}	
+	}
+}

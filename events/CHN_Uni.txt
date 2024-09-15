@@ -1,0 +1,64 @@
+﻿namespace = formation
+
+formation.CN = {
+	type = country_event
+	placement = ROOT
+
+	title = formation.cn1.t
+	desc = formation.cn1.d
+	flavor = formation.cn1.f
+
+	event_image = { 
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+
+	trigger = {
+		c:CHN ?= THIS
+		NOT = { has_global_variable = has_formed_china }
+	}
+
+	immediate = {
+		set_global_variable = has_formed_china
+		save_scope_as = formation_country
+		cu:han = {
+			save_scope_as = unification_culture
+		}
+		cu:manchu = {
+			save_scope_as = unification_culture_2
+		}
+		cu:tibetan = {
+			save_scope_as = unification_culture_3
+		}
+		cu:uighur = {
+			save_scope_as = unification_culture_4
+        }
+		cu:mongol = {
+			save_scope_as = unification_culture_5
+		}
+		every_country = {
+			limit = {
+				has_diplomatic_relevance = ROOT
+			}
+			post_notification = unification_notification_four_culture
+		}
+	}
+
+	option = {
+		name = formation.cn1.a
+		default_option = yes
+		add_modifier = {
+			name = unification_prestige
+			months = very_long_modifier_time
+		}
+		unification_claims_effect = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

@@ -1,0 +1,430 @@
+﻿# MANUFACTURING INDUSTRIES
+
+building_food_industry = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/food_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+	production_method_groups = {
+		pmg_base_building_food_industry
+		pmg_advance_building_food_industry
+		pmg_transportation
+		pmg_automation_building_food_industry
+	}
+
+	required_construction = construction_cost_high
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_textile_mills = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/textile_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+	production_method_groups = {
+		pmg_base_building_textile_mills
+		pmg_advance_building_textile_mills
+		pmg_transportation
+		pmg_automation_building_textile_mills
+
+	}
+
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_furniture_manufacturies = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/furniture_manufacturies.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+
+	production_method_groups = {
+		pmg_base_building_furniture_manufacturies
+		pmg_advance_building_furniture_manufacturies
+		pmg_transportation
+		pmg_automation_building_furniture_manufacturies
+
+	}
+
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_glassworks = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/glassworks.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_glass_blowing
+	}
+
+	production_method_groups = {
+		pmg_base_building_glassworks
+		pmg_advance_building_glassworks
+		pmg_transportation
+		pmg_automation_building_glassworks
+
+	}
+	
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_tooling_workshops = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/tooling_workshops.dds"
+	
+	unlocking_technologies = {
+		tech_unified_tool_standards
+	}
+
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_tooling_workshops
+		pmg_advance_building_tooling_workshops
+		pmg_transportation
+		pmg_automation_building_tooling_workshops
+
+	}
+
+	required_construction = construction_cost_high
+	
+	ai_value = 2000 # Tools are very important
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_paper_mills = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/paper_mills.dds"
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+	city_type = city
+	levels_per_mesh = 5
+
+	production_method_groups = {
+		pmg_base_building_paper_mills
+		pmg_advance_building_paper_mills
+		pmg_transportation
+		pmg_automation_building_paper_mills
+
+	}
+	
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+
+building_steel_mills = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/steel_mills.dds"
+	city_type = city
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		tech_basic_steel_smelting
+	}
+
+	production_method_groups = {
+		pmg_base_building_steel_mills
+		pmg_advance_building_steel_mills
+		pmg_transportation
+		pmg_automation_building_steel_mills
+
+	}
+	required_construction = construction_cost_very_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+
+}
+
+building_motor_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/motor_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+
+	production_method_groups = {
+		pmg_base_building_motor_industry
+		pmg_advance_building_motor_industry
+		pmg_transportation
+		pmg_automation_building_motor_industry
+
+	}
+
+	unlocking_technologies = {
+		tech_engine_manufacturing
+	}
+
+	required_construction = construction_cost_very_high
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_shipyards = {
+	building_group = bg_shipyards
+	texture = "gfx/interface/icons/building_icons/shipyards.dds"
+	city_type = port
+	
+	unlocking_technologies = {
+		tech_shipbuilding
+	}
+
+	production_method_groups = {
+		pmg_base_building_shipyards
+		pmg_advance_building_shipyards
+		pmg_transportation
+		pmg_automation_building_shipyards
+
+	}
+
+	required_construction = construction_cost_high
+	
+	possible = {
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}	
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_military_shipyards = {
+	building_group = bg_military_shipyards
+	texture = "gfx/interface/icons/building_icons/military_shipyards.dds"
+	city_type = port
+	
+	unlocking_technologies = {
+		tech_world_war_ii_military_ships
+	}
+
+	production_method_groups = {
+		pmg_base_building_military_shipyards
+		pmg_transportation
+		pmg_automation_building_military_shipyards
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+	possible = {
+		error_check = {
+			severity = fail
+			is_coastal = yes
+		}
+	}	
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_war_machine_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/vehicles_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+
+	unlocking_technologies = {
+		tech_world_war_ii_tanks
+	}
+
+	production_method_groups = {
+		pmg_base_building_war_machine_industry
+		pmg_transportation
+		pmg_automation_building_war_machine_industry
+
+	}
+	
+	required_construction = construction_cost_very_high
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_electrics_industry = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/electrics_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+
+	production_method_groups = {
+		pmg_base_building_electrics_industry
+		pmg_transportation
+		pmg_automation_building_electrics_industry
+
+	}
+	
+	unlocking_technologies = {
+		tech_electronic_product
+	}
+	
+	required_construction = construction_cost_very_high
+
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_arms_industry = {
+	building_group = bg_arms_industries
+	texture = "gfx/interface/icons/building_icons/arms_industry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+
+	production_method_groups = {
+		pmg_base_building_arms_industry
+		pmg_transportation
+		pmg_automation_building_arms_industry
+
+	}
+
+	unlocking_technologies = {
+		tech_weapon_manufacturing
+	}
+
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_artillery_foundries = {
+	building_group = bg_artillery_foundaries
+	texture = "gfx/interface/icons/building_icons/artillery_foundry.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_world_war_ii_artillery
+	}
+
+	production_method_groups = {
+		pmg_base_building_artillery_foundries
+		pmg_transportation
+		pmg_automation_building_artillery_foundries
+
+	}
+	
+	required_construction = construction_cost_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+}
+
+building_munition_plants = {
+	building_group = bg_munition_plants
+	texture = "gfx/interface/icons/building_icons/munition_plants.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_ammunition_manufacturing
+	}
+
+	production_method_groups = {
+		pmg_base_building_munition_plants
+		pmg_transportation
+		pmg_automation_building_munition_plants
+
+	}
+	
+	required_construction = construction_cost_very_high
+	ownership_type = self
+	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
+	possible = {
+		error_check = {
+			severity = fail
+			this = {
+				owner = { 
+					NOT = { has_law = law_type:law_industry_banned } 
+				}
+			}
+		}
+	}
+}

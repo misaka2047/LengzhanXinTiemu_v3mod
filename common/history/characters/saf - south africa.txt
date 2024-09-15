@@ -1,0 +1,15 @@
+﻿CHARACTERS = {
+	c:SAF = {
+		create_character = {
+			first_name = "Young"
+			last_name = "ShiMozi"
+			historical = yes
+			culture=cu:boer #布尔
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_ethno_nationalist #族裔民族主义者
+			birth_date = 1870.5.24
+		}	
+	}
+}

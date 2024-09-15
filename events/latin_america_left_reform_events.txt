@@ -1,0 +1,348 @@
+namespace = latin_america_left_reform
+
+latin_america_left_reform.1 = {
+	type = country_event
+	placement = root
+	
+	title = latin_america_left_reform.1.t
+	desc = latin_america_left_reform.1.d
+	flavor = latin_america_left_reform.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3 
+
+	trigger = {
+		any_scope_character = {
+			is_ruler = yes
+ 			OR = {
+				ideology = ideology_social_democrat
+				ideology = ideology_communist
+				ideology = ideology_anarchist
+			}           
+		}
+		NOT = {
+			has_variable = latin_america_left_reform_triggered
+		}
+        OR = {
+            c:CHL ?= this
+            c:PEU ?= this
+            c:MEX ?= this
+            c:ARG ?= this
+            c:CLM ?= this
+            c:VNZ ?= this
+            c:ECU ?= this
+            c:PRG ?= this
+            c:URU ?= this
+            c:NIC ?= this
+            c:HON ?= this
+            c:PNM ?= this
+            c:COS ?= this
+            c:BOL ?= this
+            c:HAI ?= this
+        }
+	}
+
+    immediate = {
+        set_variable = latin_america_left_reform_triggered
+    }  
+    option = {
+		name = latin_america_left_reform.1.a
+		add_journal_entry = {
+			type = je_latin_america_left_reform
+		}
+		default_option = yes
+    }
+    option = {
+		name = latin_america_left_reform.1.b
+		default_option = no
+    }
+}
+
+latin_america_left_reform.4 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.4.t
+    desc = latin_america_left_reform.4.d
+    flavor = latin_america_left_reform.4.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.4.a
+        trigger_event = {
+            id = latin_america_left_reform.6
+            days = 3
+        }
+        default_option = yes
+    }
+}
+
+latin_america_left_reform.5 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.5.t
+    desc = latin_america_left_reform.5.d
+    flavor = latin_america_left_reform.5.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.5.a
+        activate_law = law_type:law_council_republic
+        default_option = yes
+    }
+}
+
+latin_america_left_reform.6 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.6.t
+    desc = latin_america_left_reform.6.d
+    flavor = latin_america_left_reform.6.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.6.a
+        trigger_event = {
+            id = latin_america_left_reform.7
+            days = 10
+        }
+        default_option = yes
+    }
+}
+
+latin_america_left_reform.7 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.7.t
+    desc = latin_america_left_reform.7.d
+    flavor = latin_america_left_reform.7.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.7.a
+        trigger_event = {
+            id = latin_america_left_reform.8
+            days = 10
+        }
+        default_option = yes
+    }
+    option = {
+        name = latin_america_left_reform.7.b
+        trigger_event = {
+            id = latin_america_left_reform.9
+            days = 10
+        }
+        default_option = no
+    }
+}
+
+latin_america_left_reform.8 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.8.t
+    desc = latin_america_left_reform.8.d
+    flavor = latin_america_left_reform.8.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.8.a
+        trigger_event = {
+            id = latin_america_left_reform.9
+            days = 3
+        }
+		ruler = {
+			kill_character = yes
+		}
+        default_option = yes
+    }
+}
+
+latin_america_left_reform.9 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.9.t
+    desc = latin_america_left_reform.9.d
+    flavor = latin_america_left_reform.9.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.9.a
+		every_scope_character = {
+			limit = {
+				OR = {
+					ideology = ideology_social_democrat
+					ideology = ideology_communist
+					ideology = ideology_anarchist
+				}
+			}
+			kill_character = yes
+		}
+        activate_law = law_type:law_presidential_republic
+        activate_law = law_type:law_autocracy
+        default_option = yes
+    }
+}
+
+latin_america_left_reform.10 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.10.t
+    desc = latin_america_left_reform.10.d
+    flavor = latin_america_left_reform.10.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.10.a
+        add_modifier = {
+            name = transportation_strike_modifier
+            months = 24
+        }
+        default_option = yes
+    }
+    option = {
+        name = latin_america_left_reform.10.b
+        add_modifier = {
+            name = transportation_strike_weaker_modifier
+            months = 24
+        }
+		change_relations = {
+			country = c:USA
+			value = -30
+		}
+		trigger = {
+			has_law = law_type:law_secret_police
+		}
+        default_option = no
+    }
+}
+
+latin_america_left_reform.11 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.11.t
+    desc = latin_america_left_reform.11.d
+    flavor = latin_america_left_reform.11.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+    }
+    option = {
+        name = latin_america_left_reform.11.a
+        add_modifier = {
+            name = transportation_opposition_modifier
+            months = 24
+        }
+        default_option = yes
+    }
+    option = {
+        name = latin_america_left_reform.11.b
+        add_modifier = {
+            name = transportation_opposition_weaker_modifier
+            months = 24
+        }
+		change_relations = {
+			country = c:USA
+			value = -30
+		}
+		trigger = {
+			has_law = law_type:law_outlawed_dissent
+		}
+        default_option = no
+    }
+    option = {
+        name = latin_america_left_reform.11.c
+        add_modifier = {
+            name = transportation_opposition_weaker_modifier
+            months = 24
+        }
+		change_relations = {
+			country = c:USA
+			value = -30
+		}
+		trigger = {
+			has_law = law_type:law_secret_police
+		}
+        default_option = no
+    }
+}
+
+latin_america_left_reform.2 = {
+    type = country_event
+    placement = root
+    title = latin_america_left_reform.2.t
+    desc = latin_america_left_reform.2.d
+    flavor = latin_america_left_reform.2.f
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+
+    trigger = {
+		any_country = {
+			has_variable = latin_america_left_reform_triggered
+		}
+        c:USA ?= this
+    }
+}

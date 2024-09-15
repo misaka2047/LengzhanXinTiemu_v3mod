@@ -1,0 +1,81 @@
+﻿CHARACTERS = {
+	c:BUL = {
+		create_character = {
+			#西美昂二世
+			first_name = "Simeon_II"
+			last_name = "von_Sachsen-Coburg-Gotha"
+			ruler = yes
+			noble = yes #贵族成员
+			historical = yes
+			birth_date = 1937.6.16
+			religion = rel:orthodox #东正教
+			culture = cu:bulgarian
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_moderate #温和主义者
+			traits = {
+			}
+		}	
+
+		create_character = {
+			#基蒙·格奥尔基耶夫
+			historical = yes
+			first_name = "Kimon"
+			last_name = "Georgiev"
+			ig_leader = yes #利益集团领袖
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}	
+
+		create_character = {
+			#瓦西里·科拉罗夫
+			first_name = "Vasile"
+			last_name = "Kolarov"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1877.1.1
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}	
+
+		create_character = {
+			#格奥尔基·季米特洛夫
+			first_name = "Georgi"
+			last_name = "Dimitrov"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1882.6.18
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				firebrand #煽动大师
+			}
+		}	
+
+		create_character = {
+			#契尔文科夫
+			first_name = "Vilko"
+			last_name = "Chervenkov"
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1900.9.6
+			religion = rel:atheist #无神论
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_communist #共产主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				expensive_tastes #昂贵嗜好
+			}
+		}	
+	}
+}

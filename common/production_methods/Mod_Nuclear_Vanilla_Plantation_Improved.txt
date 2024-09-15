@@ -1,0 +1,700 @@
+﻿## Should be similar to Mega-Greenhouse
+
+## Coffee
+mega_greenhouse_building_coffee_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_coffee_add = 72
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_coffee_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_coffee_add = 84
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Opium
+mega_greenhouse_building_opium_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_opium_add = 72
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_opium_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_opium_add = 84
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Tea
+mega_greenhouse_building_tea_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_tea_add = 72
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_tea_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_tea_add = 84
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Sugar
+mega_greenhouse_building_sugar_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_sugar_add = 120
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_sugar_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_sugar_add = 140
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Fruit
+
+mega_greenhouse_building_banana_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_fruit_add = 120
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_banana_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_fruit_add = 140
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+
+## Tobacco
+mega_greenhouse_building_tobacco_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_tobacco_add = 72
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_tobacco_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_tobacco_add = 84
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Silk
+mega_greenhouse_building_silk_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_silk_add = 90
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_silk_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_silk_add = 105
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+## Dye
+mega_greenhouse_building_dye_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_dye_add = 90
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_dye_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_dye_add = 105
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+
+genetically_modified_cotton_building_cotton_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		radiation_assisted_bio_engineering
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 10	#300	
+			goods_input_research_and_engineering_add = 10 #400
+
+			# output goods												   
+			goods_output_fabric_add = 175
+			# This gives some $3,500			
+		}
+
+		level_scaled = {
+			# earnings				
+			building_employment_farmers_add = 3000							
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+
+## Vineyard
+
+mega_greenhouse_building_vineyard_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		vertical_farming
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200	
+
+			# output goods												   
+			goods_output_wine_add = 72
+			# This gives some $3,600			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 2600		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}
+
+augmented_workforce_building_vineyard_plantation = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 6	#180
+			goods_input_electricity_add = 10 #300	
+			goods_input_transportation_add = 10 #300
+			goods_input_engines_add = 2 ## 120			   
+			goods_input_steel_add = 4	#200				   
+			goods_input_glass_add = 5	#200
+			goods_input_programmables_add = 20 ##600	
+
+			# output goods												   
+			goods_output_wine_add = 84
+			# This gives some $4,200			
+		}
+
+		level_scaled = {
+			# earnings									
+			building_employment_laborers_add = 1800		
+			building_employment_farmers_add = 1100
+			building_employment_machinists_add = 500
+			building_employment_clergymen_add = 100
+		}
+	}
+}

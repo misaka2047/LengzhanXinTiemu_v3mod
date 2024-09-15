@@ -1,0 +1,122 @@
+je_bic_out_of_control_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		literacy_rate >= 0.3
+		NOR = { 
+			has_law = law_type:law_hereditary_bureaucrats 
+			has_law = law_type:law_land_based_taxation
+			has_law = law_type:law_consumption_based_taxation
+			has_law = law_type:law_serfdom
+			has_law = law_type:law_tenant_farmers
+			has_law = law_type:law_unrestricted_labor
+		}
+		has_law = law_type:law_multicultural 
+	}
+
+	on_complete = {
+		remove_modifier = bic_out_of_control_modifier
+		trigger_event = {
+			id = bic_out_of_control.2
+		}
+	}
+	fail = {
+		OR = {
+			radical_fraction = {
+				value >= 0.75
+			}
+			any_civil_war = {
+				civil_war_progress > 0.6
+			}
+		}
+	}
+
+	on_fail = {
+		remove_modifier = bic_out_of_control_modifier
+		trigger_event = {
+			id = bic_out_of_control.3
+		}
+	}
+	timeout = 2000
+
+	invalid = {
+		OR = {
+			THIS = c:PAK
+			THIS = c:HND
+			THIS = c:BHT
+		}	
+	}
+
+	on_invalid = {
+		remove_modifier = bic_out_of_control_modifier
+	}
+
+	on_timeout = {
+		remove_modifier = bic_out_of_control_modifier
+		trigger_event = {
+			id = bic_out_of_control.3
+		}
+	}
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}
+
+je_bic_partition_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		remove_modifier = bic_out_of_control_modifier
+		trigger_event = {
+			id = bic_partition.1
+		}
+	}
+
+	timeout = 2000
+
+	current_value = {
+		value = var:bic_partition_var
+	}
+
+	goal_add_value = {
+		add = 10
+	}
+	on_monthly_pulse = {
+		random_events = {
+			90 = 0
+			20 = bic_partition.2
+			20 = bic_partition.3
+			20 = bic_partition.4
+		}
+	}
+ 	scripted_button = bic_partition_button_key_1
+	scripted_button = bic_partition_button_key_2
+	invalid = {
+		OR = {
+			THIS = c:PAK
+			THIS = c:HND
+			THIS = c:BHT
+		}	
+	}
+
+	on_invalid = {
+		remove_modifier = bic_out_of_control_modifier
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}

@@ -1,0 +1,476 @@
+
+
+war_propaganda_resolution = { #战争宣传
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = war_propaganda
+		}
+	}
+	possible = {
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = war_propaganda
+		}
+	}
+}
+
+cancel_war_propaganda = { #取消战争宣传
+	is_shown = {
+		has_modifier = war_propaganda
+	}
+	possible = {
+	}
+	
+	when_taken = {
+		remove_modifier = war_propaganda
+	}
+}
+
+sponsoring_film_art = { #赞助电影艺术
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = sponsoring_film_art
+		}
+	}
+	possible = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_arts_academy
+				level >= 2
+				has_active_production_method = pm_film_art
+			}
+		}		
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = sponsoring_film_art
+		}
+	}
+}
+
+cancel_sponsorship_of_film_art = { #取消赞助电影艺术
+	is_shown = {
+		has_modifier = sponsoring_film_art
+	}
+	possible = {
+	}
+	
+	when_taken = {
+		remove_modifier = sponsoring_film_art
+	}
+}
+murder_of_intellectual_leaders = { #谋杀知识分子领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding6 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			}
+			add_modifier = {
+			name = murder_funding6 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_a_small_town_leader = { #谋杀小市民领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding7 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+			}
+			add_modifier = {
+			name = murder_funding7 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_rural_leaders = { #谋杀乡村民众领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding4 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			}
+			add_modifier = {
+			name = murder_funding4 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_an_industrialist_leader = { #谋杀实业家领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding5 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_industrialists #实业家
+			}
+			add_modifier = {
+			name = activate_resolution_to_murder_interest_group_leaders #谋杀利益集团领袖
+		}
+			add_modifier = {
+			name = murder_funding5 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_a_devout_leader = { #谋杀虔信者领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding3 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_devout #虔信者
+			}
+			add_modifier = {
+			name = murder_funding3 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+activate_resolution_to_murder_interest_group_leaders = { #启用谋杀利益集团领袖决议
+	is_shown = {
+			is_ai = no
+			NOT = { has_modifier = activate_resolution_to_murder_interest_group_leaders } #没有谋杀利益集团领袖修正
+	}
+	possible = {	
+	}
+	when_taken = {
+			add_modifier = {
+			name = activate_resolution_to_murder_interest_group_leaders #谋杀利益集团领袖
+		}
+	}
+}
+
+resolution_to_close_the_murder_of_interest_group_leaders = { #关闭谋杀利益集团领袖决议
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+	}
+	when_taken = {
+		remove_modifier = activate_resolution_to_murder_interest_group_leaders
+	}
+}
+
+murder_of_military_leaders = { #谋杀军队领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding2 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			}
+			add_modifier = {
+			name = murder_funding2 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_union_leaders = { #谋杀工会领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding8 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_trade_unions #工会
+			}
+			add_modifier = {
+			name = murder_funding8 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+murder_of_landlord_leaders = { #谋杀地主领袖
+	is_shown = {
+			has_modifier = activate_resolution_to_murder_interest_group_leaders #有谋杀利益集团领袖修正
+	}
+	possible = {	
+			NOT = { has_modifier = murder_funding1 } #没有谋杀经费修正	
+	}
+	when_taken = {
+		create_character = {
+			ig_leader = yes
+			interest_group = ig_landowners #地主
+			}
+			add_modifier = {
+			name = murder_funding1 #谋杀经费
+			years = 5	
+		}
+	}
+}
+
+attract_intellectuals = { #拉拢知识分子
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_intellectuals } #没有获得知识分子支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_intellectuals #获得知识分子支持
+			years = 5	
+		}
+	}
+}
+
+attract_small_citizens = { #拉拢小市民
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_small_citizens } #没有获得小市民支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_small_citizens #获得小市民支持
+			years = 5	
+		}
+	}
+}
+
+attract_rural_residents = { #拉拢乡村民众
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_rural_residents } #没有获得乡村民众支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_rural_residents #获得乡村民众支持
+			years = 5	
+		}
+	}
+}
+
+attract_industrialists = { #拉拢实业家
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_support_from_industrialists } #没有获得实业家支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_support_from_industrialists #获得实业家支持
+			years = 5	
+		}
+	}
+}
+
+to_win_over_devout_believers = { #拉拢虔信者
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtain_the_support_of_devout_believers } #没有获得虔信者支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtain_the_support_of_devout_believers #获得虔信者支持
+			years = 5	
+		}
+	}
+}
+
+activate_resolution_to_attract_interest_groups = { #启用拉拢利益集团决议
+	is_shown = {
+			is_ai = no
+			NOT = { has_modifier = activate_resolution_to_attract_interest_groups } #没有拉拢利益集团修正
+	}
+	possible = {	
+	}
+	when_taken = {
+			add_modifier = {
+			name = activate_resolution_to_attract_interest_groups #拉拢利益集团
+		}
+	}
+}
+
+resolution_to_close_and_win_over_interest_groups = { #关闭拉拢利益集团决议
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+	}
+	when_taken = {
+		remove_modifier = activate_resolution_to_attract_interest_groups
+	}
+}
+
+bring_in_the_army = { #拉拢军队
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtain_military_support } #没有获得军队支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtain_military_support #获得军队支持
+			years = 5	
+		}
+	}
+}
+
+woo_the_union = { #拉拢工会
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtaining_union_support } #没有获得工会支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtaining_union_support #获得工会支持
+			years = 5	
+		}
+	}
+}
+
+attract_landlords = { #拉拢地主
+	is_shown = {
+			has_modifier = activate_resolution_to_attract_interest_groups #有拉拢利益集团修正
+	}
+	possible = {	
+			NOT = { has_modifier = obtain_landlord_support } #没有获得地主支持修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = obtain_landlord_support #获得地主支持
+			years = 5	
+		}
+	}
+}
+
+expanding_the_mining_industry = { #扩建采矿业
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = expanding_the_mining_industry
+		}
+	}
+	possible = {
+		produced_bureaucracy > 100	
+			any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_iron_mine
+				level >= 11
+			}
+		}	
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = expanding_the_mining_industry
+		}
+	}
+}
+
+hold_a_banquet = { #举办一场宴会
+	is_shown = {
+			is_ai = no
+	}
+	possible = {	
+			NOT = { has_modifier = banquet } #没有宴会修正	
+	}
+	when_taken = {
+			add_modifier = {
+			name = banquet #宴会
+			years = 5	
+		}
+	}
+}
+
+improving_the_work_environment = { #改善工作环境
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = improving_the_work_environment
+		}
+	}
+	possible = {	
+		NOT = { has_law = law_type:law_regulatory_bodies } #没有监管机构法律	
+		NOT = { has_law = law_type:law_worker_protections } #没有工人保障法律	
+		produced_bureaucracy > 100		
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = improving_the_work_environment
+		}
+	}
+}
+
+restructuring_the_railway_system = { #重组铁路系统
+	is_shown = {
+			is_ai = no
+		NOT = { 
+			has_modifier = restructuring_the_railway_system
+		}
+	}
+	possible = {
+		produced_bureaucracy > 100	
+			any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 2
+			}
+		}	
+	}
+	
+	when_taken = {
+		add_modifier = {
+			name = restructuring_the_railway_system
+		}
+	}
+}
+

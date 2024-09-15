@@ -1,0 +1,55 @@
+namespace = bht_expansion_second
+
+bht_expansion_second.2 = {
+	type = country_event
+	placement = root
+	
+	title = bht_expansion_second.2.t
+	desc = bht_expansion_second.2.d
+	flavor = bht_expansion_second.2.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bht_expansion_second.2.a
+		default_option = yes
+    }
+}
+
+bht_expansion_second.3 = {
+	type = country_event
+	placement = root
+	
+	title = bht_expansion_second.3.t
+	desc = bht_expansion_second.3.d
+	flavor = bht_expansion_second.3.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bht_expansion_second.3.a
+		default_option = yes
+    }
+}

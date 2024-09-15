@@ -1,0 +1,735 @@
+﻿## Urban Center, Art Institute, and Research Contractor
+
+pm_vertical_cities = {
+	texture = "gfx/interface/icons/production_method_icons/arcades.dds"
+	unlocking_technologies = {
+		vertical_urban_planning
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_glass_add = 2
+			goods_input_steel_add = 3
+			goods_input_electricity_add = 1
+
+			goods_output_services_add = 50 ##1,500
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 1200
+			building_employment_shopkeepers_add = 400
+		}
+
+		unscaled = {
+			building_shopkeepers_shares_add = 10
+		}
+	}
+
+	required_input_goods = electricity
+}
+
+
+pm_automated_trading_systems = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_trading_systems.dds"
+	
+	unlocking_technologies = {
+		industrial_system_engineering
+	}
+	
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			goods_input_glass_add = 2
+			goods_input_steel_add = 2
+			goods_input_electricity_add = 1
+			goods_input_radios_add = 1 #80
+
+			goods_output_services_add = 60 ##1,800
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 1200
+			building_employment_shopkeepers_add = 400
+		}
+
+		
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}
+
+pm_commuter_town = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/commuter_town.dds"
+	unlocking_technologies = {
+		high_performance_computing
+	}
+
+	unlocking_production_methods = {
+		pm_general_aviation
+	}
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			# This is like small version of automated trading system.
+			goods_input_transportation_add = 2 #60
+			goods_input_steel_add = 2 #100
+			goods_input_glass_add = 2.5 #200
+			goods_input_electricity_add = 1 #30
+
+			goods_output_services_add = 35 #1,050
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 950
+			building_employment_shopkeepers_add = 500
+		}
+		
+		unscaled = {
+			building_shopkeepers_shares_add = 5
+		}
+	}
+}
+
+
+pm_aviation_integrated_public_transit = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/general_aviation.png"
+
+	
+	unlocking_technologies = {
+		general_aviation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_nuclear_jet_add = 2 ## 340
+			goods_input_nuclear_fuel_add = 1 
+			goods_input_engines_add = 1
+			goods_input_automobiles_add = 1
+
+			goods_output_transportation_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1200
+		}
+	}
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}
+
+
+## Art Institute
+
+pm_alternative_material_art = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/collective_emotional_link.jpg"
+
+	unlocking_technologies = {
+		microfission_cells
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 5 #200	
+			goods_input_paper_add = 5 #150
+			goods_input_glass_add = 10 # 400
+			goods_input_steel_add = 6 # 300
+			goods_input_electricity_add = 5 ##150
+
+			goods_output_fine_art_add = 22 # 4,400
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+			building_employment_clerks_add = -1200
+		}
+	}
+}
+
+pm_collective_emotional_link = {
+	## Yes this is a Civ:Beyond Earth reference :)
+	## Could have been one of the best Civ game with Civ 5 level effort	
+
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/collective_emotional_link.jpg"
+
+	unlocking_technologies = {
+		human_ego_programming
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 10 #800	
+			goods_input_programmables_add = 20 # 600
+			goods_input_electricity_add = 10 #300 ##1,700
+
+			# output goods
+			goods_output_fine_art_add = 30 # 6,000
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+			building_employment_clerks_add = -1600
+		}
+
+		unscaled = {
+			building_clerks_mortality_mult = 0.10
+			building_academics_mortality_mult = 0.05
+		}
+	}
+}
+
+### Private Research Contractor
+## Should employ up to 4,000 to 2,500 people.
+## Science should cost $40
+## paper cost $30
+## 4 sections.
+
+
+pm_research_contractor_computations_mechanical_computing = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mechanical_computing.dds"
+
+	unlocking_technologies = {
+		mod_nuclear_tech_differential_equations
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 4 #120
+			goods_input_tools_add = 11 #440
+			goods_input_services_add = 2 ##60
+
+			# output goods
+			goods_output_research_and_engineering_add = 25 #1000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 25
+			building_employment_academics_add = 200
+			building_employment_clerks_add = 175
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.01
+		}
+	}
+}
+
+pm_research_contractor_computations_experimental_electronic_computing = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_production_line.jpg"
+
+	unlocking_technologies = {
+		radio
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 4 #120
+			goods_input_tools_add = 12 #480
+			goods_input_electricity_add = 4 #120
+			goods_input_services_add = 5 ##150
+
+			# output goods
+			goods_output_research_and_engineering_add = 35 #1,400 gain
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.015
+		}
+	}
+}
+
+
+pm_research_contractor_computations_parallel_computing = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/collective_emotional_link.jpg"
+
+	unlocking_technologies = {
+		high_performance_computing
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 10 #800
+			goods_input_services_add = 10 ##300
+			goods_input_electricity_add = 10 #300 
+			## 1,400
+
+			# output goods
+			goods_output_research_and_engineering_add = 50 #2,000 gain
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.02
+		}
+	}
+}
+
+### Mathematics
+## Let's take a change of course here....
+### Since we already have had "Computing Machines", maybe 
+### We don't need so much fancy tools and computers here....
+### Well, at least that's what I feel as math major....
+
+## Lv 2 should give 1,000 profit to 4,000 people. 250 each
+pm_research_contractor_math_calculus_and_central_limit_theorem = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/research_contractor_math_calculus.png"
+
+	unlocking_technologies = {
+		mod_nuclear_tech_calculus
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 4 #120
+			goods_input_tools_add = 8 #320
+			goods_input_services_add = 6 ##180
+
+			# output goods
+			goods_output_research_and_engineering_add = 25 #1000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 25
+			building_employment_academics_add = 200
+			building_employment_clerks_add = 175
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.01
+		}
+	}
+}
+
+
+
+## Lv 4 should give about 2,960 profit to 3,200 people. 740 each for 800 people
+pm_research_contractor_math_differential_equations_and_multilinear_regression = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/research_contractor_math_group_theory.png"
+
+	unlocking_technologies = {
+		mod_nuclear_tech_differential_equations
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 4 #120
+			goods_input_tools_add = 8 #320
+			goods_input_electricity_add = 6 #180
+			goods_input_services_add = 8 ##240
+
+			# output goods
+			goods_output_research_and_engineering_add = 35 #1,400 gain
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.015
+		}
+	}
+}
+
+
+## Lv 5 should give 2960 profit to 2800 people. That is, 740 for each group of 700 people
+pm_research_contractor_math_differential_geometry_and_stochastic_calculus = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/research_contractor_math_differential_geometry.png"
+
+	unlocking_technologies = {
+		high_performance_computing
+	}
+
+	unlocking_production_methods = {
+		pm_research_contractor_computations_parallel_computing
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			goods_input_radios_add = 7 #560
+			goods_input_services_add = 18 ##540
+			goods_input_electricity_add = 10 #300 
+			## 1,400
+
+			# output goods
+			goods_output_research_and_engineering_add = 50 #2,000 gain
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.02
+		}
+	}
+}
+
+## Copy for others
+
+### Physics
+### Should be more material and tools oriented
+
+## Lv 3 should give about 1,800 profit to 4,000 people. That is, 450 each for 1,000 people
+pm_research_contractor_physics_maxwell_equations = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/refining3.dds"
+
+	unlocking_technologies = {
+		mod_nuclear_tech_differential_equations
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_paper_add = 4 #120
+			goods_input_tools_add = 6 #240
+			goods_input_steel_add = 4 #200
+			goods_input_services_add = 2 ##60
+
+			# output goods
+			goods_output_research_and_engineering_add = 25 #1000
+		}
+
+
+		level_scaled = {
+			building_employment_laborers_add = 50
+			building_employment_machinists_add = 25
+			building_employment_academics_add = 200
+			building_employment_clerks_add = 175
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.01
+		}
+	}
+
+}
+
+## Lv 4 should give about 2,960 profit to 3,200 people. 740 each for 800 people
+pm_research_contractor_physics_nuclear_physics = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/refining4.dds"
+
+	unlocking_technologies = {
+		sophisticated_nuclear_reactor
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_electricity_add = 5 #150
+			goods_input_nuclear_engines_add = 4 #240
+			goods_input_tools_add = 6 #240
+			goods_input_nuclear_fuel_add = 3 #150
+			goods_input_services_add = 3 ##90
+			## 870
+
+			# output goods
+			goods_output_research_and_engineering_add = 35 #1,400 gain
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.015
+		}
+	}
+}
+
+
+## Lv 5 should give 2960 profit to 2800 people. That is, 740 for each group of 700 people
+pm_research_contractor_physics_computational_physics = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/refining5.dds"
+
+	unlocking_technologies = {
+		high_performance_computing
+	}
+
+	unlocking_production_methods = {
+		pm_research_contractor_computations_parallel_computing
+	}
+
+
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_nuclear_engines_add = 5 #300
+			goods_input_nuclear_fuel_add = 4 #200
+			goods_input_radios_add = 6 #480
+			goods_input_electricity_add = 8 #240 
+			goods_input_services_add = 6 ##180
+
+			# output goods
+			goods_output_research_and_engineering_add = 50 #2,000 gain
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.02
+		}
+	}
+}
+
+### Engineering
+## Lv 1 should give 400 profit to 4,000 people, divided by 4
+
+
+## Lv 3 should give about 1,800 profit to 4,000 people. That is, 450 each for 1,000 people
+pm_research_contractor_engineering_electric_engineering = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/base3.dds"
+
+	unlocking_technologies = {
+		mod_nuclear_tech_differential_equations
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_glass_add = 3 #120
+			goods_input_tools_add = 6 #240
+			goods_input_steel_add = 4 #200
+			goods_input_services_add = 2 ##60
+
+			# output goods
+			goods_output_research_and_engineering_add = 25 #1000
+		}
+
+
+		level_scaled = {
+			building_employment_academics_add = 600
+			building_employment_clerks_add = 400
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.01
+		}
+	}
+}
+
+## Lv 4 should give about 2,960 profit to 3,200 people. 740 each for 800 people
+pm_research_contractor_engineering_nuclear_reactor_engineering = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/base4.dds"
+
+	unlocking_technologies = {
+		miniaturized_nuclear_reactor
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+
+			goods_input_electricity_add = 4 #120
+			goods_input_nuclear_engines_add = 6 ##360
+			goods_input_steel_add = 3 #150
+			goods_input_nuclear_fuel_add = 3 #150
+			goods_input_services_add = 3 ##90
+			## 870
+
+			# output goods
+			goods_output_research_and_engineering_add = 35 #1,400 gain
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 100
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.015
+		}
+	}
+
+}
+
+
+## Lv 5 should give 2960 profit to 2800 people. That is, 740 for each group of 700 people
+pm_research_contractor_engineering_electronic_engineering = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/base5.dds"
+
+	unlocking_technologies = {
+		art_of_silicon
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_programmables_add = 20 #600
+			goods_input_tools_add = 2 #80
+			goods_input_glass_add = 6 #240
+			goods_input_electricity_add = 10 #300 
+			goods_input_services_add = 6 ##180
+			## 1,400
+
+			# output goods
+			goods_output_research_and_engineering_add = 50 #2,000 gain
+		}
+
+
+		level_scaled = {
+			building_employment_machinists_add = 50
+			building_employment_academics_add = 250
+			building_employment_clerks_add = 100
+		}
+	}
+
+	country_modifiers = {
+		workforce_scaled = { 
+			country_weekly_innovation_max_add = 0.0025
+			country_weekly_innovation_add = 0.02
+		}
+	}
+}
+
+### Ownerships
+
+
+pm_research_contractor_ownership_privately_owned = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 100
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_research_contractor_ownership_publicly_traded = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	disallowing_laws = {
+		law_command_economy
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_capitalists_add = 150
+		}
+		unscaled = {
+			building_capitalists_shares_add = 10
+		}
+	}
+}
+
+pm_research_contractor_ownership_government_run = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+
+	unlocking_laws = {
+		law_command_economy
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_government_shares_add = 1
+		}
+	}
+}
+
+pm_research_contractor_ownership_academic_guild = {
+	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
+
+	unlocking_laws = {
+		law_cooperative_ownership
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_academics_add = 200
+		}
+		unscaled = {
+			building_workforce_shares_add = 1
+		}
+	}
+}
+
+

@@ -1,0 +1,87 @@
+﻿### In this mod, the vanilla radios were re-purposed as "Electronic Processors"
+### Therefore, it won't be produced until late game.
+### Thus, several vanilla PMs will be changed
+
+## Electrics Factory
+
+
+pm_radios = {
+	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+	unlocking_technologies = {
+		radio
+	}	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_electricity_add = 40
+			goods_output_telephones_add = 40
+		}
+		
+		level_scaled = {
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+
+pm_advanced_telephones = {
+	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+	unlocking_technologies = {
+		commercial_level_nuclear_additives
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			# radio cost $80
+			# telephone cost $70
+
+			#vanilla: profit $250
+			# profit $700 for base
+
+			# input goods
+			goods_input_electricity_add = 40	
+			goods_input_nuclear_engines_add = 10
+			goods_input_irradiated_material_add = 20
+
+
+			goods_output_telephones_add = 80
+			# gain: $6,300
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1000
+			building_employment_machinists_add = 600
+			building_employment_engineers_add = 400
+		}
+	}
+}
+
+pm_telephone_with_integrated_processor = {
+	texture = "gfx/interface/icons/production_method_icons/radios.dds"
+	unlocking_technologies = {
+		commercial_level_nuclear_additives
+	}	
+
+	building_modifiers = {
+		workforce_scaled = {
+			# radio cost $80
+			# telephone cost $70
+
+			# input goods
+			goods_input_electricity_add = 40	
+			goods_input_nuclear_engines_add = 10
+			goods_input_irradiated_material_add = 20
+			goods_input_programmables_add = 30
+
+			goods_output_telephones_add = 80
+			# gain: $6,300
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+## Military Re-work

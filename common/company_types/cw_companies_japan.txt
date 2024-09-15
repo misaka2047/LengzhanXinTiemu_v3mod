@@ -1,0 +1,445 @@
+﻿# 味之素公司
+ajinomoto_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ajinomoto.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_food_industry #食品厂
+		building_sugar_factory #制糖厂
+		building_sugar_plantation #糖料作物种植园
+		building_pharmaceutical_factory #医疗用品厂
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_japan
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_japan
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_food_industry #食品厂
+					is_building_type = building_sugar_factory #制糖厂
+					is_building_type = building_sugar_plantation #糖料作物种植园
+					is_building_type = building_pharmaceutical_factory #医疗用品厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_radicals_from_sol_change_mult = -0.1 #生活水平降低所带来的的激进派
+		unit_morale_recovery_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 索尼
+company_sony = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/sony.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_electrics_industry #电子产品厂
+		building_home_appliance_factory #家电工厂
+		building_electronic_parts_factory #电子零件工厂
+		building_computer_factory #计算机工厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_KANTO #关东
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_KANTO #关东
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_electronic_parts_factory #电子零件工厂
+					is_building_type = building_computer_factory #计算机工厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_weekly_innovation_max_add = 25 #科技進度上限/最大创新力投入
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#圆谷株式会社
+circus = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/circus.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes 
+	
+	building_types = {
+		building_arts_academy #艺术学院
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_KANTO #关东
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_KANTO #关东
+			is_incorporated = yes
+			any_scope_building = {
+					is_building_type = building_arts_academy #艺术学院
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_radicals_from_sol_change_mult = -0.15
+		state_standard_of_living_add = 0.5
+	}
+}
+
+#武田
+takeda = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/takeda.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes 
+	
+	building_types = {
+		building_pharmaceutical_factory #医疗用品厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_KANSAI #关西
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_KANSAI #关西
+			is_incorporated = yes
+			any_scope_building = {
+					is_building_type = building_pharmaceutical_factory #医疗用品厂
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_birth_rate_mult = 0.02
+		state_standard_of_living_add = 0.5
+	}
+}
+
+# 南满洲铁道株式会社
+company_mantetsu = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/japanese_mantetsu.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_railway
+		building_coal_mine
+		building_glassworks
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_china
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_SHENGJING
+			}
+		}
+	}		
+
+	possible = { 
+		country_or_subject_owns_entire_state_region = STATE_SHENGJING
+		any_scope_state = {
+			OR = {
+				region = sr:region_manchuria
+				region = sr:region_north_china
+			}
+			count >= 4
+		}
+	}
+	
+	prosperity_modifier = {
+		building_railway_throughput_add = 0.05
+		state_infrastructure_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 三菱
+company_mitsubishi = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/japanese_mitsubishi.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_aircraft_factory #飞机制造厂
+		building_war_machine_industry #战争机器厂
+		building_artillery_foundries #火炮厂
+		building_military_shipyards #军用造船厂
+		building_coal_mine #煤矿
+		building_motor_industry #动力机械厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_CHUGOKU
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_CHUGOKU
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_aircraft_factory #飞机制造厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_artillery_foundries #火炮厂
+					is_building_type = building_shipyards #军用造船厂
+					is_building_type = building_military_shipyards #煤矿
+					is_building_type = building_coal_mine #动力机械厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_war_machine_industry_throughput_add = 0.1
+		interest_group_ig_industrialists_approval_add = 2
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 川崎重工
+company_kawasaki = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/kawasaki.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_aircraft_factory #飞机制造厂
+		building_military_shipyards #军用造船厂
+		building_rocket_center #火箭中心
+		building_shipyards #造船厂
+		building_war_machine_industry #战争机器厂
+		building_arms_industry #武器厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_KANTO
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_aircraft_factory #飞机制造厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_rocket_center #火箭中心
+					is_building_type = building_shipyards #军用造船厂
+					is_building_type = building_shipyards #造船厂
+					is_building_type = building_arms_industry #武器厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_army_offense_mult = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 东芝株式会社
+company_toshiba = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/toshiba.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_coal_mine #动力机械厂
+		building_large_equipment_factory #大型设备工厂
+		building_clean_energy_power_station #清洁能源发电站
+		building_electrics_industry #电子产品厂
+		building_home_appliance_factory #家电工厂
+		building_electronic_parts_factory #电子零件工厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_KANTO
+			}
+		}
+	}
+
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_KANTO
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_coal_mine #动力机械厂
+					is_building_type = building_large_equipment_factory #大型设备工厂
+					is_building_type = building_clean_energy_power_station #清洁能源发电站
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_electronic_parts_factory #电子零件工厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#日产（汽车）
+nissan = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/nissan.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry #战争机器厂
+		building_artillery_foundries #火炮厂
+		building_large_equipment_factory #大型设备工厂
+		building_aircraft_factory #飞机制造厂
+	}
+
+	potential = {
+			has_interest_marker_in_region = region_japan
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_japan
+			}
+		}
+	}			
+	
+	possible = {
+		any_scope_state = {
+				region = sr:region_japan
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_artillery_foundries #火炮厂
+					is_building_type = building_large_equipment_factory #大型设备工厂
+					is_building_type = building_aircraft_factory #飞机制造厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_army_offense_mult = 0.1
+	}
+}

@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:ARB = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+				basic_diplomat
+				cautious
+			}
+		}
+		create_character = {
+			historical = yes
+			heir = yes
+			interest_group = ig_landowners
+			ideology = ideology_traditionalist
+			traits = {
+			}
+		}
+	}
+}

@@ -1,0 +1,19 @@
+﻿CHARACTERS = {
+	c:NET = {
+		create_character = {
+			#威廉明娜·海伦娜·保利娜·玛丽亚
+			first_name = "Wilhelmina·Helena·Paulina"
+			last_name = "Maria"
+			ruler = yes
+			female = yes #女性
+			ig_leader = yes
+			birth_date = 1880.8.31
+			dna = dna_king_william_01
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_royalist #保皇主义者
+			traits = {
+				brave #勇敢
+			}
+		}	
+	}
+}

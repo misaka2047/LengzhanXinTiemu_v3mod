@@ -1,0 +1,1266 @@
+﻿###### Advanced methods for food industry
+
+#Reference: Baking Powder method costs:
+# 75*$20 (grain) + 40*$30 = $2,700
+# gain: 100*$30 = $3,000
+
+pm_airlift_fresh_groceries = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/airlift_fresh_groceries.jpg"
+	
+	unlocking_technologies = {
+		# baking_powder
+		advanced_nuclear_ramjet
+	}
+
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_grain_add = 80 #$1,600
+			goods_input_sugar_add = 15 #$450			
+			goods_input_nuclear_jet_add = 6 ## $420
+			goods_input_nuclear_fuel_add = 6  ## $300
+			# cost $2,770
+
+			# output goods
+			goods_output_groceries_add = 160
+			# Earn: $4,800
+			# profit: $2,030
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500 ## To be subtracted from Automatic Dough Roller
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+## Projected Earning $850
+# max 1,500 laborer for food industry
+
+
+pm_rum = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/boston_molassacre_rum.dds"
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives			
+	}
+
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 10 #300
+			goods_input_irradiated_material_add = 15 #750
+			goods_input_grain_add = 10 #200
+			#cost: $1,250
+			
+			# output goods
+			goods_output_liquor_add = 140
+			goods_output_groceries_add = -80
+			#gain: $1,800
+		}
+
+
+		level_scaled = {
+			# profit = 650 (19.3)
+			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
+			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
+			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+
+pm_wine = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/chicago_wine.dds"
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives		
+	}
+
+		
+	unlocking_production_methods = {
+		pm_airlift_fresh_groceries
+	}				
+	
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 15 #450
+			goods_input_irradiated_material_add = 20 #1,000
+			goods_input_grain_add = 20 #400
+			#cost: $1,850
+			
+			# output goods
+			goods_output_wine_add = 102
+			goods_output_groceries_add = -80
+			#gain: $2,700
+		}
+
+
+		level_scaled = {
+			# profit = 650 (19.3)
+			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
+			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
+			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_nuka_cola = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/nuka_cola.png"
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives			
+	}
+
+	unlocking_production_methods = {
+		pm_airlift_fresh_groceries
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 35	#1,050
+			goods_input_irradiated_material_add = 20 #1,000
+			goods_input_nuclear_fuel_add = 8 	#400
+			goods_input_grain_add = 40 #800
+			goods_output_groceries_add = -75
+			#cost: $5,500
+			
+			
+			# output goods
+			# Wine cost $50
+			# Liquor cost $30
+			goods_output_liquor_add = 50
+			goods_output_wine_add = 100
+			#gain: $6,500
+			# profit: $1,000
+		}
+
+
+		level_scaled = {
+			# profit = 650 (19.3)
+			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
+			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
+			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_instant_fission_liquor = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/moonshine_cake.jpg"
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives		
+	}
+
+	unlocking_production_methods = {
+		pm_airlift_fresh_groceries
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 10
+			goods_input_irradiated_material_add = 20
+			goods_input_grain_add = 45
+			goods_input_nuclear_fuel_add = 6
+			goods_output_groceries_add = -100
+
+			#cost: $5,500
+			
+			
+			# output goods
+			# Wine cost $50
+			# Liquor cost $30
+			goods_output_liquor_add = 125
+			goods_output_wine_add = 55
+			#gain: $6,500
+			# profit: $1,000
+		}
+
+		level_scaled = {
+			# profit = 650 (19.3)
+			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
+			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
+			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_instant_fission_food = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/moonshine_cake.jpg"
+
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives		
+	}
+
+	unlocking_production_methods = {
+		pm_airlift_fresh_groceries
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sugar_add = 10
+			goods_input_irradiated_material_add = 20
+			goods_input_grain_add = 50
+			goods_input_nuclear_fuel_add = 5
+
+			#cost: $2,550
+			
+			
+			# output goods
+			# Wine cost $50
+			# Liquor cost $30
+	
+			goods_output_groceries_add = 70
+			goods_output_liquor_add = 15
+			goods_output_wine_add = 20
+
+			#gain: $3,530
+			# profit: $980
+		}
+
+		level_scaled = {
+			# profit = 650 (19.3)
+			building_employment_shopkeepers_add = 200	# x2.0 = 400 laborer wages
+			building_employment_machinists_add = 500	# x1.5 = 750 laborer wages
+			building_employment_engineers_add = 200		# x3.0 = 600 laborer wages
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+############Textile Mills
+pm_shining_silk = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/shining_silk.dds"
+
+
+	unlocking_technologies = {
+		eco_friendly_nuclear_additives
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_rubber_add = 5
+			goods_input_silk_add = 20
+			goods_input_irradiated_material_add = 10
+			goods_input_research_and_engineering_add = 5
+			goods_input_fabric_add = -20
+			#cost: 10*$40 (rubber) + 20*40 (silk) +18*$50 (irradiated material) -20*20 = $1,300
+			
+			# output goods
+			goods_output_clothes_add = -50
+			goods_output_luxury_clothes_add = 60
+			#gain: 50*$60 (luxury_clothes) - 30*$30 (clothes) = $2,100
+		}
+		
+		level_scaled = {
+			building_employment_machinists_add = -400
+			building_employment_shopkeepers_add = 200
+			building_employment_engineers_add = 200
+		}						
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+################ Furniture
+pm_depleted_uranium_lathe = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/depleted_uranium_lathe.jpg"
+	
+	unlocking_technologies = {
+		nuclear_mechanized_economy
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 30
+			goods_input_fabric_add = 20
+			goods_input_tools_add = 15
+			goods_input_electricity_add = 20	
+			goods_input_irradiated_material_add = 10
+
+			#cost: $2,700
+			
+			# output goods
+			goods_output_furniture_add = 150
+			# gain: $4,500 # Profit 1800
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}
+
+
+pm_cobalt_steel_furniture = {	
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/cobalt_steel_furniture.jpg"
+		
+	unlocking_technologies = {
+		# mechanized_workshops
+		commercial_level_nuclear_additives
+	}
+
+	unlocking_production_methods = {
+		pm_mechanized_workshops
+		pm_depleted_uranium_lathe
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_hardwood_add = 20 #800
+			goods_input_nuclear_engines_add = 2 #120
+			goods_input_steel_add = 15 #750
+			goods_input_tools_add = 20
+			goods_input_irradiated_material_add = 10
+			goods_input_wood_add = -20
+			goods_output_furniture_add = -60
+			
+			#cost: $3,470		
+
+			# output goods
+
+			goods_output_luxury_furniture_add = 90
+			# gain: $4,500
+			## Profit: 930
+		}
+		
+		level_scaled = {
+			building_employment_shopkeepers_add = 1000
+		}						
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}
+
+################# Glassworks
+# level 4 of glasswork
+# Cost: 3,320
+# Gain: 150*40(glass) = 6,000
+# Profit: 2,600
+pm_radiant_plastics = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/radiant_plastics.jpg"
+
+	unlocking_technologies = {
+		microfission_cells
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = 30
+			goods_input_irradiated_material_add = 12
+			goods_input_research_and_engineering_add = 4
+			goods_input_nuclear_engines_add = 5
+			goods_input_lead_add = 30
+			# Total 3,540
+			
+			# output goods
+			goods_output_plastic_add = 140
+			# Total 5,600
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 35
+		}
+	}
+	
+}
+
+
+pm_glowing_blue_porcelain = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/glowing_blue_porcelain.jpg"
+	
+	unlocking_technologies = {
+		microfission_cells
+	}
+	
+	unlocking_production_methods = {
+		pm_houseware_plastics
+		pm_radiant_plastics
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_dye_add = 20	
+			goods_input_irradiated_material_add = 12
+			goods_input_research_and_engineering_add = 4
+			goods_input_electricity_add = 12
+			#cost: $1,920	
+
+			# output goods
+			goods_output_glass_add = -55
+			goods_output_porcelain_add = 70
+			#profit: $2,700
+		}
+		
+		level_scaled = {
+			building_employment_machinists_add = 400
+			building_employment_engineers_add = 200
+			building_employment_shopkeepers_add = 400
+		}					
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+														
+}
+
+pm_extra_glass_additives = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/extra_glass_additives.jpg"
+	
+	unlocking_technologies = {
+		microfission_cells
+	}
+	
+	unlocking_production_methods = {
+		pm_houseware_plastics
+		pm_radiant_plastics
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_irradiated_material_add = 12
+			goods_input_lead_add = 6
+			goods_input_research_and_engineering_add = 5
+			goods_input_electricity_add = 10
+			#cost: $1,400
+
+			# output goods
+			goods_output_glass_add = 54 ## Additional Stuff
+		}
+		
+		level_scaled = {
+			building_employment_machinists_add = 400
+			building_employment_engineers_add = 200
+			building_employment_shopkeepers_add = 400
+		}					
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+														
+}
+
+
+
+#### Cheaper Automatic Bottling Works
+
+pm_programmable_bottle_blowers = {
+	texture = "gfx/interface/icons/production_method_icons/automated_bottle_blowers.dds"
+
+	
+	unlocking_technologies = {
+		industrial_system_engineering
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_radios_add = 2 #160
+			goods_input_programmables_add = 4 #120
+			goods_input_tools_add = 5 ## 200
+			goods_input_oil_add = 10 #400
+
+			goods_output_glass_add = 25 ##1,000
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -2500
+			building_employment_machinists_add = -300
+			building_employment_engineers_add = -300
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+}
+
+
+################### Tooling Workshop
+# Steel tool: cost 2,750. Gain 4,200. Profit $1,450
+
+pm_duranium_steel_tools = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/duranium_steel_tools.jpg"
+	unlocking_technologies = {
+		# mechanical_tools
+		duranium_steel
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 10 #200
+			goods_input_steel_add = 35 #1,750
+			goods_input_irradiated_material_add = 12 #600
+			goods_input_research_and_engineering_add = 5 #80
+			goods_input_electricity_add = 15 #450
+			# cost: $3,200
+			
+			# output goods
+			goods_output_tools_add = 130
+			# get $5,200
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 500
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_automated_machines = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_machines.jpg"
+	
+	unlocking_technologies = {
+		electronic_processors
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 10 #200
+			goods_input_steel_add = 32 #1,600
+			goods_input_irradiated_material_add = 12 #600
+			goods_input_research_and_engineering_add = 10 #400
+			goods_input_electricity_add = 10 #300
+			goods_input_programmables_add = 50 #1500
+			# cost: $4,600
+			
+			# output goods
+			goods_output_tools_add = 160
+			# get $6400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 750
+			building_employment_clerks_add = 50
+			building_employment_engineers_add = 400
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+pm_electronic_controller_tools = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_machines.jpg"
+	
+	unlocking_technologies = {
+		electronic_processors
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 10 #200
+			goods_input_steel_add = 32 #1,600
+			goods_input_irradiated_material_add = 12 #600
+			goods_input_research_and_engineering_add = 10 #400
+			goods_input_electricity_add = 10 #300
+			goods_input_radios_add = 18 #1440
+			# cost: $4,500
+
+			
+			# output goods
+			goods_output_tools_add = 160
+			# get $6400
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 750
+			building_employment_clerks_add = 50
+			building_employment_engineers_add = 400
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+### Living Furtilizer
+
+pm_living_fertilizer = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/living_fertilizer.jpg"
+
+	unlocking_technologies = {
+		# nitrogen_fixation
+		radiation_assisted_bio_engineering
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_sulfur_add = 45  ## 2,250
+			goods_input_nuclear_fuel_add = 4  ## 200
+			goods_input_irradiated_material_add = 5  ## 250
+			goods_input_coal_add = 15	## 450
+			goods_input_iron_add = 10    ## 400
+			goods_input_electricity_add = 10 #300
+			goods_input_research_and_engineering_add = 5 #200
+			# cost: $4,050
+
+			# output goods
+			goods_output_fertilizer_add = 220
+		
+			# gain: $6,600
+		}
+
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 1200
+		}
+
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 45
+		}
+	}
+}
+
+pm_automated_process_for_fertilizer = {
+	texture = "gfx/interface/icons/goods_icons/fertilizer.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+
+	unlocking_technologies = {
+		extreme_condition_processors
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+
+			# input goods
+			goods_input_sulfur_add = 45  ## 2,250
+			goods_input_nuclear_fuel_add = 4  ## 200
+			goods_input_irradiated_material_add = 5  ## 250
+			goods_input_coal_add = 15	## 450
+			goods_input_iron_add = 10    ## 400
+			goods_input_electricity_add = 10 #300
+			goods_input_research_and_engineering_add = 6 #240
+			goods_input_programmables_add = 5 #150
+			goods_input_radios_add = 7 #560
+			## 4,800
+
+
+			# output goods
+			goods_output_fertilizer_add = 250
+		
+			# gain: $7,500
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = 900
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = 1000
+		}
+	}
+
+}
+
+pm_glowing_dyes = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/glowing_dyes.jpg"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		commercial_level_nuclear_additives
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_oil_add = 25
+			goods_input_research_and_engineering_add = 10 #400
+			goods_input_fertilizer_add = 40
+			goods_input_irradiated_material_add = 10
+			goods_input_electricity_add = 10 #300
+			# cost: $3800
+
+			# output goods
+			goods_output_dye_add = 160
+			# gain: $6,400
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1200
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 20
+		}
+	}
+}
+
+
+pm_Halifax_worm_silk = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/Halifax_worm_silk.dds"
+
+	unlocking_technologies = {
+		# art_silk
+		radiation_assisted_bio_engineering
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_wood_add = 20
+			goods_input_irradiated_material_add = 10
+			goods_input_research_and_engineering_add = 5 #200
+			goods_input_nuclear_engines_add = 2
+			goods_output_dye_add = -20	
+			# cost: $2,2020
+
+
+			# output goods
+			goods_output_silk_add = 60
+			# gain: $2,400
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = -1000
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 400
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_New_England_duranium_steel = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/New_England_duranium_steel.dds"
+
+	
+	unlocking_technologies = {
+		duranium_steel
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_iron_add = 100
+			goods_input_coal_add = 30
+			goods_input_research_and_engineering_add = 5 #200 
+			goods_input_electricity_add = 30	
+			goods_input_irradiated_material_add = 20	
+			# cost: $7,000
+			
+			# output goods
+			goods_output_steel_add = 190
+			# gain: $9,500
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1000
+		}
+
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 45
+		}
+	}
+}
+
+pm_automated_duranium_foundry = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_duranium_foundry.dds"
+	
+	
+	unlocking_technologies = {
+		industrial_system_engineering
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+
+			# input goods
+			goods_input_iron_add = 100
+			goods_input_coal_add = 30
+			goods_input_research_and_engineering_add = 10 #400 
+			goods_input_electricity_add = 40	
+			goods_input_irradiated_material_add = 20 
+			goods_input_radios_add = 9 #720	
+			# cost: $8,220	
+			
+			# output goods
+			goods_output_steel_add = 220
+			# gain: $11,000
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1000
+			building_employment_engineers_add = 1000
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 60
+		}
+	}
+}
+
+
+### Advanced engine production
+pm_instant_holographic_forging = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Tech_Icons/ultrahigh_temperature_forging.jpg"
+
+	
+	unlocking_technologies = {
+		ultrahigh_temperature_forging
+		## Late Level 4/Early Level 5
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_engines_add = 5 #300
+			goods_input_research_and_engineering_add = 5 #200 
+			goods_input_steel_add = 55 #2,750
+			goods_input_irradiated_material_add = 4 #200
+			goods_input_nuclear_fuel_add = 6 #300
+			# cost: $3,750
+			## Remember 550 automation
+			
+			# output goods
+			goods_output_engines_add = 120
+			# gain: $7,200
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 1500
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+pm_microchips_engine_addon = {
+	texture = "gfx/interface/icons/goods_icons/programmables.dds"
+
+	unlocking_technologies = {
+		extreme_condition_processors		
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_radios_add =10  #800
+			goods_input_programmables_add = 20 #600
+			goods_input_research_and_engineering_add = 10 #400				
+
+			goods_output_engines_add = 30 #1,800		
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = -400
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = -300
+		}
+	}
+}
+
+## Shipyards
+pm_atomic_powered_vessel = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_mega_shipyard.dds"
+
+	
+	unlocking_technologies = {
+		atomic_powered_vessels
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 12
+			goods_input_nuclear_engines_add = 12
+			goods_input_irradiated_material_add = 10
+			# $3,580
+			
+			# output goods
+			goods_output_steamers_add = 100
+			# gain: $7,000
+		}
+
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1500
+		}
+	}
+
+		
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+pm_automated_shipyard = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_vessel.jpg"
+
+	unlocking_technologies = {
+		industrial_system_engineering
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_programmables_add = 3 #90
+			goods_input_radios_add = 6 #480
+
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 20
+			goods_input_nuclear_engines_add = 12
+			goods_input_irradiated_material_add = 10
+			# $4,390
+
+			
+			# output goods
+			goods_output_steamers_add = 110
+			# gain: $7,700
+		}
+
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1600
+			building_employment_engineers_add = 1000
+		}
+	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+	
+}
+
+## military shipyards
+pm_atomic_powered_vessel_military = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_mega_shipyard.dds"
+	
+	unlocking_technologies = {
+		atomic_powered_vessels
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 12
+			goods_input_nuclear_engines_add = 12
+			goods_input_irradiated_material_add = 10
+			# $3,580
+			
+			# output goods
+			goods_output_ironclads_add = 100
+			# gain: $7,000
+		}
+
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 1000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 1500
+		}
+	}
+
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+pm_automated_shipyard_military = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/atomic_powered_vessel.jpg"
+
+	
+	unlocking_technologies = {
+		industrial_system_engineering
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_programmables_add = 3 #90
+			goods_input_radios_add = 6 #480
+
+			# input goods
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 20
+			goods_input_nuclear_engines_add = 12
+			goods_input_irradiated_material_add = 10
+			# $4,390
+
+			
+			# output goods
+			goods_output_ironclads_add = 110
+			# gain: $7,700
+		}
+
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 600
+			building_employment_machinists_add = 1600
+			building_employment_engineers_add = 1000
+		}
+	}
+
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+
+
+#
+pm_depleted_uranium_rifle = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/depleted_uranium_rifle.jpg"
+	
+	unlocking_technologies = {
+		dirty_bombs
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_steel_add = 30
+			goods_input_hardwood_add = 10
+			goods_input_tools_add = 10
+			goods_input_oil_add = 10	
+			goods_input_irradiated_material_add = 6
+			# cost: $3,000
+			
+			# output goods
+			goods_output_small_arms_add = 100
+			# gain: $5,760
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 25
+		}
+	}
+}
+
+# reference:
+# breech loader cost 28*50 + 25*60 = $2,900
+# gain: 40*70 = $2,800
+pm_nuclear_powered_auto_ordanance = {
+	texture = "gfx/interface/icons/production_method_icons/artillery_production.dds"
+	
+	unlocking_technologies = {
+		nuclear_artillery
+	}
+
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_nuclear_engines_add = 10
+			goods_input_engines_add = 5
+			goods_input_steel_add = 20
+			goods_input_automobiles_add = 5
+			goods_input_nuclear_fuel_add = 10
+			goods_input_oil_add = 5	
+			goods_input_irradiated_material_add = 4
+			# cost: 3,300
+
+			# output goods
+			goods_output_artillery_add = 90
+			# gain: $6,020
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1200
+			building_employment_engineers_add = 750
+		}
+	}
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+}
+
+pm_dirty_bomb_shells = {
+	texture = "gfx/interface/icons/production_method_icons/explosive_shells.dds"
+	
+	unlocking_technologies = {
+		dirty_bombs
+	}
+
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_explosives_add = 50
+			goods_input_lead_add = 10			
+			goods_input_irradiated_material_add = 12
+			goods_input_nuclear_fuel_add = 4
+			# cost: $3,200
+			
+			# output goods
+			goods_output_ammunition_add = 120
+			# gain: $6,000
+		}
+
+		level_scaled = {
+			# employment
+			building_employment_laborers_add = 3000
+			building_employment_machinists_add = 1250
+			building_employment_engineers_add = 750
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 40
+		}
+	}
+}

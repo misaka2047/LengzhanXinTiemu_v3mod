@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:BEL = {
+		create_character = {
+			#查理亲王
+			first_name = "Charles"
+			last_name = "Qinwang"
+			culture = cu:south_german
+			religion = rel:protestant
+			ruler = yes
+			birth_date = 1890.12.16
+			dna = dna_king_leopold_01
+			interest_group = ig_intelligentsia
+			ideology = ideology_moderate
+			traits = {
+			}
+		}	
+	}
+}

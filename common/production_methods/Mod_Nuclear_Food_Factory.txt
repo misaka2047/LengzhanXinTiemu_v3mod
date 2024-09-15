@@ -1,0 +1,832 @@
+﻿
+# We shall decide based on base price of these stuff
+
+#Coal cost $30
+#Electricity cost $30
+#Tools cost $40
+#sulfur cost $50
+#radioactive_ore cost $40 (Same as iron ore
+#irradiated_material cost $50
+#nuclear_fuel $50
+#electricity $30
+
+
+
+# Do vertical farms
+# They are designed to be less efficient than traditional farms, but able to produce hell a lot.
+# Profit: $1,600
+# Employment: 3,600
+
+pm_vertical_farm_all_wheat = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 25	#750					   
+			goods_input_steel_add = 12	#600				   
+			goods_input_glass_add = 25	#1000				   
+			goods_input_irradiated_material_add = 6 #300
+			goods_input_transportation_add = 20 #300
+   
+			goods_input_electricity_add = 8	#240
+			#cost: $3,690
+
+			
+			# output goods												   
+			goods_output_grain_add = 300
+			# This gives some $6,000		
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_vertical_farm_three_quarter_wheat = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 25	#750					   
+			goods_input_steel_add = 12	#600				   
+			goods_input_glass_add = 25	#1000				   
+			goods_input_irradiated_material_add = 6 #300
+			goods_input_transportation_add = 20 #300
+   
+			goods_input_electricity_add = 8	#240
+			#cost: $3,690
+
+			# output goods												   
+			goods_output_grain_add = 225
+			goods_output_meat_add = 50
+			# This gives some $6,000		
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+
+}
+
+pm_vertical_farm_half_wheat = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/vertical_farm_base.jpg"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 25	#750					   
+			goods_input_steel_add = 12	#600				   
+			goods_input_glass_add = 25	#1000				   
+			goods_input_irradiated_material_add = 6 #300
+			goods_input_transportation_add = 20 #300
+   
+			goods_input_electricity_add = 8	#240
+			#cost: $3,690
+
+			# output goods												   
+			goods_output_grain_add = 150
+			goods_output_meat_add = 100
+			# This gives some $6,000		
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+#### Synthetic Food Production
+pm_synthetic_organic_rubber = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/synthetic_organic_rubber.jpg"
+
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods							
+			goods_input_meat_add = 10 #300
+			goods_input_oil_add = 52 #2,080			   
+			goods_input_electricity_add = 20	#600	
+			goods_input_research_and_engineering_add = 5 #200	   
+			goods_input_irradiated_material_add = 10 #500
+			#cost: $3,600
+
+			# output goods												   
+			goods_output_rubber_add = 150
+			# This gives some $6,000	
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+
+}
+
+pm_synthetic_food_lab_grown_meat = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/synthetic_food_lab_grown_meat.jpg"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods											   
+			goods_input_grain_add = 104 #2,080	
+			goods_input_oil_add = 10 #400			   
+			goods_input_electricity_add = 20	#600	
+			goods_input_research_and_engineering_add = 5 #200	   
+			goods_input_irradiated_material_add = 2 #100								   
+			goods_input_fertilizer_add = 10	#300
+			#cost: $3,600
+
+			# output goods												   
+			goods_output_meat_add = 200
+			# This gives some $6,000	
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+
+}
+
+pm_synthetic_food_corn_syrup = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/synthetic_food_corn_syrup.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods											   
+			goods_input_grain_add = 123 #2,460	
+			goods_input_oil_add = 5 #200			   
+			goods_input_electricity_add = 20	#600		   
+			goods_input_irradiated_material_add = 2 #100								   
+			goods_input_fertilizer_add = 10	#300
+			#cost: $3,600
+
+			# output goods												   
+			goods_output_sugar_add = 200
+			# This gives some $6,000	
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+
+}
+
+pm_synthetic_food_industrial_alcohol = {
+	texture = "gfx/interface/icons/goods_icons/liquor.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods											   
+			goods_input_grain_add = 124 #2,480	
+			goods_input_sugar_add = 20 #600			   
+			goods_input_electricity_add = 10	#300		   
+			goods_input_irradiated_material_add = 6 #300
+			#cost: $3,600
+
+			# output goods												   
+			goods_output_liquor_add = 200
+			# This gives some $6,000	
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+
+### Mega-Greenhouse
+#### Synthetic Food Production
+pm_mega_greenhouse_weed_greenhouse = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mega_greenhouse_weed_greenhouse.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_opium_add = 90
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_mega_greenhouse_coffee = {
+	texture = "gfx/interface/icons/goods_icons/coffee.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_coffee_add = 90
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_mega_greenhouse_tea = {
+	texture = "gfx/interface/icons/goods_icons/tea.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_tea_add = 90
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_mega_greenhouse_berries = {
+	texture = "gfx/interface/icons/goods_icons/fruit.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_fruit_add = 150
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_mega_greenhouse_orchard = {
+	texture = "gfx/interface/icons/goods_icons/wine.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_wine_add = 90
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+pm_mega_greenhouse_tobacco = {
+	texture = "gfx/interface/icons/goods_icons/tobacco.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods												   
+			goods_input_fertilizer_add = 20	#600	
+			goods_input_electricity_add = 6 #180			   
+			goods_input_steel_add = 2	#100				   
+			goods_input_glass_add = 10	#400		
+			goods_input_transportation_add = 20 #600
+			#cost: $2,730
+			# 810 secondary
+
+			# output goods												   
+			goods_output_tobacco_add = 90
+			# This gives some $4500			
+		}
+
+		level_scaled = {
+			# earnings
+			building_employment_laborers_add = 400		
+			building_employment_farmers_add = 1200
+			building_employment_machinists_add = 500
+			building_employment_engineers_add = 200
+		}
+	}
+}
+
+
+
+
+
+#### Energy for these factories
+### About 800
+
+pm_reinforced_green_house = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/reinforced_green_house.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+
+		# This is expected to counter the over-powered production
+		# with cost of about $810
+
+		workforce_scaled = {
+					   
+			goods_input_steel_add = 5 # $250			   
+			goods_input_glass_add = 14 # $560
+			
+		}
+	}
+}
+
+pm_man_made_sun = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/man_made_sun.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	building_modifiers = {
+
+		# This is expected to counter the over-powered production
+		# with cost of about $810
+		workforce_scaled = {
+					   
+			goods_input_nuclear_engines_add = 2 # $120		   
+			goods_input_nuclear_fuel_add = 14 # $700
+			
+		}
+	}
+}
+
+pm_agriculture_use_light_bulb = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/agriculture_use_light_bulb.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	# Just use hell load of electricity to replace sunlight.
+
+	building_modifiers = {
+		# This is expected to counter the over-powered production
+		# with cost of about $810
+		workforce_scaled = {
+			goods_input_electricity_add = 27 #$810 cost
+		}
+	}
+}
+
+
+
+############## Labor Intensive Alternatives
+
+pm_skilled_labor_force = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/labor_intensive_industry_labor_force_composition_placeholder.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+}
+
+pm_programmable_irrigation = {
+	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		extreme_condition_processors
+	}
+
+	## Decrease up to 400 mechanist and 1,000 farmers
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## programmables should be $30
+		
+			goods_input_programmables_add = 8 ##240
+
+			# Cost $750
+
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = -400
+			building_employment_engineers_add = -100
+		}
+
+	}
+}
+
+pm_algorithmic_growth_planning = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/algorithmic_growth_planning.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		extreme_condition_processors
+	}
+
+	## Decrease up to 400 mechanist and 1,000 farmers
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## programmables should be $30
+		
+			goods_input_radios_add = 3 ##240
+
+		}
+
+		level_scaled = {
+			building_employment_machinists_add = -400
+			building_employment_engineers_add = -100
+		}
+	}
+}
+
+#### Water Alternatives
+
+pm_default_water_source = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_water_source_base.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+}
+
+pm_transported_water = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_water_source_transportation_1.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+
+		# This is expected to counter the over-powered production
+		# with cost of about $1,100
+		workforce_scaled = {
+					   
+			goods_input_fertilizer_add = -10	#900		
+			goods_input_transportation_add = 10 #600
+			
+		}
+	}
+}
+
+pm_interstate_water_pipe = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_water_source_transportation_2.jpg"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+
+		# This is expected to counter the over-powered production
+		# with cost of about $1,100
+		workforce_scaled = {
+					   
+			goods_input_fertilizer_add = -16	#900		
+			goods_input_transportation_add = 16 #600
+			
+		}
+	}
+}
+
+pm_standardized_fertilizer_distribution = {
+	texture = "gfx/interface/icons/goods_icons/fertilizer.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	building_modifiers = {
+
+		# This is expected to counter the over-powered production
+		# with cost of about $1,100
+		workforce_scaled = {
+					   
+			goods_input_fertilizer_add = 10	#900		
+			goods_input_transportation_add = -10 #600
+			
+		}
+	}
+}
+
+######## Alternatives: wetwire implants
+
+pm_no_wetwire_usage = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_no_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+}
+
+# Let basic augmentation give about 20% more production, that is, about $1,200
+pm_basic_augmentation_assorted_drinks = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_basic_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		cybernetics_circuitry
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tea_add = 12 #total $1,200
+			goods_output_coffee_add = 12
+
+			goods_input_programmables_add = 25
+			goods_input_electricity_add = 15 #total $1200
+		}
+	}
+}
+
+pm_basic_augmentation_food = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_basic_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		cybernetics_circuitry
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = 45 #total $900
+			goods_output_meat_add = 10 #total $300
+
+			goods_input_programmables_add = 25
+			goods_input_electricity_add = 15 #total $1200
+		}
+	}
+}
+
+pm_basic_augmentation_weed = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_basic_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		cybernetics_circuitry
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_opium_add = 24
+
+			goods_input_programmables_add = 25
+			goods_input_electricity_add = 15 #total $1200
+		}
+	}
+}
+
+# Let extensive augmentation give about 25% more production, that is, about $1,500
+pm_extensive_augmentation_assorted_drinks = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_extensive_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_tea_add = 15 #total $1,500
+			goods_output_coffee_add = 15
+
+			goods_input_programmables_add = 24
+			goods_input_electricity_add = 5 #total $1050
+		}
+	}
+}
+
+pm_extensive_augmentation_food = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_extensive_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = 60 #total $1200
+			goods_output_meat_add = 10 #total $300
+
+			goods_input_programmables_add = 24
+			goods_input_electricity_add = 5 #total $1050
+		}
+	}
+}
+
+pm_extensive_augmentation_weed = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/food_factory_extensive_augmentation.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 0
+		}
+	}
+
+	unlocking_technologies = {
+		human_ego_programming
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_opium_add = 30
+
+			goods_input_programmables_add = 24
+			goods_input_electricity_add = 5 #total $1050
+		}
+	}
+}
+
+
+

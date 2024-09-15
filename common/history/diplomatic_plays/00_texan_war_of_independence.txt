@@ -1,0 +1,19 @@
+﻿DIPLOMATIC_PLAYS = {
+	c:DAI = {
+		create_diplomatic_play = {
+			name = texan_war_of_fayue
+
+			war = yes
+			
+			type = dp_return_state
+	
+			target_state = s:STATE_MEKONG.region_state:VIE
+			
+			add_war_goal = {
+				holder = c:VIE
+				type = annex_country
+				target_country = c:DAI
+			}
+		}		
+	}
+}

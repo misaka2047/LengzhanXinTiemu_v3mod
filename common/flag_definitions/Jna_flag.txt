@@ -1,0 +1,8 @@
+﻿JCP = {
+	flag_definition = {
+		coa = JCP_flag
+		subject_canton = JCP_flag
+		priority = 300
+	}
+}
+

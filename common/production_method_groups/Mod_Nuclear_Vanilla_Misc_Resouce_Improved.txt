@@ -1,0 +1,19 @@
+pmg_base_building_oil_rig = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_steam_derricks
+		pm_combustion_derricks
+		pm_hydralic_fracturing
+	}
+}
+
+
+pmg_base_building_rubber_plantation = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		default_building_rubber_plantation
+		automatic_irrigation_building_rubber_plantation
+		mega_greenhouse_building_rubber_plantation
+		augmented_workforce_building_rubber_plantation
+	}
+}

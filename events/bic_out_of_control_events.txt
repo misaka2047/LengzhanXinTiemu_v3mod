@@ -1,0 +1,313 @@
+namespace = bic_out_of_control
+
+# start event
+bic_out_of_control.1 = {
+	type = country_event
+	placement = root
+	title = bic_out_of_control.1.t
+	desc = bic_out_of_control.1.d
+	flavor = bic_out_of_control.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_factory_closed"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		set_variable = {
+			name = bic_out_of_control_var
+			value = 0
+		}
+		set_variable = {
+			name = bic_partition_var
+			value = 0
+		}
+	}
+
+	option = {
+		name = bic_out_of_control.1.a
+		add_journal_entry = {
+			type = je_bic_out_of_control_main
+		}
+		add_journal_entry = {
+			type = je_bic_partition_main
+		}
+		show_as_tooltip = {
+			add_modifier = {
+				name = bic_out_of_control_modifier
+				months = -1
+			}				
+		}
+	}
+}
+# 成功巩固殖民统治
+bic_out_of_control.2 = {
+	type = country_event
+	placement = root
+	title = bic_out_of_control.2.t
+	desc = bic_out_of_control.2.d
+	flavor = bic_out_of_control.2.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_airplane"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+	}
+
+	immediate = {
+		remove_modifier = bic_out_of_control_modifier
+		add_modifier = {
+			name = bic_consolidation_modifier
+			months = 120
+		}		
+	}
+
+	option = {
+		name = bic_out_of_control.2.a
+		add_modifier = {
+			name = bic_exploitation_modifier
+			months = 120
+		}		
+	}
+	option = {
+		name = bic_out_of_control.2.b
+		add_modifier = {
+			name = bic_kindness_modifier
+			months = 120
+		}
+	}
+}
+# 时间耗尽
+bic_out_of_control.3 = {
+	type = country_event
+	placement = c:MUG.capital
+
+	title = bic_out_of_control.3.t
+	desc = bic_out_of_control.3.d
+	flavor = bic_out_of_control.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	immediate = {
+		remove_modifier = bic_out_of_control_modifier
+		c:BIC = {
+			every_scope_state = {
+				limit = {
+					is_incorporated = yes
+				}
+				set_variable = bic_incorporated_state
+			}
+		}
+		# 印度分离，以孟买作为首都
+		if = {
+			limit = {
+				NOT = { exists = c:HND }
+				exists = s:STATE_BOMBAY.region_state:BIC
+			}
+			create_country = {
+				tag = HND
+				origin = c:BIC
+				state = s:STATE_BOMBAY.region_state:BIC
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:HND
+				exists = s:STATE_BOMBAY.region_state:BIC
+			}
+			s:STATE_BOMBAY.region_state:BIC = { set_state_owner = c:HND }
+		}
+		# 巴基斯坦分离，以东旁遮普为首都
+		if = {
+			limit = {
+				NOT = { exists = c:PAK }
+				exists = s:STATE_PUNJAB.region_state:BIC
+			}
+			create_country = {
+				tag = PAK
+				origin = c:BIC
+				state = s:STATE_PUNJAB.region_state:BIC
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PUNJAB.region_state:BIC
+			}
+			s:STATE_PUNJAB.region_state:BIC = { set_state_owner = c:HND }
+		}
+		# 分配地块给巴基斯坦
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_BALUCHISTAN.region_state:BIC
+			}
+			s:STATE_BALUCHISTAN.region_state:BIC = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PASHTUNISTAN.region_state:BIC
+			}
+			s:STATE_PASHTUNISTAN.region_state:BIC = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_KASHMIR.region_state:BIC
+			}
+			s:STATE_KASHMIR.region_state:BIC = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_SINDH.region_state:BIC
+			}
+			s:STATE_SINDH.region_state:BIC = { set_state_owner = c:PAK }
+		}
+		c:BIC = {
+			set_capital = STATE_DELHI
+		}
+		# 分配地块给印度
+		every_scope_state = {
+			limit = {
+				is_capital = no
+				owner = c:BIC
+			}
+			set_state_owner = c:HND
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_diplomatic_play = {
+						any_scope_play_involved = { this = c:HND }
+						is_diplomatic_play_type = dp_secession
+					}
+				}
+			}
+			create_diplomatic_play = {
+				name = sepoy_mutiny
+				type = dp_annex_war
+				escalation = 10
+				target_state = s:STATE_BOMBAY.region_state:HND
+			}
+			random_diplomatic_play = {
+				limit = {
+					any_scope_play_involved = {
+						c:BIC ?= this
+					}
+				}
+				if = {
+					limit = {
+						exists = s:STATE_DELHI.region_state:BIC 
+					}
+					add_war_goal = {
+						holder = c:HND
+						type = conquer_state
+						target_state = s:STATE_DELHI.region_state:BIC
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					any_diplomatic_play = {
+						any_scope_play_involved = { this = c:PAK }
+						is_diplomatic_play_type = dp_secession
+					}
+				}
+			}
+			create_diplomatic_play = {
+				name = sepoy_mutiny
+				type = dp_annex_war
+				escalation = 10
+				target_state = s:STATE_PUNJAB.region_state:PAK
+			}
+			random_diplomatic_play = {
+				limit = {
+					any_scope_play_involved = {
+						c:BIC ?= this
+					}
+				}
+				if = {
+					limit = {
+						exists = s:STATE_DELHI.region_state:BIC 
+					}
+					add_war_goal = {
+						holder = c:PAK
+						type = conquer_state
+						target_state = s:STATE_DELHI.region_state:BIC
+					}
+				}
+			}
+		}
+		add_modifier = {
+			name = weakened_by_mutiny
+			months = normal_modifier_time
+		}
+		c:HND = {
+			activate_law = law_type:law_parliamentary_republic
+			create_character = {
+				first_name = "Mohandas"			
+				last_name = "Gandhi"
+				historical = yes
+				birth_date = 1869.10.2
+				culture = cu:gujarati
+				is_general = yes
+				religion = rel:hindu
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+				traits = { 
+					ambitious
+					persistent
+					pious
+				}
+			}
+		}
+		c:PAK = {
+			create_character = {
+				first_name = "Muhammad"			
+				last_name = "Jinnah"
+				historical = yes
+				birth_date = 1876.12.25
+				culture = cu:gujarati
+				is_general = yes
+				religion = rel:sunni
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+				traits = { 
+					persistent
+				}
+			}
+		}
+	}
+
+	option = {
+		name = bic_out_of_control.3.a
+		default_option = yes
+	}
+}

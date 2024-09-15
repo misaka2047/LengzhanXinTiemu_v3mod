@@ -1,0 +1,48 @@
+﻿namespace = bic_breakup
+
+# Independent British East India Company decides how to proceed
+bic_breakup.1 = {
+	type = country_event
+	placement = root
+	
+	title = bic_breakup.1.t
+	desc = bic_breakup.1.d
+	flavor = bic_breakup.1.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+		c:BIC ?= this
+		is_subject = no
+		is_at_war = no
+		NOT = {	
+			has_variable = bic_collapse_var
+		}
+	}
+
+	immediate = {
+		c:BIC = { change_tag = HND }
+		cu:british = {
+			save_scope_as = british_culture
+		}
+		cu:scottish = { # Making sure to cover for that one Scottish guy
+			save_scope_as = scottish_culture
+		}
+		set_variable = bic_collapse_var
+	}
+
+	option = {
+		name = bic_breakup.1.a
+		ai_chance = {
+			base = 8 # this is the default pick for the AI
+	    }
+      ）
+}

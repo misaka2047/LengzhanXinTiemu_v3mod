@@ -1,0 +1,149 @@
+space_race_usa_progress_10 = {
+	custom_tooltip = {
+		text = space_race_points_usa_increases_10_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = -10 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_usa_progress_15 = {
+	custom_tooltip = {
+		text = space_race_points_usa_increases_15_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = -15 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_usa_progress_25 = {
+	custom_tooltip = {
+		text = space_race_points_usa_increases_25_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = -25 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_usa_progress_50 = {
+	custom_tooltip = {
+		text = space_race_points_usa_increases_50_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = -50 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_usa_progress_75 = {
+	custom_tooltip = {
+		text = space_race_points_usa_increases_75_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = -75 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_ussr_progress_10 = {
+	custom_tooltip = {
+		text = space_race_points_ussr_increases_10_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = 10 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_ussr_progress_15 = {
+	custom_tooltip = {
+		text = space_race_points_ussr_increases_15_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = 15 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_ussr_progress_25 = {
+	custom_tooltip = {
+		text = space_race_points_ussr_increases_25_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = 25 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_ussr_progress_50 = {
+	custom_tooltip = {
+		text = space_race_points_ussr_increases_50_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = 50 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}
+
+space_race_ussr_progress_75 = {
+	custom_tooltip = {
+		text = space_race_points_ussr_increases_75_tt
+		every_country = {
+			limit = {
+				has_journal_entry = je_space_race_main
+			}
+			je:je_space_race_main = {
+				add_progress = { value = 75 name = space_race_core_progress_bar }
+			}
+			update_gg_progressbar_tooltips = yes
+		}
+	}
+}

@@ -1,0 +1,94 @@
+﻿warhead_current_stockpile_sv = {
+	if = {
+		limit = {
+			has_journal_entry = je_Mod_Nuclear_Atomic_Weapon_Tracker
+		}
+		value = var:warhead_current_stockpile
+		round = yes
+	}
+	else = {
+		value = 0
+	}
+}
+
+
+### A great power are expected to have about 4,000 warheads and about 1,000 delivery capacity.
+### For a usual 20-state nation, at 2.5% monthly depreciation this would mean a 100 yearly loss of warheads.
+### 
+
+warhead_monthly_add = {
+	value = 0
+    	every_scope_state = {
+        	limit = {
+           		has_building = building_warhead_manufactory
+       		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_warhead_manufactory
+					production_method = pm_converted_mining_dynamite
+				}
+				any_scope_building = {
+					is_building_type = building_warhead_manufactory
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 1
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_warhead_manufactory
+					production_method = pm_military_fission_warhead
+				}
+				any_scope_building = {
+					is_building_type = building_warhead_manufactory
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 2
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_warhead_manufactory
+					production_method = pm_military_fusion_warhead
+				}
+				any_scope_building = {
+					is_building_type = building_warhead_manufactory
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 3
+		}
+		if = {
+			limit = {
+				is_production_method_active = {
+					building_type = building_warhead_manufactory
+					production_method = pm_programmed_fusion_warhead
+				}
+				any_scope_building = {
+					is_building_type = building_warhead_manufactory
+					building_has_goods_shortage = no
+					occupancy >= 0.60
+				}
+			}
+			add = 5
+		}
+	}
+}
+
+warhead_monthly_depreciation = {
+	value = warhead_current_stockpile_sv 
+	multiply = 0.02
+	round = yes
+}
+
+warhead_monthly_net_change = {
+	value = warhead_monthly_add
+	subtract = warhead_monthly_depreciation
+	round = yes
+}

@@ -1,0 +1,23 @@
+﻿l_russian:
+
+
+modifier_building_output_service_mult:0 "Создание @Сервиса! Производительность услуг "
+modifier_building_output_service_mult_desc:0 "Бонус или штраф к количеству @услуги! Услуга, производимая зданиями"
+ 
+modifier_building_shipyards_employee_mult:0 "Служащий Судоверфи"
+modifier_building_shipyards_employee_mult_desc:0 "Премия или штраф к количеству работников на Судоверфи"
+
+modifier_building_ocean_mining_operation_input_mult:0 "Океанская добывающая операция Требуемые исходные данные"
+modifier_building_ocean_mining_operation_input_mult_desc:0 "Бонус или штраф к вводу в операции по добыче полезных ископаемых в океане"
+
+modifier_building_ocean_mining_operation_employee_mult:0 "Работники горнодобывающей промышленности в океане"
+modifier_building_ocean_mining_operation_employee_mult_desc:0 "Премия или штраф к количеству работников на добывающих предприятиях в океане"
+
+modifier_ocean_mining_operation_throughput_mult:0 "$океанская_добыча_операция построение  [концепции_пропускной способности]"
+ modifier_ocean_mining_operation_throughput_mult_desc:0 "Премия или штраф как на входе, так и на выходе $океанская_добыча_операция$"
+
+ ### Max Level Modifiers
+modifier_state_building_submerged_farm_max_level_add:0 "строительство_затопленной_фермы$ Максимальный уровень"
+modifier_state_building_ocean_mining_operation_max_level_add:0 "$строительство_океанской_добывающей_операции$ Максимальный уровень"
+modifier_state_building_mega_greenhouse_max_level_add:0 "$строительство_мега_теплицы$ Максимальный уровень"
+modifier_state_building_vertical_farm_max_level_add:0 "$строительство_вертикальной_фермы$ Максимальный уровень"

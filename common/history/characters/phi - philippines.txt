@@ -1,0 +1,11 @@
+﻿CHARACTERS = {
+	c:PHI = {
+		create_character = {
+			ruler = yes
+			culture = cu:filipino
+			ig_leader = yes
+			traits = {
+			}
+		}
+	}
+}

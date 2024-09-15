@@ -1,0 +1,15 @@
+﻿pmg_base_building_e_cigarette_industry = {
+	production_methods = {
+		pm_nebulizer
+		pm_electric_evaporator
+		pm_piezoelectric_element
+	}
+}
+
+pmg_ownership_capital_e_cigarette_industry = {
+	production_methods = {
+		pm_privately_owned_building_e_cigarette_industry
+		pm_publicly_traded_building_e_cigarette_industry
+		pm_government_run_building_e_cigarette_industry
+	}
+}

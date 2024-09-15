@@ -1,0 +1,488 @@
+﻿oversea_han_public_clothes_trigger = { #海外非君主制汉人领袖 
+exists = scope:character
+scope:character = {
+#OR = { is_ruler = yes is_heir = yes }
+AND = {
+	exists = c:CHI
+	NOT = { owner = c:CHI }
+}
+owner = { NOT = { has_law = law_type:law_monarchy has_law = law_type:law_theocracy }  }	
+culture = { has_discrimination_trait = han_chinese }
+}	
+}
+
+oversea_han_officers_clothes_trigger = { #海外非君主制汉人军官人群
+exists = scope:pop
+scope:pop = {
+AND = {
+	exists = c:CHI
+	NOT = { owner = c:CHI }
+}
+culture = { has_discrimination_trait = han_chinese }
+is_pop_type = officers 
+}	
+}
+
+
+
+####################################################################################
+BYN_chairman_clothes_trigger = { #民国总统
+exists = scope:character
+scope:character = {
+OR = {
+is_ruler = yes
+is_heir = yes
+}
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+}
+}
+
+BYN_general_clothes_trigger = { #民国陆军将领通用
+exists = scope:character
+scope:character = { 
+is_ruler = no
+owner = { 
+NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
+NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
+AND = { exists = c:CHI owner = c:CHI } 
+}
+has_role = general
+commander_rank >= 0
+} 
+}
+
+BYN_admiral_clothes_trigger = { #民国海军将领通用
+exists = scope:character
+scope:character = { 
+is_ruler = no
+owner = { 
+NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
+NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
+AND = { exists = c:CHI owner = c:CHI } 
+}
+has_role = admiral
+commander_rank >= 0
+} 
+}
+
+BYN_officers_clothes_pop_trigger = { #民国军官通用
+exists = scope:pop
+scope:pop = { 
+owner = { 
+NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
+NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
+AND = { exists = c:CHI owner = c:CHI } 
+}
+is_pop_type = officers 
+} 
+}
+
+BYN_soldier_clothes_pop_trigger = { #民国士兵通用
+exists = scope:pop
+scope:pop = { 
+owner = { 
+NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
+NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
+AND = { exists = c:CHI owner = c:CHI } 
+}
+is_pop_type = soldiers
+}
+}
+
+
+
+
+
+BYN_ig_army_clothes_trigger = { #民国军队集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+owner = { NOT = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } country_has_primary_culture = cu:han OR = { AND = { exists = c:CHI owner = c:CHI } AND = { exists = c:SRC owner = c:SRC } } }
+interest_group = { is_interest_group_type = ig_armed_forces }
+}	
+}
+
+BYN_ig_industry_clothes_trigger = { #民国实业家集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+interest_group = { is_interest_group_type = ig_industrialists }
+}	
+}
+
+BYN_ig_gonghui_clothes_trigger = { #民国工会集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+OR = {
+interest_group = { is_interest_group_type = ig_trade_unions }
+interest_group = { is_interest_group_type = ig_rural_folk }
+interest_group = { is_interest_group_type = ig_armed_forces }
+}
+}	
+}
+
+BYN_ig_landowners_clothes_trigger = { #民国地主集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+interest_group = { is_interest_group_type = ig_landowners }
+}	
+}
+
+BYN_ig_devout_clothes_trigger = { #民国教士集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+interest_group = { is_interest_group_type = ig_devout }
+}	
+}
+
+BYN_ig_intelligentsia_clothes_trigger = { #民国知识分子集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+interest_group = { is_interest_group_type = ig_intelligentsia }
+}	
+}
+
+BYN_ig_petty_bourgeoisie_clothes_trigger = { #民国小市民集团
+exists = scope:character
+scope:character = {
+is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:tibetan
+		culture = cu:mongol
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+		culture = cu:dahe
+		culture = cu:korean
+		culture = cu:vietnamese 
+		culture = cu:lao
+		culture = cu:khmer
+		culture = cu:thai
+		culture = cu:burmese
+		culture = cu:malay
+		culture = cu:filipino
+		culture = cu:balinese
+		culture = cu:batak
+		culture = cu:bornean
+		culture = cu:dayak
+		culture = cu:javan
+		culture = cu:moluccan
+		culture = cu:sumatran
+		}
+interest_group = { is_interest_group_type = ig_petty_bourgeoisie }
+}	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+BYN_poor_clothes_pop_trigger = { #民国贫穷通用
+OR = { exists = c:SRC exists = c:CHI }
+exists = scope:pop
+scope:pop = {
+owner = { NOT = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } country_has_primary_culture = cu:han }
+OR = { is_pop_type = farmers is_pop_type = peasants is_pop_type = laborers is_pop_type = machinists }
+}   
+}
+
+BYN_middle_clothes_pop_trigger = { #民国中产通用
+OR = { exists = c:SRC exists = c:CHI }
+exists = scope:pop
+scope:pop = {
+owner = { NOT = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } country_has_primary_culture = cu:han }
+OR = { is_pop_type = clerks is_pop_type = engineers is_pop_type = bureaucrats is_pop_type = shopkeepers is_pop_type = clergymen }
+}  
+}
+
+BYN_upper_clothes_pop_trigger = { #民国富有通用
+OR = { exists = c:SRC exists = c:CHI }
+exists = scope:pop
+scope:pop = {
+owner = { NOT = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } country_has_primary_culture = cu:han }
+OR = { is_pop_type = aristocrats is_pop_type = capitalists is_pop_type = academics }
+}  
+}
+
+russian_empire_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:RUS
+		exists = home_country
+		home_country = {
+			OR = {
+				AND = {
+					c:RUS = this
+					is_subject = no # preventing uniform conflicts if RUS becomes a subject of another country with puppet uniforms
+				}
+			}		
+		}
+	}
+}
+
+
+british_empire_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:GBR
+		exists = home_country
+		home_country = {
+			OR = {
+				AND = {
+					c:GBR = this
+					is_subject = no # preventing uniform conflicts if GBR becomes a subject of another country with puppet uniforms
+				}
+			}		
+		}
+	}
+}
+
+french_empire_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		exists = c:FRA
+		exists = home_country
+		home_country = {
+			OR = {
+				AND = {
+					c:FRA = this
+					is_subject = no # preventing uniform conflicts if FRA becomes a subject of another country with puppet uniforms
+				}
+			}		
+		}
+	}
+}
+
+dahe_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+          	culture = cu:riben
+          }
+	}
+}
+
+dahe_imperial_clothes_trigger = {
+	exists = scope:character
+	scope:character = {
+		is_ruler = yes
+		exists = home_country
+     	home_country = {
+     		has_law = law_type:law_monarchy
+     	}
+		OR = {
+			AND = {
+				culture = {
+					has_discrimination_trait = yamato
+				}
+				OR = {
+					NOT = {
+						exists = c:riben
+					}
+					AND = {
+						exists = c:riben
+						NOT = { home_country = c:riben }
+					}
+				}
+			}
+			AND = {
+				exists = c:riben
+				home_country = {
+					this = c:riben
+					NOT = { has_variable = meiji_restoration_complete }
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+

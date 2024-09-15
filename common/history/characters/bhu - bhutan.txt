@@ -1,0 +1,10 @@
+﻿CHARACTERS = {
+	c:BHU = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			traits = {
+			}
+		}
+	}
+}

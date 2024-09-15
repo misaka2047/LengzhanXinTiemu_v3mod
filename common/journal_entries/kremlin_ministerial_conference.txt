@@ -1,0 +1,16 @@
+kremlin_ministerial_conference = {
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	complete = { #完成条件
+		game_date >= 1953.6.26
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.11 } 
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

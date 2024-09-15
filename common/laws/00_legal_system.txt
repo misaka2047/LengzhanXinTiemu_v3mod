@@ -1,0 +1,70 @@
+﻿law_unwritten_law = { #无成文法
+	group = lawgroup_legal_system 
+	
+	icon = "gfx/interface/icons/law_icons/无成文法.dds"
+	
+	progressiveness = -150
+	
+	modifier = {
+		country_law_enactment_time_mult = 0.05 #立法时间减少（百分比）
+	}
+}
+
+law_islamic_law_system = { #伊斯兰法系
+	group = lawgroup_legal_system 
+	
+	icon = "gfx/interface/icons/law_icons/伊斯兰法系.dds"
+	
+	progressiveness = -100
+	
+	modifier = {
+		interest_group_ig_devout_pol_str_mult = 0.1
+		country_law_enactment_time_mult = 0.1 #立法时间减少（百分比）
+		country_authority_add = 200 #权威力
+	}
+}
+
+law_case_law_system = { #海洋法系
+	group = lawgroup_legal_system 
+	
+	icon = "gfx/interface/icons/law_icons/海洋法系.dds"
+	
+	progressiveness = 0
+	
+	disallowing_laws = {
+		law_autocracy
+		law_oligarchy
+		law_anarchy
+		law_single_party_state
+		law_cooperative_ownership
+	}
+
+	unlocking_technologies = { tech_empirical_school } #经验主义
+
+	modifier = {
+		country_law_enactment_time_mult = -0.1 #立法时间减少
+		country_law_enactment_success_add = -0.02 #立法成功率（百分比）
+		country_trade_route_competitiveness_mult = 0.15 #国家贸易路线竞争力
+	}
+}
+
+law_continental_law_system = { #大陆法系
+	group = lawgroup_legal_system 
+	
+	icon = "gfx/interface/icons/law_icons/大陆法系.dds"
+	
+	progressiveness = 0
+	
+	disallowing_laws = {
+		law_autocracy
+	}
+
+	unlocking_technologies = { tech_public_policy_and_management } #中央集权
+
+	modifier = {
+		country_authority_add = 200 #权威力
+		country_law_enactment_success_add = 0.05 #立法成功率（百分比）
+		country_law_enactment_time_mult = 0.1 #立法时间增加
+		country_trade_route_quantity_mult = 0.1 #国家贸易路线数量
+	}
+}

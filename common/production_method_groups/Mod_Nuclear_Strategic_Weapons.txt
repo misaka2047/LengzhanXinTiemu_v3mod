@@ -1,0 +1,37 @@
+﻿pmg_base_warhead_manufactory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_converted_mining_dynamite
+		pm_military_fission_warhead
+		pm_military_fusion_warhead
+		pm_programmed_fusion_warhead
+	}
+}
+
+pmg_base_strategic_strike_base_land = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_kamikaze_squad
+		pm_jet_strategic_bomber
+		pm_ICBM
+		pm_orbital_nuclear_weapon
+	}
+}
+
+pmg_base_strategic_strike_base_sea = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_hellebranders
+		pm_strategic_siege_monitors
+		pm_ocean_based_nuclear_rocket
+		pm_SSBN
+	}
+}
+
+

@@ -1,0 +1,28 @@
+﻿namespace = baituitaiwan
+
+
+
+baituitaiwan.1 = {
+	type = country_event
+	hidden = yes
+
+	immediate = {
+		change_global_variable = {
+			name = world_tension 
+			add = 10 
+		}
+		every_state = {
+			limit = {
+				NOT = {
+					state_region = s:STATE_FORMOSA
+				}
+				c:CHI ?= owner
+			}
+			set_state_owner = c:PRC
+		}
+		c:USA = {
+			set_relations = { country = c:PRC value = -30 }
+			set_relations = { country = c:CHI value = 50 }
+		}
+	}
+}

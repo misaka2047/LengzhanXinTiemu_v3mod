@@ -1,0 +1,374 @@
+goods_introduction = {
+	type = goods
+	random_valid = no
+	
+	text = {
+		trigger = { 
+			exists = g:services
+			this = g:services
+		}
+		localization_key = "顾客就是上帝，我的朋友！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:transportation
+			this = g:transportation
+		}
+		localization_key = "要想富先修路，没有好的交通网物流网，如何发展！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:grain
+			this = g:grain
+		}
+		localization_key = "一个国家的粮食命脉只能掌握在自己手里！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:meat
+			this = g:meat
+		}
+		localization_key = "人是杂食动物，所以有肉很正常！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:transportation
+			this = g:transportation
+		}
+		localization_key = "要想富先修路，没有好的交通网物流网，如何发展！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:sugar
+			this = g:sugar
+		}
+		localization_key = "碳水，人类的快乐根源！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:tobacco
+			this = g:tobacco
+		}
+		localization_key = "Man always remember love because of romantic only.-万宝路香烟"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:liquor
+			this = g:liquor
+		}
+		localization_key = "可口可乐，为快乐而生。无论春夏秋冬，无论喜怒哀乐，总有一瓶可口可乐在你身边，陪你一起度过每一个精彩瞬间。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:fabric
+			this = g:fabric
+		}
+		localization_key = "从丝绸到涤纶，从棉花到芳纶，人类在穿着和使用方面永远在进步。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:rubber
+			this = g:rubber
+		}
+		localization_key = "米其林轮胎：A Better way forward 引领进步之道。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:iron
+			this = g:iron
+		}
+		localization_key = "铁、铅、锰、铬、钒、钛等。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:sulfur
+			this = g:sulfur
+		}
+		localization_key = "硫矿、金刚石、石墨、水晶、刚玉、石棉、云母等。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:oil
+			this = g:oil
+		}
+		localization_key = "马润：我为祖国偷石油！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:coal
+			this = g:coal
+		}
+		localization_key = "斯达汉诺夫精神激励着我们，加油为了祖国母亲，开挖！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:gold
+			this = g:gold
+		}
+		localization_key = "贵金属主要指金、银和铂族金属。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:electricity
+			this = g:electricity
+		}
+		localization_key = "“电和磁是一对永恒的舞伴,它们共同创造了我们周围的世界。”——迈克尔·法拉第"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:groceries
+			this = g:groceries
+		}
+		localization_key = "麦当劳：麦辣鸡，M鸡中的战斗鸡！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:plastic
+			this = g:plastic
+		}
+		localization_key = "一种重要的合成材料,具有广泛的应用。注意环保！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:furniture
+			this = g:furniture
+		}
+		localization_key = "人人每天都需要的东西，连乞丐都要！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:paper
+			this = g:paper
+		}
+		localization_key = "从文书工作到厕所，你难道不用？"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:clothes
+			this = g:clothes
+		}
+		localization_key = "人靠衣装马靠鞍！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:steel
+			this = g:steel
+		}
+		localization_key = "现代工业无处不在的材料！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:glass
+			this = g:glass
+		}
+		localization_key = "感受玻璃的独特魅力，探索艺术无限可能。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:tools
+			this = g:tools
+		}
+		localization_key = "工欲善其事必先利其器。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:dye
+			this = g:dye
+		}
+		localization_key = "工业中几乎不可或缺的一环。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:petrol #精炼燃料
+			this = g:petrol
+		}
+		localization_key = "从水下潜艇到航天飞行器都需要！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:ammunition
+			this = g:ammunition
+		}
+		localization_key = "子弹在枪口处喷出火花，像一颗流星一样，在黑暗中划出一道亮丽的轨迹。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:housing_services #住房服务
+			this = g:housing_services
+		}
+		localization_key = "穿衣住行，样样不能缺！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:machine #机床
+			this = g:machine
+		}
+		localization_key = "工业生产产出的基础。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:luxury_furniture #家电
+			this = g:luxury_furniture
+		}
+		localization_key = "彩色电视，电脑，冰箱我全都要！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:radios #电子零件
+			this = g:radios
+		}
+		localization_key = "你知道一台电脑需要多少电子零件吗？"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:opium #医药
+			this = g:opium
+		}
+		localization_key = "全世界只有一种病，那就是穷病！"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:engines #引擎
+			this = g:engines
+		}
+		localization_key = "从火车到火箭缺一不可。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:fine_art #文娱产品
+			this = g:fine_art
+		}
+		localization_key = "社会主义是真正的人民民主,让我们共同建设强大的社会主义国家！——苏联宣传标语"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:steamers #船舶
+			this = g:steamers
+		}
+		localization_key = "经济全球化的重要一环。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:small_arms #轻武器
+			this = g:small_arms
+		}
+		localization_key = "那个卡拉什尼科夫你听说过吗？"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:automobiles #汽车
+			this = g:automobiles
+		}
+		localization_key = "洒脱流畅的线条汇集于一处：与您心灵相约。——奔驰"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:equipment #大型设备
+			this = g:equipment
+		}
+		localization_key = "1962年，全国人大常委会委员长朱德视察万吨水压机时兴奋地说：“这台机器制造成功，代表了我国的工业发展已达到一个新的水平。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:telephones #电子产品
+			this = g:telephones
+		}
+		localization_key = "1973年，美国摩托罗拉工程师马丁·库帕发明了世界上第一部商业化手机。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:tanks #装甲单位
+			this = g:tanks
+		}
+		localization_key = "装甲部队，陆军力量的代表，装甲部队在战况不利时也能迅速撤退，脱离战场。它包括装甲车和装甲兵。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:artillery #远程武器
+			this = g:artillery
+		}
+		localization_key = "军事远程火力打击单位。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:aeroplanes #飞机
+			this = g:aeroplanes
+		}
+		localization_key = "莱特兄弟的伟大发明改变了人类的交通、经济、生产和日常生活，同时也改变了军事史。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:computer #计算机
+			this = g:computer
+		}
+		localization_key = "现代一种用于高速计算的电子计算机器，可以进行数值计算，又可以进行逻辑计算，还具有存储记忆功能。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:ironclads #军用船只
+			this = g:ironclads
+		}
+		localization_key = "海上军事力量单位。"
+	}
+
+	text = {
+		trigger = { 
+			exists = g:spacecraft #航天飞行器
+			this = g:spacecraft
+		}
+		localization_key = "梦想吧,朋友!天上没有神,我拼命地向四周环顾,就是没有看到。——加加林"
+	}
+
+	text = {
+		trigger = { 
+			always = yes
+		}
+		localization_key = "我知道我是什么"
+	}
+
+	fallback = yes 
+	localization_key = "我不知道我是什么"
+}

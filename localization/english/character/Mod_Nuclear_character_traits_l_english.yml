@@ -1,0 +1,49 @@
+﻿l_english:
+## Personality
+mod_trait_personality_transhumanist:0 "Transhumanist"
+mod_trait_personality_transhumanist_desc:0 "This character firmly believe that the future of humanity lies in integration with cybernetic implants and electronic processors. To make an example, this character employed massive augmentations and implants to enhance himself."
+
+mod_trait_personality_programmed_personality:0 "Programmed Personality"
+mod_trait_personality_programmed_personality_desc:0 "This character believes in the controversial technology of human-ego programming. He had blended his ego with various programs and other individuals' ego to ensure the correct personality are used for correct circumstances....assisted, regulated, and constrained by an array of experts and electronic processors."
+
+## Condition
+mod_trait_condition_radiation_disease:0 "Radiation Disease"
+mod_trait_condition_radiation_disease_desc:0 "This character survived a fallout, but it left an irrecoverable mark on him."
+
+mod_trait_condition_consuming_genetic_mutation:0 "Consuming Genetic Mutation"
+mod_trait_condition_consuming_genetic_mutation_desc:0 "Either a result of unfortunate genetic engineering or miracle in a deadly radiation exposure, this character have to live with an uncomforting genetic mutation."
+
+mod_trait_condition_cyberpsychosis:0 "Cyberpsychosis"
+mod_trait_condition_cyberpsychosis_desc:0 "Just like himself, the extensive system of implants are acting erratically and restricting its removal."
+
+
+## Skills
+mod_trait_skill_pioneer_of_oceanic_engineering:0 "Pioneer of Oceanic Engineering"
+mod_trait_skill_pioneer_of_oceanic_engineering_desc:0 "Before joining the navy, this character were known for innovative insight on construction and engineering of massive ocean-based structures."
+
+mod_trait_skill_born_in_the_waves:0 "Born in the waves"
+mod_trait_skill_born_in_the_waves_desc:0 "Spending most of his life administrating submerged farms, seabed mining operations, or engineering team of floating cities, this character has trully conquered the high seas."
+
+mod_trait_skill_survivor_of_apocalypse:0 "Survivor of Apocalypse"
+mod_trait_skill_survivor_of_apocalypse_desc:0 "Many has seen the horror of nuclear warfare. Few lived to tell the tale."
+
+mod_trait_skill_planner_of_apocalypse:0 "Planner of Apocalypse"
+mod_trait_skill_planner_of_apocalypse_desc:0 "Having survived the absolute firepower of nuclear artillery, this character decides to master the art of mass destruction."
+
+mod_trait_augmented_limbs:0 "Augmented Limbs"
+mod_trait_augmented_limbs_desc:0 "This character has voluntarily switched his limbs to a more technologically advanced and powerful version."
+
+mod_trait_integrated_exoskeleton:0 "Integrated Exoskeleton"
+mod_trait_integrated_exoskeleton_desc:0 "The fragile human body of this character are well-protected from a piece of state-of-the-art integrated exoskeleton."
+
+mod_trait_brain_wiring:0 "Brain Wiring"
+mod_trait_brain_wiring_desc:0 "This character proudly and happily enhanced himself with experimental neuro-machine interface, a technology still in early development."
+
+mod_trait_integrated_electronic_processors:0 "Integrated Electronic Processors"
+mod_trait_integrated_electronic_processors_desc:0 "This character has an array of powerful electronic processors connected to his neural system, giving him unparalleled capacity in calculation, recording, cognition, and reasoning."
+
+mod_trait_vat_grown:0 "Vat-Grown"
+mod_trait_vat_grown_desc:0 "This character were born as a clone, or underwent extensive genetic engineering, legal or illegal, early in his life."
+
+mod_trait_aviator:0 "Aviator"
+mod_trait_aviator_desc:0 "Neither gravity nor sound barrier can restrict this character."

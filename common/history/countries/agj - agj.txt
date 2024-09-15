@@ -1,0 +1,23 @@
+﻿COUNTRIES = {
+	c:AGJ = {
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		effect_starting_technology_tier_4_tech = yes
+		
+		# Laws
+		activate_law = law_type:law_parliamentary_republic #议会共和制  
+		activate_law = law_type:law_colonial_exploitation #民族剥削
+		activate_law = law_type:law_protectionism #贸易保护
+    		activate_law = law_type:law_interventionism #经济干预
+ 		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_racial_segregation # English & Anglo-Indian supremacy; no Indians served in the upper echelons of government
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_legacy_slavery	
+	}
+}

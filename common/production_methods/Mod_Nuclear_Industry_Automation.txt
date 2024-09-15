@@ -1,0 +1,260 @@
+﻿## This part is automation that is planned to be added in later version.
+## as of today, none of this appear in real game.
+
+## Nuclear Industry have:
+## building_employment_laborers_add = 1000
+## building_employment_machinists_add = 2000
+## building_employment_engineers_add = 1400
+
+
+
+pm_automation_disabled = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+}
+
+
+pm_assembly_lines_mod_nuclear_industry_simple = {
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	
+	unlocking_technologies = {
+		conveyors
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 6
+			goods_input_nuclear_fuel_add = 2
+			goods_input_electricity_add = 7
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3000
+		}
+	}
+}
+
+
+pm_integrated_circuitry_mod_nuclear_industry_simple = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/integrated_circuitry_automation.dds"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## programmables should be $30
+
+			goods_input_programmables_add = 14 #420
+			goods_input_tools_add = 2 ## 80
+			goods_input_electricity_add = 9 #270
+
+			# Cost $770
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3000
+			building_employment_machinists_add = -200
+			building_employment_engineers_add = -300
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+}
+
+pm_automated_production_line_mod_nuclear_industry_simple = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_production_line.jpg"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_radios_add = 5 #400
+			goods_input_tools_add = 2 ## 80
+			goods_input_electricity_add = 9 #270
+
+			# Cost $750
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -3000
+			building_employment_machinists_add = -200
+			building_employment_engineers_add = -300
+		}
+	}
+
+}
+## Complex Industry Automation
+
+pm_assembly_lines_mod_nuclear_industry_complex = {
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	
+	unlocking_technologies = {
+		conveyors
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			goods_input_tools_add = 6
+			goods_input_nuclear_fuel_add = 2
+			goods_input_electricity_add = 7
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -500
+		}
+	}
+}
+
+
+pm_integrated_circuitry_mod_nuclear_industry_complex = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/integrated_circuitry_automation.dds"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## programmables should be $30
+
+			goods_input_programmables_add = 14 #420
+			goods_input_tools_add = 1.5 ## 40
+			goods_input_electricity_add = 8 #240
+
+			# Cost $720
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -800
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = -250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+}
+
+pm_automated_production_line_mod_nuclear_industry_complex = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_production_line.jpg"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_radios_add = 5 #400
+			goods_input_tools_add = 1.5 ## 60
+			goods_input_electricity_add = 8 #240
+
+			# Cost $700
+
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1500
+			building_employment_machinists_add = -800
+			building_employment_clerks_add = 100
+			building_employment_engineers_add = -250
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+}
+
+### Nuclear Reactor Automation Methods
+pm_integrated_reactor_control_circuit = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/integrated_circuitry_automation.dds"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_programmables_add = 28 #840
+
+			# Cost $960
+			goods_output_electricity_add = 20 
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -300
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = -250
+		}
+	}
+}
+
+pm_automated_survillance_system = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/automated_production_line.jpg"
+	
+	unlocking_technologies = {
+		automated_systems
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			## remember always that radios are now "electronic device and radios"
+		
+			goods_input_radios_add = 10 ##800
+
+			goods_output_electricity_add = 20 
+
+		}
+		level_scaled = {
+			building_employment_laborers_add = -300
+			building_employment_machinists_add = -250
+			building_employment_engineers_add = -250
+		}
+	}
+
+}
+
+
+

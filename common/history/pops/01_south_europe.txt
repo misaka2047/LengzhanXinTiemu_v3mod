@@ -1,0 +1,290 @@
+POPS = {
+	s:STATE_MALTA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 241910
+			}
+		}
+	}
+	s:STATE_CORSICA = {
+		region_state:FRA = {
+			create_pop = {
+				culture = corsican
+				size = 323900
+			}
+		}
+	}
+	s:STATE_TOLEDO = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 3200000
+			}
+		}
+	}
+	s:STATE_GALICIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = galician
+				size = 2290000
+			}
+		}
+	}
+	s:STATE_CASTILE = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 2300000
+			}
+		}
+	}
+	s:STATE_NAVARRA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = basque
+				size = 1200000
+			}
+		}
+	}
+	s:STATE_ARAGON = {
+		region_state:SPA = {
+			create_pop = {
+				culture = catalan
+				size = 1100000
+			}
+		}
+	}
+	s:STATE_CATALONIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = catalan
+				size = 3040000
+			}
+		}
+	}
+	s:STATE_BALEARES = {
+		region_state:SPA = {
+			create_pop = {
+				culture = catalan
+				size = 396400
+			}
+			create_pop = {
+				culture = spanish
+				size = 78020
+			}
+		}
+	}
+	s:STATE_ANDALUSIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 1740000
+			}
+		}
+	}
+	s:STATE_GRANADA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 3100000
+			}
+		}
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 21390
+			}
+		}
+	}
+	s:STATE_BADAJOZ = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 1426000
+			}
+		}
+	}
+	s:STATE_VALENCIA = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 2980000
+			}
+		}
+	}
+	s:STATE_BEIRA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 2908900
+			}
+		}
+	}
+	s:STATE_ESTREMADURA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 1990000
+			}
+		}
+	}
+	s:STATE_ALENTEJO = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 1440000
+			}
+		}
+	}
+	s:STATE_CAPE_VERDE = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 103532
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 24666
+			}
+		}
+	}
+	s:STATE_EASTERN_THRACE = {
+		region_state:TUR = {
+			create_pop = {
+				culture = turkish
+				size = 1164000
+			}
+			create_pop = {
+				culture = greek
+				size = 281992
+			}
+			create_pop = {
+				culture = north_italian
+				size = 7996
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 80004
+			}
+			create_pop = {
+				culture = armenian
+				size = 67996
+			}
+			create_pop = {
+				culture = sephardic
+				size = 50004
+			}
+			create_pop = {
+				culture = north_caucasian
+				pop_type = slaves
+				size = 6000
+			}
+			create_pop = {
+				culture = lacustrine_bantu
+				pop_type = slaves
+				size = 16000
+			}
+		}
+	}
+	s:STATE_DOBRUDJA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = turkish
+				size = 25600
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 9000
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 2000
+			}
+			create_pop = {
+				culture = greek
+				size = 100
+			}
+			create_pop = {
+				culture = romanian
+				size = 8000
+			}
+		}
+		region_state:ROM = {
+			create_pop = {
+				culture = romanian
+				size = 1460000
+			}
+		}
+		region_state:BUL = {
+			create_pop = {
+				culture = romanian
+				size = 1460000
+			}
+		}
+	}
+	s:STATE_WEST_AEGEAN_ISLANDS = {
+		region_state:GRE = {
+			create_pop = {
+				culture = greek
+				size = 80404
+			}
+		}
+	}
+	s:STATE_ATTICA = {
+		region_state:GRE = {
+			create_pop = {
+				culture = greek
+				size = 2310000
+			}
+		}
+	}
+	s:STATE_PELOPONNESE = {
+		region_state:GRE = {
+			create_pop = {
+				culture = greek
+				size = 1060000
+			}
+		}
+	}
+	s:STATE_ASTURIAS = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 1214624
+			}
+		}
+	}
+	s:STATE_CANARY_ISLANDS = {
+		region_state:SPA = {
+			create_pop = {
+				culture = spanish
+				size = 208004
+			}
+		}
+	}
+	s:STATE_AZORES = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 103532
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 24666
+			}
+		}
+	}
+	s:STATE_MADEIRA = {
+		region_state:POR = {
+			create_pop = {
+				culture = portuguese
+				size = 103532
+			}
+			create_pop = {
+				culture = afro_brazilian
+				size = 24666
+			}
+		}
+	}
+	}

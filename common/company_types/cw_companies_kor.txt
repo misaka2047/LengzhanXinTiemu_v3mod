@@ -1,0 +1,110 @@
+﻿#三星物产
+company_samsung_C&T = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/samsung.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+	
+	building_types = {  
+		building_sugar_factory #制糖厂
+		building_pharmaceutical_factory #医疗用品厂
+		building_textile_mills #纺织厂
+		building_paper_mills #造纸厂
+		building_home_appliance_factory #家电工厂
+		building_tooling_workshops #工具厂
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_manchuria
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_manchuria
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+					region = sr:region_manchuria
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_sugar_factory #制糖厂
+					is_building_type =	 building_pharmaceutical_factory #医疗用品厂
+					is_building_type = building_textile_mills #纺织厂
+					is_building_type = building_paper_mills #造纸厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_tooling_workshops #工具厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		country_weekly_innovation_max_add = 10 #科技進度上限/最大创新力投入
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#三星集团
+samsung_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/samsung.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {  
+		building_electrics_industry #电子产品厂
+		building_home_appliance_factory #家电工厂
+		building_electronic_parts_factory #电子零件工厂
+		building_computer_factory #计算机工厂
+		building_oil_rig
+		building_refinery
+	}
+	
+	potential = {
+			has_interest_marker_in_region = region_manchuria
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					region = sr:region_manchuria
+			}
+		}
+	}	
+
+	possible = { 
+		any_scope_state = {
+					region = sr:region_manchuria
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_electronic_parts_factory #电子零件工厂
+					is_building_type = building_computer_factory #计算机工厂
+					is_building_type = building_oil_rig
+					is_building_type = building_refinery
+				}
+				level >= 5
+			}
+		}
+		has_technology_researched = tech_integrated_circuit #集成电路
+	}
+	
+	prosperity_modifier = {
+		country_weekly_innovation_max_add = 15 #科技進度上限/最大创新力投入
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}

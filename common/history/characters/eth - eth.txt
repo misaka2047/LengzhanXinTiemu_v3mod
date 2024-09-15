@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:ETH = {
+		create_character = {
+			historical = yes
+			first_name = "Haile"
+			last_name = "Selassie"
+			culture = cu:amhara
+			ruler = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces
+			ideology = ideology_reformer #改良主义者
+			birth_date = 1892.7.23
+			traits = {
+			}
+		}
+	}
+}

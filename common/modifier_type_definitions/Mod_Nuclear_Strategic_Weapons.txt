@@ -1,0 +1,32 @@
+﻿
+#### Nuclear Weapons. Have No Use
+building_monthly_warhead_production = {
+	good = yes
+	num_decimals = 1
+}
+
+building_monthly_delivery_capacity_production = {
+	good = yes
+	num_decimals = 1
+}
+
+
+
+state_building_warhead_manufactory_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_building_strategic_strike_base_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_building_strategic_strike_squadron_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+

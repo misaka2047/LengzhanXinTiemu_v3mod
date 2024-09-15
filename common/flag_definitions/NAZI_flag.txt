@@ -1,0 +1,81 @@
+﻿GER = { # Germany
+	flag_definition = {
+		coa = GER_modern
+		subject_canton = GER_modern
+	}
+	flag_definition = {
+		coa = GER_modern
+		subject_canton = GER_modern
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_dictatorship
+		subject_canton = GER_dictatorship
+		priority = 15
+		trigger = { 
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = PRU_communist
+		subject_canton = PRU_communist
+		priority = 2000
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	flag_definition = {
+		coa = GER_ddr
+		subject_canton = GER_ddr
+		priority = 1500
+		trigger = { 
+			scope:actor ?= {
+				OR = {
+					AND = {
+						has_law = law_type:law_single_party_state
+						py:communist_party ?= {
+							any_member = {
+								is_in_government = yes
+							}
+						}
+					}
+					AND = {
+						OR = {
+							has_law = law_type:law_autocracy
+							has_law = law_type:law_technocracy
+							has_law = law_type:law_oligarchy
+						}
+						ruler ?= {
+							OR = {
+								has_ideology = ideology:ideology_communist
+								has_ideology = ideology:ideology_vanguardist
+								has_ideology = ideology:ideology_anarchist
+							}
+						}
+					}
+					AND = {
+						is_subject = yes
+						overlord = {
+							has_law = law_type:law_council_republic
+						}
+					}
+				}
+				OR = {
+					has_law = law_type:law_parliamentary_republic
+					has_law = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	flag_definition = {
+		coa = GER_fascist
+		subject_canton = GER_fascist
+		priority = 1250
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		   }
+	    }
+    }

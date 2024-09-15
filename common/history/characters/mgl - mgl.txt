@@ -1,0 +1,18 @@
+﻿CHARACTERS = {
+	c:MGL = {
+		create_character = {
+			#冈奇金·布曼增迪
+			is_general = yes
+			commander_rank = commander_rank_ruler
+			first_name = "Gunchkin"
+			last_name = "Bumanzendi"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1881.9.11
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+			}
+		}		
+	}
+}

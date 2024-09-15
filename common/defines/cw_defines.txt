@@ -1,0 +1,67 @@
+﻿NGame = { #时间修改
+	START_DATE = "1946.6.26"
+	END_DATE = "2050.1.1" 
+	SAVE_VERSION = 0
+	MP_LAG_TICKS_BOUNDS = 28 # Host will advance up to a week ahead of players ( 7 * 4 )
+	DEAD_OBJ_UNDESTROYED_DAYS = 0	# number of days "killed"/removed objects will persist in memory before ultimately destroyed as they are referenced by events etc
+	DEFAULT_INCREMENT_DECREMENT_MAGNITUDE = 1
+	DEFAULT_INCREMENT_DECREMENT_MAGNITUDE_SHIFT = 10
+	DEFAULT_INCREMENT_DECREMENT_MAGNITUDE_CONTROL = 100
+}
+
+NCharacters = { #军团将领上限修改
+	RECRUIT_COMMANDER_NUM_OPTIONS = 5	
+	RECRUIT_COMMANDER_POOL_SIZE = 10
+}
+
+NCountry = { #整合修改
+	DEFAULT_COUNTRY_TYPE = "recognized"
+	MAX_NUM_COUNTRY_FORMATION_CANDIDATES = 3
+	COUNTRY_FORMATION_CANDIDATE_MIN_RANK = 6
+	COUNTRY_FORMATION_ANNEXATION_TARGET_MAX_RANK = 6
+	MOVE_CAPITAL_COOLDOWN_YEARS = 5
+	MOVE_MARKET_CAPITAL_COOLDOWN_YEARS = 5
+	MAX_POWER_EFFECT = 1.0 # The max by which a power excess/deficiency modifier can scale						
+	SPLIT_STATE_MIN_LAND_SHARE = 0.05
+	SPLIT_STATE_DOMINANT_LAND_SHARE_THRESHOLD = 0.5	# States with more land share than this can use the region's name
+	SPLIT_STATE_PRIME_LAND_WEIGHT = 5.0
+	CAPITAL_CULTURE_CORE_WEIGHT = 10
+	CAPITAL_NON_INCORPORATED_WEIGHT = 0.001
+	DEFAULT_SUBSISTENCE_BUILDING = "building_subsistence_farms"
+	CONSTRUCTION_CAMP_BUILDING = "building_construction_sector"
+	BARRACKS_BUILDING = "building_barracks"
+	NAVAL_BASE_BUILDING = "building_naval_base"
+	URBAN_CENTER_BUILDING = "building_urban_center"
+	CONSCRIPTION_CENTER_BUILDING = "building_conscription_center"
+	TRADE_CENTER_BUILDING = "building_trade_center"
+	CONSTRUCTION_QUEUE_INCREMENT_SHIFT = 5  # Increment/Decrement used for buildings construction queue when holding down Shift
+	CONSTRUCTION_QUEUE_INCREMENT_CONTROL = 10 # Increment/Decrement used for buildings construction queue when holding down Ctrl
+	WEEKS_TO_STORE_LOYALIST_RADICAL_STATISTICS = 52 # Number of weeks of statistics for loyalists/radicals that is stored and shown
+	INCORPORATION_TIME_SAME_CULTURE = 1			# Years if the state is a Homeland of one of the country's primary cultures
+	INCORPORATION_TIME_SAME_HERITAGE = 2			# Years if the state is a Homeland of a culture that matches of one of the country's primary cultures' Heritage traits
+	INCORPORATION_TIME_SAME_TRAIT = 5				# Years if the state is a Homeland of a culture with any trait in common with a country's primary cultures
+	INCORPORATION_TIME_NO_MATCH = 10				# Years if the state's Homeland cultures have nothing in common with the country's primary cultures
+	JOURNAL_ENTRY_UPDATE_ACTIVE = 8					# Number of ticks between each update of Active (Possible) Journal Entries, can be overriden on journal entry type
+	JOURNAL_ENTRY_UPDATE_INACTIVE = 28				# Number of ticks between each update of Inactive Journal Entries, can be overriden on journal entry type
+}
+
+NEconomy = { #建筑修改
+	MAX_WEEKLY_CONSTRUCTION_PROGRESS = 200			# 每周单个建筑最大建造速度是20，有时候急需建造建筑的时候还得等他个十几周，黄花菜都凉了，不如把20改成40。
+	TRADE_ROUTE_START_LEVEL = 1							# All new trade routes start at this level
+	TRADE_ROUTE_MAX_LEVEL = 999							# Trade routes cannot be higher level than this
+	TRADE_ROUTE_MIN_TOTAL_IMPORTS = 40					# This amount of a good can always be imported to a market even if there is no demand
+	TRADE_ROUTE_DEFAULT_GOODS_QUANTITY = 40				# Base quantity traded from trade routes, if not otherwise specified in goods type
+	TRADE_ROUTE_ECONOMY_OF_SCALE = 0.25					# Each level of trade route after the first adds this % to desired trade quantity
+	TRADE_ROUTE_ECONOMY_OF_SCALE_MAX_LEVEL = 41		# After this level, trade route economy of scale no longer increases the amount per level
+	
+	TRADE_CENTER_NUM_LEVELS_PER_TRADE_ROUTE_LEVEL = 1 # Each level of a trade route generates this number of Trade Center levels to manage it
+	
+	COMPETITIVENESS_TRADE_AGREEMENT_MULT = 2	# Competiveness is multiplied by ( 1 + this ) if trading country and market controller have a trade agreement
+} 
+
+
+NPops = {
+
+	WORKING_ADULT_RATIO_BASE = 0.4				# Base ratio of working adults to dependents, this can be overridden by pop type definition and country modifiers.
+
+}

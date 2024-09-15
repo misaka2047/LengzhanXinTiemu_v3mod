@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:AUS = {
+		create_character = {
+			first_name = "Cal"
+			last_name = "Renner" 
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1870.12.14
+			religion = rel:atheist #无神论
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				    charismatic #魅力四射
+		                    ambitious #雄心勃勃
+				    innovative #创新精神
+			}
+		}
+	}
+}
+

@@ -1,0 +1,193 @@
+je_japan_mac = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = japan_mac.16
+		}
+	}
+
+	timeout = 4000
+
+	current_value = {
+		value = var:japan_mac_progress
+	}
+
+	goal_add_value = {
+		add = 4
+	}
+	on_monthly_pulse = {
+		random_events = {
+			1000 = 0
+			30 = japan_mac.17
+			2 = japan_mac.8
+			1 = japan_mac.15
+		}
+	}
+	invalid = {
+	}
+
+	on_invalid = {
+	}
+
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}
+
+je_japan_occupied = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    group = je_group_historical_content
+	complete = {
+		army_size < 5
+        has_law = law_type:law_non_militarized_country
+		game_date > 1953.1.1
+		NOT = {
+			has_journal_entry = je_japan_mac
+		}
+	}
+    on_complete = {
+        trigger_event = {
+            id = japan_mac.16
+        }
+    }
+	fail = {
+		OR = {
+			radical_fraction = {
+				value >= 0.75
+			}
+			any_civil_war = {
+				civil_war_progress > 0.6
+			}
+		}
+	}
+	on_fail = {
+		# 之后整点吃鸡大赛剧情
+		trigger_event = {
+			id = japan_breakdown
+		}
+	}
+	weight = 10000
+	should_be_pinned_by_default = yes
+}
+
+je_japan_mac_modernization = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    group = je_group_historical_content
+	complete = {
+		has_law = law_type:law_womens_suffrage
+		has_law = law_type:law_state_led
+		has_law = law_type:law_public_health_insurance
+		NOT = {
+			has_law = law_type:law_local_police
+
+		}
+		any_scope_building = {
+			is_building_type = building_university				
+			building_has_goods_shortage = no
+			level >= 5
+			occupancy >= 0.75
+		}
+		any_scope_building = {
+			is_building_type = building_machine_factory				
+			building_has_goods_shortage = no
+			level >= 5
+			occupancy >= 0.75
+		}
+		any_scope_building = {
+			is_building_type = building_home_appliance_factory				
+			building_has_goods_shortage = no
+			level >= 5
+			occupancy >= 0.75
+		}
+		any_scope_building = {
+			is_building_type = building_large_equipment_factory				
+			building_has_goods_shortage = no
+			level >= 5
+			occupancy >= 0.75
+		}
+	}
+    current_value = {
+		value = var:japan_mac_modernization_progress
+	}
+	on_complete = {
+		trigger_event = {
+			id = japan_mac.4
+		}
+	}
+	goal_add_value = {}
+
+}
+
+je_japan_mac_landreform = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    group = je_group_historical_content
+	complete = {
+        has_law = law_type:law_homesteading 
+		any_scope_building = {
+			is_building_type = building_rice_farm				
+			building_has_goods_shortage = no
+			level >= 30
+			occupancy >= 0.75
+		}
+	}
+    on_complete = {
+        trigger_event = {
+            id = japan_mac.7
+        }
+    }
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_japan_mac_livelihood = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    group = je_group_historical_content
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+    current_value = {
+		value =	root.average_sol
+	}
+
+	goal_add_value = 5
+
+    on_complete = {
+        trigger_event = {
+            id = japan_mac.6
+        }
+    }
+	progressbar = yes	
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_japan_mac_democratization = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    group = je_group_historical_content
+    complete = {
+        has_law =law_type:law_universal_suffrage
+        NOT = {
+            has_law = law_type:law_outlawed_dissent
+        }
+    }
+    on_complete = {
+        trigger_event = {
+            id = japan_mac.5
+        }
+    }
+    weight = 10000
+    should_be_pinned_by_default = yes
+}

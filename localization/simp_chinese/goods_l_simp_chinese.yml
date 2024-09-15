@@ -1,0 +1,77 @@
+﻿l_simp_chinese:
+ plastic: "塑料@money!#green 20#!"
+ petrol: "精炼燃料@money!#green 20#!"
+ housing_services: "住房服务@money!#green 80#!"
+ machine: "机床@money!#green 40#!"
+ equipment: "大型设备@money!#green 80#!"
+ computer: "计算机@money!#green 160#!"
+ spacecraft: "航天飞行器@money!#green 160#!"
+ telephones: "电子产品@money!#green 40#!"
+ ammunition: "弹药@money!#green 20#!"
+ small_arms: "轻武器@money!#green 20#!"
+ radios: "电子零件@money!#green 20#!" #电子处理器
+ tanks: "装甲单位@money!#green 160#!"
+ artillery: "远程武器@money!#green 160#!"
+ aeroplanes: "飞机@money!#green 160#!"
+ manowars: "风帆战舰@money!#green #!" #NO
+ ironclads: "军用船只@money!#green 160#!"
+ dye: "化合物@money!#green 20#!"
+ wool: "羊毛@money!#green #!" #NO
+ silk: "丝绸@money!#green #!" #NO
+ coal: "煤炭@money!#green 20#!"
+ sulfur: "非金属矿@money!#green 10#!"
+ iron: "金属矿@money!#green 10#!"
+ wood: "木材@money!#green #!" #NO
+ lead: "稀有金属材料@money!#green #!"
+ hardwood: "硬木@money!#green #!" #NO
+ rubber: "橡胶@money!#green 10#!"
+ tools: "工具@money!#green 20#!"
+ oil: "烃类能源@money!#green 20#!"
+ gold: "贵金属@money!#green 80#!"
+ steel: "合金@money!#green 20#!"
+ glass: "玻璃@money!#green 20#!"
+ fertilizer: "肥料@money!#green #!" #NO
+ explosives: "炸药@money!#green #!" #NO
+ engines: "引擎@money!#green 40#!"
+ fabric: "纤维@money!#green 10#!"
+ paper: "纸@money!#green 20#!"
+ clippers: "帆船@money!#green #!" #NO
+ steamers: "船舶@money!#green 40#!"
+ electricity: "电@money!#green 10#!"
+ transportation: "运力@money!#green 10#"
+ luxury_clothes: "高档衣物@money!#green #!" #NO
+ luxury_furniture: "家电@money!#green 40#!"
+ porcelain: "瓷器@money!#green #!" #NO
+ literature: "文学作品@money!#green #!" #NO
+ tobacco: "烟草@money!#green 10#!"
+ tea: "茶叶@money!#green #!" #NO
+ coffee: "咖啡@money!#green #!" #NO
+ opium: "医疗用品@money!#green 40#!"
+ sugar: "糖@money!#green 10#!"
+ automobiles: "汽车@money!#green 40#!"
+ fine_art: "文娱产品@money!#green 20#!"
+ grain: "粮食@money!#green 10#!"
+ fish: "鱼类@money!#green #!" #NO
+ meat: "肉类@money!#green 10#!"
+ fruit: "水果@money!#green #!" #NO
+ liquor: "饮品@money!#green 10#!"
+ wine: "酿造酒@money!#green #!" #NO
+ clothes: "服装@money!#green 20#!"
+ groceries: "加工食品@money!#green 20#!"
+ furniture: "家具日用品@money!#green 20#!"
+ services: "服务@money!#green 10#"
+ popneed_simple_clothing: "房产"
+ popneed_basic_food: "食品"
+ popneed_heating: "供暖与燃料"
+ popneed_household_items: "居家日用"
+ popneed_crude_items: "日常消耗"
+ popneed_standard_clothing: "服装
+ popneed_services: "服务"
+ popneed_intoxicants: "成瘾品"
+ popneed_luxury_drinks: "饮品"
+ popneed_free_movement: "运输"
+ popneed_communication: "通讯"
+ popneed_luxury_food: "高档食品"
+ popneed_luxury_items: "奢侈品"
+ popneed_art: "医疗"
+ popneed_leisure: "社交娱乐"

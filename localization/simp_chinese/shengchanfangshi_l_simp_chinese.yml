@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ pmg_pollution_control:0 "污染治理" 
+ pm_pollution_free_governance:0 "无污染治理"
+ pm_simple_governance:0 "简单治理"
+ pm_standard_governance:0 "标准治理"
+ pm_high_standard_governance:0 "高标准治理"
+ pm_strict_governance:0 "严格治理"
+

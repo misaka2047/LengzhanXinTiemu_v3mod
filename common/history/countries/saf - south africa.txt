@@ -1,0 +1,25 @@
+﻿COUNTRIES = {
+	c:SAF = {
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		
+		effect_starting_technology_tier_3_tech = yes
+		set_next_election_date = 1946.7.1
+		activate_law = law_type:law_parliamentary_republic #议会共和制
+		activate_law = law_type:law_wealth_voting #财产投票
+		activate_law = law_type:law_protectionism #贸易保护
+		activate_law = law_type:law_colonial_resettlement #民族安置
+		activate_law = law_type:law_local_police #地方警察部队
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_interventionism
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_anglican_church
+		}
+		add_taxed_goods = g:grain
+	}
+}

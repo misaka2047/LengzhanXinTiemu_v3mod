@@ -1,0 +1,48 @@
+﻿CHARACTERS = {
+	c:PRK = {
+		create_character = {
+			historical = yes
+			culture = cu:russian
+			religion = rel:atheist #无神论
+			ruler = yes # both ruler and general
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}	
+		}	
+
+		create_character = { #金日成
+			first_name = "Richeng"
+			last_name = "Jin"
+			historical = yes
+			birth_date = 1912.4.15
+			religion = rel:atheist #无神论
+			ig_leader = yes
+			is_general = yes # both ruler and general
+			commander_rank =commander_rank_4
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				expensive_tastes #昂贵嗜好
+			}	
+		}	
+
+		create_character = { #武亭
+			first_name = "Ting1"
+			last_name = "HX150"
+			historical = yes
+			birth_date = 1905.1.1
+			religion = rel:atheist #无神论
+			is_general = yes # both ruler and general
+			commander_rank =commander_rank_2
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+				direct #直率
+				brave #勇敢
+				basic_artillery_commander #炮兵指挥官
+				expert_offensive_planner #熟练的进攻策划师
+			}	
+		}
+	}
+}

@@ -1,0 +1,60 @@
+AOF = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_AOF
+		
+		adjective = AOF_ADJ
+		#is_main_tag_only = yes 
+		priority = 0
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_AOF
+		
+		adjective = AOF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_AOF
+		
+		adjective = AOF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_AOF
+		
+		adjective = AOF_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+		dynamic_country_name = {
+		name = dyn_SHENG_AOF
+		
+		adjective = AOF_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			coa_def_subject_trigger = yes
+		}
+	}
+} 
+

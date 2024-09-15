@@ -1,0 +1,223 @@
+﻿namespace = ger_events
+
+ger_events.1 = {
+	type = country_event
+	orphan = yes
+	
+	title = ger_events.1.t
+	desc = ger_events.1.d
+	flavor = ger_events.1.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+	
+	trigger = {
+		trigger_if = {
+			limit = {
+				AND = {
+					c:FRA = { NOT = { has_variable = country_is_player_var } }
+					c:USA = { NOT = { has_variable = country_is_player_var } }
+					c:GBR = { NOT = { has_variable = country_is_player_var } }
+					c:RHN = { NOT = { has_variable = country_is_player_var } }
+					c:BAV = { NOT = { has_variable = country_is_player_var } }
+					c:HAN = { NOT = { has_variable = country_is_player_var } }
+				}
+			}
+			always = yes
+		}
+		trigger_else_if = {
+			limit = {
+				AND = {
+					c:FRA = { has_variable = country_is_player_var }
+					c:USA = { has_variable = country_is_player_var }
+					c:GBR = { has_variable = country_is_player_var }
+					c:RHN = { has_variable = country_is_player_var }
+					c:BAV = { has_variable = country_is_player_var }
+					c:HAN = { has_variable = country_is_player_var }
+				}
+			}
+			has_variable = country_is_player_var
+		}
+	}
+
+	option = {
+		name = ger_events.1.a
+		default_option = yes
+		change_variable = {
+			name = ger_setup_var
+			add = 1
+		}
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					c:USA = { relations:root > relations_threshold:neutral }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root >= relations_threshold:cordial }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root >= relations_threshold:amicable }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root >= relations_threshold:friendly }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					this = c:USA
+				}
+				add = 50
+			}
+		}
+	}
+
+	option = {
+		name = ger_events.1.b
+		c:USA = { set_variable = je_vote_fail }
+
+		ai_chance = {
+			base = 0
+			modifier = {
+				trigger = {
+					c:USA = { relations:root < relations_threshold:neutral }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root <= relations_threshold:poor }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root <= relations_threshold:cold }
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					c:USA = { relations:root <= relations_threshold:hostil }
+				}
+				add = 10
+			}
+		}
+	}
+}
+
+ger_events.2 = {
+	type = country_event
+	
+	title = ger_events.2.t
+	desc = ger_events.2.d
+	flavor = ger_events.2.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+	
+	trigger = {
+		OR = {
+			AND = {
+				exists = c:RHN
+				this = c:RHN
+			}
+			AND = {
+				exists = c:HAN
+				this = c:HAN
+			}
+			AND = {
+				exists = c:BAV
+				this = c:BAV
+			}
+		}
+	}
+
+	option = {
+		name = ger_events.2.a
+		default_option = yes
+		if = {
+			limit = {
+				this = c:RHN
+			}
+			annex = c:BAV
+			annex = c:HAN
+			change_tag = BRD
+			make_independent = yes
+			set_capital = STATE_BRANDENBURG
+		}
+		else_if = {
+			limit = {
+				this = c:HAN
+			}
+			annex = c:BAV
+			annex = c:RHN
+			change_tag = BRD
+			make_independent = yes
+			set_capital = STATE_BRANDENBURG
+		}
+		else_if = {
+			limit = {
+				this = c:BAV
+			}
+			annex = c:RHN
+			annex = c:HAN
+			change_tag = BRD
+			make_independent = yes
+			set_capital = STATE_BRANDENBURG
+		}
+	}
+}
+
+ger_events.3 = {
+	type = country_event
+	
+	title = ger_events.3.t
+	desc = ger_events.3.d
+	flavor = ger_events.3.f
+
+	event_image = {
+		video = "southamerica_aristocrats"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+	
+	trigger = {
+		
+	}
+
+	option = {
+		name = ger_events.3.a
+		default_option = yes
+		c:PRU = { change_tag = DDR }
+		c:RUS = { create_diplomatic_pact = { country = c:DDR type = protectorate } }
+	}
+}

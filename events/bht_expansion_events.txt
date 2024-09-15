@@ -1,0 +1,35 @@
+namespace = bht_expansion
+
+bht_expansion.1 = {
+	type = country_event
+	placement = root
+	
+	title = bht_expansion.1.t
+	desc = bht_expansion.1.d
+	flavor = bht_expansion.1.f
+	
+    event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bht_expansion.1.a
+		add_journal_entry = {
+			type = je_bht_expansion_second_main
+		}
+		default_option = no
+    }
+    option = {
+		name = bht_expansion.1.b
+		default_option = yes
+    }
+}

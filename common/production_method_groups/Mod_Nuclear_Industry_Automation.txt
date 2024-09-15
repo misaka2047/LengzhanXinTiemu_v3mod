@@ -1,0 +1,41 @@
+﻿pmg_automation_nuclear_industry_simple = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_furniture_manufacturies
+		pm_rotary_valve_engine_building_furniture_manufacturies
+		pm_assembly_lines_mod_nuclear_industry_simple 
+		pm_integrated_circuitry_mod_nuclear_industry_simple
+		pm_automated_production_line_mod_nuclear_industry_simple
+	}
+}
+
+pmg_automation_nuclear_industry_complex = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_watertube_boiler_building_motor_industry
+		pm_rotary_valve_engine_building_motor_industry
+		pm_assembly_lines_mod_nuclear_industry_complex
+		pm_integrated_circuitry_mod_nuclear_industry_complex
+		pm_automated_production_line_mod_nuclear_industry_complex
+	}
+}
+
+pmg_automation_nuclear_reactor = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_integrated_reactor_control_circuit
+		pm_automated_survillance_system
+	}
+}
+
+pmg_automation_airport = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_automation_disabled
+		pm_automated_cargo_handler
+		pm_algorithmic_flight_control
+	}
+}

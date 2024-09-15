@@ -1,0 +1,187 @@
+﻿CHARACTERS = {
+	c:FRA = { #法国
+		create_character = {#法国临时政府总理乔治·皮杜尔
+			first_name = George
+			last_name = Pidur
+			ruler = yes
+			birth_date = 1899.10.5
+			historical = yes
+			ig_leader = yes
+		        interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_jingoist_leader #沙文主义者
+			traits = {
+			}
+		}
+
+		create_character = {#法国共产党领袖莫里斯·多列士
+			first_name = Morris
+			last_name = Torez
+			birth_date = 1900.4.28
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_democratic_socialism #民主社会主义者
+			traits = {
+			}
+		}
+
+		create_character = {#夏尔 戴高乐，自由法国领袖，此时担任法国临时政府将军
+			is_general = yes
+			first_name = Charlers
+			last_name = de_Gaulle
+			birth_date = 1890.11.22
+			dna = dna_king_leopold_01
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces 
+			ideology = ideology_de_gaulle #戴高乐主义者
+			hq = region_france
+			commander_rank = commander_rank_4
+			traits = {
+			                 brave
+                                                                    inspirational_orator
+                                                                    expert_offensive_planner
+                                                                    plains_commander
+                                                                    expert_artillery_commander
+                                                                    persistent
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+
+		create_character = {#安德烈 菲利普，戴高乐的内政部长
+			first_name = "Andre"
+			last_name = "Philip"
+			birth_date = 1902.6.28
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_reformer
+			traits = {
+				reserved
+                                                                    expert_political_operator
+			}
+		}
+
+		create_character = {#安德烈·布勒东，超现实主义创始人，法国哲学家，诗人，文学家
+			first_name = "Andre"
+			last_name = "Breton"
+			birth_date = 1896.2.19
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_intelligentsia
+			ideology = ideology_atheist
+			traits = {
+				romantic
+                                                                    innovative
+                                                                    charismatic
+			}
+		}
+
+		create_character = {#保罗 拉马迪尔 法国财政部长，银行家，二战时法国布列塔尼地区抵抗运动领袖
+			first_name = "Paul"
+			last_name = "Ramadier"
+			birth_date = 1888.3.17
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_industrialists
+			ideology = ideology_radical
+			traits = {
+				expert_political_operator
+                                                                    meticulous
+                                                                    brave
+			}
+		}
+
+		create_character = {#菲利普 勒克莱尔 自由法国高级将领
+			is_general = yes
+			first_name = Philippe
+			last_name = Leclerc
+			birth_date = 1902.11.22
+			historical = yes
+			ig_leader = yes
+			ideology = ideology_republican_leader #共和主义者
+			interest_group = ig_rural_folk
+			hq = region_france
+			commander_rank = commander_rank_5
+			traits = {
+				firebrand
+                                                                    experienced_diplomat
+                                                                    expert_offensive_planner
+                                                                    basic_naval_commander
+                                                                    direct
+			}
+		}
+		
+
+		create_character = { #菲利普·奥博尼奥，海军上将
+			historical = yes
+		 	is_admiral = yes
+			first_name = Philippe
+			last_name = Auboyneau
+			birth_date = 1869.2.24
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			hq = region_france
+			commander_rank = commander_rank_4
+			traits = {
+				experienced_naval_commander
+                                                                     expert_convoy_raider
+                                                                     imperious
+			}
+
+		}
+		
+		create_character = { #马塞尔·布鲁诺·让苏尔，海军上将
+			historical = yes
+			is_admiral = yes
+			first_name = Marcel·Bruno
+			last_name = Gensoul
+			birth_date = 1890.10.12
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			hq = region_occitania
+			commander_rank = commander_rank_4
+			traits = {
+				experienced_naval_commander
+                                                                     brave
+                                                                     dockyard_master
+			}
+		}
+		
+		create_character = { 
+			historical = yes
+			is_general = yes
+			first_name = Paul_Louis
+			last_name = Legentiaume
+			birth_date = 1884.3.26
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			hq = region_north_africa
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+				expert_naval_commander
+			}
+		}
+		
+		create_character = { #阿方斯·朱安，陆军元帅
+			historical = yes
+			is_general = yes
+			first_name = Alphonse
+			last_name = Juin
+			birth_date = 1888.12.16
+			interest_group = ig_armed_forces
+			ideology = ideology_republican_leader
+			hq = region_north_africa
+			commander_rank = commander_rank_5
+			traits = {
+				trench_rat
+                                                                     surveyor
+                                                                     forest_commander
+                                                                     expert_defensive_strategist
+			}
+		}
+	}
+}

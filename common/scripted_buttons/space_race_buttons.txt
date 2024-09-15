@@ -1,0 +1,114 @@
+space_race_satellite_button = {
+	name = "space_race_satellite_button"
+	desc = "space_race_satellite_button_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		has_technology_researched = tech_rocket_engineering
+        NOT = {
+            has_variable = space_race_satellite_button_used
+        }
+	}
+
+	effect = {
+		trigger_event = { id = space_race.2 }
+		set_variable = {
+			name = space_race_satellite_button_used
+			months = 24
+		}
+	}
+}
+
+space_race_manned_space_flight_button = {
+	name = "space_race_manned_space_flight_button"
+	desc = "space_race_manned_space_flight_button_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		has_technology_researched = tech_rocket_engineering
+        NOT = {
+            has_variable = space_race_manned_space_flight_button_used
+        }
+        has_variable = have_launched_satellite
+	}
+
+	effect = {
+		trigger_event = { id = space_race.3 }
+		set_variable = {
+			name = space_race_manned_space_flight_button_used
+			months = 36
+		}
+
+	}
+}
+
+
+space_race_lunarlanding_button = {
+	name = "space_race_lunarlanding_button"
+	desc = "space_race_lunarlanding_button_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		has_technology_researched = tech_modern_rockets
+        NOT = {
+            has_variable = space_race_lunarlanding_button_used
+        }
+        has_variable = have_launched_astronaut
+	}
+
+	effect = {
+		trigger_event = { id = space_race.4 }
+		set_variable = {
+			name = space_race_lunarlanding_button_used
+			months = 36
+		}
+
+	}
+}
+
+space_race_space_station_button = {
+	name = "space_race_space_station_button"
+	desc = "space_race_space_station_button_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		has_technology_researched = tech_modern_rockets
+        NOT = {
+            has_variable = space_race_space_station_button_used
+        }
+        has_variable = have_launched_astronaut
+	}
+
+	effect = {
+		trigger_event = { id = space_race.5 }
+		set_variable = {
+			name = space_race_space_station_button_used
+			months = -1
+		}
+
+	}
+}

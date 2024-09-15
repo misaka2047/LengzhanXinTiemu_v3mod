@@ -1,0 +1,40 @@
+﻿CHARACTERS = {
+	c:FIN = {
+		create_character = {
+			first_name = "Yoho·Kusti"
+			last_name = "Pashikiwi"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1870.11.27
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				tactful #圆滑
+				masterful_diplomat #外交大师
+				brave #勇敢
+			}
+		}
+
+		create_character = {
+			first_name = "Carl_Gustav_Emil"
+			last_name = "Mannerheim"
+			historical = yes
+			ig_leader = yes
+			is_general = yes
+			commander_rank = commander_rank_5
+			birth_date = 1867.6.4
+			culture=cu:swedish #瑞典
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_republican_leader #共和主义者
+			traits = {
+				brave #勇敢
+				expert_defensive_strategist #熟练的防守策划师
+				defense_in_depth_specialist #纵深防御专家
+				forest_commander #林地作战专家
+				meticulous #谨小慎微
+				popular_commander #受欢迎的指挥官
+			}
+		}
+	}
+}

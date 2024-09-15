@@ -1,0 +1,21 @@
+﻿CHARACTERS = {
+	c:EGY = {
+		create_character = {
+			#法鲁克一世
+			historical = yes
+			first_name = "Muhammad"
+			last_name = "Farouk"
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1920.2.11
+			interest_group = ig_landowners
+			ideology = ideology_moderate #温和主义者
+			traits = {
+				expensive_tastes #昂贵嗜好
+				hedonist #享乐主义者
+				grifter #骗子
+				innovative #创新精神
+			}
+		}	
+	}
+}

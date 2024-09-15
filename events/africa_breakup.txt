@@ -1,0 +1,131 @@
+namespace = africa_breakup
+
+africa_breakup.1 = {
+	type = country_event
+	placement = root
+	
+	title = africa_breakup.1.t
+	desc = africa_breakup.1.d
+	flavor = africa_breakup.1.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+		this = c:AOF
+		is_subject = no
+		is_at_war = no
+		NOT = {	
+			has_variable = aof_collapse_var
+		}
+	}
+
+	immediate = {
+		set_variable = aof_collapse_var
+	}
+
+	option = {
+		name = africa_breakup.1.a
+         ai_chance = {
+			base = 60
+		}     
+        create_country = { tag = MTY origin = c:AOF
+			state = s:STATE_MAURITANIA.region_state:AOF
+			state = s:STATE_INNER_MAURITANIA.region_state:AOF
+             }
+        create_country = { tag = SNJ origin = c:AOF
+			state = s:STATE_SENEGAL.region_state:AOF
+			state = s:STATE_GAMBIA.region_state:AOF
+             }
+        create_country = { tag = NGR origin = c:AOF
+			state = s:STATE_OUTER_HAUSALAND.region_state:AOF
+			state = s:STATE_NIGER.region_state:AOF
+             }
+        create_country = { tag = GNI origin = c:AOF
+			state = s:STATE_GUINEA.region_state:AOF
+             }
+        create_country = { tag = CDW origin = c:AOF
+			state = s:STATE_WINDWARD_COAST.region_state:AOF
+            state = s:STATE_IVORY_COAST.region_state:AOF
+             }
+        create_country = { tag = DAH origin = c:AOF
+			state = s:STATE_DAHOMEY.region_state:AOF
+             }
+		create_country = { tag = TGO origin = c:AOF
+			state = s:STATE_TOGO.region_state:AOF
+             }
+        c:AOF = { change_tag = MAL }
+	}
+
+    option = {
+		name = africa_breakup.1.b
+    ai_chance = {
+			base = 40
+		}
+	}
+}
+
+africa_breakup.2 = {
+	type = country_event
+	placement = root
+	
+	title = africa_breakup.2.t
+	desc = africa_breakup.2.d
+	flavor = africa_breakup.2.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+	trigger = {
+		this = c:AEF
+		is_subject = no
+		is_at_war = no
+		NOT = {	
+			has_variable = aef_collapse_var
+		}
+	}
+
+	immediate = {
+		set_variable = aef_collapse_var
+	}
+
+	option = {
+		name = africa_breakup.2.a
+        ai_chance = {
+			base = 60
+		}     
+        create_country = { tag = GAB origin = c:AEF
+			state = s:STATE_GABON.region_state:AEF
+             }
+        create_country = { tag = CHD origin = c:AEF
+			state = s:STATE_CHAD.region_state:AEF
+			state = s:STATE_WADDAI.region_state:AEF
+             }
+        create_country = { tag = CON origin = c:AEF
+			state = s:STATE_CONGO.region_state:AEF
+             }
+        c:AEF = { change_tag = CAR }
+	}
+
+    option = {
+		name = africa_breakup.2.b
+    ai_chance = {
+			base = 40
+		}
+	}
+}
+

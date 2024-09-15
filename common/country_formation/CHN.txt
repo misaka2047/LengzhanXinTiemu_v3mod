@@ -1,0 +1,17 @@
+CHN = {
+	use_culture_states = yes
+	
+	is_major_formation = yes
+	
+	unification_play = dp_unify_italy
+	leadership_play = dp_leadership_italy
+
+	required_states_fraction = 0.7
+
+	possible = {
+		country_has_primary_culture = cu:han
+		owns_entire_state_region = STATE_NANJING
+		owns_entire_state_region = STATE_BEIJING
+		owns_entire_state_region = STATE_FORMOSA
+	}
+}

@@ -1,0 +1,26 @@
+space_race_core_progress_bar = {
+ 	name = "space_race_core_progress_bar_name"
+ 	desc = "space_race_core_progress_bar_usa_desc"
+ 	second_desc = "space_race_core_progress_bar_rus_desc"
+
+ 	double_sided_gold = yes
+
+ 	yearly_progress = {
+		if = {
+			limit = {
+				exists = global_var:space_race_balance_passive_var
+				NOT = {
+					global_var:space_race_balance_passive_var = 0
+				}
+			}
+			add = {
+			   desc = "space_race_core_progress_passive_balance"
+			   value = global_var:space_race_balance_passive_var
+		    }
+		}
+ 	}
+
+ 	start_value = 100
+ 	min_value = 0
+ 	max_value = 200
+}

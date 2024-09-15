@@ -1,0 +1,259 @@
+pmg_advance_building_food_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_food_industry_3
+		pm_advance_building_food_industry_5
+}
+}
+
+pmg_advance_building_textile_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_textile_mills_3
+		pm_advance_building_textile_mills_5
+}
+}
+
+pmg_advance_building_furniture_manufacturies = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_furniture_manufacturies_3
+		pm_advance_building_furniture_manufacturies_5
+}
+}
+
+pmg_advance_building_glassworks = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_glassworks_3
+		pm_advance_building_glassworks_4
+		pm_advance_building_glassworks_5
+}
+}
+
+
+pmg_advance_building_tooling_workshops = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_tooling_workshops_3
+		pm_advance_building_tooling_workshops_5
+}
+}
+
+pmg_advance_building_paper_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_paper_mills_3
+		pm_advance_building_paper_mills_5
+}
+}
+
+pmg_advance_building_steel_mills = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_steel_mills_3
+		pm_advance_building_steel_mills_4
+		pm_advance_building_steel_mills_5
+}
+}
+
+
+pmg_advance_building_motor_industry = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_motor_industry_3
+		pm_advance_building_motor_industry_5
+}
+}
+
+pmg_advance_building_shipyards = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_shipyards_2
+		pm_advance_building_shipyards_4
+}
+}
+
+pmg_advance_building_electronic_parts_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_electronic_parts_factory_2
+		pm_advance_building_electronic_parts_factory_3
+		pm_advance_building_electronic_parts_factory_4
+}
+}
+
+
+pmg_advance_building_coal_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_coal_mine_4
+		pm_advance_building_coal_mine_5
+}
+}
+
+pmg_advance_building_iron_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_iron_mine_4
+		pm_advance_building_iron_mine_5
+}
+}
+
+pmg_advance_building_sulfur_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_sulfur_mine_4
+		pm_advance_building_sulfur_mine_5
+}
+}
+
+pmg_advance_building_gold_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_gold_mine_4
+		pm_advance_building_gold_mine_5
+}
+}
+
+pmg_advance_building_gold_fields = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_gold_fields_4
+		pm_advance_building_gold_fields_5
+}
+}
+
+pmg_advance_building_arts_academy = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_arts_academy_3
+		pm_advance_building_arts_academy_4
+}
+}
+
+pmg_advance_building_power_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_power_plant_3
+}
+}
+pmg_advance_building_university = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_none
+		pm_advance_building_university_3
+		pm_advance_building_university_4
+}
+}
+
+pmg_advance_building_logging_camp = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_logging_camp_2
+		pm_advance_building_logging_camp_3
+	}
+}
+
+pmg_advance_building_oil_rig = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_oil_rig_4
+		pm_advance_building_oil_rig_5
+}
+}
+
+pmg_advance_building_construction_sector = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+	production_methods = {
+		pm_none
+		pm_advance_building_construction_sector_3
+}
+}
+pmg_advance_building_breeding_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_breeding_farm_3
+}
+}
+pmg_advance_building_sugar_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_sugar_factory_3
+}
+}
+pmg_advance_building_beverage_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_beverage_factory_3
+		pm_advance_building_beverage_factory_5
+}
+}
+
+pmg_advance_building_chemical_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_chemical_plant_3
+		pm_advance_building_chemical_plant_5
+}
+}
+
+pmg_advance_building_refinery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_refinery_3
+		pm_advance_building_refinery_5
+}
+}
+
+pmg_advance_building_real_estate_developers = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_real_estate_developers_2
+}
+}
+pmg_advance_building_car_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_car_factory_2
+		pm_advance_building_car_factory_3
+}
+}
+
+pmg_advance_building_home_appliance_factory = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_none
+		pm_advance_building_home_appliance_factory_3
+		pm_advance_building_home_appliance_factory_4
+}
+}
+

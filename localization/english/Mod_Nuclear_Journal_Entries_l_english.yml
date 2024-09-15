@@ -1,0 +1,92 @@
+﻿l_english:
+
+je_atomic_jets:0 "Atomic Jet Airlines Hub"
+je_atomic_jets_reason:1 "Air travel is increasingly popular, and many cities emerged as a major transit hub for airlines."
+Mod_Nuclear_production_JE_events.1.t:0 "The [SCOPE.sState('airport_state').GetCityHubName] Airline Hub"
+Mod_Nuclear_production_JE_events.1.d:0 "The recent jet travel boom has made [SCOPE.sState('airport_state').GetCityHubName] in [SCOPE.sState('airport_state').GetName] a major airline hub where multiply carriers refuel their jets and diverts their passengers. Soon, [SCOPE.sState('airport_state').GetCityHubName] will be known as heart of [ROOT.GetCountry.GetAdjectiveNoFormatting] airline industry."
+Mod_Nuclear_production_JE_events.1.f:0 "Picture Source: https://commons.wikimedia.org/wiki/File:San_Francisco_International_Airport_-_aerial_photo.jpg "
+Mod_Nuclear_production_JE_events.1.a:0 "The [SCOPE.sState('airport_state').GetCityHubName] Airport will be our window to the world!"
+Mod_Nuclear_production_JE_events.1.b:0 "But the [ROOT.GetCountry.GetAdjectiveNoFormatting] Aerospace Industry should be De-centralized!"
+Mod_Nuclear_JE_airport_hub_modifier:0 "Global Airport Hub"
+
+
+
+je_aerial_farming:0 "Farmjet"
+je_aerial_farming_reason:0 "It is easy to strip a few tanks of pesticide and fertilizer sprayer onto a jet. The difficulty is making it cheap and durable enough for any farmhand to fly it without killing a hundred."
+Mod_Nuclear_production_JE_events.2.t:0 "Farmer in the Sky"
+Mod_Nuclear_production_JE_events.2.d:0 "Who said farmers must break their back to provide food for all of us? With the new Farmjets, ordinary farmers can apply pesticide and fertilizer to hundreds of acres of land in one single day. No hard work, just fly! \n\n As technological marvel revolutionize food production, the [ROOT.GetCountry.GetName] proudly announce that it will soon...."
+Mod_Nuclear_production_JE_events.2.f:0 "A society as civilized as we are shall never exploit the farmers and peasants, for it is with their toil and sweat that we can eat in comfort. Never should a [ROOT.GetCountry.GetAdjectiveNoFormatting] farmer find themselves in poverty, otherwise the [ROOT.GetCountry.GetName] will truly be a failed state."
+Mod_Nuclear_production_JE_events.2.a:0 "Abolish Hunger!"
+Mod_Nuclear_production_JE_events.2.b:0 "Abolish Subsistence Farming!"
+
+
+
+je_general_aviation:0 "General Aviation and Commuter Airlines"
+je_general_aviation_reason:0 "Mass Production of atomic turbojets and airplanes allowed for much, much more people to enjoy the conveniency of air travel. Today, even a poor laborer can afford commuting weekly with cheap airlines."
+Mod_Nuclear_production_JE_events.3.t:0 "Commuter's Town"
+Mod_Nuclear_production_JE_events.3.d:0 "The old cities of [SCOPE.sState('general_aviation_state').GetCityHubName] are in miserable conditions: dense sprawl of vertically-growing clusters surrounded and polluted by endless industrial sprawls, where the poor in the lower levels seldom sees sunlight but always inhales smog. \n\n Not anymore! With chearp commuting airlines connecting the city to other part of [SCOPE.sState('general_aviation_state').GetName] or even out of the state, people commute weekly and enjoy their weekend in their beautiful rural homes."
+Mod_Nuclear_production_JE_events.3.f:0 "Why live where you work? Five days in pods for the corporations, two in my house by the lake for myself! To hell with quarters in [SCOPE.sState('general_aviation_state').GetCityHubName], I'm leaving! "
+Mod_Nuclear_production_JE_events.3.a:0 "[SCOPE.sState('general_aviation_state').GetCityHubName] will lead [ROOT.GetCountry.GetAdjectiveNoFormatting] Urban Renewal!"
+Mod_Nuclear_production_JE_events.3.b:0 "Why can't we just have less people living in cities?"
+Mod_Nuclear_JE_general_aviation_modifier:0 "Center of the New Suburbanization Movement"
+
+
+
+je_submerged_farm:0 "Farm in the waves"
+je_submerged_farm_reasin:0 "By dumping enough fertilizers and artificial sunlight LED bulbs, you can virtually make the sea your personal Hydroponics Bay."
+Mod_Nuclear_production_JE_events.4.t:0 "The New Fisherman"
+Mod_Nuclear_production_JE_events.4.d:0 "Fisherman--or, more precisely, farmers and engineers of submerged farms--are becomming the new career choice of young people in [SCOPE.sState('submerged_farm_state').GetName]. You don't sail far, if at all. Your platform is sturdy and seasickness is negligible. All you do every day is just dumping fertilizer and harvesting salmon or plankton, maybe drive your submarine for half a mile---isn't it a great job?"
+Mod_Nuclear_production_JE_events.4.f:0 "7:30 A.M. Wake up. Have breakfast: cornbread, smoked salmon \n 9:00 - 11:00 A.M.: Drive the sub and check for leaks. \n 11:30: Lunch, plankton bread sardine sandwich \n 13:00 - 17:00: EVA. Plankton's ain't working well, applied fertilizer and light. Screw the regulations on fertilizer over-use and algal bloom. \n17:22: wife ashore cheated, citing me working seven weeks at the sea without going home. \n19:00 Dinner. Smoked Trout and Baguette, 6 shots of Rum. Liquor's running low onboard. \n 20:00 To hell with work, drunk a bottle of wine. \n 20:22, happy hour became sad hour, drunk a bottle of brandy. \n 6:42 A.M. crushed my sub onto the pillars."
+Mod_Nuclear_production_JE_events.4.a:0 "[SCOPE.sState('submerged_farm_state').GetPortHubName] will lead the next agricultural revolution!"
+Mod_Nuclear_production_JE_events.4.b:0 "Shipbuilders of [SCOPE.sState('submerged_farm_state').GetPortHubName] will benefit through field experiments!"
+Mod_Nuclear_production_JE_events.4.c:0 "Old Farms can be used as docks of [ROOT.GetCountry.GetAdjectiveNoFormatting] Navy!"
+Mod_Nuclear_production_JE_events.4.e:0 "Submerged Farms provide concrete basis for permanent ocean mining bases!"
+Mod_Nuclear_JE_submerged_farm_production_modifier:0 "Forerunner of Aquaculture"
+Mod_Nuclear_JE_submerged_farm_shipbuilding_modifier:0 "Professional Ocean Platform Builders"
+Mod_Nuclear_JE_submerged_farm_naval_modifier:0 "Submerged Farm Docks"
+
+
+je_ocean_mining:0 "Ocean Mining"
+je_ocean_mining_reason:0 "If you hate the troublesome water pressure, just blast the seabed with hydrogen bombs and mine what's left."
+Mod_Nuclear_production_JE_events.5.t:0 "The Ports of [SCOPE.sState('ocean_mining_state').GetPortHubName]"
+Mod_Nuclear_production_JE_events.5.d:0 "With a prosperous ocean mining industry centered at [SCOPE.sState('ocean_mining_state').GetPortHubName], the port will surely grow exponentially. With all those cargo liners, traders, sailor-miners, and shipbuilders drinking together in [SCOPE.sState('ocean_mining_state').GetPortHubName]'s bar, the port has grew into a prosperous city and marketplace of staple goods and engineering ideas. \n Now, where does the [ROOT.GetCountry.GetAdjectiveNoFormatting] government see [SCOPE.sState('ocean_mining_state').GetPortHubName] in the future decade?"
+Mod_Nuclear_production_JE_events.5.f:0 "Towards a sea-based economy!"
+Mod_Nuclear_production_JE_events.5.a:0 "A center of [ROOT.GetCountry.GetAdjectiveNoFormatting] mining industry!"
+Mod_Nuclear_production_JE_events.5.b:0 "The prime shipbuilder of [ROOT.GetCountry.GetName]!"
+Mod_Nuclear_production_JE_events.5.c:0 "Field Academy of [ROOT.GetCountry.GetAdjectiveNoFormatting]'s Naval Engineers!"
+Mod_Nuclear_production_JE_events.5.4:0 "Forefront of automation of oceanic mining!"
+Mod_Nuclear_production_JE_events.5.5:0 "Building Site for future monuments!"
+Mod_Nuclear_JE_ocean_mining_production_modifier:0 "Prosperous Mineral Ports"
+Mod_Nuclear_JE_ocean_mining_shipbuilding_modifier:0 "Mining Platform Builders"
+Mod_Nuclear_JE_ocean_mining_naval_combat_modifier:0 "Seasoned Maritime Mining Engineers"
+
+
+je_cybernetics_production:0 "Cybernetics Production"
+je_cybernetics_production_reason:0 "The Flesh Is Weak."
+Mod_Nuclear_production_JE_events.6.t:0 "The New [ROOT.GetCountry.GetAdjectiveNoFormatting] People"
+Mod_Nuclear_production_JE_events.6.d:0 "This mortal body has long constrained the possibility of citizens of [ROOT.GetCountry.GetName]. While we cannot escape death, we can at least replace our pitiful limbs into a stronger version, into steel and machines. "
+Mod_Nuclear_production_JE_events.6.f:0 "You treasure your hand because it is versatile, because you hold everything from a rifle to a mechanical tool---But think of this, my friend, why not just make your hand a piece of steel tool or a rifle?"
+Mod_Nuclear_production_JE_events.6.a:0 "Springtime of [ROOT.GetCountry.GetAdjectiveNoFormatting] Technological Marvels!"
+Mod_Nuclear_production_JE_events.6.b:0 "Can we also upgrade our brain with steel?"
+Mod_Nuclear_production_JE_events.6.c:0 "It's time to revisit the definition of 'human'."
+Mod_Nuclear_JE_cybernetics_science_modifier:0 "Springtime of Cybernetics Technology"
+Mod_Nuclear_JE_cybernetics_society_modifier:0 "School of Transhumanism"
+
+
+je_first_commercial_reactor:0 "Commercial Reactors"
+je_first_commercial_reactor_reason:0 "Electricity is the future, and fission reactors are, by far, the most reliable, efficient, and clean means of producing electricity. It is time to say goodbye to power shortages."
+Mod_Nuclear_production_JE_events.7.t:0 "[SCOPE.sState('first_commercial_reactor_state').GetCityHubName], City of Light"
+Mod_Nuclear_production_JE_events.7.d:0 "The old suburb of [SCOPE.sState('first_commercial_reactor_state').GetCityHubName] now looks completely anew. With [ROOT.GetCountry.GetName]'s First commercial-level nuclear reactor in the area, energy is nothing expensive anymore. Lights will be kept up all day as shutting down and restarting reactor costs dearly, and with such abundance of power [SCOPE.sState('first_commercial_reactor_state').GetCityHubName] will truly be rememebered as the [ROOT.GetCountry.GetAdjectiveNoFormatting] City of Light."
+Mod_Nuclear_production_JE_events.7.f:0 "UNLIMITED POWER!!!!!!!"
+Mod_Nuclear_production_JE_events.7.a:0 "[SCOPE.sState('first_commercial_reactor_state').GetCityHubName] will never be like before."
+Mod_Nuclear_production_JE_events.7.b:0 "Rurual [SCOPE.sState('first_commercial_reactor_state').GetName] will benefit from more portable reactors!"
+Mod_Nuclear_production_JE_events.7.c:0 "Can't we make a more efficient pile?"
+Mod_Nuclear_JE_first_commercial_reactor_modifier:0 "The City of Light"
+
+### 
+
+
+
+
+
+

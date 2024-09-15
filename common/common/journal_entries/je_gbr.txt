@@ -1,0 +1,103 @@
+﻿je_ger_setup = {#成立西德
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	group = je_group_internal_affairs
+
+	scripted_button = je_button_vote
+
+	is_shown_when_inactive = {
+		exists = c:USA
+		this = c:USA
+	}
+
+	possible = {
+		this = c:USA
+		game_date > 1949.1.1
+	}
+
+	immediate = {
+		set_variable = {
+			name = ger_setup_var
+			value = 0
+		}
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+    }
+
+    on_complete = {
+    	random_list = {
+    		30 = {
+    			c:HAN = { trigger_event = { id = ger_events.2 days = 1 } }
+    			modifier = {
+					if = {
+						limit = {
+							c:HAN = { relations:root > 0 }
+						}
+						add = 10
+					}
+					else_if = {
+						limit = {
+							c:HAN = { relations:root < 0 }
+						}
+						add = -10
+					}
+				}
+    		}
+    		30 = {
+    			c:RHN = { trigger_event = { id = ger_events.2 days = 1 } }
+    			modifier = {
+					if = {
+						limit = {
+							c:RHN = { relations:root > 0 }
+						}
+						add = 10
+					}
+					else_if = {
+						limit = {
+							c:RHN = { relations:root < 0 }
+						}
+						add = -10
+					}
+				}
+    		}
+    		30 = {
+    			c:BAV = { trigger_event = { id = ger_events.2 days = 1 } }
+    			modifier = {
+					if = {
+						limit = {
+							c:BAV = { relations:root > 0 }
+						}
+						add = 10
+					}
+					else_if = {
+						limit = {
+							c:BAV = { relations:root < 0 }
+						}
+						add = -10
+					}
+				}
+    		}
+    	}
+    } 
+
+    fail = {
+    	has_variable = je_vote_fail
+    }
+
+    on_fail = {
+    	remove_variable = ger_setup_var
+    	remove_variable = country_is_player_var
+    }
+
+	current_value = {
+		value = var:ger_setup_var
+	}
+
+	goal_add_value = {
+		value = 6
+	}
+
+}

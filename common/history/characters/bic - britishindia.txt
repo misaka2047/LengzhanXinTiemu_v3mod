@@ -1,0 +1,23 @@
+﻿CHARACTERS = {
+	c:BIC = { #印度
+		create_character = {
+			first_name = "Archibald"
+			last_name = "Wavell"
+			historical = yes
+			culture=cu:british #英格兰
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1883.5.5
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_moderate #温和主义者
+			traits = {
+				    charismatic
+		                                      ambitious
+				    bigoted
+                                                                        expert_offensive_planner									
+				    firebrand
+				    mountain_commander
+			}
+		}	
+	}
+}

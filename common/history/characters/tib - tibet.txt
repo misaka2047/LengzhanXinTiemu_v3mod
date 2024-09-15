@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:TIB = {
+		create_character = {
+			# 14 Dalai Lama
+			first_name = "Danzeng"
+			last_name = "Gyatso"
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1935.7.1
+			interest_group = ig_devout #宗教
+			ideology = ideology_reformer #改良主义者
+			traits = {
+			}
+		}
+	}
+}

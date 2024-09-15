@@ -1,0 +1,110 @@
+﻿POWER_BLOCS = {
+	c:USA = { 
+		create_power_bloc = {
+			name = Organization_of_American_States #美洲国家组织
+
+			map_color = { 66  94  193 }
+
+			founding_date = 1890.4.14
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+
+			# Habsburg leaders in Italy and Italian states held up by direct Austrian intervention
+			member = c:ARG
+			member = c:PRG
+			member = c:PNM
+			member = c:BRZ
+			member = c:PEU
+			member = c:BOL
+			member = c:DOM
+			member = c:ECU
+			member = c:CLM
+			member = c:COS
+			member = c:HAI
+			member = c:HON
+			member = c:MEX
+			member = c:NIC
+			member = c:ELS
+			member = c:GTM
+			member = c:VNZ
+			member = c:URU
+			member = c:CHL
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_construction_2
+			}
+		}
+	}
+
+	c:RUS = {
+		create_power_bloc = {
+			name = SOVIET_UNION #苏维埃联盟
+
+			map_color = { 210  45  45 }
+
+			founding_date = 1922.12.30
+			identity = identity_ideological_union
+			principle = principle_creative_legislature_1
+
+			# subjects are automatically part of the bloc
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_construction_2
+			}
+		}
+	}
+
+	c:GBR = { 
+		create_power_bloc = {
+			name = COMMONWEALTH #英联邦
+			map_color = hsv{ 0.99  0.7  0.9 }
+
+			founding_date = 1931.1.1
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+			# subjects are automatically part of the bloc
+			member = c:IRE
+			member = c:EGY			
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_construction_2
+			}
+		}
+	}
+
+	c:FRA = {
+		create_power_bloc = {
+			name =  French_colonial_empire #法兰西殖民帝国
+
+			map_color = { 20  50  210 }
+
+			founding_date = 1830.01.01
+			identity = identity_sovereign_empire
+			principle = principle_exploit_members_1
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_construction_2
+			}
+		}
+	}
+}

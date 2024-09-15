@@ -1,0 +1,11 @@
+﻿CHARACTERS = {
+	c:NEP = {
+		create_character = {
+			historical = yes
+			ruler = yes
+			traits = {
+			}
+		}
+	}
+}
+

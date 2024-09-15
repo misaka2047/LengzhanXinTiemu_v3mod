@@ -1,0 +1,59 @@
+﻿COUNTRIES = {
+	c:CLM = {
+		effect_starting_technology_tier_4_tech = yes
+
+		set_tax_level = medium
+		
+		add_taxed_goods = g:wine
+		effect_starting_politics_liberal = yes
+		# Laws
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_migration_controls #移民控制
+		activate_law = law_type:law_guaranteed_liberties #保障自由
+		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_slavery_banned
+		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_protectionism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_serfdom_banned
+  		activate_law = law_type:law_proportional_taxation #比例税制
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_dedicated_police
+            activate_law = law_type:law_private_health_insurance #私人医疗保险
+            activate_law = law_type:law_womens_suffrage
+            activate_law = law_type:law_universal_suffrage
+		activate_law = law_type:law_poor_laws
+            activate_law = law_type:law_compulsory_primary_school
+            activate_law = law_type:law_8_hour_working_system
+
+		set_tariffs_import_priority = g:artillery
+		set_tariffs_import_priority = g:small_arms		
+
+		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_caudillismo
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_paternalistic
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+
+		set_institution_investment_level = {
+			institution = institution_schools #教育
+			level = 3
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police #执法
+			level = 3
+		}
+	}
+}

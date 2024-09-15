@@ -1,0 +1,32 @@
+﻿CHARACTERS = {
+	c:TUR = {
+		create_character = {
+			#伊斯麦特·伊诺努
+			first_name = Ismat
+			last_name = Inonu
+			ruler = yes
+			historical = yes
+			birth_date = 1884.9.24
+			culture = cu:kurdish
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				strong #健硕
+ 				imperious #盛气凌人
+			}
+		}
+
+		create_character = {
+			#雷杰普·佩凯尔
+			first_name = "Rajip"
+			last_name = "Pekker"
+			historical = yes
+			birth_date = 1889.2.5
+			culture = cu:circassian
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			traits = {
+			}
+		}	
+	}
+}

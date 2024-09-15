@@ -1,0 +1,168 @@
+﻿je_reunify_china = { #统一中国
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/invention_icons/wargaming.dds"
+
+	group = je_group_foreign_affairs
+
+	modifiers_while_active = {
+		modifier_chinese_warlord_era
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			c:PRC = ROOT
+			c:CHI = ROOT
+		}
+	}
+	
+	possible = {
+		OR = {
+			c:PRC = ROOT
+			c:CHI = ROOT
+		}
+	}
+
+	complete = {
+		trigger_if = {
+			limit = {
+				global_var:chinese_central_government ?= this
+			}
+			custom_tooltip = {
+				text = no_independent_chinese_countries_tt
+				any_country = {
+					filter = {
+						OR = {
+							any_primary_culture = {
+								has_discrimination_trait = han_chinese
+							}
+							country_has_primary_culture = cu:yi
+							country_has_primary_culture = cu:manchu
+						}
+						OR = {
+							capital.region = sr:region_north_china
+							capital.region = sr:region_south_china
+							capital.region = sr:region_manchuria
+							capital.region = sr:region_central_asia
+							capital.region = sr:region_himalayas
+						}
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+		trigger_else = {
+			trigger_if = {
+				limit = {
+					global_var:chinese_central_government ?= {
+						is_country_alive = yes
+					}
+				}
+				custom_tooltip = {
+					text = central_government_defeated_tt
+					OR = {
+						NOT = {
+							exists = global_var:chinese_central_government
+						}
+						global_var:chinese_central_government ?= {
+							is_country_alive = no
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = no_independent_chinese_countries_tt
+				any_country = {
+					filter = {
+						OR = {
+							any_primary_culture = {
+								has_discrimination_trait = han_chinese
+							}
+							country_has_primary_culture = cu:yi
+							country_has_primary_culture = cu:manchu
+						}
+						OR = {
+							capital.region = sr:region_north_china
+							capital.region = sr:region_south_china
+							capital.region = sr:region_manchuria
+							capital.region = sr:region_central_asia
+							capital.region = sr:region_himalayas
+						}
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+		OR = {
+			owns_entire_state_region = STATE_NANJING
+			owns_entire_state_region = STATE_BEIJING
+		}
+		custom_tooltip = {
+			text = has_formed_china_tt
+			c:CHN ?= this
+		}
+	}
+	
+	on_complete = {
+		if = {
+			limit = {
+				has_modifier = the_peoples_liberation_army_controls_half_of_the_country
+			}
+			remove_modifier = the_peoples_liberation_army_controls_half_of_the_country
+		}
+		if = {
+			limit = {
+				has_modifier = ununified_china
+			}
+			remove_modifier = ununified_china
+		}
+		if = {
+			limit = {
+				has_modifier = retreat_toa_treasure_island
+			}
+			remove_modifier = retreat_toa_treasure_island
+		}
+		remove_global_variable = chinese_central_government
+		trigger_event = { id = warlord_china_events.101 popup = yes }
+	}
+		
+	weight = 1000
+}
+
+je_fragile_rule = { #脆弱的统治
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/invention_icons/wargaming.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+			c:CHI = ROOT
+	}
+	
+	possible = {
+			c:CHI = ROOT
+	}
+
+	complete = {
+	NOT = {
+			owns_entire_state_region = STATE_NANJING #南京
+			owns_entire_state_region = STATE_HUNAN #湖南
+			owns_entire_state_region = STATE_YUNNAN #云南
+			owns_entire_state_region = STATE_GUANGXI #广西
+		}
+	}
+	
+	on_complete = {
+		remove_modifier = the_peoples_liberation_army_controls_half_of_the_country
+		add_modifier = { name = retreat_toa_treasure_island #退守宝岛 }
+	}
+		
+	weight = 1000
+}

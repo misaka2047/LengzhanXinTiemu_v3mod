@@ -1,0 +1,112 @@
+POPS = {
+	s:STATE_GUATEMALA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = afro_caribbean
+				size = 44200
+			}
+			create_pop = {
+				culture = central_american
+				size = 19300
+			}
+			create_pop = {
+				culture = british
+				size = 1800
+			}
+		}
+		region_state:GTM = {
+			create_pop = {
+				culture = central_american
+				size = 2100000
+			}
+			create_pop = {
+				culture = mayan
+				size = 656800
+			}
+		}
+	}
+	s:STATE_HAITI = {
+		region_state:HAI = {
+			create_pop = {
+				culture = afro_antillean
+				size = 2380000
+			}
+			create_pop = {
+				culture = caribeno
+				size = 40000
+			}
+		}
+	}
+	s:STATE_BAHAMAS = {
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 19200
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 100400
+			}
+		}
+	}
+	s:STATE_WEST_INDIES = {
+		region_state:FRA = {
+			create_pop = {
+				culture = french
+				size = 22200
+			}
+			create_pop = {
+				culture = afro_antillean
+				size = 216104
+			}
+		}
+		region_state:DEN = {
+			create_pop = {
+				culture = danish
+				size = 3992
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 39996
+			}
+		}
+		region_state:GBR = {
+			create_pop = {
+				culture = british
+				size = 34704
+			}
+			create_pop = {
+				culture = afro_caribbean
+				size = 234768
+			}
+			create_pop = {
+				culture = dutch
+				size = 396
+			}
+		}
+	}
+	s:STATE_JAMAICA = {
+		region_state:GBR = {
+			create_pop = {
+				culture = afro_caribbean
+				size = 1700000
+			}
+		}
+	}
+	s:STATE_CUBA = {
+		region_state:CUB = {
+			create_pop = {
+				culture = caribeno
+				size = 3610000
+			}
+			create_pop = {
+				culture = spanish
+				size = 22004
+			}
+			create_pop = {
+				culture = han
+				size = 22004
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:NTL = {
+		create_character = {
+			historical = yes
+			culture = cu:french
+			ruler = yes
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}
+		}
+	}
+}

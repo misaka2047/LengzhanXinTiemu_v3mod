@@ -1,0 +1,10 @@
+JCP = {
+	color = { 0 0 0 }
+	
+	tier = empire
+
+	country_type = recognized
+
+	cultures = { north_yamato_american japanese }
+	capital = STATE_CALIFORNIA
+}

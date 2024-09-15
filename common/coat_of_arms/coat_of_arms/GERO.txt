@@ -1,0 +1,10 @@
+GERO = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "white"
+	color3 = "red"
+
+	textured_emblem = {
+		texture = "GerO.dds"
+	}
+}

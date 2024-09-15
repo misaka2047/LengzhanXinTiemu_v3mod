@@ -1,0 +1,117 @@
+CHL = { # Chile
+	flag_definition = {
+		coa = CHL
+		subject_canton = CHL
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CHL_subject			
+		priority = 1
+	}
+	flag_definition = {
+		coa = CHL
+		subject_canton = CHL
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = CHL_subject			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = CHL_monarchy
+		subject_canton = CHL_monarchy
+		priority = 5
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHL_fascist
+		subject_canton = CHL_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHL_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHL
+		priority = 50
+		trigger = { 
+			coa_def_american_ensign_trigger = yes
+		}
+	}	
+}
+
+ARG = { # Argentina
+	flag_definition = {
+		coa = ARG
+		subject_canton = ARG
+		coa_with_overlord_canton = ARG_subject
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+	flag_definition = {
+		coa = ARG_republic
+		subject_canton = ARG_republic
+		coa_with_overlord_canton = ARG_subject
+		allow_overlord_canton = yes			
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}		
+	flag_definition = {
+		coa = ARG_absolute_monarchy
+		subject_canton = ARG_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ARG_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ARG_subject_SPA
+		priority = 30
+		trigger = { 
+			coa_def_spanish_ensign_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ARG_fascist
+		subject_canton = ARG_fascist
+		priority = 1500
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = ARG_subject_USA		
+		priority = 50
+		trigger = { 
+			coa_def_american_ensign_trigger = yes
+		}
+	}	
+}	
+
+GUA = {
+	flag_definition = {
+		coa = GUA
+		allow_overlord_canton = yes	
+		coa_with_overlord_canton = GUA_subject	
+		overlord_canton_scale = { 0.337 0.5 }		
+		subject_canton = GUA
+		priority = 10
+    }
+}

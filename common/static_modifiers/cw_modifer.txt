@@ -1,0 +1,331 @@
+retreat_toa_treasure_island = { #退守宝岛
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_mult = -0.1
+	state_radicals_from_sol_change_mult = 0.05
+}
+
+modifier_sandazhanyi = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_kill_rate_add = 0.10
+	unit_morale_recovery_mult = 0.1
+	unit_morale_damage_mult = 0.1
+	unit_army_offense_add = 10
+}
+
+modifier_guojunjunxinhuansan = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	unit_offense_mult = -0.6
+	unit_defense_mult = -0.6
+}
+
+xinanfeihuan_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_tax_capacity_mult = -0.1
+}
+
+feihuanqingchu_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_tax_capacity_mult = 0.5
+}
+
+qinglitufei_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	country_bureaucracy_mult = -0.05
+}
+
+tugaiwancheng_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_tax_capacity_mult = 0.2
+	state_loyalists_from_sol_change_mult = 0.1
+}
+
+quedingwaijiaozhengce_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	country_authority_mult = 0.1
+	country_influence_add = 500
+}
+
+kaiguodadian_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_loyalists_from_sol_change_mult = 0.1
+}
+
+agricultural_adjustment_act = { #农业调整法案
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_tax_collection_mult = -0.01 #税收
+	interest_group_ig_rural_folk_pop_attraction_mult = -0.75 #农民人群吸引力
+	building_group_bg_agriculture_throughput_add = 0.05 #农业吞吐量
+	state_poor_standard_of_living_add = 1 #下等阶层的生活水平
+}
+
+Roosevelt's_New_Deal = { #罗斯福新政
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_capitalists_pol_str_mult = -0.05 #资本家政治力量
+	country_laborers_pol_str_mult = 0.75 #劳工政治力量
+	country_legitimacy_base_add = 10 #政权合法性
+	state_loyalists_from_sol_change_mult = 0.1 #生活水平提高带来的效忠派
+	state_radicals_from_sol_change_mult = -0.1
+}
+
+the_peoples_army = { #毛泽东思想武装的人民军队
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	state_conscription_rate_mult = 0.05 #可征召营队（百分比）
+	unit_offense_mult = 0.25 #进攻
+	unit_defense_mult = 0.25 #防御
+}
+
+military_science_assistance_from_the_united_states = { #来自美国的军科援助
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_military_tech_research_speed_mult = 0.1
+}
+
+injuries_from_the_anti_japanese_war_in_the_rear_of_the_enemy = { #敌后抗日之殇
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.1 #进攻
+	unit_defense_mult = -0.1 #防御
+}
+
+anti_japanese_injury = { #正面抗日之殇
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	unit_offense_mult = -0.15 #进攻
+	unit_defense_mult = -0.15 #防御
+}
+
+ununified_china = { #未统一的中国
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_add = -50
+}
+
+the_peoples_liberation_army_controls_half_of_the_country = { #解放军掌握半壁江山
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_prestige_add = -230
+}
+
+stalinism = { #斯大林主义
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_authority_mult = 0.2
+	state_radicals_from_discrimination_mult = 0.1
+}
+
+the_voice_of_the_people = { #人民之声
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_loyalists_from_sol_change_mult = 1
+}
+oppose_the_central_committee = { #反对中央
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	interest_group_in_opposition_approval_add = -5
+}
+
+the_birthplace_of_revolution = { #革命始源地
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.75
+	country_legitimacy_ideological_incoherence_mult = -0.05
+}
+
+the_fourth_five_year_plan = { #四五计划
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_throughput_mult = 0.05
+	state_construction_mult = 0.05
+}
+
+politicized_military = { #政治化的军队
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_army_defense_mult = 0.03
+	country_legitimacy_ideological_incoherence_mult = -0.01
+	country_military_goods_cost_mult = 0.25
+}
+
+a_divided_leadership_team = { #分裂的领导班子
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_mult = -0.05
+}
+
+russo_chinese.5.t = { #马林科夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.1
+}
+
+russo_chinese.6.t = { #赫鲁晓夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_intelligentsia_pol_str_mult = 0.1
+}
+
+russo_chinese.7.t = { #贝利亚的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_rural_folk_pol_str_mult = 0.1
+}
+
+russo_chinese.8.t = { #朱可夫的演说
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_armed_forces_pol_str_mult = 0.1
+}
+
+land_reform = { #土地改革
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	interest_group_ig_landowners_pol_str_mult = -0.5
+}
+
+absolute_economic_hegemony = { #绝对经济霸权
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+}
+
+banquet = { #宴会
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_prestige_add = 100 #国家威望
+	country_expenses_add = 1000
+}
+
+ming_xixue = { #促进文化繁荣
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_tech_spread_add = 50
+	country_military_tech_research_speed_mult = 0.2
+	interest_group_ig_intelligentsia_pol_str_mult = 0.2
+}
+
+obtaining_support_from_intellectuals = { #获得知识分子支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_intelligentsia_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtaining_support_from_small_citizens = { #获得小市民支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_petty_bourgeoisie_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtaining_support_from_rural_residents = { #获得乡村民众支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_rural_folk_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtaining_support_from_industrialists = { #获得实业家支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_industrialists_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtain_the_support_of_devout_believers = { #获得虔信者支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_devout_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtain_military_support = { #获得军队支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_armed_forces_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtaining_union_support = { #获得工会支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_trade_unions_approval_add = 5
+	country_expenses_add = 1000
+}
+
+obtain_landlord_support = { #获得地主支持
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	interest_group_ig_landowners_approval_add = 5
+	country_expenses_add = 1000
+}
+
+murder_funding8 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding7 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding6 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding5 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding4 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding3 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding2 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+murder_funding1 = { #谋杀经费
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 1000
+}
+
+activate_resolution_to_attract_interest_groups = { #拉拢利益集团
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+}
+
+activate_resolution_to_murder_interest_group_leaders = { #谋杀利益集团领袖
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+}
+
+advanced_bureaucratic_system = { #先进的官僚体制
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_bureaucracy_mult = 0.25
+	state_tax_capacity_mult = 0.25
+}
+
+war_propaganda = { #战争宣传
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	country_infamy_generation_mult = -0.01
+	country_infamy_decay_mult = 0.01
+	country_bureaucracy_add = -100
+}
+
+sponsoring_film_art = { #赞助电影艺术
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_arts_academy_throughput_add = 0.25
+	country_bureaucracy_add = -100
+}
+
+improving_the_work_environment = { #改善工作环境
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_working_conditions_mult = -0.2 #危险工作条件
+	state_poor_standard_of_living_add = 1
+	state_loyalists_from_sol_change_mult = 0.1
+	country_bureaucracy_add = -100
+}
+
+restructuring_the_railway_system = { #重组铁路系统
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_railway_throughput_add = 0.25
+	state_infrastructure_mult = 0.10
+	country_bureaucracy_add = -100
+}
+
+expanding_the_mining_industry = { #扩建采矿业
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_iron_mine_throughput_add = 0.25
+	country_bureaucracy_add = -100
+}
+
+je_greek_nationalism = { #希腊人之国
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_assimilation_mult = 0.125	
+	state_conversion_mult = 0.2
+	interest_group_ig_devout_pol_str_mult = 0.1	
+}
+the_korea_war_against_america = { #抗美援朝
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	unit_offense_mult = 1 #进攻
+	unit_defense_mult = 1 #防御
+}

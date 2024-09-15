@@ -1,0 +1,36 @@
+﻿COUNTRIES = {
+	c:URU = {		
+		effect_starting_technology_tier_2_tech = yes
+		effect_starting_politics_conservative = yes
+		
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_universal_suffrage #普选制
+		activate_law = law_type:law_womens_suffrage #妇女选举权
+		activate_law = law_type:law_racial_segregation
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_per_capita_based_taxation
+		activate_law = law_type:law_no_schools
+		activate_law = law_type:law_no_police
+
+		ig:ig_trade_unions = { #工会
+			remove_ideology = ideology_proletarian #无产阶级主义者
+			add_ideology = ideology_social_democrats #社民主义者
+		}
+
+		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_caudillismo
+		}
+
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+			remove_ideology = ideology_paternalistic
+		}
+
+		ig:ig_devout = {
+			set_interest_group_name = ig_catholic_church
+		}
+	}
+}

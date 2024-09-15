@@ -1,0 +1,251 @@
+﻿#玛莎拉蒂
+maserati = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/maserati.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_electrics_industry #电子产品厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_italy
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_EMILIA
+					state_region = s:STATE_ROMAGNA
+				}
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			OR = {
+					state_region = s:STATE_EMILIA
+					state_region = s:STATE_ROMAGNA
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type =	 building_electrics_industry #电子产品厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.2
+		unit_army_defense_mult = 0.1
+	}
+}
+
+# 菲亚特
+company_fiat = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/fiat.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry
+		building_aircraft_factory #飞机制造厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_italy
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_PIEDMONT
+			}
+		}
+	}		
+	
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_PIEDMONT
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry
+					is_building_type = building_aircraft_factory #飞机制造厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.1
+		unit_army_offense_mult = 0.05
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 杜卡迪
+ducati = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/ducati.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_motor_industry #动力机械厂
+		building_glassworks #玻璃塑料厂
+		building_electrics_industry #电子产品厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_italy
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_EMILIA
+					state_region = s:STATE_ROMAGNA
+				}
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			OR = {
+					state_region = s:STATE_EMILIA
+					state_region = s:STATE_ROMAGNA
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_glassworks #玻璃塑料厂
+					is_building_type = building_electrics_industry #电子产品厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.2
+	}
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#比亚乔集团
+biaqiao_group = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/biaqiao_group.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes 
+	
+	building_types = {
+		building_motor_industry #动力机械厂
+		building_aircraft_factory #飞机制造厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_italy
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_TUSCANY
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+					state_region = s:STATE_TUSCANY
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_aircraft_factory #飞机制造厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.1
+		unit_army_offense_mult = 0.1
+	}
+}
+
+# 奥托·梅莱拉
+otto·meilela = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/otto·meilela.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_artillery_foundries #火炮厂
+		building_war_machine_industry #战争机器厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_italy
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_PIEDMONT
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				state_region = s:STATE_PIEDMONT
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_artillery_foundries #火炮厂
+					is_building_type = building_war_machine_industry #战争机器厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.1
+		unit_army_offense_mult = 0.1
+		military_formation_movement_speed_mult = -0.1
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

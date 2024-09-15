@@ -1,0 +1,1511 @@
+labor_movement = { #劳工运动
+	# Unlocks Regulatory Bodies - Labor Rights Law
+	# Unlocks Restricted Child Labor - Children's Rights Laws
+	# Unlocks Wage Controls - Social Security Laws
+	# Increases attraction of Trade Unions IG
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/labor_movement.dds"
+	category = society
+	
+	modifier = {
+		country_agitator_slots_add = 1
+	}
+
+	on_researched = {
+		set_global_variable = labour_movement_researched
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = 2
+		}	
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+					has_strategy = ai_strategy_maintain_mandate_of_heaven
+				}			
+			}
+			add = -0.5
+		}			
+	}
+}
+
+socialism = { #共产主义
+	# Unlocks Council Republic - Governance Principles Law
+	# Unlocks Graduated Taxation - Income Taxation Law
+	# New leaders may spawn with the Social Democrat, Communist Ideologies
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/socialism.dds"
+	category = society
+	
+	modifier = {
+		country_agitator_slots_add = 1
+	}
+	
+	unlocking_technologies = {
+		labor_movement
+	}
+	
+	ai_weight = {
+		value = 1
+		
+		if = {
+			limit = { 
+				has_strategy = ai_strategy_egalitarian_agenda
+			}
+			add = -0.5
+		}	
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_conservative_agenda
+					has_strategy = ai_strategy_reactionary_agenda
+				}			
+			}
+			add = 1
+		}
+	}
+}
+
+tech_marxism = {#马克思列宁主义
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		socialism
+	}
+modifier = {
+		state_expected_sol_from_literacy = 1
+country_institution_social_security_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+	}
+}
+tech_critical_school = {#批判学派
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		state_expected_sol_from_literacy = 1
+country_institution_social_security_max_investment_add = 1
+country_agitator_slots_add = 1
+	}
+}
+tech_neo_marxism = {#新马克思主义
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_marxism
+tech_critical_school
+	}
+modifier = {
+		state_expected_sol_from_literacy = 1
+country_institution_social_security_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+	}
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = socialism_researched }
+			}
+			set_variable = socialism_researched
+			ig:ig_trade_unions = {
+				add_ideology = ideology_socialist
+			}
+		}
+	}
+}
+tech_capital_in_the_21st_century = {#《21世纪资本论》
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_critical_school
+tech_endogenous_growth_theory
+	}
+modifier = {
+		state_expected_sol_from_literacy = 1
+country_institution_social_security_max_investment_add = 1
+	}
+}
+tech_positivism = {#实证主义
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		country_prestige_mult = 0.05
+	}
+}
+tech_empirical_school = {#经验学派
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_positivism
+	}
+modifier = {
+		country_influence_mult = 0.1
+country_diplomatic_play_maneuvers_add = 10
+country_institution_schools_max_investment_add = 1
+state_education_access_wealth_add = 0.005
+	}
+}
+tech_media_environment_school = {#媒介环境学派
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_empirical_school
+tech_critical_school
+	}
+modifier = {
+		state_radicals_from_sol_change_accepted_culture_mult = -0.10
+	}
+}
+tech_marxist_political_economics = {#马克思主义政治经济学
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_marxism
+	}
+modifier = {
+		state_expected_sol_from_literacy = 1
+country_institution_social_security_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+	}
+}
+tech_economics_foundations = {#经济学基础
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		country_minting_mult = 0.1
+country_loan_interest_rate_add = -0.02
+	}
+}
+tech_keynesianism = {#凯恩斯主义
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_economics_foundations
+	}
+modifier = {
+		state_farmers_investment_pool_efficiency_mult = 0.15
+state_shopkeepers_investment_pool_efficiency_mult = 0.15
+building_cash_reserves_mult = 0.2
+	}
+}
+tech_phillips_curve_and_is_lm_model = {#菲利普斯曲线与IS-LM模型
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_keynesianism
+	}
+modifier = {
+		country_government_dividends_efficiency_add = 0.05
+	}
+}
+tech_new_keynesianism = {#新凯恩斯主义
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_keynesianism
+	}
+modifier = {
+		state_clergymen_investment_pool_contribution_add = 0.10
+state_aristocrats_investment_pool_contribution_add = 0.10
+state_capitalists_investment_pool_contribution_add = 0.10
+country_government_dividends_efficiency_add = 0.05
+	}
+}
+tech_general_equilibrium_theory = {#一般均衡理论
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_new_keynesianism
+	}
+modifier = {
+		country_government_dividends_efficiency_add = 0.05
+	}
+}
+tech_behavioral_economics = {#行为经济学
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_new_keynesianism
+tech_empirical_school
+	}
+modifier = {
+		state_aristocrats_investment_pool_contribution_add = 0.10
+state_capitalists_investment_pool_contribution_add = 0.10
+country_government_dividends_efficiency_add = 0.05
+	}
+}
+tech_neoclassical_economics = {#新古典经济学
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_economics_foundations
+	}
+modifier = {
+		country_minting_mult = 0.1
+ountry_loan_interest_rate_add = -0.02
+	}
+}
+tech_austrian_school = {#奥地利学派
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_neoclassical_economics
+	}
+modifier = {
+		country_minting_mult = 0.1
+ountry_loan_interest_rate_add = -0.02
+	}
+}
+tech_monetarism = {#货币主义
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_neoclassical_economics
+	}
+modifier = {
+		country_minting_mult = 0.1
+country_loan_interest_rate_add = -0.02
+	}
+}
+tech_solow_model = {#索洛模型
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_neoclassical_economics
+	}
+modifier = {
+		building_economy_of_scale_level_cap_add = 10
+	}
+}
+tech_second_generation_neoclassical_economics = {#第二代新古典经济学
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_neoclassical_economics
+tech_monetarism
+	}
+modifier = {
+		building_economy_of_scale_level_cap_add = 10
+country_minting_mult = 0.2
+	}
+}
+tech_endogenous_growth_theory = {#内生增长理论
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_keynesianism
+tech_second_generation_neoclassical_economics
+	}
+modifier = {
+		country_minting_mult = 0.1
+country_loan_interest_rate_add = -0.02
+	}
+}
+tech_supply_side_school = {#供给学派
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_second_generation_neoclassical_economics
+	}
+modifier = {
+		building_economy_of_scale_level_cap_add = 10
+	}
+}
+tech_chicago_school = {#芝加哥学派
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_second_generation_neoclassical_economics
+	}
+modifier = {
+		country_government_dividends_efficiency_add = 0.05
+building_economy_of_scale_level_cap_add = 5
+	}
+}
+tech_neoliberalism = {#新自由主义
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_keynesianism
+tech_second_generation_neoclassical_economics
+	}
+modifier = {
+		building_economy_of_scale_level_cap_add = 20
+	}
+}
+tech_scientific_management_theory = {#科学管理理论
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+	}
+}
+tech_14_management_principles = {#14条管理原则
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_scientific_management_theory
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+	}
+}
+tech_behavioral_science_school = {#行为科学学派
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_14_management_principles
+tech_empirical_school
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+country_institution_workplace_safety_max_investment_add = 1
+	}
+}
+tech_strategic_management = {#战略管理
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_behavioral_science_school
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+country_company_construction_efficiency_bonus_add = 0.1
+	}
+}
+tech_listen_to_the_master_of_masters = {#听大师中的大师说
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_behavioral_science_school
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+	}
+}
+tech_modern_management = {#现代管理学
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_strategic_management
+tech_listen_to_the_master_of_masters
+	}
+modifier = {
+		country_max_companies_add = 2
+state_urbanization_per_level_mult = -0.05
+	}
+}
+tech_existentialism = {#存在主义
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_positivism
+	}
+modifier = {
+		country_prestige_mult = 0.05
+	}
+}
+tech_modernism = {#现代主义
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_existentialism
+	}
+modifier = {
+		country_prestige_mult = 0.05
+	}
+}
+tech_postmodernism = {#后现代主义
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_modernism
+	}
+modifier = {
+		country_prestige_mult = 0.05
+	}
+}
+tech_power_supply = {#电力供应
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+}
+tech_application_of_computer_city_management = {#计算机城市管理应用
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_power_supply
+	}
+}
+tech_internet = {#互联网
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_application_of_computer_city_management
+	}
+}
+tech_big_data = {#大数据
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_internet
+	}
+}
+tech_sanitation_operation = {#环卫运作
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_urban_operation_and_maintenance = {#城市运维
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_sanitation_operation
+	}
+modifier = {
+		state_building_highway_max_level_add = 1
+	}
+}
+tech_department_store = {#百货大楼
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_urban_operation_and_maintenance
+	}
+}
+tech_civil_aviation = {#民用航空
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+}
+tech_aviation_management = {#航空管理
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_civil_aviation
+	}
+}
+tech_civil_aviation_equipment = {#民用航空设备
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_aviation_management
+	}
+}
+tech_literary_creation = {#文学创作
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_multimedia = {#多媒体
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_literary_creation
+	}
+}
+tech_video_production_and_editing = {#视频制作剪辑
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_multimedia
+	}
+}
+tech_film_and_television_special_effects = {#影视特效
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_internet
+tech_video_production_and_editing
+	}
+}
+tech_3d_film_modeling = {#三维电影建模
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_film_and_television_special_effects
+	}
+}
+tech_construction_department = {#施工部门
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		state_infrastructure_from_population_add = 2
+state_infrastructure_from_population_max_add = 40 
+state_building_construction_sector_max_level_add = 10
+country_max_weekly_construction_progress_add = 20
+market_land_trade_capacity_add = 50
+	}
+}
+tech_cement = {#水泥
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_construction_department
+	}
+}
+tech_reinforced_concrete = {#钢筋混凝土
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_material_science
+tech_urban_operation_and_maintenance
+tech_modernism
+	}
+}
+tech_lightweight_building_materials = {#轻型建筑材料
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_reinforced_concrete
+	}
+}
+tech_construction_tools = {#施工工具
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_construction_department
+tech_road_administration_department
+	}
+}
+tech_complete_construction_vehicles = {#完备施工车辆
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_construction_tools
+tech_application_of_computer_city_management
+tech_bureaucracy_theory
+	}
+modifier = {
+		state_building_highway_max_level_add = 1
+	}
+}
+tech_complete_construction_machinery = {#完备施工机械
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_complete_construction_vehicles
+tech_internet
+tech_new_public_management
+tech_giant_tower_crane
+	}
+modifier = {
+		state_building_highway_max_level_add = 1
+	}
+}
+tech_real_estate_development = {#房地产开发
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		
+	}
+}
+tech_real_estate_agency = {#地产中介
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_real_estate_development
+	}
+}
+tech_giant_tower_crane = {#巨型塔吊
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_real_estate_agency
+	}
+}
+tech_civil_air_conditioner = {#民用空调
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_power_supply
+	}
+modifier = {
+		country_institution_health_system_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+state_pollution_reduction_health_mult = -0.1
+	}
+}
+tech_gas_air_conditioner = {#燃气空调
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_civil_air_conditioner
+	}
+modifier = {
+		country_institution_health_system_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+state_pollution_reduction_health_mult = -0.1
+	}
+}
+tech_inverter_air_conditioner = {#变频空调
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_gas_air_conditioner
+	}
+modifier = {
+		country_institution_health_system_max_investment_add = 1
+country_institution_workplace_safety_max_investment_add = 1
+state_pollution_reduction_health_mult = -0.1
+	}
+}
+tech_office_service = {#办公服务
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+}
+tech_electronic_office = {#电子办公
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_office_supplies
+tech_bureaucracy_theory
+	}
+}
+tech_file_management = {#档案管理
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_electronic_office
+tech_new_public_management
+	}
+}
+tech_computer_office = {#计算机办公
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_file_management
+tech_internet
+	}
+modifier = {
+		state_tax_capacity_add = 25
+	}
+}
+tech_office_supplies = {#办公用品
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_office_service
+	}
+}
+tech_printer = {#打印机
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_office_supplies
+	}
+}
+tech_office_professional_software = {#办公专业软件
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_printer
+tech_application_of_computer_city_management
+	}
+}
+tech_public_policy_and_management = {#公共政策与管理
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		state_building_highway_max_level_add = 1
+country_institution_police_max_investment_add = 1
+country_institution_schools_max_investment_add = 1
+	}
+}
+
+tech_road_administration_department = {#路政部门
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+modifier = {
+		state_building_highway_max_level_add = 1
+state_infrastructure_from_population_add = 1
+state_infrastructure_from_population_max_add = 20
+state_building_construction_sector_max_level_add = 5
+country_max_weekly_construction_progress_add = 20
+market_land_trade_capacity_add = 10
+	}
+}
+tech_bureaucracy_theory = {#官僚主义理论
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+modifier = {
+		state_tax_capacity_add = 25
+country_institution_home_affairs_max_investment_add = 1
+state_bureaucracy_population_base_cost_factor_mult = -0.05
+	}
+}
+tech_new_public_management = {#新公共管理
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_bureaucracy_theory
+	}
+modifier = {
+		state_infrastructure_from_population_add = 1
+state_infrastructure_from_population_max_add = 20
+state_building_construction_sector_max_level_add = 5
+country_max_weekly_construction_progress_add = 20
+market_land_trade_capacity_add = 10
+	}
+}
+tech_law_enforcement_department = {#执法部门
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_new_public_management
+	}
+modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+}
+tech_advanced_education_system = {#先进教育系统
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_campus_culture
+tech_new_public_management
+	}
+modifier = {
+		country_institution_schools_max_investment_add = 1
+state_education_access_wealth_add = 0.005
+	}
+}
+tech_port_management = {#港口管理
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_public_policy_and_management
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_smart_port = {#智慧港口
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_port_management
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_giant_cruise_ship = {#巨型邮轮
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_smart_port
+	}
+modifier = {
+		state_building_port_max_level_add = 5
+	}
+}
+tech_material_science = {#材料科学
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_positivism
+	}
+}
+tech_power_mechanical_engineering = {#动力机械工程
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_material_science
+tech_teaching_equipment
+	}
+modifier = {
+		state_building_research_institution_max_level_add = 1
+	}
+}
+tech_communication_and_astronautics = {#通信与航天学
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_power_mechanical_engineering
+tech_civil_air_conditioner
+tech_electronic_office
+	}
+}
+tech_computer_ai_science = {#计算机AI科学
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_communication_and_astronautics
+tech_internet
+	}
+}
+tech_analytical_ultracentrifuge = {#分析型超速离心机
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_material_science
+tech_electronic_campus
+	}
+}
+tech_particle_collider = {#粒子对撞机
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_analytical_ultracentrifuge
+tech_teaching_laboratory
+	}
+}
+tech_basic_education_system = {#基本教育体系
+	era = era_1
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		
+	}
+modifier = {
+		country_institution_schools_max_investment_add = 1
+state_education_access_wealth_add = 0.005
+	}
+}
+tech_campus_culture = {#校园文化
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_basic_education_system
+tech_positivism
+	}
+}
+tech_campus_communication = {#校园通讯
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_campus_culture
+	}
+}
+tech_electronic_campus = {#电子化校园
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_campus_communication
+	}
+}
+tech_teaching_equipment = {#教学用器械
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_campus_communication
+	}
+}
+tech_teaching_laboratory = {#教学实验室
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 2
+	}
+	unlocking_technologies = {
+		tech_teaching_equipment
+	}
+}
+tech_accounting = {#会计学
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_economics_foundations
+	}
+modifier = {
+		state_tax_capacity_add = 25
+country_institution_home_affairs_max_investment_add = 1
+	}
+}
+tech_international_trade_theory = {#国际贸易理论
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_accounting
+	}
+modifier = {
+		country_trade_route_cost_mult = -0.15
+	}
+}
+tech_intellectual_property = {#知识产权
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_international_trade_theory
+	}
+modifier = {
+		country_institution_home_affairs_max_investment_add = 1
+country_trade_route_cost_mult = -0.1
+	}
+}
+tech_auditing = {#审计学
+	era = era_4
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_international_trade_theory
+tech_strategic_management
+	}
+modifier = {
+		state_tax_capacity_add = 25
+country_government_dividends_efficiency_add = 0.1
+	}
+}
+tech_financial_supervision_system = {#金融监管体系
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_auditing
+	}
+modifier = {
+		state_tax_capacity_add = 25
+country_institution_home_affairs_max_investment_add = 1
+	}
+}
+tech_international_public_relations = {#国际公共关系
+	era = era_2
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_accounting
+	}
+modifier = {
+		country_infamy_generation_mult = -0.25
+country_allow_multiple_alliances_bool = yes
+country_max_declared_interests_add = 1
+country_infamy_generation_against_unrecognized_mult = -0.1
+	}
+}
+
+nationalism = { #现代民族主义
+	# Unlocks the Immigration Controls Law in Migration
+	# New leaders may spawn with the Ethno-Nationalist Ideology
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/nationalism.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.1
+	}
+	
+	unlocking_technologies = {
+		tech_international_public_relations
+	}
+
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = nationalism_researched }
+			}
+			custom_tooltip = {
+				text = unlock_national_agitation_tt
+				set_variable = nationalism_researched
+			}
+		}
+	}
+	ai_weight = {
+		value = 2 # Important in general
+		
+		# Extra-important for major unifications
+		if = {
+			limit = { 
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}				
+			}
+			add = 2
+		}	
+		
+		if = {
+			limit = {
+				OR = {
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}
+				any_country = {
+					has_journal_entry = je_risorgimento
+				}
+			}
+			multiply = 2
+		}
+	}
+}
+
+pan-nationalism = { #国族主义
+	# Permits for the formation of a number of pan-nationalist countries
+	# Permits the Unify Germany and Unify Italy Diplomatic Plays
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	category = society
+	
+	modifier = {
+		country_authority_mult = 0.1
+	}
+	
+	unlocking_technologies = {
+		nationalism
+	}
+	
+	ai_weight = {
+		value = 2 # Important in general
+		
+		# Extra-important for major unifications
+		if = {
+			limit = { 
+				OR = {
+					country_has_primary_culture = cu:north_german
+					country_has_primary_culture = cu:south_german
+					country_has_primary_culture = cu:north_italian
+					country_has_primary_culture = cu:south_italian
+				}				
+			}
+			add = 2
+		}	
+	}
+}
+
+tech_international_politics = {#国际政治
+	era = era_3
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_international_public_relations
+	}
+modifier = {
+		country_max_declared_interests_add = 1
+country_infamy_generation_against_unrecognized_mult = -0.2
+	}
+}
+tech_modern_diplomacy = {#现代外交学
+	era = era_5
+	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	category = society
+	ai_weight = {
+		value = 1
+	}
+	unlocking_technologies = {
+		tech_international_politics
+	}
+modifier = {
+		country_max_declared_interests_add = 1
+country_infamy_generation_against_unrecognized_mult = -0.2
+	}
+}

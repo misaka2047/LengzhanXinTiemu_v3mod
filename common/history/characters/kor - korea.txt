@@ -1,0 +1,42 @@
+﻿CHARACTERS = {
+	c:KOR = {
+		create_character = {
+			historical = yes
+			culture = cu:yankee
+			ruler = yes
+			is_general = yes
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			traits = {
+			}
+		}
+
+		create_character = { #李承晚
+			first_name = "Chengwan"
+			last_name = "Li"
+			historical = yes
+			birth_date = 1875.3.26
+			religion = rel:protestant #新教
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				cruel #残暴
+			}	
+		}	
+
+		create_character = { #金九
+			first_name = "Gu"
+			last_name = "Jin"
+			historical = yes
+			birth_date = 1876.8.29
+			religion = rel:protestant #新教
+			ig_leader = yes
+			interest_group = ig_rural_folk #农民
+			ideology = ideology_liberal_leader #民主主义者
+			traits = {
+				ambitious #雄心勃勃
+			}	
+		}	
+	}
+}

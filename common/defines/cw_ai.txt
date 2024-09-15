@@ -1,0 +1,10 @@
+NAI = {
+
+
+	AI_PEACE_DESIRE_FROM_FORCE_BALANCE = 10 # Up to this amount is added or subtracted from war support based on DIPLO_PLAY_FORCE_BALANCE_SCALE of the two sides
+	# This determines how much of their potential conscripts' needed military goods the AI will try to supply even when those conscripts are not raised
+	CONSCRIPTION_CENTER_MILITARY_SPENDING_TARGET_BASE = 1 # Multiplied by the country's ratio of conscripts to regular troops
+	CONSCRIPTION_CENTER_MILITARY_SPENDING_TARGET_MAX = 100 # Spending target cannot exceed this amount
+	AI_PEACE_AGREEMENT_BASE_VALUE = -50
+
+}

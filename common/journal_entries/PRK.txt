@@ -1,0 +1,90 @@
+﻿je_prk = { #统一朝鲜
+	icon = "gfx/interface/icons/invention_icons/wargaming.dds"
+
+	group = je_group_foreign_affairs
+
+	modifiers_while_active = {
+		modifier_chinese_warlord_era
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			c:PRK = ROOT
+			c:KOR = ROOT
+		}
+	}
+	
+	possible = {
+		OR = {
+			c:PRK = ROOT
+			c:KOR = ROOT
+		}
+	}
+
+	complete = {
+		trigger_if = {
+			limit = {
+				global_var:chinese_central_government ?= this
+			}
+			custom_tooltip = {
+				text = no_independent_prk_countries_tt
+				any_country = {
+					filter = {
+							country_has_primary_culture = cu:korean
+							capital.region = sr:region_manchuria
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+		trigger_else = {
+			trigger_if = {
+				limit = {
+					global_var:chinese_central_government ?= {
+						is_country_alive = yes
+					}
+				}
+				custom_tooltip = {
+					text = central_government_defeated_tt
+					OR = {
+						NOT = {
+							exists = global_var:chinese_central_government
+						}
+						global_var:chinese_central_government ?= {
+							is_country_alive = no
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = no_independent_prk_countries_tt
+				any_country = {
+					filter = {
+							country_has_primary_culture = cu:korean
+							capital.region = sr:region_manchuria
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+		OR = {
+			owns_entire_state_region = STATE_PYONGYANG
+			owns_entire_state_region = STATE_SEOUL
+		}
+	}
+
+	on_complete = {
+		remove_global_variable = chinese_central_government
+		trigger_event = { id = warlord_china_events.101 popup = yes }
+	}
+		
+	weight = 1000
+}

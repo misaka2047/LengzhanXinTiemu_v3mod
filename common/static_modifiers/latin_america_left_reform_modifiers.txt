@@ -1,0 +1,22 @@
+transportation_opposition_weaker_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    interest_group_ig_industrialists_pop_attraction_mult = 0.30 
+	interest_group_ig_landowners_pop_attraction_mult = 0.30 
+}
+
+transportation_opposition_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+    interest_group_ig_industrialists_pop_attraction_mult = 0.60 
+	interest_group_ig_landowners_pop_attraction_mult = 0.60 
+    
+}
+
+transportation_strike_weaker_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	building_railway_throughput_add = -0.80
+}
+
+ transportation_strike_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	building_railway_throughput_add = -0.20
+}

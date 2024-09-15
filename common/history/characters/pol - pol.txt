@@ -1,0 +1,68 @@
+﻿CHARACTERS = {
+	c:POL = {
+		create_character = {
+			#博莱斯瓦夫·贝鲁特
+			first_name = "Boleslaw"
+			last_name = "Beirut"
+			religion = rel:atheist #无神论
+			historical = yes
+			ruler = yes
+			birth_date = 1919.10.26
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			#瓦迪斯瓦夫·哥穆尔卡
+			first_name = "Wladyslaw"
+			last_name = "gomulka"
+			religion = rel:atheist #无神论
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1905.2.6
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+
+		create_character = {
+			#罗科索夫斯基
+			first_name = "Boleslaw"
+			last_name = "Rokossowski"
+			religion = rel:atheist #无神论
+			historical = yes
+			ig_leader = yes #利益集团领袖
+			is_general = yes
+			commander_rank = commander_rank_5
+			birth_date = 1896.12.21
+			interest_group = ig_armed_forces
+			ideology = ideology_vanguardist #先锋队主义者
+			traits = {
+				reserved #内敛
+				expert_defensive_strategist #熟练的防守策划师
+				expert_offensive_planner #熟练的进攻策划师
+			}
+		}
+
+		create_character = {
+			#卡齐米日·米雅尔
+			first_name = "Kazimierz"
+			last_name = "Miyar"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1910.2.19
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				firebrand #煽动大师
+			}
+		}	
+	}
+}

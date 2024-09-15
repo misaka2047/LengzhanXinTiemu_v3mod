@@ -1,0 +1,85 @@
+CHN = { # China
+	flag_definition = {
+		coa = CHN_han_empire
+		coa_with_overlord_canton = CHN_han_empire
+		priority = 5
+		trigger = { 
+			scope:actor ?= {
+				NOT = { country_has_primary_culture = cu:manchu }
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+	flag_definition = {
+		coa = CHN
+		subject_canton = CHN
+		coa_with_overlord_canton = CHN_subject
+		allow_overlord_canton = yes		
+		priority = 1
+	}
+	flag_definition = {
+		coa = CHN_absolute_monarchy
+		subject_canton = CHN_absolute_monarchy
+		coa_with_overlord_canton = CHN_subject
+		allow_overlord_canton = yes				
+		priority = 20
+		trigger = { 
+			coa_def_absolute_monarchy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHN_republic
+		subject_canton = CHN_republic
+		allow_overlord_canton = yes
+		priority = 10
+		trigger = { 
+			coa_def_republic_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHN_dictatorship
+		subject_canton = CHN_dictatorship
+		priority = 20
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHN_theocracy
+		subject_canton = CHN_theocracy
+		subject_canton = CHN_absolute_monarchy
+		priority = 20
+		trigger = { 
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = CHN_communist
+		priority = 1500
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}
+
+PRC = { 
+	flag_definition = {
+		coa = PRC_communist
+		priority = 150
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+		}
+	}	
+	flag_definition = {
+		coa = PRC_fivestar
+		priority = 1500
+		trigger = {
+			exists= c:PRC
+			scope:actor ?= {
+				has_variable = kaiguodadadadian_var
+				var:kaiguodadadadian_var >= 1 
+			}
+			coa_def_communist_flag_trigger = yes
+		}
+	}		
+}

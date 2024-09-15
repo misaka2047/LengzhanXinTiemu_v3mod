@@ -1,0 +1,13 @@
+﻿l_english:
+
+ radioactive_ore:0 "Radioactive Ore"
+ nuclear_engines:0 "Nuclear Engines"
+ irradiated_material:0 "Irradiated Material"
+ nuclear_fuel:0 "Nuclear Fuel"
+ nuclear_jet:0 "Nuclear Powered Jet"
+ programmables:0 "Programmable Circuit Board" 
+ research_and_engineering:0 "Research and Engineering"
+
+ ## Vanilla goods overhual
+ automobiles:0 "Vehicles"
+ radios:0 "Electronic Processors" 

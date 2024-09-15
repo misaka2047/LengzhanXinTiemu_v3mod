@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+je_5_year_plan = {  #五年计划
+	icon = "gfx/interface/icons/event_icons/event_industry.dds"
+
+	group = je_group_internal_affairs
+
+	immediate = {
+		root = {
+			save_scope_as = five_year_plan_country
+		}
+	}
+
+	complete = {
+		OR = {
+			has_law = law_type:law_command_economy
+			has_law = law_type:law_cooperative_ownership
+		}
+		custom_tooltip = {
+			text = custom_loc_five_year_plan_goal
+				scope:journal_entry = {
+				is_goal_complete = yes
+			}
+		}
+		in_default = no
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = five_year_plan_welfare_mod
+			months = long_modifier_time
+		}
+	}
+
+	current_value = {
+		value = root.gdp
+	}
+
+	goal_add_value = {
+		value = root.gdp
+		multiply = 0.25
+	}
+
+	fail = {
+		NOT = { has_law = law_type:law_council_republic }
+	}
+
+	progressbar = yes
+}

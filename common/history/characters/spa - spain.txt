@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:SPA = {
+		create_character = { #弗朗西斯科·佛朗哥
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_ruler
+			first_name = "Francisco"
+			last_name = "Franco"
+			ruler = yes
+			ig_leader = yes #利益集团领袖
+			birth_date = 1892.12.4
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_authoritarian #独裁主义者
+			traits = {
+				mountain_commander #山地作战专家
+				basic_offensive_planner #进攻策划师
+				persistent #执着
+				arrogant #傲慢
+			}
+		}	
+	}
+}

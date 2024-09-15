@@ -1,0 +1,186 @@
+﻿state_trait_three_gorges = { #三峡
+	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
+	
+	modifier = {
+		goods_output_electricity_mult = 0.75
+	}
+}
+
+state_trait_hanjiang_river = { #汉江
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 20
+		state_market_access_price_impact = 0.05
+	}
+}
+
+state_trait_the_persian_gulf = { #波斯湾
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_group_bg_oil_extraction_throughput_add = 0.2 #油井吞吐量
+	}
+}
+
+state_trait_pearl_harbor = { #珍珠港（军事）
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_military_shipyards_throughput_add = 0.2
+	}
+}
+
+state_trait_natural_deepwater_port = { #天然深水港（军事）
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_military_shipyards_throughput_add = 0.2
+	}
+}
+
+state_trait_natural_non_freezing_port = { #天然不冻港
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.2
+	}
+}
+
+state_trait_pampas = { #潘帕斯草原
+	icon = "gfx/interface/icons/state_trait_icons/resources_grazing.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.1
+		building_group_bg_plantations_throughput_add = 0.1
+		building_group_bg_ranching_throughput_add = 0.1 #牧场吞吐量
+	}
+}
+
+state_trait_the_songhua_river = { #松花江
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 10
+		building_group_bg_agriculture_throughput_add = 0.05
+	}
+}
+
+state_trait_the_pamirs = { #帕米尔高原
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		state_construction_mult = -0.2
+		state_infrastructure_mult = -0.2
+	}
+}
+
+state_trait_yungui_plateau = { #云贵高原
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		goods_output_electricity_mult = 0.1
+		building_group_bg_plantations_throughput_add = 0.05
+		state_infrastructure_mult = -0.1 #基础设施修正
+		state_construction_mult = -0.1 #地区建造效率修正
+	}
+}
+
+state_trait_gaima_plateau = { #盖马高原
+	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.1
+		state_infrastructure_mult = -0.05 #基础设施修正
+		state_construction_mult = -0.05 #地区建造效率修正
+	}
+}
+
+state_trait_shirakami_sanchi = { #白神山地
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.1
+	}
+}
+
+state_trait_daxinganling_forest = { #大兴安岭森林
+	icon = "gfx/interface/icons/state_trait_icons/resources_lumber.dds"
+	
+	modifier = {
+		building_group_bg_logging_throughput_add = 0.2
+	}
+}
+
+state_trait_hokkaido_fisheries = { #北海道渔业
+    icon = "gfx/interface/icons/state_trait_icons/resources_fish.dds"
+	
+	modifier = {
+		building_group_bg_fishing_throughput_add = 0.2
+	}
+}
+
+state_trait_qingdao_bay = { #青岛湾
+	icon = "gfx/interface/icons/state_trait_icons/natural_harbors.dds"
+	
+	modifier = {
+		building_shipyards_throughput_add = 0.1
+		building_military_shipyards_throughput_add = 0.1
+		state_building_port_max_level_add = 2
+		state_building_naval_base_max_level_add = 10
+	}
+}
+
+state_trait_weihe_plain = { #（陕西的）渭河平原
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+	}
+}
+
+state_trait_shanxi_plateau = { #山西高原
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_group_bg_plantations_throughput_add = 0.05
+	}
+}
+
+state_trait_northeast_plain = { #东北平原
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_the_loess_plateau = { #（被p社加强的）黄土高原
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.15
+	}
+}
+
+state_trait_the_minjiang_river = { #闽江
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 10
+		state_market_access_price_impact = 0.05
+	}
+}
+
+state_trait_yellow_river = { #（被p社加强的）黄河
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_add = 5
+	}
+}
+

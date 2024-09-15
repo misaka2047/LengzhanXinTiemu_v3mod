@@ -1,0 +1,101 @@
+liaoshenzhanyi_button_key = {
+	name = "liaoshenzhanyi_button_key"
+	desc = "liaoshenzhanyi_button_key_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = liaoshenzhanyi_button_tt
+			hidden_trigger = {
+				var:liaoshenzhanyi_var = 0
+				NOT = {
+					any_scope_war = {
+						any_scope_front = {
+							any_scope_state = {
+								OR = {
+									state_region = s:STATE_SHENGJING
+									state_region = s:STATE_SOUTHERN_MANCHURIA
+									state_region = s:STATE_NORTHERN_MANCHURIA	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		change_variable = { name = liaoshenzhanyi_var add = 1 }
+		trigger_event = { id = sandazhanyi.1 days = 30 }
+	}
+}
+
+pingjinzhanyi_button_key = {
+	name = "pingjinzhanyi_button_key"
+	desc = "pingjinzhanyi_button_key_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = pingjinzhanyi_button_tt
+			hidden_trigger = {
+				var:pingjinzhanyi_var = 0
+				NOT = {
+					any_scope_war = {
+						any_scope_front = {
+							any_scope_state = {
+								state_region = s:STATE_BEIJING
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	effect = {
+		change_variable = { name = pingjinzhanyi_var add = 1 }
+		trigger_event = { id = sandazhanyi.2 days = 30 }
+	}
+}
+
+huaihaizhanyi_button_key = {
+	name = "huaihaizhanyi_button_key"
+	desc = "huaihaizhanyi_button_key_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = huaihaizhanyi_button_tt
+			hidden_trigger = {
+				var:huaihaizhanyi_var = 0
+				var:pingjinzhanyi_var = 1
+				var:liaoshenzhanyi_var = 1
+			}
+		}
+	}
+
+	effect = {
+		change_variable = { name = huaihaizhanyi_var add = 1 }
+		trigger_event = { id = sandazhanyi.3 days = 30 }
+	}
+}

@@ -1,0 +1,43 @@
+﻿namespace = bttw
+
+bttw.1 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		if = {
+			limit = {
+				NOT = {exists = s:STATE_NANJING.region_STATE:CHI}
+			}
+			trigger_event = { id = baituitaiwan.1 }
+		}
+	}
+}
+
+
+bttw.2 = {
+	type = country_event
+	placement = ROOT
+	hidden = yes
+	
+	trigger = {
+		exists = c:CHI # this checks if a country with the tag "USA" exists
+		this = c:CHI # this checks if a country with the tag "USA" is the current scoped country
+		year <= 1949
+		c:CHI ?= {is_player = no}
+		c:PRC ?= {is_player = no}
+		c:CHI = {
+			NOT = { has_modifier = modifier_guojunjunxinhuansan }
+		}
+	}
+	
+	immediate = {
+		c:CHI = {
+			add_modifier = {
+				name = modifier_guojunjunxinhuansan
+					months = 36
+			}
+		}
+	}
+
+}
+

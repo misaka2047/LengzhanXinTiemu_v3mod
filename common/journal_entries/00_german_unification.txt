@@ -1,0 +1,105 @@
+﻿je_ger = { #统一德国
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	group = je_group_historical_content
+
+	modifiers_while_active = {
+		modifier_chinese_warlord_era
+	}
+
+	is_shown_when_inactive = {
+		OR = {
+			c:DDR = ROOT
+			c:BRD = ROOT
+		}
+	}
+	
+	possible = {
+		OR = {
+			c:DDR = ROOT
+			c:BRD = ROOT
+		}
+	}
+
+	complete = {
+		trigger_if = {
+			limit = {
+				global_var:chinese_central_government ?= this
+			}
+			custom_tooltip = {
+				text = no_independent_ger_countries_tt
+				any_country = {
+					filter = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+						OR = {
+							capital.region = sr:region_north_germany
+							capital.region = sr:region_south_germany
+							capital.region = sr:region_rhine
+						}
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+		trigger_else = {
+			trigger_if = {
+				limit = {
+					global_var:chinese_central_government ?= {
+						is_country_alive = yes
+					}
+				}
+				custom_tooltip = {
+					text = central_government_defeated_tt
+					OR = {
+						NOT = {
+							exists = global_var:chinese_central_government
+						}
+						global_var:chinese_central_government ?= {
+							is_country_alive = no
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				text = no_independent_chinese_countries_tt
+				any_country = {
+					filter = {
+						OR = {
+							country_has_primary_culture = cu:north_german
+							country_has_primary_culture = cu:south_german
+						}
+						OR = {
+							capital.region = sr:region_north_germany
+							capital.region = sr:region_south_germany
+							capital.region = sr:region_rhine
+						}
+					}
+					OR = {
+						THIS = ROOT
+						is_subject_of = ROOT
+					}
+					percent = 1
+				}
+			}
+		}
+			owns_entire_state_region = STATE_BRANDENBURG
+		custom_tooltip = {
+			text = has_formed_ger_tt
+			c:GER ?= this
+		}
+	}
+	
+	on_complete = {
+		remove_global_variable = chinese_central_government
+		trigger_event = { id = GER_event.3 popup = yes }
+	}
+		
+	weight = 1000
+}

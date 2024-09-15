@@ -1,0 +1,614 @@
+﻿# To ensure the game rule 'monument_effects' works properly, the game rule needs to be amended with flags disabling any new monuments' Base method
+# PM Groups should have the 'is_hidden_when_unavailable' flag to ensure only one alternative is visible at any time (unless the player actually has an option they can switch to)
+
+pm_default_californian_aqueduct = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_aqueduct.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 25
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_agriculture_throughput_add = 0.05
+			# Formula: Few modifier applies to employee
+			# +40% employees refering to expanding the capacity by 40%.
+			# Therefore, production shall go up by 40% as well.
+			# Take +60% throughput (20% trade union buff and 40% economy of scale).
+			# This results in 1.6*.2 = .32 more throughput.
+			# Add a bit---we have the result.
+
+			state_migration_pull_mult = 0.1
+		}
+
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 30
+			goods_input_electricity_add = 120
+			goods_input_transportation_add = 75
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_clerks_add = 500
+			building_employment_bureaucrats_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+pm_default_midwest_aqueduct = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_aqueduct.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 150
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_agriculture_throughput_add = 0.05
+		}
+		
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 30
+			goods_input_electricity_add = 120
+			goods_input_transportation_add = 75
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_clerks_add = 500
+			building_employment_bureaucrats_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+
+pm_default_Industrial_Canal = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_canal.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 150
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_mining_throughput_add = 0.05	
+		}
+
+		unscaled = {	
+			state_infrastructure_mult = 0.1
+			state_market_access_price_impact = 0.2
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 200
+			goods_output_transportation_add = 500
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_clerks_add = 2000
+			building_employment_bureaucrats_add = 500
+			building_employment_machinists_add = 4000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+pm_default_Mining_Canal = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_canal.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 15
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_mining_throughput_add = 0.05
+		}
+		unscaled = {	
+			state_infrastructure_mult = 0.1
+			state_market_access_price_impact = 0.1
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 200
+			goods_output_transportation_add = 500
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 1500
+			building_employment_clerks_add = 2000
+			building_employment_bureaucrats_add = 500
+			building_employment_machinists_add = 4000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+
+pm_default_rainmaking_array = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 25
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_agriculture_employee_mult = 0.4
+			building_group_bg_agriculture_throughput_add = 0.75
+			state_migration_pull_mult = 0.1
+		}
+
+		level_scaled = {
+			state_building_mega_greenhouse_max_level_add = 5
+			state_building_vertical_farm_max_level_add = 5
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 30
+			goods_input_electricity_add = 120
+			goods_input_nuclear_fuel_add = 80
+			goods_input_nuclear_jet_add = 20
+			goods_input_transportation_add = 120
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_clerks_add = 500
+			building_employment_bureaucrats_add = 500
+			building_employment_machinists_add = 3000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+pm_default_moisture_control = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 25
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_agriculture_employee_mult = 0.4
+			building_group_bg_agriculture_throughput_add = 0.75
+
+			building_throughput_add = 0.025
+			state_construction_mult = 0.05
+
+			state_migration_pull_mult = 0.15
+		}
+
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 250
+			goods_input_nuclear_fuel_add = 100	
+			goods_input_nuclear_engines_add = 32
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_clerks_add = 750
+			building_employment_bureaucrats_add = 250
+			building_employment_machinists_add = 4000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+pm_default_swamp_drain = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 30
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_agriculture_employee_mult = 0.25
+			building_group_bg_agriculture_throughput_add = 0.4
+
+			building_mega_greenhouse_throughput_add = 0.10
+			building_vertical_farm_throughput_add = 0.10
+			state_pollution_generation_add = 40
+			state_infrastructure_add = 40
+		}
+		unscaled = {	
+			state_infrastructure_mult = 0.1
+		}
+
+		level_scaled = {
+			state_building_mega_greenhouse_max_level_add = 15
+			state_building_vertical_farm_max_level_add = 15
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 40
+			goods_input_electricity_add = 250
+			goods_input_nuclear_fuel_add = 100	
+			goods_input_nuclear_engines_add = 32
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 3000
+			building_employment_clerks_add = 750
+			building_employment_bureaucrats_add = 250
+			building_employment_machinists_add = 4000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+
+#### Megastructures
+####  These stuff are profit-earning ones.
+
+pm_default_great_dam = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_dam.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 300
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			state_infrastructure_add = 30
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_engines_add = 250 #Cost $15,000
+			goods_input_tools_add = 100 #cost $4,000
+			goods_input_steel_add = 120 # cost $6,000
+			goods_input_explosives_add = 120 # cost $6,000
+
+			# Output
+			goods_output_electricity_add = 1500 #Gives $45,000
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 200
+			building_employment_machinists_add = 1800
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+pm_default_hydralic_fracturing = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 10
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_group_bg_oil_extraction_employee_mult = 0.50	
+			building_group_bg_oil_extraction_throughput_add = 0.75
+			goods_output_oil_mult = 0.05
+			state_pollution_generation_add = 100
+		
+			building_group_bg_mining_employee_mult = 0.20
+			building_group_bg_mining_throughput_add = 0.40
+		}
+
+		unscaled = {	
+			building_group_bg_agriculture_throughput_add = -0.10
+			state_infrastructure_mult = -0.1	
+			state_infrastructure_add = -20
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_nuclear_engines_add = 100 #Cost $6,000
+			goods_input_nuclear_fuel_add = 160 #cost $8,000
+			goods_input_steel_add = 100 # cost $5,000
+			goods_input_explosives_add = 325 # cost $16,000
+			# Total: $35,000
+	
+			# Output
+			goods_output_oil_add = 1200 #Gives $48,000
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 400
+			building_employment_machinists_add = 3600
+			building_employment_engineers_add = 3000
+		}
+	}
+}
+
+
+pm_default_mega_shipyard = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_mega_shipyard.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 10
+		}
+
+		level_scaled = {
+			state_building_submerged_farm_max_level_add = 5
+			state_building_ocean_mining_operation_max_level_add = 5
+			state_building_naval_base_max_level_add = 10
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			building_shipyards_throughput_add = 0.10
+			building_military_shipyards_throughput_add = 0.1
+
+			goods_output_steamers_mult = 0.05
+			goods_output_ironclads_mult = 0.05
+			building_port_throughput_add = 0.10
+			
+			building_ocean_mining_operation_throughput_add = 0.10
+
+			building_submerged_farm_throughput_add = 0.10
+			state_pollution_generation_add = 60
+			
+		}
+
+		unscaled = {	
+			building_group_bg_fishing_employee_mult = -0.2	
+			building_group_bg_fishing_throughput_add = -0.4
+			state_infrastructure_add = -40
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_nuclear_engines_add = 180 #Cost $10,800
+			goods_input_nuclear_fuel_add = 60 #cost $3,000
+			goods_input_steel_add = 640 # cost $32,000
+			goods_input_electricity_add = 250 # $7,500
+			goods_input_lead_add = 150 # $6,000
+			goods_input_irradiated_material_add = 140 # $7,000
+			# Cost: $66,300
+
+			# Output
+			goods_output_steamers_add = 1200 #Gives $84,000
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 1000
+			building_employment_clerks_add = 1000
+			building_employment_machinists_add = 4000
+			building_employment_engineers_add = 4000
+		}
+	}
+}
+
+
+pm_military_production_mega_shipyard_lv_0 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+
+}
+
+pm_military_production_mega_shipyard_lv_1 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -200
+			goods_output_ironclads_add = 200
+		}
+	}
+}
+
+pm_military_production_mega_shipyard_lv_2 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -400
+			goods_output_ironclads_add = 400
+		}
+	}
+}
+
+pm_military_production_mega_shipyard_lv_3 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -600
+			goods_output_ironclads_add = 600
+		}
+	}
+}
+
+pm_military_production_mega_shipyard_lv_4 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -800
+			goods_output_ironclads_add = 800
+		}
+	}
+}
+
+pm_military_production_mega_shipyard_lv_5 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -1200
+			goods_output_ironclads_add = 1200
+		}
+	}
+}
+
+pm_military_production_mega_shipyard_lv_6 = {
+	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_steam_2.dds"
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_steamers_add = -1200
+			goods_output_ironclads_add = 1200
+		}
+	}
+}
+
+pm_default_floating_city = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 120
+			country_convoys_capacity_add = 6000
+			country_trade_route_quantity_mult = 0.40
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			goods_output_services_mult = 0.05
+
+			building_shipyards_throughput_add = 0.15
+			building_military_shipyards_throughput_add = 0.15
+
+			building_port_throughput_add = 0.25
+
+			building_ocean_mining_operation_throughput_add = 0.10
+			building_submerged_farm_throughput_add = 0.10
+			state_pollution_generation_add = 40
+		}
+
+		level_scaled = {
+			state_building_submerged_farm_max_level_add = 20
+			state_building_ocean_mining_operation_max_level_add = 20
+			state_building_naval_base_max_level_add = 10	
+			state_building_port_max_level_add = 20
+		}
+
+		unscaled = {	
+			building_group_bg_fishing_employee_mult = -0.2
+			state_infrastructure_add = 40
+			state_infrastructure_mult = 0.1
+			state_market_access_price_impact = 0.5
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_nuclear_engines_add = 20 #Cost $1,200
+			goods_input_nuclear_fuel_add = 50 #cost $2,500
+			goods_input_steel_add = 200 # cost $10,000
+			goods_input_electricity_add = 200 # $6,000
+			goods_input_steamers_add = 300 # Cost $21,000
+
+			# Cost: $40,700
+
+			# Output
+			goods_output_services_add = 1000 # 30,000
+			goods_output_transportation_add = 300 # $9,000
+			goods_output_fine_art_add = 100 # 20,000
+		}
+		
+		level_scaled = {
+			building_employment_clerks_add = 4000
+			building_employment_academics_add = 2000
+			building_employment_machinists_add = 2000
+			building_employment_engineers_add = 2000
+		}
+	}
+}
+
+
+pm_default_sea_dykes = {
+	texture = "gfx/interface/icons/Mod_Nuclear_Production_Method_Icons/mod_nuclear_terraform_seawall.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_prestige_add = 120
+		}
+	}
+
+	state_modifiers = {
+		workforce_scaled = {	
+			state_construction_mult = 0.10
+		}
+
+		level_scaled = {
+			state_building_naval_base_max_level_add = 10		
+			state_building_port_max_level_add = 10
+		}
+
+		unscaled = {	
+			state_infrastructure_mult = 0.1
+			state_market_access_price_impact = 0.05
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {	
+			goods_input_steel_add = 300 # cost $10,000
+			goods_input_electricity_add = 200 # $6,000
+			goods_input_iron_add = 300 # Cost $12,000
+
+			# Cost: $33,700
+
+			# Output
+			goods_output_services_add = 800 # 24,000
+		}
+		
+		level_scaled = {
+			building_employment_laborers_add = 2500
+			building_employment_machinists_add = 5000
+			building_employment_engineers_add = 2500
+		}
+	}
+}

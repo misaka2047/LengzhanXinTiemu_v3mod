@@ -1,0 +1,194 @@
+﻿l_english:
+
+# New Technology in the mod
+
+## Introductory Technology
+
+nuclear_material_process:0 "Nuclear Material Processing"
+nuclear_material_process_desc:0 "The phrase 'irradiated materials' refers to a collection of radioactive materials commonly used as additives to various products. Its specific contents varies, but generally are produced through chemical, electrical, or centrifugal processing on raw radioactive ores. \n While nuclear fuels can be traded as options and commodity at units of 100 Terajoule, irradiated materials are usually contracted over-the-counter or outside exchanges. This is because different downstream factories have various requirement on its supply of materials."
+
+nuclear_fuel_refinement:0 "Nuclear Fuel Refinement"
+nuclear_fuel_refinement_desc:0 "Packaged nuclear fuel formed backbone of modern economy. These standardized fuel rods are offered in various concentrations and sizes for various pusposes. The larger fuel cells are put directly into nuclear generating stations, whereas smaller cells are used in fueling of cars and aircrafts, or create immerse heat for various industrial processes. \n Fuel cells, including related futures and options, are most frequently traded commodities of the world. This is primarily because fuel cells are usually standardized products, whereas raw radioactive ores varies in its contents, therefore traded only over-the-counter."
+
+## Key Beginning Tech
+chicago_pile_one:0 "Chicago Pile One"
+chicago_pile_one_desc:0 "While not proved by serious history scholars, it is commonly believed that the first nuclear reactor in the United States (and in the world) was built in Polish immigrant community in Chicago in 1866, the year known for its particularly harsh winter. \n The reactor pile was hastily put together with scrap metal and wires, but it worked. It delivered clean energy to thousands in winter. \n The reactor was destroyed in a leak in 1869, but it has always been remembered as the 'Chicago Pile One', the dawn of atomic era"
+
+miniaturized_nuclear_reactor:0 "Miniaturized Nuclear Reactor"
+miniaturized_nuclear_reactor_desc:0 "By simplifying certain designs and forget about safety, we can make reactors small enough to be portable. \n\n It was commonly considered that the first practical mobile nuclear reactor, known later as 'Nuclear Engines', was constructed sometime in 1866 in St.Louis by a band of immigrants to travel the Oregon Trail. The tracked vehicle broke down 'Somewhere in Idaho' and caused lasting ecological concerns after killing all immigrants it carried."
+
+sophisticated_nuclear_reactor:0 "Improved Nuclear Reactor"
+sophisticated_nuclear_reactor_desc:0 "People depicts early nuclear operators as mad scientists who don't care their own life, but after a few hundred radiation sickness people summarized a dozen of rules and improvements that makes reactor much safer to operate."
+
+nuclear_mechanized_economy:0 "Factory-Use Nuclear Materials"
+nuclear_mechanized_economy_desc:0 "As nuclear industry boomed, newer industries developed around every city's nuclear generating station. With abundance power provided by the might of atom, our manufactures are now looking into technologies never forseen before."
+
+commercial_level_nuclear_additives:0 "Commercial Level Nuclear Additives"
+commercial_level_nuclear_additives_desc:0 "It was quickly revealed that, for some reason, human are less prone to mutations and other diseases caused by radioactive materials. As a result, low-concentration radioactive materials were added to daily use products to improve their quality."
+
+depleted_material_reprocess:0 "Depleted Material Re-process"
+depleted_material_reprocess_desc:0 "For several years, people discarded wastes from their reactors into whereever they see fit. Turns out it's a terrible idea, because dumping has made Colorado River permanantly polluted. \n People began to recycle and re-process depleted material to fuel rods, and dump the absolutely useless waste into far away places. Popular choices includes Polar Canada, Ohio, Nevada, Patagonia, and wherever without an environmental regulation enforcement."
+
+## Application Tech
+atomic_powered_mining_machine:0 "Atomic Powered Mining Machine"
+atomic_powered_mining_machine_desc:0 "With nuclear engine no larger than several steam donkey, we can now use them in our mines. These new nuclear-powered pump and lifters provide unforseen level of productivity."
+
+primitive_jet_engines:0 "Basic Jet Engine"
+primitive_jet_engines_desc:0 "With enough propulsion, even a brick would fly! A Ram-Jet is exactly the embodiment of such statement. By super-heating air with exposed reactor then expel it, the jet engine provide enough force to create an aircraft. Despite Aluminum being lighter, the intense heat and force of modern jet engine means that stainless steel is the only material for aircraft construction. \n\n And no, while it eradicates grass with heat and wind it is NOT a lawn mower for your backyard! "
+
+advanced_nuclear_ramjet:0 "Advanced Nuclear Ramjet"
+advanced_nuclear_ramjet_desc:0 "Lead Coating, Afterburners, and better burner chamber control provides much better performance for our jet engines, which allows more efficient design of aircrafts. Modern jet aircraft can easily reach a speed over 1,000 miles per hour even for commercial lines."
+
+eco_friendly_nuclear_additives:0 "Agriculture level nuclear additives"
+eco_friendly_nuclear_additives_desc:0 "It was scientifically proved by scientists of all countries that a proper amount of radioactive additives greatly enhance the durability of consumer products and production of food. "
+
+radiation_assisted_bio_engineering:0 "Radiation Assisted Bio-Engineering"
+radiation_assisted_bio_engineering_desc:0 "Natural evolution is an inefficient process of mutation and selection. With exposure to proper amount of radiation for mutation and careful selection, we can do 10,000 years of nature's work in one week. From micro-organism to animals, we will create species fitting our need for fertilizer, meat, and fur."
+
+duranium_steel:0 "DUranium Steel"
+duranium_steel_desc:0 "DUranium Steel blends various irradiated materials into steelmaking process, producing alloys no less durable at a fraction of cost of even most advanced electric arc processing."
+
+ultrahigh_temperature_forging:0 "Ultrahigh Temperature Forging"
+ultrahigh_temperature_forging_desc:0 "A machine that works in extreme heat can only be forged in extreme heat."
+
+nuclear_dynamite_for_mining:0 "Mine-Use Nuclear Dynamite"
+nuclear_dynamite_for_mining_desc:0 "The nuclear dynamite is affordable and easy-to-use solution to tideous excavations in mining. \n\n Place two commercial-grade 100-lb 95% fuel sticks in either end of a steel barrel, seperated by one foot. Place 100 lb of any kind of chemical explosives behind both fuel sticks. Reinforce the barrel at least three times, and fuse 20 minutes.. Ignite with caution, make sure you are at least one mile from the dynamite. Besides these dynamites assembled on-site, ready-to-boom bombs are also available for sale. \nPlease be advised that assembling nuclear dynamites without proper licensure is a felony, and may be punishable up to hanging."
+
+uncontrolled_fusion:0 "Uncontrolled Fusion Device"
+uncontrolled_fusion_desc:0 "A mining fission device coated by heavy hydrogen contained in a thrice-reinforced DUranium Steel hull, the Fusion Device, or Fusion Dynamite, is by far the most devastating explosives ever built by humankind. \nWhile efficient, it is usually not adviced to use them as careless miners usually create explosions way larger than intended. Therefore, the difficulty of the technology is mainly enforcing government regulations on civilian use fusion device."
+
+human_cloning:0 "Human Cloning"
+human_cloning_desc:0 "They say that good citizens are made, not born. However, some who work in genetic engineering have taken this statement a bit too....literally, trying to mass-produce citizens from cloning vats."
+
+microfission_cells:0 "Microfission Cells"
+microfission_cells_desc:0 "By blending in fissiles in plastics and ceramics and induce micro-fission reaction, we can create plastics of higher precision and strength without incurring higher cost. In addition, they glow a beautiful cobalt blue color in night, giving additional charm to porcelains."
+
+atomic_powered_vessels:0 "Highliners"
+atomic_powered_vessels_desc:0 "To load a fission reactor in place of a furnace on a traditional ship is a quite straightforward idea, but its execution was not. Coming with immerse power of the atom is the problem of structural integrity, propelling system, and waste handling, not to mention the heavy wall of lead to contain the radiations. \n\nThe solution turns out to be a simple one: build larger ships. Great power requires great vessel to carry them. By late 19th century, 20,000 ton full-steel nuclear-steamers, called Highliners, travels the cold water of North Atlantic at over 20 knots cruise speed and over 34 knots max speed, carrying thousands of people and standard containers. \n\n For a whole generation of immigrants, the buzzing of fission furnace in lower levels of trans-Atlantic highliners are a common memory, and the Highliner became a symbol of many immigrant communities."
+
+## Military Tech
+
+atomic_powered_battlecruiser:0 "Atomic Powered Battlecruiser"
+atomic_powered_battlecruiser_desc:0 "A fission furnace can provide same, if not more, power in a fraction of size of old steam turbines. Older battleships became obsolete almost overnight as new atomic-powered battlecruisers easily outperform them in almost every ways. \n\n By 1910s, typical battlecruiser carries 4 turrets with trio 22-inch guns, while able to travel almost infinitely at 37 knots even with her 24-inch of Duranium armor. Such ships can easily excess 100,000 tons in weight. \n\n As a side project, supercarriers are also developed to support battleship squadrons."
+
+general_aviation:0 "General Aviation"
+general_aviation_desc:0 "An improved design in avionics and jet engines makes smaller aircraft much safer than anticipated. As a result, atomic-powered jet can now fly regional airlines with much lower safety concerns. More importantly, small one-engine jets are used by farms and ranches to cover large areas quickly, therefore creating a boom in general aviation market."
+
+military_aviation:0 "Military Aviation"
+military_aviation_desc:0 "Advancement in general aviation brought forth new designs and techniques useful for second-generation military aircrafts."
+
+high_radiation_warfare:0 "Wasteland Tactics"
+high_radiation_warfare_desc:0 "Unregulated usage of nuclear dynamites and dirty bombs effectively turned battlefields to absolute wasteland. Radiation tempests, contaminated water, and craters dominated lanscapes of old battlefields, such as Cold Harbor, Belgium, or Jiangsu. Old tactics of skirmishing infantry no longer works as unprotected rifleman quickly fells to dirty bomb barrage or radiation. Therefore, protection equipment was developed so infantryman can fire a few more rounds before dying."
+
+dirty_bombs:0 "Dirty Bombs"
+dirty_bombs_desc:0 "It has always been a great idea to dump useless and toxic depleted materials onto your enemy. They can decimate unprotected infantry battalions, contaminate their water source, create high radiation unmanned zone, or just randomly thrown onto enemy land for long-term environmental degredations. The real problem, however, is to make sure these jars of toxic material won't break early in supply line, killing our men before the enemy."
+
+powered_exoskeletons:0 "Powered Exoskeleton"
+powered_exoskeletons_desc:0 "Even the most humble footmen requires better protection. Powered Exoskeleton, even as simple as powered legs and welded steel armor, is invaluable for the survival of infantrymen."
+
+nuclear_artillery:0 "Nuclear Bombards"
+nuclear_artillery_desc:0 "A massive siege artillery, usually of 8-inch or bigger caliber, that is designed to fire nuclear bombards. These guns are extremely expensive but also destructive. They are also so heavy that they have to be towed with heavy machinary that is otherwise used in terraforming sites."
+
+infantry_motorization:0 "Infantry Motorization"
+infantry_motorization_desc:0 "Two tracks are always better than four wheels. Four wheels are always better than two legs."
+
+gun_motor_tractor:0 "Gun Motor Tractor"
+gun_motor_tractor_desc:0 "A piece of nuclear artillery loaded onto a construction vehicle used for terraforming sites. The self-propelling chassis and auto-loader freed the artillerymen from the toil of limbering and unlimbering guns with a traditional towing vehicle as well as the need of manually re-load the guns."
+
+radiation_proof_fortification:0 "Prefab Fortifications"
+radiation_proof_fortification_desc:0 "A new design of field fortifications where important elements such as monitoring system and radiation-proof add-ons are pre-fabricated and transported to frontline. This technology greatly increase the efficiency of fieldworks construction."
+
+# Advanced raw-material acquire.
+
+vertical_farming:0 "Vertical Farming"
+vertical_farming_desc:0 "While the concept was discarded quickly in the United States, Vertical farms were used widely in western Europe and Asia. Wheat stacks up in growing vats of these massive structures with protein mussels growing in water supply system, the vertical farm is the solution to food crisis when there's simply not enough land for traditional farms."
+
+synthetic_food_production:0 "Synthetic Food Production"
+synthetic_food_production_desc:0 "Modern synthetic foods are usually subsitute for expensive natural ones. Corn syrup, for example, is used widely as substitute of sugar. The pinkish slime branded as Synthetic Meat provide affordable protein to many. Industrial ethanol are used in place of expensive alcohol. Meanwhile, synthetic rubber are also produced in same production line."
+
+simulated_growth_environment:0 "Simulated Growth Environment"
+simulated_growth_environment_desc:0 "You can simulate any kind of tropical climate with artificial sunlight and glass greenhouse, the real problem is to make it cheap enough to profit from."
+
+permanant_ocean_structures:0 "Permanant Ocean Structures"
+permanant_ocean_structures_desc:0 "Sometimes a country simply doesn't have enough land to feed its people with quality wheat and meat. Fortunately, modern technology allows construction of massive floating farms that provides high-quality fish. Some farm also provide planktons, usually used as animal feed. In addition, many floating farms provided proofs that permanent oceanic structures is possible and profitable, allowing further development of ocean mining platforms."
+
+seabed_cracking_device:0 "Seabed Cracking Device"
+seabed_cracking_device_desc:0 "Building permanent floating structure is not a challenge for modern shipbuilders, the true challenge is cracking the seabed for profitable extractions. \n Conventional ideas including using submarines, manned or unmanned, for drilling. Alternatively, it is common practice to use fusion dynamites to crack open seabed and expose minerals, though the method is considered dangerous as the commonly used Millionton level fusion dynamite may cause irreversible geological changes and ecological disaster. It is also suggested that some corporations uses slave miners for underwater operations."
+
+# Re-write radio tech to make it sound good
+radio:0 "Electronic Computation"
+radio_desc:0 "Sometimes you cannot rely only on mechanical computers or your hand for complex calculations. By regulating electronic circuits and use 'on' and 'off' to create binary signals, we can approach complex problems with brute force, as long as it's not something ridiculously internsive like the orbit of three stars all with significant gravity."
+
+# Electronics Tech
+programmables_tech:0 "Programmables"
+programmables_tech_desc:0 "The Programmable Circuit Boards, commonly known as 'Programmables', 'PCB', 'Circuitry', or simply 'boards', refers to an array of products where clusters of semiconductors would be arranged onto a plastic board. \n Such boards can be used for various computation and controlling tasks, with rudimentary operating systems are available to be written into the boards in almost every major city.\n This small board is the first step towards an automated economic system."
+
+cybernetics_circuitry:0 "Cybernetics Circuitry"
+cybernetics_circuitry_desc:0 "It was quite surprising as useful cybernetic implant was developed at the same time as general-purpose electronic processors. In fact, even the most careless mechanists can put up a few pieces of programmables and bring a working implant. The trick here is to bind input wire with human neural lines, and wait for programmables to be tuned. \n It must be stated that such technology is far from a working neural interface, as modern implants can only do simple hand or leg movements. Furthermore, cybernetics can be used for direct electric pulse that force brain to experience happiness, which made such technology popular among distitute poor."
+
+art_of_silicon:0 "Advanced Silicon Processing"
+art_of_silicon_desc:0 "A good computer requires more semiconductors placed upon a programmable chip, which requires smaller silicon parts, which requires more delicate handlement of more refined silicon waffles, which requires advanced laser control system, which requires a good computer, which......."
+
+electronic_processors:0 "Electronic Processors"
+electronic_processors_desc:0 "If you fix a screen and a keyboard onto an array of PCBs, you will have what people commonly call as a 'Electronic Processor', formally known as 'General-Purpose Interfaced Electronic Processors'. These devices quickly became popular, as they can automatically run calculations and programs for industrial machines and household electronics alike. \n While one need special traning in putting proper command lines for these machines, at least you don't need to constantly deal with RAM addresses and overflows and bit operations, which are always painful with so-called 'Programmable' circuit boards."
+
+human_ego_programming:0 "Human Ego Programming"
+human_ego_programming_desc:0 "The name 'Human Ego Programming' is misleading, as no known technology may create or even replicate the spirit of a human, known commonly as 'ego', in an electronic processor. \n Instead, human ego programming refers to a series of electronic-processor programs that, while applied to a human brain through a piece of programmable, creates special, unforseen feelings with some slight alteration to human mindset. \n The technology was used as a form of art, and as a way of brainwashing in army. It remains doubtful if this technology should be considered actual art, or just a glorified and (literally) electrifying hallucinogen. Most people, when recovered from application of these programs, says it's true art. "
+
+consumer_electronics:0 "Consumer Electronics"
+consumer_electronics_desc:0 "Consumers are not programmers, you gotta have at least an interface for these peasants--that is, if they can afford it."
+
+industrial_system_engineering:0 "Industrial System Engineering"
+industrial_system_engineering_desc:0 "For many years, major industrial powers relies on what today is despised as "industrial sprawl"--endless stretches of factories, slums, and toxic waste piles surrounding sky-reaching cities, unplanned, unregulated, and, most importantly--inefficient.\n\nThis, however, came to change as Industrial System Engineering seeks to transform this industrial sprawl to a coherent productive area, where electronic processors and engineers can maximize efficiency through careful design of internal transport network and external connection. "
+
+automated_systems:0 "Automated Systems"
+automated_systems_desc:0 "With programmables and electronic processors, modern production lines can be significantly automated--either with integrated PCBs in industrial equipment, or with electronic processors with a special operating system. Anyways, finally we can get rid of workers, who always complains and never work, and replace them with machines, who always work and never complains."
+
+military_grade_implant:0 "Military Grade Implant"
+military_grade_implant_desc:0 "Programmables can work very well in battlefields. With mechanical legs and integrated circuits, modern infantry can traverse harsh terrains, fight day and night, and survive much longer in high-radiation area. Furthermore, larger exoskeletons can be fielded and controlled over neural links. \n However, post-war PTSD (Programmable Trauma Sensory Disorder) haunts many veterans after they removed their circuits and left the army. Fortunately, few of modern infantryman live to retirement before melted by nuclear artillery."
+
+ballistic_computers:0 "Ballistic Computers"
+ballistic_computers_desc:0 "Modern army holds a Doctrine of Absolute Firepower, an idea that the result of a battle is determined almost solely by tonnage of nuclear artillery fielded. While warheads varies, rule of thumb is that, on average, one battalion uses 20 kiloton TNT equivalent per day in battle. \n However, commanders quickly find that just amassing firepower no longer works--most of barrage is lost due to lack of firing plan and inaccuracy. Therefore, the army hastily fitted electronic processors onto nuclear artilleries in hope of better accuracy and more devastating fire plans. \n The navy, however, used a more direct solution---they simply fit a supercomputer into their battleship with electric controller for all main guns of a battleship."
+
+extreme_condition_processors:0 "Extreme Condition Processors"
+extreme_condition_processors_desc:0 "Currently, electronic processors works only in normal rooms, but factory floors are anything but normal."
+
+magnetic_levitation:0 "Magnetic Levitation"
+magnetic_levitation_desc:0 "A renewed application of a well-known phenomenon of electromagnetism, industrial use of magnetic levitation was made possible thanks to oversupply of cheap electrical power and advancement in superconductor. The most prominent use of such advanced technology is the second-gen high-speed railroad. The new MagLev lines, built right next to older heavy cargo rails, would carry passengers at an astounding 300 mph while giving virtually zero noise pollution.\n\nIn addition, some particularly ambitious inventors have managed to implement an electromagnetic mass driver to launch aircrafts so that airports can be made smaller and more automated ."
+
+# Terraforming Tech
+theories_of_terraforming:0 "Theories of Terraforming"
+theories_of_terraforming_desc:0 "Under no circumstance should you compromise industry for environment. Instead, you compromise environment for industry, whenever possible."
+
+vertical_urban_planning:0 "Vertical Urban Planning"
+vertical_urban_planning_desc:0 "Modern Metropolis grew not only horizontally but vertically--in fact, more vertically than horizontally. Consider the vast advantage of air travel over commuter railroad, cities transformed from large suburban sprawl to dense clusters of high-rises, surrounded by industrial sprawls, and connected by airlines. As a result, modern urban and industrial planning evolved from two dimension to three."
+
+modernized_canal_and_aqueduct_system:0 "Canals and Aqueducts"
+modernized_canal_and_aqueduct_system_desc:0 "Digging canals are hard and costly works. Thus, it didn't take long for people to find out that fusion dynamites are excellent excavating tools to dig a canal."
+
+weather_control_systems:0 "Weather Control Systems"
+weather_control_systems_desc:0 "Heat and electrical charges are key to formation and alteration of climate anomolies harmful for well-being of our people. Fortunately, we lack neither electricity nor heating."
+
+land_based_mega_structures:0 "Land Based Mega-Structures"
+land_based_mega_structures_desc:0 "Think Big, Build Big, Earn Big."
+
+ocean_based_mega_structures:0 "Ocean based mega-structures"
+ocean_based_mega_structures_desc:0 "Floating cities will be monuments of our time."
+
+
+# Research Contractor
+mod_nuclear_tech_calculus:0 "Calculus"
+mod_nuclear_tech_calculus_desc:0 "Calculus is the foundation of modern mathematics, statistics, and physics."
+
+mod_nuclear_tech_mechanical_computers:0 "Mechanical Computers"
+mod_nuclear_tech_mechanical_computers_desc:0 "A mechanical computer is the best friend of a mathematician, engineer, or anyone whose time is simply too valuable to be wasted on low-level calculations."
+
+mod_nuclear_tech_differential_equations:0 "Differential Equations"
+mod_nuclear_tech_differential_equations_desc:0 "Differential Equations are widely used in many topics in physics and engineering. While most are unsolvable by themselves, with help of mechanical computers we can get numerical solutions that is good enough for engineering or physics."
+
+mod_nuclear_tech_group_theory:0 "Group Theory"
+mod_nuclear_tech_group_theory_desc:0 "Advanced mathematical theories are needed for advancement of physics and engineering"
+
+high_performance_computing:0 "High Performance Computing"
+high_performance_computing_desc:0 "Previously unsolvable questions remains unsolvable, but at least we can find a numerical solution that is accurate enough for industries---now in much shorter time for much more complex problems."
+

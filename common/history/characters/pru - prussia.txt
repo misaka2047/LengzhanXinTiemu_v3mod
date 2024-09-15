@@ -1,0 +1,78 @@
+﻿CHARACTERS = {
+	c:PRU = {
+		create_character = {
+			#瓦西里·丹尼洛维奇·索科洛夫斯基
+			first_name = "Vasily·Danilovich"
+			last_name = "Sokolovski"
+			historical = yes
+			culture = cu:russian
+			religion = rel:atheist #无神论
+			ruler = yes # both ruler and general
+			ig_leader = yes
+			is_general = yes # both ruler and general
+			dna = dna_king_frederik_william_03
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+			on_created = {
+				set_variable = is_married
+			}			
+		}
+		create_character = {
+			#威廉·皮克
+			first_name = "William"
+			last_name = "pike"
+			historical = yes
+			heir = yes	
+			birth_date = 1876.1.3
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}
+		create_character = {
+			#瓦尔特·乌布利希
+			first_name = "Walter"
+			last_name = "ulbricht"
+			historical = yes
+			ig_leader = yes
+			birth_date = 1893.6.30
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+			}
+		}	
+		create_character = {
+			#奥托·格罗提渥
+			first_name = "Otto"
+			last_name = "Grotivo"
+			historical = yes
+			ig_leader = yes
+			birth_date = 1894.3.11
+			interest_group = ig_intelligentsia #文人
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+			}
+		}	
+		create_character = {
+			#埃里希·昂纳克
+			first_name = "erich"
+			last_name = "Honecker"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1912.8.25
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_communist #共产主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				firebrand #煽动大师
+			}
+		}	
+	}
+}

@@ -1,0 +1,586 @@
+namespace = bic_partition
+
+bic_partition.1 = {
+	type = country_event
+	placement = c:MUG.capital
+
+	title = bic_partition.1.t
+	desc = bic_partition.1.d
+	flavor = bic_partition.1.f
+
+	duration = 3
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:KAS }
+				exists = s:STATE_KASHMIR.region_state:BIC
+			}
+			create_country = {
+				tag = KAS
+				origin = c:BIC
+				state = s:STATE_KASHMIR.region_state:BIC
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:KAS
+				exists = s:STATE_KASHMIR.region_state:BIC
+			}
+			s:STATE_KASHMIR.region_state:BIC = { set_state_owner = c:KAS }
+		}
+		c:KAS = {
+			activate_law = law_type:law_monarchy 
+		}	
+	}
+
+	option = {
+		name = bic_partition.1.a
+		default_option = yes
+        # 变身为印度
+        change_tag = HND
+		# 巴基斯坦分离，以东旁遮普为首都
+		if = {
+			limit = {
+				NOT = { exists = c:PAK }
+				exists = s:STATE_PUNJAB.region_state:HND
+			}
+			create_country = {
+				tag = PAK
+				origin = c:HND
+				state = s:STATE_PUNJAB.region_state:HND
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PUNJAB.region_state:HND
+			}
+			s:STATE_PUNJAB.region_state:HND = { set_state_owner = c:PAK }
+		}
+		# 分配地块给巴基斯坦
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_BALUCHISTAN.region_state:HND
+			}
+			s:STATE_BALUCHISTAN.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PASHTUNISTAN.region_state:HND
+			}
+			s:STATE_PASHTUNISTAN.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_KASHMIR.region_state:HND
+			}
+			s:STATE_KASHMIR.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_SINDH.region_state:HND
+			}
+			s:STATE_SINDH.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_SOUTH_BENGAL.region_state:HND
+			}
+			s:STATE_SOUTH_BENGAL.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_NORTH_BENGAL.region_state:HND
+			}
+			s:STATE_NORTH_BENGAL.region_state:HND = { set_state_owner = c:PAK }
+		}
+		c:HND = {
+			activate_law = law_type:law_parliamentary_republic
+			create_character = {
+				first_name = "Mohandas"			
+				last_name = "Gandhi"
+				historical = yes
+				birth_date = 1869.10.2
+				culture = cu:gujarati
+				is_general = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+                ruler = yes
+				traits = { 
+					ambitious
+					persistent
+					pious
+				}
+			}
+		}
+		c:PAK = {
+			create_character = {
+				first_name = "Muhammad"			
+				last_name = "Jinnah"
+				historical = yes
+				birth_date = 1876.12.25
+				culture = cu:gujarati
+				is_general = yes
+				religion = rel:sunni
+                		ruler = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+				traits = { 
+					persistent
+				}
+			}
+		}
+		hidden_effect = {
+			remove_primary_culture = cu:british
+			add_primary_culture = cu:bengali
+			add_primary_culture = cu:assamese
+			add_primary_culture = cu:avadhi
+			add_primary_culture = cu:bihari
+			add_primary_culture = cu:gujarati
+			add_primary_culture = cu:kanauji
+			add_primary_culture = cu:kannada
+			add_primary_culture = cu:malayalam
+			add_primary_culture = cu:marathi
+			add_primary_culture = cu:oriya
+			add_primary_culture = cu:panjabi
+			add_primary_culture = cu:rajput
+			add_primary_culture = cu:sindi
+			add_primary_culture = cu:tamil
+			add_primary_culture = cu:telegu
+			set_state_religion = rel:hindu
+			every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:british
+						culture = cu:scottish
+					}
+				}
+				kill_character = yes
+			}
+		}
+        make_independent = yes
+        remove_modifier = bic_out_of_control_modifier
+		trigger_event = {
+			id = hnd_expansion.1
+		}
+	}
+	option = {
+		name = bic_partition.1.b
+		default_option = yes
+		# 印度分离，以德里作为首都
+		if = {
+			limit = {
+				NOT = { exists = c:HND }
+				exists = s:STATE_DELHI.region_state:BIC
+			}
+			create_country = {
+				tag = HND
+				origin = c:BIC
+				state = s:STATE_DELHI.region_state:BIC
+			}
+		}
+		else_if = {
+			limit = {
+				exists = c:HND
+				exists = s:STATE_BOMBAY.region_state:BIC
+			}
+			s:STATE_BOMBAY.region_state:BIC = { set_state_owner = c:HND }
+		}
+		# 变身巴基斯坦
+        change_tag = PAK
+		hidden_effect = {
+			remove_primary_culture = cu:british
+			add_primary_culture = cu:kashmiri
+			add_primary_culture = cu:panjabi
+			add_primary_culture = cu:sindi
+			add_primary_culture = cu:baluchi
+			add_primary_culture = cu:pashtun
+			set_state_religion = rel:sunni
+			every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:british
+						culture = cu:scottish
+					}
+				}
+				kill_character = yes
+			}
+		}
+		# 分配地块给印度
+		every_scope_state = {
+			limit = {
+				owner = c:PAK
+                is_capital = no
+			}
+			set_state_owner = c:HND
+		}
+		# 分配地块给巴基斯坦
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PUNJAB.region_state:HND
+			}
+			s:STATE_PUNJAB.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_BALUCHISTAN.region_state:HND
+			}
+			s:STATE_BALUCHISTAN.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_PASHTUNISTAN.region_state:HND
+			}
+			s:STATE_PASHTUNISTAN.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_KASHMIR.region_state:HND
+			}
+			s:STATE_KASHMIR.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_SINDH.region_state:HND
+			}
+			s:STATE_SINDH.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_SOUTH_BENGAL.region_state:HND
+			}
+			s:STATE_SOUTH_BENGAL.region_state:HND = { set_state_owner = c:PAK }
+		}
+		if = {
+			limit = {
+				exists = c:PAK
+				exists = s:STATE_NORTH_BENGAL.region_state:HND
+			}
+			s:STATE_NORTH_BENGAL.region_state:HND = { set_state_owner = c:PAK }
+		}
+		c:HND = {
+			activate_law = law_type:law_parliamentary_republic
+			create_character = {
+				first_name = "Mohandas"			
+				last_name = "Gandhi"
+				historical = yes
+				birth_date = 1869.10.2
+				culture = cu:gujarati
+				is_general = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+                ruler = yes
+				traits = { 
+					ambitious
+					persistent
+					pious
+				}
+			}
+		}
+		c:PAK = {
+			create_character = {
+				first_name = "Muhammad"			
+				last_name = "Jinnah"
+				historical = yes
+				birth_date = 1876.12.25
+				culture = cu:gujarati
+				is_general = yes
+				religion = rel:sunni
+                		ruler = yes
+				interest_group = ig_intelligentsia
+				ideology = ideology_moderate
+				traits = { 
+					persistent
+				}
+			}
+		}
+        make_independent = yes
+        set_capital = STATE_PUNJAB
+		every_scope_character = {
+			limit = {
+				OR = {
+					culture = cu:british
+					culture = cu:scottish
+				}
+			}
+			kill_character = yes
+		}
+        remove_modifier = bic_out_of_control_modifier
+	}
+}
+
+bic_partition.2 = {
+	type = country_event
+	placement = root
+	
+	title = bic_partition.2.t
+	desc = bic_partition.2.d
+	flavor = bic_partition.2.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bic_partition.2.a
+		default_option = no
+		add_modifier = {
+			name = bic_partition_sunni_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = 2
+        }
+    }
+    option = {
+		name = bic_partition.2.b
+		default_option = yes
+		add_modifier = {
+			name = bic_partition_authority_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = -1
+        }
+    }
+    option = {
+        name = bic_partition.2.c
+        default_option = no
+		add_modifier = {
+			name = bic_partition_sunni_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = 4
+        }
+    }
+}
+
+bic_partition.3 = {
+	type = country_event
+	placement = root
+	
+	title = bic_partition.3.t
+	desc = bic_partition.3.d
+	flavor = bic_partition.3.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bic_partition.3.a
+		default_option = no
+		add_modifier = {
+			name = bic_partition_hindu_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = 2
+        }
+    }
+    option = {
+		name = bic_partition.3.b
+		default_option = yes
+		add_modifier = {
+			name = bic_partition_authority_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = -1
+        }
+    }
+    option = {
+        name = bic_partition.3.c
+        default_option = no
+		add_modifier = {
+			name = bic_partition_hindu_modifier
+			months = 12
+		}
+        change_variable = {
+            name = bic_partition_var
+            add = 4
+        }
+    }
+}
+
+bic_partition.4 = {
+	type = country_event
+	placement = root
+	
+	title = bic_partition.4.t
+	desc = bic_partition.4.d
+	flavor = bic_partition.4.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bic_partition.4.a
+		default_option = no
+		add_modifier = {
+			name = bic_partition_sikh_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = 2
+        }
+    }
+    option = {
+		name = bic_partition.4.b
+		default_option = yes
+		add_modifier = {
+			name = bic_partition_authority_modifier
+			months = 12
+		}	
+        change_variable = {
+            name = bic_partition_var
+            add = -1
+        }
+    }
+    option = {
+        name = bic_partition.4.c
+        default_option = no
+		add_modifier = {
+			name = bic_partition_sikh_modifier
+			months = 12
+		}
+        change_variable = {
+            name = bic_partition_var
+            add = 4
+        }
+    }
+}
+
+bic_partition.5 = {
+	type = country_event
+	placement = root
+	
+	title = bic_partition.5.t
+	desc = bic_partition.5.d
+	flavor = bic_partition.5.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bic_partition.5.a
+		change_variable = {
+            name = bic_partition_var
+            add = 2
+        }
+		add_modifier = {
+			name = bic_partition_boundary_modifier
+			months = 60
+		}
+		default_option = no
+    }
+    option = {
+		name = bic_partition.5.b
+		add_modifier = {
+			name = bic_partition_boundary_modifier
+			months = 60
+		}		
+		default_option = yes
+    }
+}
+
+bic_partition.6 = {
+	type = country_event
+	placement = root
+	
+	title = bic_partition.6.t
+	desc = bic_partition.6.d
+	flavor = bic_partition.6.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = bic_partition.6.a
+		change_variable = {
+            name = bic_partition_var
+            add = 2
+        }
+		add_modifier = {
+			name = bic_partition_ksh_modifier
+			months = 60
+		}
+		default_option = yes
+    }
+}

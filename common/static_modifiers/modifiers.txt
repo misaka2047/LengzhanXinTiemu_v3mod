@@ -1,0 +1,3 @@
+﻿diplomatic_plays_blocked = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+}

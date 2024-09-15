@@ -1,0 +1,6 @@
+﻿
+#### Nuclear Weapons. Have No Use
+building_monthly_clone_production = {
+	good = yes
+	num_decimals = 1
+}

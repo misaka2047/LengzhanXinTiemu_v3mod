@@ -1,0 +1,27 @@
+﻿COUNTRIES = {
+	c:BUR = { #缅甸
+		effect_starting_technology_tier_5_tech = yes
+
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy #独裁制
+		activate_law = law_type:law_open_door #门户开放
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_case_law_system #海洋法系
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_racial_segregation # English & Anglo-Indian supremacy; no Indians served in the upper echelons of government
+		activate_law = law_type:law_industry_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_legacy_slavery
+		
+		ig:ig_landowners = {
+			add_ruling_interest_group = yes
+		}
+		ig:ig_devout = {
+			set_interest_group_name = ig_theravada_monks
+			remove_ideology = ideology_moralist
+			add_ideology = ideology_buddhist_moralist
+		}
+	}
+}

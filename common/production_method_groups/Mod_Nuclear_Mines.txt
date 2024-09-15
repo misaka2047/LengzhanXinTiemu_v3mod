@@ -1,0 +1,129 @@
+﻿##############Mod: Uranium Mine
+
+pmg_mining_equipment_building_uranium_mine = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_picks_and_shovels_building_uranium_mine
+		pm_atmospheric_engine_pump_building_uranium_mine
+		pm_condensing_engine_pump_building_uranium_mine
+		pm_diesel_pump_building_uranium_mine
+		pm_nuclear_pump_building_uranium_mine
+		pm_automated_mining_machine_building_uranium_mine
+	}
+}
+
+pmg_explosives_building_uranium_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_explosives
+		pm_nitroglycerin_building_uranium_mine
+		pm_dynamite_building_uranium_mine
+		pm_nuclear_dynamite_uranium_mine 
+		# Hell Yeah, Tactical nuclear weapon are BEST for mining!
+	}
+}	
+
+pmg_steam_automation_building_uranium_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_no_steam_automation
+		pm_steam_donkey_mine
+		pm_heavy_nuclear_lifter_mine
+		#Use nuclear engine and nuclear fuel.
+		#Decrease even more manpower
+	}
+}
+
+pmg_train_automation_building_uranium_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_road_carts
+		pm_rail_transport_mine
+
+	}
+}
+
+pmg_ownership_capital_building_uranium_mine = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_building_uranium_mine
+		pm_privately_owned_building_uranium_mine
+		pm_publicly_traded_building_uranium_mine
+		pm_government_run_building_uranium_mine
+		pm_worker_cooperative_building_uranium_mine
+	}
+}
+
+##################### Ancient Arsenal Scavenge
+pmg_base_building_ancient_arsenal_scavenge = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_default_ancient_arsenal_scavenge #Use electricity, lead, and tools
+		pm_protected_equipment_ancient_arsenal_scavenge #Use lead, nuclear fuel, and nuclear engine
+	}
+}
+
+pmg_train_automation_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_road_carts
+		pm_rail_transport_mine
+
+	}
+}
+
+pmg_ownership_capital_building_ancient_arsenal_scavenge = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_merchant_guilds_building_ancient_arsenal_scavenge
+		pm_privately_owned_building_ancient_arsenal_scavenge
+		pm_publicly_traded_building_ancient_arsenal_scavenge
+		pm_government_run_building_ancient_arsenal_scavenge
+		pm_worker_cooperative_building_ancient_arsenal_scavenge
+	}
+}
+
+############### Rad-Fungus Cave-Farm
+#For now let us just keep Uranium and Plutonium Mine the same
+pmg_base_building_rad_fungus_cave_farm = {	
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_naturally_grown_rad_fungus #use fertilizer
+		pm_radiation_mutated_rad_fungus #Unlock: Eco-Friendly nuclear additive
+		# uses irradiated material, electricity, and fertilizer to produce radioactive ore
+	
+		pm_radiation_engineered_rad_fungus #Unlock: radiation-assisted bio-engineering
+		#uses fertilizer, irradiated material, nuclear fuel, and nuclear engines to produce radioactive ore
+	}
+}
+	
+
+pmg_mechanized_harvesting_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_tools_disabled
+		pm_cave_tractor_building_rad_fungus_cave_farm #Uses oil, engines, and electricity (unlock by tractor tech)
+		pm_nuclear_powered_thresher_building_rad_fungus_cave_farm 
+		#Uses nuclear fuel and nuclear engine (unlock by radioactive material re-process)
+	}
+}
+
+pmg_train_automation_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_road_carts
+		pm_rail_transport_mine
+
+	}
+}
+
+
+pmg_ownership_capital_building_rad_fungus_cave_farm = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_privately_owned
+		pm_publicly_traded
+		pm_government_run
+		pm_worker_cooperative_farm
+	}
+}

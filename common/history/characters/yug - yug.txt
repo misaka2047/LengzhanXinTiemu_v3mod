@@ -1,0 +1,20 @@
+﻿CHARACTERS = {
+	c:YUG = {
+		create_character = {
+			#铁托
+			first_name = "Josip·Broz"
+			last_name = "tito"
+			historical = yes
+			culture=cu:croat #克罗地亚
+			religion = rel:atheist #无神论
+			is_general = yes
+			commander_rank = commander_rank_ruler
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_vanguardist #意识形态马列主义者
+			traits = {
+			}
+		}		
+	}
+}

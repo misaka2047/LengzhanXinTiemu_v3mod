@@ -1,0 +1,53 @@
+bic_partition_button_key_1 = {
+	name = "bic_partition_button_key_1"
+	desc = "bic_partition_button_key_1_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		var:bic_partition_var >= 3
+        NOT = {
+            has_variable = bic_partition_button_key_1_used
+        }
+	}
+
+	effect = {
+		trigger_event = { id = bic_partition.5 }
+		set_variable = {
+			name = bic_partition_button_key_1_used
+			months = 60
+		}
+	}
+}
+
+bic_partition_button_key_2 = {
+	name = "bic_partition_button_key_2"
+	desc = "bic_partition_button_key_2_DESC"
+
+	visible = { always = yes }
+	
+	#Country scope
+	ai_chance = {
+		base = 100
+	}
+
+	possible = {
+		var:bic_partition_var >= 5
+        NOT = {
+            has_variable = bic_partition_button_key_2_used
+        }
+	}
+
+	effect = {
+		trigger_event = { id = bic_partition.6 }
+		set_variable = {
+			name = bic_partition_button_key_2_used
+			months = 60
+		}
+	}
+}

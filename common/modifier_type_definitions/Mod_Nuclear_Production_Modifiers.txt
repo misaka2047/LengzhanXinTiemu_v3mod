@@ -1,0 +1,144 @@
+﻿
+#### Cloning
+state_building_cloning_vats_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+
+#### Additional Modifier for Terraforming Projects
+
+goods_output_grain_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_meat_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_fish_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_service_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_radioactive_ore_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_irradiated_material_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_nuclear_fuel_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_nuclear_engines_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_nuclear_jet_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_programmables_mult = {
+	good = yes
+	percent = yes
+}
+
+goods_output_research_and_engineering_mult = {
+	good = yes
+	percent = yes
+}
+
+
+
+#building_shipyards_employee_mult = {
+#	good = no
+#	percent = yes
+#}
+
+#building_ocean_mining_operation_input_mult = {
+#	good = no
+#	percent = yes
+#}
+
+#building_submerged_farm_input_mult = {
+#	good = no
+#	percent = yes
+#}
+
+building_ocean_mining_operation_throughput_add = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+building_electronic_processors_factory_throughput_add = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+building_submerged_farm_throughput_add = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+#building_group_bg_agriculture_output_mult = {
+#	good = yes
+#	percent = yes
+#}
+
+building_vertical_farm_throughput_add = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+building_mega_greenhouse_throughput_add = {
+	good = yes
+	percent = yes
+	num_decimals = 0
+}
+
+### Max Level of stuff
+
+state_building_vertical_farm_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_building_mega_greenhouse_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_building_submerged_farm_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+
+state_building_ocean_mining_operation_max_level_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}
+

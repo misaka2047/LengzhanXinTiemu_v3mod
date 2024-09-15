@@ -1,0 +1,16 @@
+﻿CHARACTERS = {
+	c:JOH = {
+		create_character = { #爱德华·真特爵士
+			first_name = "Edward"
+			last_name = "Zhente"
+			ruler = yes
+			noble = yes
+			culture = cu:british
+			ig_leader = yes
+			historical = yes
+			interest_group = ig_intelligentsia
+			traits = {
+			}
+		}	
+	}
+}

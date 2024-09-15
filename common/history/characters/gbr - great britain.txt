@@ -1,0 +1,282 @@
+﻿CHARACTERS = {
+	c:GBR = { #英国
+		create_character = {
+			historical = yes
+			first_name = George_VI
+			last_name = Winsdor
+			ruler = yes
+			noble = yes #贵族成员
+			birth_date = 1895.12.14
+			dna = dna_king_leopold_01
+			culture = cu:british
+			interest_group = ig_intelligentsia
+		        ideology = ideology_reformer #改良主义者
+			traits = {
+				cautious #谨慎
+				brave #勇敢
+				reserved #内敛
+			}
+		}	
+
+		create_character = { #伊丽莎白女王
+			historical = yes
+			first_name = Elizabeth_Mary
+			last_name = Winsdor
+			heir = yes
+			female = yes
+			noble = yes #贵族成员
+			birth_date = 1926.4.21
+			dna = dna_queen_maria
+			culture = cu:british
+			interest_group = ig_intelligentsia
+		        ideology = ideology_reformer #改良主义者
+			traits = {
+					basic_diplomat #外交家
+					basic_political_operator #政治运作者
+			}
+		}
+
+		create_character = { #工党领袖艾德礼
+			historical = yes
+			first_name = Clement_Richard
+			last_name = Attlee
+			age = 53
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_democratic_socialism #民主社会主义者
+			traits = {
+		        expert_political_operator
+		        inspirational_orator
+		        firebrand
+                        masterful_diplomat
+			}
+		}
+
+		create_character = { #保守党领袖丘吉尔
+		    historical = yes
+		    first_name = Winston
+		    last_name = Churchill
+		    culture = cu:british
+		    noble = yes #贵族成员
+		    female = no
+		    ig_leader = yes
+		    religion = protestant
+		    ideology = ideology_market_liberal #市场自由主义
+		    interest_group = ig_petty_bourgeoisie
+		    birth_date = 1874.11.30
+		    traits = {
+			expensive_tastes #昂贵嗜好
+			hedonist #享乐主义者
+		        inspirational_orator
+                        masterful_diplomat
+		    }
+		}
+
+		create_character = {
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_social_democrat #社民主义者
+			ig_leader = yes #利益集团领袖
+		}
+
+		create_character = {
+			historical = yes
+			first_name = Thomas
+			last_name = Galbraith
+			ig_leader = yes
+			interest_group = ig_devout
+			ideology = ideology_market_liberal
+			traits = {
+				pious
+                                                                    reserved
+			}
+		}
+
+		create_character = { #伯纳德·劳·蒙哥马利
+			historical = yes
+			is_general = yes
+			culture = cu:irish
+			first_name =Bernard
+			last_name = Montgomery
+			birth_date = 1887.11.17
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+                        hq = region_england
+                        commander_rank = commander_rank_5
+			traits = {
+				plains_commander
+                                                                    trench_rat
+                                                                    expert_defensive_strategist
+                                                                    stalwart_defender
+			}
+		}
+
+		create_character = {
+			historical = yes
+			first_name = Maxwell_Fyfe
+			last_name = David
+			birth_date = 1900.5.29
+			ig_leader = yes
+			interest_group = ig_landowners
+			ideology = ideology_radical
+			traits = {
+				ambitious
+				meticulous
+			}
+		}
+
+		create_character = { #农民领袖艾默里
+			historical = yes
+			first_name = Derick_Heathcoat
+			last_name = Amory
+			age = 47
+			ig_leader = yes
+			interest_group = ig_rural_folk
+			ideology = ideology_radical
+			traits = {
+		        expert_political_operator
+		        inspirational_orator
+		        firebrand
+                        masterful_diplomat
+			}
+		}
+
+		create_character = { # Sea
+			historical = yes
+			is_admiral = yes
+			first_name = John
+			last_name = Tovey
+			interest_group = ig_armed_forces
+			age = 61
+			hq = region_england
+			commander_rank = commander_rank_5
+			traits = {
+				direct
+				expert_naval_commander
+                                                                    dockyard_master	
+			}
+			#约翰·托维，皇家海军本土舰队司令，击沉俾斯麦号
+		}
+
+		create_character = {
+			historical = yes
+			is_general = yes
+			first_name = Louis
+			last_name = Mountbatten
+			interest_group = ig_intelligentsia
+			age = 46
+			hq = region_north_sea_coast
+			commander_rank = commander_rank_5
+			traits = {
+				expert_artillery_commander
+				expert_offensive_planner
+                                                                    basic_naval_commander
+			}
+			#路易斯·蒙巴顿，亚太舰队司令，盟军联合作战司令
+		}
+
+		create_character = { # Sea
+			historical = yes
+			is_admiral = yes
+			first_name = Sir_James
+			last_name = Somerville
+			interest_group = ig_armed_forces
+			age = 54
+			hq = region_indochina
+			commander_rank = commander_rank_5
+			traits = {
+				expert_naval_commander
+                                                                    dockyard_master
+                                                                    direct
+			}
+			# 萨默维尔爵士，皇家海军北海舰队司令
+		}
+
+		create_character = {
+			historical = yes
+			is_general = yes
+			first_name = Harold
+			last_name = Alexander
+			interest_group = ig_industrialists
+			ideology = ideology_royalist #保皇主义者
+			age = 55
+			hq = region_south_india
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+                        plains_commander
+                        expert_offensive_planner
+			}
+			#哈罗德·亚历山大，二战北非军区盟军总司令，指挥突尼斯战役有功而被封“突尼斯的亚历山大勋爵”
+		}
+
+		create_character = {
+			historical = yes
+			is_general = yes
+			first_name = Archibald
+			last_name = Wavell
+			interest_group = ig_industrialists
+			age = 63
+			hq = region_indochina
+			commander_rank = commander_rank_5
+			traits = {
+				scarred
+                                                                    expert_defensive_strategist
+                                                                    romantic
+                                                                    expert_artillery_commander
+			}
+
+		}
+
+		create_character = {
+			historical = yes
+			is_general = yes
+			first_name = William
+			last_name = Platt
+			interest_group = ig_intelligentsia
+			age = 51
+			hq = region_niger
+			commander_rank = commander_rank_5
+			traits = {
+				forest_commander
+				resupply_commander
+                                                                    experienced_defensive_strategist
+			}
+
+		}
+
+		create_character = { # Sea
+			historical = yes
+			is_admiral = yes
+			first_name = Charles
+			last_name = Morton_Forbes
+			interest_group = ig_intelligentsia
+			age = 56
+			hq = region_north_sea_coast
+			commander_rank = commander_rank_5
+			traits = {
+				brave
+                                                                    expert_naval_commander
+                                                                    traditionalist_commander
+			}
+
+		}
+
+		create_character = { 
+			historical = yes
+			is_admiral = yes
+			first_name = Henry
+			last_name = Maitland_Wilson
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate
+			birth_date = 1891.9.5
+			hq = region_england
+			commander_rank = commander_rank_5
+			traits = {
+				dockyard_master
+				expert_naval_commander
+				wrathful
+			}
+
+		}
+	}
+}

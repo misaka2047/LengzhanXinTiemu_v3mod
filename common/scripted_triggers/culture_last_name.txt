@@ -1,0 +1,14 @@
+﻿culture_family_given_name_trigger = {
+	OR = {
+		has_culture = cu:han
+		has_culture = cu:manchu
+		has_culture = cu:yue
+		has_culture = cu:min
+		has_culture = cu:hakka
+		has_culture = cu:japanese
+		has_culture = cu:korean
+		has_culture = cu:vietnamese
+		has_culture = cu:mongol
+		has_culture = cu:hungarian
+	}
+}

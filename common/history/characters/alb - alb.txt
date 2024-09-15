@@ -1,0 +1,23 @@
+﻿CHARACTERS = {
+	c:ALB = {
+		create_character = {
+			#恩维尔·霍查
+			historical = yes
+			religion = rel:atheist #无神论
+			is_general = yes
+			commander_rank = commander_rank_ruler
+			first_name = "Enver"
+			last_name = "Hoxha"
+			ig_leader = yes #利益集团领袖
+			ruler = yes
+			birth_date = 1908.10.16
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				arrogant #傲慢
+				trench_rat #堑壕之鼠
+				defense_in_depth_specialist #纵深防御专家
+			}
+		}		
+	}
+}

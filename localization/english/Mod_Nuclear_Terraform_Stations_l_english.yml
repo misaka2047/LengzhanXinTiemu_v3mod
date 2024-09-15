@@ -1,0 +1,81 @@
+﻿l_english:
+
+## Great Shipyards
+
+building_greater_boston_naval_yard:0 "Greater Boston Naval Yard"
+building_greater_boston_naval_yard_lens_option:0 "Begin building a Great Shipyard in Boston"
+
+building_vickers_armstrong_shipyard:0 "Vickers-Armstrong Shipyard"
+building_vickers_armstrong_shipyard_lens_option:0 "Greatly Expand the Vickers-Armstrong Shipyard"
+
+building_AG_Vulcan:0 "A.G. Vulcan"
+building_AG_Vulcan_lens_option:0 "Expand A.G. Vulcan Shipbuilding"
+
+building_Jiangnan_Shipbuilding:0 "Jiangnan Shipbuilding"
+building_Jiangnan_Shipbuilding_lens_option:0 "Expand Jiangnan Shipbuilding"
+
+building_Arsenal_de_Brest:0 "Arsenal de Brest"
+building_Arsenal_de_Brest_lens_option:0 "Expand the Arsenal de Brest"
+
+building_Generic_Great_Shipyard:0 "Great Shipyard"
+building_Generic_Great_Shipyard_lens_option:0 "Build a Great Shipyard"
+
+### Dams
+building_hoover_dam:0 "Hoover Dam"
+building_hoover_dam_lens_option:0 "Build the Hoover Dam"
+
+building_three_gorges_dam:0 "Three Gorges Dam"
+building_three_gorges_dam_lens_option:0 "Build the Three Gorges Dam"
+
+building_great_ethiopian_renaissance_dam:0 "Great Ethiopian Renaissance Dam"
+building_great_ethiopian_renaissance_dam_lens_option:0 "Build the Great Ethiopian Renaissance Dam"
+
+### Floating Cities
+building_second_new_york:0 "Second New York"
+building_second_new_york_lens_option:0 "Build $building_second_new_york$"
+
+building_second_amsterdam:0 "Second Amsterdam"
+building_second_amsterdam_lens_option:0 "Build $building_second_amsterdam$"
+
+building_second_beijing:0 "New Beijing"
+building_second_beijing_lens_option:0 "Build $building_second_beijing$"
+
+building_generic_floating_city:0 "Floating City"
+building_generic_floating_city_lens_option:0 "Build a $building_generic_floating_city$"
+
+### Generic Terraform Station
+building_sea_dyke_system:0 "Sea Dyke System"
+building_sea_dyke_system_lens_option:0 "Build a $building_sea_dyke_system$"
+
+building_rainmaking_array:0 "Rainmaking Array"
+building_rainmaking_array_lens_option:0 "Deploy a $building_rainmaking_array$"
+
+building_moisture_control:0 "Moisture Control System"
+building_moisture_control_lens_option:0 "Build a $building_moisture_control$"
+
+building_swamp_drainage:0 "Swamp Drainage Program"
+building_swamp_drainage_lens_option:0 "Start a $building_swamp_drainage$"
+
+building_hydraulic_fracturing_station:0 "Hydralic Fracturing Station"
+building_hydraulic_fracturing_station_lens_option:0 "Build $building_hydraulic_fracturing_station$"
+
+### Terraform Station
+building_Californian_Water_Exchange_Program:0 "Californian Water Exchange System"
+building_Californian_Water_Exchange_Program_lens_option:0 "Commission the $building_Californian_Water_Exchange_Program$"
+
+building_Midwest_Aqueduct:0 "Midwest Aqueduct"
+building_Midwest_Aqueduct_lens_option:0 "Build $building_Midwest_Aqueduct$"
+
+building_Illinois_Michigan_Canal:0 "Illinois-Michigan Canal"
+building_Illinois_Michigan_Canal_lens_option:0 "Expand the old $building_Illinois_Michigan_Canal$"
+
+building_New_York_Erie_Canal:0 "Hudson-Lake Erie Canal"
+building_New_York_Erie_Canal_desc:0 "Expand the current $building_New_York_Erie_Canal$ system"
+
+building_Detroit_Sault_Ste_Marie_Canal:0 "Detroit-Sault Ste Marie Canal"
+building_Detroit_Sault_Ste_Marie_Canal_desc:0 "Modernize the $building_Detroit_Sault_Ste_Marie_Canal$ system"
+
+
+
+
+

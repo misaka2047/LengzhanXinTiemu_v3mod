@@ -1,0 +1,1854 @@
+japanese={
+	color= hsv{ 0 0 90 }
+	religion = protestant
+	traits = { yamato east_asian_heritage anglophone lusophone }
+	male_common_first_names={
+		Aritomo
+		Gentaro
+		Gonnohyoe
+		Goro
+		Hayao
+		Heihachiro
+		Hikonojo
+		Hiroshi
+		Hyoe
+		Iwao
+		Jinzaburo
+		Jiro
+		Kageaki
+		Kagenori
+		Kantaro
+		Kazushige
+		Keisuke
+		Kenkichi
+		Kiyotaka
+		Koichiro
+		Kotohito
+		Kozo
+		Kuranosuke
+		Maresuke
+		Masatake
+		Masujiro
+		Michisura
+		Mineo
+		Mitsue
+		Mitsuomi
+		Nariaki
+		Nobuyoshi
+		Rokuro
+		Sadao
+		Samata
+		Shichiro
+		Shigeru
+		Shigeto
+		Shinsaku
+		Shoin
+		Soroku
+		Sotokichi
+		Sukenori
+		Sukeyuki
+		Sumiyoshi
+		Tadakuni
+		Takamori
+		Takayoshi
+		Takeaki
+		Tamemoto
+		Taro
+		Taruhito
+		Tetsutaro
+		Tomasaburo
+		Tomonosuke
+		Toshimichi
+		Toshiyoshi
+		Tsugumichi
+		Yahachi
+		Yasukata
+		Yasuyoshi
+		Yoshida
+		Yoshifuru
+		Yoshika
+		Yoshimichi
+		Yoshinobu
+		Yoshinori
+		Yusaku
+	}
+	female_common_first_names = {
+		Asako
+		Chikako
+		Ginko
+		Gyokuran
+		Kaho
+		Kei
+		Kin
+		Kumehachi
+		Masako
+		Miki
+		Natsu
+		Nobu
+		Oi
+		Rengetsu
+		Sayoko
+		Teru
+		Toyoko
+		Tsuneko
+	}	
+	noble_last_names = {
+		Hayashi
+		Ito
+		Jutoku
+		Kujo
+		Matsudaira
+		Mitsune
+		Nabeshima
+		Togo
+		Tokugawa
+	}
+	common_last_names={
+		Akiyama
+		Araki
+		Arichi
+		Arisugawa
+		Dewa
+		Enomoto
+		Hasegawa
+		Honjo
+		Ichinohe
+		Inoue
+		Itagaki
+		Kabayama
+		Kamimura
+		Kamio
+		Kanin
+		Kataoka
+		Kato
+		Katsu
+		Katsura
+		Kawakami
+		Kawamura
+		Kido
+		Kodama
+		Kuroda
+		Kuroki
+		Makino
+		Masaki
+		Minami
+		Muto
+		Nakamuta
+		Nire
+		Nogi
+		Nozu
+		Okada
+		Oku
+		Okubo
+		Omura
+		Osumi
+		Oyama
+		Saigo
+		Sakura
+		Sato
+		Shibayama
+		Shimamura
+		Shirakawa
+		Suzuki
+		Tachibana
+		Takashima
+		Takasugi
+		Tamon
+		Terauchi
+		Tsuboi
+		Ueda
+		Uehara
+		Ugaki
+		Uryu
+		Yamagata
+		Yamakawa
+		Yamamoto
+		Yamashita
+		Yamaya
+		Yashiro
+		Yui
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+dahe={
+	color= hsv{ 0 0 90 }
+	religion = shinto
+	traits = { yamato east_asian_heritage }
+	male_common_first_names={
+		Aritomo
+		Gentaro
+		Gonnohyoe
+		Goro
+		Hayao
+		Heihachiro
+		Hikonojo
+		Hiroshi
+		Hyoe
+		Iwao
+		Jinzaburo
+		Jiro
+		Kageaki
+		Kagenori
+		Kantaro
+		Kazushige
+		Keisuke
+		Kenkichi
+		Kiyotaka
+		Koichiro
+		Kotohito
+		Kozo
+		Kuranosuke
+		Maresuke
+		Masatake
+		Masujiro
+		Michisura
+		Mineo
+		Mitsue
+		Mitsuomi
+		Nariaki
+		Nobuyoshi
+		Rokuro
+		Sadao
+		Samata
+		Shichiro
+		Shigeru
+		Shigeto
+		Shinsaku
+		Shoin
+		Soroku
+		Sotokichi
+		Sukenori
+		Sukeyuki
+		Sumiyoshi
+		Tadakuni
+		Takamori
+		Takayoshi
+		Takeaki
+		Tamemoto
+		Taro
+		Taruhito
+		Tetsutaro
+		Tomasaburo
+		Tomonosuke
+		Toshimichi
+		Toshiyoshi
+		Tsugumichi
+		Yahachi
+		Yasukata
+		Yasuyoshi
+		Yoshida
+		Yoshifuru
+		Yoshika
+		Yoshimichi
+		Yoshinobu
+		Yoshinori
+		Yusaku
+	}
+	female_common_first_names = {
+		Asako
+		Chikako
+		Ginko
+		Gyokuran
+		Kaho
+		Kei
+		Kin
+		Kumehachi
+		Masako
+		Miki
+		Natsu
+		Nobu
+		Oi
+		Rengetsu
+		Sayoko
+		Teru
+		Toyoko
+		Tsuneko
+	}	
+	noble_last_names = {
+		Hayashi
+		Ito
+		Jutoku
+		Kujo
+		Matsudaira
+		Mitsune
+		Nabeshima
+		Togo
+		Tokugawa
+	}
+	common_last_names={
+		Akiyama
+		Araki
+		Arichi
+		Arisugawa
+		Dewa
+		Enomoto
+		Hasegawa
+		Honjo
+		Ichinohe
+		Inoue
+		Itagaki
+		Kabayama
+		Kamimura
+		Kamio
+		Kanin
+		Kataoka
+		Kato
+		Katsu
+		Katsura
+		Kawakami
+		Kawamura
+		Kido
+		Kodama
+		Kuroda
+		Kuroki
+		Makino
+		Masaki
+		Minami
+		Muto
+		Nakamuta
+		Nire
+		Nogi
+		Nozu
+		Okada
+		Oku
+		Okubo
+		Omura
+		Osumi
+		Oyama
+		Saigo
+		Sakura
+		Sato
+		Shibayama
+		Shimamura
+		Shirakawa
+		Suzuki
+		Tachibana
+		Takashima
+		Takasugi
+		Tamon
+		Terauchi
+		Tsuboi
+		Ueda
+		Uehara
+		Ugaki
+		Uryu
+		Yamagata
+		Yamakawa
+		Yamamoto
+		Yamashita
+		Yamaya
+		Yashiro
+		Yui
+	}
+	ethnicities = {
+		1 = asian
+	}
+	graphics = east_asian
+}
+
+panjabi={
+	color= hsv{ 0.08 0.10 0.74 }
+	religion = sunni
+	traits = { south_asian_heritage hindustani }
+	male_common_first_names={
+		Baba
+		Banda
+		Bhuma
+		Chand
+		Dhalip
+		Diwan
+		Ganda
+		Hari
+		Jassa
+		Kapur
+		Kaur
+		Kharak
+		Nau
+		Nawab
+		Nihal
+		Ranjit
+		Shir
+	}
+	female_common_first_names = {
+		Datar
+		Fateh
+		Jind
+		Mehtab
+		Moran
+		Rani
+		Riffat
+		Sada
+		Savita
+	}	
+	noble_last_names = {
+		Bahadur
+		Bhangi
+		Singh
+		Singh_Dogra
+	}
+	common_last_names={
+		Ahluwalia
+		Dhillon
+		Kaur
+		Kunwar
+		Mal
+		Mulraj
+		Nalwa
+		Ramgarhia
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+filipino={
+	color= hsv{ 0.18 0.56 0.86 }
+	religion = catholic
+	traits = { southeast_asian_heritage hispanophone }
+	male_common_first_names={
+		Andres
+		Antonio
+		Apolinario
+		Arcadio
+		Artemio
+		Deodato
+		Emilio
+		Hermano
+		Jacinto
+		JosE_
+		Ladislao
+		Leon_3
+		Manuel
+		Marcelo
+		Mariano
+		Santiago
+		Simeon_2
+		Teodoro
+		Valentine
+	}
+	female_common_first_names = {
+		Brijida
+		Carmen
+		Catalina
+		Leona
+		Librada
+		Teodora
+		Trinidad
+	}	
+	noble_last_names = {
+		Aguainaldo
+		Bonifacio
+		Burgos
+		Mangubat
+	}
+	common_last_names={
+		Arellano
+		Basa
+		del_Pilar
+		Diwa
+		Diaz_2
+		Dizon
+		Jacinto
+		Mabini
+		Mangali
+		Nakpil
+		Nocon
+		Plata
+		Rizal
+	}
+	ethnicities = {
+		1 = south_east_asian
+	}
+	graphics = east_asian
+}
+
+sami={
+	color= hsv{ 0.40 0.36 0.70 }
+	religion = protestant
+	traits = { finnic }
+	# could have scandinavian_culture_group but that would make them ahistorically non-discriminated
+	male_common_first_names={
+		Aikia
+		Asllak
+		Biejas
+		Dure
+		Erke
+		Hanno
+		Iskko
+		Joha
+		Laras
+		Markkos
+		Mikko
+		Niillas
+		Osku
+		Quiwe
+		Uhkku
+	}
+	female_common_first_names = {
+		Aili
+		Margareta
+		Marja
+		Nasti
+	}	
+	noble_last_names = {
+		Aeijih
+		Keskitalo
+		Magga
+		Nuorane
+		Nysto
+		Ukonsaari
+	}
+	common_last_names={
+		Dunfjeld
+		Haetta
+		Kappfjell
+		Kvitfjell
+		Magga
+		Somby
+		Turi
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+alemannic={ #瑞士
+	color= hsv{ 0.0 0.47 0.70 }
+	religion = catholic
+	traits = { francophone german_speaking swiss european_heritage }
+	male_common_first_names={
+		Adolf Alexander Anton Augustus Albert Andreas Ambros Alois
+		Benedicht
+		Carl Christoph Christian Constant CA_sar Carl-Friedrich
+		Dominik Damian
+		Eduard Ernst Eugen Emil Ernst_August
+		Friedrich Franz Florian Franz_Xaver
+		Gall Gabriel Gustav Gottfried Georg Gottlieb
+		Hermann Heinrich
+		Imbert
+		Johann Jakob Joseph Johann_Baptist Johann_Konrad Johann_Peter Jakob_Christoph
+		Kaspar Klemens Kajetan Konrad
+		Ludwig Leo
+		Manfred Martin Moritz
+		Nazar Nikolaus
+		Otto Oswald
+		Peter Placidus Philipp
+		Rudolf
+		Samuel Stephan Silvan Severin
+		Theodor
+		Ulrich
+		Wolfgang Walter Wilhelm
+		Xavier
+		AmE_dE_ AntouE_no Anjo Adrien Armand Andre
+		BarthE_lemy BernA_rd 
+		ChA_rlo CE_sA_r 
+		E_douard E_manuE_l Ercole Ernest E_tiE_no
+		Franc_E_s Felipo Fabien FE_rnand
+		GaspA_r GllO_do GuelyO_mo Gabriel Gaston
+		Henri Hildebrand Hugo Hiacinte
+		Jian Justo JosE_t JosE_t-Marie Jules JA_que JO_rjo Jian-E_tiE_no
+		Louis Laurence LE_O_
+		Martin Michel MO_ris Marc Marius
+		NicolA_s
+		O_gusto
+		PO_l Pierro
+		Roberto RenE_ Rogi_E_r
+		Simon Sandro
+		Tom_A_s
+		Victor VA_rtiE_r
+	}
+	female_common_first_names = {
+		Anna
+		Barbara
+		Emilie
+		Gertrud
+		Germaine
+		Henriette
+		Isabelle
+		Johanna
+		Julie
+		Lydia
+		Maria
+		Rosalie
+		Adelayida Ana
+		BE_atriz Bianca BE_rta
+		Cristina
+		Denise
+		FE_dE_rica FelibE_rta
+		GabriE_la GllO_dina Guila
+		JiA_na
+		Louise LE_onora LO_ra
+		Maria MargarE_ta
+		O_rE_lie
+		Sara
+		Yolanda
+	}	
+	noble_last_names = { # mostly patrician families of Bern
+		von_Bonstetten von_BU_ren von_Bergmann
+		von_Donatz
+		Effinger von_Erlach
+		von_Frisching
+		von_Graffenried
+		von_Hettlingen
+		Lentulus Lombach von_Ligerz
+		May von_Muelinen von_Muralt
+		von_Reding-Biberegg von_RU_pplin
+		von_Salis-Soglio von_Steiger von_Schorno von_Streng
+		von_Tavel von_Thurn
+		von_Wattenwyl von_Weber
+		Zehender
+	}
+	common_last_names={
+		Ador Anderwert Angehrn Altwegg Aepli
+		Brenner BA_chtold Bacher BlO_sch Barblan Balmer Bodenheimer Bitzius Burren Benzinger BU_eler Bachmann Bamert Bettschart Binzegger
+		Calonder Corrodi Castell Camenzind
+		Deucher DA_hler Dieth Dinkelmann DU_rrenmatt DU_ggelin Dumelin
+		Enderlin ElsA_sser Eggenschwyler Eggli Eberle Etter Egloff
+		Fornerod Funk Fassbind Freyenmuth
+		Haab Herzog Haller HU_gelberger Henggeler Hegglin
+		Iten
+		Jaggi
+		Knusel Kuoni Kurz KlA_y KO_nitzer KU_ndig KA_lin
+		Leinert Loosli Lindt Lienhard Lohner Litschi Loser Labhardt Leutenegger
+		Motta Munzinger Meyer Morel Marti Minder Morgenthaler Moser Mettler Moos Merz MO_rikofer
+		Naff Nussbaumer
+		Oethiker Ochsner
+		RA_z Ritschard Ruoss Rogenmoser Ruckstuhl Reutlinger Roth
+		Schneider de_Staeel Siegwart-Muller Stutz Streiff StA_mpfli Stockmar Schneider Schurer SchA_r Simonin Stutzer Steinegger Styger Sidler Schwerzmann Sulzberger Scherb
+		Tschudi Tschiemer Theiler Trinkler
+		Usteri
+		ValA_r Villiger
+		Wille Wyss Wynistorf Willi Winet Wiss
+		Zeni Zeerleder Ziltener ZU_rcher
+		Ansermet Anthonioz Addor Aynard Ambuel Asperlin Agodino Auberjonois
+		Blavignac Berlioz Burdet Baud Balavoine Boissonnas Bret Beller Bornens Brand Bal Baizelon Berthoz Bornichet Buffat BiO_rd Blatter BurcA_rd
+		Chappuis Chappaz Combaz Choisy Christen Charvaz Catagnolaz Cattin Calliaz Chatagnat Cognac Colletaz Corchier Curtenaz Curial CO_rtecuisse Clerc Chaudet Comtesse
+		Dunant Deletraz Deruaz Ducroz Dupraz Darier Destraz Denkinger Duckert Dorz Decurninge Desgrande DiE_moz Demotz Dufour
+		Elzingre Epelly Esquillan Eigler
+		Fritz Fabri Fournier Ferrier Franchet Fumaz Fornerod Fogliardi
+		Girardin Gotteland Gaillard Goth Genequand Guillot Gonnet Gaydioz Godet Gustaz Grainez Gachet Gendre Goddet Gonod Guonoz GO_chat Guisan
+		Hugonnin Hirschgartner
+		Jaquet Jacottet Jacquier Josseron Journal Justiniani Jardinier Jost Jordan Jans Jeanjaquet Jolissaint
+		Keller
+		Lenoir Lucas Lacombe Laplace Laperiere Laravoire Lucendre LE_pine LiotA_rd
+		Morand Mugnier Martin Matossi Maystre Muller Mermillod Machard Maillet Messiez Metraz Michard Molaz Morel Mortmard Moyriaz ME_rmelyO_d
+		Nicoud Neyret
+		Ostervald
+		Pernoud Personnaz Poulin PagE_t Parenthoux Pellet Pernod Pochon
+		Quillot
+		Ronjat Riond Rivollet Roehrich Rochat Roten Ruffinen Rosand Roloz Ramuz Ruchet Ruchonnet
+		Saillet Samoens SursE_x SolA_r Sache Saunier Sermet Squilian Sonzhon
+		Thomas Tronchin Tissot Taninge Tasso Tappolet Truffier
+		Vittoz Vaucher Vulliet Vallette VeiniE_ Vincent Vionnet Viviant Voisin
+	}
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+hungarian={
+	color= hsv{ 0.25 0.22 0.99 }
+	religion = catholic
+	traits = { finnic hungarian_culture_group european_heritage }
+	male_common_first_names={
+		Alajos
+		Albert
+		Anasztaz
+		Andras
+		Arisztid
+		Aurel
+		Benedek
+		Bertalan
+		Bela
+		Beni
+		Daniel_3
+		David_2
+		Edvard_2
+		Erno
+		Ferencz
+		Gyula
+		Gyorgy
+		Gabor
+		Gabriel_2
+		Gaspar_2
+		Ignac
+		Imre
+		Istvan
+		Izidor
+		Janos
+		Jozsef
+		Jozsef_Manes
+		Katalin
+		Kelemen
+		Krisztian
+		Kalman
+		Karoly
+		Lajos
+		Laszlo
+		Mano
+		Mihaly
+		Myklos
+		Mor
+		Sandor
+		Peter_2
+		Rafael_2
+		Simon
+		Sandor_2
+		Tivadar
+		Vilmos
+		Virag
+		Zsigmond
+		Almos
+		Elias_2
+		Odon
+	}
+	female_common_first_names = {
+		Amalia_2
+		Anna
+		Bertha
+		Brigitta
+		Emilia
+		Emma
+		Flora
+		Fruzina
+		Judit
+		Kornelia
+		Maria
+		Milena
+		Nina
+		Polixenia
+		Riza
+		Rozalia
+		Terez
+		Vilma
+		Zsuzsanna
+	}	
+	noble_last_names = {
+		Andrassy
+		Deak
+		Erenyi_Ullmann
+		Frakashazi_Fischer
+		Laczkovics
+		Lahner
+		Leiningen-Westerburg
+		Lichtenstein
+		Osterreicher
+		von_Benedek
+		Zrinyi
+		Stefics
+	}
+	common_last_names={
+		Apponyi
+		Aulich
+		Bacher
+		Baross
+		Batthyany
+		Beothy
+		Bothmer
+		Damjanich
+		Dessewffy
+		Egressy
+		Farkas
+		Goldziher
+		Gungl
+		Hauszmann
+		Heller
+		Horthy
+		Izso
+		Jaszai
+		Joseffy
+		Katona
+		Kaufman
+		Kiss
+		Knezich
+		Kogutowicz
+		Keler
+		Liszt
+		Lazar
+		Mikszath
+		Molnar
+		Nagy-Sandor
+		Ottinger
+		Perczel
+		Poeltenberg
+		Remenyi
+		Rohr
+		Schweidel
+		Szemere
+		Szlavic
+		Szechenyi
+		Tersztyansky
+		Torok
+		Varga
+		Vecsey
+	}
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+
+yemenite={
+	color=hsv{ 0.34 0.38 0.58 }
+	religion = shiite
+	obsessions = {
+		tobacco
+	}
+	traits = { arab_speaking middle_eastern_heritage }
+	male_common_first_names={
+		Abd_Allah
+		Abd_al-Karim
+		Abd_al-Malik
+		Abd_al-Qadir
+		Abd_al-Rahman
+		Ahmad
+		Ali
+		Fawzi
+		Fuad
+		Halil
+		Hasan
+		Hisham
+		Ibrahim
+		Ishaq
+		Iskandar
+		Jamal
+		Kamil
+		Khalid
+		Muhammad
+		Mustafa
+		Nur_al-Din
+		Sa_d_al-Din
+		Salim
+		Shukri
+		Tawfiq
+		Umar
+		Uthman
+		Yahya
+		Yusuf
+		Zafir
+	}
+	female_common_first_names = {
+		Bahira
+		Fayza
+		Ghalia
+		Nadia
+		Noura
+		Samira
+		Sulafa
+		Zeina
+		Zuhur
+	}	
+	noble_last_names = {
+		al-Ali
+		al-Atassi
+		al-Atrash
+		al-Azma
+		Al_Faiz
+		al-Ghani_al-Nabulsi
+		al-Hiraki
+		Al-Rahman_Al-Gillani
+		al-Zaydani
+		Nuseibeh
+	}
+	common_last_names={
+		al-Askari
+		al-Baghdadi
+		al-Basri
+		al-Ghazzawi
+		al-Halabi
+		al-Hamawi
+		al-Himsi
+		al-Mawsili
+		al-Nablusi
+		al-Qudsi
+		al-Shami
+		ibm_Kamil
+		ibn_Abd_Allah
+		ibn_Abd_al-Qadir
+		ibn_Abu_Bakr
+		ibn_Ahmad
+		ibn_Ali
+		ibn_Fuad
+		ibn_Halil
+		ibn_Hasan
+		ibn_Hisham
+		ibn_Ishaq
+		ibn_Ja_far
+		ibn_Khalid
+		ibn_Muhammad
+		ibn_Mustafa
+		ibn_Salim
+		ibn_Umar
+		ibn_Uthman
+		ibn_Yusuf
+		Asmar
+		Mokarzel
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
+misri={
+	color= rgb{ 226 218 112 }
+	religion = sunni
+	obsessions = {
+		tobacco
+		coffee
+	}
+	traits = { arab_speaking middle_eastern_heritage }
+	male_common_first_names={
+		Abdulhamid
+		Abdulkerim
+		Abdullah
+		Ahmet
+		Ali
+		Bekir
+		Cemal
+		Enver
+		Fevzi
+		Fuat
+		Halil
+		Hasan
+		Ibrahim
+		Iskender
+		Ismet
+		Izzet
+		Kamil
+		Kazim
+		Kemal
+		Mehmet
+		Murat
+		Musa
+		Mustafa
+		Nazim
+		Nurettin
+		Nuri
+		Omar
+		Osman
+		Rauf
+		Rifat
+		Selim
+		Shukru
+		Suleyman
+		Urabi
+		Yunus
+		Yusuf
+		Ziya
+	}
+	female_common_first_names = {
+		Aisha
+		Amina
+		Maryam
+		Nawal
+		Nazli
+		Raya
+		Safinaz
+		Sakina
+		Salwa
+		Tafika
+		Zainab
+	}	
+	noble_last_names = {
+		Farid
+		Sabri
+		Zulficar
+		Bey
+		Pasha
+	}
+	common_last_names={
+		Abd_al-Rahman
+		Abu_Shadi
+		al-Arusi
+		al-Attar
+		al-Bajuri
+		al-Biblawi
+		al-Bishri
+		al-Faransawi
+		al-Habashiya
+		al-Hasi
+		al-Maraghi
+		al-Nadeem
+		al_Nahhas
+		al-Nawawi
+		al-Quwaysini
+		al-Tahtawi
+		al-Taymuriyya
+		Bahgoury
+		Bin_Mesbah
+		Digna
+		El_Saadawi
+		Elbaroudy
+		Fehmy
+		Gorgi
+		Habachy
+		Ishaq
+		Kamil
+		Nagi
+		Urabi
+		Wanly
+		Zaghloul
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
+bedouin={
+	color= rgb{ 154 164 89 }
+	religion = sunni
+	obsessions = {
+		tobacco
+		coffee
+	}
+	traits = { arab_speaking middle_eastern_heritage }
+	male_common_first_names={
+		Abd_Allah
+		Abd_al-Karim
+		Abd_al-Malik
+		Abd_al-Qadir
+		Abd_al-Rahman
+		Abu_Bakr
+		Ahmad
+		Ali
+		Fawzi
+		Fuad
+		Halil
+		Hasan
+		Hisham
+		Ibrahim
+		Ishaq
+		Iskandar
+		Ja_far
+		Jamal
+		Kamil
+		Khalid
+		Muhammad
+		Mustafa
+		Nur_al-Din
+		Sa_d_al-Din
+		Sa_ud
+		Salim
+		Shukri
+		Tawfiq
+		Umar
+		Uthman
+		Yahya
+		Yusuf
+		Zafir
+	}
+	female_common_first_names = {
+		Bahiya
+		Fahda
+		Ghaliyya
+		Haifa
+		Hamida
+		Hassa
+		Iffat
+		Latifa
+		Lolwah
+		Maha
+		Noura
+		Sultana
+	}	
+	noble_last_names = {
+		al_Hashimi
+		Al_Maktoum
+		Al_Mualla
+		al_Nuaimi
+		al_Qasimi
+		al_Rashid
+		al_Saud
+		Al_Sharqi
+		al_Ulayyan
+	}
+	common_last_names={
+		al-Hijazi
+		al-Najdi
+		ibm_Kamil
+		ibn_Abd_Allah
+		ibn_Abd_al-Qadir
+		ibn_Abu_Bakr
+		ibn_Ahmad
+		ibn_Ali
+		ibn_Fuad
+		ibn_Halil
+		ibn_Hasan
+		ibn_Hisham
+		ibn_Ishaq
+		ibn_Ja_far
+		ibn_Khalid
+		ibn_Muhammad
+		ibn_Mustafa
+		ibn_Salim
+		ibn_Umar
+		ibn_Uthman
+		ibn_Yusuf
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
+mashriqi={
+	color= hsv{ 0.34 0.48 0.71 }
+	religion = shiite
+	traits = { arab_speaking middle_eastern_heritage }
+	obsessions = {
+		tobacco
+		coffee
+	}
+	male_common_first_names={
+		Abd_Allah
+		Abd_al-Karim
+		Abd_al-Malik
+		Abd_al-Qadir
+		Abd_al-Rahman
+		Ahmad
+		Ali
+		Fawzi
+		Fuad
+		Halil
+		Hasan
+		Hisham
+		Ibrahim
+		Ishaq
+		Iskandar
+		Jamal
+		Kamil
+		Khalid
+		Muhammad
+		Mustafa
+		Nur_al-Din
+		Sa_d_al-Din
+		Salim
+		Shukri
+		Tawfiq
+		Umar
+		Uthman
+		Yahya
+		Yusuf
+		Zafir
+	}
+	female_common_first_names = {
+		Bahira
+		Fayza
+		Ghalia
+		Nadia
+		Noura
+		Samira
+		Sulafa
+		Zeina
+		Zuhur
+	}	
+	noble_last_names = {
+		al-Ali
+		al-Atassi
+		al-Atrash
+		al-Azma
+		Al_Faiz
+		al-Ghani_al-Nabulsi
+		al-Hiraki
+		Al-Rahman_Al-Gillani
+		al-Zaydani
+		Nuseibeh
+	}
+	common_last_names={
+		al-Askari
+		al-Baghdadi
+		al-Basri
+		al-Ghazzawi
+		al-Halabi
+		al-Hamawi
+		al-Himsi
+		al-Mawsili
+		al-Nablusi
+		al-Qudsi
+		al-Shami
+		ibm_Kamil
+		ibn_Abd_Allah
+		ibn_Abd_al-Qadir
+		ibn_Abu_Bakr
+		ibn_Ahmad
+		ibn_Ali
+		ibn_Fuad
+		ibn_Halil
+		ibn_Hasan
+		ibn_Hisham
+		ibn_Ishaq
+		ibn_Ja_far
+		ibn_Khalid
+		ibn_Muhammad
+		ibn_Mustafa
+		ibn_Salim
+		ibn_Umar
+		ibn_Uthman
+		ibn_Yusuf
+		Asmar
+		Mokarzel
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
+kirgiz={
+	color={ 62 73 41 }
+	religion = sunni
+	traits = { iranian_turanian_culture_group central_asian_heritage east_asian_heritage }
+	male_common_first_names={
+		Askar
+		Bayymbet
+		Chingiz
+		Ishim
+		Izzat
+		Jangir
+		Kasim
+		Kurman
+		Murat
+		Nasiridin
+		Sadyk
+		Toktogul
+		Torokul
+		Turdakun
+		Vali
+		Zhurahon 
+	}
+	female_common_first_names = {
+		Asylgul 
+		Kuluypa
+		Roza
+		Sabira
+		Tattybubu
+		Toktayum 
+		Zamira
+	}	
+	noble_last_names = {
+		Madali
+		Beg
+		Khan
+	}
+	common_last_names={
+		Boryak
+		Ibraimov
+		Kutebar
+	}
+	ethnicities = {
+		1 = central_asian
+	}
+	graphics = asian
+}
+
+manipuri={
+	color= hsv{ 0.74 0.27 0.94 }
+	religion = hindu
+	traits = { south_asian_heritage east_asian_heritage }
+	male_common_first_names={
+		Bekendra
+		Chandrakirti
+		Charajit
+		Chingthang
+		Churachandra
+		Devendra
+		Genavira
+		Harshachandra
+		Kulachanrda
+		Marjit
+		Moduchanrda
+		Nara
+		Pitambara
+		Surachandra
+	}
+	female_common_first_names = {
+		Chaobiton
+		Haripriya
+		Konusana
+		Kuranganayani
+		Sheitamala
+		Yumsangbi
+	}	
+	noble_last_names = {
+		Ningthouja
+		Singh
+	}
+	common_last_names={
+		Akaba
+		Devi
+		Khomba
+		Sai
+		Sharma
+	}
+	ethnicities = {
+		1 = indian
+	}
+	graphics = south_asian
+}
+
+turkmen={
+	color= hsv{ 0.84 0.21 0.75 }
+	religion = sunni
+	traits = { turkic iranian_turanian_culture_group central_asian_heritage }
+	male_common_first_names={
+		Ahmed
+		Borkluce
+		Byashim
+		Haydar
+		Mehmed
+		Murad
+		Nurberdi
+		Orazgeldi
+		Qilich
+	}
+	female_common_first_names = {
+		Aksoltan
+		Bakhargul
+		Gozel
+		Gulsat
+		Medeniyet
+		Muza
+		Semsat
+	}	
+	noble_last_names = {
+		Beg
+		Khan
+	}
+	common_last_names={
+		Aytakov
+		Bayramov
+		Hamdan
+		Hydyr
+		Nurali
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = east_asian
+}
+
+turkish={
+	color= hsv{ 0.99 0.48 0.80 }
+	religion = sunni
+	traits = { turkic middle_eastern_heritage }
+	obsessions = {
+		coffee
+	}
+	male_common_first_names={
+		Abdulhamid
+		Abdulkerim
+		Abdullah
+		Abdulrahim
+		Ahmet
+		Akif
+		Ali
+		Arif
+		Bahaeddin
+		Bekir
+		Celaleddin
+		Cemal
+		Cevad
+		Cevdet
+		Daud
+		Edhem
+		Emin
+		Enver
+		Fahri
+		Ferid
+		Fevzi
+		Fuat
+		Hafiz
+		Halil
+		Halim
+		Hamza
+		Hasan
+		Hayrullah
+		Husrev
+		Ibrahim
+		Iskender
+		Ismet
+		Izzet
+		Kamil
+		Kazim
+		Kemal
+		Lutfi
+		Mahmut
+		Mehmet
+		Mithat
+		Muhtar
+		Murat
+		Musa
+		Mustafa
+		Namik
+		Nazim
+		Numan
+		Nurettin
+		Nuri
+		Omar
+		Osman
+		Pertev
+		Rauf
+		Receb
+		Refet
+		Reshad
+		Rifat
+		Riza
+		Sabaheddin
+		Said
+		Selim
+		Shevket
+		Shukru
+		Suleyman
+		Talat
+		Tevfik
+		Vefik
+		Yunus
+		Yusuf
+		Ziya
+		Ziyauddin
+	}
+	female_common_first_names = {
+		Ayse
+		Emina
+		Fatma
+		Hatice
+		Kap-Ipha
+		Mihrengiz
+		Nurefsun 
+		Sadika Samiye Saffet Sefika Seniye
+		Zeliha
+	}	
+	noble_last_names = {
+		Ankuap
+		Arpazli
+		Balyan
+		Benderli
+		Cengic
+		Cihci
+		Karaosmanoglu
+		Koprulu
+		Maan
+		Marshan
+		Osmanoglu
+		Shakir
+		Talhosten
+		Vocibe
+	}
+	common_last_names={
+		Akbas
+		Burhan
+		Cakin
+		Eczacibashi
+		Engineri
+		Ercman
+		Hasagasi
+		Koc
+		Kosalay
+		Manas
+		Mulos
+		Oezal
+		Sabanci
+		Taymur
+		Yalaz
+		#
+		Bey
+		Pasha
+	}
+	male_regal_first_names = {
+		Abdulaziz Abdulmejid Abdulhamid Ahmet
+		Bayezid
+		Celaleddin
+		Kemaleddin
+		Murad Mehmet
+		Nizameddin Nureddin
+		Osman
+		Suleyman
+	}
+	female_regal_first_names = {
+		Atiye
+		Cemile
+		DU_zdidil
+		Edadil Emine
+		Fatma
+		Mihrimah 
+		Pertevniyal 
+		S_ehsuvar Saliha
+	}
+
+	ethnicities = {
+		1 = arab
+		2 = north_caucasian
+		1 = slavic
+	}
+	graphics = arabic
+}
+
+greek={
+	color= hsv{ 0.94 0.45 0.48 }
+	religion = orthodox
+	traits = { greek_culture european_heritage middle_eastern_heritage }
+	
+	obsessions = {
+		wine
+	}	
+	
+	male_common_first_names = {
+		Alexandros Angelos Anastasios Aristidis Antonios Aristovoulos Alexios Andreas Agamemnon Avgoustos Anthimos Adam Anagnostis 
+		Beniamin
+		Charilaos Christos Christoforos Christodoulos
+		Dimitrios Dionysios Diomidis
+		Evangelos Eleftherios Efstathios Emmanouil Epameinontas 
+		Filippos Frangiskos
+		Georgios Gerasimos Gregorios Germanos
+		Ilias Ioannis Iakovos Iraklis Iason
+		Konstantinos Kyriakos Kostas
+		Leonidas Leon Lambros Lazaros Lykourgos
+		Militiadis Menelaos Markos Merkourios Makarios
+		Nikos Nikolaos
+		Odysseas
+		Panos Panagiotis Periklis Petros Pantelis Pantaleon Pavlos Panoutsos 
+		Spyridon Sokratis Stamatios Sotiros Stephanos Stelios Stylianos Skarlatos Sofoklis
+		Theodoros Tilemachos Thomas Trifon Theodorakis Theophilos Thrasyvoulos Themistoklis
+		Vasilios Viktor
+		Xenon
+		Zacharias
+	}
+	female_common_first_names = {
+		Aikaterini Aganiki Angeliki Asimina Anna Anastasia Alexandra Akrivi Amalia
+		Domnitsa Despina Domna
+		Evanthia Eliza Elpida Eleni Eleftheria Eirini Evfrosini
+		Ilektra
+		Kalliroi Kalliopi Konstantina Kiriakoula
+		Lena Laskarina Loukia
+		Marika Maria Marianna Manto
+		Photini
+		Sofia Soteria Sevasti
+		Thaleia
+		Virginia Vassiliki
+		Zacharati
+	}
+	male_regal_first_names = {
+		Alexandros
+		Filippos
+		Georgios
+		Ioannis
+		Konstantinos
+		Nikolaos
+		Pavlos
+	}
+	female_regal_first_names = {
+		Alexandra Alexia
+		Eleni Eirini
+		Konstantina
+		Maria
+		Olympia Olga
+		Sofia
+		Theodora
+	}
+
+	# some Hellenic forms of names from the "Livre d'Or de la Noblesse Ionienne"
+	# also added Souliotes
+	noble_last_names = { 
+		Arvanitachi Argyropoulos
+		Benizelos Botsaris Boutzias Bousbos Boufis Bekas
+		Drakos Dousmanis Danglis
+		Fotos
+		Gonemis Galatis
+		Iras
+		Kolokotronis Kapodistrias Kalogeras Kallergis Kartanos Koutsonikas Kaskaris
+		Levidis Landos
+		Metaxas Manos Mavromichalis Mavrokordatos Mamonas Marmoras Mantzos Matis Mourouzis
+		Notaras Nikas Negreponte
+		Pieros Polylas Prosalendi Patrikios Papagiannis Palamas Pandazis
+		Rodostamos Rallis
+		Soutsos Seos Sachinis Salataris
+		Theotokis Tzavelas Thanasis Toras Todis Tzoris
+		Vlassopoulos Velios Vasos
+		Ypsilantis
+		Zarbas
+	}
+	common_last_names = {
+		Andreou Aspiotis Andriakopoulos Athanasopoulos Anninos Athanasiou Akratopoulos Antonpoulos Asimakopoulos Axiotis
+		Belokas Benardis Baltatzis
+		Chalkokondylis Chrysafis Chorafas Chrysafos Chazapis Charalambis
+		Deligiannis Damaskos Diamantis Diamantopoulos Dontis Drivas Dalezios Douros
+		Eftaxias
+		Fetsis Fetsios Frangoudis Frangopoulos Foustanos Farmakidis Freris Farmakidis Fotilas
+		Gennimatas Golemis Gerakeris Grigoriou Gouskos Georgiadis Gaitanos Grigoriadis Gneftos Gazis
+		Hatzidakis
+		Iatrou Iatridis 
+		Karousou Karakatsanis Kafetzis Koletis Kostantinidis Konstantinou Karakalos Karvelas Karagiannopoulos Karasevdas Karagiannis Katravas Khatzis Kontos Koukoudakis Kourkoulas Kasdaglis Kallisperi Kanaris Konstantas
+		Lagoudakis Lavrentis Loverdos Loundras Langakis Levidis Lamprakis Laskaridis Lerias Liapis Logothetis
+		Merkatis Mouratis Masouris Mitropoulos Mikhailidis Moustakopoulos Morakis Mangourakis Markou Marnezos Mazoukas Mikhalopoulos Malokinis Mavrommatis Mavrogenes Mansolas
+		Nikolopoulos Nastos Neroutsos Negris
+		Orphanidis Orlandos
+		Paraskevopoulos Papasymeon Papadiamantopoulos Persakis Papasideris Pierrakos-Mavromichalis Poulos Pyrgos Petmezas Papaioannou Pavlidis Platis Petrou Pantazidis Patsouris Pothitos Pepanos Paspatis Petrokokkinos Papafingos Peppas Psychas Printezis Papailiopoulos
+		Romantzas Rallis Roussos
+		Skaltsogiannis Stais Sanidis Salouros Santanis Stournaras Siganous Skandalidis
+		Theodoropoulos Tryfiatis-Tripiaris Tsiklitiras Theofilakis Trikoupis Triantafyllakos Tombazis
+		Versis Vasilakos Vrettos Vouros Vourakis Vavis Valetsiotis Vlachos Vikhos Vrasivanopoulos Vlassis Vourvoulis Voustinos Vakondios Varthalitis
+		Xydras Xenakis Xenopoulos Xylinakos
+		Zoumis Zanos Zacharopoulos Zervinis Zafyropoulos Zarifi
+	}
+
+	ethnicities = {
+		1 = slavic
+	}
+	graphics = european
+}
+
+yankee={
+	color= rgb{ 135 206 235 } # Sky Blue
+	religion = protestant
+	traits = { anglophone european_heritage }
+	obsessions = {
+	}
+	male_common_first_names = {
+		Albert Alexander Aeneas Andrew Aaron Alton Atlee Asa Ambrose Abner Alvin August Abraham Abel Abijah Alonzo Ansel Amos Absalom
+		Benjamin Bartholomew Byron Benedict Barnabas Bildad
+		Charles Cyrus Chester Cassius Calvin Cornelius Conrad Caleb Cephas Clarence Colcord
+		Daniel David Dwight
+		Ezekiel Enoch Elihu Edward Eugene_2 Eustace Edwin Elam Ezra Ebenezer Elijah Emory Ephraim Erasmus Elton Erastus
+		Franklin Francis Frederick
+		Grenville George Gregory Grover Gabriel Gorham Gordon
+		Henry Hannibal Hugh Horatio Horace Hiram Harold Hazen Hector
+		Isaac Isaiah Irving Ichabod
+		Joshua Joseph John James Jacob Jesse Joel Jeremiah Jeffrey Judah Jonas Jedediah Jonathan Josiah
+		Kermit Kenner
+		Lemuel Lysander Lawrence Lewis Lorenzo Leland Levi Leonard_2 Lucius
+		Micah Marcellus Mark Michael Millard Matthew Matthias Montgomery Maxwell Milton 
+		Nicholas Noah Nathaniel Newton Nelson
+		Obadiah Othniel Oswald Orson Orville Oscar Otis Oliver Orrin Owen Ormsby
+		Peter Paul Patrick Philip Phineas Philemon Purley Palmetus Philetus
+		Quentin Quincy
+		Rutherford Richard Robert Rufus Roger
+		Stephen Silas Samuel Seth Simon Sidney Sylvester Shubael
+		Thomas Theodore_2 Thaddeus
+		Ulysses Upton
+		Victor Valentine_2
+		William Walter Winfield Wesley Wilbur Wendell
+		Zebulon Zachary Zalmon Zadok
+		
+	}
+	female_common_first_names = {
+		Amanda Anna Alice Adaline Adelaide Augusta Antoinette Alida Addie Ariel Ada Agnes Agatha Almira Arlevia Azubah
+		Catharine Charlotte Clara Cynthia Charity Cordelia Cornelia
+		Delia Deborah Delima
+		Elizabeth Evelina Emily Esther Eliza Ellen Eunice Emma Estelle Eudora Eleanor Ella Eleura Elnora Edith Ethel Ethelinda Euphemia Eva Elida
+		Frances Florence Faith Florena
+		Gertrude Geraldine Grace Graceanna Glathia
+		Hannah Henriette Helen Harriette Hephzibah Huldah
+		Isabella Ida
+		Jane Julia Judith Josephine
+		Lucy Louisa Lavilla Lydia Lilian Lucretia Luetta Leonora
+		Mabel Mary Mildred Melissa Minerva Martha Matilda Marjorie Malvina Mahala
+		Nancy Nellie
+		Olive
+		Phoebe Pamela Puella
+		Roxana Ruth Rebecca Rosa Rachel
+		Susannah Satronia Sylvia
+		Ursula
+		Winifred
+		Yda
+		Zara Zeruviah
+	}
+	noble_last_names = {
+		Adams Appleton
+		Boylston Bradlee
+		Cabot Choate Chaffee Crowninshield Cushing
+		Dana Delano Dudley
+		Emerson Endicott Emmet
+		Forbes
+		Gillett Goelet Glazier
+		Hallowell Holmes
+		Lodge Lowell
+		Minot McKune McCallum
+		Norcross
+		Otis
+		Peabody Putnam
+		Quincy
+		Roosevelt
+		Saltonstall Sears Sedgwick Schuyler
+		Tarbox Thayer Thorndike
+		Wigglesworth Winthrop Winslow
+	}
+	common_last_names = {
+		Arthur Abbot Abercrombie Allen Andrews Ayres Armstrong Agassiz Akerman Aldrich Atherton Alger
+		Brown Buchanan Buford Black Baldwin Butler Blair Bogy Bryan Blaine Barker Belknap Bell Bennett Barnum Boyle Briggs Buckingham Burling Burnside Brinsmade Brodhead Ballou Brushwiller Blinn Beeman Boyce Berger Burleigh Blodgett Bitgood
+		Cooper Carpenter Clay Cass Chamberlain Clark Colfax Cleveland Clarkson Chandler Cortelyou Claflin Cameron Campbell Coffey Carr Catlin Casey Cobb Coburn Cook Cox Craig Crittenden Crocker Custer Chetwood Cambreleng Coffinberry Childs Croman Coyle Culver Conk Corbin Crouch Claggett Clevenger
+		Daniels Dayton Dumont Douglas Depre Davies Dana Doolittle Doubleday Dyer Dunn Draper Dodge Doty Dornblaser Dewel Dussean
+		Everett English Eaton Egan Elliott Ewing
+		Fillmore Floyd Frelinghuysen Fairbanks Fess Fletcher Fairchild Farnsworth Fraser Foster Fry Fuller French Fowler Fiske Fitts Foss Fesler Faxon Fifield
+		Grant Green Garrison Granger Greeley Garfield Garcelon Gilbert Gibbs Griffin Gurney Goldsborough Glascock Grannis Grinstead Gould Goldrick Goodwin Grimes Gooding
+		Halleck Hall Hancock Harrison Hendricks Hobart Hanna Hitchcock Hooker Hackleman Harris Hawkins Hawley Heckman Humphreys Hunt Hunter Hayes Hollingsworth Hammatt Hoag Hammerslough Hodgeman Hutling Hammer Hagaman Holden Heffernan Huldy Hamblen Herrick Hurlbutt Hazeltine
+		Ingalls Irion Isbell
+		Johnson Jewell Jackson Jones Judkins
+		King Kern Kearny Kelley Kane Kilpatrick Kiddoo Keyes Kimball Kinnard Kirk Kennon Knowlton Kneeland Kittredge
+		Lightner Logan Lacey Lane Leggett Lightburn Littlejohn Lockwood Lytle Long Lasaliere Livermore Leavitt Loverin
+		McClellan Merritt Miller Marsh Mansfield Manson Martindale McArthur McCall McClernand McIntosh McPherson Meade Meigs Meredith Miles Morris Morton Murray McKinley McKeon McLaren McMahon Macomber Mattingly Meloon Meacham
+		Norris Nagle Naglee Negley Neill Nickerson Noyes Nugen Newkirk Napire Nowlin Niquette Nudd
+		Oglesby Orme Osborn Owen Olds Oglevee Ochiltree
+		Pierce Peterson Prince Pendleton Pershing Parker Pomerene Payne Pingree Palmer Parsons Pearson Peck Pennypacker Pile Porter Potter Prentiss Price Phillips Prindle Philbrick Penhallow Pettengill
+		Quay Quinby Quiner
+		Reid Rosewater Ransom Rawlins Ramsay Reynolds Rice Richardson Ricketts Ripley Ross Russell Raiser Rafferty Rix
+		Sherman Sheridan Stanton Stanford Stevens Stevenson Sewall Sabin Sinclair Sanborn Scammon Saxton Sedgwick Seward Shackelford Shepard Shields Sickles Slocum Stannard Sturgis Sykes Stanley Shepley Schenck Shinn Semple Sadler Suddaby Seaver Seitz Snodgrass Sissons Stolworthy
+		Troucey Thompson Tilden Turner Taylor Todd Thruston Torbert Totten Tuttle Turchin Tyndale Tallmadge Thatcher Tubbs Thorndike Truesdale Tandy
+		Ullman
+		Vanderveer Van_Buren Viele Vandever Vincent Vogdes Vogel
+		Whitman Webster Woodward Wheeler Weaver Wood Ward Willcox Wad Wadsworth Walker Wallace Washburn Webb Weber Weed Wells West Wheaton Whipple Winkler Woodbury Woodbridge Whittlesey Wingate Walley Wenk Whitcomb Wibird
+		Young
+		Zook
+	}
+	male_regal_first_names = {
+		Alexander
+		Benjamin
+		Charles
+		Franklin
+		George
+		Henry Hamilton
+		James Jefferson
+		Thomas
+		William Washington
+	}
+	female_regal_first_names = {
+		Caroline
+		Flora
+		Georgia
+		Martha Mary
+		Virginia
+	}
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}
+
+dixie={
+	color=rgb{ 204 154 91 } # Butternut
+	religion = protestant
+	traits = { anglophone european_heritage }
+	obsessions = {
+	}
+	male_common_first_names = {
+		Andrew Alexander Atticus Alpheus Alfred Allen Arthur Augustus Archibald Algernon Ambrose Asa Arthur Angus Abner Auburn Archer Adam Arnold Amos Alben Alwyn
+		Braxton Basil Birkett Bushrod Benedict
+		Charles Chester Chiswell Cleland Clifton Cornelius Christopher Christian Cullen Clement Colin Carter Catesby
+		David Daniel Donald Drury Dabney Danville
+		Edward Ezekiel Eustace Eppa Eli Elbert Ebenezer Evander Edmund Eugene_2 Earl
+		Franklin Frederick Francis
+		George Gordon Gideon Gregory Gilbert Gustavus Gabriel
+		Horace Henry Hunter Hugh Howell
+		Isaac Isham
+		Jubal Jefferson Judah John Julius James Josiah Job Jedediah Jeremiah Joel Joseph Jabez Jeptha
+		Kenton
+		Leonidas Lewis Lemuel Lloyd Lunsford Levi Lucius Lester Lula Lafayette Luther
+		Matthew Montgomery Moses Mason Marshall Marcus Michael Mansfield Martin
+		Norborne Norvell Nathaniel Nicholas Needham
+		Peter Paul Patrick Philip Perry Pinckney Phineas
+		Richard Robert Raleigh Reuben Rufus Raphael
+		Samuel Seth Stapleton Sterling Sylvester
+		Thomas Turner Telfair Tilghman
+		Woodrow William Wilfred Willis Willoughby Wyndham Walter Westel Wilkinson Willard
+		Zebulon Zachariah Zabdiel
+	}
+	female_common_first_names = {
+		Annulet Alva Anna Antonia Adelaide Annabelle Amabel
+		Belle Burnelle Bulah
+		Clarissa Caroline Cynthia Catherine Constance Cornelia Charlotte
+		Gertrude Georgia
+		Evangeline Eliza Eugenia Emma Emeline Eveline Ernestine
+		Flora Florida Frances
+		Hetty
+		Izora Isabella
+		Lepha Lettice Lillie Louisa Lydia Loreta Louetta
+		Mary Margaret Monimia 
+		Nancy Nora
+		Olivia Otelia
+		Pauline Phoebe Penelope
+		Rose Reutelia
+		Susannah Sarah Scarlett Sophia Silena Sallie
+		Virginia Varina Viola
+		Zerelda Zelda
+	}
+	noble_last_names = {
+		Allerton Ashe Abbott Ancrum Alma
+		Byrd Baskerville Berkeley Beverly Billingsley Bolling Buckner Bowie Beauregard
+		Custis Cary Chiles Calvert Chase Compton Crossland
+		Dandridge Dudley Duke Duvall Drayton Davis
+		Eldridge Eden
+		Fairfax Farrar Fitzhugh Fendall
+		Gooch Greenberry 
+		Hopkins Harrison Hammond Hollis Hampton Harbert
+		Jenings
+		Key
+		Ladson Lee
+		Mathews Maupin
+		Nash
+		Ogle
+		Page Peale
+		Rolfe Randolph Riggin Ravenel Rutledge Russell
+		Saunders Selden Spencer Sewall Smallwood Stafford Sprigg
+		Taliaferro Taloe Taylor Tasker
+		Vallette
+		Wythe Waller Washington West Warfield Worland Worthington
+	}
+	common_last_names = {
+		Ashby Ammen Anderson Armistead Alford Allison Asboth
+		Bulloch Benjamin Barbour Battelle Barton Bell Beall Boggs Botts Borst Bragg Brockenbrough Brown Buchanan Baker Bankhead Brantley Badger Bland Branscomb Burgess Baxley Boyanton Benefield
+		Crutchfield Crump Cutshaw Chambliss Cobb Checote Clay Cruikshank Curry Clopton Call Coles Claiborne Craig Cary Chiles Cargile Caudle Chancellor Cliett
+		Dargan Dawson Dickinson Donelson Deas DeBardeleben Deshley Dowdell Dromgoole 
+		Early Eggborn Epes Evans Ewell Edmondson Echols Elmore Eldrige
+		Foster Forrest Forney Fry Finegan Featherston Fiser Friley Fitzgerald Flournoy
+		Grattan Grigsby Grimsley Gray Gildersleeve Gilham Glassel Garnett Gantt Garrott Goodwyn Gracie Guild Galbraith Gettis Gholson Govan Graves Goggin Gridley Goggans
+		Hawxhurst Hendren Hubbard Hunter Hunton Holtzclaw Hagan Hannon Haughey Hays Henson Hicks Hotze Hyman Harris Hamby
+		Jemison Johnston Jones
+		Kemper Kershaw Kelly Keyes Knight Killough
+		Longstreet Langhorn Lanier Law Leadbetter Lowe Loyall Lamar Ligon
+		Mayo McCausland Maury Magruder Marmaduke McKinstry McRae Moody Moore Moren Morgan Mercer McComas Morgan Maupin Mahurin Mixon
+		Norris Neblett
+		Oates O_Neal Ogletree
+		Pickett Pierce Patton Pember Pegram Pilcher Phlegar Pridemore Parsons Pettus Phillips Pyron Phelan Posey Partington Piggot Pennington Pruet
+		Radford Ratcliffe Reynolds Rosser Rodes Rowland Ruggles Rust Ralls Rapier Robinson Roddey Roane Revels Rainwater Ramage
+		Slemp Slaughter Simms Snead Starke Sutherlin Sweeney Stringfellow Stribling Semmes Scott Sherrod Shorter Sketoe Sanders Sansom Sasnett Shelley Singleton Sirrine Sprayberry Stonecypher Spradley Suttle
+		Terrill Tanner Thompson Toy Trimble Thorton Toulin Tracy Turnispeed Trueheart
+		Upshur Upton
+		Venable Vaughan Van_Dorn Voinard Van_Vranken Veazey
+		Wilson Wise Wallace Walker Watts Wheeler White Wilcox Withers Wood Woodruff Wyeth Welch Wofford Wickle
+		Yelverton Yager Yancey
+		Zinn
+	}
+	male_regal_first_names = {
+		Alexander
+		Benjamin
+		Charles
+		Franklin
+		George
+		Henry Hamilton
+		James Jefferson
+		Thomas
+		William Washington
+	}
+	female_regal_first_names = {
+		Caroline
+		Flora
+		Georgia
+		Martha Mary
+		Virginia
+	}
+
+
+	graphics = european
+	ethnicities = {
+		1 = caucasian
+	}
+}

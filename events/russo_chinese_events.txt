@@ -1,0 +1,966 @@
+ namespace = russo_chinese
+
+russo_chinese.1 = {
+	type = country_event
+	placement = scope:outer_manchuria_scope
+
+	title = russo_chinese.1.t
+	desc = russo_chinese.1.d
+	flavor = russo_chinese.1.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_poor_people_moving.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/asia/poor_people_moving"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by decision
+	}
+
+	immediate = {
+		random_state = {
+			limit = {
+				state_region = s:STATE_OUTER_MANCHURIA
+			}
+			save_scope_as = outer_manchuria_scope
+		}
+		c:CHI = {
+			save_scope_as = china_scope
+			create_truce = {
+				country = c:RUS
+				months = normal_modifier_time
+			}
+		}
+	}
+
+	option = {
+		name = russo_chinese.1.a
+		default_option = yes
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = c:RUS
+				}
+			}
+			c:CHI = {
+				set_owes_obligation_to = {
+					country = c:RUS
+					setting = no
+				}
+			}		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_OUTER_MANCHURIA
+			}
+			set_state_owner = c:RUS
+ 			add_modifier = {
+ 				name = modifier_ruler_of_the_east
+ 				months = long_modifier_time
+ 			}
+		}
+	}
+
+	option = {
+		name = russo_chinese.1.b
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = c:RUS
+				}
+			}
+			c:CHI = {
+				set_owes_obligation_to = {
+					country = c:RUS
+					setting = no
+				}
+			}		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_OUTER_MANCHURIA
+			}
+			set_state_owner = c:RUS
+ 			add_modifier = {
+ 				name = modifier_ruler_of_the_east_navy
+ 				months = long_modifier_time
+ 			}
+		}
+	}
+}
+
+russo_chinese.2 = {
+	type = country_event
+	placement = scope:tomsk_scope
+
+	title = russo_chinese.2.t
+	desc = russo_chinese.2.d
+	flavor = russo_chinese.2.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_russian_serfs.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/russian_serfs"
+
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by decision
+	}
+
+	immediate = {
+		random_state = {
+			limit = {
+				state_region = s:STATE_KIRGHIZIA
+			}
+			save_scope_as = kirghizia_scope
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TOMSK
+			}
+			save_scope_as = tomsk_scope
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_JETISY
+			}
+			save_scope_as = ili_scope
+		}
+		c:CHI = {
+			save_scope_as = china_scope
+			create_truce = {
+				country = c:RUS
+				months = normal_modifier_time
+			}
+		}
+		random_country = {
+			limit = {
+				is_subject_of = c:RUS
+				country_has_primary_culture = cu:kirgiz
+			}
+			save_scope_as = kirgiz_scope
+		}
+	}
+
+	option = {
+		name = russo_chinese.2.a
+		default_option = yes
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = c:RUS
+				}
+			}
+			c:CHI = {
+				set_owes_obligation_to = {
+					country = c:RUS
+					setting = no
+				}
+			}		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TOMSK
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_JETISY
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+	}
+
+	option = {
+		name = russo_chinese.2.b
+		trigger = {
+			any_scope_state = {
+				state_region = s:STATE_KIRGHIZIA
+			}
+		}
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = c:RUS
+				}
+			}
+			c:CHI = {
+				set_owes_obligation_to = {
+					country = c:RUS
+					setting = no
+				}
+			}		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TOMSK
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_JETISY
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_KIRGHIZIA
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+	}
+
+	option = {
+		name = russo_chinese.2.c
+		trigger = {
+			any_country = {
+				is_subject_of = c:RUS
+				country_has_primary_culture = cu:kirgiz
+			}
+		}
+		if = {
+			limit = {
+				c:CHI = {
+					owes_obligation_to = c:RUS
+				}
+			}
+			c:CHI = {
+				set_owes_obligation_to = {
+					country = c:RUS
+					setting = no
+				}
+			}		
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_TOMSK
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+		random_state = {
+			limit = {
+				state_region = s:STATE_JETISY
+				owner = c:CHI
+			}
+			set_state_owner = c:RUS
+		}
+		random_country = {
+			limit = {
+				is_subject_of = c:RUS
+				country_has_primary_culture = cu:kirgiz
+			}
+			random_state = {
+				limit = {
+					state_region = s:STATE_KIRGHIZIA
+					owner = c:CHI
+				}
+				set_state_owner = prev
+			}
+		}
+	}
+}
+
+russo_chinese.3 = {
+	type = country_event
+	placement = scope:vladivostok_scope
+
+	title = russo_chinese.3.t
+	desc = russo_chinese.3.d
+	flavor = russo_chinese.3.f
+
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_default.dds"
+
+	duration = 3
+
+	trigger = {
+		# triggered by JE
+	}
+
+	immediate = {
+		random_state = {
+			limit = {
+				state_region = s:STATE_OUTER_MANCHURIA
+			}
+			save_scope_as = vladivostok_scope
+		}
+	}
+
+	option = {
+		name = russo_chinese.3.a
+		default_option = yes
+		scope:vladivostok_scope = {
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_naval_base
+					}
+				}
+				create_building={
+	 				building="building_naval_base"
+	 				level=2
+	 				reserves=1
+	 			}
+			}
+ 			add_modifier = modifier_vladivostok_navy
+		}
+		add_modifier = {
+			name = modifier_vladivostok_navy_country
+			months = normal_modifier_time
+		}
+	}
+
+	option = {
+		name = russo_chinese.3.b
+		scope:vladivostok_scope = {
+			if = {
+				limit = {
+					NOT = {
+						has_building = building_port
+					}
+				}
+				create_building={
+	 				building="building_port"
+	 				level=2
+	 				reserves=1
+	 			}
+			}		
+ 			add_modifier = modifier_vladivostok_civilian
+ 			add_loyalists = {
+ 				value = small_radicals
+ 				strata = rich
+ 			}
+		}
+	}
+}
+
+russo_chinese.4 = { #苏联共产党第十九次代表大会
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.4.t
+	desc = russo_chinese.4.e
+	flavor = russo_chinese.4.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.4.a #斯大林同志的助手：马林科夫同志！
+        trigger_event = { id = russo_chinese.5 } 
+	}
+	option = {
+		name = russo_chinese.4.b #斯大林同志的干将：赫鲁晓夫同志！
+		default_option = yes
+       trigger_event = { id = russo_chinese.6 } 
+	}
+	option = {
+		name = russo_chinese.4.c #斯大林同志的尖刀：贝利亚同志！
+       trigger_event = { id = russo_chinese.7 } 
+	}
+	option = {
+		name = russo_chinese.4.d #斯大林同志的元帅：朱可夫同志！
+       trigger_event = { id = russo_chinese.8 } 
+	}
+}
+
+russo_chinese.5 = { #马林科夫的演说
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.5.t
+	desc = russo_chinese.5.e
+	flavor = russo_chinese.5.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.5.a 
+		add_modifier = {
+			name = russo_chinese.5.t
+			months = normal_modifier_time
+		}
+	}
+}
+
+russo_chinese.6 = { #赫鲁晓夫的演说
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.6.t
+	desc = russo_chinese.6.e
+	flavor = russo_chinese.6.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.6.a 
+		add_modifier = {
+			name = russo_chinese.6.t
+			months = normal_modifier_time
+		}
+	}
+}
+
+russo_chinese.7 = { #贝利亚的演说
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.7.t
+	desc = russo_chinese.7.e
+	flavor = russo_chinese.7.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.7.a 
+		add_modifier = {
+			name = russo_chinese.7.t
+			months = normal_modifier_time
+		}
+	}
+}
+
+russo_chinese.8 = { #朱可夫的演说
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.8.t
+	desc = russo_chinese.8.e
+	flavor = russo_chinese.8.f
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_signed_contract.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.8.a 
+		add_modifier = {
+			name = russo_chinese.8.t
+			months = normal_modifier_time
+		}
+	}
+}
+
+russo_chinese.9 = { #斯大林逝世
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.9.t
+	desc = russo_chinese.9.e
+	flavor = russo_chinese.9.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.9.a #支持马林科夫
+		ruler = {
+			kill_character = yes
+		}
+		create_character = {
+			#马林科夫
+			first_name = Georgi·Maximilianovich
+			last_name = Marinkov
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			historical = yes
+			ruler = yes
+			ig_leader = yes
+			birth_date = 1902.1.8
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+        trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
+	}
+	option = {
+		name = russo_chinese.9.b #支持赫鲁晓夫
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+		create_character = {
+			#赫鲁晓夫
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_ruler
+			first_name = Nikita·Sergeyevich
+			last_name = Khrushchev
+			birth_date = 1894.4.17
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				hedonist #享乐主义者
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+        trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
+	}
+	option = {
+		name = russo_chinese.9.c #支持贝利亚
+		ruler = {
+			kill_character = yes
+		}
+		create_character = {
+			#贝利亚
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_caucasus #高加索战区总部
+			commander_rank = commander_rank_ruler
+			first_name = Lavrenti·Pavlovich
+			last_name = Berial
+			culture=cu:georgian #格鲁吉亚
+			birth_date = 1899.3.29
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				cruel #残暴
+				reserved
+				ambitious #雄心勃勃
+				tactful #圆滑
+			}
+		}
+        trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
+	}
+	option = {
+		name = russo_chinese.9.d #支持朱可夫
+		ruler = {
+			kill_character = yes
+		}
+		create_character = {
+			#朱可夫
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_ruler
+			first_name = Georgy·Konstantinovich
+			last_name = Zhukov
+			birth_date = 1896.12.1
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+        trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
+	}
+}
+
+russo_chinese.10 = { #反对派发动党内斗争
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.10.t
+	desc = russo_chinese.10.e
+	flavor = russo_chinese.10.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.10.a 
+		add_modifier = {
+			name = oppose_the_central_committee #反对中央
+			years = 20
+		}
+	}
+}
+
+russo_chinese.11 = { #克里姆林宫部长会议
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.11.t
+	desc = russo_chinese.11.e
+	flavor = russo_chinese.11.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.11.a 
+        trigger_event = { id = russo_chinese.12 } 
+	}
+	option = {
+		name = russo_chinese.11.b 
+        trigger_event = { id = russo_chinese.13 } 
+	}
+	option = {
+		name = russo_chinese.11.c 
+		default_option = yes
+        trigger_event = { id = russo_chinese.14 } 
+	}
+	option = {
+		name = russo_chinese.11.d 
+        trigger_event = { id = russo_chinese.15 } 
+	}
+}
+
+russo_chinese.12 = { #清洗部长会议
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.12.t
+	desc = russo_chinese.12.e
+	flavor = russo_chinese.12.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.12.a 
+		set_country_flag = russo_chinese.12
+		add_journal_entry = { type = the_people's_army } #人民的军队
+		create_character = {
+			first_name = Dengwan
+			last_name = Lin1
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+		create_character = {
+			first_name = Dengwan
+			last_name = Lin1
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+		create_character = {
+			#朱可夫
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_ruler
+			first_name = Georgy·Konstantinovich
+			last_name = Zhukov
+			birth_date = 1896.12.1
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
+			}
+		}
+	}
+}
+
+russo_chinese.13 = { #赫鲁晓夫被捕
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.13.t
+	desc = russo_chinese.13.e
+	flavor = russo_chinese.13.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.13.a 
+		add_journal_entry = { type = liberalization_of_the_Soviet_Union } #苏维埃联盟自由化
+		create_character = {
+			first_name = Dengwan
+			last_name = Lin1
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+		create_character = {
+			#贝利亚
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_caucasus #高加索战区总部
+			commander_rank = commander_rank_ruler
+			first_name = Lavrenti·Pavlovich
+			last_name = Berial
+			culture=cu:georgian #格鲁吉亚
+			birth_date = 1899.3.29
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				cruel #残暴
+				reserved
+				ambitious #雄心勃勃
+				tactful #圆滑
+			}
+		}
+		remove_modifier = oppose_the_central_committee #反对中央
+	}
+}
+
+russo_chinese.14 = { #贝利亚被捕
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.14.t
+	desc = russo_chinese.14.e
+	flavor = russo_chinese.14.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.14.a 
+		add_journal_entry = { type = anti_Stalinism_movement } #反斯大林主义运动
+		create_character = {
+			first_name = Dengwan
+			last_name = Lin1
+			ig_leader = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+		create_character = {
+			#赫鲁晓夫
+			historical = yes
+			ruler = yes
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_ruler
+			first_name = Nikita·Sergeyevich
+			last_name = Khrushchev
+			birth_date = 1894.4.17
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				hedonist #享乐主义者
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+		remove_modifier = oppose_the_central_committee #反对中央
+	}
+}
+
+russo_chinese.15 = { #朱可夫的阴谋被揭露
+	type = country_event
+	placement = ROOT
+
+	title = russo_chinese.15.t
+	desc = russo_chinese.15.e
+	flavor = russo_chinese.15.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = russo_chinese.15.a 
+		add_journal_entry = { type = continuation_of_Stalinism } #斯大林主义的延续
+		create_character = {
+			first_name = Dengwan
+			last_name = Lin1
+			ig_leader = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态先锋队主义者
+			traits = { #特质
+				brave
+				ambitious
+                        experienced_political_operator
+			}
+		}
+		remove_modifier = oppose_the_central_committee #反对中央
+	}
+}

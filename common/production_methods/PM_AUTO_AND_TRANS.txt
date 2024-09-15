@@ -1,0 +1,4151 @@
+pm_automation_building_food_industry_1 = { #食品厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_food_industry_2 = { #食品厂_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_food_industry_3 = { #食品厂_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_food_industry_4 = { #食品厂_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_textile_mills_1 = { #纺织厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_textile_mills_2 = { #纺织厂_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_textile_mills_3 = { #纺织厂_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_textile_mills_4 = { #纺织厂_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_furniture_manufacturies_1 = { #家具制造厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_furniture_manufacturies_2 = { #家具制造厂_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_furniture_manufacturies_3 = { #家具制造厂_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_furniture_manufacturies_4 = { #家具制造厂_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_glassworks_1 = { #玻璃厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_glassworks_2 = { #玻璃厂_2										
+	unlocking_technologies = {tech_heavy_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_glassworks_3 = { #玻璃厂_3										
+	unlocking_technologies = {tech_heavy_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_glassworks_4 = { #玻璃厂_4										
+	unlocking_technologies = {tech_heavy_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_tooling_workshops_1 = { #工艺装备工坊_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_tooling_workshops_2 = { #工艺装备工坊_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_tooling_workshops_3 = { #工艺装备工坊_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_tooling_workshops_4 = { #工艺装备工坊_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_paper_mills_1 = { #造纸厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_paper_mills_2 = { #造纸厂_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_paper_mills_3 = { #造纸厂_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_paper_mills_4 = { #造纸厂_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_steel_mills_1 = { #炼钢厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_steel_mills_2 = { #炼钢厂_2										
+	unlocking_technologies = {tech_heavy_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_steel_mills_3 = { #炼钢厂_3										
+	unlocking_technologies = {tech_heavy_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_steel_mills_4 = { #炼钢厂_4										
+	unlocking_technologies = {tech_heavy_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_motor_industry_1 = { #动力机械厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_motor_industry_2 = { #动力机械厂_2										
+	unlocking_technologies = {tech_heavy_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_motor_industry_3 = { #动力机械厂_3										
+	unlocking_technologies = {tech_heavy_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_motor_industry_4 = { #动力机械厂_4										
+	unlocking_technologies = {tech_heavy_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_shipyards_2 = { #造船厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_shipyards_3 = { #造船厂_2										
+	unlocking_technologies = {tech_complex_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_shipyards_4 = { #造船厂_3										
+	unlocking_technologies = {tech_complex_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_military_shipyards_3 = { #军用造船厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 2000						
+			building_employment_machinists_add = 700							
+			building_employment_officers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_military_shipyards_4 = { #军用造船厂_2										
+	unlocking_technologies = {tech_new_informationized_naval_ships}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+			goods_input_equipment_add = 2							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 800						
+			building_employment_machinists_add = 800							
+			building_employment_officers_add = 300						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_war_machine_industry_3 = { #战争机器厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 2000						
+			building_employment_machinists_add = 700							
+			building_employment_officers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_war_machine_industry_4 = { #战争机器厂_2										
+	unlocking_technologies = {tech_intelligent_unmanned_turrets}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+			goods_input_equipment_add = 2							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 800						
+			building_employment_machinists_add = 800							
+			building_employment_officers_add = 300						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_electronic_parts_factory_2 = { #电子零件厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_electronic_parts_factory_3 = { #电子零件厂_2										
+	unlocking_technologies = {tech_complex_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_electronic_parts_factory_4 = { #电子零件厂_3										
+	unlocking_technologies = {tech_complex_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_arms_industry_3 = { #武器厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1000					
+			building_employment_machinists_add = 350							
+			building_employment_officers_add = 100							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_arms_industry_4 = { #武器厂_2										
+	unlocking_technologies = {tech_intelligent_weapons}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5						
+			goods_input_machine_add = 3							
+			goods_input_equipment_add = 2							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 400						
+			building_employment_machinists_add = 400							
+			building_employment_officers_add = 150							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_artillery_foundries_3 = { #火炮铸造厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1000						
+			building_employment_machinists_add = 350							
+			building_employment_officers_add = 100							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_artillery_foundries_4 = { #火炮铸造厂_2										
+	unlocking_technologies = {tech_the_return_of_the_artillery_era}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5						
+			goods_input_machine_add = 3							
+			goods_input_equipment_add = 2							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 400						
+			building_employment_machinists_add = 400							
+			building_employment_officers_add = 150							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_munition_plants_3 = { #弹药厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5							
+			goods_input_machine_add = 3						
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1000					
+			building_employment_machinists_add = 350							
+			building_employment_officers_add = 100							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_munition_plants_4 = { #弹药厂_2										
+	unlocking_technologies = {tech_intelligent_ammunition}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 5						
+			goods_input_machine_add = 3							
+			goods_input_equipment_add = 2							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 400						
+			building_employment_machinists_add = 400							
+			building_employment_officers_add = 150							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_coal_mine_1 = { #煤矿_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_coal_mine_2 = { #煤矿_2										
+	unlocking_technologies = {tech_semi_mechanized_mining}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_coal_mine_3 = { #煤矿_3										
+	unlocking_technologies = {tech_coal_planer_and_segmented_support}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_coal_mine_4 = { #煤矿_4										
+	unlocking_technologies = {tech_electrohydraulic_control_hydraulic_support}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_iron_mine_1 = { #金属矿场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_iron_mine_2 = { #金属矿场_2										
+	unlocking_technologies = {tech_semi_mechanized_mining}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_iron_mine_3 = { #金属矿场_3										
+	unlocking_technologies = {tech_coal_planer_and_segmented_support}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_iron_mine_4 = { #金属矿场_4										
+	unlocking_technologies = {tech_electrohydraulic_control_hydraulic_support}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_sulfur_mine_1 = { #非金属矿场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_sulfur_mine_2 = { #非金属矿场_2										
+	unlocking_technologies = {tech_semi_mechanized_mining}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_sulfur_mine_3 = { #非金属矿场_3										
+	unlocking_technologies = {tech_coal_planer_and_segmented_support}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_sulfur_mine_4 = { #非金属矿场_4										
+	unlocking_technologies = {tech_electrohydraulic_control_hydraulic_support}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_mine_1 = { #金矿_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_mine_2 = { #金矿_2										
+	unlocking_technologies = {tech_semi_mechanized_mining}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_mine_3 = { #金矿_3										
+	unlocking_technologies = {tech_coal_planer_and_segmented_support}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_mine_4 = { #金矿_4										
+	unlocking_technologies = {tech_electrohydraulic_control_hydraulic_support}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_fields_1 = { #金矿场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_fields_2 = { #金矿场_2										
+	unlocking_technologies = {tech_semi_mechanized_mining}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_fields_3 = { #金矿场_3										
+	unlocking_technologies = {tech_coal_planer_and_segmented_support}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_gold_fields_4 = { #金矿场_4										
+	unlocking_technologies = {tech_electrohydraulic_control_hydraulic_support}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_urban_center_1 = { #城镇中心_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_clerks_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_urban_center_2 = { #城镇中心_2										
+	unlocking_technologies = {tech_sanitation_operation}									
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_clerks_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_urban_center_3 = { #城镇中心_3										
+	unlocking_technologies = {tech_urban_operation_and_maintenance}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_clerks_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_urban_center_4 = { #城镇中心_4										
+	unlocking_technologies = {tech_department_store}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_arts_academy_2 = { #艺术学院_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_clerks_add = 2400							
+			building_employment_academics_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_arts_academy_3 = { #艺术学院_2										
+	unlocking_technologies = {tech_film_and_television_special_effects}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_clerks_add = 2800							
+			building_employment_academics_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_arts_academy_4 = { #艺术学院_3										
+	unlocking_technologies = {tech_3d_film_modeling}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 3200							
+			building_employment_academics_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_power_plant_1 = { #发电厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_power_plant_2 = { #发电厂_2										
+	unlocking_technologies = {tech_heavy_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_power_plant_3 = { #发电厂_3										
+	unlocking_technologies = {tech_heavy_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_power_plant_4 = { #发电厂_4										
+	unlocking_technologies = {tech_heavy_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_port_3 = { #港口_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_clerks_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_port_4 = { #港口_2										
+	unlocking_technologies = {tech_giant_cruise_ship}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_clerks_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_government_administration_1 = { #政府行政机构_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 4400							
+			building_employment_clerks_add = 500							
+		}								
+	}									
+}										
+										
+pm_automation_building_government_administration_2 = { #政府行政机构_2										
+	unlocking_technologies = {tech_office_supplies}									
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 600							
+			building_employment_bureaucrats_add = 100							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_government_administration_3 = { #政府行政机构_3										
+	unlocking_technologies = {tech_printer}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 2000							
+			building_employment_clerks_add = 700							
+			building_employment_bureaucrats_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_government_administration_4 = { #政府行政机构_4										
+	unlocking_technologies = {tech_office_professional_software}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 800							
+			building_employment_clerks_add = 800							
+			building_employment_bureaucrats_add = 300							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_university_2 = { #大学_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 600							
+			building_employment_academics_add = 100							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_university_3 = { #大学_2										
+	unlocking_technologies = {tech_teaching_equipment}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 2000							
+			building_employment_clerks_add = 700							
+			building_employment_academics_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_university_4 = { #大学_3										
+	unlocking_technologies = {tech_teaching_laboratory}								
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 800							
+			building_employment_clerks_add = 800							
+			building_employment_academics_add = 300							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_logging_camp_2 = { #木材制品厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_logging_camp_3 = { #木材制品厂_2										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = -4800							
+			building_employment_machinists_add = 400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_logging_camp_4 = { #木材制品厂_3										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = -9600							
+			building_employment_machinists_add = 800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_fishing_wharf_2 = { #渔业码头_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_fishing_wharf_3 = { #渔业码头_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_fishing_wharf_4 = { #渔业码头_3										
+	unlocking_technologies = {tech_popularization_of_tractors}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_whaling_station_2 = { #捕鲸站_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_whaling_station_3 = { #捕鲸站_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_whaling_station_4 = { #捕鲸站_3										
+	unlocking_technologies = {tech_popularization_of_tractors}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_oil_rig_1 = { #油井_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000						
+		}								
+	}									
+}										
+										
+pm_automation_building_oil_rig_2 = { #油井_2										
+	unlocking_technologies = {tech_chemical_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_oil_rig_3 = { #油井_3										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_oil_rig_4 = { #油井_4										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_railway_2 = { #铁路_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_machinists_add =1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_railway_3 = { #铁路_2										
+	unlocking_technologies = {tech_heavy_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_machinists_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_railway_4 = { #铁路_3										
+	unlocking_technologies = {tech_heavy_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_machinists_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_trade_center_4 = { #贸易中心_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_shopkeepers_add = 150							
+			building_employment_capitalists_add = 100							
+		}								
+	}									
+}										
+										
+pm_automation_building_construction_sector_1 = { #建造部门_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+	country_modifiers = {									
+		workforce_scaled = {								
+country_construction_add = 1										
+		}								
+	}									
+}										
+										
+pm_automation_building_construction_sector_2 = { #建造部门_2										
+	unlocking_technologies = {tech_construction_tools}									
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+	country_modifiers = {									
+		workforce_scaled = {								
+country_construction_add = 2										
+		}								
+	}									
+	unlocking_production_methods = {									
+		pm_base_building_construction_sector_1								
+		pm_base_building_construction_sector_2								
+	}									
+}										
+										
+pm_automation_building_construction_sector_3 = { #建造部门_3										
+	unlocking_technologies = {tech_complete_construction_vehicles}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+	country_modifiers = {									
+		workforce_scaled = {								
+country_construction_add = 3										
+		}								
+	}									
+										
+	unlocking_production_methods = {									
+		pm_base_building_construction_sector_2								
+	}									
+}										
+										
+pm_automation_building_construction_sector_4 = { #建造部门_4										
+	unlocking_technologies = {tech_complete_construction_machinery}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+	country_modifiers = {									
+		workforce_scaled = {								
+country_construction_add = 4										
+		}								
+	}									
+	unlocking_production_methods = {									
+		pm_advance_building_construction_sector_3								
+	}									
+										
+}										
+										
+pm_automation_building_breeding_farm_2 = { #养殖场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_breeding_farm_3 = { #养殖场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_breeding_farm_4 = { #养殖场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_factory_2 = { #制糖厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_factory_3 = { #制糖厂_2										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_factory_4 = { #制糖厂_3										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_beverage_factory_1 = { #饮料工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_beverage_factory_2 = { #饮料工厂_2										
+	unlocking_technologies = {tech_light_industrial_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_beverage_factory_3 = { #饮料工厂_3										
+	unlocking_technologies = {tech_light_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_beverage_factory_4 = { #饮料工厂_4										
+	unlocking_technologies = {tech_light_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_fiber_factory_2 = { #纤维工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_fiber_factory_3 = { #纤维工厂_2										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_fiber_factory_4 = { #纤维工厂_3										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_factory_2 = { #橡胶工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_factory_3 = { #橡胶工厂_2										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_factory_4 = { #橡胶工厂_3										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_clean_energy_power_station_4 = { #清洁能源发电站_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_plastic_products_factory_2 = { #塑料制品厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_plastic_products_factory_3 = { #塑料制品厂_2										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_plastic_products_factory_4 = { #塑料制品厂_3										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_chemical_plant_1 = { #化工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_chemical_plant_2 = { #化工厂_2										
+	unlocking_technologies = {tech_chemical_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_chemical_plant_3 = { #化工厂_3										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_chemical_plant_4 = { #化工厂_4										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_refinery_1 = { #炼油厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+	}									
+}										
+										
+pm_automation_building_refinery_2 = { #炼油厂_2										
+	unlocking_technologies = {tech_chemical_tools}
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_refinery_3 = { #炼油厂_3										
+	unlocking_technologies = {tech_chemical_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_refinery_4 = { #炼油厂_4										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_engineers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_real_estate_developers_3 = { #房地产开发商_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_clerks_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_real_estate_developers_4 = { #房地产开发商_2										
+	unlocking_technologies = {tech_giant_tower_crane}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_car_factory_2 = { #汽车制造厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_car_factory_3 = { #汽车制造厂_2										
+	unlocking_technologies = {tech_complex_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_car_factory_4 = { #汽车制造厂_3										
+	unlocking_technologies = {tech_complex_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_machine_factory_2 = { #机器工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 17600							
+			building_employment_machinists_add = 2000							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_machine_factory_3 = { #机器工厂_2										
+	unlocking_technologies = {tech_complex_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_machine_factory_4 = { #机器工厂_3										
+	unlocking_technologies = {tech_complex_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_home_appliance_factory_2 = { #家电工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_home_appliance_factory_3 = { #家电工厂_2										
+	unlocking_technologies = {tech_complex_industrial_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_home_appliance_factory_4 = { #家电工厂_3										
+	unlocking_technologies = {tech_complex_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_electrics_industry_3 = { #电子产品工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_electrics_industry_4 = { #电子产品工厂_2										
+	unlocking_technologies = {tech_cutting_edge_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_pharmaceutical_factory_3 = { #药品厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_shopkeepers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_pharmaceutical_factory_4 = { #药品厂_2										
+	unlocking_technologies = {tech_chemical_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_machinists_add = 3200							
+			building_employment_shopkeepers_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_large_equipment_factory_3 = { #大型设备工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_machinists_add = 2400							
+			building_employment_engineers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_large_equipment_factory_4 = { #大型设备工厂_2										
+	unlocking_technologies = {tech_cutting_edge_industrial_equipment}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_aircraft_factory_4 = { #飞机制造厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_computer_factory_4 = { #计算机工厂_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_rocket_center_4 = { #火箭中心_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_machinists_add = 2800							
+			building_employment_engineers_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_highway_2 = { #公路_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 12800							
+			building_employment_clerks_add = 2400							
+			building_employment_bureaucrats_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_highway_3 = { #公路_2										
+	unlocking_technologies = {tech_application_of_computer_city_management}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_clerks_add = 2800							
+			building_employment_bureaucrats_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_highway_4 = { #公路_3										
+	unlocking_technologies = {tech_internet}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 3200							
+			building_employment_bureaucrats_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_airport_3 = { #机场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 8000							
+			building_employment_clerks_add = 2800							
+			building_employment_bureaucrats_add = 800							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_airport_4 = { #机场_2										
+	unlocking_technologies = {tech_civil_aviation_equipment}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 3200							
+			building_employment_clerks_add = 3200							
+			building_employment_bureaucrats_add = 1200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_research_institution_1 = { #科研机构_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_laborers_add = 3000							
+			building_employment_clerks_add = 1900							
+		}								
+	}									
+}										
+										
+pm_automation_building_research_institution_2 = { #科研机构_2										
+	unlocking_technologies = {tech_material_science}									
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 2000							
+			building_employment_clerks_add = 1600							
+			building_employment_academics_add = 300							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_research_institution_3 = { #科研机构_3										
+	unlocking_technologies = {tech_analytical_ultracentrifuge}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1000							
+			building_employment_clerks_add = 1300							
+			building_employment_academics_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_research_institution_4 = { #科研机构_4										
+	unlocking_technologies = {tech_particle_collider}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_clerks_add = 1000							
+			building_employment_academics_add = 900							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_subsistence_farms_1 = { #自给农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_peasants_add = 4800							
+			building_employment_farmers_add = 200							
+		}								
+	}									
+}										
+										
+pm_automation_building_subsistence_orchards_1 = { #自给果园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_peasants_add = 4800							
+			building_employment_farmers_add = 200							
+		}								
+	}									
+}										
+										
+pm_automation_building_subsistence_pastures_1 = { #自给牧场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_peasants_add = 4800							
+			building_employment_farmers_add = 200							
+		}								
+	}									
+}										
+										
+pm_automation_building_subsistence_fishing_villages_1 = { #自给渔村_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_peasants_add = 4800							
+			building_employment_farmers_add = 200							
+		}								
+	}									
+}										
+										
+pm_automation_building_subsistence_rice_paddies_1 = { #自给稻田_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation1.dds									
+	building_modifiers = {									
+		level_scaled = {								
+			building_employment_peasants_add = 4800							
+			building_employment_farmers_add = 200							
+		}								
+	}									
+}										
+										
+pm_automation_building_rye_farm_2 = { #黑麦农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_rye_farm_3 = { #黑麦农场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000						
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_rye_farm_4 = { #黑麦农场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_wheat_farm_2 = { #小麦农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_wheat_farm_3 = { #小麦农场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000						
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_wheat_farm_4 = { #小麦农场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600						
+			building_employment_farmers_add = 1600						
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_rice_farm_2 = { #水稻农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_rice_farm_3 = { #水稻农场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add =1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_rice_farm_4 = { #水稻农场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add =1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_maize_farm_2 = { #玉米农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_maize_farm_3 = { #玉米农场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_maize_farm_4 = { #玉米农场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600						
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_millet_farm_2 = { #杂谷农场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_millet_farm_3 = { #杂谷农场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000						
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_millet_farm_4 = { #杂谷农场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600					
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_vineyard_plantation_2 = { #葡萄园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_vineyard_plantation_3 = { #葡萄园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_vineyard_plantation_4 = { #葡萄园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_livestock_ranch_2 = { #畜牧场_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_livestock_ranch_3 = { #畜牧场_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}									
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_livestock_ranch_4 = { #畜牧场_3										
+	unlocking_technologies = {tech_popularization_of_tractors}									
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_plantation_2 = { #橡胶种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200						
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_plantation_3 = { #橡胶种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000						
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_rubber_plantation_4 = { #橡胶种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_coffee_plantation_2 = { #咖啡种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_coffee_plantation_3 = { #咖啡种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_coffee_plantation_4 = { #咖啡种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_cotton_plantation_2 = { #棉花种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_cotton_plantation_3 = { #棉花种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_cotton_plantation_4 = { #棉花种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600						
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_tea_plantation_2 = { #茶叶种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_tea_plantation_3 = { #茶叶种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000					
+			building_employment_farmers_add = 1400						
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_tea_plantation_4 = { #茶叶种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_tobacco_plantation_2 = { #烟草种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200						
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_tobacco_plantation_3 = { #烟草种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400						
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_tobacco_plantation_4 = { #烟草种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_plantation_2 = { #糖料作物种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_plantation_3 = { #糖料作物种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_sugar_plantation_4 = { #糖料作物种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_banana_plantation_2 = { #香蕉种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_banana_plantation_3 = { #香蕉种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_banana_plantation_4 = { #香蕉种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600						
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_automation_building_silk_plantation_2 = { #丝绸种植园_1										
+										
+	texture = gfx/interface/icons/production_method_icons/automation2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 6400							
+			building_employment_farmers_add = 1200							
+			building_employment_shopkeepers_add = 200							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 5							
+		}								
+	}									
+}										
+										
+pm_automation_building_silk_plantation_3 = { #丝绸种植园_2										
+	unlocking_technologies = {tech_small_agricultural_machinery}
+	texture = gfx/interface/icons/production_method_icons/automation3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+			building_employment_farmers_add = 1400							
+			building_employment_shopkeepers_add = 400							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 15							
+		}								
+	}									
+}										
+										
+pm_automation_building_silk_plantation_4 = { #丝绸种植园_3										
+	unlocking_technologies = {tech_popularization_of_tractors}
+	texture = gfx/interface/icons/production_method_icons/automation4.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_tools_add = 10							
+			goods_input_machine_add = 6							
+			goods_input_equipment_add = 4							
+		}								
+		level_scaled = {								
+			building_employment_laborers_add = 1600							
+			building_employment_farmers_add = 1600							
+			building_employment_shopkeepers_add = 600							
+		}								
+		unscaled = {								
+			building_economy_of_scale_level_cap_add = 25							
+		}								
+	}									
+}										
+										
+pm_transportation_1 = { #运输_1										
+										
+	texture = gfx/interface/icons/production_method_icons/workforce1.dds									
+	building_modifiers = {																	
+		level_scaled = {								
+			building_employment_laborers_add = 4000							
+		}								
+	}									
+}										
+										
+pm_transportation_2 = { #运输_2										
+										
+	texture = gfx/interface/icons/production_method_icons/workforce2.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_transportation_add = 40							
+		}								
+	}									
+}										
+										
+pm_transportation_3 = { #运输_3										
+										
+	texture = gfx/interface/icons/production_method_icons/workforce3.dds									
+	building_modifiers = {									
+		workforce_scaled = {								
+			# input goods							
+			goods_input_transportation_add = 20							
+		}								
+	}									
+	state_modifiers = {									
+		workforce_scaled = {								
+state_infrastructure_add = -2										
+		}								
+	}									
+}										
+										
+pm_none = { #无										
+										
+	texture = gfx/interface/icons/production_method_icons/no_org.dds									
+	building_modifiers = {									
+	}									
+}										

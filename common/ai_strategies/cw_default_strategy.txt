@@ -1,0 +1,320 @@
+﻿# This is a special strategy that sets the default values for different AI scores
+# All AIs always load data from this strategy, which can then be either added to or overridden by data from its other strategies
+
+ai_strategy_default = {
+	# Which buildings should the AI subsidize
+	# Using a different value in a strategy will override this value
+	subsidies = {
+		building_power_plant = must_have
+		building_railway = must_have	
+	}
+	
+	# These are the tax levels the AI will try to stay within, though it can go above max tax level if in a financial emergency
+	# Using a different value in a strategy will override these values
+	desired_tax_level = low
+	max_tax_level = very_high
+	min_tax_level = very_low
+	
+	# How many levels of barracks should the AI have
+	# Using this value in other strategies will function additively	
+	wanted_army_size = {
+		value = 10
+		
+		# To increase base army size for small countries, capped at 1 million population
+		add = {
+			value = cached_ai_incorporated_population
+			divide = 100000 # 1 level of barracks per 100k incorporated population	
+			
+			max = 100
+		}	
+	
+		add = {
+			value = cached_ai_incorporated_population
+			divide = 250000 # 1 level of barracks per 250k incorporated population	
+		}
+
+		add = {
+			value = cached_ai_unincorporated_population
+			divide = 1000000 # 1 level of barracks per 1 million unincorporated population	
+		}
+		
+		# Coastal population reduces spending on army as that spending is needed for navy too
+		subtract = {
+			value = cached_ai_incorporated_coastal_population
+			divide = 1000000 
+		}		
+		
+		subtract = {
+			value = cached_ai_unincorporated_coastal_population
+			divide = 4000000 
+		}				
+		
+		# Extra army size from rank
+		if = {
+			limit = { country_rank = rank_value:great_power }
+			add = 25
+		}
+		if = {
+			limit = { country_rank = rank_value:major_power }
+			add = 10
+		}
+
+		save_temporary_value_as = pre_overseas_empire_value
+	
+		# Countries with a huge overseas subject population should focus more on navy
+		subtract = {
+			value = cached_ai_overseas_subject_population
+			divide = 10000000
+			max = {
+				value = scope:pre_overseas_empire_value
+				divide = 2
+			}
+		}			
+		
+		max = 200 # No more than 200 from population & rank
+
+		add = {
+			value = income
+			multiply = {
+				value = 1
+				subtract = { # Coastal population reduces spending on army as that spending is needed for navy too
+					value = cached_ai_incorporated_coastal_population
+					divide = cached_ai_incorporated_population
+					divide = 2
+				}		
+			}
+			divide = 2000 # 1 level of barracks per 2k income					
+		}					
+
+		# Factor in strategies
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_territorial_expansion 
+					has_strategy = ai_strategy_unify_germany
+					has_strategy = ai_strategy_unify_italy
+					has_strategy = ai_strategy_unify_ethiopia
+					has_strategy = ai_strategy_unify_china
+				}
+			}
+			multiply = 1.25
+		}
+		
+		if = {
+			limit = { has_law = law_type:law_national_militia }
+			multiply = 0.33
+		}			
+
+		if = {
+			limit = { 
+				has_journal_entry = je_sick_man_army
+			}
+			min = 125
+		}		
+
+		max = 10000
+		min = 10
+	}
+	
+	wanted_navy_size = {
+		value = 0
+	
+		# 1 level of naval base per 500k coastal incorporated population							
+		add = {
+			value = cached_ai_incorporated_coastal_population
+			divide = 50000
+		}
+
+		# 1 level of naval base per 2 million coastal unincorporated population					
+		add = {
+			value = cached_ai_unincorporated_coastal_population
+			divide = 200000
+		}
+
+		# 1 level of naval base per 2 million population in direct overseas subjects	
+		add = {
+			value = cached_ai_overseas_subject_population
+			divide = 200000 
+		}		
+
+		# 1 level of naval base per 3k income, multiplied by relative incorporated coastal population to total incorporated population
+		add = {
+			value = income
+			divide = cached_ai_incorporated_population
+			multiply = cached_ai_incorporated_coastal_population
+			divide = 3000
+		}			
+
+		# Factor in strategies
+		if = {
+			limit = { 
+				OR = {
+					has_strategy = ai_strategy_colonial_expansion 
+					has_strategy = ai_strategy_economic_imperialism
+				}
+			}
+			multiply = 1.25
+		}
+
+		if = {
+			limit = { has_strategy = ai_strategy_armed_isolationism }
+			multiply = 0.75
+		}	
+		
+		if = {
+			limit = { country_rank < rank_value:major_power }
+			multiply = 0.5
+		}						
+		
+		if = {
+			limit = { is_country_type = unrecognized }
+			multiply = 0.5
+		}	
+		
+		if = {
+			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
+			multiply = 0.25
+		}		
+
+		max = 1000
+		min = 0		
+	}
+	
+	wanted_construction_output = {
+		value = 50 # Accounts for the 10 free construction from base modifiers
+
+		add = {
+			value = investment_pool_income
+			divide = 500 # 1 construction output per this much into the investment pool				
+		}
+		
+		add = {
+			value = income
+					
+			divide = 2500 # 1 construction output per this much income
+
+			min = 0
+		}		
+		
+		# Add a baseline if trying to industrialize
+		if = {
+			limit = {
+				OR = {
+					has_strategy = ai_strategy_resource_expansion
+					has_strategy = ai_strategy_industrial_expansion
+				}
+			}
+
+			if = {
+				limit = { country_rank >= rank_value:great_power }
+				add = 50
+			}		
+			else_if = {
+				limit = { 
+					OR = {
+						country_rank >= rank_value:major_power
+						country_rank >= rank_value:unrecognized_major_power
+					}
+				}
+				add = 25
+			}	
+			else = {
+				add = 10
+			}				
+		}	
+
+		if = {
+			limit = {
+				OR = {
+					has_journal_entry = je_meiji_restoration
+					has_journal_entry = je_meiji_main
+				}
+			}			
+			multiply = 2.0
+		}
+
+		if = {
+			limit = { has_law = law_type:law_traditionalism }
+			multiply = 0.75
+		}		
+
+		if = {
+			limit = { has_strategy = ai_strategy_placate_population }
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				NOR = {
+					has_strategy = ai_strategy_resource_expansion
+					has_strategy = ai_strategy_industrial_expansion				
+				}
+			}
+			multiply = 0.75
+		}
+		
+		if = {
+			limit = { has_strategy = ai_strategy_maintain_mandate_of_heaven }
+			multiply = 0.1		
+		}		
+
+		min = 1
+		max = 5000
+	}
+	# How many conscript battalions should the AI aim to have for each regular battalion in a formation?
+	# root = country
+	# scope:military_formation = military formation
+	# Using this value in other strategies will function additively
+	conscript_battalion_ratio = {
+		value = 25
+		if = {
+			limit = { has_law = law_type:law_national_militia }
+			add = 5
+		}			
+		else_if = {
+			limit = { has_law = law_type:law_peasant_levies }
+			add = 5
+		}	
+		else_if = {
+			limit = { has_law = law_type:law_mass_conscription }
+			add = 10
+		}	
+	}
+
+
+
+	# Set the weights for combat unit groups, this determines the ratio that the AI aims to have of each, and thus what unit types it adds to formations
+	# Using this value in other strategies will function additively
+	# root = country
+	# scope:military_formation = military formation
+	combat_unit_group_weights = {
+		combat_unit_group_infantry = {
+			value = 60
+		}
+		combat_unit_group_artillery = {
+			value = 60						
+		}
+		combat_unit_group_cavalry = {
+			value = 20				
+		}
+		combat_unit_group_light_ship = {
+			value = 60				
+		}
+		combat_unit_group_capital_ship = {
+			value = 20		
+		}
+		combat_unit_group_support_ship = {
+			value = 60		
+		}		
+	}
+	diplomatic_play_boldness = {
+		value = 50
+		if = { #PRC should never surrender against CHI.
+				limit = {
+					c:CHI ?= THIS
+					exists = c:PRC
+					is_diplomatic_play_enemy_of = c:PRC
+				}
+				add = 1000
+		}
+	}
+}

@@ -1,0 +1,16 @@
+﻿l_russian:
+
+# Events
+
+Mod_Nuclear_Copyright.1.title:0 "Copyright Info for pictures used in Mod"
+Mod_Nuclear_Copyright.1.desc:0 "This is a list of reference for pictures in this Mod, the Heart of Appalachia, under Creative Common license, which requires attribution to its original author. The following are reference for pictures used as building icons.\n Hoover Dam: https://commons.wikimedia.org/wiki/File:Hoover_Dam,_Colorado_River.JPG (cropped to size)\n Ocean Mining Platform: https://commons.wikimedia.org/wiki/File:Refurbishment_Platform_for_Drilling_Rigs_--_Corpus_Christi.jpg (cropped to size)\n Midwest Aqueduct: https://commons.wikimedia.org/wiki/File:Illinois_River,_seen_from_Starved_Rock.jpg (cropped to size) \n Other icons which appeared to be pictures are Mod Author's own work or in public domain in the United States. "
+Mod_Nuclear_Copyright.1.flavor:0 "Creative Common License requires attribution for usage of picture. See Mod_Nuclear_Events_l_englis.yml in mod files->localization->english to copy the link."
+Mod_Nuclear_Copyright.1.a:0 "View more copyright information"
+
+
+Mod_Nuclear_Copyright.2.title:0 "Copyright Info for pictures used in Mod"
+Mod_Nuclear_Copyright.2.desc:0 "Picutres for building 'Colorado Rainmaking Array' came from icon for weather controller in Red Alert 2, and other icons that does not appear to be pictures came from Paradox Interative's game Stellaris. The copyright of these pictures most likely belongs to their publishers respectively, but is believed to constitute Fair Use since this Mod is NOT FOR PROFIT, and because their usage here does not reveal paid content for these games, and therefore does not hinder the selling of these copyrighted works."
+Mod_Nuclear_Copyright.2.flavor:0 "See https://en.wikipedia.org/wiki/Fair_use for information on fair use."
+Mod_Nuclear_Copyright.2.a:0 "I am acknowledged of the copyright of picture used in the Mod."
+
+

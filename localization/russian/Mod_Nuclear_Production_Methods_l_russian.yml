@@ -1,0 +1,345 @@
+﻿l_russian:
+
+# New Buildings in Mod
+
+## Mines
+
+ ### Uranium Mine
+ pmg_mining_equipment_building_uranium_mine:0 "Горное оборудование"
+
+ pm_picks_and_shovels_building_uranium_mine:0 "Кирки и лопаты"
+ pm_atmospheric_engine_pump_building_uranium_mine:0 "Насос атмосферного двигателя"
+ pm_condensing_engine_pump_building_uranium_mine:0 "Насос конденсационного двигателя"
+ pm_diesel_pump_building_uranium_mine:0 "Дизельный насос"	
+ pm_nuclear_pump_building_uranium_mine:0 "Насос с ядерным питанием"
+ pm_wetwire_assisted_mining_machine_building_uranium_mine:0 "Горная машина с использованием Дэки"
+
+ pmg_explosives_building_uranium_mine:0 "Взрывчатые вещества"
+ pm_nitroglycerin_building_uranium_mine:0 "Нитроглицерин"
+ pm_dynamite_building_uranium_mine:0 "Динамит"	
+ pm_nuclear_dynamite_uranium_mine:0 "Динамит ядерного деления"
+ 
+ pmg_steam_automation_building_uranium_mine:0 "Автоматизация урановой шахты"
+ pm_heavy_nuclear_lifter_mine:0 "Тяжелый подъемник с атомной силовой установкой"
+
+ pmg_train_automation_building_uranium_mine:0 "Метод транспортировки"
+ pm_lead_sealed_cart_uranium_mine:0 "Железнодорожная тележка со свинцовой прокладкой"
+
+pmg_ownership_capital_building_uranium_mine:0 "Владение"
+pm_merchant_guilds_building_uranium_mine:0 "Купеческие гильдии"
+pm_privately_owned_building_uranium_mine:0 "Частное владение"
+pm_publicly_traded_building_uranium_mine:0 "Публично торгуемые"
+pm_government_run_building_uranium_mine:0 "Управляется государством"
+pm_worker_cooperative_building_uranium_mine:0 "Шахтерский кооператив"
+
+### Rad-fungus cave farm
+pmg_base_building_rad_fungus_cave_farm:0 "Базовый метод производства"
+pm_naturally_grown_rad_fungus:0 "Растительный грибок, выращенный естественным путем"
+pm_radiation_mutated_rad_fungus:0 "Радиационно-мутированный рад-гриб"
+pm_radiation_engineered_rad_fungus:0 "Биоинженерный рад-гриб"
+
+pmg_mechanized_harvesting_building_rad_fungus_cave_farm:0 "Сбор и переработка урожая"
+pm_cave_tractor_building_rad_fungus_cave_farm:0 "Трактор для использования в пещере"
+pm_nuclear_powered_thresher_building_rad_fungus_cave_farm:0 "Машины с ядерным питанием"
+
+### Scavenge
+pmg_base_building_ancient_arsenal_scavenge:0 "Снаряжение из падали"
+pm_default_ancient_arsenal_scavenge:0 "Базовые инструменты"
+pm_protected_equipment_ancient_arsenal_scavenge:0 "Защищенный экзоскелет"
+pm_lead_sealed_cart_ancient_arsenal_scavenge:0 "Железнодорожная тележка со свинцовой печатью"
+
+## Industries
+pmg_base_building_nuclear_processing:0 "Методы обработки"
+pm_chemical_nuclear_processing:0 "Рудиментарная химическая обработка"
+pm_electrical_nuclear_processing:0 "Электрические обрабатывающие машины"
+
+pmg_ownership_capital_building_nuclear_processing:0 "Владение"
+pm_merchant_guilds_nuclear_industries:0 "Купеческие гильдии"
+pm_privately_owned_nuclear_industries:0 "Частное владение"
+pm_publicly_traded_nuclear_industries:0 "Публично торгуемые"
+pm_government_run_nuclear_industries:0 "Управляемые государством"
+pm_worker_cooperative_nuclear_industries:0 "Рабочий кооператив"
+
+pmg_base_building_nuclear_fuel_refinery:0 "Методы переработки"
+pm_backyard_nuclear_refinement:0 "Домашнее ядерное топливо"
+pm_sophisticated_nuclear_refinement:0 "Стандартизированное ядерное топливо"
+pm_advanced_nuclear_refinement:0 "Передовая переработка топлива"
+
+pmg_ownership_capital_building_nuclear_fuel_refinery:0 "Собственность"
+
+pmg_base_building_nuclear_bomb_factory:0 "Тип продукции"
+pm_backyard_uncontrolled_fission:0 "Бомбы деления в гараже"
+pm_fission_explosive:0 "Динамит деления плутония"
+pm_fusion_explosive:0 "Динамит ядерного синтеза"
+
+pmg_ownership_capital_building_nuclear_bomb_factory:0 "Владение"
+
+pmg_base_building_nuclear_engine_industry:0 "База"
+pm_converted_nuclear_engine:0 "Конвертированные ядерные двигатели"
+pm_reinforced_nuclear_engine:0 "Усиленные ядерные двигатели"
+pm_holographic_forged_nuclear_engines:0 "Голографически кованые ядерные двигатели"
+
+pmg_material_additives_building_nuclear_engine_industry:0 "Вторичные материалы"
+pm_baseline_steel_no_additives:0 "Использовать базовую сталь"
+pm_electric_arc_forging:0 "Электродуговая ковка"
+pm_irradiated_material_additives:0 "Добавки для облученных материалов"
+pm_glass_fiber_additives:0 "Легкие стекловолокна"
+pm_macromolecule_polymer_additives:0 "Макромолекулы полимеров"
+pm_organic_synthetics_additives:0 "Органическая синтетика"
+
+pmg_ownership_capital_building_nuclear_engine_industry:0 "Собственность"
+
+pmg_base_building_nuclear_jet_industry:0 "База"
+pm_basic_nuclear_jet:0 "Рудиментарный ядерный реактивный двигатель"
+pm_electro_mechanic_nuclear_jet:0 "Электромеханический ядерный реактивный двигатель"
+
+
+pmg_assisting_system_building_nuclear_jet_industry:0 "Вспомогательная система"
+pm_defualt_assist_system_nuclear_jet:0 "Вспомогательная система отсутствует"
+pm_oil_assist_ramjet_nuclear_jet:0 "Камера сгорания с бензиновой поддержкой"
+pm_electric_controlled_ramjet_nuclear_jet:0 "Электрическая система управления"
+pm_steel_reinforced_ramjet_nuclear_jet:0 "Усиленная стальная рама"
+pm_afterburner_ramjet_nuclear_jet:0 "Дожигатель"
+
+pmg_ownership_capital_building_nuclear_jet_industry:0 "Владение"
+
+## Others
+
+
+pmg_base_wetwire_industry:0 "Стандарт имплантатов уровня Wetwire"
+pm_industrial_implant_wetwires:0 "Имплантаты промышленного уровня"
+pm_standardized_wetwire:0 "Стандартизированная проводка мозга"
+
+pmg_base_augmentation:0 "Услуги по аугментации"
+pm_recreational_wetwires:0 "Провода для отдыха"
+pm_municipal_wetwire_network:0 "Блендер группового сознания"
+pm_braindance_01:0 "Брейнданс MK-1"
+pm_braindance_02:0 "Брейнданс MK-2"
+pm_collective_emotional_link:0 "Колыбель коллективной эмоциональной связи (CEL)"
+pm_drug_enhanced_CEL:0 "CEL с усиленным действием лекарств"
+
+
+pmg_base_building_nuclear_reactor:0 "Модель реактора"
+pm_backyard_pile_nuclear_reactor:0 "Самодельный генератор деления"
+pm_specialized_generating_nuclear_reactor:0 "Специализированный ядерный реактор"
+
+pmg_waste_building_nuclear_reactor:0 "Переработка ядерных отходов"
+pm_waste_discard:0 "Выбрасывать их"
+pm_waste_recycling_nuclear_reactor:0 "Переработка истощенного материала"
+pm_waste_refinement_nuclear_reactor:0 "Переработка обедненного материала"
+
+pmg_base_building_nuclear_jet_airport:0 "Часть международных рейсов"
+pm_all_domestic_flight_nuclear_jet_airport:0 "Все внутренние рейсы"
+pm_quarter_international_flight_nuclear_jet_airport:0 "1/4 международных"
+pm_half_half_flight_nuclear_jet_airport:0 "Наполовину внутренние, наполовину международные"
+pm_quarter_domestic_flight_nuclear_jet_airport:0 "1/4 внутренний"
+pm_all_international_flight_nuclear_jet_airport:0 "Все международные"
+
+pmg_ownership_advanced_nuclear_industry:0 "Владение"
+pm_privately_owned_advanced_nuclear_industry:0 "В частной собственности"
+pm_publicly_traded_advanced_nuclear_industry:0 "Публично торгуемая"
+pm_government_run_advanced_nuclear_industry:0 "Управляемая государством"
+pm_worker_cooperative_advanced_nuclear_industry:0 "Рабочий кооператив"
+
+## Advanced Raw Material Aquirement
+
+pmg_base_vertical_farm:0 "Часть производства зерна"
+pm_vertical_farm_all_wheat:0 "Производить только зерно"
+pm_vertical_farm_three_quarter_wheat:0 "3/4 производства - зерно"
+pm_vertical_farm_half_wheat:0 "1/2 производства до зерна"
+
+pmg_energy_advanced_agriculture:0 "Энергия для индустриализированной фермы"
+pm_reinforced_green_house:0 "Усиленный зеленый дом"
+pm_man_made_sun:0 "Искусственное солнце/ядерный реактор"
+pm_agriculture_use_light_bulb:0 "Светодиодная имитация солнечного света"
+
+pmg_base_synthetic_food:0 "Фабрика синтетической пищи"
+pm_synthetic_organic_rubber:0 "Синтетическая органическая резина"
+pm_synthetic_food_lab_grown_meat:0 "Мясо, выращенное в лаборатории"
+pm_synthetic_food_corn_syrup:0 "Кукурузный сироп"
+pm_synthetic_food_industrial_alcohol:0 "Промышленный спирт"
+
+pmg_base_mega_greehouse:0 "Мега-теплица"
+pm_mega_greenhouse_weed_greenhouse:0 "Теплица для сорняков"
+pm_mega_greenhouse_coffee:0 "Кофейная теплица"
+pm_mega_greenhouse_tea:0 "Клонированное чайное дерево"
+pm_mega_greenhouse_berries:0 "Генетически модифицированный апельсин"
+pm_mega_greenhouse_orchard:0 "Промышленный винный сад"
+pm_mega_greenhouse_tobacco:0 "Табак с радиационным воздействием"
+
+pmg_base_submerged_farm:0 "Продукт затопленной фермы"
+pm_submerged_farm_plankton:0 "Планктон с кормом для животных"
+pm_submerged_farm_salmonade:0 "Лосось"
+pm_submerged_farm_fish:0 "ГМО форель"
+
+pmg_base_ocean_mining_operation:0 "Операции по добыче полезных ископаемых на морском дне"
+pm_ocean_mining_uranium:0 "Урожайный урановый рудник"
+pm_ocean_mining_iron:0 "Исследовать железную шахту"
+pm_ocean_mining_sulfur:0 "Использовать подводные вулканы"
+pm_ocean_mining_oil:0 "Нефтяные буровые установки"
+pm_ocean_mining_lead:0 "Добывать свинец"
+
+pmg_seabed_cracking_method:0 "Метод растрескивания морского дна"
+pm_mechanical_cracking:0 "Механическое растрескивание"
+pm_unmanned_drill:0 "Беспилотное бурение"
+pm_thermonuclear_seabed_dynamite:0 "Термоядерный динамит морского дна"
+pm_labor_intensive:0 "Трудоемкие мины на морском дне"
+
+pmg_water_and_fertilizer_source:0 "Использование воды и удобрений"
+pm_default_water_source:0 "По умолчанию"
+pm_transported_water:0 "Транспортируемая вода"
+pm_interstate_water_pipe:0 "Межгосударственный водопровод"
+pm_standardized_fertilizer_distribution:0 "Стандартизированное распределение удобрений"
+
+pmg_alternative_labor_source:0 "Состав рабочей силы"
+pm_skilled_labor_force:0 "Квалифицированный персонал"
+pm_unskilled_auxilary:0 "Экипаж с неквалифицированным вспомогательным персоналом"
+pm_mixed_labor_force:0 "Неквалифицированные рабочие под наблюдением"
+pm_unskilled_labor_force:0 "Неквалифицированный рабочий над автоматизацией"
+
+
+pmg_wetwire_augmentation:0 "Труд, усиленный мокрой проволокой"
+pm_no_wetwire_usage:0 "Нет увеличения рабочей силы"
+pm_basic_worker_augmentation:0 "Базовое расширение рабочей силы"
+pm_extensive_worker_augmentation:0 "Расширенное расширение рабочей силы"
+pm_disposable_augmented_labor:0 "Провода принудительного труда"
+
+
+pmg_wetwire_augmentation:0 "Трудовая аугментация"
+pm_no_wetwire_usage:0 "Нет аугментации"
+pm_basic_augmentation_assorted_drinks:0 "Базовая аугментация для чайных деревьев"
+pm_basic_augmentation_food:0 "Базовая аугментация для пшеницы"
+pm_basic_augmentation_weed:0 "Базовая аугментация для сорняков"
+
+pm_extensive_augmentation_assorted_drinks:0 "Расширенная аугментация для чайных деревьев"
+pm_extensive_augmentation_food:0 "Экстенсивная аугментация для пшеницы"
+pm_extensive_augmentation_weed:0 "Экстенсивное увеличение для сорняков"
+		
+pm_exploitive_augmentation_assorted_drinks:0 "Экстенсивная аугментация"
+pm_exploitive_augmentation_food:0 "Эксплуатационная аугментация"
+pm_exploitive_augmentation_weed:0 "Эксплуатационная аугментация"
+
+
+# Improved Vanilla Production Methods
+
+## Power Generation
+pm_specialized_generating_vanilla_power_plant_lv_1:0 "Специализированный ядерный реактор"
+pm_specialized_generating_vanilla_power_plant_lv_2:0 "Усилитель ядерного реактора"
+
+## Construction
+pm_terrestrial_sculping:0 "Наземный скейлинг"
+  
+## Mines
+pm_nuclear_pump_building_coal_mine:0 "Насос с ядерным питанием"
+ pm_wetwire_assisted_mining_machine_building_coal_mine:0 "Шахтная машина с использованием мокрой проволоки"
+pm_nuclear_dynamite_coal_mine:0 "Ядерный динамит"
+
+pm_nuclear_pump_building_iron_mine:0 "Насос с ядерным приводом"
+ pm_wetwire_assisted_mining_machine_building_iron_mine:0 "Шахтная машина с использованием мокрой проволоки"
+pm_nuclear_dynamite_iron_mine:0 "Ядерный динамит"
+
+pm_nuclear_pump_building_lead_mine:0 "Насос с ядерным питанием"
+ pm_wetwire_assisted_mining_machine_building_lead_mine:0 "Шахтная машина с использованием мокрой проволоки"
+pm_nuclear_dynamite_lead_mine:0 "Ядерный динамит"
+
+pm_nuclear_pump_building_sulfur_mine:0 "Насос с ядерным питанием"
+ pm_wetwire_assisted_mining_machine_building_sulfur_mine:0 "Шахтная машина с использованием мокрой проволоки"
+pm_nuclear_dynamite_sulfur_mine:0 "Ядерный динамит"
+
+## Agricultural
+pm_radioactive_fertilizer:0 "Радиоактивное удобрение"
+pm_radioactive_fertilizer_building_rice_farm:0 "Мутировавший от радиации рис"
+pm_radioactive_fertilizer_building_maize_farm:0 "Радиоактивное удобрение для кукурузы"
+
+pm_radiation_mutated_animals:0 "Мутировавшие от радиации животные"
+pm_bio_engineered_steaker:0 "Биоинженерный стикер"
+pm_mutated_fur_beaver:0 "Стандартизированный мех бобра"
+
+## Industrial
+pm_airlift_fresh_groceries:0 "Свежие продукты, доставленные по воздуху"
+pm_whiskey:0 "Виски"
+pm_rum:0 "Ром"
+pm_wine:0 "Вино"
+pm_nuka_cola:0 "Нука-Кола"
+pm_instant_fission_food:0 "Упакованные продукты мгновенного деления"
+pm_instant_fission_liquor:0 "Ликер в упаковке с мгновенным делением"
+
+pm_shining_silk:0 "Сияющий шелк"
+
+pm_depleted_uranium_lathe:0 "Токарный станок с обедненным ураном"
+pm_cobalt_steel_furniture:0 "Мебель из кобальтовой стали"
+pm_householdhold_electronics:0 "Бытовая электроника"
+
+pm_radiant_plastics:0 "Лучистые пластики"
+pm_glowing_blue_porcelain:0 "Светящийся голубой фарфор"
+
+pm_duranium_steel_tools:0 "Инструменты из урановой стали"
+pm_hyperprecise_tools:0 "Гиперпрецизионные инструменты"
+
+pm_living_fertilizer:0 "Мутировавшее от радиации биоудобрение"
+pm_extra_fertilizer:0 "Дополнительное производство удобрений"
+
+pm_glowing_dyes:0 "Светящиеся красители"
+pm_Halifax_worm_silk:0 "Мутировавшие шелковые черви"
+
+pm_New_England_duranium_steel:0 "Дюрановая сталь Новой Англии"
+
+pm_instant_holographic_forging:0 "Мгновенная ковка голографических сплавов"
+
+pm_atomic_powered_vessel:0 "Атомные суда"
+pm_military_shipbuilding_steam_3:0 "Военные суда на атомной тяге"
+pm_military_shipbuilding_steam_4:0 "Экстенсивно милитаризованная верфь"
+pm_military_shipbuilding_steam_5:0 "Полностью милитаризованная верфь"
+
+pm_advanced_radios:0 "Продвинутые радиостанции"
+pm_advanced_radios_1:0 "Продвинутые радиостанции 1"
+pm_advanced_radios_2:0 "Продвинутые радиостанции 2"
+pm_advanced_radios_3:0 "Передовые радиостанции 3"
+
+pm_depleted_uranium_rifle:0 "Винтовки с обедненным ураном"
+pm_nuclear_powered_auto_ordanance:0 "Пистолеты с ядерным зарядом"
+
+pm_dirty_bomb_shells:0 "Грязные бомбы и взрывчатые вещества деления"
+
+## Military
+pm_wasteland_trench_infantry:0 "Траншейная пехота пустоши"
+pm_wetwire_enhanced_riflemen:0 "Стрелки с улучшенной системой Дэка"
+pm_nuclear_powered_armor:0 "Экзоскелет с атомной энергией"
+pm_wetwire_powered_armor:0 "Экзоскелет, управляемый мокрой проволокой"
+
+pmg_machine_troopers:0 "Гуманоидная боевая биомашина с обширным количеством мокрых проводов"
+pm_all_human_army:0 "Вся и только человеческая армия"
+pm_logistic_robot:0 "Логистическая биомашина"
+pm_android_line_infantry:0 "Полуавтономный наполнитель линейной пехоты"
+pm_unmanned_killer_regiment:0 "Автономный полк убийц"
+
+pm_wasteland_trench_infantry_conscription:0 "Траншейная пехота пустоши"
+pm_wetwire_enhanced_riflemen_conscription:0 "Стрелки с улучшенными свойствами Wetwire"
+pm_nuclear_powered_armor_conscription:0 "Атомно-энергетический экзоскелет"
+pm_wetwire_powered_armor_conscription:0 "Управляемый мокрой проволокой экзоскелет"
+
+pm_cobalt_irradiator_dirty_guns:0 "Кобальтовое иррадиаторное грязное оружие"
+pm_improvised_dirty_bombs:0 "Самодельные грязные бомбы"
+pm_nuclear_bombardment_artillery:0 "Артиллерия ядерной бомбардировки"
+
+pm_cobalt_irradiator_dirty_guns_conscription:0 "Кобальтовые иррадиаторные грязные пушки"
+pm_improvised_dirty_bombs_conscription:0 "Импровизированные грязные бомбы"
+pm_nuclear_bombardment_artillery_conscription:0 "Артиллерия ядерной бомбардировки"
+
+pm_nuclear_jet_recon:0 "Реактивная разведка"
+
+pm_nuclear_sapper:0 "Атомные саперы"
+pm_wetwire_tunneler:0 "Туннельные саперы, усиленные мокрой проволокой"
+
+
+pm_nuclear_sapper_conscription:0 "Атомные саперы"
+pm_wetwire_tunneler_conscription:0 "Wetwire-Augmented Tunnel Sappers"
+
+pm_nuclear_powered_battlecruiser:0 "Боевые крейсера с ядерной энергетикой"
+
+pm_nuclear_turbojet_hydrofoil:0 "Эскорты на реактивных подводных крыльях"
+
+pm_nuclear_torpedo_raider_jet:0 "Реактивные торпедные рейдеры"
+
+pm_wetwire_controlled_vessels:0 "Суда, управляемые по мокрому проводу"
+

@@ -1,0 +1,73 @@
+BRD_decision = { #成立西德
+	is_shown = { 
+		NOT = { 
+			has_modifier = the_country_of_our_ancestors_modifier
+		}
+		game_date < 1950.5.23
+		    c:BAV ?= THIS
+		NOT = {
+				exists = c:BRD
+			}
+    }
+	possible = { game_date > 1949.5.23
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = GER_event.1
+			popup = yes
+		}
+	}
+	ai_chance = {
+		base = 90}
+}
+
+
+
+DDR_decision = { #成立东德
+	is_shown = { 
+		NOT = { 
+			has_modifier = the_country_of_our_ancestors_modifier
+		}
+		game_date < 1950.10.7
+		    c:PRU ?= THIS	
+		    exists = c:BRD
+		NOT = {
+				exists = c:DDR
+			}
+	}
+	possible = { game_date > 1949.10.7
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = GER_event.2
+			popup = yes
+	    }
+    }
+	ai_chance = {
+		base = 90}
+}
+
+AUS_decision = { #奥地利统一
+	is_shown = { 
+		NOT = { 
+			has_modifier = the_country_of_our_ancestors_modifier
+		}
+		game_date < 1956.10.1
+		    c:AUS ?= THIS
+    }
+	possible = { 
+		game_date > 1955.10.1
+	}
+	
+	when_taken = {
+		trigger_event = {
+			id = AUS_event.1
+			popup = yes
+		}
+	}
+	ai_chance = {
+		base = 90}
+}
+

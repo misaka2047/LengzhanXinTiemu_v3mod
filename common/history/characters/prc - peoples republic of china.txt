@@ -1,0 +1,372 @@
+CHARACTERS = {
+     c:PRC = { #中共
+		create_character = {
+    			dna = dna_taizu
+			first_name = "Zedong"
+			last_name = "Mao" 
+			ruler = yes
+			ig_leader = yes
+			is_general = yes
+			historical = yes
+			birth_date = 1893.12.26
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_rural_folk
+			ideology = ideology_mao
+			commander_rank =commander_rank_5
+			traits = {
+				strong #健硕
+				master_bureaucrat #高明官僚
+				literary #文学家
+				expert_political_operator #政治运作专家
+				charismatic #魅力四射
+				persistent #执着	 							
+			}
+		}
+
+		create_character = {
+			first_name = "Thanh"
+			last_name = "Jiang" 
+			female = yes #女性
+			ig_leader = yes
+			historical = yes
+			birth_date = 1914.1.1
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions
+			ideology = ideology_mao
+			traits = {
+				    charismatic
+		                    ambitious
+				    bigoted							
+				    firebrand
+			}
+		}
+
+		create_character = {
+			first_name = "Bishi"
+			last_name = "Ren" 
+			is_general = yes
+			historical = yes
+			birth_date = 1904.4.30
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_intelligentsia #文人
+			ideology = ideology_vanguardist 
+			traits = {
+				    charismatic
+		                                      ambitious
+				    bigoted
+                                                                        expert_offensive_planner									
+				    firebrand
+				    mountain_commander
+			}
+		}
+
+		create_character = {
+			first_name = "Shaoqi"
+			last_name = "Liu" 
+			ig_leader = yes
+			historical = yes
+			birth_date = 1898.11.24
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_leaders_of_socialists_with_characteristics #特色社会主义者
+			traits = {
+				    demagogue				
+					expert_political_operator
+					inspirational_orator
+					innovative
+					persistent
+			}
+		}
+		
+		create_character = {
+			first_name = "Enlai"
+			last_name = "Zhou" 
+			ig_leader = yes
+			historical = yes
+			birth_date = 1898.3.5
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_intelligentsia #文人
+			ideology = ideology_communist
+			traits = {
+				strong #健硕
+				masterful_diplomat
+				tactful
+				charismatic
+			}
+		} 
+
+		create_character = {
+			first_name = "XiaoPing"
+			last_name = "Deng" 
+			birth_date = 1904.8.22
+			culture = cu:han
+			religion = rel:atheist #无神论
+			historical = yes
+			interest_group = ig_industrialists #大资产阶级
+			ideology = ideology_leaders_of_socialists_with_characteristics #特色社会主义者
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+				strong #健硕
+			        stalwart_defender
+			        innovative
+				    persistent
+			}
+		}
+
+		create_character = {
+			first_name = "De"
+			last_name = "Zhu"
+			ig_leader = yes
+			historical = yes
+			birth_date = 1886.12.1
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_mao
+			is_general = yes
+			commander_rank = commander_rank_5
+			traits = {
+				strong #健硕
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}
+		}
+		
+		create_character = {
+			first_name = "Chengwu"
+			last_name = "Yang"
+			historical = yes
+			birth_date = 1914.10.27
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_communist #共产主义者
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}
+		}
+
+		create_character = {
+			first_name = "Biao"
+			last_name = "Lin"
+			birth_date = 1907.12.5
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_mao
+			historical = yes
+			is_general = yes
+			hp = region_manchuria
+			commander_rank = commander_rank_4
+			traits = {
+					ambitious
+					direct
+					basic_artillery_commander
+					expert_offensive_planner
+					celebrity_commander
+			}
+		}
+        
+        create_character = {
+			first_name = "Dehuai"
+			last_name = "Peng"
+			birth_date = 1898.10.24
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_mao
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_5
+			traits = {
+		 	        wrathful
+					direct
+					persistent
+					plains_commander
+					expert_offensive_planner
+			}
+		}	
+
+        create_character = {
+			first_name = "HM2135"
+			last_name = "Wang"
+			birth_date = 1908.4.11
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_communist #共产主义者
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_2
+			traits = {
+					cruel #残暴
+		 	        	wrathful
+					direct
+					persistent
+					plains_commander
+					expert_offensive_planner
+			}
+		}	
+
+		create_character = { 
+			#陈毅
+			first_name = "HM1840"
+			last_name = "Chen"
+			historical = yes
+			birth_date = 1901.8.26
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_communist
+			is_general = yes
+			commander_rank = commander_rank_4
+			traits = {
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}
+		}
+
+		create_character = {
+			#粟裕
+			first_name = "Yod"
+			last_name = "Su1"
+			historical = yes
+			birth_date = 1907.8.10
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_communist
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}
+		}
+
+		create_character = {
+			first_name = "Shuxun"
+			last_name = "Gao"
+			historical = yes
+			birth_date = 1898.8.6
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_communist
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+		 	        expert_offensive_planner
+			        experienced_defensive_strategist		
+			        popular_commander
+			        defense_in_depth_specialist
+			        surveyor
+			}
+		}
+
+         create_character = {
+			first_name = "Jianying"
+			last_name = "Ye"
+			birth_date = 1897.4.28
+			culture = cu:yue
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_leaders_of_socialists_with_characteristics #特色社会主义者
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+					charismatic #魅力四射
+		 	                experienced_defensive_strategist
+					popular_commander
+					reserved
+			}
+		}	
+		
+        create_character = {
+			first_name = "Rongzhen"
+			last_name = "Nie"
+			birth_date = 1899.12.29
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_traditionalist
+			historical = yes
+			is_general = yes
+			commander_rank = commander_rank_3
+			traits = {
+		 	        basic_artillery_commander
+					persistent
+					traditionalist_commander
+			}
+		}		
+		
+		create_character = {
+			first_name = "Bocheng"
+			last_name = "Liu"
+			birth_date = 1892.12.4
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces
+			ideology = ideology_vanguardist
+			historical = yes
+			is_general = yes
+			hp = region_south_china
+			commander_rank = commander_rank_3
+			traits = {
+                   scarred
+                   brave				
+                   mountain_commander
+                   defense_in_depth_specialist				   
+			}
+		}
+
+		create_character = {
+			first_name = Yiren
+			last_name = "Rong"
+			historical = yes
+			ig_leader = yes
+			birth_date = 1916.5.1
+			culture = cu:han
+			religion = rel:atheist #无神论
+			interest_group = ig_industrialists #人民企业家
+			ideology = ideology_communist #共产主义者
+			traits = {
+				    charismatic #魅力四射
+		                    ambitious #雄心勃勃
+				    innovative #创新精神
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			religion = rel:mahayana #大乘佛教
+			culture = cu:han
+			interest_group = ig_landowners
+			traits = {
+				    cautious
+				    tactful
+			}
+		} 
+	}
+}			

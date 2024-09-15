@@ -1,0 +1,38 @@
+﻿CHARACTERS = {
+	c:BRZ = {
+		create_character = { #欧里科·加斯帕尔·杜特拉
+			historical = yes
+			first_name = "Eurico·Gaspar"
+			last_name = "Dutra"
+			ruler = yes
+			birth_date = 1883.5.18
+			dna = dna_emperor_pedro_02
+			interest_group = ig_armed_forces
+			ideology = ideology_liberal_leader #民主主义者
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = { #热图利奥·瓦加斯
+			historical = yes
+			first_name = "Getulio"
+			last_name = "Vargas"
+			ig_leader = yes
+			birth_date = 1882.4.19
+			interest_group = ig_armed_forces
+			ideology = ideology_moderate #温和主义者
+			traits = {
+				meticulous
+			}
+		}
+
+		create_character = {
+			is_admiral = yes
+			commander_rank = commander_rank_1
+			traits = {
+				meticulous
+			}
+		}
+	}	
+}

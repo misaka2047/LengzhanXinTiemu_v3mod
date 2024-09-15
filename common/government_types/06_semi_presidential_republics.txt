@@ -1,0 +1,18 @@
+gov_democratic_republic = { #民主共和国
+	transfer_of_power = presidential_elective
+	new_leader_on_reform_government = no
+
+	male_ruler = "RULER_TITLE_PRESIDENT" #男性国家元首称呼
+	female_ruler = "RULER_TITLE_PRESIDENT" #女性国家元首称呼
+	
+	possible = { #条件
+		has_law = law_type:law_semi_presidential_republic
+	}
+
+	on_government_type_change = {
+		change_to_presidential_elective = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_presidential_elective = yes
+	}
+}

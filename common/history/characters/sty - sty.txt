@@ -1,0 +1,14 @@
+﻿CHARACTERS = {
+	c:STY ?= {
+		create_character = {
+			ruler = yes
+			is_general = yes
+			ig_leader = yes
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			culture = cu:british
+			traits = {
+			}
+		}
+	}
+}

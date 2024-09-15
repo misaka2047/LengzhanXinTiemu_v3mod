@@ -1,0 +1,87 @@
+JAP = { 
+	dynamic_country_name = {
+		name = dyn_c_japan_shogunate
+		adjective = dyn_c_japan_shogunate_adj
+
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				NOT = { has_variable = meiji_var }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_jzz_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes 
+		priority = 0 
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+				exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				has_variable = meiji_var 
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				NOT = { has_law = law_type:law_anarchy }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_anarchy_JAP
+		
+		adjective = JAP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_council_republic
+				has_law = law_type:law_anarchy
+			}
+		}
+	}
+} 

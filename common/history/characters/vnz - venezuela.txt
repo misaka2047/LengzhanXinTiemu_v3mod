@@ -1,0 +1,11 @@
+﻿CHARACTERS = {
+	c:VNZ = { #委内瑞拉
+		create_character = {
+			historical = yes
+			ruler = yes
+			dna = dna_president_jose_maria_vargas
+			traits = {
+			}
+		}
+	}
+}

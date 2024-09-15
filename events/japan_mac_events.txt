@@ -1,0 +1,569 @@
+namespace = japan_mac
+japan_mac.1 = {
+	type = country_event
+	placement = root
+	
+	title = japan_mac.1.t
+	desc = japan_mac.1.d
+	flavor = japan_mac.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+    # 待修改
+    option = {
+		name = japan_mac.1.a
+		c:JAP = {
+			activate_law = law_type:law_parliamentary_republic
+			activate_law = law_type:law_autocracy
+			create_character = { #日本五星天皇道格拉斯·麦克阿瑟
+				historical = yes
+				ig_leader = yes #利益集团领袖
+				first_name = Douglas
+				last_name = MacArthur 
+				culture = cu:dixie
+				religion = rel:protestant
+				birth_date = 1880.1.26
+				dna = dna_king_leopold_01
+				ruler = yes
+				interest_group = ig_armed_forces #军队
+				ideology = ideology_authoritarian #威权主义者
+				set_character_immortal = yes
+				traits = {
+					strong #健硕
+					hedonist #享乐主义者
+					celebrity_commander #明星指挥官
+				}
+			}
+		}
+		add_journal_entry = {
+			type = je_japan_occupied
+		}
+		default_option = yes
+    }
+}
+
+japan_mac.101 = {
+	type = country_event
+	placement = root
+	
+	title = japan_mac.101.t
+	desc = japan_mac.101.d
+	flavor = japan_mac.101.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }	
+	trigger = {
+		game_date > 1950.5.20
+		has_journal_entry = je_japan_occupied
+    }
+	option = {
+		name = japan_mac.101.a
+		ruler = { kill_character = yes }
+		c:JAP = {
+			create_character = {
+				ruler = yes
+				culture = cu:dixie
+				religion = rel:protestant				
+			}
+		}		
+		default_option = no
+	}
+	option = {
+		name = japan_mac.101.b
+		trigger_event = {
+			id = japan_mac.2
+			days = 7
+		}
+		default_option = yes
+	}
+}
+
+japan_mac.2 = {
+	type = country_event
+	placement = root
+	
+	title = japan_mac.2.t
+	desc = japan_mac.2.d
+	flavor = japan_mac.2.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+		set_variable = {
+			name = japan_mac_progress
+			value = 0
+		}
+    }    
+    option = {
+        name = japan_mac.2.a
+        add_journal_entry = {
+			type = je_japan_mac
+		}
+        add_journal_entry = {
+			type = je_japan_mac_modernization
+		}
+        add_journal_entry = {
+			type = je_japan_mac_landreform
+		}
+        add_journal_entry = {
+			type = je_japan_mac_livelihood
+		}
+		add_journal_entry = {
+			type = je_japan_mac_democratization
+		}
+        default_option = yes
+        trigger_event = {
+            id = japan_mac.3
+            days = 14
+        }
+    }
+}
+japan_mac.3 = {
+    type = country_event
+    placement = root
+    title = japan_mac.3.t
+    desc = japan_mac.3.d
+    flavor = japan_mac.3.f
+
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    immediate = {
+    }
+    option = {
+        name = japan_mac.3.a
+		add_modifier = {
+			name = mikado_is_lackluster_army_modifier
+			months = 120
+		}
+        default_option = yes
+    }
+    option = {
+        name = japan_mac.3.b
+		add_modifier = {
+			name = mikado_is_lackluster_traditional_modifier
+			months = 120
+		}
+        default_option = no
+    }
+}
+
+japan_mac.4 = {
+    type = country_event
+    placement = root
+    title = japan_mac.4.t
+    desc = japan_mac.4.d
+    flavor = japan_mac.4.f
+
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    immediate = {
+    }
+    option = {
+        name = japan_mac.4.a
+        default_option = yes
+    }
+}
+
+japan_mac.5 = {
+    type = country_event
+    placement = root
+    title = japan_mac.5.t
+    desc = japan_mac.5.d
+    flavor = japan_mac.5.f
+
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    immediate = {
+    }
+    option = {
+        name = japan_mac.5.a
+		change_variable = {
+			name = japan_mac_progress
+			add = 1
+		}
+        default_option = yes
+    }
+}
+
+japan_mac.6 = {
+    type = country_event
+    placement = root
+    title = japan_mac.6.t
+    desc = japan_mac.6.d
+    flavor = japan_mac.6.f
+
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    immediate = {
+    }
+    option = {
+        name = japan_mac.6.a
+		change_variable = {
+			name = japan_mac_progress
+			add = 1
+		}
+        default_option = yes
+    }
+}
+
+japan_mac.7 = {
+    type = country_event
+    placement = root
+    title = japan_mac.7.t
+    desc = japan_mac.7.d
+    flavor = japan_mac.7.f
+
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    duration = 3
+    immediate = {
+    }
+    option = {
+        name = japan_mac.7.a
+		change_variable = {
+			name = japan_mac_progress
+			add = 1
+		}
+        default_option = yes
+    }
+}
+
+japan_mac.8 = {
+	type = country_event
+	placement = root
+	title = japan_mac.8.t
+	desc = japan_mac.8.d
+	flavor = japan_mac.8.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.8.c
+		trigger_event = {
+			id = japan_mac.9
+		}
+		default_option = yes
+	}
+	option = {
+		name = japan_mac.8.a
+		random_list = {
+			50 = {
+				trigger_event = { id = japan_mac.12 days = 10 }
+			}
+			40 = {
+				trigger_event = { id = japan_mac.13 days = 10 }
+			}
+			10 = {
+				trigger_event = { id = japan_mac.14 days = 10 }
+			}
+		}
+		default_option = no
+	}
+	option = {
+		name = japan_mac.8.d
+		default_option = no
+	}
+}
+
+japan_mac.9 = {
+	type = country_event
+	placement = root
+	title = japan_mac.9.t
+	desc = japan_mac.9.d
+	flavor = japan_mac.9.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.9.a
+		default_option = yes
+	}
+	option = {
+		name = japan_mac.9.b
+		trigger_event = {
+			id = japan_mac.10
+		}
+		default_option = no
+	}
+}
+japan_mac.10 = {
+	type = country_event
+	placement = root
+	title = japan_mac.10.t
+	desc = japan_mac.10.d
+	flavor = japan_mac.10.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.10.a
+		trigger_event = {
+			id = japan_mac.11
+		}
+		default_option = yes
+	}
+}
+
+japan_mac.11 = {
+	type = country_event
+	placement = root
+	title = japan_mac.11.t
+	desc = japan_mac.11.d
+	flavor = japan_mac.11.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+
+	option = {
+		name = japan_mac.11.a
+		default_option = yes
+	}
+}
+
+japan_mac.12 = {
+	type = country_event
+	placement = root
+	title = japan_mac.12.t
+	desc = japan_mac.12.d
+	flavor = japan_mac.12.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.12.a
+		default_option = yes
+	}
+}
+
+japan_mac.13 = {
+	type = country_event
+	placement = root
+	title = japan_mac.13.t
+	desc = japan_mac.13.d
+	flavor = japan_mac.13.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.13.a
+		default_option = yes
+	}
+}
+
+japan_mac.14 = {
+	type = country_event
+	placement = root
+	title = japan_mac.14.t
+	desc = japan_mac.14.d
+	flavor = japan_mac.14.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.14.a
+		set_global_variable = {
+			name = MacArthur_Never_Gonna_Give_You_Up
+			months = -1
+		}
+		default_option = yes
+	}
+}
+
+japan_mac.15 = {
+	type = country_event
+	placement = root
+	title = japan_mac.15.t
+	desc = japan_mac.15.d
+	flavor = japan_mac.15.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.15.a
+		default_option = yes
+	}
+}
+
+japan_mac.16 = {
+	type = country_event
+	placement = root
+	title = japan_mac.16.t
+	desc = japan_mac.16.d
+	flavor = japan_mac.16.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.16.a
+		default_option = yes
+		ruler = { kill_character = yes }
+		c:JAP = {
+			activate_law = law_type:law_monarchy
+			create_character = { #招核天皇
+				historical = yes
+				ruler = yes
+				ig_leader = yes #利益集团领袖
+				first_name = Yuren
+				last_name = Yamato
+				birth_date = 1901.4.29
+				religion = rel:shinto #神道教
+				dna = dna_emperor_minh_mang
+				interest_group = ig_intelligentsia #官僚
+				ideology = ideology_royalist #保皇主义者
+				traits = {
+					tactful #圆滑
+					pillager #掠夺者
+					grifter #骗子
+					bandit #强盗
+					demagogue #煽动者
+					cruel #残暴
+				}
+			}
+		}
+	}
+	option = {
+		name = japan_mac.16.b
+		default_option = yes
+		ruler = { kill_character = yes }
+		c:JAP = {
+			activate_law = law_type:law_monarchy
+			create_character = { #日本五星天皇道格拉斯·麦克阿瑟
+				historical = yes
+				ig_leader = yes #利益集团领袖
+				first_name = Douglas
+				last_name = MacArthur 
+				culture = cu:dixie
+				religion = rel:protestant
+				birth_date = 1880.1.26
+				dna = dna_king_leopold_01
+				ruler = yes
+				interest_group = ig_armed_forces #军队
+				ideology = ideology_authoritarian #威权主义者
+				traits = {
+					strong #健硕
+					hedonist #享乐主义者
+					celebrity_commander #明星指挥官
+				}
+			}
+		}
+		trigger = {
+			has_global_variable = MacArthur_Never_Gonna_Give_You_Up
+		}
+	}
+}
+
+japan_mac.17 = {
+	type = country_event
+	placement = root
+	title = japan_mac.17.t
+	desc = japan_mac.17.d
+	flavor = japan_mac.17.f
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	duration = 3
+	immediate = {
+	}
+	option = {
+		name = japan_mac.17.a
+		default_option = yes
+		add_modifier = {
+			name = modifier_japan_mac_17
+			months = 12
+		}
+	}
+}

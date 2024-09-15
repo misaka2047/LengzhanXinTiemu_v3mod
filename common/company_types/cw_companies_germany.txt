@@ -1,0 +1,506 @@
+﻿#巴伐利亚发动机制造厂
+bayerische_motoren_werke = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/BMW.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_aircraft_factory #飞机制造厂
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry #战争机器厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_BAVARIA
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				state_region = s:STATE_BAVARIA
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_aircraft_factory #飞机制造厂
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry #战争机器厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.1
+		unit_army_defense_mult = 0.05
+	}
+}
+
+# 莱茵金属
+company_rheinmetall = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_rheinmetall.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_artillery_foundries #火炮厂
+		building_munition_plants #弹药厂
+		building_war_machine_industry #战争机器厂
+		building_arms_industry #武器厂
+		building_car_factory #汽车制造厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_NORTH_RHINE
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				state_region = s:STATE_NORTH_RHINE
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_artillery_foundries #火炮厂
+					is_building_type = building_munition_plants #弹药厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_arms_industry #武器厂
+					is_building_type = building_car_factory #汽车制造厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_combat_unit_type_siege_artillery_offense_mult = 0.1
+		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
+		unit_army_defense_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}
+
+#雨果波士
+hugo_boss = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/boss.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_textile_mills #纺织厂
+		building_chemical_plants #化工厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_BADEN
+					state_region = s:STATE_WURTTEMBERG
+				}
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				OR = {
+					state_region = s:STATE_BADEN
+					state_region = s:STATE_WURTTEMBERG
+				}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_textile_mills #纺织厂
+					is_building_type = building_chemical_plants #化工厂
+				}
+				level >= 5
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_radicals_from_sol_change_mult = -0.15
+	}
+}
+
+#大众汽车
+volkswagen = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/VW.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry #战争机器厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_HANNOVER
+					state_region = s:STATE_ELBE
+				}
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			OR = {
+				state_region = s:STATE_HANNOVER
+				state_region = s:STATE_ELBE
+			}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry #战争机器厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.2
+		unit_army_defense_mult = 0.1
+	}
+}
+
+# 西门子
+company_siemens_and_halske = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_siemens_halske.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_electrics_industry #电子产品厂
+		building_home_appliance_factory #家电工厂
+		building_electronic_parts_factory #电子零件工厂
+		building_computer_factory #计算机工厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BRANDENBURG		
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_electrics_industry #电子产品厂
+					is_building_type = building_home_appliance_factory #家电工厂
+					is_building_type = building_electronic_parts_factory #电子零件工厂
+					is_building_type = building_computer_factory #计算机工厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+# 克虏伯
+company_krupp = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/german_krupp.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_motor_industry #动力机械厂
+		building_arms_industry
+		building_artillery_foundries
+		building_steel_mills
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_WESTPHALIA
+				}
+			}
+		}
+	}	
+	
+	possible = { 
+		any_scope_state = {
+				OR = {
+					state_region = s:STATE_NORTH_RHINE
+					state_region = s:STATE_WESTPHALIA
+				}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_steel_mills
+					is_building_type = building_arms_industry
+					is_building_type = building_artillery_foundries
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		building_railway_throughput_add = 0.1
+		unit_kill_rate_add = 0.1
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+#奔驰
+benz = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/benz.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_aircraft_factory #飞机制造厂
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry #战争机器厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				OR = {
+					state_region = s:STATE_BADEN
+					state_region = s:STATE_WURTTEMBERG
+				}
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				OR = {
+					state_region = s:STATE_BADEN
+					state_region = s:STATE_WURTTEMBERG
+				}
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_aircraft_factory #飞机制造厂
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry #战争机器厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		military_formation_movement_speed_mult = 0.1
+		unit_army_offense_mult = 0.05
+	}
+}
+
+#迈巴赫
+maybach = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/maybach.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+
+	flavored_company = yes
+	
+	building_types = {
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+		building_war_machine_industry #战争机器厂
+		building_shipyards #造船厂
+		building_military_shipyards #军用造船厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_WURTTEMBERG
+				}
+			}
+		}		
+	
+	possible = {
+		any_scope_state = {
+					state_region = s:STATE_WURTTEMBERG
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_shipyards #造船厂
+					is_building_type = building_military_shipyards #军用造船厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_navy_offense_mult = 0.1
+	}
+}
+
+#施华洛世奇公司
+swarovski = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/swarovski.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+	
+	building_types = {  
+		building_glassworks #玻璃塑料厂
+		building_textile_mills #纺织厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_TYROL
+				}
+			}
+		}		
+	
+	possible = {
+		any_scope_state = {
+					state_region = s:STATE_TYROL
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_glassworks #玻璃塑料厂
+					is_building_type = building_textile_mills #纺织厂
+				}
+				level >= 10
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		state_loyalists_from_sol_change_mult = 0.15
+	}	
+	
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
+
+mauser_company = { #毛瑟公司
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/mauser_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {
+		building_munition_plants #弹药厂
+		building_arms_industry #武器厂
+		building_artillery_foundries #火炮厂
+	}
+
+	potential = {
+		has_interest_marker_in_region = region_south_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_WURTTEMBERG
+				}
+			}
+		}		
+	
+	possible = {
+		any_scope_state = {
+					state_region = s:STATE_WURTTEMBERG
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_munition_plants #弹药厂
+					is_building_type = building_arms_industry #武器厂
+					is_building_type = building_artillery_foundries #火炮厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_army_offense_mult = 0.1
+	}
+}

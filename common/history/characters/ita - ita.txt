@@ -1,0 +1,46 @@
+﻿CHARACTERS = {
+	c:ITA = {
+		create_character = {#意大利总理
+			historical = yes
+			ruler = yes
+			traits = {
+			}
+		}
+
+		create_character = {#阿尔契德·加斯贝利，意大利首相
+			first_name = "Archide"
+			last_name = "Gasbury"
+			birth_date = 1881.4.3
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_republican_leader #共和主义者
+			traits = {
+			}
+		}
+
+		create_character = {#恩里科·德尼科拉
+			first_name = Enrico
+			last_name = Denikola
+			birth_date = 1877.11.9
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_market_liberal #自由市场主义者
+			traits = {
+			}
+		}
+
+		create_character = {#朱利奥·安德烈奥蒂，首相加斯贝利的办公室主任
+			first_name = Giulio
+			last_name = Andreotti
+			birth_date = 1919.1.1
+			historical = yes
+			ig_leader = yes
+			interest_group = ig_devout #虔信者
+			ideology = ideology_republican_leader #共和主义者
+			traits = {
+			}
+		}
+	}
+}

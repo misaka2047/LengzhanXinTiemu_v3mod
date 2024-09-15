@@ -1,0 +1,56 @@
+# 哈奇开斯
+hachikas = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/hachikas.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+	
+	flavored_company = yes
+	
+	building_types = {  
+		building_artillery_foundries #火炮厂
+		building_munition_plants #弹药厂
+		building_war_machine_industry #战争机器厂
+		building_arms_industry #武器厂
+		building_car_factory #汽车制造厂
+		building_motor_industry #动力机械厂
+	}
+	
+	potential = {
+		has_interest_marker_in_region = region_north_germany
+	}
+	
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+					state_region = s:STATE_NORTH_RHINE
+			}
+		}
+	}		
+	
+	possible = {
+		any_scope_state = {
+				state_region = s:STATE_NORTH_RHINE
+			is_incorporated = yes
+			any_scope_building = {
+				OR = {
+					is_building_type = building_artillery_foundries #火炮厂
+					is_building_type = building_munition_plants #弹药厂
+					is_building_type = building_war_machine_industry #战争机器厂
+					is_building_type = building_arms_industry #武器厂
+					is_building_type = building_car_factory #汽车制造厂
+					is_building_type = building_motor_industry #动力机械厂
+				}
+				level >= 3
+			}
+		}
+	}
+	
+	prosperity_modifier = {
+		unit_combat_unit_type_siege_artillery_offense_mult = 0.1
+		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
+		unit_army_defense_mult = 0.05
+	}
+
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}	
+}

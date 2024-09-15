@@ -1,0 +1,47 @@
+﻿COUNTRIES = {
+	c:BIC = { #印度
+		ig:ig_armed_forces = {
+			add_ruling_interest_group = yes
+		}
+		effect_starting_technology_tier_4_tech = yes
+		set_capital = STATE_DELHI
+		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_autocracy #独裁制
+		activate_law = law_type:law_protectionism #贸易保护
+		activate_law = law_type:law_colonial_resettlement #民族安置
+		activate_law = law_type:law_tenant_farmers #佃农
+		activate_law = law_type:law_case_law_system #海洋法系
+		activate_law = law_type:law_total_separation
+		activate_law = law_type:law_racial_segregation # English & Anglo-Indian supremacy; no Indians served in the upper echelons of government
+		activate_law = law_type:law_industry_banned
+		activate_law = law_type:law_censorship
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_legacy_slavery
+
+
+		add_company = company_type:company_tata
+		company:company_tata = {
+			set_company_establishment_date = 1869.1.1
+		}
+
+		ig:ig_landowners = {
+			add_ideology = ideology_zamindar #柴明达
+			remove_ideology = ideology_paternalistic #家长式
+		}
+
+		set_variable = {
+			name = east_indies_revolt_var
+			value = 0
+		}
+
+		trigger_event = {
+			id = bic_out_of_control.1
+		}
+
+		add_modifier = {
+			name = bic_out_of_control_modifier
+			months = -1
+		}
+	}
+}

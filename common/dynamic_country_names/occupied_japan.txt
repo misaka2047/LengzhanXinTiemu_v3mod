@@ -1,0 +1,35 @@
+JAP = {
+	dynamic_country_name = { # Autonomy
+		name = dyn_c_occupied_japan_general
+		adjective = dyn_c_occupied_japan_general_adj
+		
+		is_main_tag_only = yes
+		priority = 5
+		
+		trigger = {
+			exists = scope:actor
+			AND = {
+				exists = c:USA
+				c:USA = {
+					OR = {
+						has_diplomatic_pact = {
+							who = scope:actor
+							type = puppet
+							is_initiator = yes
+						}
+						has_diplomatic_pact = {
+							who = scope:actor
+							type = dominion
+							is_initiator = yes
+						}
+						has_diplomatic_pact = {
+							who = scope:actor
+							type = protectorate
+							is_initiator = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

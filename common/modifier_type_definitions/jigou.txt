@@ -1,0 +1,15 @@
+country_institution_scientific_research_max_investment_add={ #科研机构
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}
+
+country_institution_family_planning_max_investment_add={ #计生机构
+	decimals=0
+	color=good
+	game_data={
+		ai_value=0
+	}
+}

@@ -1,0 +1,46 @@
+CAM = { # Cambodia
+	flag_definition = {
+		coa = CAM
+		subject_canton = CAM
+		# allow_overlord_canton = yes		
+		# coa_with_overlord_canton = CAM_subject		
+		priority = 1
+	}
+        flag_definition = {
+		coa = CAM_monarchy
+		priority = 1500
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = { #柬埔寨人民共和国
+		coa = CAM_communist
+		priority = 1500
+		trigger = {
+			scope:actor ?= {
+			coa_def_communist_flag_trigger = yes
+		     NOT = {
+					has_law = law_type:law_multi_party_cooperation_system
+				}
+			}
+		}
+	}
+	flag_definition = { #民主柬埔寨
+		coa = CAM_bobo
+		priority = 1500
+		trigger = {
+			scope:actor ?= {
+			coa_def_communist_flag_trigger = yes
+			has_law = law_type:law_multi_party_cooperation_system
+			}
+		}
+	}
+	flag_definition = {
+		coa = CAM_fascist
+		subject_canton = CAM_fascist
+		priority = 10
+		trigger = { 
+			coa_def_fascist_flag_trigger = yes
+		}
+	}	
+}

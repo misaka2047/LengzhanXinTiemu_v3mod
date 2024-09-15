@@ -1,0 +1,143 @@
+﻿namespace = africa_events
+
+africa_events.1 = {#AOF独立
+	type = country_event
+	placement = root
+
+	title = africa_events.1.t
+	desc = africa_events.1.d
+	flavor = africa_events.1.f
+
+        event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+        c:AOF ?= this
+		is_subject = no
+		is_at_war = no
+	}
+
+	cooldown = { months = -1 }
+
+	immediate = {}
+	
+	option = {
+		name = africa_events.1.a
+        default_option = yes      
+        create_country = { 
+        	tag = MTY 
+        	origin = root
+			state = s:STATE_MAURITANIA.region_state:AOF
+			state = s:STATE_INNER_MAURITANIA.region_state:AOF
+        }
+        create_country = { 
+        	tag = SNJ 
+        	origin = root
+			state = s:STATE_SENEGAL.region_state:AOF
+			state = s:STATE_GAMBIA.region_state:AOF
+        }
+        create_country = { 
+        	tag = NGR 
+        	origin = root
+			state = s:STATE_OUTER_HAUSALAND.region_state:AOF
+			state = s:STATE_NIGER.region_state:AOF
+        }
+        create_country = { 
+        	tag = GNI 
+        	origin = root
+			state = s:STATE_GUINEA.region_state:AOF
+        }
+        create_country = { 
+        	tag = CDW 
+        	origin = root
+			state = s:STATE_WINDWARD_COAST.region_state:AOF
+            state = s:STATE_IVORY_COAST.region_state:AOF
+        }
+        create_country = { 
+        	tag = DAH 
+        	origin = root
+			state = s:STATE_DAHOMEY.region_state:AOF
+        }
+        root = { change_tag = MAL }
+        ai_chance = {
+			base = 60
+		}
+	}
+
+    option = {
+		name = africa_events.1.b
+    	ai_chance = {
+			base = 40
+		}
+	}
+}
+
+africa_events.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = africa_events.2.t
+	desc = africa_events.2.d
+	flavor = africa_events.2.f
+
+        event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	duration = 3
+
+	trigger = {
+        c:AEF ?= this
+		is_subject = no
+		is_at_war = no
+	}
+
+	cooldown = { months = -1 }
+
+	immediate = {}
+	
+	option = {
+		name = africa_events.2.a
+        default_option = yes      
+        create_country = { 
+        	tag = GAB 
+        	origin = c:AEF
+			provinces = { x8D20C0 x8FE687 xB323FD xBAA5C1 xC02090 x6273A5 xBB6854 x9E126C x228965 x46DE71 xA22CB6 xB25786 x8D528D x683118 x9EC4DA x27723A x819A60 xC0A090 xE31261 xD76706 x53FB46 x79DFE3 x0F5F7D x6B44DE xCD7A34 xA26A13 x2F5442 x12572A xDE26DB xE8DC57 x88674A xD4438C x7AC766 xC25A2B x5D3B7C x2E8386 x66BBD4 xC46F31 xFC7E53 x40A090 x271A16 x534DEC x4DA171 x86E43C xCD570F x75A079 x4A0409 }
+        }
+        create_country = { 
+        	tag = CHD 
+        	origin = c:AEF
+			state = STATE_CHAD.region_state:AEF
+			state = STATE_WADDAI.region_state:AEF
+        }
+        create_country = { 
+        	tag = CON 
+        	origin = c:AEF
+			state = s:STATE_CONGO.region_state:AEF
+        }
+        change_tag = CAR
+        ai_chance = {
+			base = 60
+		}
+	}
+
+    option = {
+		name = africa_events.2.b
+    	ai_chance = {
+			base = 40
+		}
+	}
+}

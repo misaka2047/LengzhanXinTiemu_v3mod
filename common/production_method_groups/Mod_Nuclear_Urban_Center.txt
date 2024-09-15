@@ -1,0 +1,96 @@
+﻿pmg_amenities = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_market_stalls
+		pm_market_squares
+		pm_covered_markets
+		pm_arcades
+
+		# Newly Added
+		pm_vertical_cities
+		pm_automated_trading_systems 
+	}
+}
+
+
+pmg_public_transport = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_public_transport
+		pm_public_trams
+		pm_public_motor_carriages
+
+		# Newly Added
+		pm_aviation_integrated_public_transit
+	}
+}
+
+
+### Art
+pmg_base_building_arts_academy = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_traditional_art
+		pm_realist_art
+		pm_photographic_art
+		pm_film_art
+
+		pm_alternative_material_art
+		pm_collective_emotional_link
+	}
+}
+
+### Private Research Contractor
+
+pmg_research_contractor_computations = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_research_contractor_computations_mechanical_computing     ## Requires Differential Equations
+		pm_research_contractor_computations_experimental_electronic_computing     ##Requires Radio
+		pm_research_contractor_computations_parallel_computing      ## Requires high performance computing
+	}
+}
+
+pmg_research_contractor_mathematics = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_research_contractor_math_calculus_and_central_limit_theorem    ## Require Tier-2 Tech "Calculus"
+		pm_research_contractor_math_differential_equations_and_multilinear_regression    ## Tier 3 tech "Differential Equations"
+		pm_research_contractor_math_differential_geometry_and_stochastic_calculus    ## Tier 5 tech "High Performance Computing"
+	}
+}
+
+pmg_research_contractor_physics = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_research_contractor_physics_maxwell_equations    ## require electric generation
+		pm_research_contractor_physics_nuclear_physics      ## requires miniaturized reactors
+		pm_research_contractor_physics_computational_physics      ## Requires high performance computing
+	}
+}
+
+pmg_research_contractor_engineering = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_research_contractor_engineering_electric_engineering     ## requires electric capacitor
+		pm_research_contractor_engineering_nuclear_reactor_engineering    ## requires depleted material reprocessing
+		pm_research_contractor_engineering_electronic_engineering    ## requires automated systems
+	}
+}
+
+pmg_research_contractor_ownership = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+
+	production_methods = {
+		pm_research_contractor_ownership_privately_owned
+		pm_research_contractor_ownership_publicly_traded
+		pm_research_contractor_ownership_government_run
+		pm_research_contractor_ownership_academic_guild
+	}
+}

@@ -1,0 +1,29 @@
+namespace = test_event
+
+test_event.1 = {
+	type = country_event
+	orphan = yes
+	
+	title = sandazhanyi.1.t
+	desc = sandazhanyi.1.d
+	flavor = sandazhanyi.1.f
+
+	event_image = {
+		video = "europenorthamerica_springtime_of_nations"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 1
+	
+	trigger = {
+	}
+
+	option = {
+		name = sandazhanyi.1.a
+		default_option = yes
+	}
+
+}

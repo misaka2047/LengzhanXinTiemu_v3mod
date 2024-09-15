@@ -1,0 +1,92 @@
+﻿l_english:
+
+## Infantry
+ combat_unit_type_wasteland_trench_infantry:0 "Wasteland Trench Infantry"
+ combat_unit_type_wasteland_trench_infantry_desc:0 "An upgraded version of ordinary trench infantry. While rudimentary powered leg armor and steel ballistic vest provide some protections, they are still vulnerable to any attacks. \nThe go-to option when you need some men to just fill the lines."
+ ## Special tag to distinct from other mod's 'light infantry'.
+
+ combat_unit_type_mod_nuclear_motorized_infantry:0 "Motorized Infantry"
+ combat_unit_type_mod_nuclear_motorized_infantry_desc:0 "Huge improvement from ordinary trench infantry. While trucks have virtually zero defense, they allow for much greater mobility, and transportation of heavier equipment such as anti-powered armor guns or engineering equipment. \n\nA small price for much better defense, backbone of a territorial defense militia."
+
+ combat_unit_type_nuclear_powered_armor:0 "Powered Armor Infantry"
+ combat_unit_type_nuclear_powered_armor_desc:0 "Well-trained infantry with a powered-armor for full-body protection and motion support, in addition to superiod mobility and protection to high-radiation environment. Armed with autocannons and rockets, the powered armor battalions are the best shocktroopers of modern military. \n\nBackbone of any modern army, with much better offensive capability than ordinary infantry."
+
+ combat_unit_type_mod_nuclear_mechanized_infantry:0 "Heavy Mechanized Infantry"
+ combat_unit_type_mod_nuclear_mechanized_infantry_desc:0 "Powered Armor battalions supported by infantry fighting vehicles and assault guns, thus employing much heavier firepower and mobility than usual powered armor battalions. \n\nBest infantry regiment money can buy."
+
+## Guns
+ combat_unit_type_cobalt_irradiator_dirty_guns: "Cobalt Irradiator Dirty Guns"
+ combat_unit_type_cobalt_irradiator_dirty_guns_desc: "Dirty shells filled with wasted nuclear materials. This type of gun represents a win-win solution: they enemy have their painful death and permenant ecological damage to their land while our citizen have a solution for the disposal of unwanted radioactive wastes. \n\n Well Rounded artillery unit."
+
+ combat_unit_type_nuclear_bombardment_artillery: "Nuclear Bombardment Artillery"
+ combat_unit_type_nuclear_bombardment_artillery_desc: "In the unlikely event that a salvo of 8-inch tactical nuke fails to solve your problem, just apply another round, or concentrate more guns. \n\n Very Heavy Guns towed by specially-made tracked vehicles, can melt enemy lines in a very literal sense."
+
+ combat_unit_type_improvised_dirty_bombs: "Improvised Dirty Bombs"
+ combat_unit_type_improvised_dirty_bombs_desc: "Poor men's Nuclear Weapon. Used by everyone who cannot afford a proper dirty-bomb firing artillery, or who need a temporary solution before a proper theory of high-radiation warfare has been developed. \n\n Cheap version of Dirty Guns"
+
+ combat_unit_type_self_propelled_nuclear_artillery:0 "Self Propelled Nuclear Artillery"
+ combat_unit_type_self_propelled_nuclear_artillery_desc:0 "A heavy artillery piece fitted onto a terraforming construction vehicle. The better mobility and auto-loading system make them the deadliest war machines ever made. \n\nBest Artillery money can buy."
+
+## Aircrafts
+  combat_unit_type_primitive_jet_fighter:0 "Retrofitted Commercial Liner"
+  combat_unit_type_primitive_jet_fighter_desc:0 "A second-hand commercial jet liner, retrofitted with armor plates, cannons, and bombs. Not the best kind of warplanes you would like to have, but it works."
+
+	combat_unit_type_first_gen_jet_fighter:0 "Basic Jet Fighter"
+	combat_unit_type_first_gen_jet_fighter_desc:0 "A specially designed jet fighter, with more greater agility through removing broadside guns. It is not the best fighter to dogfight with, but with two engines, autocannons, and rockets, these fighters fits in every role from interception to bombing runs."
+
+	combat_unit_type_second_gen_jet_fighter:0 "Advanced Jet Fighter"
+	combat_unit_type_second_gen_jet_fighter_desc:0 "A jet fighter scrambled with best avionics and jet engine available to mankind. The fighter has extremely high agility with G-force great enough to crush an ordinary human into a burrito roll in a blink of an eye. As a result, extensive cybernetics augmentation and neural-machine interface is hard prerequisite to pilot this monstrous machine."
+
+## Ships
+ combat_unit_type_long_lance_cruiser:0 "Long Lance Cruiser"
+ combat_unit_type_long_lance_cruiser_desc:0 "Small escort cruiser powered by portable nuclear reactors. The lack of damage control and armor is compensated by superior cruise speed powered by the reactor as well as deadly torpedos powered by highly volatile liquid oxygen known as 'Long Lances'."
+
+ combat_unit_type_atomic_hydrofoil_escort_and_torpedo_jet:0 "Hydrofoil and Jet Squadron"
+ combat_unit_type_atomic_hydrofoil_escort_and_torpedo_jet_desc:0 "Jet engine made old escort ships obsolete almost overnight. Hydrofoil ships, air-cushioned ships, ground-effect aircrafts, and naval jet aircraft formed the defense premier of modern naval fleet."
+
+ combat_unit_type_atomic_powered_dreadnought:0 "Atomic Dreadnought"
+ combat_unit_type_atomic_powered_dreadnought_desc:0 "An ironclad carrying guns of uniformed caliber, thus providing better fire control. Atomic furnace also provide horsepower fitting for such firepower."
+
+ combat_unit_type_atomic_powered_battlecruiser:0 "Battlecruiser"
+ combat_unit_type_atomic_powered_battlecruiser_desc:0 "Modern Battlecruisers powered by atomic furnace and full-electrical propulsion. Typical modern battlecruiser carries 4 turrets with trio 22-inch guns, while able to travel almost infinitely at 37 knots even with her 24-inch of Duranium armor. Such ships can easily excess 100,000 tons in weight."
+ 
+ combat_unit_type_supercarriers:0 "Supercarriers"
+ combat_unit_type_supercarriers_desc:0 "While development of a electromagnetic mass driver, known otherwise as a railgun, failed during the development of new battlecruiser, the technical legacy made modern supercarriers possible. With electro-magnetic catapult to launch aircrafts, these ships provide timely air support for the fleet. \n However, since modern jets usually requries extremely long distance for landing, naval aircrafts will have to land on water before being collected by the carriers."
+
+## Support: Others
+mobilization_option_jet_recon:0 "Jet Recon"
+mobilization_option_jet_recon_desc:0 "High altitude reconnaissance aircraft provide timely intelligence support to all frontline units."
+
+mobilization_option_jet_transport:0 "Heavy Jet Transport"
+mobilization_option_jet_transport_desc:0 "While it costs enormous amount of funding and resource to deploy a fleet of cargo plane for global deployment, sometimes it is still worth it. Modern military cargo plane can transport a whole army to the other end of earth in just a week, fresh and ready to fight."
+
+mobilization_option_atomic_sapper:0 "Atomic Sapper"
+mobilization_option_atomic_sapper_desc:0 "The especially callous detachment of the army corps of engineers, whose main task is digging tunnels beneath enemy's positions, placing nuclear dynamites, and starting the fireworks. Their most popular slogan is 'One way ticket to low earth orbit', which is sometimes not an exaggeration."
+
+mobilization_option_unmanned_killer_regiment:0 "Unmanned Killer Regiment"
+mobilization_option_unmanned_killer_regiment_desc:0 "Extensive cybernetics augmentation and overdosing of chemical drugs have completely destroyed the ego of these once-humans. Now they are barely smart enough to fire a rifle, but crazy enough to fight brutally and fearlessly."
+## Support: Supplies
+
+mod_nuclear_supply_method:0 "Supply System"
+mod_nuclear_supply_method_desc:0 "You cannot just throw a bunch of men into the field--you need to provide them with ammos, bread, liquor, and many other necessary goods so your army does not become an unorganized group of bandit and beggars."
+
+mobilization_option_railroad_supply: "Railroad Supply"
+mobilization_option_railroad_supply_desc: "Heavy cargo railway is the cornerstone of modern army logistics system"
+
+mobilization_option_truck_supply: "Motorized Supply"
+mobilization_option_truck_supply_desc: "Truck is the answer to the 'last mile' problem, the insufferable toil of offloading supplies from train stations and carrying them to the frontline."
+ 
+mobilization_option_airdrop_supply: "Airdrop Supply"
+mobilization_option_airdrop_supply_desc: "Being surrounded is not an excuse for failure of acquiring sufficient supply."
+
+## Support: Level-5 Techs
+ army_modernization:0 "Army Modernization"
+ army_modernization_desc:0 "With cybernetics and computers, we can greatly enhance our army's capability of destruction without changing much of its weapons and equipment."
+
+ mobilization_option_military_grade_cybernetics:0 "Military Grade Cybernetics"
+ mobilization_option_military_grade_cybernetics_desc:0 "The cruel battlefield requires much sturdier cybernetics than the ones you use in civilian life or in the factories."
+
+ mobilization_option_ballistic_computers:0 "Ballistic Computers"
+ mobilization_option_ballistic_computers_desc:0 "Portable Ballistic Computers make our artillery batteries considerably more accurate, and thus more deadly."
+
+

@@ -1,0 +1,768 @@
+@third = @[1/3]
+
+AEF = { # 中非
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "red"
+	color3 = "white"
+	color4 = "blue"
+
+	colored_emblem = {
+		texture = "CAR.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+	}
+	textured_emblem = {
+		texture = "te_CAR.dds"
+	}
+}
+AEF_absolute_monarchy = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AEFEMP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AEF_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "red"
+	color3 = "white"
+	color4 = "blue"
+
+	colored_emblem = {
+		texture = "CAR.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+	}
+	textured_emblem = {
+		texture = "te_CAR.dds"
+	}
+}
+AEF_theocracy = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	textured_emblem = {
+	texture = "AEFEMP.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}			
+	}
+AEF_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_AEF.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+CMR = { # 喀麦隆
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+	texture = "ce_tricolor_vertical.dds"
+	color1 = "red"
+	color2 = "yellow"			
+	}
+}
+CMR_modern = { 
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+	texture = "ce_star_05_pinwheeled.dds"
+	color1 = "yellow"		
+	}	
+
+	colored_emblem = {
+	texture = "ce_tricolor_vertical.dds"
+	color1 = "red"
+	color2 = "yellow"
+	instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }}					
+}
+CMR_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+	texture = "ce_tricolor_vertical.dds"
+	color1 = "red"
+	color2 = "yellow"			
+	}
+}
+
+TUN = { # 突尼斯
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_circle.dds"
+	color1 = "white"
+	}
+
+	colored_emblem = {
+	texture = "ce_crescent_star_07.dds"
+	color1 = "red"
+	instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }}
+}
+
+MAD = { # Madagascar
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_tribar.dds"
+		color1 = "red"
+		color2 = "green"
+		color3 = "white"
+	}
+}
+MAD_subject_FRA = {
+	# French protectorate
+	
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_crescent.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.38 0.38 } position = { @third 0.5 } }	
+	}	
+}
+
+KON = { # 刚果（金）
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue_light"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "TCO.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+KON_absolute_monarchy = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+	texture = "KONEMP.dds"		
+	}
+}
+KON_republic = { 
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "blue"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "TCO.dds"
+		color1 = color2
+		color2 = color3
+	}
+}
+KON_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "yellow"
+    instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }}			
+}
+
+CON = { # 刚果（布）
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	colored_emblem = {
+	texture = "ce_tricolor_bend.dds"
+	color1 = "yellow"
+	color2 = "red"				
+   }
+}
+CON_absolute_monarchy = { 
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+	texture = "CONEMP.dds"		
+	}
+}
+CON_republic = { 
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	colored_emblem = {
+	texture = "ce_tricolor_bend.dds"
+	color1 = "yellow"
+	color2 = "red"				
+   }
+}
+CON_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+
+	textured_emblem = {
+	texture = "CONCOM.dds"		
+    }
+}
+
+AGJ = { # 安哥拉
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+	color2 = "black"
+
+	colored_emblem = {
+	texture = "ce_cogwheel_machete_angola.dds"
+	color1 = "yellow"
+    instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }}		
+	}
+AGJ_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { @third 1.0 } position = { @[third/2] 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { @third 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portuguese_republic.dds"
+		instance = { scale = { 0.55 0.55 } position = { @third 0.5 } }
+	}	
+	textured_emblem = {
+		texture = "Coat_of_arms_of_Portuguese_Angola.dds"
+		instance = { scale = { 0.21 0.35 } position = { 0.85  0.75 } }
+	}
+}
+
+MOZ = { # 莫桑比克
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "yellow"
+	color3 = "white"
+	color4 = "green"
+
+	colored_emblem = {
+		texture = "MOZ.dds"
+		color1 = color2
+		color2 = color3
+		color3 = color4
+	}
+	textured_emblem = {
+		texture = "MOZ.dds"
+	}
+}
+MOZ_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { @third 1.0 } position = { @[third/2] 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { @third 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portuguese_republic.dds"
+		instance = { scale = { 0.55 0.55 } position = { @third 0.5 } }
+	}		
+	textured_emblem = {
+		texture = "coat_of_arms_of_portuguese_mozambique.dds"
+		instance = { scale = { 0.21 0.35 } position = { 0.85  0.75 } }
+	}
+}
+
+UGA = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "black"
+
+	colored_emblem = {
+		texture = "UGA.dds"
+		color1 = color2
+		color2 = color3
+	}
+	textured_emblem = {
+		texture = "UGA.dds"
+	}
+}
+UGA_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_UGA.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+KNY = { #肯尼亚
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "KEN.dds"
+	color1 = "green"
+	color2 = "white"
+	color3 = "black"
+	}	
+}		
+KNY_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_KNY.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+BTW = { #博茨瓦纳
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+	texture = "ce_fess_fimbriated.dds"
+	color1 = "black"
+	color2 = "white"
+    instance = { scale = { 1.1 1.1 } position = { 0.5 0.5 } }}			
+	}
+
+ZIM = { # 津巴布韦
+	# Modern flag 1980
+	
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+	color2 = "yellow"
+	color3 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 @[1/7*5] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 @[1/7*3] } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0.5 0.5 } scale = { 1.0 @[1/7] } }
+	}	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { position = { 0 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { position = { -0.025 0.5 } }
+	}	
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.5 0.5 } position = { 0.175 0.5 } }
+	}
+}
+ZIM_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_ZIM.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+ZAM = { #赞比亚
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	textured_emblem = {
+		texture = "ZAM.dds"
+	}
+}
+ZAM_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_ZAM.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+TAN = { #坦桑尼亚
+	pattern = "pattern_solid.tga"
+	color1 = "green"
+
+	colored_emblem = {
+		texture = "ce_tricolor_bend.dds"
+		color1 = "black"
+		color2 = "blue"
+	}
+	colored_emblem = {
+		texture = "ce_bend_sinister_fimbriated.dds"
+		color1 = "yellow"
+		color2 = "black"
+	}
+}
+TAN_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "te_coa_TAN.dds"
+		instance = { scale = { 0.8 0.8 } position = { 0.75 0.505 } }			
+	}
+}
+
+NIG = { #尼日利亚
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+
+	colored_emblem = {
+	texture = "ce_tricolor_vertical.dds"
+	color1 = "white"
+	color2 = "green_light"
+	}			
+}
+NIG_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_NIG.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+SRL = { #塞拉利昂
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "blue_light"
+	}			
+}
+SRL_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_SRL.dds"
+		instance = { scale = { 0.75 0.75 } position = { 0.75 0.505 } }			
+	}
+}
+
+ERT = { # 厄立特里亚
+	pattern = "pattern_horizontal_split_01.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ERT.dds"	
+	color1="red"
+	color2="green"
+	color3="blue_light"
+	}
+	textured_emblem = {
+	texture = "ERT.dds"	
+	}
+}
+ERT_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	textured_emblem = {
+	texture = "ERTSUB.dds"
+	instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}		
+}
+
+SML = { #索马里
+	pattern = "pattern_solid.tga"
+	color1 = "blue_light"
+
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "white"
+    instance = { scale = { 0.8 0.8 } position = { 0.5 0.5 } }}
+	}			
+SML_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_SML.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+GHA = { #加纳
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "yellow"
+	color2 = "green"
+	}			
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }}
+}		
+GHA1 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "yellow"
+	color2 = "green"
+	}			
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.35 0.5 } }}
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.65 0.5 } }}
+}
+GHA2 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "yellow"
+	color2 = "green"
+	}			
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.25 0.5 } }}
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }}
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.75 0.5 } }}
+}
+GHA3 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "green"
+	}			
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }}
+}	
+GHA_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_GHA.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+GAM = { #冈比亚
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_bicolor_bottom.dds"
+	color1 = "green"
+    instance = { scale = { 1.1 1.1 } position = { 0.5 0.5 } }}	
+	colored_emblem = {
+	texture = "ce_fess_fimbriated.dds"
+	color1 = "blue"
+	color2 = "white"
+    instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}		
+}
+GAM_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_GAM.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
+
+GNB = { # 几内亚比绍
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tribar.dds"
+	color1 = "yellow"
+	color2 = "green"
+	color3 = "red"
+    instance = { scale = { 1.0 1.0 } position = { 0.5 0.5 } }}	
+	colored_emblem = {
+	texture = "ce_star_05.dds"
+	color1 = "black"
+    instance = { scale = { 0.4 0.4 } position = { 0.15 0.5 } }}		
+}
+GNB_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "green"
+		color2 = "green"
+		instance = { scale = { @third 1.0 } position = { @[third/2] 0.5 } }			
+	}
+	colored_emblem = {
+		texture = "ce_armillary_sphere.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.75 0.75 } position = { @third 0.5 } }
+	}
+	textured_emblem = {
+		texture = "te_coa_portuguese_republic.dds"
+		instance = { scale = { 0.55 0.55 } position = { @third 0.5 } }
+	}	
+	textured_emblem = {
+		texture = "Coat_of_arms_of_Portuguese_Angola.dds"
+		instance = { scale = { 0.21 0.35 } position = { 0.85  0.75 } }
+	}
+}
+
+EGU = { #赤道内几亚
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "red"
+    }
+	colored_emblem = {
+	texture = "ce_cmp_pall_overlay.png"
+	color1 = "blue_light"
+    }	
+	textured_emblem = {
+	texture = "te_cmp_coa_egu.dds"
+	instance = { scale = { 0.5 0.5 } position = { 0.5  0.5 } }
+    }
+}		
+EGU1 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "red"
+    }
+	colored_emblem = {
+	texture = "ce_cmp_pall_overlay.png"
+	color1 = "blue_light"
+    }	
+}	
+EGU2 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "red"
+    }
+	colored_emblem = {
+	texture = "ce_cmp_pall_overlay.png"
+	color1 = "blue_light"
+    }	
+	textured_emblem = {
+	texture = "te_cmp_coa_egu1.dds"
+	instance = { scale = { 0.5 0.5 } position = { 0.5  0.5 } }
+    }
+}	
+EGU_subject = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "EGUSUB.dds"		
+	}
+}
+
+TRI = { #利比亚
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+	texture = "ce_tricolor_fimbriated_large.dds"
+	color1 = "red"
+	color2 = "black"
+	color3 = "green"
+	}
+
+	colored_emblem = {
+	texture = "ce_crescent_star_05.dds"
+	color1 = "white"
+	instance = { scale = { 0.5 0.5 } position = { 0.5  0.5 } }
+    }		
+}
+TRI1 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+	texture = "ce_tricolor_horizontal.dds"
+	color1 = "white"
+	color2 = "black"
+	}			
+}
+TRI2 = { 
+	pattern = "pattern_solid.tga"
+	color1 = "green_light"
+    }
+}

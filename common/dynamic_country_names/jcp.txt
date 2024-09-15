@@ -1,0 +1,52 @@
+JCP = { 
+	dynamic_country_name = {
+		name = dyn_c_jzz_JCP
+		
+		adjective = JCP_ADJ
+		#is_main_tag_only = yes 
+		priority = 0 
+		
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+				exists = scope:actor
+			scope:actor = { 
+				has_law = law_type:law_monarchy
+				has_variable = meiji_var 
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_republic_JCP
+		
+		adjective = JCP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {#
+		name = dyn_c_societ_republic_JCP
+		
+		adjective = JCP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_shenquan_JCP
+		
+		adjective = JCP_ADJ
+		#is_main_tag_only = yes
+		priority = 0
+		
+		trigger = {
+			coa_def_theocracy_flag_trigger = yes
+		}
+	}
+} 

@@ -1,0 +1,512 @@
+building_breeding_farm = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/breeding_farm.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_agricultural_production
+	}
+
+	production_method_groups = {
+pmg_base_building_breeding_farm
+pmg_advance_building_breeding_farm
+pmg_transportation
+pmg_automation_building_breeding_farm
+
+	}
+
+	required_construction = construction_cost_low
+	
+ownership_type = self
+}
+
+
+building_sugar_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/sugar_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_sugar_factory
+pmg_advance_building_sugar_factory
+pmg_transportation
+pmg_automation_building_sugar_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_beverage_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/beverage_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_light_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_beverage_factory
+pmg_advance_building_beverage_factory
+pmg_transportation
+pmg_automation_building_beverage_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_fiber_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/fiber_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_fiber_factory
+pmg_transportation
+pmg_automation_building_fiber_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_rubber_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/rubber_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_rubber_factory
+pmg_transportation
+pmg_automation_building_rubber_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_clean_energy_power_station = {
+	building_group = bg_power
+	texture = "gfx/interface/icons/building_icons/clean_energy_power_station.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_power_generation
+	}
+
+	production_method_groups = {
+pmg_base_building_clean_energy_power_station
+pmg_transportation
+pmg_automation_building_clean_energy_power_station
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_plastic_products_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/plastic_products_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_plastic_products_factory
+pmg_transportation
+pmg_automation_building_plastic_products_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_chemical_plants = { #化工厂
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/chemical_plant.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_chemical_plant
+pmg_advance_building_chemical_plant
+pmg_transportation
+pmg_automation_building_chemical_plant
+
+	}
+
+	required_construction = construction_cost_high
+	
+	ownership_type = self
+
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
+}
+
+
+building_refinery = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/refinery.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_petroleum_extraction_and_application
+	}
+
+	production_method_groups = {
+pmg_base_building_refinery
+pmg_advance_building_refinery
+pmg_transportation
+pmg_automation_building_refinery
+
+	}
+
+	required_construction = construction_cost_high
+	
+ownership_type = self
+}
+
+
+building_real_estate_developers = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/real_estate_developers.dds"
+	city_type = city
+	levels_per_mesh = 5
+	unlocking_technologies = {
+		tech_real_estate_development
+	}
+
+	production_method_groups = {
+pmg_base_building_real_estate_developers
+pmg_advance_building_real_estate_developers
+pmg_transportation
+pmg_automation_building_real_estate_developers
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+building_machine_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/machine_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_machine_building
+	}
+
+	production_method_groups = {
+pmg_base_building_machine_factory
+pmg_transportation
+pmg_automation_building_machine_factory
+
+	}
+
+	required_construction = construction_cost_high
+	
+ownership_type = self
+}
+
+
+building_home_appliance_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/home_appliance_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_household_appliance_manufacturing
+	}
+
+	production_method_groups = {
+pmg_base_building_home_appliance_factory
+pmg_advance_building_home_appliance_factory
+pmg_transportation
+pmg_automation_building_home_appliance_factory
+
+	}
+
+	required_construction = construction_cost_high
+	
+ownership_type = self
+}
+
+
+building_car_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/car_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_automobile_manufacturing
+	}
+
+	production_method_groups = {
+pmg_base_building_car_factory
+pmg_advance_building_car_factory
+pmg_transportation
+pmg_automation_building_car_factory
+
+	}
+
+	required_construction = construction_cost_high
+	
+ownership_type = self
+}
+
+
+building_electronic_parts_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/electronic_parts_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_electronic_product
+	}
+
+	production_method_groups = {
+pmg_base_building_electronic_parts_factory
+pmg_advance_building_electronic_parts_factory
+pmg_transportation
+pmg_automation_building_electronic_parts_factory
+
+	}
+
+	required_construction = construction_cost_high
+	
+ownership_type = self
+}
+
+
+building_pharmaceutical_factory = {
+	building_group = bg_light_industry
+	texture = "gfx/interface/icons/building_icons/pharmaceutical_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+
+	production_method_groups = {
+pmg_base_building_pharmaceutical_factory
+pmg_transportation
+pmg_automation_building_pharmaceutical_factory
+
+	}
+
+	required_construction = construction_cost_medium
+	
+ownership_type = self
+}
+
+
+building_large_equipment_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/large_equipment_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_large_scale_equipment_manufacturing
+	}
+
+	production_method_groups = {
+pmg_base_building_large_equipment_factory
+pmg_transportation
+pmg_automation_building_large_equipment_factory
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+building_aircraft_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/aircraft_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_aircraft_manufacturing
+	}
+
+	production_method_groups = {
+pmg_base_building_aircraft_factory
+pmg_transportation
+pmg_automation_building_aircraft_factory
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+building_computer_factory = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/computer_factory.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_first_generation_supercomputers
+	}
+
+	production_method_groups = {
+pmg_base_building_computer_factory
+pmg_transportation
+pmg_automation_building_computer_factory
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+
+building_rocket_center = {
+	building_group = bg_heavy_industry
+	texture = "gfx/interface/icons/building_icons/rocket_center.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	unlocking_technologies = {
+		tech_rocket_engineering
+	}
+
+	production_method_groups = {
+pmg_base_building_rocket_center
+pmg_transportation
+pmg_automation_building_rocket_center
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+
+building_highway = {
+	building_group = bg_public_infrastructure
+	texture = "gfx/interface/icons/building_icons/highway.dds"
+
+	levels_per_mesh = 5
+	
+	has_max_level = yes
+
+	production_method_groups = {
+pmg_base_building_highway
+pmg_automation_building_highway
+
+	}
+
+	required_construction = construction_cost_very_high
+	ai_value = 10000
+}
+
+
+building_airport = {
+	building_group = bg_private_infrastructure
+	texture = "gfx/interface/icons/building_icons/airport.dds"
+
+	levels_per_mesh = 5
+	enable_air_connection = yes
+	unlocking_technologies = {
+		tech_civil_aviation
+	}
+
+	production_method_groups = {
+pmg_base_building_airport
+pmg_automation_building_airport
+
+	}
+
+	required_construction = construction_cost_very_high
+	
+ownership_type = self
+}
+
+
+building_research_institution = {
+	building_group = bg_technology
+	texture = "gfx/interface/icons/building_icons/research_institution.dds"
+	city_type = city
+	levels_per_mesh = 5
+	
+	has_max_level = yes
+	
+	unlocking_technologies = {
+		tech_positivism
+	}
+	
+	production_method_groups = {
+pmg_base_building_research_institution
+pmg_transportation
+pmg_automation_building_research_institution
+
+	}
+	ai_value = 2000
+	required_construction = construction_cost_very_high
+	
+}

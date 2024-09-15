@@ -1,0 +1,70 @@
+namespace = hnd_expansion
+
+hnd_expansion.1 = {
+	type = country_event
+	placement = root
+	
+	title = hnd_expansion.1.t
+	desc = hnd_expansion.1.d
+	flavor = hnd_expansion.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = hnd_expansion.1.a
+		add_journal_entry = {
+			type = je_hnd_expansion_main
+		}
+		default_option = no
+    }
+    option = {
+		name = hnd_expansion.1.b
+		default_option = yes
+    }
+}
+
+hnd_expansion.6 = {
+	type = country_event
+	placement = root
+	
+	title = hnd_expansion.6.t
+	desc = hnd_expansion.6.d
+	flavor = hnd_expansion.6.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = hnd_expansion.6.a
+		add_journal_entry = {
+			type = je_bht_expansion_main
+		}
+		default_option = no
+    }
+    option = {
+		name = hnd_expansion.6.b
+		default_option = yes
+    }
+}
+

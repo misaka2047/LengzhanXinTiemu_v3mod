@@ -1,0 +1,54 @@
+je_latin_america_left_reform = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		has_law = law_type:law_public_schools
+        has_law = law_type:law_public_health_insurance
+        has_law = law_type:law_graduated_taxation
+        OR = {
+            has_law = law_type:law_8_hour_working_system
+            has_law = law_type:law_6_hour_working_system
+        }
+        OR = {
+            has_law = law_type:law_collectivized_agriculture
+            has_law = law_type:law_homesteading 
+        }
+		any_scope_building = {
+			OR = {
+				is_building_group = bg_mining
+				is_building_group = bg_logging
+				is_building_group = bg_oil_extraction
+			}
+			level > 0
+			country_ownership_fraction > 0.8
+		}     
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = latin_america_left_reform.5
+		}
+	}
+	fail = {
+		OR = {
+			radical_fraction = {
+				value >= 0.5
+			}
+			any_civil_war = {
+				civil_war_progress > 0.5
+			}
+		}
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = latin_america_left_reform.4
+		}
+	}
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}

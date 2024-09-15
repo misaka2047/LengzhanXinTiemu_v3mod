@@ -1,0 +1,17 @@
+﻿CHARACTERS = {
+	c:LUX = {
+		create_character = {
+			#夏洛特
+			first_name = "Charlotte"
+			last_name = "Nassau-Weilburg" #拿骚-威尔堡家族
+			ruler = yes
+			female = yes #女性
+			ig_leader = yes
+			birth_date = 1880.8.31
+			interest_group = ig_petty_bourgeoisie
+			ideology = ideology_royalist #保皇主义者
+			traits = {
+			}
+		}	
+	}
+}

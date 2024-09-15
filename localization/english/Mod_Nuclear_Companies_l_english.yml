@@ -1,0 +1,57 @@
+﻿l_english:
+
+# Companies.
+## Temporary Edition. Gotta need time to figure out dynamic naming
+
+company_basic_uranium_mine_and_materials:0 "Universal Radioactive Materials"
+
+company_basic_nuclear_fuel_and_explosives:0 "Standard Fuel Cells"
+
+company_basic_research_and_reactors:0 "National Reactors and Laboratories System"
+
+company_basic_engines_and_jet:0 "Nuclear Powering and Propulsion Systems"
+
+company_basic_silicons:0 "United Circuit Printing"
+
+company_basic_electronics:0 "Advanced Commercial Computers"
+
+company_basic_ocean_exploitation:0 "Ocean Development Association"
+
+company_basic_advanced_agriculture:0 "Federation of Greenhouse Planters and Farmers"
+
+
+ # Dynamic company names
+
+
+ company_basic_uranium_mine_dynamic_name_tag_singular: "Raw Uranium"
+ company_basic_uranium_mine_dynamic_name_tag_plural: "Radioactive Ore"
+
+ company_basic_radioactive_materials_dynamic_name_tag_singular: "Innovative Material"
+ company_basic_radioactive_materials_dynamic_name_tag_plural: "Radioactive Additives"
+ 
+ company_basic_nuclear_fuel_dynamic_name_tag_singular: "Packaged Fuel"
+ company_basic_nuclear_fuel_dynamic_name_tag_plural: "Fuel Cells"
+
+ company_basic_research_association_dynamic_name_tag_singular: "Research and Development"
+ company_basic_research_association_dynamic_name_tag_plural: "Laboratories"
+
+ company_basic_jet_dynamic_name_tag_singular: "Aerospace"
+ company_basic_jet_dynamic_name_tag_plural: "Atomic Jets"
+
+ company_basic_automobile_dynamic_name_tag_singular: "Motorization"
+ company_basic_automobile_dynamic_name_tag_plural: "Autombiles"
+
+ company_basic_reactor_engineering_dynamic_name_tag_singular: "Nuclear Engineering"
+ company_basic_reactor_engineering_dynamic_name_tag_plural: "Advanced Nuclear Reactors"
+
+ company_basic_silicons_dynamic_name_tag_singular: "Circuit Printing"
+ company_basic_silicons_dynamic_name_tag_plural: "Programmable Circuits"
+
+ company_basic_electronics_dynamic_name_tag_singular: "High-Performance Computing"
+ company_basic_electronics_dynamic_name_tag_plural: "Commercial Computers"
+ 
+ company_basic_ocean_exploitation_dynamic_name_tag_singular: "Ocean Exploitation"
+ company_basic_ocean_exploitation_dynamic_name_tag_plural: "Deep Sea Engineering"
+
+ company_basic_advanced_agriculture_dynamic_name_tag_singular: "Industrialized Agriculture"
+ company_basic_advanced_agriculture_dynamic_name_tag_plural: "Innovative Farms"

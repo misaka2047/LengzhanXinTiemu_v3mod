@@ -1,0 +1,88 @@
+COUNTRIES = {
+	c:PRC = { #中共
+		effect_starting_technology_tier_4_tech = yes
+		add_technology_researched = sericulture
+		
+		set_market_capital = STATE_XIAN	
+		
+		# Laws 
+		activate_law = law_type:law_council_republic #委员会共和制
+		activate_law = law_type:law_multi_party_cooperation_system #一党专政
+		activate_law = law_type:law_interventionism #经济干预
+		activate_law = law_type:law_restricted_child_labor #限制童工
+		activate_law = law_type:law_poor_laws #济贫法
+		activate_law = law_type:law_protectionism #贸易保护
+		activate_law = law_type:law_cultural_exclusion #文化排斥
+		activate_law = law_type:law_guaranteed_liberties #保障自由
+		activate_law = law_type:law_regulatory_bodies #国家监管机构
+		activate_law = law_type:law_total_separation #完全分离
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_graduated_taxation #累进税制
+		activate_law = law_type:law_homesteading #小农土地所有制
+		activate_law = law_type:law_womens_suffrage
+		activate_law = law_type:law_appointed_bureaucrats
+		activate_law = law_type:law_public_schools
+		activate_law = law_type:law_dedicated_police
+		activate_law = law_type:law_politicized_military #政治化军队
+		activate_law = law_type:law_censorship #出版物审查
+		activate_law = law_type:law_10_hour_working_system
+		activate_law = law_type:law_migration_controls #移民控制
+
+
+		set_institution_investment_level = {
+			institution = institution_national_defense
+			level = 5
+		}
+
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
+
+		set_institution_investment_level = {
+			institution = institution_police
+			level = 1
+		}
+		
+		set_government_wage_level = low
+
+		ig:ig_industrialists = { #民族资产阶级
+			set_interest_group_name = ig_national_bourgeoisie
+		}
+
+		ig:ig_rural_folk = { #乡村民众
+			set_interest_group_name = ig_workers_and_peasants #工农群众
+		}
+
+		ig:ig_intelligentsia = { #知识分子
+			set_interest_group_name = ig_administrative_bureaucrat #公务员
+			add_ideology = ideology_anti_clerical #反教权主义者
+		}
+
+		ig:ig_petty_bourgeoisie = { #小市民
+			set_interest_group_name = ig_individual_business #个体工商户
+		}
+	
+		ig:ig_armed_forces = { #军队
+			set_interest_group_name = ig_liberation_army #解放军
+			remove_ideology = ideology_loyalist #效忠派
+			add_ideology = ideology_proletarian #无产阶级主义者
+		}
+		add_modifier = {
+			name = land_reform #土改
+			months = very_long_modifier_time
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = the_peoples_army #人民的军队
+		}
+		add_modifier = {
+			name = injuries_from_the_anti_japanese_war_in_the_rear_of_the_enemy #敌后抗日之伤
+			years = 15
+			is_decaying = yes
+		}
+		add_modifier = {
+			name = ununified_china #未统一的祖国
+		}
+	}
+}

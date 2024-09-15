@@ -1,0 +1,85 @@
+law_unrestricted_labor = { #无限制劳动
+	group = lawgroup_labour_law
+	
+	icon = "gfx/interface/icons/law_icons/无限制劳动.dds"
+	
+	progressiveness = -150
+
+	modifier = {
+		building_throughput_add = 0.10 #全国建筑吞吐量（百分比）
+		interest_group_ig_industrialists_pol_str_mult = 0.5
+		state_laborers_mortality_mult = 0.05
+		state_machinists_mortality_mult = 0.05
+		state_radicals_from_sol_change_mult = 0.10
+	}
+
+}
+
+law_12_hour_working_system = { #十二小时工作制
+	group = lawgroup_labour_law
+	
+	icon = "gfx/interface/icons/law_icons/十二小时工作制.dds"
+	
+	progressiveness = -100
+	
+	modifier = {
+		building_minimum_wage_mult = 0.03
+		building_throughput_add = 0.07 #全国建筑吞吐量（百分比）
+		interest_group_ig_industrialists_pol_str_mult = 0.3
+		state_laborers_mortality_mult = 0.03
+		state_machinists_mortality_mult = 0.03
+		state_radicals_from_sol_change_mult = 0.05
+	}
+	
+}
+
+law_10_hour_working_system = { #十小时工作制
+	group = lawgroup_labour_law
+	
+	icon = "gfx/interface/icons/law_icons/十小时工作制.dds"
+	
+	progressiveness = 0
+	
+	modifier = {
+		building_throughput_add = 0.04
+		interest_group_ig_industrialists_pol_str_mult = 0.1
+	}
+	
+}
+
+law_8_hour_working_system = { #八小时工作制
+	group = lawgroup_labour_law
+	
+	icon = "gfx/interface/icons/law_icons/八小时工作制.dds"
+	
+	progressiveness = 100
+
+		unlocking_technologies = { #需要科技
+		tech_critical_school #劳工运动
+	}
+
+	modifier = {
+		building_minimum_wage_mult = 0.07
+		state_loyalists_from_sol_change_mult = 0.05
+	}
+	
+}
+
+law_6_hour_working_system = { #六小时工作制
+	group = lawgroup_labour_law
+	
+	icon = "gfx/interface/icons/law_icons/六小时工作制.dds"
+	
+	progressiveness = 250
+
+		unlocking_technologies = { #需要科技
+		tech_critical_school #人权
+	}
+
+	modifier = {
+		building_minimum_wage_mult = 0.10
+		building_throughput_add = -0.05 #全国建筑吞吐量（百分比）
+		state_loyalists_from_sol_change_mult = 0.10
+	}
+	
+}

@@ -1,0 +1,40 @@
+﻿DIPLOMACY = { #贸易协定	
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}				
+	}	
+	c:USA = {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}				
+	}	
+	c:GBR = {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}		
+		create_diplomatic_pact = {
+			country = c:POR
+			type = trade_agreement
+		}		
+		create_diplomatic_pact = {
+			country = c:BEL
+			type = trade_agreement
+		}		
+	}	
+	c:FRA = {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}				
+	}	
+	c:POR = {
+		create_diplomatic_pact = {
+			country = c:CHI
+			type = trade_agreement
+		}				
+	}
+}

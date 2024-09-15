@@ -1,0 +1,110 @@
+﻿l_english:
+
+## Output Multiplier
+
+modifier_building_output_service_mult:0 "Building @service! Service output "
+modifier_building_output_service_mult_desc:0 "A bonus or penalty to the amount of @service! Service produced by buildings"
+ 
+modifier_building_shipyards_employee_mult:0 "Shipyards Employees"
+modifier_building_shipyards_employee_mult_desc:0 "A bonus or penalty to the number of employees in Shipyards"
+
+modifier_building_ocean_mining_operation_input_mult:0 "Ocean Mining Operation Required Input"
+modifier_building_ocean_mining_operation_input_mult_desc:0 "A bonus or penalty to the input in Ocean Mining Operations"
+
+modifier_building_ocean_mining_operation_employee_mult:0 "Ocean Mining Operations Employees"
+modifier_building_ocean_mining_operation_employee_mult_desc:0 "A bonus or penalty to the number of employees in Ocean Mining Operations"
+
+modifier_ocean_mining_operation_throughput_add:0 "$ocean_mining_operation$ building [concept_throughput]"
+modifier_ocean_mining_operation_throughput_add_desc:0 "A bonus or penalty to both input and output of $ocean_mining_operation$"
+
+
+modifier_building_submerged_farm_throughput_add:0 "$submerged_farm$ building [concept_throughput]"
+modifier_building_submerged_farm_throughput_add_desc:0 "A bonus or penalty to both input and output of $submerged_farm$"
+
+modifier_building_vertical_farm_throughput_add:0 "$vertical_farm$ building [concept_throughput]"
+modifier_building_vertical_farm_throughput_add_desc:0 "A bonus or penalty to both input and output of $vertical_farm$"
+
+modifier_building_mega_greenhouse_throughput_add:0 "$mega_greenhouse$ building [concept_throughput]"
+modifier_building_mega_greenhouse_throughput_add_desc:0 "A bonus or penalty to both input and output of $mega_greenhouse$"
+
+# Outputs
+modifier_goods_output_radioactive_ore_add:0 "$radioactive_ore$ Output"
+modifier_goods_output_radioactive_ore_add_desc:0 "An increase or decrease to $radioactive_ore$ output."
+
+modifier_goods_output_nuclear_engines_add:0 "$nuclear_engines$ Output"
+modifier_goods_output_nuclear_engines_add_desc:0 "An increase or decrease to $nuclear_engines$ output."
+
+modifier_goods_output_irradiated_material_add:0 "$irradiated_material$ Output"
+modifier_goods_output_irradiated_material_add_desc:0 "An increase or decrease to $irradiated_material$ output."
+
+modifier_goods_output_nuclear_fuel_add:0 "$nuclear_fuel$ Output"
+modifier_goods_output_nuclear_fuel_add_desc:0 "An increase or decrease to $nuclear_fuel$ output."
+
+modifier_goods_output_nuclear_jet_add:0 "$nuclear_jet$ Output"
+modifier_goods_output_nuclear_jet_add_desc:0 "An increase or decrease to $nuclear_jet$ output."
+
+modifier_goods_output_programmables_add:0 "$programmables$ Output"
+modifier_goods_output_programmables_add_desc:0 "An increase or decrease to $programmables$ output."
+
+modifier_goods_output_research_and_engineering_add:0 "$research_and_engineering$ Output"
+modifier_goods_output_research_and_engineering_add_desc:0 "An increase or decrease to $research_and_engineering$ output."
+
+# Inputs
+modifier_goods_input_services_add:0 "$services$ Input"
+modifier_goods_input_services_add_desc:0 "An increase or decrease to $services$ input."
+
+modifier_goods_input_research_and_engineering_add:0 "$research_and_engineering$ Input"
+modifier_goods_input_research_and_engineering_add_desc:0 "An increase or decrease to $research_and_engineering$ input."
+
+modifier_goods_input_radioactive_ore_add:0 "$radioactive_ore$ Input"
+modifier_goods_input_radioactive_ore_add_desc:0 "An increase or decrease to $radioactive_ore$ input."
+
+modifier_goods_input_nuclear_engines_add:0 "$nuclear_engines$ Input"
+modifier_goods_input_nuclear_engines_add_desc:0 "An increase or decrease to $nuclear_engines$ input."
+
+modifier_goods_input_irradiated_material_add:0 "$irradiated_material$ Input"
+modifier_goods_input_irradiated_material_add_desc:0 "An increase or decrease to $irradiated_material$ input."
+
+modifier_goods_input_nuclear_fuel_add:0 "$nuclear_fuel$ Input"
+modifier_goods_input_nuclear_fuel_add_desc:0 "An increase or decrease to $nuclear_fuel$ input."
+
+modifier_goods_input_nuclear_jet_add:0 "$nuclear_jet$ Input"
+modifier_goods_input_nuclear_jet_add_desc:0 "An increase or decrease to $nuclear_jet$ input."
+
+modifier_goods_input_programmables_add:0 "$programmables$ Input"
+modifier_goods_input_programmables_add_desc:0 "An increase or decrease to $programmables$ input."
+
+# Outputs
+modifier_goods_output_radioactive_ore_mult:0 "$radioactive_ore$ Output"
+modifier_goods_output_radioactive_ore_mult_desc:0 "A bonus or penalty for the production of $radioactive_ore$."
+
+modifier_goods_output_irradiated_material_mult:0 "$irradiated_material$ Output"
+modifier_goods_output_irradiated_material_mult_desc:0 "A bonus or penalty for the production of $irradiated_material$."
+
+modifier_goods_output_nuclear_fuel_mult:0 "$nuclear_fuel$ Output"
+modifier_goods_output_nuclear_fuel_mult_desc:0 "A bonus or penalty for the production of $nuclear_fuel$."
+
+modifier_goods_output_nuclear_engines_mult:0 "$nuclear_engines$ Output"
+modifier_goods_output_nuclear_engines_mult_desc:0 "A bonus or penalty for the production of $nuclear_engines$."
+
+modifier_goods_output_nuclear_jet_mult:0 "$nuclear_jet$ Output"
+modifier_goods_output_nuclear_jet_mult_desc:0 "A bonus or penalty for the production of $nuclear_jet$."
+
+modifier_goods_output_programmables_mult:0 "$programmables$ Output"
+modifier_goods_output_programmables_mult_desc:0 "A bonus or penalty for the production of $programmables$."
+
+modifier_goods_output_research_and_engineering_mult:0 "$research_and_engineering$ Output"
+modifier_goods_output_research_and_engineering_mult_desc:0 "A bonus or penalty for the production of $research_and_engineering$."
+
+
+ ### Max Level Modifiers
+modifier_state_building_submerged_farm_max_level_add:0 "$building_submerged_farm$ Maximum Level"
+modifier_state_building_ocean_mining_operation_max_level_add:0 "$building_ocean_mining_operation$ Maximum Level"
+modifier_state_building_mega_greenhouse_max_level_add:0 "$building_mega_greenhouse$ Maximum Level"
+modifier_state_building_vertical_farm_max_level_add:0 "$building_vertical_farm$ Maximum Level"
+
+modifier_state_building_cloning_vats_max_level_add:0 "$building_cloning_vats$ Maximum Level"
+
+ ### Dummy Modifiers
+ modifier_building_monthly_clone_production:0 "Monthly Clone Production"
+ modifier_building_monthly_clone_production_desc:0 "This is a dummy modifier. \n\nFor any cloning vats with no goods shortage and over 60% workforce, 8,000 clones taking your primary culture and religion will be spawned each month, at 0.6 literacy and 25% work force ratio."

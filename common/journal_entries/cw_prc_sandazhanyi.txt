@@ -1,0 +1,66 @@
+je_prc_sandazhanyi = {  #三大战役
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	group = je_group_internal_affairs
+	
+	scripted_button = liaoshenzhanyi_button_key
+	scripted_button = pingjinzhanyi_button_key
+	scripted_button = huaihaizhanyi_button_key
+
+	is_shown_when_inactive = {
+		exists = c:PRC
+		c:PRC = ROOT
+		year <= 1949
+	}
+	
+	possible = {
+		exists = c:PRC
+		exists = c:CHI
+		c:PRC = ROOT
+		year <= 1949
+		has_war_with = c:CHI
+	}
+	
+	immediate = {
+		set_variable = {
+			name = liaoshenzhanyi_var
+			value = 0
+		}
+		
+		set_variable = {
+			name = pingjinzhanyi_var
+			value = 0
+		}
+		
+		set_variable = {
+			name = huaihaizhanyi_var
+			value = 0
+		}
+	}
+	
+	
+	complete = {
+		custom_tooltip = {
+			text = custom_je_prc_sandazhanyi
+			AND = {
+				var:liaoshenzhanyi_var = 1
+				var:pingjinzhanyi_var = 1
+				var:huaihaizhanyi_var = 1
+			}
+		}
+	}
+	
+	timeout = 1080
+	
+	on_complete = {
+		add_modifier = {
+			name = modifier_sandazhanyi
+			months = 12
+		}
+	}
+
+	should_be_pinned_by_default = yes
+
+
+
+}
