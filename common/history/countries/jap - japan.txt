@@ -10,25 +10,25 @@
 		
 		# Laws 
 		activate_law = law_type:law_monarchy #君主制
-		activate_law = law_type:law_non_militarized_country #非军事化国家
-		activate_law = law_type:law_total_separation #完全分离
-		activate_law = law_type:law_elected_bureaucrats #选举官僚制
+		activate_law = law_type:law_mass_conscription 
+		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_continental_law_system #大陆法系	
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_multicultural
+		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_free_trade #自由贸易
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_serfdom_banned
+
+		activate_law = law_type:law_tenant_farmers #佃农
   		activate_law = law_type:law_proportional_taxation #比例税制
 		activate_law = law_type:law_local_police #地方警察部队
-            	activate_law = law_type:law_public_health_insurance
-            	activate_law = law_type:law_womens_suffrage
-            	activate_law = law_type:law_universal_suffrage
+            	activate_law = law_type:law_no_health_system
+            	activate_law = law_type:law_women_own_property
+            	activate_law = law_type:law_oligarchy
 		activate_law = law_type:law_poor_laws
             	activate_law = law_type:law_compulsory_primary_school
-            	activate_law = law_type:law_8_hour_working_system
+            	activate_law = law_type:law_unrestricted_labor
 		
 		add_company = company_type:company_mitsubishi #三菱
 		company:company_mitsubishi = {
