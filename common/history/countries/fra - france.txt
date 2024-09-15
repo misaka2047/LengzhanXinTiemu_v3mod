@@ -80,5 +80,14 @@
 			name = modifier_haitian_independence_payments_1
 			years = 1
 		}
+
+		trigger_event = {
+			id = algerian_war.1
+		}
+
+		add_modifier = {
+			name = fra_military_weakness_modifier
+			years = 10
+		}
 	}
 }

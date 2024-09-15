@@ -1,0 +1,74 @@
+je_algerian_affair_main = {
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	group = je_group_historical_content
+
+	complete = {
+		has_law = law_type:law_multicultural 
+        has_law = law_type:law_total_separation
+		every_scope_state = {
+            OR = {
+                state_region = {
+                    is_homeland = cu:maghreb
+                }
+                state_region = {
+                     is_homeland = cu:berber
+                }
+             }
+			radical_fraction = {
+				value < 0.1
+			}
+            turmoil < 0.1
+		}
+	}
+
+	on_complete = {
+		trigger_event = {
+			id = algerian_war.3
+		}
+	}
+	fail = {
+		OR = {
+			any_scope_state = {
+                OR = {
+                    state_region = {
+                        is_homeland = cu:maghreb
+                    }
+                    state_region = {
+                        is_homeland = cu:berber
+                    }
+                }
+                OR = {
+                    radical_fraction = {
+                        value >= 0.40
+                        culture = cu:maghreb
+                    }
+                    radical_fraction = {
+                        value >= 0.40
+                        culture = cu:berber
+                    }
+                    turmoil >= 0.40
+                }
+			}
+            highest_secession_progress > 0.5
+		}
+	}
+
+	on_fail = {
+		trigger_event = {
+			id = algerian_war.2
+		}
+	}
+	timeout = 2000
+
+
+	on_timeout = {
+		trigger_event = {
+			id = algerian_war.2
+		}
+	}
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes 
+}

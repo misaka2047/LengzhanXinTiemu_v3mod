@@ -1,0 +1,100 @@
+namespace = algerian_war
+
+algerian_war.1 = {
+	type = country_event
+	placement = root
+	
+	title = algerian_war.1.t
+	desc = algerian_war.1.d
+	flavor = algerian_war.1.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3    
+
+    immediate = {
+    }
+
+    option = {
+        name = algerian_war.1.a
+        default_option = true
+        add_journal_entry = {
+            type = je_algerian_affair_main
+        }    
+    }
+}
+
+algerian_war.2 = {
+	type = country_event
+	placement = root
+	
+	title = algerian_war.2.t
+	desc = algerian_war.2.d
+	flavor = algerian_war.2.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3    
+
+    immediate = {
+		if = {
+			limit = {
+				NOT = { exists = c:ALD }
+			}
+			create_country = {
+				tag = ALD
+				origin = c:FRA
+				state = s:STATE_ALGIERS.region_state:FRA
+                state = s:STATE_CONSTANTINE.region_state:FRA
+                state = s:STATE_TLEMCEN.region_state:FRA
+                state = s:STATE_SAHARA.region_state:FRA
+                state = s:STATE_EAST_SAHARA.region_state:FRA
+			}
+		}
+    }
+
+    option = {
+        name = algerian_war.2.a
+        default_option = true
+		create_diplomatic_play = {
+			name = sepoy_mutiny
+			type = dp_annex_war
+			escalation = 0
+			target_state = s:STATE_ALGIERS.region_state:ALD
+		}       
+    }
+}
+
+algerian_war.3 = {
+    type = country_event
+    placement = root
+    
+    title = algerian_war.3.t
+    desc = algerian_war.3.d
+    flavor = algerian_war.3.f
+    event_image = {
+        video = "asia_sepoy_mutiny"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+    duration = 3    
+
+    immediate = {
+    }
+    option = {
+        name = algerian_war.3.a
+        default_option = true
+    }
+}
