@@ -89,5 +89,10 @@
 			name = fra_military_weakness_modifier
 			years = 10
 		}
+
+		add_modifier = {
+			name = fra_discrimination_modifier
+			years = 5
+		}
 	}
 }

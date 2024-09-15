@@ -1,9 +1,4 @@
-﻿fra_military_weakness_modifier = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	unit_offense_mult = -0.4
-}
-
-
+﻿
 free_speech_pamphlet_advance = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_law_enactment_success_add = 0.1
