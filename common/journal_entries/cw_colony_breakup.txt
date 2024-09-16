@@ -16,6 +16,30 @@ je_fra_colony_breakup = {
                                 }
                             }
                         }
+                        AND = {
+                            exists = c:LAO
+                            NOT = {
+                                c:LAO = {
+                                    is_subject_of = c:FRA
+                                }
+                            }
+                        }
+                        AND = {
+                            exists = c:CAM
+                            NOT = {
+                                c:CAM = {
+                                    is_subject_of = c:FRA
+                                }
+                            }
+                        }
+                        AND = {
+                            exists = c:MAD
+                            NOT = {
+                                c:MAD = {
+                                    is_subject_of = c:FRA
+                                }
+                            }
+                        }
                         exists = c:ALD
                         NOT = {
                             exists = c:AOF

@@ -10,7 +10,7 @@ je_algerian_affair_main = {
 			limit = {
 				OR = {
 					state_region = {
-						is_homeland = cu:maghreb
+						is_homeland = cu:maghrebi
 					}
 					state_region = {
 						is_homeland = cu:berber
@@ -34,7 +34,7 @@ je_algerian_affair_main = {
 			any_scope_state = {
                 OR = {
                     state_region = {
-                        is_homeland = cu:maghreb
+                        is_homeland = cu:maghrebi
                     }
                     state_region = {
                         is_homeland = cu:berber
@@ -43,7 +43,7 @@ je_algerian_affair_main = {
                 OR = {
                     radical_fraction = {
                         value >= 0.40
-                        culture = cu:maghreb
+                        culture = cu:maghrebi
                     }
                     radical_fraction = {
                         value >= 0.40
