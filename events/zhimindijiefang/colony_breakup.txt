@@ -1,5 +1,71 @@
 namespace = colony_breakup
 
+colony_breakup.1 = {
+	type = country_event
+	placement = root
+	
+	title = colony_breakup.1.t
+	desc = colony_breakup.1.d
+	flavor = colony_breakup.1.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+    immediate = {
+        set_variable = {
+            name = uk_colony_breakup_var
+            value = 0
+        }
+    }
+    option = {
+        name = colony_breakup.1.a
+        default_option = yes
+        add_journal_entry = {
+            type = je_uk_colony_breakup
+        }
+    }      
+}
+
+colony_breakup.2 = {
+	type = country_event
+	placement = root
+	
+	title = colony_breakup.2.t
+	desc = colony_breakup.2.d
+	flavor = colony_breakup.2.f
+	
+	event_image = {
+		video = "asia_sepoy_mutiny"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	
+	duration = 3
+
+    immediate = {
+        set_variable = {
+            name = fra_colony_breakup_var
+            value = 0
+        }
+    }
+    option = {
+        name = colony_breakup.2.a
+        default_option = yes
+        add_journal_entry = {
+            type = je_fra_colony_breakup
+        }
+    }      
+}
+
 colony_breakup.5 = { # 法国日志失败
 	type = country_event
 	placement = root

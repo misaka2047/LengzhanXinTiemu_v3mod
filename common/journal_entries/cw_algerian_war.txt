@@ -63,6 +63,9 @@ je_algerian_affair_main = {
 	}
 	timeout = 2000
 
+	invalid = {
+		exists = c:ALD
+	}
 
 	on_timeout = {
 		trigger_event = {
