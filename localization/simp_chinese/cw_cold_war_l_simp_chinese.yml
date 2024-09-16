@@ -1,0 +1,25 @@
+l_simp_chinese:
+  je_cold_war_main: "冷战"
+  je_cold_war_main_goal: "将进度条向对你有利的方向推进！"
+  je_cold_war_main_reason: "进度条的改变依赖于北约集团和华约集团的经济、军事和政治影响力的对比，同时，诸如太空竞赛等其他事件也将对进度条的推进起作用。当冷战其中一方的威望降低到世界霸权以下，或者其中一方具有了压倒性优势时，冷战结束。"
+
+  cold_war_core_progress_bar: "冷战"
+  cold_war_core_progress_bar_name: "冷战"
+  cold_war_core_progress_bar_usa_desc: "[GetGlobalVariable('cold_war_usa_progress').GetValue|1]#!"
+  cold_war_core_progress_bar_rus_desc: "[GetGlobalVariable('cold_war_rus_progress').GetValue|1]#!"
+  
+  je_nato: "北约"
+  je_nato_goal: "加入北约。"
+  je_nato_reason: "北约是一个由西方国家组成的军事联盟，旨在对抗苏联及其盟友。"
+  
+  je_warsaw_pact: "华约"
+  je_warsaw_pact_goal: "加入华约。"
+  je_warsaw_pact_reason: "华约是一个由苏联及其盟友组成的军事联盟，旨在对抗北约。"
+  
+  je_berlin_airlift: "柏林空运"
+  je_berlin_airlift_goal: "成功执行柏林空运任务。"
+  je_berlin_airlift_reason: "柏林空运是一次在冷战初期，美国和苏联之间的一次对抗。"
+  
+  je_cuban_missile_crisis: "古巴导弹危机"
+  je_cuban_missile_crisis_goal: "成功解决古巴导弹危机。"
+  je_cuban_missile_crisis_reason: "古巴导弹危机是冷战中一次美苏之间的危机。"
