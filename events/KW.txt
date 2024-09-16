@@ -119,12 +119,15 @@ KW_event.2 = {
 
 	icon = "gfx/interface/icons/event_icons/event_war.dds"
 	
-	trigger = { game_date > 1950.5.31
-		      this = c:RUS
-			  NOT = { has_variable = korean_war_ussr }	
-			  c:PRK = {
-				has_variable = korean_war_hiw				
-			  }
+	trigger = { 
+		game_date > 1950.5.31
+		exists = c:RUS
+		this = c:RUS
+		NOT = { has_variable = korean_war_ussr }	
+		exists = c:PRK
+		c:PRK = {
+			has_variable = korean_war_hiw				
+		}
     }
 	
 	immediate = {
@@ -163,12 +166,15 @@ KW_event.3 = {
 
 	icon = "gfx/interface/icons/event_icons/event_war.dds"
 	
-	trigger = { game_date > 1950.5.31
-		      this = c:USA
-			  NOT = { has_variable = korean_war_usa }	
-			  c:PRK = {
-				has_variable = korean_war_hiw				
-			  }				
+	trigger = { 
+		game_date > 1950.5.31
+		exists = c:USA
+		this = c:USA
+		NOT = { has_variable = korean_war_usa }	
+		exists = c:PRK
+		c:PRK = {
+			has_variable = korean_war_hiw				
+		}				
     }
 	
 	immediate = {
@@ -207,22 +213,24 @@ KW_event.4 = {
 
 	icon = "gfx/interface/icons/event_icons/event_war.dds"
 	
-	trigger = { game_date > 1950.6.25
-		      this = c:PRC	
-			  NOT = { has_variable = korean_war_chn }	
-			  c:PRK = {
-				has_variable = korean_war_hiw				
-			  }		
-			  c:USA = {
-				has_variable = korean_war_usa				
-			  }		
+	trigger = { 
+		game_date > 1950.6.25
+		exists = c:PRC
+		this = c:PRC	
+		NOT = { has_variable = korean_war_chn }	
+		exists = c:PRK
+		c:PRK = {
+			has_variable = korean_war_hiw				
+		}	
+		exists = c:USA	
+		c:USA = {
+			has_variable = korean_war_usa				
+		}		
     }
 	
 	immediate = {
-	
 		# Fire only once
 		set_variable = korean_war_chn						
-		
 	}	
 
 	

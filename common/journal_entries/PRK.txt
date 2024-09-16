@@ -9,15 +9,15 @@
 
 	is_shown_when_inactive = {
 		OR = {
-			c:PRK = ROOT
-			c:KOR = ROOT
+			c:PRK ?= ROOT
+			c:KOR ?= ROOT
 		}
 	}
 	
 	possible = {
 		OR = {
-			c:PRK = ROOT
-			c:KOR = ROOT
+			c:PRK ?= ROOT
+			c:KOR ?= ROOT
 		}
 	}
 

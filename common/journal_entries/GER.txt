@@ -10,15 +10,15 @@ je_ger = { #统一德国
 
 	is_shown_when_inactive = {
 		OR = {
-			c:DDR = ROOT
-			c:BRD = ROOT
+			c:DDR ?= ROOT
+			c:BRD ?= ROOT
 		}
 	}
 	
 	possible = {
 		OR = {
-			c:DDR = ROOT
-			c:BRD = ROOT
+			c:DDR ?= ROOT
+			c:BRD ?= ROOT
 		}
 	}
 

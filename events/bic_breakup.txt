@@ -44,5 +44,5 @@ bic_breakup.1 = {
 		ai_chance = {
 			base = 8 # this is the default pick for the AI
 	    }
-      ）
+	}
 }

@@ -10,15 +10,15 @@
 
 	is_shown_when_inactive = {
 		OR = {
-			c:PRC = ROOT
-			c:CHI = ROOT
+			c:PRC ?= ROOT
+			c:CHI ?= ROOT
 		}
 	}
 	
 	possible = {
 		OR = {
-			c:PRC = ROOT
-			c:CHI = ROOT
+			c:PRC ?= ROOT
+			c:CHI ?= ROOT
 		}
 	}
 
@@ -143,11 +143,11 @@ je_fragile_rule = { #脆弱的统治
 	group = je_group_foreign_affairs
 
 	is_shown_when_inactive = {
-			c:CHI = ROOT
+			c:CHI ?= ROOT
 	}
 	
 	possible = {
-			c:CHI = ROOT
+			c:CHI ?= ROOT
 	}
 
 	complete = {
