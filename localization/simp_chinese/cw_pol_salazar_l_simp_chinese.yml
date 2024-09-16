@@ -8,6 +8,10 @@
   je_salazar_main_goal: "完成一系列任务，将[ROOT.GetCountry.GetName]变成[ROOT.GetCountry.GetRuler.GetFullName]所设想的“新国家”。"
   je_salazar_main_reason: "传统天主教价值观、法团主义、殖民主义是[ROOT.GetCountry.GetRuler.GetFullName]独裁统治的基石。然而，[ROOT.GetCountry.GetRuler.GetLastName]博士的宏伟计划正遭受着冷战新格局的冲击——无论是美国所倡导的民主政治，还是苏联所倡导的共产主义，都与我们的规划背道而驰。正如那个流传已久的笑话一样，在历史的车道上，[ROOT.GetCountry.GetName]正目睹着其他国家逆行。"
 
+  salazar_ballet_rose_modifier: "芭蕾玫瑰丑闻"
+  salazar_ballet_rose_modifier_weaker: "言论管制"
+  salazar_successful_modifier: "新国家的成功"
+
   pol_salazar.2.t: "“芭蕾玫瑰”"
   pol_salazar.2.d: "近日，外国媒体对[ROOT.GetCountry.GetName]高层官员糜烂的生活方式进行了揭露，这无疑是对标榜禁欲与清廉的[ROOT.GetCountry.GetRuler.GetLastName]博士的一次重大打击——尽管并无证据表明[ROOT.GetCountry.GetRuler.GetFullName]本人参与其中。"
   pol_salazar.2.f: "一个臭名昭著的卖淫网络被外国媒体所报道，该网络的谣言一直在流传，涉及未成年人，即九岁和十岁的儿童，他们通常来自最贫困的地区。然而此前，从萨拉查本人到PIDE的主任，该政权尽一切努力掩盖此案与葡萄牙高层的关联。然而，根据外国媒体的报道，卷入性丑闻的人包括萨拉查政府的部长、军事人员、与工业、银行和高级金融机构有联系的大商人、贵族或教会成员。调查没有取得什么实际结果，案件最终没有对主要和最臭名昭著的肇事者定罪，而新国家的高级人物则更是毫发无伤。"
