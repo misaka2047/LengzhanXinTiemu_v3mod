@@ -1,0 +1,36 @@
+﻿l_simp_chinese:
+  pol_salazar.1.t: "新国家"
+  pol_salazar.1.d: "[ROOT.GetCountry.GetName]在[ROOT.GetCountry.GetRuler.GetFullName]的独裁统治下已经度过了第十三个年头。面对共产主义和民主政治的双重冲击，今日的[ROOT.GetCountry.GetName]是否还能如[ROOT.GetCountry.GetRuler.GetLastName]博士所愿，成为天主教传统道德所庇佑的“新国家”？"
+  pol_salazar.1.f: "我们的国家被怎样的人管理着？一个长期位居权力巅峰，却清心寡欲，不以公器国柄私授亲人的哲人王；一个相貌英俊，教养良好，却终身不婚的禁欲者；一个生活方面过分简朴，早餐连奶油和黄油都舍不得放的清教徒；一个性格孤僻，爱好阅读，研究哲学，没有不良嗜好，平日深居简出，很少露面的隐居者。"
+  pol_salazar.1.a: "令人困惑的领袖。"
+
+  je_salazar_main: "上帝、祖国和家庭"
+  je_salazar_main_goal: "完成一系列任务，将[ROOT.GetCountry.GetName]变成[ROOT.GetCountry.GetRuler.GetFullName]所设想的“新国家”。"
+  je_salazar_main_reason: "传统天主教价值观、法团主义、殖民主义是[ROOT.GetCountry.GetRuler.GetFullName]独裁统治的基石。然而，[ROOT.GetCountry.GetRuler.GetLastName]博士的宏伟计划正遭受着冷战新格局的冲击——无论是美国所倡导的民主政治，还是苏联所倡导的共产主义，都与我们的规划背道而驰。正如那个流传已久的笑话一样，在历史的车道上，[ROOT.GetCountry.GetName]正目睹着其他国家逆行。"
+
+  pol_salazar.2.t: "“芭蕾玫瑰”"
+  pol_salazar.2.d: "近日，外国媒体对[ROOT.GetCountry.GetName]高层官员糜烂的生活方式进行了揭露，这无疑是对标榜禁欲与清廉的[ROOT.GetCountry.GetRuler.GetLastName]博士的一次重大打击——尽管并无证据表明[ROOT.GetCountry.GetRuler.GetFullName]本人参与其中。"
+  pol_salazar.2.f: "一个臭名昭著的卖淫网络被外国媒体所报道，该网络的谣言一直在流传，涉及未成年人，即九岁和十岁的儿童，他们通常来自最贫困的地区。然而此前，从萨拉查本人到PIDE的主任，该政权尽一切努力掩盖此案与葡萄牙高层的关联。然而，根据外国媒体的报道，卷入性丑闻的人包括萨拉查政府的部长、军事人员、与工业、银行和高级金融机构有联系的大商人、贵族或教会成员。调查没有取得什么实际结果，案件最终没有对主要和最臭名昭著的肇事者定罪，而新国家的高级人物则更是毫发无伤。"
+  pol_salazar.2.a: "什么“洛丽塔狩猎”？部长的花园里什么也没有。"
+  pol_salazar.2.b: "出动秘密警察让他们闭嘴！"
+
+  pol_salazar.3.t: "[ROOT.GetCountry.GetRuler.GetFullName]的陨落"
+  pol_salazar.3.d: "据政府官员透露的消息所称，[ROOT.GetCountry.GetRuler.GetLastName]博士此前因摔倒而头部受伤。虽然在治疗后并无大碍，但就在昨日，其因中风而陷入昏迷。独裁者的意外使得[ROOT.GetCountry.GetName]陷入了权力真空。"
+  pol_salazar.3.f: "一向大权独揽的[ROOT.GetCountry.GetRuler.GetFullName]博士，如今却陷入昏迷，这一消息震惊了整个国家。所有人相信其已经命不久矣，而[ROOT.GetCountry.GetName]的未来也因此蒙上了一层阴影——或是迎来一丝曙光？"
+  pol_salazar.3.a: "[ROOT.GetCountry.GetRuler.GetFullName]走了，那新国家怎么办？"
+
+  pol_salazar.4.t: "再见萨拉查"
+  pol_salazar.4.d: "一个惊人的消息从前总理萨拉查博士的居所中传来——他已经从中风的昏迷中清醒过来。为了向这个曾经的独裁者隐瞒他不再大权独揽的事实，他的朋友们正在欺骗他，让他误以为自己还在统治着[ROOT.GetCountry.GetName]。"
+  pol_salazar.4.f: "在他的办公室里，萨拉查博士仍旧忙于公文的批改。他的朋友们递来最新编好的报纸，将他批改好的公文带走，仿佛他仍统治着一个不存在的葡萄牙。他深居简出、不喜社交的习惯帮了他的朋友们大忙，他从未怀疑过这一切是一个弥天大谎。"
+  pol_salazar.4.a: "生活在一个虚拟世界里的，只有他吗？"
+
+  pol_salazar.5.t: "萨拉查之死"
+  pol_salazar.5.d: "安东尼奥·德·奥利维拉·萨拉查，[ROOT.GetCountry.GetName]最负盛名的大独裁者，死在了他的办公室里——在因中风昏迷而被剥夺总理职务两年之后。"
+  pol_salazar.5.f: "有的人认为他是一个伟大的领袖，有的人认为他是一个独裁者，但无论如何，他都是[ROOT.GetCountry.GetName]历史再也绕不开的一部分——他让这个国家免于世界大战的战火，却也用反动的手段阻挠着[ROOT.GetCountry.GetName]的进步。一句客观的评价是：他如果生在中世纪，也许会成为最成功的司铎，最知名的修士。"
+  pol_salazar.5.a: "反动的“新国家”随着他的死而死去。"
+  pol_salazar.5.b: "我们将延续他的遗志。"
+
+  pol_salazar.6.t: "康乃馨革命"
+  pol_salazar.6.d: "军官团体组成的政变队伍终结了萨拉查残党的统治，他们的政变得到了民众的拥护。[ROOT.GetCountry.GetName]政府被“救国军政府”接替，[ROOT.GetCountry.GetName]的命运依旧晦涩不明。"
+  pol_salazar.6.f: "在康乃馨革命的背景下，[ROOT.GetCountry.GetName]的未来充满了不确定性。保守势力和武装部队运动激进分子矛盾开始激化，两者公然进行对抗。政府将这段混乱称之为“正在推进的革命历程”，但谁也不清楚新的政府会将这个千疮百孔的国家带向何方。"
+  pol_salazar.6.a: "沿途的民众在政变军人的枪管里放入一支康乃馨。"
