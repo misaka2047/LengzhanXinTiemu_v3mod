@@ -34,3 +34,7 @@
   pol_salazar.6.d: "军官团体组成的政变队伍终结了萨拉查残党的统治，他们的政变得到了民众的拥护。[ROOT.GetCountry.GetName]政府被“救国军政府”接替，[ROOT.GetCountry.GetName]的命运依旧晦涩不明。"
   pol_salazar.6.f: "在康乃馨革命的背景下，[ROOT.GetCountry.GetName]的未来充满了不确定性。保守势力和武装部队运动激进分子矛盾开始激化，两者公然进行对抗。政府将这段混乱称之为“正在推进的革命历程”，但谁也不清楚新的政府会将这个千疮百孔的国家带向何方。"
   pol_salazar.6.a: "沿途的民众在政变军人的枪管里放入一支康乃馨。"
+
+  pol_salazar.7.t: "上帝、祖国和家庭"
+  pol_salazar.7.d: "[ROOT.GetCountry.GetRuler.GetFullName]带领[ROOT.GetCountry.GetName]建成了“新国家”——一个天主教道德约束着的，各阶级在国家威权协作下井然有序合作的乌托邦之国。"
+  pol_salazar.7.f: "在[ROOT.GetCountry.GetRuler.GetFullName]的统治下，[ROOT.GetCountry.GetName]的经济得到了稳步发展，社会秩序得到了维护，国家的声誉也在国际上得到了提升。[ROOT.GetCountry.GetRuler.GetFullName]的统治虽然有其缺点，但他的确为[ROOT.GetCountry.GetName]带来了一段相对稳定的时期。"

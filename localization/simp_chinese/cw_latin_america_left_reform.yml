@@ -39,7 +39,7 @@ l_simp_chinese:
 
  latin_america_left_reform.8.t: "[ROOT.GetCountry.GetRuler.GetFullName]之死"
  latin_america_left_reform.8.d: "[ROOT.GetCountry.GetRuler.GetFullName]在政变军队的包围下选择自尽，军事政变者宣布将建立军政府统治。"
- latin_america_left_reform.8.f: "11点30分，[SCOPE.sCharacter('armed_forces_leader').GetLastName]发出最后通牒，[ROOT.GetCountry.GetRuler.GetLastName]拒绝投降。\n12点左右，两家猎鹰飞机飞临府邸上空，精准地投下了至少18枚炸弹，十几门大炮同时开火，[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]府邸一片火海。\n13点30分，叛军发起最后的进攻，此时[ROOT.GetCountry.GetRuler.GetLastName]身边只剩下几十名忠诚的卫士。\n13点50分，[ROOT.GetCountry.GetRuler.GetLastName]遣散了他的卫士，要求卫士们投降，不做无谓的牺牲。\n14点，[ROOT.GetCountry.GetRuler.GetLastName]使用步枪自尽。"
+ latin_america_left_reform.8.f: "11点30分，[SCOPE.sCharacter('armed_forces_leader').GetLastName]发出最后通牒，[ROOT.GetCountry.GetRuler.GetFullName]拒绝投降。\n12点左右，两家猎鹰飞机飞临府邸上空，精准地投下了至少18枚炸弹，十几门大炮同时开火，[ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]府邸一片火海。\n13点30分，叛军发起最后的进攻，此时[ROOT.GetCountry.GetRuler.GetLastName]身边只剩下几十名忠诚的卫士。\n13点50分，[ROOT.GetCountry.GetRuler.GetLastName]遣散了他的卫士，要求卫士们投降，不做无谓的牺牲。\n14点，[ROOT.GetCountry.GetRuler.GetLastName]使用步枪自尽。"
  latin_america_left_reform.8.a: "[SCOPE.sCharacter('armed_forces_leader').GetFullName]和这一切的幕后黑手，他们得逞了。"
 
  latin_america_left_reform.9.t: "镇压残余的社会主义运动"
