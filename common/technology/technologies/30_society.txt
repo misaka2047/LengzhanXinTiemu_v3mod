@@ -1,4 +1,4 @@
-labor_movement = { #ÀÍ¹¤ÔË¶¯
+labor_movement = { #åŠ³å·¥è¿åŠ¨
 	# Unlocks Regulatory Bodies - Labor Rights Law
 	# Unlocks Restricted Child Labor - Children's Rights Laws
 	# Unlocks Wage Controls - Social Security Laws
@@ -37,7 +37,7 @@ labor_movement = { #ÀÍ¹¤ÔË¶¯
 	}
 }
 
-socialism = { #¹²²úÖ÷Òå
+socialism = { #å…±äº§ä¸»ä¹‰
 	# Unlocks Council Republic - Governance Principles Law
 	# Unlocks Graduated Taxation - Income Taxation Law
 	# New leaders may spawn with the Social Democrat, Communist Ideologies
@@ -74,9 +74,9 @@ socialism = { #¹²²úÖ÷Òå
 	}
 }
 
-tech_marxism = {#Âí¿ËË¼ÁĞÄşÖ÷Òå
+tech_marxism = { #é©¬å…‹æ€åˆ—å®ä¸»ä¹‰
 	era = era_2
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/socialism.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -90,9 +90,9 @@ country_institution_social_security_max_investment_add = 1
 country_institution_workplace_safety_max_investment_add = 1
 	}
 }
-tech_critical_school = {#ÅúÅĞÑ§ÅÉ
+tech_critical_school = { #æ‰¹åˆ¤å­¦æ´¾
 	era = era_3
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/enlistment_offices.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -106,9 +106,9 @@ country_institution_social_security_max_investment_add = 1
 country_agitator_slots_add = 1
 	}
 }
-tech_neo_marxism = {#ĞÂÂí¿ËË¼Ö÷Òå
+tech_neo_marxism = { #æ–°é©¬å…‹æ€ä¸»ä¹‰
 	era = era_4
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/socialism.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -134,9 +134,9 @@ country_institution_workplace_safety_max_investment_add = 1
 		}
 	}
 }
-tech_capital_in_the_21st_century = {#¡¶21ÊÀ¼Í×Ê±¾ÂÛ¡·
+tech_capital_in_the_21st_century = { #ã€Š21ä¸–çºªèµ„æœ¬è®ºã€‹
 	era = era_5
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/socialism.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -150,9 +150,9 @@ modifier = {
 country_institution_social_security_max_investment_add = 1
 	}
 }
-tech_positivism = {#ÊµÖ¤Ö÷Òå
+tech_positivism = { #å®è¯ä¸»ä¹‰
 	era = era_1
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/socialism.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -164,9 +164,9 @@ modifier = {
 		country_prestige_mult = 0.05
 	}
 }
-tech_empirical_school = {#¾­ÑéÑ§ÅÉ
+tech_empirical_school = { #ç»éªŒå­¦æ´¾
 	era = era_2
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/academia.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -181,9 +181,9 @@ country_institution_schools_max_investment_add = 1
 state_education_access_wealth_add = 0.005
 	}
 }
-tech_media_environment_school = {#Ã½½é»·¾³Ñ§ÅÉ
+tech_media_environment_school = { #åª’ä»‹ç¯å¢ƒå­¦æ´¾
 	era = era_4
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/academia.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -196,10 +196,9 @@ modifier = {
 		state_radicals_from_sol_change_accepted_culture_mult = -0.10
 	}
 }
-tech_marxist_political_economics = {#Âí¿ËË¼Ö÷ÒåÕşÖÎ¾­¼ÃÑ§
+tech_marxist_political_economics = { #é©¬å…‹æ€ä¸»ä¹‰æ”¿æ²»ç»æµå­¦
 	era = era_3
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
-	category = society
+	texture = "gfx\interface\icons\invention_icons/socialism.dds"
 	ai_weight = {
 		value = 1
 	}
@@ -212,9 +211,9 @@ country_institution_social_security_max_investment_add = 1
 country_institution_workplace_safety_max_investment_add = 1
 	}
 }
-tech_economics_foundations = {#¾­¼ÃÑ§»ù´¡
+tech_economics_foundations = { #ç»æµå­¦åŸºç¡€
 	era = era_1
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/currency_standards.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -227,9 +226,9 @@ modifier = {
 country_loan_interest_rate_add = -0.02
 	}
 }
-tech_keynesianism = {#¿­¶÷Ë¹Ö÷Òå
+tech_keynesianism = { #å‡¯æ©æ–¯ä¸»ä¹‰
 	era = era_2
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/postal_savings.dds"
 	category = society
 	ai_weight = {
 		value = 2
@@ -238,12 +237,12 @@ tech_keynesianism = {#¿­¶÷Ë¹Ö÷Òå
 		tech_economics_foundations
 	}
 modifier = {
-		state_farmers_investment_pool_efficiency_mult = 0.15
-state_shopkeepers_investment_pool_efficiency_mult = 0.15
-building_cash_reserves_mult = 0.2
+		state_capitalists_investment_pool_efficiency_mult = 0.15
+		state_shopkeepers_investment_pool_efficiency_mult = 0.15
+		building_cash_reserves_mult = 0.2
 	}
 }
-tech_phillips_curve_and_is_lm_model = {#·ÆÀûÆÕË¹ÇúÏßÓëIS-LMÄ£ĞÍ
+tech_phillips_curve_and_is_lm_model = { #è²åˆ©æ™®æ–¯æ›²çº¿ä¸IS-LMæ¨¡å‹
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -257,9 +256,9 @@ modifier = {
 		country_government_dividends_efficiency_add = 0.05
 	}
 }
-tech_new_keynesianism = {#ĞÂ¿­¶÷Ë¹Ö÷Òå
+tech_new_keynesianism = { #æ–°å‡¯æ©æ–¯ä¸»ä¹‰
 	era = era_4
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx\interface\icons\invention_icons/postal_savings.dds"
 	category = society
 	ai_weight = {
 		value = 2
@@ -274,7 +273,7 @@ state_capitalists_investment_pool_contribution_add = 0.10
 country_government_dividends_efficiency_add = 0.05
 	}
 }
-tech_general_equilibrium_theory = {#Ò»°ã¾ùºâÀíÂÛ
+tech_general_equilibrium_theory = { #ä¸€èˆ¬å‡è¡¡ç†è®º
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -288,7 +287,7 @@ modifier = {
 		country_government_dividends_efficiency_add = 0.05
 	}
 }
-tech_behavioral_economics = {#ĞĞÎª¾­¼ÃÑ§
+tech_behavioral_economics = { #è¡Œä¸ºç»æµå­¦
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -305,7 +304,7 @@ state_capitalists_investment_pool_contribution_add = 0.10
 country_government_dividends_efficiency_add = 0.05
 	}
 }
-tech_neoclassical_economics = {#ĞÂ¹Åµä¾­¼ÃÑ§
+tech_neoclassical_economics = { #æ–°å¤å…¸ç»æµå­¦
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -320,7 +319,7 @@ modifier = {
 ountry_loan_interest_rate_add = -0.02
 	}
 }
-tech_austrian_school = {#°ÂµØÀûÑ§ÅÉ
+tech_austrian_school = { #å¥¥åœ°åˆ©å­¦æ´¾
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -335,7 +334,7 @@ modifier = {
 ountry_loan_interest_rate_add = -0.02
 	}
 }
-tech_monetarism = {#»õ±ÒÖ÷Òå
+tech_monetarism = { #è´§å¸ä¸»ä¹‰
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -350,7 +349,7 @@ modifier = {
 country_loan_interest_rate_add = -0.02
 	}
 }
-tech_solow_model = {#Ë÷ÂåÄ£ĞÍ
+tech_solow_model = { #ç´¢æ´›æ¨¡å‹
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -364,7 +363,7 @@ modifier = {
 		building_economy_of_scale_level_cap_add = 10
 	}
 }
-tech_second_generation_neoclassical_economics = {#µÚ¶ş´úĞÂ¹Åµä¾­¼ÃÑ§
+tech_second_generation_neoclassical_economics = { #ç¬¬äºŒä»£æ–°å¤å…¸ç»æµå­¦
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -380,7 +379,7 @@ modifier = {
 country_minting_mult = 0.2
 	}
 }
-tech_endogenous_growth_theory = {#ÄÚÉúÔö³¤ÀíÂÛ
+tech_endogenous_growth_theory = { #å†…ç”Ÿå¢é•¿ç†è®º
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -396,7 +395,7 @@ modifier = {
 country_loan_interest_rate_add = -0.02
 	}
 }
-tech_supply_side_school = {#¹©¸øÑ§ÅÉ
+tech_supply_side_school = { #ä¾›ç»™å­¦æ´¾
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -410,7 +409,7 @@ modifier = {
 		building_economy_of_scale_level_cap_add = 10
 	}
 }
-tech_chicago_school = {#Ö¥¼Ó¸çÑ§ÅÉ
+tech_chicago_school = { #èŠåŠ å“¥å­¦æ´¾
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -425,7 +424,7 @@ modifier = {
 building_economy_of_scale_level_cap_add = 5
 	}
 }
-tech_neoliberalism = {#ĞÂ×ÔÓÉÖ÷Òå
+tech_neoliberalism = { #æ–°è‡ªç”±ä¸»ä¹‰
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -440,7 +439,7 @@ modifier = {
 		building_economy_of_scale_level_cap_add = 20
 	}
 }
-tech_scientific_management_theory = {#¿ÆÑ§¹ÜÀíÀíÂÛ
+tech_scientific_management_theory = { #ç§‘å­¦ç®¡ç†ç†è®º
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -452,10 +451,10 @@ tech_scientific_management_theory = {#¿ÆÑ§¹ÜÀíÀíÂÛ
 	}
 modifier = {
 		country_max_companies_add = 2
-state_urbanization_per_level_mult = -0.05
+		state_urbanization_per_level_mult = -0.05
 	}
 }
-tech_14_management_principles = {#14Ìõ¹ÜÀíÔ­Ôò
+tech_14_management_principles = { #14æ¡ç®¡ç†åŸåˆ™
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -470,7 +469,7 @@ modifier = {
 state_urbanization_per_level_mult = -0.05
 	}
 }
-tech_behavioral_science_school = {#ĞĞÎª¿ÆÑ§Ñ§ÅÉ
+tech_behavioral_science_school = { #è¡Œä¸ºç§‘å­¦å­¦æ´¾
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -487,7 +486,7 @@ state_urbanization_per_level_mult = -0.05
 country_institution_workplace_safety_max_investment_add = 1
 	}
 }
-tech_strategic_management = {#Õ½ÂÔ¹ÜÀí
+tech_strategic_management = { #æˆ˜ç•¥ç®¡ç†
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -503,7 +502,7 @@ state_urbanization_per_level_mult = -0.05
 country_company_construction_efficiency_bonus_add = 0.1
 	}
 }
-tech_listen_to_the_master_of_masters = {#Ìı´óÊ¦ÖĞµÄ´óÊ¦Ëµ
+tech_listen_to_the_master_of_masters = { #å¬å¤§å¸ˆä¸­çš„å¤§å¸ˆè¯´
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -518,7 +517,7 @@ modifier = {
 state_urbanization_per_level_mult = -0.05
 	}
 }
-tech_modern_management = {#ÏÖ´ú¹ÜÀíÑ§
+tech_modern_management = { #ç°ä»£ç®¡ç†å­¦
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -534,7 +533,7 @@ modifier = {
 state_urbanization_per_level_mult = -0.05
 	}
 }
-tech_existentialism = {#´æÔÚÖ÷Òå
+tech_existentialism = { #å­˜åœ¨ä¸»ä¹‰
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -548,7 +547,7 @@ modifier = {
 		country_prestige_mult = 0.05
 	}
 }
-tech_modernism = {#ÏÖ´úÖ÷Òå
+tech_modernism = { #ç°ä»£ä¸»ä¹‰
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -562,7 +561,7 @@ modifier = {
 		country_prestige_mult = 0.05
 	}
 }
-tech_postmodernism = {#ºóÏÖ´úÖ÷Òå
+tech_postmodernism = { #åç°ä»£ä¸»ä¹‰
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -575,8 +574,19 @@ tech_postmodernism = {#ºóÏÖ´úÖ÷Òå
 modifier = {
 		country_prestige_mult = 0.05
 	}
+	on_researched = {
+		if = {
+			limit = {
+				NOT = { has_variable = socialism_researched }
+			}
+			set_variable = socialism_researched
+			ig:ig_intelligentsia = {
+				add_ideology = ideology_feminist_ig #æ–°å¥³æƒä¸»ä¹‰
+			}
+		}
+	}
 }
-tech_power_supply = {#µçÁ¦¹©Ó¦
+tech_power_supply = { #ç”µåŠ›ä¾›åº”
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -587,9 +597,9 @@ tech_power_supply = {#µçÁ¦¹©Ó¦
 		tech_public_policy_and_management
 	}
 }
-tech_application_of_computer_city_management = {#¼ÆËã»ú³ÇÊĞ¹ÜÀíÓ¦ÓÃ
+tech_application_of_computer_city_management = { #è®¡ç®—æœºåŸå¸‚ç®¡ç†åº”ç”¨
 	era = era_3
-	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -597,8 +607,14 @@ tech_application_of_computer_city_management = {#¼ÆËã»ú³ÇÊĞ¹ÜÀíÓ¦ÓÃ
 	unlocking_technologies = {
 		tech_power_supply
 	}
+modifier = {
+		state_infrastructure_from_population_add = 0.05
+		state_infrastructure_from_population_max_add = 10 
+		state_market_access_price_impact = 0.05 #å¸‚åœºæ¥å…¥åº¦çš„ä»·æ ¼å½±å“
+		state_urbanization_per_level_mult = -0.05
+	}
 }
-tech_internet = {#»¥ÁªÍø
+tech_internet = { #äº’è”ç½‘
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -608,8 +624,13 @@ tech_internet = {#»¥ÁªÍø
 	unlocking_technologies = {
 		tech_application_of_computer_city_management
 	}
+modifier = {
+		country_weekly_innovation_max_add = 10 #ç§‘æŠ€é€²åº¦ä¸Šé™/æœ€å¤§åˆ›æ–°åŠ›æŠ•å…¥
+		state_bureaucracy_population_base_cost_factor_mult = -0.05
+		state_tax_capacity_add = 25
+	}
 }
-tech_big_data = {#´óÊı¾İ
+tech_big_data = { #å¤§æ•°æ®
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -620,7 +641,7 @@ tech_big_data = {#´óÊı¾İ
 		tech_internet
 	}
 }
-tech_sanitation_operation = {#»·ÎÀÔË×÷
+tech_sanitation_operation = { #ç¯å«è¿ä½œ
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -631,7 +652,7 @@ tech_sanitation_operation = {#»·ÎÀÔË×÷
 		
 	}
 }
-tech_urban_operation_and_maintenance = {#³ÇÊĞÔËÎ¬
+tech_urban_operation_and_maintenance = { #åŸå¸‚è¿ç»´
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -645,7 +666,7 @@ modifier = {
 		state_building_highway_max_level_add = 1
 	}
 }
-tech_department_store = {#°Ù»õ´óÂ¥
+tech_department_store = { #ç™¾è´§å¤§æ¥¼
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -656,7 +677,7 @@ tech_department_store = {#°Ù»õ´óÂ¥
 		tech_urban_operation_and_maintenance
 	}
 }
-tech_civil_aviation = {#ÃñÓÃº½¿Õ
+tech_civil_aviation = { #æ°‘ç”¨èˆªç©º
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -667,7 +688,7 @@ tech_civil_aviation = {#ÃñÓÃº½¿Õ
 		tech_public_policy_and_management
 	}
 }
-tech_aviation_management = {#º½¿Õ¹ÜÀí
+tech_aviation_management = { #èˆªç©ºç®¡ç†
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -678,7 +699,7 @@ tech_aviation_management = {#º½¿Õ¹ÜÀí
 		tech_civil_aviation
 	}
 }
-tech_civil_aviation_equipment = {#ÃñÓÃº½¿ÕÉè±¸
+tech_civil_aviation_equipment = { #æ°‘ç”¨èˆªç©ºè®¾å¤‡
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -689,7 +710,7 @@ tech_civil_aviation_equipment = {#ÃñÓÃº½¿ÕÉè±¸
 		tech_aviation_management
 	}
 }
-tech_literary_creation = {#ÎÄÑ§´´×÷
+tech_literary_creation = { #æ–‡å­¦åˆ›ä½œ
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -700,7 +721,7 @@ tech_literary_creation = {#ÎÄÑ§´´×÷
 		
 	}
 }
-tech_multimedia = {#¶àÃ½Ìå
+tech_multimedia = { #å¤šåª’ä½“
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -711,7 +732,7 @@ tech_multimedia = {#¶àÃ½Ìå
 		tech_literary_creation
 	}
 }
-tech_video_production_and_editing = {#ÊÓÆµÖÆ×÷¼ô¼­
+tech_video_production_and_editing = { #è§†é¢‘åˆ¶ä½œå‰ªè¾‘
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -722,7 +743,7 @@ tech_video_production_and_editing = {#ÊÓÆµÖÆ×÷¼ô¼­
 		tech_multimedia
 	}
 }
-tech_film_and_television_special_effects = {#Ó°ÊÓÌØĞ§
+tech_film_and_television_special_effects = { #å½±è§†ç‰¹æ•ˆ
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -734,7 +755,7 @@ tech_film_and_television_special_effects = {#Ó°ÊÓÌØĞ§
 tech_video_production_and_editing
 	}
 }
-tech_3d_film_modeling = {#ÈıÎ¬µçÓ°½¨Ä£
+tech_3d_film_modeling = { #ä¸‰ç»´ç”µå½±å»ºæ¨¡
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -745,7 +766,7 @@ tech_3d_film_modeling = {#ÈıÎ¬µçÓ°½¨Ä£
 		tech_film_and_television_special_effects
 	}
 }
-tech_construction_department = {#Ê©¹¤²¿ÃÅ
+tech_construction_department = { #æ–½å·¥éƒ¨é—¨
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -763,7 +784,7 @@ country_max_weekly_construction_progress_add = 20
 market_land_trade_capacity_add = 50
 	}
 }
-tech_cement = {#Ë®Äà
+tech_cement = { #æ°´æ³¥
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -774,7 +795,7 @@ tech_cement = {#Ë®Äà
 		tech_construction_department
 	}
 }
-tech_reinforced_concrete = {#¸Ö½î»ìÄıÍÁ
+tech_reinforced_concrete = { #é’¢ç­‹æ··å‡åœŸ
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -787,7 +808,7 @@ tech_urban_operation_and_maintenance
 tech_modernism
 	}
 }
-tech_lightweight_building_materials = {#ÇáĞÍ½¨Öş²ÄÁÏ
+tech_lightweight_building_materials = { #è½»å‹å»ºç­‘ææ–™
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -798,7 +819,7 @@ tech_lightweight_building_materials = {#ÇáĞÍ½¨Öş²ÄÁÏ
 		tech_reinforced_concrete
 	}
 }
-tech_construction_tools = {#Ê©¹¤¹¤¾ß
+tech_construction_tools = { #æ–½å·¥å·¥å…·
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -810,7 +831,7 @@ tech_construction_tools = {#Ê©¹¤¹¤¾ß
 tech_road_administration_department
 	}
 }
-tech_complete_construction_vehicles = {#Íê±¸Ê©¹¤³µÁ¾
+tech_complete_construction_vehicles = { #å®Œå¤‡æ–½å·¥è½¦è¾†
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -826,7 +847,7 @@ modifier = {
 		state_building_highway_max_level_add = 1
 	}
 }
-tech_complete_construction_machinery = {#Íê±¸Ê©¹¤»úĞµ
+tech_complete_construction_machinery = { #å®Œå¤‡æ–½å·¥æœºæ¢°
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -843,7 +864,7 @@ modifier = {
 		state_building_highway_max_level_add = 1
 	}
 }
-tech_real_estate_development = {#·¿µØ²ú¿ª·¢
+tech_real_estate_development = { #æˆ¿åœ°äº§å¼€å‘
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -854,7 +875,7 @@ tech_real_estate_development = {#·¿µØ²ú¿ª·¢
 		
 	}
 }
-tech_real_estate_agency = {#µØ²úÖĞ½é
+tech_real_estate_agency = { #åœ°äº§ä¸­ä»‹
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -865,7 +886,7 @@ tech_real_estate_agency = {#µØ²úÖĞ½é
 		tech_real_estate_development
 	}
 }
-tech_giant_tower_crane = {#¾ŞĞÍËşµõ
+tech_giant_tower_crane = { #å·¨å‹å¡”åŠ
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -876,7 +897,7 @@ tech_giant_tower_crane = {#¾ŞĞÍËşµõ
 		tech_real_estate_agency
 	}
 }
-tech_civil_air_conditioner = {#ÃñÓÃ¿Õµ÷
+tech_civil_air_conditioner = { #æ°‘ç”¨ç©ºè°ƒ
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -892,7 +913,7 @@ country_institution_workplace_safety_max_investment_add = 1
 state_pollution_reduction_health_mult = -0.1
 	}
 }
-tech_gas_air_conditioner = {#È¼Æø¿Õµ÷
+tech_gas_air_conditioner = { #ç‡ƒæ°”ç©ºè°ƒ
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -908,7 +929,7 @@ country_institution_workplace_safety_max_investment_add = 1
 state_pollution_reduction_health_mult = -0.1
 	}
 }
-tech_inverter_air_conditioner = {#±äÆµ¿Õµ÷
+tech_inverter_air_conditioner = { #å˜é¢‘ç©ºè°ƒ
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -924,7 +945,7 @@ country_institution_workplace_safety_max_investment_add = 1
 state_pollution_reduction_health_mult = -0.1
 	}
 }
-tech_office_service = {#°ì¹«·şÎñ
+tech_office_service = { #åŠå…¬æœåŠ¡
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -935,7 +956,7 @@ tech_office_service = {#°ì¹«·şÎñ
 		tech_public_policy_and_management
 	}
 }
-tech_electronic_office = {#µç×Ó°ì¹«
+tech_electronic_office = { #ç”µå­åŠå…¬
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -947,7 +968,7 @@ tech_electronic_office = {#µç×Ó°ì¹«
 tech_bureaucracy_theory
 	}
 }
-tech_file_management = {#µµ°¸¹ÜÀí
+tech_file_management = { #æ¡£æ¡ˆç®¡ç†
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -959,7 +980,7 @@ tech_file_management = {#µµ°¸¹ÜÀí
 tech_new_public_management
 	}
 }
-tech_computer_office = {#¼ÆËã»ú°ì¹«
+tech_computer_office = { #è®¡ç®—æœºåŠå…¬
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -974,7 +995,7 @@ modifier = {
 		state_tax_capacity_add = 25
 	}
 }
-tech_office_supplies = {#°ì¹«ÓÃÆ·
+tech_office_supplies = { #åŠå…¬ç”¨å“
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -985,7 +1006,7 @@ tech_office_supplies = {#°ì¹«ÓÃÆ·
 		tech_office_service
 	}
 }
-tech_printer = {#´òÓ¡»ú
+tech_printer = { #æ‰“å°æœº
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -996,7 +1017,7 @@ tech_printer = {#´òÓ¡»ú
 		tech_office_supplies
 	}
 }
-tech_office_professional_software = {#°ì¹«×¨ÒµÈí¼ş
+tech_office_professional_software = { #åŠå…¬ä¸“ä¸šè½¯ä»¶
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1008,7 +1029,7 @@ tech_office_professional_software = {#°ì¹«×¨ÒµÈí¼ş
 tech_application_of_computer_city_management
 	}
 }
-tech_public_policy_and_management = {#¹«¹²Õş²ßÓë¹ÜÀí
+tech_public_policy_and_management = { #å…¬å…±æ”¿ç­–ä¸ç®¡ç†
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1025,7 +1046,7 @@ country_institution_schools_max_investment_add = 1
 	}
 }
 
-tech_road_administration_department = {#Â·Õş²¿ÃÅ
+tech_road_administration_department = { #è·¯æ”¿éƒ¨é—¨
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1044,7 +1065,7 @@ country_max_weekly_construction_progress_add = 20
 market_land_trade_capacity_add = 10
 	}
 }
-tech_bureaucracy_theory = {#¹ÙÁÅÖ÷ÒåÀíÂÛ
+tech_bureaucracy_theory = { #å®˜åƒšä¸»ä¹‰ç†è®º
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1060,7 +1081,7 @@ country_institution_home_affairs_max_investment_add = 1
 state_bureaucracy_population_base_cost_factor_mult = -0.05
 	}
 }
-tech_new_public_management = {#ĞÂ¹«¹²¹ÜÀí
+tech_new_public_management = { #æ–°å…¬å…±ç®¡ç†
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1078,7 +1099,7 @@ country_max_weekly_construction_progress_add = 20
 market_land_trade_capacity_add = 10
 	}
 }
-tech_law_enforcement_department = {#Ö´·¨²¿ÃÅ
+tech_law_enforcement_department = { #æ‰§æ³•éƒ¨é—¨
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1092,7 +1113,7 @@ modifier = {
 		country_institution_police_max_investment_add = 2
 	}
 }
-tech_advanced_education_system = {#ÏÈ½ø½ÌÓıÏµÍ³
+tech_advanced_education_system = { #å…ˆè¿›æ•™è‚²ç³»ç»Ÿ
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1108,7 +1129,7 @@ modifier = {
 state_education_access_wealth_add = 0.005
 	}
 }
-tech_port_management = {#¸Û¿Ú¹ÜÀí
+tech_port_management = { #æ¸¯å£ç®¡ç†
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1122,7 +1143,7 @@ modifier = {
 		state_building_port_max_level_add = 5
 	}
 }
-tech_smart_port = {#ÖÇ»Û¸Û¿Ú
+tech_smart_port = { #æ™ºæ…§æ¸¯å£
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1136,7 +1157,7 @@ modifier = {
 		state_building_port_max_level_add = 5
 	}
 }
-tech_giant_cruise_ship = {#¾ŞĞÍÓÊÂÖ
+tech_giant_cruise_ship = { #å·¨å‹é‚®è½®
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1150,7 +1171,7 @@ modifier = {
 		state_building_port_max_level_add = 5
 	}
 }
-tech_material_science = {#²ÄÁÏ¿ÆÑ§
+tech_material_science = { #ææ–™ç§‘å­¦
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1161,7 +1182,7 @@ tech_material_science = {#²ÄÁÏ¿ÆÑ§
 		tech_positivism
 	}
 }
-tech_power_mechanical_engineering = {#¶¯Á¦»úĞµ¹¤³Ì
+tech_power_mechanical_engineering = { #åŠ¨åŠ›æœºæ¢°å·¥ç¨‹
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1176,7 +1197,7 @@ modifier = {
 		state_building_research_institution_max_level_add = 1
 	}
 }
-tech_communication_and_astronautics = {#Í¨ĞÅÓëº½ÌìÑ§
+tech_communication_and_astronautics = { #é€šä¿¡ä¸èˆªå¤©å­¦
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1189,7 +1210,7 @@ tech_civil_air_conditioner
 tech_electronic_office
 	}
 }
-tech_computer_ai_science = {#¼ÆËã»úAI¿ÆÑ§
+tech_computer_ai_science = { #è®¡ç®—æœºAIç§‘å­¦
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1201,7 +1222,7 @@ tech_computer_ai_science = {#¼ÆËã»úAI¿ÆÑ§
 tech_internet
 	}
 }
-tech_analytical_ultracentrifuge = {#·ÖÎöĞÍ³¬ËÙÀëĞÄ»ú
+tech_analytical_ultracentrifuge = { #åˆ†æå‹è¶…é€Ÿç¦»å¿ƒæœº
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1213,7 +1234,7 @@ tech_analytical_ultracentrifuge = {#·ÖÎöĞÍ³¬ËÙÀëĞÄ»ú
 tech_electronic_campus
 	}
 }
-tech_particle_collider = {#Á£×Ó¶Ô×²»ú
+tech_particle_collider = { #ç²’å­å¯¹æ’æœº
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1225,7 +1246,7 @@ tech_particle_collider = {#Á£×Ó¶Ô×²»ú
 tech_teaching_laboratory
 	}
 }
-tech_basic_education_system = {#»ù±¾½ÌÓıÌåÏµ
+tech_basic_education_system = { #åŸºæœ¬æ•™è‚²ä½“ç³»
 	era = era_1
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1240,7 +1261,7 @@ modifier = {
 state_education_access_wealth_add = 0.005
 	}
 }
-tech_campus_culture = {#Ğ£Ô°ÎÄ»¯
+tech_campus_culture = { #æ ¡å›­æ–‡åŒ–
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1252,7 +1273,7 @@ tech_campus_culture = {#Ğ£Ô°ÎÄ»¯
 tech_positivism
 	}
 }
-tech_campus_communication = {#Ğ£Ô°Í¨Ñ¶
+tech_campus_communication = { #æ ¡å›­é€šè®¯
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1263,7 +1284,7 @@ tech_campus_communication = {#Ğ£Ô°Í¨Ñ¶
 		tech_campus_culture
 	}
 }
-tech_electronic_campus = {#µç×Ó»¯Ğ£Ô°
+tech_electronic_campus = { #ç”µå­åŒ–æ ¡å›­
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1274,7 +1295,7 @@ tech_electronic_campus = {#µç×Ó»¯Ğ£Ô°
 		tech_campus_communication
 	}
 }
-tech_teaching_equipment = {#½ÌÑ§ÓÃÆ÷Ğµ
+tech_teaching_equipment = { #æ•™å­¦ç”¨å™¨æ¢°
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1285,7 +1306,7 @@ tech_teaching_equipment = {#½ÌÑ§ÓÃÆ÷Ğµ
 		tech_campus_communication
 	}
 }
-tech_teaching_laboratory = {#½ÌÑ§ÊµÑéÊÒ
+tech_teaching_laboratory = { #æ•™å­¦å®éªŒå®¤
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1296,7 +1317,7 @@ tech_teaching_laboratory = {#½ÌÑ§ÊµÑéÊÒ
 		tech_teaching_equipment
 	}
 }
-tech_accounting = {#»á¼ÆÑ§
+tech_accounting = { #ä¼šè®¡å­¦
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1311,7 +1332,7 @@ modifier = {
 country_institution_home_affairs_max_investment_add = 1
 	}
 }
-tech_international_trade_theory = {#¹ú¼ÊÃ³Ò×ÀíÂÛ
+tech_international_trade_theory = { #å›½é™…è´¸æ˜“ç†è®º
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1325,7 +1346,7 @@ modifier = {
 		country_trade_route_cost_mult = -0.15
 	}
 }
-tech_intellectual_property = {#ÖªÊ¶²úÈ¨
+tech_intellectual_property = { #çŸ¥è¯†äº§æƒ
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1340,7 +1361,7 @@ modifier = {
 country_trade_route_cost_mult = -0.1
 	}
 }
-tech_auditing = {#Éó¼ÆÑ§
+tech_auditing = { #å®¡è®¡å­¦
 	era = era_4
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1356,7 +1377,7 @@ modifier = {
 country_government_dividends_efficiency_add = 0.1
 	}
 }
-tech_financial_supervision_system = {#½ğÈÚ¼à¹ÜÌåÏµ
+tech_financial_supervision_system = { #é‡‘èç›‘ç®¡ä½“ç³»
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1371,7 +1392,7 @@ modifier = {
 country_institution_home_affairs_max_investment_add = 1
 	}
 }
-tech_international_public_relations = {#¹ú¼Ê¹«¹²¹ØÏµ
+tech_international_public_relations = { #å›½é™…å…¬å…±å…³ç³»
 	era = era_2
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1389,7 +1410,7 @@ country_infamy_generation_against_unrecognized_mult = -0.1
 	}
 }
 
-nationalism = { #ÏÖ´úÃñ×åÖ÷Òå
+nationalism = { #ç°ä»£æ°‘æ—ä¸»ä¹‰
 	# Unlocks the Immigration Controls Law in Migration
 	# New leaders may spawn with the Ethno-Nationalist Ideology
 	era = era_3
@@ -1446,7 +1467,7 @@ nationalism = { #ÏÖ´úÃñ×åÖ÷Òå
 	}
 }
 
-pan-nationalism = { #¹ú×åÖ÷Òå
+pan-nationalism = { #å›½æ—ä¸»ä¹‰
 	# Permits for the formation of a number of pan-nationalist countries
 	# Permits the Unify Germany and Unify Italy Diplomatic Plays
 	era = era_3
@@ -1479,7 +1500,7 @@ pan-nationalism = { #¹ú×åÖ÷Òå
 	}
 }
 
-tech_international_politics = {#¹ú¼ÊÕşÖÎ
+tech_international_politics = { #å›½é™…æ”¿æ²»
 	era = era_3
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
@@ -1494,7 +1515,7 @@ modifier = {
 country_infamy_generation_against_unrecognized_mult = -0.2
 	}
 }
-tech_modern_diplomacy = {#ÏÖ´úÍâ½»Ñ§
+tech_modern_diplomacy = { #ç°ä»£å¤–äº¤å­¦
 	era = era_5
 	texture = "gfx\interface\icons\production_method_icons\Acidolysis.dds"
 	category = society
