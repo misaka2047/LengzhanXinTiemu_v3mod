@@ -1,4 +1,5 @@
 ﻿l_simp_chinese:
+  # pol是Portugal的缩写，不是波兰。。。事实上葡萄牙的代码是por
   pol_salazar.1.t: "新国家"
   pol_salazar.1.d: "[ROOT.GetCountry.GetName]在[ROOT.GetCountry.GetRuler.GetFullName]的独裁统治下已经度过了第十三个年头。面对共产主义和民主政治的双重冲击，今日的[ROOT.GetCountry.GetName]是否还能如[ROOT.GetCountry.GetRuler.GetLastName]博士所愿，成为天主教传统道德所庇佑的“新国家”？"
   pol_salazar.1.f: "我们的国家被怎样的人管理着？一个长期位居权力巅峰，却清心寡欲，不以公器国柄私授亲人的哲人王；一个相貌英俊，教养良好，却终身不婚的禁欲者；一个生活方面过分简朴，早餐连奶油和黄油都舍不得放的清教徒；一个性格孤僻，爱好阅读，研究哲学，没有不良嗜好，平日深居简出，很少露面的隐居者。"

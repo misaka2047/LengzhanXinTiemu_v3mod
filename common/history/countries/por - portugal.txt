@@ -52,5 +52,9 @@
 			set_ig_suppression = yes
 			set_interest_group_name = ig_catholic_church
 		}
+
+		trigger_event = {
+			id = pol_salazar.1
+		}
 	}
 }
