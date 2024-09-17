@@ -1,0 +1,29 @@
+pdxmesh = {
+	name = "a380_mesh"
+	file = "a380.mesh"
+
+	animation = { id = "moving_animation" type = "moving.anim" }
+
+	meshsettings = {
+		name = "a380"
+		index = 0
+		texture_diffuse = "a380.dds"
+		texture_normal = "a380_n.dds"
+		texture_specular = "a380_p.dds"
+		shader = "standard"
+	}
+}
+
+entity = {
+    name = "a380_entity"
+    pdxmesh = "a380_mesh"
+    default_state = "moving"
+    state = {
+        name = "moving"
+        animation = "moving_animation"
+        looping = yes
+        next_state = "moving"
+        start_event = { sound  = { soundeffect = "event:/SFX/Vehicles/zeppelin" } keep_sound = yes }
+    }
+    scale = 2.0
+}
