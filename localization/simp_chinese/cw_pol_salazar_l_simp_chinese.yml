@@ -12,7 +12,7 @@
   salazar_ballet_rose_modifier: "芭蕾玫瑰丑闻"
   salazar_ballet_rose_modifier_weaker: "言论管制"
   salazar_successful_modifier: "新国家的成功"
-
+  salazar_era_modifier: "萨拉查时代"
   pol_salazar.2.t: "“芭蕾玫瑰”"
   pol_salazar.2.d: "近日，外国媒体对[ROOT.GetCountry.GetName]高层官员糜烂的生活方式进行了揭露，这无疑是对标榜禁欲与清廉的[ROOT.GetCountry.GetRuler.GetLastName]博士的一次重大打击——尽管并无证据表明[ROOT.GetCountry.GetRuler.GetFullName]本人参与其中。"
   pol_salazar.2.f: "一个臭名昭著的卖淫网络被外国媒体所报道，该网络的谣言一直在流传，涉及未成年人，即九岁和十岁的儿童，他们通常来自最贫困的地区。然而此前，从萨拉查本人到PIDE的主任，该政权尽一切努力掩盖此案与葡萄牙高层的关联。然而，根据外国媒体的报道，卷入性丑闻的人包括萨拉查政府的部长、军事人员、与工业、银行和高级金融机构有联系的大商人、贵族或教会成员。调查没有取得什么实际结果，案件最终没有对主要和最臭名昭著的肇事者定罪，而新国家的高级人物则更是毫发无伤。"
