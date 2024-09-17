@@ -19,7 +19,10 @@ pol_salazar.1 = {
 	duration = 3  
 
     immediate = {
-
+        set_variable = {
+            name = salazar_var
+            value = 0
+        }
     }
 
     option = {
@@ -27,6 +30,10 @@ pol_salazar.1 = {
         default_option = yes
         add_journal_entry = {
             type = je_salazar_main
+        }
+        add_modifier = {
+            name = salazar_era_modifier
+            months = -1
         }
     }
 }
@@ -45,6 +52,10 @@ pol_salazar.2 = {
     icon = "gfx/interface/icons/event_icons/event_protest.dds"
     duration = 3
     immediate = {
+        set_variable = {
+            name = ballet_rose_triggered
+            months = -1
+        }
     }
     option = {
         name = pol_salazar.2.a
@@ -57,7 +68,9 @@ pol_salazar.2 = {
     option = {
         name = pol_salazar.2.b
         default_option = no
-        trigger = {has_law = law_type:law_secret_police}
+        trigger = {
+            has_law = law_type:law_secret_police
+        }
         add_modifier = {
             name = salazar_ballet_rose_modifier_weaker
             years = 5
@@ -79,6 +92,10 @@ pol_salazar.3 = {
     icon = "gfx/interface/icons/event_icons/event_protest.dds"
     duration = 3    
     immediate = {
+        set_variable = {
+            name = salazar_died_triggered
+            months = -1
+        }
     }
     option = {
         name = pol_salazar.3.a
@@ -133,6 +150,14 @@ pol_salazar.5 = {
     option = {
         name = pol_salazar.5.a
         default_option = yes
+		if = {
+			limit = {
+				NOT = {
+					has_law = law_type:law_parliamentary_republic
+				}
+			}
+			activate_law = law_type:law_parliamentary_republic
+		}
     }
     option = {
         name = pol_salazar.5.b
@@ -179,5 +204,9 @@ pol_salazar.7 = {
     option = {
         name = pol_salazar.7.a
         default_option = yes
+        add_modifier = {
+            name = salazar_successful_modifier
+            years = 5
+        }
     }
 }

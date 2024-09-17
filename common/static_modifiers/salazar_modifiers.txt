@@ -1,0 +1,25 @@
+salazar_ballet_rose_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_prestige_mult = -0.25    
+    country_authority_mult = -0.15
+}
+
+salazar_ballet_rose_modifier_weaker = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    country_prestige_mult = -0.25    
+    country_influence_add = -100
+}
+
+salazar_successful_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    country_prestige_mult = 0.25
+    state_loyalists_from_sol_change_mult = 0.5
+    state_conversion_mult = 0.80
+    state_accepted_birth_rate_mult = 0.30
+}
+
+salazar_era_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+    state_conversion_mult = 0.25
+    country_tech_research_speed_mult = -0.15 
+}

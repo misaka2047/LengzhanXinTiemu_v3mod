@@ -1,0 +1,108 @@
+je_salazar_main = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	
+	group = je_group_internal_affairs
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+        has_law = law_type:law_presidential_republic
+        has_law = law_type:law_autocracy
+        has_law = law_type:law_state_religion
+        OR = {
+            has_law = law_type:law_command_economy
+            has_law = law_type:law_industry_banned
+        }
+        has_law = law_type:law_no_scientific_research_system
+        has_law = law_type:law_compulsory_primary_school
+        has_law = law_type:law_no_womens_rights
+		NOT = {
+			any_civil_war = {
+				civil_war_progress > 0.5
+				is_civil_war_type = revolution
+			}
+		}
+		NOT = {
+			any_interest_group = {
+				law_stance = {
+					law = law_type:law_universal_suffrage
+					value > neutral
+				}
+				is_powerful = yes
+			}
+		}
+	}
+
+	on_complete = {
+        remove_modifier = salazar_era_modifier
+		trigger_event = {
+			id = pol_salazar.7
+		}
+	}
+
+    timeout = 6000
+
+    on_timeout = {
+        remove_modifier = salazar_era_modifier
+        trigger_event = {
+            id = pol_salazar.6
+        }
+    } 
+
+	current_value = {
+		value = var:salazar_var
+	} 
+
+	on_monthly_pulse = {
+        if = {
+            limit = {
+                NOT = {
+                    has_variable = ballet_rose_triggered
+                }
+            }
+            random_events = {
+                90 = 0
+                5 = pol_salazar.2
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_variable = salazar_died_triggered
+                }
+            }
+            random_events = {
+                90 = 0
+                1 = pol_salazar.3
+            }
+        }
+	}
+
+    on_weekly_pulse = {
+        if = {
+            limit = {
+                has_law = law_type:law_presidential_republic
+                has_law = law_type:law_autocracy
+                has_law = law_type:law_state_religion
+                OR = {
+                    has_law = law_type:law_command_economy
+                    has_law = law_type:law_industry_banned
+                }
+                has_law = law_type:law_no_scientific_research_system
+                has_law = law_type:law_compulsory_primary_school
+                has_law = law_type:law_no_womens_rights
+            }
+            change_variable = {
+                id = salazar_var
+                value = 1
+            }
+        }
+    }
+	goal_add_value = {
+		add = 200
+	}
+
+	progressbar = yes
+    weight = 1000
+}
