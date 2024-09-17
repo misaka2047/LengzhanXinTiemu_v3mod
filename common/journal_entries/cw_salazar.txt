@@ -63,7 +63,7 @@ je_salazar_main = {
             }
             random_events = {
                 90 = 0
-                5 = pol_salazar.2
+                15 = pol_salazar.2
             }
         }
         if = {
@@ -74,7 +74,7 @@ je_salazar_main = {
             }
             random_events = {
                 90 = 0
-                1 = pol_salazar.3
+                5 = pol_salazar.3
             }
         }
 	}
