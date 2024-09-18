@@ -36,6 +36,32 @@ je_franco_autocracy = {
         scope:journal_entry = {
             is_goal_complete = yes
         }
+        has_law = law_type:law_autocracy
+        NOT = {
+            any_civil_war = {
+                civil_war_progress > 0.5
+                is_civil_war_type = revolution
+            }
+        }
+        NOT = {
+            any_interest_group = {
+                law_stance = {
+                    law = law_type:law_universal_suffrage
+                    value > neutral
+                }
+                is_powerful = yes
+            }
+        }
+        NOT = {
+            any_interest_group = {
+                law_stance = {
+                    law = law_type:law_council_republic
+                    value > neutral
+                }
+                is_powerful = yes
+            }
+        }
+        highest_secession_progress < 0.2 
     }
 
     on_complete = {
@@ -74,38 +100,40 @@ je_franco_autocracy = {
     }
 
     on_weekly_pulse = {
-        if = {
-            limit = {
-                has_law = law_type:law_autocracy
-                NOT = {
-                    any_civil_war = {
-                        civil_war_progress > 0.5
-                        is_civil_war_type = revolution
-                    }
-                }
-                NOT = {
-                    any_interest_group = {
-                        law_stance = {
-                            law = law_type:law_universal_suffrage
-                            value > neutral
+        effect = {
+            if = {
+                limit = {
+                    has_law = law_type:law_autocracy
+                    NOT = {
+                        any_civil_war = {
+                            civil_war_progress > 0.5
+                            is_civil_war_type = revolution
                         }
-                        is_powerful = yes
                     }
-                }
-                NOT = {
-                    any_interest_group = {
-                        law_stance = {
-                            law = law_type:law_council_republic
-                            value > neutral
+                    NOT = {
+                        any_interest_group = {
+                            law_stance = {
+                                law = law_type:law_universal_suffrage
+                                value > neutral
+                            }
+                            is_powerful = yes
                         }
-                        is_powerful = yes
                     }
+                    NOT = {
+                        any_interest_group = {
+                            law_stance = {
+                                law = law_type:law_council_republic
+                                value > neutral
+                            }
+                            is_powerful = yes
+                        }
+                    }
+                    highest_secession_progress < 0.2             
                 }
-                highest_secession_progress < 0.2             
-            }
-            change_variable = {
-                name = franco_autocracy_var
-                add = 1
+                change_variable = {
+                    name = franco_autocracy_var
+                    add = 1
+                }
             }
         }
     }
