@@ -159,7 +159,7 @@ franco.4 = {
         }
     }
     option = {
-        name = franco.4.d
+        name = franco.4.g
         default_option = no
         trigger = {
             has_variable = franco_avoid_first_var

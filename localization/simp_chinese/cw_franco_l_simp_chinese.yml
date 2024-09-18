@@ -36,7 +36,7 @@
   franco.4.a: "让这[ROOT.GetCountry.GetName]的背叛者有多远滚多远。"
   franco.4.b: "承诺将在[ROOT.GetCountry.GetRuler.GetFullName]死后让权给胡安亲王的儿子。"
   franco.4.c: "君主国一定要有君主吗？"
-  franco.4.d: "什么君主，君主，不该问的别问！"
+  franco.4.g: "什么君主，君主，不该问的别问！"
   franco.4.e: "够了！你看我像是君主吗？"
 
   franco_modifier: "强权下的崛起"
