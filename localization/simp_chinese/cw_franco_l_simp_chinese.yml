@@ -8,12 +8,43 @@
   je_franco_main_goal: "保持[ROOT.GetCountry.GetRuler.GetFullName]对[ROOT.GetCountry.GetName]的绝对统治，在大考迪罗的领导下将[ROOT.GetCountry.GetName]带向新的辉煌。"
   je_franco_main_reason: "[ROOT.GetCountry.GetName]被民主国家阵营和社会主义国家阵营所孤立，经济发展停滞不前，内战的创伤尚未愈合。[ROOT.GetCountry.GetRuler.GetFullName]必须将[ROOT.GetCountry.GetName]从崩溃的边缘拯救出来——稍有不慎，[ROOT.GetCountry.GetName]的分离主义者、社会主义者和自由主义者将分裂我们的国家，酿成第二次内战。"
 
+  je_franco_autocracy: "国家的拯救者：独裁专制"
+  je_franco_autocracy_goal: "保持[ROOT.GetCountry.GetRuler.GetFullName]对[ROOT.GetCountry.GetName]的绝对统治，镇压左翼分子和分离主义者，直到进度条满。"
+  je_franco_autocracy_reason: "只有[ROOT.GetCountry.GetRuler.GetFullName]的铁腕统治才能维护[ROOT.GetCountry.GetName]的统一和稳定。一切破坏[ROOT.GetCountry.GetName]稳定的人，要么逃往比利牛斯山脉的另一端，要么在我们的监狱里腐烂。"
+
+  je_franco_economy: "国家的拯救者：经济复兴"
+  je_franco_economy_goal: "将[ROOT.GetCountry.GetName]的GDP提高100%"
+  je_franco_economy_reason: "我们的国家尚未从内战的阴影中走出，经济发展停滞不前。重振经济的重任落在了[ROOT.GetCountry.GetRuler.GetFullName]的肩上，只有经济的复兴才能让我们的国家再度崛起，成为地中海地区的经济强国。"
+
+  je_franco_diplomacy: "国家的拯救者：摆脱孤立"
+  je_franco_diplomacy_goal: "和民主阵营交好，摆脱孤立的局面。"
+  je_franco_diplomacy_reason: "美国和苏联的敌对态度让我们的国家陷入了孤立，这种局面必须改变。[ROOT.GetCountry.GetRuler.GetFullName]必须和民主国家建立友好关系，摆脱孤立的困境——这是显而易见的事情，由于内战时期和二战期间我们和苏联的敌对，我们无法投奔苏联一方。"
+
   franco.2.t: "《拉扎》的续篇"
   franco.2.d: "在[ROOT.GetCountry.GetRuler.GetFullName]巧妙的独裁统治下，[ROOT.GetCountry.GetName]的经济得到了恢复，国际地位再度提升，再无人质疑[ROOT.GetCountry.GetRuler.GetFullName]的铁腕手段和无上权威。"
   franco.2.f: "《拉扎》的故事以阿尔瓦雷斯家族为中心，他们忠于国家，忠于天主教信仰。家族的父亲是一位曾参加西班牙帝国衰落时期战争的军官，象征着旧西班牙帝国的荣光。故事以西班牙内战为背景，揭示了一场“正义”与“邪恶”之战。国民军代表着“正义”和“救国”的力量，而左翼共和国则被描绘为反宗教、反国家的“邪恶”。故事的结尾里，何塞和自己的兄弟佩德罗为国家的事业而战，直到最后，迎来了1939年4月的胜利。而在内战中与何塞作对的家族成员，则被浩浩汤汤的爱国者就地正法。"
-  franco.2.a: "我们的胜利。"
+  franco.2.a: "我们的又一次胜利。"
 
   franco.3.t: "角斗场"
   franco.3.d: "[ROOT.GetCountry.GetRuler.GetFullName]的统治崩溃了。分离主义者妄图分裂国家，而左翼分子试图彻底夺取[ROOT.GetCountry.GetName]的政权。"
   franco.3.f: "在这个混乱的时代，[ROOT.GetCountry.GetRuler.GetFullName]的铁腕统治已经不再有效。分离主义者、共产主义者和自由主义者在[ROOT.GetCountry.GetName]的各个角落反对着我们，[ROOT.GetCountry.GetRuler.GetFullName]正面临着空前的挑战。"
-  franco.3.a: "第二次内战，已无可避免。"
+  franco.3.a: "第二次内战已无可避免。"
+
+  franco.4.t: "王室问题"
+  franco.4.d: "胡安·卡洛斯·德雷萨·西尔维斯特·阿方索亲王，[ROOT.GetCountry.GetName]王位宣称的所有者，是一个崇尚君主立宪的自由主义分子，这不符合[ROOT.GetCountry.GetRuler.GetFullName]的独裁统治需要。然而，[ROOT.GetCountry.GetRuler.GetFullName]通过联合保守派势力上台，其支持者有很大一部分是君主制的忠实拥簇。这使得[ROOT.GetCountry.GetRuler.GetLastName]陷入了两难境地。"
+  franco.4.f: "尽管[ROOT.GetCountry.GetRuler.GetFullName]本人曾将推翻共和国之后的西班牙国称为一个君主制国家，但显然，[ROOT.GetCountry.GetName]没有君主。究其原因在于王位宣称者胡安亲王是一个自由主义分子，他不会安心成为[ROOT.GetCountry.GetRuler.GetFullName]独裁统治的幕前傀儡。如果再不能解决这个问题，那么现在[ROOT.GetCountry.GetName]所谓的“复辟时期”则迟早失去其正统性。"
+  franco.4.a: "让这[ROOT.GetCountry.GetName]的背叛者有多远滚多远。"
+  franco.4.b: "承诺将在[ROOT.GetCountry.GetRuler.GetFullName]死后让权给胡安亲王的儿子。"
+  franco.4.c: "君主国一定要有君主吗？"
+  franco.4.d: "什么君主，君主，不该问的别问！"
+  franco.4.e: "够了！你看我像是君主吗？"
+
+  franco_modifier: "强权下的崛起"
+  franco_refuse_royalist_modifier: "驱赶王位宣称者"
+  franco_is_new_king_modifier: "不受认可的王位"
+
+  franco.5.t: "弗朗哥之死"
+  franco.5.d: "弗朗西斯科·弗朗哥的身体状况急剧恶化，最终死在了病床之上。他的死使得[ROOT.GetCountry.GetName]陷入了权力真空，一场混乱即将在全国蔓延。"
+  franco.5.f: "弗朗哥被葬在了其生前征调囚犯所建成的“烈士谷”中——当年西班牙内战的丧生者多半葬于此地。之所以叫“烈士谷”，是因为这个大独裁者试图用此种方式安抚受害的左翼分子，达成他所谓的“和解”。然而，弗朗哥的死并没有给[ROOT.GetCountry.GetName]带来和平，强权下的和解在这个权欲熏心的大独裁者暴毙后立刻土崩瓦解。"
+  franco.5.a: "按照他生前的约定，将权力交给胡安王子。"
+  franco.5.b: "第二次内战已无可避免。"

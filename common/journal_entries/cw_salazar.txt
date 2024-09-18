@@ -94,15 +94,15 @@ je_salazar_main = {
                 has_law = law_type:law_no_womens_rights
             }
             change_variable = {
-                id = salazar_var
-                value = 1
+                name = salazar_var
+                add = 1
             }
         }
     }
 	goal_add_value = {
 		add = 200
 	}
-
+    should_be_pinned_by_default = yes 
 	progressbar = yes
     weight = 1000
 }

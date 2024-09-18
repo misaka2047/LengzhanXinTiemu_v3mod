@@ -59,5 +59,14 @@
 		ig:ig_landowners = {
 			add_ideology = ideology_pious
 		}
+
+		trigger_event = {
+			id = franco.1
+			days = 0
+		}
+		trigger_event = {
+			id = franco.4
+			days = 60
+		}
 	}
 }
