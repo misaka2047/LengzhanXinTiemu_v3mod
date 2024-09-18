@@ -1,0 +1,19 @@
+﻿l_simp_chinese:
+  franco.1.t: "[ROOT.GetCountry.GetRuler.GetLastName]的至暗时刻"
+  franco.1.d: "[ROOT.GetCountry.GetRuler.GetFullName]在第二次世界大战中带领[ROOT.GetCountry.GetName]保持了一定程度上的中立——尽管他一度被视为轴心国阵营的盟友。二战后，以美国为首的民主国家和以苏联为首的社会主义国家一致将[ROOT.GetCountry.GetRuler.GetFullName]政权视为一个法西斯主义政府，[ROOT.GetCountry.GetName]在内忧外患中进入了冷战时代。"
+  franco.1.f: "残酷的西班牙内战带来的创伤尚且未能恢复，美国和苏联不约而同的敌对态度更让西班牙陷入了孤立。在这百废待兴的伊比利亚半岛上，沾满鲜血的内战赢家、大元帅、大考迪罗弗朗西斯科·弗朗哥会将西班牙带向何方？"
+  franco.1.a: "大元帅会再度拯救我们的国家！"
+
+  je_franco_main: "国家的拯救者"
+  je_franco_main_goal: "保持[ROOT.GetCountry.GetRuler.GetFullName]对[ROOT.GetCountry.GetName]的绝对统治，在大考迪罗的领导下将[ROOT.GetCountry.GetName]带向新的辉煌。"
+  je_franco_main_reason: "[ROOT.GetCountry.GetName]被民主国家阵营和社会主义国家阵营所孤立，经济发展停滞不前，内战的创伤尚未愈合。[ROOT.GetCountry.GetRuler.GetFullName]必须将[ROOT.GetCountry.GetName]从崩溃的边缘拯救出来——稍有不慎，[ROOT.GetCountry.GetName]的分离主义者、社会主义者和自由主义者将分裂我们的国家，酿成第二次内战。"
+
+  franco.2.t: "《拉扎》的续篇"
+  franco.2.d: "在[ROOT.GetCountry.GetRuler.GetFullName]巧妙的独裁统治下，[ROOT.GetCountry.GetName]的经济得到了恢复，国际地位再度提升，再无人质疑[ROOT.GetCountry.GetRuler.GetFullName]的铁腕手段和无上权威。"
+  franco.2.f: "《拉扎》的故事以阿尔瓦雷斯家族为中心，他们忠于国家，忠于天主教信仰。家族的父亲是一位曾参加西班牙帝国衰落时期战争的军官，象征着旧西班牙帝国的荣光。故事以西班牙内战为背景，揭示了一场“正义”与“邪恶”之战。国民军代表着“正义”和“救国”的力量，而左翼共和国则被描绘为反宗教、反国家的“邪恶”。故事的结尾里，何塞和自己的兄弟佩德罗为国家的事业而战，直到最后，迎来了1939年4月的胜利。而在内战中与何塞作对的家族成员，则被浩浩汤汤的爱国者就地正法。"
+  franco.2.a: "我们的胜利。"
+
+  franco.3.t: "角斗场"
+  franco.3.d: "[ROOT.GetCountry.GetRuler.GetFullName]的统治崩溃了。分离主义者妄图分裂国家，而左翼分子试图彻底夺取[ROOT.GetCountry.GetName]的政权。"
+  franco.3.f: "在这个混乱的时代，[ROOT.GetCountry.GetRuler.GetFullName]的铁腕统治已经不再有效。分离主义者、共产主义者和自由主义者在[ROOT.GetCountry.GetName]的各个角落反对着我们，[ROOT.GetCountry.GetRuler.GetFullName]正面临着空前的挑战。"
+  franco.3.a: "第二次内战，已无可避免。"
