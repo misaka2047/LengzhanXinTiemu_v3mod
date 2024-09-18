@@ -109,12 +109,12 @@
 
 		trigger_event = {
 			id = space_race.1
-			months = 18
+			months = 10
 		}
 
 		trigger_event = {
 			id = cold_war_main.1
-			months = 3
+			days = 7
 		}
 	}
 }
