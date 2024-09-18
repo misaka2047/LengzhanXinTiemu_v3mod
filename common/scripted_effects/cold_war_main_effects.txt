@@ -1,0 +1,133 @@
+calculate_cold_war_passive_progress = {
+	set_global_variable = { name = cold_war_ussr_passive_var value = 0 }
+	set_global_variable = { name = cold_war_usa_passive_var value = 0 }
+	set_global_variable = { name = cold_war_balance_passive_var value = 0 }
+	set_global_variable = { name = cold_war_world_gdp value = 0 }
+	
+	every_country = {
+		change_global_variable = { name = cold_war_world_gdp add = this.gdp }
+	}
+
+	change_global_variable = { name = cold_war_world_gdp divide = 1000 }
+
+	c:USA ?= {
+		change_global_variable = { name = cold_war_usa_passive_var add = this.gdp }
+		every_subject_or_below = {
+			change_global_variable = { name = cold_war_usa_passive_var add = this.gdp }
+		}
+		power_bloc ?= {
+			every_power_bloc_member = {
+				limit = {
+					NOR = {
+						c:USA ?= this
+						is_subject_of = c:USA
+					}
+				}
+				change_global_variable = { name = cold_war_usa_passive_var add = this.gdp }
+			}
+		}
+		change_global_variable = { name = cold_war_usa_passive_var divide = 1000 }
+		change_global_variable = { name = cold_war_usa_passive_var divide = global_var:cold_war_world_gdp }
+	}
+	
+	c:RUS ?= {
+		change_global_variable = { name = cold_war_ussr_passive_var add = this.gdp }
+		every_subject_or_below = {
+			change_global_variable = { name = cold_war_ussr_passive_var add = this.gdp }
+		}
+		power_bloc ?= {
+			every_power_bloc_member = {
+				limit = {
+					NOR = {
+						c:RUS ?= this
+						is_subject_of = c:RUS
+					}
+				}
+				change_global_variable = { name = cold_war_ussr_passive_var add = this.gdp }
+			}
+		}
+		change_global_variable = { name = cold_war_ussr_passive_var divide = 1000 }
+		change_global_variable = { name = cold_war_ussr_passive_var divide = global_var:cold_war_world_gdp }
+	}
+
+	set_global_variable = { name = cold_war_balance_passive_var value = global_var:cold_war_ussr_passive_var }
+	change_global_variable = { name = cold_war_balance_passive_var subtract = global_var:cold_war_usa_passive_var }
+	change_global_variable = { name = cold_war_balance_passive_var multiply = 5 }
+}
+
+calculate_cold_war_ideology_progress = {
+	set_global_variable = { name = cold_war_ussr_ideology_var value = 0 }
+	set_global_variable = { name = cold_war_usa_ideology_var value = 0 }
+	set_global_variable = { name = cold_war_balance_ideology_var value = 0 }
+	
+
+	c:USA ?= {
+        every_interest_group = {
+            limit = {
+				law_stance = {
+					law = law_type:law_council_republic
+					value > neutral
+				}
+                is_in_government = yes
+            }
+            change_global_variable = { name = cold_war_ussr_ideology_var add = 0.1 }
+        }
+        every_interest_group = {
+            limit = {
+				law_stance = {
+					law = law_type:law_council_republic
+					value > neutral 
+				}
+                is_powerful = yes
+            }
+            change_global_variable = { name = cold_war_ussr_ideology_var add = 0.1 }
+        }
+	}
+	
+	c:RUS ?= {
+        every_interest_group = {
+            limit = {
+				law_stance = {
+					law = law_type:law_laissez_faire
+					value > neutral
+				}
+                is_in_government = yes
+            }
+            change_global_variable = { name = cold_war_usa_ideology_var add = 0.1 }
+        }
+        every_interest_group = {
+            limit = {
+				law_stance = {
+					law = law_type:law_laissez_faire
+					value > neutral
+				}
+                is_powerful = yes
+            }
+            change_global_variable = { name = cold_war_usa_ideology_var add = 0.1 }
+        }
+	}
+
+	set_global_variable = { name = cold_war_balance_ideology_var value = global_var:cold_war_ussr_ideology_var }
+	change_global_variable = { name = cold_war_balance_ideology_var subtract = global_var:cold_war_usa_ideology_var }
+}
+
+calculate_cold_war_sol_progress = {
+	set_global_variable = { name = cold_war_ussr_sol_var value = 0 }
+	set_global_variable = { name = cold_war_usa_sol_var value = 0 }
+	set_global_variable = { name = cold_war_balance_sol_var value = 0 }
+	
+
+	c:USA ?= {
+		change_global_variable = { name = cold_war_usa_sol_var add = average_sol }
+        change_global_variable = { name = cold_war_usa_sol_var divide = 25 }
+	}
+	
+	c:RUS ?= {
+		change_global_variable = { name = cold_war_ussr_sol_var add = average_sol }
+        change_global_variable = { name = cold_war_ussr_sol_var divide = 25 }
+	}
+
+	set_global_variable = { name = cold_war_balance_sol_var value = global_var:cold_war_ussr_sol_var }
+	change_global_variable = { name = cold_war_balance_sol_var subtract = global_var:cold_war_usa_sol_var }
+	change_global_variable = { name = cold_war_balance_sol_var multiply = 1 }
+}

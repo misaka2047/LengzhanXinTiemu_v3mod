@@ -1,0 +1,50 @@
+cold_war_core_progress_bar = {
+ 	name = "cold_war_core_progress_bar_name"
+ 	desc = "cold_war_core_progress_bar_usa_desc"
+ 	second_desc = "cold_war_core_progress_bar_rus_desc"
+
+ 	double_sided_gold = yes
+
+ 	yearly_progress = {
+		if = {
+			limit = {
+				exists = global_var:cold_war_balance_passive_var
+				NOT = {
+					global_var:cold_war_balance_passive_var = 0
+				}
+			}
+			add = {
+			   desc = "cold_war_core_progress_passive_balance"
+			   value = global_var:cold_war_balance_passive_var
+		    }
+		}
+		if = {
+			limit = {
+				exists = global_var:cold_war_balance_ideology_var
+				NOT = {
+					global_var:cold_war_balance_ideology_var = 0
+				}
+			}
+			add = {
+			   desc = "cold_war_core_progress_ideology_balance"
+			   value = global_var:cold_war_balance_ideology_var
+		    }
+		}
+		if = {
+			limit = {
+				exists = global_var:cold_war_balance_sol_var
+				NOT = {
+					global_var:cold_war_balance_sol_var = 0
+				}
+			}
+			add = {
+			   desc = "cold_war_core_progress_sol_balance"
+			   value = global_var:cold_war_balance_sol_var
+		    }
+		}
+ 	}
+
+ 	start_value = 100
+ 	min_value = 0
+ 	max_value = 200
+}

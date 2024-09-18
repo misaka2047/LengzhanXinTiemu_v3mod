@@ -1,0 +1,79 @@
+je_cold_war_main = {
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/objectives/cold_war.dds"
+
+	group = je_group_objectives
+
+	scripted_progress_bar = cold_war_core_progress_bar
+    immediate = {
+		set_global_variable = { name = cold_war_usa_progress value = 100 }
+		set_global_variable = { name = cold_war_rus_progress value = 100 }
+		if = {
+			limit = {
+				OR = {
+					c:USA ?= this
+					c:RUS ?= this
+				}
+			}
+			set_variable = { name = cold_war_no_longer_power_bloc_leader_var value = 0 }
+		}
+		else = {
+			set_variable = { name = cold_war_subjected_var value = 0 }
+		}
+		
+		if = {
+			limit = {
+				is_player = yes
+			}
+
+			every_country = {
+				limit = {
+					OR = {
+						c:RUS ?= this
+						c:USA ?= this
+					}
+					is_player = no
+					NOT = {
+						has_journal_entry = je_cold_war_main
+					}
+				}
+				add_journal_entry = { type = je_cold_war_main }
+			}
+		}
+    }
+    complete = {
+		trigger_if = {
+			limit = {
+				OR = {
+					c:USA ?= this
+					c:RUS ?= this
+				}
+			}
+			OR = {
+				trigger_if = {
+					limit = {
+						c:RUS ?= this
+					}
+					c:USA ?= {
+						country_rank < rank_value:great_power
+					}
+				}
+				trigger_if = {
+					limit = {
+						c:USA ?= this
+					}
+					c:RUS ?= {
+						country_rank < rank_value:great_power
+					}
+				}
+			}
+		}
+    }
+
+    on_complete = {
+
+    }
+	
+	weight = 1000
+	transferable = yes
+}

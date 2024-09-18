@@ -1,4 +1,4 @@
-l_simp_chinese:
+﻿l_simp_chinese:
   je_cold_war_main: "冷战"
   je_cold_war_main_goal: "将进度条向对你有利的方向推进！"
   je_cold_war_main_reason: "进度条的改变依赖于北约集团和华约集团的经济、军事和政治影响力的对比，同时，诸如太空竞赛等其他事件也将对进度条的推进起作用。当冷战其中一方的威望降低到世界霸权以下，或者其中一方具有了压倒性优势时，冷战结束。"
@@ -7,7 +7,9 @@ l_simp_chinese:
   cold_war_core_progress_bar_name: "冷战"
   cold_war_core_progress_bar_usa_desc: "[GetGlobalVariable('cold_war_usa_progress').GetValue|1]#!"
   cold_war_core_progress_bar_rus_desc: "[GetGlobalVariable('cold_war_rus_progress').GetValue|1]#!"
-  
+  cold_war_core_progress_passive_balance: "直接控制或[concept_subject]控制的#v 所有地区#!的[concept_gdp]对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_passive_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_passive_var').GetValue|v1%]#!）"
+  cold_war_core_progress_ideology_balance: "意识形态领域向对方渗透的对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_ideology_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_ideology_var').GetValue|v1%]#!）"
+  cold_war_core_progress_sol_balance: "生活水平的对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_sol_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_sol_var').GetValue|v1%]#!）"
   je_nato: "北约"
   je_nato_goal: "加入北约。"
   je_nato_reason: "北约是一个由西方国家组成的军事联盟，旨在对抗苏联及其盟友。"
@@ -24,4 +26,13 @@ l_simp_chinese:
   je_cuban_missile_crisis_goal: "成功解决古巴导弹危机。"
   je_cuban_missile_crisis_reason: "古巴导弹危机是冷战中一次美苏之间的危机。"
 
+  cold_war_main.1.t: "铁幕演说"
+  cold_war_main.1.d: "温斯顿·丘吉尔在美国密苏里州的富尔顿市发表了一场极具煽动性的演说，意在向民主国家警告苏联的威胁。政客与民众警惕着，一场烈度空前，却又不以直接对抗为手段的国家博弈即将拉开序幕。"
+  cold_war_main.1.f: "从波罗的海的什切青，到亚得里亚海边的的里雅斯特，一幅横贯欧洲大陆的铁幕已经降落下来。在这条线的后面，坐落着中欧与东欧古国的都城。华沙、柏林、布拉格、维也纳、布达佩斯、贝尔格莱德、布加勒斯特和索非亚——所有这些饱经沧桑的城市及其居民无一不处在苏联的势力范围之内，不仅以这种或那种形式屈服于苏联的势力影响，而且还受到莫斯科日益增强的高压控制……我们肯定不能让那种事重演。"
+  cold_war_main.1.a: "新的格局正悄然形成。"
+
+  cold_war_main.2.t: "杜鲁门主义"
+  cold_war_main.2.d: "美国总统杜鲁门在援助希腊和土耳其的演讲中，公然将苏维埃社会主义共和国联盟及共产主义视为民主政治的威胁——这预示着两国，或是两种意识形态的对抗在所难免。"
+  cold_war_main.2.f: "希腊的生存，受到共产党领导的数千武装人员恐怖活动的威胁，他们在很多地点，特别是沿着希腊北部边境，对抗政府的管辖……极权政制的种子，是靠悲惨和匮乏滋养发育的。它们在贫穷和动乱的灾难土地上蔓延滋长。当一个民族对于较好生活的希望绝灭之后，这类种子便会长大成株。我们一定要使那种希望存在下去。全世界的自由人民期待我们支持他们维护自由。"
+  cold_war_main.2.a: "捍卫我们的意识形态，不计一切代价！"
   

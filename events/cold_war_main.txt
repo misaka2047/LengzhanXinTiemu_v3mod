@@ -1,0 +1,62 @@
+namespace = cold_war_main
+
+cold_war_main.1 = {
+    type = country_event
+	placement = root
+
+    title = cold_war_main.1.t
+    desc = cold_war_main.1.d
+    flavor = cold_war_main.1.f
+
+        event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = cold_war_main.1.a
+		default_option = yes
+        trigger_event = {
+            id = cold_war_main.2
+            months = 12
+        }
+    }
+}
+
+cold_war_main.2 = {
+    type = country_event
+	placement = root
+
+    title = cold_war_main.2.t
+    desc = cold_war_main.2.d
+    flavor = cold_war_main.2.f
+
+        event_image = {
+		video = "unspecific_world_fair"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = cold_war_main.2.a
+		default_option = yes
+        add_journal_entry = {
+            type = je_cold_war_main
+        }
+    }
+}
