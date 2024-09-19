@@ -131,3 +131,23 @@ calculate_cold_war_sol_progress = {
 	change_global_variable = { name = cold_war_balance_sol_var subtract = global_var:cold_war_usa_sol_var }
 	change_global_variable = { name = cold_war_balance_sol_var multiply = 1 }
 }
+
+update_cw_progressbar_tooltips = {
+	je:je_cold_war_main = {
+		if = {
+			limit = {
+				"scripted_bar_progress(cold_war_core_progress_bar)" < 0
+			}
+			set_bar_progress = { value = 0 name = cold_war_core_progress_bar }
+		}
+		if = {
+			limit = {
+				"scripted_bar_progress(cold_war_core_progress_bar)" > 200
+			}
+			set_bar_progress = { value = 200 name = cold_war_core_progress_bar }
+		}
+		set_global_variable = { name = cold_war_usa_progress value = "scripted_bar_progress(cold_war_core_progress_bar)" }
+		set_global_variable = { name = cold_war_ussr_progress value = 200 }
+		change_global_variable = { name = cold_war_ussr_progress subtract = global_var:cold_war_usa_progress }
+	}
+}

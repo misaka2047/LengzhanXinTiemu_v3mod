@@ -1,29 +1,66 @@
 je_cold_war_main = {
 	should_be_pinned_by_default = yes
-	icon = "gfx/interface/icons/objectives/cold_war.dds"
+	icon = "gfx/interface/icons/objectives/great_game.dds"
 
 	group = je_group_objectives
 
 	scripted_progress_bar = cold_war_core_progress_bar
     immediate = {
 		set_global_variable = { name = cold_war_usa_progress value = 100 }
-		set_global_variable = { name = cold_war_rus_progress value = 100 }
-		if = {
-			limit = {
-				OR = {
-					c:USA ?= this
-					c:RUS ?= this
-				}
-			}
-			set_variable = { name = cold_war_no_longer_power_bloc_leader_var value = 0 }
-		}
-		else = {
-			set_variable = { name = cold_war_subjected_var value = 0 }
-		}
+		set_global_variable = { name = cold_war_ussr_progress value = 100 }
+		set_variable = { name = cold_war_no_longer_power_bloc_leader_var value = 0 }
 		
 		if = {
 			limit = {
 				is_player = yes
+			}
+
+			set_global_variable = { name = cold_war_ussr_economy_var value = c:RUS.gdp }
+			every_country = {
+				limit = {
+					this.market = c:RUS.market
+				}
+				change_global_variable = { name = cold_war_ussr_economy_var add = this.gdp }
+			}
+			change_global_variable = { name = cold_war_ussr_economy_var divide = 10000000 }
+			set_global_variable = { name = cold_war_usa_economy_var value = c:USA.gdp }
+			every_country = {
+				limit = {
+					this.market = c:USA.market
+				}
+				change_global_variable = { name = cold_war_usa_economy_var add = this.gdp }
+			}
+			change_global_variable = { name = cold_war_usa_economy_var divide = 10000000 }
+			set_global_variable = { name = cold_war_economy_balance_var value = global_var:cold_war_ussr_economy_var }
+			change_global_variable = { name = cold_war_economy_balance_var divide = global_var:cold_war_usa_economy_var }
+			if = {
+				limit = {
+					global_var:cold_war_economy_balance_var < 1
+				}
+				set_global_variable = { name = cold_war_economy_balance_var_inverse value = -1 }
+				change_global_variable = { name = cold_war_economy_balance_var_inverse divide = global_var:cold_war_economy_balance_var }
+				set_global_variable = { name = cold_war_economy_balance_var value = global_var:cold_war_economy_balance_var_inverse }
+				remove_global_variable = cold_war_economy_balance_var_inverse
+			}
+
+			set_global_variable = { name = cold_war_ussr_prestige_var value = c:RUS.prestige }
+			set_global_variable = { name = cold_war_usa_prestige_var value = c:USA.prestige }
+			set_global_variable = { name = cold_war_prestige_balance_var value = global_var:cold_war_ussr_prestige_var }
+			change_global_variable = { name = cold_war_prestige_balance_var divide = global_var:cold_war_usa_prestige_var }
+			if = {
+				limit = {
+					global_var:cold_war_prestige_balance_var < 1
+				}
+				set_global_variable = { name = cold_war_prestige_balance_var_inverse value = -1 }
+				change_global_variable = { name = cold_war_prestige_balance_var_inverse divide = global_var:cold_war_prestige_balance_var }
+				set_global_variable = { name = cold_war_prestige_balance_var value = global_var:cold_war_prestige_balance_var_inverse }
+				remove_global_variable = cold_war_prestige_balance_var_inverse
+			}
+
+			scope:journal_entry = {
+				set_global_variable = { name = cold_war_usa_progress value = "scripted_bar_progress(cold_war_core_progress_bar)" }
+				set_global_variable = { name = cold_war_ussr_progress value = 200 }
+				change_global_variable = { name = cold_war_ussr_progress subtract = global_var:cold_war_usa_progress }
 			}
 
 			every_country = {
@@ -34,13 +71,95 @@ je_cold_war_main = {
 					}
 					is_player = no
 					NOT = {
-						has_journal_entry = je_cold_war_main
+						has_journal_entry = je_cold_war_control
 					}
 				}
-				add_journal_entry = { type = je_cold_war_main }
+				add_journal_entry = { type = je_cold_war_control }
 			}
 		}
     }
+	on_weekly_pulse = {
+        effect = {
+            if = {
+                limit = {
+					is_player = yes
+                    NOT = { has_global_variable = cw_started }
+                }
+                set_global_variable = cw_started
+            }
+			update_cw_progressbar_tooltips = yes #TODO: Implement this
+        }
+    }
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					is_player = yes
+				}
+				set_global_variable = { name = cold_war_ussr_economy_var value = c:RUS.gdp }
+				every_country = {
+					limit = {
+						this.market = c:RUS.market
+					}
+					change_global_variable = { name = cold_war_ussr_economy_var add = this.gdp }
+				}
+				change_global_variable = { name = cold_war_ussr_economy_var divide = 10000000 }
+				set_global_variable = { name = cold_war_usa_economy_var value = c:USA.gdp }
+				every_country = {
+					limit = {
+						this.market = c:USA.market
+					}
+					change_global_variable = { name = cold_war_usa_economy_var add = this.gdp }
+				}
+				change_global_variable = { name = cold_war_usa_economy_var divide = 10000000 }
+				set_global_variable = { name = cold_war_economy_balance_var value = global_var:cold_war_ussr_economy_var }
+				change_global_variable = { name = cold_war_economy_balance_var divide = global_var:cold_war_usa_economy_var }
+				if = {
+					limit = {
+						global_var:cold_war_economy_balance_var < 1
+					}
+					set_global_variable = { name = cold_war_economy_balance_var_inverse value = -1 }
+					change_global_variable = { name = cold_war_economy_balance_var_inverse divide = global_var:cold_war_economy_balance_var }
+					set_global_variable = { name = cold_war_economy_balance_var value = global_var:cold_war_economy_balance_var_inverse }
+					remove_global_variable = cold_war_economy_balance_var_inverse
+				}
+
+				set_global_variable = { name = cold_war_ussr_prestige_var value = c:RUS.prestige }
+				set_global_variable = { name = cold_war_usa_prestige_var value = c:USA.prestige }
+				set_global_variable = { name = cold_war_prestige_balance_var value = global_var:cold_war_ussr_prestige_var }
+				change_global_variable = { name = cold_war_prestige_balance_var divide = global_var:cold_war_usa_prestige_var }
+				if = {
+					limit = {
+						global_var:cold_war_prestige_balance_var < 1
+					}
+					set_global_variable = { name = cold_war_prestige_balance_var_inverse value = -1 }
+					change_global_variable = { name = cold_war_prestige_balance_var_inverse divide = global_var:cold_war_prestige_balance_var }
+					set_global_variable = { name = cold_war_prestige_balance_var value = global_var:cold_war_prestige_balance_var_inverse }
+					remove_global_variable = cold_war_prestige_balance_var_inverse
+				}
+			}
+			if = {
+				limit = {
+					is_in_power_bloc = yes
+					is_power_bloc_leader = no
+				}
+				change_variable = {
+					name = cold_war_no_longer_power_bloc_leader_var
+					add = 1
+				}
+			}
+			if = {
+				limit = {
+					is_in_power_bloc = yes
+					is_power_bloc_leader = yes
+				}
+				set_variable = {
+					name = cold_war_no_longer_power_bloc_leader_var
+					value = 0
+				}
+			}
+		}
+	}	
     complete = {
 		trigger_if = {
 			limit = {
