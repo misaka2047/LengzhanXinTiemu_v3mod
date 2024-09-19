@@ -36,5 +36,5 @@
   cold_war_main.2.f: "希腊的生存，受到共产党领导的数千武装人员恐怖活动的威胁，他们在很多地点，特别是沿着希腊北部边境，对抗政府的管辖……极权政制的种子，是靠悲惨和匮乏滋养发育的。它们在贫穷和动乱的灾难土地上蔓延滋长。当一个民族对于较好生活的希望绝灭之后，这类种子便会长大成株。我们一定要使那种希望存在下去。全世界的自由人民期待我们支持他们维护自由。"
   cold_war_main.2.a: "捍卫我们的意识形态，不计一切代价！"
   
-  cold_war_prestige_balance_var: "#v 国际威望#!对比\n（#v 美国#!：[GetGlobalVariable('cold_war_usa_prestige_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_prestige_var').GetValue|v1%]#!）"
-  cold_war_economy_balance_var: "直接控制或[concept_subject]控制的#v 所有地区#!的[concept_gdp]对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_economy_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_economy_var').GetValue|v1%]#!）"
+  cold_war_core_progress_bar_prestige_balance: "#v 国际威望#!对比\n（#v 美国#!：[GetGlobalVariable('cold_war_usa_prestige_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_prestige_var').GetValue|v1%]#!）"
+  cold_war_core_progress_bar_economy_balance: "直接控制或[concept_subject]控制的#v 所有地区#!的[concept_gdp]对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_economy_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_economy_var').GetValue|v1%]#!）"
