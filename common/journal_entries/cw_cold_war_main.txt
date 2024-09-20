@@ -57,6 +57,20 @@ je_cold_war_main = {
 				remove_global_variable = cold_war_prestige_balance_var_inverse
 			}
 
+			set_global_variable = { name = cold_war_ussr_average_sol_var value = c:RUS.average_sol }
+			set_global_variable = { name = cold_war_usa_average_sol_var value = c:USA.average_sol }
+			set_global_variable = { name = cold_war_average_sol_balance_var value = global_var:cold_war_ussr_average_sol_var }
+			change_global_variable = { name = cold_war_average_sol_balance_var divide = global_var:cold_war_usa_average_sol_var }
+			if = {
+				limit = {
+					global_var:cold_war_average_sol_balance_var < 1
+				}
+				set_global_variable = { name = cold_war_average_sol_balance_var_inverse value = -1 }
+				change_global_variable = { name = cold_war_average_sol_balance_var_inverse divide = global_var:cold_war_average_sol_balance_var }
+				set_global_variable = { name = cold_war_average_sol_balance_var value = global_var:cold_war_average_sol_balance_var_inverse }
+				remove_global_variable = cold_war_average_sol_balance_var_inverse
+			}
+
 			scope:journal_entry = {
 				set_global_variable = { name = cold_war_usa_progress value = "scripted_bar_progress(cold_war_core_progress_bar)" }
 				set_global_variable = { name = cold_war_ussr_progress value = 200 }
@@ -136,6 +150,20 @@ je_cold_war_main = {
 					change_global_variable = { name = cold_war_prestige_balance_var_inverse divide = global_var:cold_war_prestige_balance_var }
 					set_global_variable = { name = cold_war_prestige_balance_var value = global_var:cold_war_prestige_balance_var_inverse }
 					remove_global_variable = cold_war_prestige_balance_var_inverse
+				}
+
+				set_global_variable = { name = cold_war_ussr_average_sol_var value = c:RUS.average_sol }
+				set_global_variable = { name = cold_war_usa_average_sol_var value = c:USA.average_sol }
+				set_global_variable = { name = cold_war_average_sol_balance_var value = global_var:cold_war_ussr_average_sol_var }
+				change_global_variable = { name = cold_war_average_sol_balance_var divide = global_var:cold_war_usa_average_sol_var }
+				if = {
+					limit = {
+						global_var:cold_war_average_sol_balance_var < 1
+					}
+					set_global_variable = { name = cold_war_average_sol_balance_var_inverse value = -1 }
+					change_global_variable = { name = cold_war_average_sol_balance_var_inverse divide = global_var:cold_war_average_sol_balance_var }
+					set_global_variable = { name = cold_war_average_sol_balance_var value = global_var:cold_war_average_sol_balance_var_inverse }
+					remove_global_variable = cold_war_average_sol_balance_var_inverse
 				}
 			}
 			if = {

@@ -9,7 +9,7 @@
   cold_war_core_progress_bar_rus_desc: "[GetGlobalVariable('cold_war_ussr_progress').GetValue|1]#!"
   cold_war_core_progress_passive_balance: "直接控制或[concept_subject]控制的#v 所有地区#!的[concept_gdp]对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_passive_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_passive_var').GetValue|v1%]#!）"
   cold_war_core_progress_ideology_balance: "意识形态领域向对方渗透的对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_ideology_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_ideology_var').GetValue|v1%]#!）"
-  cold_war_core_progress_sol_balance: "生活水平的对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_sol_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_sol_var').GetValue|v1%]#!）"
+  cold_war_core_progress_bar_average_sol_balance: "生活水平的对比\n（#v 美国阵营#!：[GetGlobalVariable('cold_war_usa_average_sol_var').GetValue|v1%]#!，#v 苏联阵营#!：[GetGlobalVariable('cold_war_ussr_average_sol_var').GetValue|v1%]#!）"
   je_nato: "北约"
   je_nato_goal: "加入北约。"
   je_nato_reason: "北约是一个由西方国家组成的军事联盟，旨在对抗苏联及其盟友。"

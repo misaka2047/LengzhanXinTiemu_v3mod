@@ -16,6 +16,11 @@ cold_war_core_progress_bar = {
 			value = global_var:cold_war_economy_balance_var
 			divide = 2
 		}
+ 		add = {
+			desc = "cold_war_core_progress_bar_economy_balance"
+			value = global_var:cold_war_average_sol_balance_var
+			divide = 2
+		}
  	}
 
  	start_value = 100
