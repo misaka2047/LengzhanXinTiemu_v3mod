@@ -3,7 +3,7 @@ success_in_satellite_modifier = {
 	country_tech_research_speed_mult = 0.15  
     country_prestige_mult = 0.25
 }
-success_in_manned_space_flight_first_modifier = {
+success_in_manned_space_flight_modifier = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
 	country_tech_research_speed_mult = 0.20 
     country_prestige_mult = 0.30
