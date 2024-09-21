@@ -28,15 +28,15 @@ support_from_usa_modifier = {
 
 gbr_colony_india_modifier = { # 维系印度殖民地成本
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_expenses_add = 1
+	country_expenses_add = 500000
 }
 
 gbr_colony_africa_modifier = { # 维系非洲殖民地成本
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_expenses_add = 1
+	country_expenses_add = 300000
 }
 
 gbr_colony_middle_east_modifier = { # 维系中东殖民地成本
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_expenses_add = 1
+	country_expenses_add = 200000
 }
