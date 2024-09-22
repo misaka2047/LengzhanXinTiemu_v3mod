@@ -27,3 +27,170 @@
  custom_je_prc_sandazhanyi: "Complete the three major battles"
  je_prc_sandazhanyi: "three famous battles before foundation of People's Republic of China"
  je_prc_sandazhanyi_reason: "Defeat the Kuomintang and unify China"
+
+ je_space_race_main: "Space Race"
+ je_space_race_main_goal: "Get mission points from your successful space missions. (10 mission points for each satellite mission, 15 for each manned space mission, 25 for each lunarlanding mission.) (If your country achieve the history moment of humankind, such as launching the first satellite, you get triple points from your mission! ) (Attention: The space mission takes the risk of failure and costs a lot.)"
+ je_space_race_main_reason: "Progress bar shifting toward #bold left#! means #v $USA$#! is dominant , otherwise its shifting toward #bold right#! means #v $RUS$#! is on the upper hand.\n\nSpace race is a historical terminology in cold war era, describing the competition between the USA and the USSR in space missions. Both of the two superpower attempt to show their advantages of science, technology and military via space expedition, and manifest their own ideology."
+ 
+ je_satellite: "Satellite Mission"
+ je_satellite_goal: "Launch a satellite into orbit."
+ je_satellite_reason: "Satellite launching is the first step of space expedition."
+
+ je_manned_space_flight: "Manned Space Flight"
+ je_manned_space_flight_goal: "Complete manned space flight mission."
+ je_manned_space_flight_reason: "Manned space flight is the second step of space expedition."
+
+ je_lunarlanding: "Lunarlanding Mission"
+ je_lunarlanding_goal: "Land on the moon."
+ je_lunarlanding_reason: "Lunarlanding project is a marvellous wonder in our age."
+
+ je_space_station: "Space Station Building"
+ je_space_station_goal: "Build space station in the earth orbit."
+ je_space_station_reason: "Building a space station is a significant step of space expedition. It is a platform for scientific research and human habitation in space."
+
+ space_race.1.t: "Stair to the Space"
+ space_race.1.d: "After World War II, the research legacy of the Third Reich attracted scientists from various countries. The V-2 rocket, which was used for bombing southern England and Western Europe, has been proven to have the potential to enter space with equipment or astronauts."
+ space_race.1.f: "The V-2 rocket (Vergeltungswaffe 2) was a long-range ballistic missile designed by Werner von Braun, a brilliant scientist from Nazi Germany. This missile was the first object to achieve suborbital flight. After the fall of the Third Reich, scientists in both the USA and the USSR began research on the V-2 missile, and their early space exploration projects were based on this research."
+ space_race.1.a: "March on the space!"
+
+ space_race.2.t: "Reach the Stars"
+ space_race.2.d: "Our scientists have proven that we are able to launch an object into Earth orbit, which will orbit the Earth like an ‘artificial moon’. It will greatly promote our space research, and it may have great potential in applications such as communications, military reconnaissance, and weather monitoring."
+ space_race.2.f: "在启蒙主义和现代科学出现之前，人类曾以为天上的群星运转是对人类命运的启示。而现如今，我们正试图将一颗星星挂上天空。一切子虚乌有的怪力乱神在我们征服宇宙的野望面前退缩了。我们不再需要借助玄学的力量阐释人类的命运，而是在自然科学的发展中逐步掌控自己的命运。" # to be continued
+ space_race.2.a: "启动卫星计划！"
+
+ space_race.3.t: "载人航天计划"
+ space_race.3.d: "卫星发射任务的成功，为我们的载人航天计划提供了宝贵的经验。我们的科学家们正积极研究如何将人类送入太空，以此开启人类探索宇宙的新篇章。"
+ space_race.3.f: "人类的探索欲望是无穷无尽的。深邃无光的天际同波涛汹涌的大海一样，需要人类的勇气与智慧去征服。正如无畏的先驱者们探索海洋一样，我们将野心勃勃的目光投向了星空。"
+ space_race.3.a: "我们的目标是星辰大海！"
+
+ space_race.4.t: "登月计划"
+ space_race.4.d: "载人航天技术的发展使得我们有希望将人类送往更高的轨道，直到三十八万千米的高度，抵达地球唯一的天然卫星——月球。"
+ space_race.4.f: "有人问，为什么选择登月？\n那他们也许会问为什么我们要登上最高的山峰？\n很多年前，伟大的英国探险家乔治·马拉里在攀登珠穆朗玛峰时遇难。曾经有人问他为什么要攀登珠峰，他回答说，“因为它就在那儿。”\n太空就在那儿，而我们将投入探索。月球和其他星球就在那儿，获得知识与和平的新希望就在那儿。\n我们要加入其中――我们要领先世界。"
+ space_race.4.a: "我们选择登月！"
+
+ space_race.5.t: "建设空间站"
+ space_race.5.d: "我们的科学家提出了一个伟大的设想：在地球轨道上建立一个空间站，以此作为载人航天计划的基地。这个空间站将成为我们探索宇宙的新起点，我们将有能力在太空进行更复杂、更长期的科学实验与观测。"
+ space_race.5.f: "明月几时有？把酒问青天。\n不知天上宫阙，今夕是何年。\n\n我欲乘风归去，又恐琼楼玉宇，高处不胜寒。\n起舞弄清影，何似在人间。"
+ space_race.5.a: "伟大的计划！"
+
+ space_race.6.t: "返回信号"
+ space_race.6.d: "科学家接收到了卫星的返回信号，这标志着卫星成功进入预定轨道并能够正常工作。"
+ space_race.6.f: "控制中心寂静无声，时间仿佛在这一刻停滞。直到我们的另一个跟踪站打来电话，报告了从卫星电台信号传递器上已经接收了卫星的返回信号，在场的人们才松了一口气，这表明卫星正在完成首次轨道的进程之中。95分钟之后，卫星自发射场的正上方飞过，这次，控制中心也收到了卫星那标志性的无线电信号。"
+ space_race.6.a: "嘟嘟……嘟嘟……嘟嘟……"
+ space_race.6.b: "我们的卫星计划同样成功了。"
+
+ space_race.7.t: "宇航员进入轨道"
+ space_race.7.d: "载有我们的宇航员的飞船已经进入了正确的地球轨道。"
+ space_race.7.f: "从载人飞船上看到的地球，并非呈现球状，而只是一段弧……\n\n飞船飞行的速度比较快，经过某省、某地乃至我国上空的时间都很短，每一次飞过后，我的内心都期待着下一次。\n\n我曾俯瞰我们的首都，白天它是山脉边的一片灰白色，分辨不清，夜晚则呈现一片红晕，那里有我的战友和亲人。"
+ space_race.7.a: "准备执行出舱任务。"
+
+ space_race.8.t: "太空漫步"
+ space_race.8.d: "我们的宇航员打开了舱门，完成了脱离航天器进入失重的太空环境中的壮举。"
+ space_race.8.f: "太空行走的作用和意义是巨大的。其意义与作用是完成太空作业。例如，修复载人航天器或其它航天器上的受损部件，组建空间站。这为人类进入外层空间和其它星球打下了良好的基础。"
+ space_race.8.a: "我们把天空检查了个遍,没有发现上帝和天使。"
+ space_race.8.b: "我已出舱，感觉良好。"
+
+ space_race.9.t: "组建空间站"
+ space_race.9.d: "通过多次发射空间站模块与组件，并将多位宇航员送入太空执行组装任务，我们已经建成了一个完整的空间站。"
+ space_race.9.f: "空间站是人类在太空中的家园，是人类探索宇宙的基地。它不仅是人类在太空中进行科学实验、观测和研究的重要平台，也是人类在太空中生活、工作和休息的场所。"
+ space_race.9.a: "我们迈向太空的前哨站！"
+
+ space_race.10.t: "降落在月球"
+ space_race.10.d: "我们的飞船降落在了月球上，宇航员走出飞船，在月球上留下了[ROOT.GetCountry.GetName]的足迹。"
+ space_race.10.f: "他们穿着衬垫很厚的白色月球步行装，穿上大靴子，戴着大手套，背着向他们提供氧气和无线电通讯的背包，打开舱盖。着陆月球6个半小时候后，宇航员走出登月舱。背朝外，缓缓地从登月舱的梯子上下来。宇航员踩在月球表面的纤细粉末上，在月壤上留下了脚印。随后，宇航员掀开了登月舱梯子上登月纪念牌的遮盖物，并在地上插了一面国旗。"
+ space_race.10.a: "这是一个人的一小步，却是人类的一大步。"
+ space_race.10.b: "我们登上了月球。"
+
+ space_race.11.t: "发射！"
+ space_race.11.d: "经过充分的准备和一系列测试，我们终于可以准备向太空发射航天器了。"
+ space_race.11.f: "火箭尾部发出巨大的轰鸣声，数百吨高能燃料开始燃烧，八台发动机同时喷出炽热的火焰，高温高速的气体，几秒钟就把发射台下的上千吨水化为蒸气。"
+ space_race.11.a: "火箭升空了。"
+
+ space_race.12.t: "实验动物"
+ space_race.12.d: "我们的科学家计划将动物送入太空，收集生物数据，为人类进入太空打下基础。"
+ space_race.12.f: "科学家们在狗狗的身体表面和皮下安装了感应器，用来监测它的呼吸和心跳，在进入太空后，监测数据就会自动传回地面。随后科学家们将其送入了专门为它设计的加压密封舱内，密封舱固定在火箭的头部，面对它的还有一个摄像头。"
+ space_race.12.a: "这是很有必要的。"
+ space_race.12.b: "把动物送上天？多么可笑。"
+
+ space_race.13.t: "射程不足"
+ space_race.13.d: "我们的火箭设计遇到了阻碍：火箭的射程不足，但导弹的燃料箱已经达到了设计的极限，根本无法再容纳更多的燃料。"
+ space_race.13.f: "随着指挥员一声令下，导弹呼啸而起，腾空而去。然而，随着它划过天空的轨迹逐渐清晰，所有人的心情却逐渐沉重起来。果然，正如预料中的那样，问题出现了——导弹的射程明显不足。这个问题如同一盆冷水，浇在了现场每一个人的心头。自从开始研制这枚导弹以来，科研团队无时无刻不在面对各种挑战，而射程不足的问题尤为棘手。"
+ space_race.13.a: "加快研究更高效的推进剂。"
+ space_race.13.b: "改造火箭的布局以容纳更多燃料。"
+ space_race.13.c: "过重的推进剂也许正是火箭飞不远的原因。"
+
+ space_race.14.t: "飞船爆炸"
+ space_race.14.d: "就在飞船升天后不久，外挂燃料箱凌空爆炸，飞船被炸得粉碎，与地面的通讯猝然中断。"
+ space_race.14.f: "监控中心屏幕上的数据陡然全部消失。飞船变成了一团大火，两枚失去控制的固体助推火箭脱离火球，成V字形喷着火焰向前飞去，眼看要掉入人口稠密的陆地，航天中心负责安全的军官眼疾手快，在第100秒时，通过遥控装置将它们引爆了。"
+ space_race.14.a: "何其惨痛的教训！"
+
+ space_race.15.t: "燃料加注爆炸"
+ space_race.15.d: "在为火箭加注燃料时，技术人员失误的操作导致了燃料箱爆炸，大量在场技术人员死亡。"
+ space_race.15.f: "唯有鲜血的教训最为深刻，唯有痛苦的代价最为昂贵。这场爆炸事故不仅让我们失去了一枚火箭，更让我们失去了许多宝贵的技术人员。我们要铭记这场惨痛的教训，我们要以此为鞭策，不断提高我们的技术水平，不断完善我们的安全措施。"
+ space_race.15.a: "从头开始。"
+ 
+ space_race.16.t: "硬化的O圈"
+ space_race.16.d: "一位技术人员警告称，发射日的低气温将导致起密封作用的O形橡胶圈硬化，这可能会导致严重的后果。"
+ space_race.16.f: "“这些钢圈看上去很结实，很牢固，但点火后，每个部分由于受到巨大压力，都会像气球一样被‘吹’起来。这样，就需要在各部分的接合处采用松紧带来防止热气跑出火箭。”这份工作由两条名为“O圈”的橡胶带完成，它们可以随着钢圈一起扩张，并能弥合缝隙。如果这两条橡胶带与钢圈脱离哪怕0.2秒，助推器的燃料就会发生泄漏，固态火箭助推器就会爆炸。"
+ space_race.16.a: "这是严重的设计缺陷！"
+ space_race.16.b: "我们耽误不起。"
+
+ space_race.17.t: "整流罩过早打开"
+ space_race.17.d: "在火箭升空后，整流罩过早打开，导致火箭的气动特性发生了严重变化，火箭失去了控制。"
+ space_race.17.f: "整流罩用于保护卫星及其它有效载荷，以防止卫星受气动力、气动加热及声振等有害环境的影响，是运载火箭的重要组成部分。卫星整流罩一般为蚌壳式（两半）结构，由端头、前锥段、圆筒段、倒锥段和纵向及横向分离机构等组成。"
+ space_race.17.a: "我们把火箭发射到海里了！"
+
+ space_race.18.t: "进展顺利"
+ space_race.18.d: "我们的太空任务目前进展顺利。"
+ space_race.18.f: "在这个充满挑战的时代，我们的科学家们正以前所未有的热情和勇气投入到太空探索的浪潮之中。"
+ space_race.18.a: "已阅。"
+
+ space_race.19.t: "取得进展"
+ space_race.19.d: "我们的太空任务取得了进展，但同样遇到了一些未曾设想的风险。"
+ space_race.19.f: "在太空探索的道路上，我们将会遇到各种各样的困难和挑战，但我们相信，只要我们坚持不懈，勇往直前，就一定能够取得成功。"
+ space_race.19.a: "已阅。"
+ 
+ space_race.20.t: "遭遇风险"
+ space_race.20.d: "太空任务进展并不顺利，一些未曾料到的风险出现了。"
+ space_race.20.f: "先驱者所走的道路，总是充满了未知和危险。"
+ space_race.20.a: "已阅。"
+ space_race_core_progress_bar: "太空竞赛"
+ space_race_core_progress_bar_name: "太空竞赛"
+ space_race_core_progress_bar_usa_desc: "[GetGlobalVariable('space_race_usa_progress').GetValue|1]#!"
+ space_race_core_progress_bar_rus_desc: "[GetGlobalVariable('space_race_rus_progress').GetValue|1]#!"
+
+ space_race_satellite_button: "启动卫星发射计划"
+ space_race_satellite_button_DESC: "发射一颗卫星进入地球轨道，这将为我们的太空竞赛进度条提供10点胜利点。"
+
+ space_race_manned_space_flight_button: "启动载人航天计划"
+ space_race_manned_space_flight_button_DESC: "发射一架载人航天器，将我们的航天员送入太空，这将为我们的太空竞赛进度条提供20点胜利点。"
+
+ space_race_lunarlanding_button: "启动登月计划"
+ space_race_lunarlanding_button_DESC: "发射一架载人航天器，将我们的航天员送上月球，这将为我们的太空竞赛进度条提供50点胜利点。"
+
+ space_race_space_station_button: "启动空间站计划"
+ space_race_space_station_button_DESC: "发射空间站模块，将我们的航天员送入太空，这将为我们的太空竞赛进度条提供70点胜利点。该选项是一次性的。"
+
+ success_in_lunarlanding_modifier: "登月成功"
+ success_in_lunarlanding_first_modifier: "第一次登月！"
+
+ success_in_space_station_modifier: "成功建立太空空间站"
+
+ success_in_satellite_modifier: "成功发射卫星"
+ success_in_satellite_first_modifier: "第一次卫星发射！"
+ success_in_manned_space_flight_first_modifier: "第一次载人航天！"
+ success_in_manned_space_flight_modifier: "成功发射载人航天器"
+
+ failure_in_space_task_modifier: "失败的太空任务"
+
+ space_race_points_usa_increases_10_tt: "美国获得10胜利点"
+ space_race_points_usa_increases_15_tt: "美国获得15胜利点"
+ space_race_points_usa_increases_25_tt: "美国获得25胜利点"
+ space_race_points_usa_increases_50_tt: "美国获得50胜利点"
+ space_race_points_usa_increases_75_tt: "美国获得75胜利点"
+
+ space_race_points_ussr_increases_10_tt: "苏联获得10胜利点"
+ space_race_points_ussr_increases_15_tt: "苏联获得15胜利点"
+ space_race_points_ussr_increases_25_tt: "苏联获得25胜利点"
+ space_race_points_ussr_increases_50_tt: "苏联获得50胜利点"
+ space_race_points_ussr_increases_75_tt: "苏联获得75胜利点"
