@@ -1,0 +1,38 @@
+je_lutte_de_mai = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		exists = c:FRA
+		c:FRA = ROOT
+	}
+	
+	possible = {
+		exists = c:FRA
+		c:FRA = ROOT
+        OR = {
+            AND = {
+                year >= 1960  
+                average_sol < 15
+                literacy_rate > 0.5
+            }
+            AND = {
+                has_global_variable = left_1960s_count
+                left_1960s_count >= 3
+            }
+        }
+	}
+
+    immediate = {
+        if = {
+            limit = {
+                has_global_variable = left_1960s_count
+            }
+            set_global_variable = { name = left_1960s_count add = 1}
+        }
+        else = {
+            set_global_variable = { name = left_1960s_count value = 1}
+        }
+    }
+}
