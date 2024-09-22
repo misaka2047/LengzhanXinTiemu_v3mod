@@ -88,5 +88,24 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_anglican_church
 		}
+
+		trigger_event = {
+			id = colony_breakup.1
+		}
+
+		add_modifier = {
+			name = gbr_colony_india_modifier
+			months = -1
+		}
+
+		add_modifier = {
+			name = gbr_colony_africa_modifier
+			months = -1
+		}
+
+		add_modifier = {
+			name = gbr_colony_middle_east_modifier
+			months = -1
+		}
 	}
 }

@@ -151,5 +151,8 @@ colony_breakup.501 = { # 英国日志失败
     option = {
         name = colony_breakup.5.a
         default_option = yes
+        remove_modifier = gbr_colony_india_modifier
+        remove_modifier = gbr_colony_africa_modifier
+        remove_modifier = gbr_colony_middle_east_modifier
     }   
 }
