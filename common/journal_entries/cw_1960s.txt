@@ -73,7 +73,7 @@ je_lutte_de_mai = {
         }
     }
     on_weekly_pulse = {
-        random_event = {
+        random_events = {
             100 = 0
             10 = lutte_de_mai.2
             10 = lutte_de_mai.3
