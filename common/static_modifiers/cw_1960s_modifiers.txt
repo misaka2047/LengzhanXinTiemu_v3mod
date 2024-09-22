@@ -1,0 +1,52 @@
+lutte_de_mai_strike_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_mining_throughput_add = -0.25
+    building_group_bg_manufacturing_throughput_add = -0.25
+    building_railway_throughput_add = -0.25
+}
+
+lutte_de_mai_strike_modifier_stronger = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_mining_throughput_add = -0.5
+    building_group_bg_manufacturing_throughput_add = -0.5
+    building_railway_throughput_add = -0.5
+}
+
+lutte_de_mai_strike_modifier_weaker = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	building_group_bg_mining_throughput_add = -0.25
+    building_group_bg_manufacturing_throughput_add = -0.25
+    building_railway_throughput_add = -0.25
+}
+
+lutte_de_mai_suppression_college_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    building_university_throughput_add = -0.5
+    building_arts_academy_throughput_add = -0.5
+    interest_group_ig_intelligentsia_approval_add = -1
+}
+
+lutte_de_mai_suppression_demonstration_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    building_university_throughput_add = -0.8
+    building_arts_academy_throughput_add = -0.8
+    interest_group_ig_intelligentsia_approval_add = -2
+}
+
+lutte_de_mai_suppression_street_barriers_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    interest_group_ig_intelligentsia_approval_add = -5
+    interest_group_ig_trade_unions_pol_str_mult = -0.10
+}
+
+lutte_de_mai_modifier = = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	interest_group_ig_trade_unions_pol_str_mult = 0.40
+	interest_group_ig_intelligentsia_pol_str_mult = 0.40
+}
+
+lutte_de_mai_suppression_workers_modifier = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+    interest_group_ig_trade_unions_pol_str_mult = -0.10
+    interest_group_ig_trade_unions_approval_add = -5
+}

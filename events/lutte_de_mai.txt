@@ -1,0 +1,559 @@
+namespace = lutte_de_mai
+lutte_de_mai.1 = {
+	type = country_event
+	placement = root
+	
+	title = lutte_de_mai.1.t
+	desc = lutte_de_mai.1.d
+	flavor = lutte_de_mai.1.f
+	
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.1.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_modifier
+            months = -1
+        }
+        trigger = {
+            OR = {
+                has_law = law_type:law_secret_police
+                has_law = law_type:law_national_guard
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.1.b
+        default_option = yes
+		capital = {
+			add_radicals_in_state = {
+				value = very_large_radicals
+			}
+		}
+        add_modifier = {
+            modifier = lutte_de_mai_modifier
+            months = -1
+        }
+    }
+}
+
+lutte_de_mai.2 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.2.t
+    desc = lutte_de_mai.2.d
+    flavor = lutte_de_mai.2.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.2.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_college_modifier
+            months = 12
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.2.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 10
+        }
+    }
+}
+
+lutte_de_mai.3 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.3.t
+    desc = lutte_de_mai.3.d
+    flavor = lutte_de_mai.3.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.3.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_street_barriers_modifier
+            months = 12
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.3.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 10
+        }
+    }
+}
+
+lutte_de_mai.4 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.4.t
+    desc = lutte_de_mai.4.d
+    flavor = lutte_de_mai.4.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+        set_variable = {
+            name = lutte_de_mai_4_triggered
+            months = -1
+        }
+    }
+
+    option = {
+        name = lutte_de_mai.4.a
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.4.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 10
+        }
+    }
+}
+
+lutte_de_mai.5 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.5.t
+    desc = lutte_de_mai.5.d
+    flavor = lutte_de_mai.5.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.5.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_demonstration_modifier
+            months = 12
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.5.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 10
+        }
+    }
+}
+
+lutte_de_mai.6 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.6.t
+    desc = lutte_de_mai.6.d
+    flavor = lutte_de_mai.6.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.6.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_street_barriers_modifier
+            months = 12
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.6.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 10
+        }
+    }
+}
+
+lutte_de_mai.7 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.7.t
+    desc = lutte_de_mai.7.d
+    flavor = lutte_de_mai.7.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.7.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_workers_modifier
+            months = 12
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -10
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+        set_variable = {
+            name = lutte_de_mai_7_triggered
+            months = -1
+        }
+        trigger = {
+            NOT = {
+                has_variable = lutte_de_mai_7_triggered
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.7.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 20
+        }
+        set_variable = {
+            name = lutte_de_mai_7_triggered
+            months = -1
+        }
+        add_modifier = {
+            modifier = lutte_de_mai_strike_modifier
+            months = 12
+        }
+        trigger = {
+            NOT = {
+                has_variable = lutte_de_mai_7_triggered
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.7.c
+        default_option = yes
+        trigger_event = {
+            id = lutte_de_mai.8
+        }
+        remove_variable = lutte_de_mai_7_triggered
+        trigger = {
+            has_variable = lutte_de_mai_7_triggered
+        }
+    }
+}
+
+lutte_de_mai.8 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.8.t
+    desc = lutte_de_mai.8.d
+    flavor = lutte_de_mai.8.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.8.a
+        default_option = yes
+        add_modifier = {
+            modifier = lutte_de_mai_strike_modifier_stronger
+            months = 24
+        }
+        capital = {
+            add_radicals_in_state = {
+                value = very_large_radicals
+            }
+        }
+    }
+    option = {
+        name = lutte_de_mai.8.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 30
+        }
+        add_modifier = {
+            modifier = lutte_de_mai_strike_modifier_weaker
+            months = 24
+        }
+    }
+}
+
+lutte_de_mai.9 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.9.t
+    desc = lutte_de_mai.9.d
+    flavor = lutte_de_mai.9.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.9.a
+        default_option = yes
+        trigger = {
+			ig:ig_armed_forces = {
+				is_powerful = yes
+                ig_approval > 0
+			}
+        }
+        change_variable = {
+            name = lutte_de_mai_var
+            add = -30
+        }
+    }
+    option = {
+        name = lutte_de_mai.9.b
+        default_option = yes
+        change_variable = {
+            name = lutte_de_mai_var
+            add = 50
+        }
+    }
+}
+
+lutte_de_mai.10 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.10.t
+    desc = lutte_de_mai.10.d
+    flavor = lutte_de_mai.10.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }
+
+    option = {
+        name = lutte_de_mai.10.a
+        default_option = yes
+        remove_modifier = lutte_de_mai_modifier
+        add_modifier = {
+            modifier = lutte_de_mai_suppression_success_modifier
+            months = 60
+        }
+    }
+}
+
+lutte_de_mai.11 = {
+    type = country_event
+    placement = root
+    
+    title = lutte_de_mai.11.t
+    desc = lutte_de_mai.11.d
+    flavor = lutte_de_mai.11.f
+    
+    event_image = {
+        video = "unspecific_ruler_speaking_to_people"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+    
+    duration = 3
+    
+    immediate = {
+        remove_modifier = lutte_de_mai_modifier
+    }
+
+    option = {
+        name = lutte_de_mai.11.a
+        default_option = yes
+        c:FRA = {
+            activate_law = law_type:law_council_republic
+        }
+        trigger = {
+            OR = {
+                has_law = law_type:law_presidential_republic #总统共和制
+                has_law = law_type:law_semi_presidential_republic #半总统共和制
+                has_law = law_type:law_parliamentary_republic #议会共和制
+            }
+        }
+    }
+
+    option = {
+        name = lutte_de_mai.11.b
+        default_option = yes
+        c:FRA = {
+            activate_law = law_type:law_parliamentary_republic
+        }
+        trigger = {
+            OR = {
+                has_law = law_type:law_theocracy
+                has_law = law_type:law_monarchy
+            }
+        }
+    }
+
+    option = {
+        name = lutte_de_mai.11.c
+        default_option = yes
+        c:FRA = {
+            activate_law = law_type:law_cooperative_ownership
+        }
+        trigger = {
+            has_law = law_type:law_council_republic
+        }
+    }
+}

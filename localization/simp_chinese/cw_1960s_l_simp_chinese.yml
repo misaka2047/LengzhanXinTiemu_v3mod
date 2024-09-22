@@ -80,7 +80,17 @@
 
   je_lutte_de_mai: "风暴"
   je_lutte_de_mai_goal: "平息学生运动和工人罢工。"
-  je__lutte_de_mai_reason: "如果进度条满，则现政府将被推翻，由工人和学生组成的临时政府将接管[ROOT.GetCountry.GetName]。你的软弱妥协将有利于抗议者推进进度条，而你的强硬镇压将回滚进度条。但要注意，#v 强硬手段将增加激进派#!，如果爆发了革命，你的努力将功亏一篑。"
+  je_lutte_de_mai_reason: "如果进度条满，则现政府将被推翻，由工人和学生组成的临时政府将接管[ROOT.GetCountry.GetName]。你的软弱妥协将有利于抗议者推进进度条，而你的强硬镇压将回滚进度条。但要注意，#v 强硬手段将增加激进派#!，如果爆发了革命，你的努力将功亏一篑。"
+
+  lutte_de_mai_strike_modifier: "同情罢工"
+  lutte_de_mai_strike_modifier_stronger: "大罢工"
+  lutte_de_mai_strike_modifier_weaker: "妥协罢工"
+  lutte_de_mai_modifier: "时代的风暴"
+  lutte_de_mai_suppression_college_modifier: "驱散学生集会"
+  lutte_de_mai_suppression_demonstration_modifier: "驱散游行队伍"
+  lutte_de_mai_suppression_street_barriers_modifier: "清扫街垒"
+  lutte_de_mai_suppression_workers_modifier: "镇压罢工工人"
+  lutte_de_mai_suppression_success_modifier: "失败的学生运动"
 
   lutte_de_mai.2.t: "点火"
   lutte_de_mai.2.d: "抗议学生占领了一所大学，大学校长在未经协商的情况下要求警察介入，大量学生被审讯或被捕。这彻底激怒了抗议群体，引起了冲突升级。"
@@ -117,6 +127,7 @@
   lutte_de_mai.7.f: "暴力的骚动无法触及共和国的根本，然而，看似和平的罢工却掐断了国家的经脉。工人们的罢工使得法国的经济陷入瘫痪，他们正在将整个国家拖入这场起源于学生运动的风暴之中。"
   lutte_de_mai.7.a: "逮捕工会领袖，镇压罢工。"
   lutte_de_mai.7.b: "收买动摇的工会领袖，以温和承诺暂缓他们的诉求。"
+  lutte_de_mai.7.c: "希望这是最后一次了……"
 
   lutte_de_mai.8.t: "瘫痪"
   lutte_de_mai.8.d: "工人罢工的规模超过千万人，左翼政党正在支持罢工与游行运动，政府机能和整个法兰西的社会已经陷入瘫痪。"
@@ -140,6 +151,7 @@
   lutte_de_mai.11.f: "在爱丽舍宫的大厅里，一群学生和工人站在总统的办公桌前，他们高举着红旗，唱着《国际歌》。他们说，法兰西将成为一个自由、平等、博爱的社会主义国家，他们说，法兰西将成为一个真正属于人民的国家。"
   lutte_de_mai.11.a: "压迫者倒下，红旗升起。"
   lutte_de_mai.11.b: "暴君倒下，三色旗升起。"
+  lutte_de_mai.11.c: "叛徒倒下，红旗升起。"
 
   anni_di_piombo.1.t: "火热之秋" #占位
   anni_di_piombo.1.d: "意大利的学生和工人开始了一场声势浩大的抗议运动，他们要求政府满足他们的诉求，改善他们的生活状况。"

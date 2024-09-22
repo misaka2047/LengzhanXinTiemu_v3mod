@@ -19,7 +19,7 @@ je_lutte_de_mai = {
             }
             AND = {
                 has_global_variable = left_1960s_count
-                left_1960s_count >= 3
+                global_var:left_1960s_count >= 3
             }
         }
 	}
@@ -34,5 +34,47 @@ je_lutte_de_mai = {
         else = {
             set_global_variable = { name = left_1960s_count value = 1}
         }
+        trigger_event = {
+            id = lutte_de_mai.1
+        }
+        set_variable = {
+            name = lutte_de_mai_var
+            value = 0
+        }
     }
+    current_value = {
+        value = var:lutte_de_mai_var
+    }
+	goal_add_value = {
+		add = 100
+	}
+	complete = {
+		OR = {
+			radical_fraction = {
+				value >= 0.5
+			}
+			any_civil_war = {
+				civil_war_progress > 0.5
+			}
+            scope:journal_entry = {
+                is_goal_complete = yes
+            }
+		}
+	}
+    on_complete = {
+        trigger_event = {
+            id = lutte_de_mai.11
+        }
+    }
+    time_out = 1000
+    on_timeout = {
+        trigger_event = {
+            id = lutte_de_mai.10
+        }
+    }
+	progressbar = yes
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
 }
