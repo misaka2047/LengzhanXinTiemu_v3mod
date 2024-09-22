@@ -24,7 +24,7 @@ lutte_de_mai.1 = {
         name = lutte_de_mai.1.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_modifier
+            name = lutte_de_mai_modifier
             months = -1
         }
         trigger = {
@@ -43,7 +43,7 @@ lutte_de_mai.1 = {
 			}
 		}
         add_modifier = {
-            modifier = lutte_de_mai_modifier
+            name = lutte_de_mai_modifier
             months = -1
         }
     }
@@ -74,7 +74,7 @@ lutte_de_mai.2 = {
         name = lutte_de_mai.2.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_suppression_college_modifier
+            name = lutte_de_mai_suppression_college_modifier
             months = 12
         }
         change_variable = {
@@ -122,7 +122,7 @@ lutte_de_mai.3 = {
         name = lutte_de_mai.3.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_suppression_street_barriers_modifier
+            name = lutte_de_mai_suppression_street_barriers_modifier
             months = 12
         }
         change_variable = {
@@ -218,7 +218,7 @@ lutte_de_mai.5 = {
         name = lutte_de_mai.5.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_suppression_demonstration_modifier
+            name = lutte_de_mai_suppression_demonstration_modifier
             months = 12
         }
         change_variable = {
@@ -266,7 +266,7 @@ lutte_de_mai.6 = {
         name = lutte_de_mai.6.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_suppression_street_barriers_modifier
+            name = lutte_de_mai_suppression_street_barriers_modifier
             months = 12
         }
         change_variable = {
@@ -314,7 +314,7 @@ lutte_de_mai.7 = {
         name = lutte_de_mai.7.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_suppression_workers_modifier
+            name = lutte_de_mai_suppression_workers_modifier
             months = 12
         }
         change_variable = {
@@ -348,7 +348,7 @@ lutte_de_mai.7 = {
             months = -1
         }
         add_modifier = {
-            modifier = lutte_de_mai_strike_modifier
+            name = lutte_de_mai_strike_modifier
             months = 12
         }
         trigger = {
@@ -395,7 +395,7 @@ lutte_de_mai.8 = {
         name = lutte_de_mai.8.a
         default_option = yes
         add_modifier = {
-            modifier = lutte_de_mai_strike_modifier_stronger
+            name = lutte_de_mai_strike_modifier_stronger
             months = 24
         }
         capital = {
@@ -412,7 +412,7 @@ lutte_de_mai.8 = {
             add = 30
         }
         add_modifier = {
-            modifier = lutte_de_mai_strike_modifier_weaker
+            name = lutte_de_mai_strike_modifier_weaker
             months = 24
         }
     }
@@ -489,9 +489,17 @@ lutte_de_mai.10 = {
         default_option = yes
         remove_modifier = lutte_de_mai_modifier
         add_modifier = {
-            modifier = lutte_de_mai_suppression_success_modifier
+            name = lutte_de_mai_suppression_success_modifier
             months = 60
         }
+		add_loyalists = {
+			value = medium_radicals
+			strata = rich
+		}
+		add_loyalists = {
+			value = medium_radicals
+			strata = middle
+		}
     }
 }
 

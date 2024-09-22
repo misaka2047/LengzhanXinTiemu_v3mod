@@ -66,13 +66,25 @@ je_lutte_de_mai = {
             id = lutte_de_mai.11
         }
     }
-    time_out = 1000
+    timeout = 500
     on_timeout = {
         trigger_event = {
             id = lutte_de_mai.10
         }
     }
-	progressbar = yes
+    on_weekly_pulse = {
+        random_event = {
+            100 = 0
+            10 = lutte_de_mai.2
+            10 = lutte_de_mai.3
+            10 = lutte_de_mai.4
+            10 = lutte_de_mai.5
+            10 = lutte_de_mai.6
+            10 = lutte_de_mai.7
+            5 = lutte_de_mai.9
+        }
+    }
+    progressbar = yes
 
 	weight = 10000
 	

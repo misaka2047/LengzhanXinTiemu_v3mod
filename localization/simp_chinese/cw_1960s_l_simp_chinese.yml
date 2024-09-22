@@ -79,7 +79,7 @@
   lutte_de_mai.1.b: "风暴来临了。"
 
   je_lutte_de_mai: "风暴"
-  je_lutte_de_mai_goal: "平息学生运动和工人罢工。"
+  je_lutte_de_mai_goal: "进度条满。"
   je_lutte_de_mai_reason: "如果进度条满，则现政府将被推翻，由工人和学生组成的临时政府将接管[ROOT.GetCountry.GetName]。你的软弱妥协将有利于抗议者推进进度条，而你的强硬镇压将回滚进度条。但要注意，#v 强硬手段将增加激进派#!，如果爆发了革命，你的努力将功亏一篑。"
 
   lutte_de_mai_strike_modifier: "同情罢工"
