@@ -1,0 +1,70 @@
+﻿l_simp_chinese:
+  je_south_korea_democracy_main: "民主化进程"
+  je_south_korea_democracy_reason: "[ROOT.GetCountry.GetName]自独立建国以来，并无民主政治的传统。在游戏过程中，这表现为[ROOT.GetCountry.GetName]将长期陷入#bold 独裁统治#!，如果代表#v 民主意识#!的进度条未满，即使修改法律或通过偶发的事件拥有#bold 民主政体#!，也将在#v 军人干政#!的影响下重返独裁制。\n\n民主化进程将在游戏中持续进行，你可以通过#v 事件#!、#v 决议#!、#v 法律改革#!等方式提升#v 民主意识#!。需要注意的是，尽管强行改革为民主政体并不能完成民主化，但成功的法律改革仍然会增长进度条。\n\n然而，独裁者统治下的政治稳定、经济繁荣也会对民主化进程产生负面影响。这意味着你可以通过增加#bold 激进派#!，主动挑动#bold 革命#!的方式推动民主化，但也意味着你可以通过壮大#bold 效忠派#!和提高#bold 生活水平#!巩固独裁统治。\n\n如果在时间耗尽前，民主化进度条未满，则独裁统治得到巩固。当民主化进度条满时，[ROOT.GetCountry.GetName]将拥有民主政体。"
+  je_south_korea_democracy_main_goal: "提升民主意识，完成民主化进程，或者巩固独裁统治。"
+
+  south_korea_democracy.1.t: "四舍五入"
+  south_korea_democracy.1.d: "[ROOT.GetCountry.GetRuler.GetFullName]试图通过修改宪法的方式取消总统的任期限制，增强自己独裁统治的合法性。然而，他的提案距离满足三分之二议员同意的标准还有一票的差距。[ROOT.GetCountry.GetRuler.GetFullName]的支持者则认为我们可以在这种情况下找借口强行通过这项宪法修正案。"
+  south_korea_democracy.1.f: "国会现有议席204席，在籍议员203人，赞成修宪135名，反对修宪60名，弃权6名、无效1名，缺席1人。203票的2/3是135.3333，根据四舍五入原理，即是135票，所以，我们有理由认为这项修宪已经通过……至少从数学上来说。"
+  south_korea_democracy.1.a: "十分甚至九分的正确。"
+  south_korea_democracy.1.b: "太扯淡了。"
+
+  south_korea_democracy.2.t: "安保法修正案"
+  south_korea_democracy.2.d: "[ROOT.GetCountry.GetRuler.GetFullName]试图拓展《国家安保法》的适用范围，将其变成自己打压异己、巩固独裁统治的工具。"
+  south_korea_democracy.2.f: "修正案扩大了法律的适用范围，将更多形式的政治异议和反对行为纳入“危害国家安全”的范畴。包括批评政府政策、与被视为“反国家组织”有联系的行为，甚至是在私下讨论中表达对政府的不满，都可能被视为违法行为。修正案严格限制言论自由和集会自由，任何被认为可能威胁国家安全的出版物、言论和集会都可以被禁止或取缔。"
+  south_korea_democracy.2.a: "这是对国家安全的保护，对吧。"
+  south_korea_democracy.2.b: "这是对自由与人权的侵犯。"
+
+  south_korea_democracy.3.t: "连任"
+  south_korea_democracy.3.d: "[ROOT.GetCountry.GetRuler.GetFullName]成功在新一届总统选举中毫无悬念地获得连任，在其翼赞者浮夸的吹捧中，[ROOT.GetCountry.GetRuler.GetFullName]再度宣誓就职。"
+  south_korea_democracy.3.f: "忽略掉舞弊、恐吓与威胁，忽略掉对手的消失与异议的沉默，忽略掉落入议员手中的钞票，[ROOT.GetCountry.GetRuler.GetFullName]的连任明显是符合民主程序的。总统再度君临他忠诚的[ROOT.GetCountry.GetName]。"
+  south_korea_democracy.3.a: "大约也算得民主。"
+  south_korea_democracy.3.b: "闹剧而已。"
+
+  south_korea_democracy.4.t: "迫害"
+  south_korea_democracy.4.d: "独裁政府对反对派和民主人士的迫害行动愈演愈烈，大量异议者在集会场所被捕，有的被以莫须有的罪名判处重刑，有的则惨遭杀害。"
+  south_korea_democracy.4.f: "曾参加上月抗议集会而行踪不明的学生，其尸体在港口被一个渔夫发现。当局宣布根据尸检证实他的死因是溺水，但许多人不认同这种解释。一些示威者强行进入医院，他们发现这名学生的头骨被20厘米长催泪瓦斯手榴弹劈开，从其后脑勺穿透到眼睛。这表明警察的催泪瓦斯开枪角度小于45度，如果直接打在一个人的脸上足以致命。"
+  south_korea_democracy.4.a: "一定是北傀的阴谋。"
+  south_korea_democracy.4.b: "这是对人权的践踏。"
+
+  south_korea_democracy.5.t: "大游行"
+  south_korea_democracy.5.d: "数十万民众走上首都街头，反对目前的[ROOT.GetCountry.GetRuler.GetFullName]政府，呼吁建成真正民主自由的[ROOT.GetCountry.GetName]。"
+  south_korea_democracy.5.f: "游行者高举标语，要求[ROOT.GetCountry.GetRuler.GetFullName]辞职下台，呼吁建立真正民主自由的[ROOT.GetCountry.GetName]。游行队伍穿过首都的主要街道，声势浩大，引起了全国各地的关注。"
+  south_korea_democracy.5.a: "这已经不是一般的暴民了，必须要出重拳。"
+  south_korea_democracy.5.b: "这种时候最好不要出声，由他们去闹。"
+
+  south_korea_democracy.6.t: "政变"
+  south_korea_democracy.6.d: "军方发动政变，推翻了[ROOT.GetCountry.GetRuler.GetFullName]的短暂民主政权，进驻了青瓦台。"
+  south_korea_democracy.6.f: "除在汉江桥与宪兵队发生短暂交火外，整个政变过程几乎没遇到阻力。军人的政变队伍迅速占领了汉城所有的重要战略地点。[ROOT.GetCountry.GetRuler.GetFullName]被软禁在总统府内，军方宣布实行戒严，解散了国会。"
+  south_korea_democracy.6.a: "苦跌塔！"
+
+  south_korea_democracy.7.t: "美国驻军"
+  south_korea_democracy.7.d: "被推翻的民主政府正在寻求在[ROOT.GetCountry.GetName]的美国驻军的支持，但美国整体对军人政变持观望态度。我们有必要向美国表达我们仍将主张美韩友好，共同抵抗共产主义向朝鲜半岛扩散的态度。"
+  south_korea_democracy.7.f: "对美国来说，相较于民主与专制的政权形式，韩国的政治稳定和反共立场更为重要。所谓的民主政府，对美国来说，只是一个政治形式，而不是政治实质——只要政权能够维持稳定，不给赤色分子可乘之机，对美国来说，这就足够了。"
+  south_korea_democracy.7.a: "向美国主动示好。"
+  south_korea_democracy.7.b: "这只是[ROOT.GetCountry.GetName]内政，和他们无关。"
+
+  south_korea_democracy.8.t: "国家重建最高会议"
+  south_korea_democracy.8.d: "主导军事政变的[ROOT.GetCountry.GetRuler.GetFullName]宣布，将在未来实行专制统治，以重建[ROOT.GetCountry.GetName]的政治秩序。"
+  south_korea_democracy.8.f: "他认为，在经济落后，工业生产水平低，传统文化势力强，农村存在大量文盲，城市存在大量失业和社会不满的韩国推行民主政治，只能被腐败的政客所利用，“政治党派通常都表现得极为腐败、堕落、胡作非为”。"
+  south_korea_democracy.8.a: "军人都很单纯，都是为国尽忠而生的。"
+
+  south_korea_democracy.9.t: "异见者"
+  south_korea_democracy.9.d: "为了巩固我们的统治，最大的在野党领袖被我们褫夺议员资格，而这引起了一场广泛的抗议活动。"
+  south_korea_democracy.9.f: "学生们与警察发生激烈冲突，警方使用催泪瓦斯镇压，但抗议者人数不断增加。随后的几天里，抗议活动蔓延到其他学校和社会各界，成为一场大规模的市民示威。抗议者焚烧政府机构、破坏警车，表达对政府的极度不满。随着抗议升级，政府采取了严厉的镇压手段，大量逮捕示威者。"
+  south_korea_democracy.9.a: "柬埔寨付出了两百万人的牺牲，我们也要有这个觉悟吧。" # 联动红色高棉 
+  south_korea_democracy.9.b: "由他们去说，反正我们不会听。"
+
+  south_korea_democracy.10.t: "维新宪法"
+  south_korea_democracy.10.d: "[ROOT.GetCountry.GetRuler.GetFullName]谋求着更加不受限制的至高权力，借以《非常戒严令》的颁布，他宣布现存宪法作废，议会解散，政府进入维新时期，将颁布赋予总统更大权力的《维新宪法》。"
+  south_korea_democracy.10.f: "他的野心昭然若揭：将国家元首、政府最高长官、内阁主席、国军统帅、国家安全委员会主席、统一主体国民会议议长等大权集为一身，把独裁统治发展到无以复加的地步。总统具有紧急措施权、解散国会权等超宪法权力；总统有权任命占总数三分之一的议员和法官；国会议员选举从小选区制改为每区同时选出执政党和在野党议员各一名，以限制在野党在国会的批评能力。"
+  south_korea_democracy.10.a: "为了稳定与繁荣，我们需要一个强大的领袖。"
+  south_korea_democracy.10.b: "我们不会翼赞一个独裁者。"
+
+  south_korea_democracy.11.t: "野兽的心境"
+  south_korea_democracy.11.d: "在一次政府高层人物的秘密活动中，[Root.GetRuler.GetFullName]被其手下刺杀。无论是民主分子还是独裁的继任者，都对大独裁者的死所形成的政治真空虎视眈眈。"
+  south_korea_democracy.11.f: "在秘密宴会厅里，[Root.GetRuler.GetFullName]与心腹讨论着最近反对党的抗议活动。有些人洋洋得意地主张应该将反对分子“杀光”，以表示自己对大统领的无比忠诚。在摇曳的灯光与歌声之中，在场的人没有怀疑一名高官的离席行为——他很快就回到了餐桌，默默地喝了一杯酒。"
+  south_korea_democracy.11.a: "……射向维新的心脏。"
+
+  south_korea_democracy.12.t: ""
+
