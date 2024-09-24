@@ -72,15 +72,14 @@ KW_event.1 = {
 		
 			create_diplomatic_play = {
 				name = korean_war
-				type = annex_war
+				type = dp_annex_war
 				target_country = c:KOR
 				
-				#war = yes
+				war = yes
 				
-				#TEMP
 				add_war_goal = {
 					holder = c:KOR
-					type = annex_country
+					type = dp_annex_war
 					target_country = c:PRK
 				}
 			}

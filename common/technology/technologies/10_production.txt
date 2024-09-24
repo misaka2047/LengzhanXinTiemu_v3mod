@@ -140,7 +140,7 @@ tech_basic_agricultural_production = { #基本农业生产
 		value = 3
 	}
 	}
-tech_fertilizer_synthesis = { #化肥合成
+tech_fertilizer_synthesis = { #合成氨
 	era = era_3
 	texture = "gfx/interface/icons/goods_icons/fertilizer.dds"
 	category = production
@@ -246,13 +246,19 @@ tech_rubber_accessories = { #橡胶配件
 		tech_steel_tools
 	}
 }
-tech_electric_tools = { #电力工具
+tech_electric_tools = { #电动工具
 	era = era_4
-	texture = "gfx/interface/icons/goods_icons/electricity.dds"
+	texture = "gfx/interface/icons/invention_icons/pneumatic_tools.dds"
 	category = production
 	ai_weight = {
 		value = 3
 	}
+
+	modifier = {
+		building_construction_sector_throughput_add = 0.1
+		building_group_bg_logging_throughput_add = 0.1 #伐木业吞吐量
+	}
+
 	unlocking_technologies = {
 		tech_rubber_accessories
 	}
@@ -590,6 +596,7 @@ tech_basic_steel_smelting
 tech_electronic_control_engine = { #电控发动机
 	era = era_3
 	texture = "gfx/interface/icons/goods_icons/locomotives.dds"
+	category = production
 	ai_weight = {
 		value = 3
 	}

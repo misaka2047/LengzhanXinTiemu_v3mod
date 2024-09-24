@@ -163,9 +163,9 @@ building_livestock_ranch = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_vineyard_plantation = {
+building_vineyard_plantation = { #葡萄园
 	building_group = bg_vineyard_plantations
-	texture = "gfx/interface/icons/building_icons/vineyards.dds"
+	texture = "gfx/interface/icons/building_icons/葡萄园.dds"
 	required_construction = construction_cost_low
 
 	unlocking_technologies = {

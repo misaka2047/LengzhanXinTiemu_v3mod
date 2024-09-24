@@ -1,4 +1,4 @@
-﻿ideology_patriarchal_suffrage = {
+﻿ideology_patriarchal_suffrage = { #父权主义者
 	icon = "gfx/interface/icons/ideology_icons/patriarchal.dds"
 	
 	priority = 100 # Overrides other non-leader ideologies with a lower prio
@@ -18,7 +18,7 @@
 	}
 }
 
-ideology_feminist_ig = {
+ideology_feminist_ig = { #女权主义者
 	icon = "gfx/interface/icons/ideology_icons/feminist.dds"
 	
 	priority = 100 # Overrides other non-leader ideologies with a lower prio

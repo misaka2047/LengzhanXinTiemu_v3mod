@@ -2,19 +2,73 @@
 
 AEF = { # 中非
 	pattern = "pattern_solid.tga"
-	color1 = "green"
-	color2 = "red"
-	color3 = "white"
-	color4 = "blue"
-
-	colored_emblem = {
-		texture = "CAR.dds"
-		color1 = color2
-		color2 = color3
-		color3 = color4
+	color1 = "white"
+	
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "yellow"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
 	}
-	textured_emblem = {
-		texture = "te_CAR.dds"
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "green"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0.25 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "white"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "blue"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 -0.25 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_frame_square.dds"
+		color1 = "red"
+		instance =
+		{
+			scale = { 0.3 1 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance =
+		{
+			scale = { 0.7 0.7 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
 	}
 }
 AEF_absolute_monarchy = { 
@@ -26,19 +80,73 @@ AEF_absolute_monarchy = {
 	}
 AEF_republic = {
 	pattern = "pattern_solid.tga"
-	color1 = "green"
-	color2 = "red"
-	color3 = "white"
-	color4 = "blue"
-
-	colored_emblem = {
-		texture = "CAR.dds"
-		color1 = color2
-		color2 = color3
-		color3 = color4
+	color1 = "white"
+	
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "yellow"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
 	}
-	textured_emblem = {
-		texture = "te_CAR.dds"
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "green"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0.25 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "white"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 0 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_stripes_04.dds"
+		color1 = "blue"
+		instance =
+		{
+			scale = { 1 1 }
+			position = { 0.5 -0.25 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_frame_square.dds"
+		color1 = "red"
+		instance =
+		{
+			scale = { 0.3 1 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
+	}
+	colored_emblem =
+	{
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		instance =
+		{
+			scale = { 0.7 0.7 }
+			position = { 0.5 0.5 }
+			rotation = { 0 }
+		}
 	}
 }
 AEF_theocracy = {
@@ -460,6 +568,15 @@ NIG = { #尼日利亚
 	color2 = "green_light"
 	}			
 }
+NIG_protectorate = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	
+	textured_emblem = {
+		texture = "te_coa_NIG.dds"
+		instance = { scale = { 0.9 0.9 } position = { 0.75 0.505 } }			
+	}
+}
 NIG_subject = {
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
@@ -765,4 +882,175 @@ TRI2 = {
 	pattern = "pattern_solid.tga"
 	color1 = "green_light"
     }
+
+SAF = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+	color3 = "blue"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}
+	colored_emblem = {
+		texture = "ce_rhombus.dds"
+		color1 = "black"
+		instance = { position = { 0 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_pall_fimbriated.dds"
+		color1 = "white"
+		color2 = "green"
+		color3 = "yellow"
+	}
+}
+SAF_GBR = {
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	color2 = "white"
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}	
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		instance = { scale = { 0.0785 0.175 } position = { 0.5 0.498 } }		
+		instance = { scale = { 0.112 0.1175 } position = { 0.405 0.50 } }		
+		instance = { scale = { 0.112 0.1175 } position = { 0.595 0.50 } }				
+	}	
+
+    sub = {
+        parent = "sub_GBR_uk" 
+        instance = { scale = { 0.11 0.11 } offset = { 0.35 0.445 }  }
+    }
+    sub = {
+        parent = "sub_ORG_vertical" 
+        instance = { scale = { 0.075 0.17 } offset = {  0.4625 0.415 }  }
+    }
+    sub = {
+        parent = "sub_TRN" 
+        instance = { scale = { 0.11 0.11 } offset = { 0.54 0.445 }  }
+    }
+}
+SAF_FRA = {
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	color2 = "white"
+	color3 = "blue"
+	
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = color2
+		color2 = color3
+	}	
+	
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		instance = { scale = { 0.0785 0.175 } position = { 0.5 0.498 } }		
+		instance = { scale = { 0.112 0.1175 } position = { 0.405 0.50 } }		
+		instance = { scale = { 0.112 0.1175 } position = { 0.595 0.50 } }				
+	}	
+
+    sub = {
+        parent = "sub_FRA_fra" 
+        instance = { scale = { 0.11 0.11 } offset = { 0.35 0.445 }  }
+    }
+    sub = {
+        parent = "sub_ORG_vertical" 
+        instance = { scale = { 0.075 0.17 } offset = {  0.4625 0.415 }  }
+    }
+    sub = {
+        parent = "sub_TRN" 
+        instance = { scale = { 0.11 0.11 } offset = { 0.54 0.445 }  }
+    }
+}
+SAF_coa = {
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	color2 = "red"
+	color3 = "green"
+
+	colored_emblem = {
+		texture = "ce_quarterly_per_fess_wavy.dds"
+		color1 = color1
+		color2 = color2
+		color3 = color3
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_hope_allegory.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "white"
+		instance = { position = { 0.25 0.24 } scale = { 0.52 0.52 } }
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_wildebeests.dds"
+		color1 = "brown_light"
+		color2 = "white"
+		color3 = "black_light"
+		instance = { position = { 0.75 0.27 } scale = { 0.7 0.7 } }
+	}
+	colored_emblem = {
+		texture = "ce_coa_saf_tree.dds"
+		color1 = "brown"
+		color2 = "green"
+		color3 = "saffron"
+		instance = { position = { 0.25 0.76 } scale = { 0.55 0.55 } }
+	}	
+	colored_emblem = {
+		texture = "ce_coa_saf_wagon.dds"
+		color1 = "white"
+		color2 = "white"
+		color3 = "white"
+		instance = { position = { 0.75 0.76 } scale = { 0.6 0.6 } }
+	}
+}
+SAF_ensign = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+    sub = {
+        parent = "sub_SAF_coa" 
+		instance = { scale = { 0.5 0.5 } offset = { 0.5 0.25 }  } # top left	   
+    }
+}
+SAF_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "black"
+	color3 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_star_05_safcp.dds"
+		color1 = "black"
+		color2 = "yellow"
+		color3 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.20 0.30 } } 		
+	}
+}
+SAF_fascist = {	
+	# Flag of AWB in orange
+	pattern = "pattern_solid.tga"
+	color1 = "orange"
+	
+	colored_emblem = {
+		texture = "ce_frame_circle.dds"
+		color1 = "white"
+		color2 = "white"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_triskel.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.75 0.75 } position = { 0.5 0.5 } }
+	}	
 }

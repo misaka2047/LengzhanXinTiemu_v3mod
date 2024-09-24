@@ -41,15 +41,7 @@ POPS = {
 		region_state:JOH = {
 			create_pop = {
 				culture = malay
-				size = 2890000
-			}
-			create_pop = {
-				culture = tamil
-				size = 2000
-			}
-			create_pop = {
-				culture = british
-				size = 2196
+				size = 3600000
 			}
 			create_pop = {
 				culture = han
@@ -58,7 +50,27 @@ POPS = {
 			}
 			create_pop = {
 				culture = han
-				size = 4000
+				size = 1133333
+			}
+			create_pop = {
+				culture = avadhi
+				size = 566667
+			}
+			create_pop = {
+				culture = yuanzhumin
+				size = 340000
+			}
+			create_pop = {
+				culture = british
+				size = 2196
+			}
+			create_pop = {
+				culture = thai
+				size = 20750
+			}
+			create_pop = {
+				culture = khmer
+				size = 20750
 			}
 		}
 	}

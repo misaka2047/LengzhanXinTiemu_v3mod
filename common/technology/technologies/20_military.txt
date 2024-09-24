@@ -623,7 +623,7 @@ tech_targeted_drugs = { #靶向药物
 }
 tech_trenches = { #堑壕工事
 	era = era_2
-	texture = "gfx\interface\icons\invention\trench_works.dds"
+	texture = "gfx/interface/icons/invention_icons/trench_works.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -638,7 +638,7 @@ unit_army_defense_mult = 0.1
 }
 tech_concrete_fortifications = { #混凝土工事
 	era = era_3
-	texture = "gfx\interface\icons\invention\trench_works.dds"
+	texture = "gfx/interface/icons/invention_icons/concrete_fortifications.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -653,7 +653,7 @@ unit_army_defense_mult = 0.1
 }
 tech_modern_military_defense_system = { #现代军事防御体系
 	era = era_5
-	texture = "gfx\interface\icons\invention\trench_works.dds"
+	texture = "gfx/interface/icons/invention_icons/concrete_fortifications.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -893,7 +893,7 @@ tech_submarine = { #潜艇
 }
 tech_cold_war_submarine = { #冷战潜艇
 	era = era_4
-	texture = "gfx\interface\icons\ginvention_icons\submarine.dds"
+	texture = "gfx\interface\icons\invention_icons\submarine.dds"
 	category = military
 	ai_weight = {
 		value = 1

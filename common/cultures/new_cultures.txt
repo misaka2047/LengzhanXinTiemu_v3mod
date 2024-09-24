@@ -1,3 +1,86 @@
+azerbaijani={
+	color= hsv{ 0.67 0.38 0.41 }
+	religion = sunni
+	traits = { caucasus_group turkic middle_eastern_heritage }
+	male_common_first_names={
+		Ahmad
+		Ali
+		Aliagha
+		Bahram
+		Elbay
+		Farhad
+		Firudin
+		Hamid
+		Hasan
+		Heydar
+		Huseyin
+		Ibrahim
+		Ismayil
+		Jalil
+		Mahmud
+		Malik
+		Mehdi
+		Mohammad
+		Murad
+		Samad
+		Tahir
+		Zahid
+	}
+	female_common_first_names = {
+		Alaviyya
+		Amaliya
+		Aziza
+		Hagigat
+		Hamida
+		Heyran
+		Izzet
+		Maryam
+		Munavvar 
+		Nasiba
+		Nesrin
+		Nuriyya
+		Sakina
+		Shargiyya
+		Shirin
+	}	
+	noble_last_names = {
+		Akhundzade 
+		Ashurbeyov
+		Bahmani-Qajar
+		Bakikhanov
+		Kazembek
+		Kengerli 
+		Ibrahimbek
+		Javanshir
+		Kalantarli
+		Mammadbeyov
+		Mehmandarov
+		Nakhchivanski
+		Narimanbekov 
+		Qasimbek
+		Topchubashi
+	}
+	common_last_names={
+		Ahmadbek
+		Ahmadzade
+		Akbarzade
+		Edigar
+		Ganjavi
+		Ildyrym
+		Mehmandar
+		Nakhchivani
+		Qasimzade
+		Rasulzade
+		Tahirzade
+		Talishkhan
+		Zardabi
+	}
+	ethnicities = {
+		1 = arab
+	}
+	graphics = arabic
+}
+
 japanese={
 	color= hsv{ 0 0 90 }
 	religion = protestant

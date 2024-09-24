@@ -6,6 +6,9 @@
 
 		# Laws
 		activate_law = law_type:law_parliamentary_republic #议会共和制
+		activate_law = law_type:law_case_law_system #海洋法系	
+		activate_law = law_type:law_encourage_immigration #鼓励移民
+		activate_law = law_type:law_encourage_fertility #鼓励抚养
 		activate_law = law_type:law_open_door #门户开放
 		activate_law = law_type:law_commercialized_agriculture #商品化农业
 		activate_law = law_type:law_cultural_exclusion #文化排斥
@@ -15,7 +18,7 @@
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_regulatory_bodies #监管机构
+		activate_law = law_type:law_regulatory_bodies #国家监管机构
   		activate_law = law_type:law_proportional_taxation #比例税制
 		activate_law = law_type:law_national_militia #国家民兵
 		activate_law = law_type:law_dedicated_police

@@ -26,7 +26,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_colonial_affairs
-			level = 2
+			level = 1
 		}		
 
 		ig:ig_armed_forces = { # Barragan was head of state, on paper, but Antonio Lopez de Santa Anna had his finger in every political pie

@@ -1,4 +1,26 @@
+BAF = { # 巴尔干联邦
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+	color3 = "red"
 
+	textured_emblem = {
+		texture = "BAF.dds"
+	}
+}
+BAF_communist = { #巴尔干社会主义联邦共和国
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "BAF_communist.dds"
+	}
+}
+BAF_monarchy = {
+	textured_emblem = {
+		texture = "BAF_monarchy.dds"
+	}
+}
 
 CHI = {
 	pattern = "pattern_solid.tga"

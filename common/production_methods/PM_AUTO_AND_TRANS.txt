@@ -1966,8 +1966,7 @@ pm_automation_building_construction_sector_2 = { #建造部门_2
 			building_employment_machinists_add = 2400							
 			building_employment_engineers_add = 400							
 		}								
-		unscaled = {								
-			building_economy_of_scale_level_cap_add = 5							
+		unscaled = { #无等级修正		 											
 		}								
 	}									
 	country_modifiers = {									
@@ -1988,15 +1987,14 @@ pm_automation_building_construction_sector_3 = { #建造部门_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_automobiles_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 8000							
 			building_employment_machinists_add = 2800							
 			building_employment_engineers_add = 800							
 		}								
-		unscaled = {								
-			building_economy_of_scale_level_cap_add = 15							
+		unscaled = { #无等级修正		 											
 		}								
 	}									
 	country_modifiers = {									
@@ -2017,7 +2015,7 @@ pm_automation_building_construction_sector_4 = { #建造部门_4
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_automobiles_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -2025,9 +2023,8 @@ pm_automation_building_construction_sector_4 = { #建造部门_4
 			building_employment_machinists_add = 3200							
 			building_employment_engineers_add = 1200							
 		}								
-		unscaled = {								
-			building_economy_of_scale_level_cap_add = 25							
-		}								
+		unscaled = { #无等级修正		 											
+		}									
 	}									
 	country_modifiers = {									
 		workforce_scaled = {								

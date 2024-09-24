@@ -180,7 +180,7 @@
 	}
 	    create_diplomatic_pact = {
 			country = c:NIG #尼日利亚
-			type = puppet
+			type = protectorate
 	}
 	create_diplomatic_pact = {
 			country = c:SRL #塞拉利昂

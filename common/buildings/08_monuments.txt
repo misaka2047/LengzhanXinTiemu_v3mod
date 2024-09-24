@@ -727,7 +727,7 @@ building_cristo_redentor = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-building_power_bloc_statue = {
+building_power_bloc_statue = { #国家集团雕像
 
 	building_group = bg_monuments
 
@@ -744,7 +744,7 @@ building_power_bloc_statue = {
 		pmg_base_building_power_bloc_statue
 	}
 
-	texture = "gfx/interface/icons/building_icons/building_powerblock_statue.dds"
+	texture = "gfx/interface/icons/building_icons/国家集团雕像.dds"
 
 	required_construction = construction_cost_monument
 

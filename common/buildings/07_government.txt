@@ -1,8 +1,8 @@
 ﻿############ GOVERNMENT BUILDINGS
-building_port = {
+building_port = { #港口
 	building_group = bg_public_infrastructure
 	city_type = port
-	texture = "gfx/interface/icons/building_icons/building_port.dds"
+	texture = "gfx/interface/icons/building_icons/港口.dds"
 
 	has_max_level = yes
 	ignore_stateregion_max_level = yes
@@ -25,7 +25,7 @@ building_port = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-building_government_administration = {
+building_government_administration = { #政府行政机构
 	building_group = bg_bureaucracy
 	city_type = city
 
@@ -39,14 +39,14 @@ building_government_administration = {
 		pmg_government_administration_religious_administration
 	}
 
-	texture = "gfx/interface/icons/building_icons/building_government_administration.dds"
+	texture = "gfx/interface/icons/building_icons/政府行政机构.dds"
 
 	required_construction = construction_cost_medium
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-building_university = {
+building_university = { #大学
 
 	building_group = bg_technology
 
@@ -63,7 +63,7 @@ building_university = {
 
 	}
 
-	texture = "gfx/interface/icons/building_icons/building_university.dds"
+	texture = "gfx/interface/icons/building_icons/大学.dds"
 
 	required_construction = construction_cost_medium
 
@@ -72,7 +72,7 @@ building_university = {
 	ai_value = 1000
 }
 
-building_skyscraper = {
+building_skyscraper = { #摩天大楼
 
 	building_group = bg_skyscraper
 
@@ -94,7 +94,7 @@ building_skyscraper = {
 		pmg_airship_mooring_post
 	}
 
-	texture = "gfx/interface/icons/building_icons/skyscraper.dds"
+	texture = "gfx/interface/icons/building_icons/摩天大楼.dds"
 
 	required_construction = construction_cost_monument
 

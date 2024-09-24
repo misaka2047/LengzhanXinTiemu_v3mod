@@ -1,0 +1,74 @@
+﻿CHARACTERS = {
+	c:NIG = {
+		create_character = {
+			#总督
+			historical = yes
+			ruler = yes
+			noble = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			traits = {
+			}
+		}	
+
+		create_character = {
+			ig_leader = yes #利益集团领袖
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_devout #虔信者
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes #利益集团领袖
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_intelligentsia #知识分子
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_armed_forces #军队
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_petty_bourgeoisie #小市民
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_rural_folk #乡村民众
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_landowners #地主
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_industrialists #实业家
+		}
+
+		create_character = {
+			culture = cu:british
+			religion = rel:protestant #新教
+			interest_group = ig_trade_unions #利益集团工会
+			ig_leader = yes #利益集团领袖
+		}
+	}
+}

@@ -1,3 +1,27 @@
+BAF = { #  巴尔干联邦
+	flag_definition = {
+		coa = BAF
+		subject_canton = BAF
+		# allow_overlord_canton = yes		
+		# coa_with_overlord_canton = BAF_subject		
+		priority = 1
+	}
+        flag_definition = {
+		coa = BAF_monarchy
+		priority = 1500
+		trigger = { 
+			coa_def_monarchy_flag_trigger = yes
+		}
+	}
+	flag_definition = { #柬埔寨人民共和国
+		coa = BAF_communist
+		priority = 1500
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			}
+		}
+	}
+
 AUS = { # Austria
 	flag_definition = {
 		coa = AUS

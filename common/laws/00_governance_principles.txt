@@ -691,13 +691,24 @@ law_council_republic = {
 		}
 	}
 	
+	on_activate = {
+		ig:ig_trade_unions ?= { #工会
+			if = {
+				limit = {
+					NOT = { has_ideology = ideology:ideology_proletarian } #无产阶级主义者
+				}			
+				add_ideology = ideology_proletarian #无产阶级主义者
+			}
+		}
+	}
+
 	modifier = {
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_govt_size_add = 1
 		country_legitimacy_ideological_incoherence_mult = -0.1
 		interest_group_ig_trade_unions_pol_str_mult = 0.25
 	}
-	
+
 	possible_political_movements = {
 		law_presidential_republic
 		law_parliamentary_republic

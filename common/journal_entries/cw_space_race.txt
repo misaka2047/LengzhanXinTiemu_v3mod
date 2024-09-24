@@ -1,6 +1,6 @@
 je_space_race_main = {
 	should_be_pinned_by_default = yes
-	icon = "gfx/interface/icons/objectives/space_race.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 
 	group = je_group_objectives
 
@@ -83,7 +83,7 @@ je_space_race_main = {
 }
 
 je_satellite = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	icon = "gfx/interface/icons/event_icons/satellite.dds"
 
 	group = je_group_historical_content
 
@@ -153,7 +153,7 @@ je_satellite = {
 }
 
 je_manned_space_flight = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 
 	group = je_group_historical_content
 
@@ -223,7 +223,7 @@ je_manned_space_flight = {
 }
 
 je_lunarlanding = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	icon = "gfx/interface/icons/event_icons/planetarium_moon.dds"
 
 	group = je_group_historical_content
 
@@ -293,7 +293,7 @@ je_lunarlanding = {
 }
 
 je_space_station = {
-	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 
 	group = je_group_historical_content
 

@@ -1,8 +1,8 @@
 ﻿# URBANIZATION
 
-building_urban_center = {
+building_urban_center = { #城市中心
 	building_group = bg_service
-	texture = "gfx/interface/icons/building_icons/urban_center.dds"
+	texture = "gfx/interface/icons/building_icons/城市中心.dds"
 	city_type = city
 	residence_points_per_level = 0
 	
@@ -24,7 +24,7 @@ building_urban_center = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-building_arts_academy = {
+building_arts_academy = { #艺术学院
 	building_group = bg_arts
 
 	city_type = city
@@ -40,7 +40,7 @@ building_arts_academy = {
 
 	}
 	
-	texture = "gfx/interface/icons/building_icons/building_arts_academy.dds"
+	texture = "gfx/interface/icons/building_icons/艺术学院.dds"
 
 	required_construction = construction_cost_medium
 	ownership_type = self

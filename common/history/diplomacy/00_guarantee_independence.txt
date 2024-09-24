@@ -4,5 +4,5 @@
 			country = c:CHI
 			type = guarantee_independence
 		}	
-	}				
+	}			
 }

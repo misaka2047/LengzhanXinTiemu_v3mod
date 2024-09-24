@@ -2,12 +2,12 @@ POPS = {
 	s:STATE_BIHAR = {
 		region_state:BIC = {
 			create_pop = {
-				culture = bihari
-				size = 36620000
+				culture = british
+				size = 18520
 			}
 			create_pop = {
-				culture = british
-				size = 192
+				culture = bihari
+				size = 36620000
 			}
 			create_pop = {
 				culture = bihari
@@ -16,13 +16,11 @@ POPS = {
 			}
 			create_pop = {
 				culture = bihari
-				pop_type = slaves
 				size = 120300
 			}
 			create_pop = {
 				culture = bihari
 				religion = sunni
-				pop_type = slaves
 				size = 50091
 			}
 		}
@@ -30,29 +28,37 @@ POPS = {
 	s:STATE_NORTH_BENGAL = {
 		region_state:BIC = {
 			create_pop = {
+				culture = british
+				size = 18520
+			}
+			create_pop = {
 				culture = bengali
-				religion = hindu
+				religion = sunni
 				size = 25062032
 			}
 			create_pop = {
 				culture = bengali
+				religion = hindu
 				size = 8644162
 			}
 			create_pop = {
 				culture = bengali
-				religion = hindu
-				pop_type = slaves
+				religion = sunni
 				size = 420100
 			}
 			create_pop = {
 				culture = bengali
-				pop_type = slaves
+				religion = sunni
 				size = 210002
 			}
 		}
 	}
 	s:STATE_ASSAM = {
 		region_state:BIC = {
+			create_pop = {
+				culture = british
+				size = 18520
+			}
 			create_pop = {
 				culture = kachin
 				size = 8796
@@ -61,10 +67,6 @@ POPS = {
 				culture = assamese
 				religion = hindu
 				size = 8600000
-			}
-			create_pop = {
-				culture = british
-				size = 433
 			}
 			create_pop = {
 				culture = manipuri
@@ -81,23 +83,19 @@ POPS = {
 			create_pop = {
 				culture = assamese
 				religion = hindu
-				pop_type = slaves
 				size = 60400
 			}
 			create_pop = {
 				culture = thai
 				religion = animist
-				pop_type = slaves
 				size = 50200
 			}
 			create_pop = {
 				culture = manipuri
-				pop_type = slaves
 				size = 30004
 			}
 			create_pop = {
 				culture = bengali
-				pop_type = slaves
 				size = 10000
 			}
 		}
@@ -219,6 +217,10 @@ POPS = {
 	s:STATE_PUNJAB = {
 		region_state:BIC = {
 			create_pop = {
+				culture = british
+				size = 18520
+			}
+			create_pop = {
 				culture = panjabi #旁遮普
 				religion = sunni
 				size = 11840000
@@ -232,10 +234,6 @@ POPS = {
 				culture = avadhi #阿瓦蒂
 				religion = hindu
 				size = 326183
-			}
-			create_pop = {
-				culture = british #英格兰
-				size = 3072
 			}
 			create_pop = {
 				culture = nepali #尼泊尔
@@ -256,8 +254,12 @@ POPS = {
 	s:STATE_SOUTH_BENGAL = {
 		region_state:BIC = {
 			create_pop = {
+				culture = british
+				size = 18520
+			}
+			create_pop = {
 				culture = bengali
-				religion = hindu
+				religion = sunni
 				size = 30000000
 			}
 			create_pop = {
@@ -267,27 +269,22 @@ POPS = {
 			}
 			create_pop = {
 				culture = bengali
+				religion = hindu
 				size = 6602700
 			}
 			create_pop = {
-				culture = british
-				size = 18520
-			}
-			create_pop = {
 				culture = bengali
-				religion = hindu
-				pop_type = slaves
+				religion = sunni
 				size = 200310
 			}
 			create_pop = {
 				culture = bengali
 				religion = animist
-				pop_type = slaves
 				size = 10007
 			}
 			create_pop = {
 				culture = bengali
-				pop_type = slaves
+				religion = sunni
 				size = 60063
 			}
 		}

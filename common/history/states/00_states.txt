@@ -10682,6 +10682,13 @@ STATES = {
 	
 	s:STATE_SHENGJING = {
 		create_state = {
+			country = c:RUS
+			owned_provinces = {
+				x709001 
+			}
+			state_type = treaty_port
+		}
+		create_state = {
 			country = c:PRC
 			owned_provinces = {
 				x167EE8 x311D9E x474AF5 x5C7F26 x5DC943 x61D001 x7F79DA x964A4F xC7B981 xCEB565 
@@ -10692,10 +10699,12 @@ STATES = {
 		create_state = {
 			country = c:CHI
 			owned_provinces = {
-				x709001 x04FCF3 x169772 x6707A1 x68FAEC x7E008D x8D1556 x955331 xA202E9 xB75C7A xCD72A9 
+				x04FCF3 x169772 x6707A1 x68FAEC x7E008D x8D1556 x955331 xA202E9 xB75C7A xCD72A9 
 				xD7F9BA xE05101 xEFCA02 xEB92A2 
 			}
 		}
+		add_claim = c:PRC
+		add_claim = c:CHI	
 		add_homeland = cu:han
 		add_homeland = cu:manchu
 	}

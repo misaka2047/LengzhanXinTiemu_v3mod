@@ -8,7 +8,17 @@ owner = { has_law = law_type:law_council_republic AND = {  owner = { has_law = l
 PRC_general_clothes_trigger = { #共和国陆军将领通用
 exists = scope:character
 scope:character = { 
-owner = { has_law = law_type:law_council_republic AND = {  owner = { has_law = law_type:law_council_republic AND = { exists = c:PRC owner = c:PRC } } } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { has_law = law_type:law_council_republic AND = { owner = { has_law = law_type:law_council_republic } } }
 has_role = general
 commander_rank >= 0
 } 
@@ -17,7 +27,17 @@ commander_rank >= 0
 PRC_admiral_clothes_trigger = { #共和国海军将领通用
 exists = scope:character
 scope:character = { 
-owner = { has_law = law_type:law_council_republic AND = {  owner = { has_law = law_type:law_council_republic AND = { exists = c:PRC owner = c:PRC } } } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { has_law = law_type:law_council_republic AND = { owner = { has_law = law_type:law_council_republic } } }
 has_role = admiral
 commander_rank >= 0
 } 
@@ -26,7 +46,17 @@ commander_rank >= 0
 PRC_officers_clothes_pop_trigger = { #共和国军官通用
 exists = scope:pop
 scope:pop = { 
-owner = { has_law = law_type:law_council_republic AND = {  owner = { has_law = law_type:law_council_republic AND = { exists = c:PRC owner = c:PRC } } } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { has_law = law_type:law_council_republic AND = { owner = { has_law = law_type:law_council_republic } } }
 is_pop_type = officers 
 } 
 }
@@ -34,7 +64,17 @@ is_pop_type = officers
 PRC_soldier_clothes_pop_trigger = { #共和国士兵通用
 exists = scope:pop
 scope:pop = { 
- owner = { has_law = law_type:law_council_republic AND = { exists = c:PRC owner = c:PRC } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { has_law = law_type:law_council_republic AND = { owner = { has_law = law_type:law_council_republic } } }
 is_pop_type = soldiers
 }
 }
@@ -43,7 +83,17 @@ PRC_ig_army_clothes_trigger = { #共和国军队集团
 exists = scope:character
 scope:character = {
 is_ruler = no
- owner = { has_law = law_type:law_council_republic AND = { exists = c:PRC owner = c:PRC } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { has_law = law_type:law_council_republic AND = { owner = { has_law = law_type:law_council_republic } } }
 interest_group = { is_interest_group_type = ig_armed_forces }
 }	
 }
