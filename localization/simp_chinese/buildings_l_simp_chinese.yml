@@ -1,4 +1,6 @@
 ﻿l_simp_chinese:
+ building_artillery_foundries: "火炮厂"
+ building_artillery_foundries_lens_option: "扩建$building_artillery_foundries$"
  building_food_industry: "食品厂"
  building_food_industry_lens_option: "扩建$building_food_industry$"
  building_textile_mills: "纺织厂"
@@ -19,8 +21,6 @@
  building_electrics_industry_lens_option: "扩建$building_electrics_industry$"
  building_arms_industry: "武器厂"
  building_arms_industry_lens_option: "扩建$building_arms_industry$"
- building_artillery_foundries: "火炮厂"
- building_artillery_foundries_lens_option: "扩建$building_artillery_foundries$"
  building_war_machine_industry: "战争机器厂"
  building_war_machine_industry_lens_option: "扩建$building_war_machine_industry$"
  building_motor_industry: "动力机械厂"
@@ -31,7 +31,7 @@
  building_synthetics_plants_lens_option: "扩建$building_synthetics_plants$"
  building_steel_mills: "合金加工厂"
  building_steel_mills_lens_option: "扩建$building_steel_mills$"
- building_glassworks: "玻璃塑料厂"
+ building_glassworks: "玻璃厂"
  building_glassworks_lens_option: "扩建$building_glassworks$"
  building_coal_mine: "煤矿"
  building_coal_mine_lens_option: "扩建$building_coal_mine$"
@@ -173,10 +173,10 @@
  bg_skyscraper: "摩天大楼"
  bg_monuments_hidden: "奇观"
  bg_owner_buildings: "所有权建筑"
- building_manor_house: "官邸"
+ building_manor_house: "豪华宅邸"
  building_financial_districts: "金融区"
  building_financial_district: "金融区"
- bg_manor_houses: "官邸"
+ bg_manor_houses: "豪华宅邸"
  bg_financial_districts: "金融区"
  #Factories
  #Infrastructure

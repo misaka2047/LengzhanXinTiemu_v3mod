@@ -8,6 +8,7 @@
  tech_mature_food_industry: "成熟食品工业"
  tech_mature_food_industry_desc: "冷战中期食品工业技术，巴氏杀菌法的普及真空包装技术的推广大大加强了食品的安全性，食品营养均衡问题开始受到重视。"
  tech_advanced_food_industry: "先进食品工业"
+ tech_advanced_food_industry_desc: "冷战后期（勋宗时期）食品工业技术，巴氏杀菌法的普及真空包装技术的推广大大加强了食品的安全性，食品营养均衡问题开始受到重视。"
  tech_modern_food_industry: "现代食品工业"
  tech_basic_civil_light_industry: "基本民用轻工业"
  tech_mature_civil_light_industry: "成熟民用轻工业"
@@ -309,6 +310,10 @@
  nationalism: "现代民族主义"
  pan-nationalism: "国族主义"
  pan-nationalism_desc: "国族主义不仅仅关注一个民族的内部团结，还强调多个民族在一个国家内的融合和统一。国族主义试图构建一个更大的、包含多个民族的国家认同，强调国族内部的和谐与统一。"
+ blood_nationalism: "血缘民族主义"
+ blood_nationalism_desc: "血缘民族主义的特点在于它强调民族身份的生物学基础，这种身份通常与特定的种族或族群紧密相连。这种民族主义形式可能导致对外来人群的排斥，强化内部的团结，并可能被用作政治动员的工具。"
+ culture_nationalism: "文化民族主义"
+ culture_nationalism_desc: "文化民族主义不仅仅关注一个民族的内部团结，还强调同一文化圈或宗教圈的多个民族的团结和互助。文化民族主义试图构建一个包含同一文化圈或宗教圈的多个民族的国家认同，强调文化圈或宗教圈内部的和谐与团结。"
  tech_international_politics: "国际政治"
  tech_modern_diplomacy: "现代外交学"
 

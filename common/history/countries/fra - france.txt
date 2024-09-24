@@ -8,7 +8,8 @@
 		add_taxed_goods = g:wine
 		
 		# Laws
-		activate_law = law_type:law_parliamentary_republic #议会共和制      
+		activate_law = law_type:law_parliamentary_republic #议会共和制   
+   		activate_law = law_type:law_elected_bureaucrats #选举官僚制
 		activate_law = law_type:law_colonial_exploitation #民族剥削
 		activate_law = law_type:law_professional_army #职业军队
 		activate_law = law_type:law_encourage_immigration #鼓励移民
@@ -23,7 +24,6 @@
   		activate_law = law_type:law_cultural_exclusion #文化排斥
 		activate_law = law_type:law_commercialized_small_farmers #商品化小农制
 		activate_law = law_type:law_freedom_of_conscience #信仰自由
-		activate_law = law_type:law_elected_bureaucrats #选举官僚制
 		activate_law = law_type:law_continental_law_system #大陆法系
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_slavery_banned

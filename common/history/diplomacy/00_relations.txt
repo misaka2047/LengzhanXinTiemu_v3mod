@@ -1,4 +1,17 @@
 ﻿DIPLOMACY = { #好感
+	c:KOR = {
+		set_relations = { country = c:RUS value = -50 }
+		set_relations = { country = c:PRC value = -50 }
+		set_relations = { country = c:PRK value = -50 }
+		set_relations = { country = c:JAP value = -50 }
+		set_relations = { country = c:USA value = 50 }
+	}
+	c:PRK = {
+		set_relations = { country = c:RUS value = 50 }
+		set_relations = { country = c:KOR value = -50 }
+		set_relations = { country = c:JAP value = -50 }
+		set_relations = { country = c:USA value = -50 }
+	}
 	c:YEM = {
 		set_relations = { country = c:TUR value = 30 }
 		set_relations = { country = c:GBR value = -50 }

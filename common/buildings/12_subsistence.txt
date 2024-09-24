@@ -1,8 +1,8 @@
 ﻿############# SUBSISTENCE
 
-building_subsistence_farms = {
+building_subsistence_farms = { #自给农场
 	building_group = bg_subsistence_agriculture
-	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	texture = "gfx/interface/icons/building_icons/自给农场.dds"
 
 	production_method_groups = {
 		pmg_base_building_subsistence_farms
@@ -20,9 +20,9 @@ building_subsistence_farms = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_subsistence_orchards = {
+building_subsistence_orchards = { #自给果园
 	building_group = bg_subsistence_agriculture
-	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	texture = "gfx/interface/icons/building_icons/自给果园.dds"
 
 	production_method_groups = {
 		pmg_base_building_subsistence_orchards
@@ -40,9 +40,9 @@ building_subsistence_orchards = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_subsistence_pastures = {
+building_subsistence_pastures = { #自给牧场
 	building_group = bg_subsistence_agriculture
-	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	texture = "gfx/interface/icons/building_icons/自给牧场.dds"
 
 	production_method_groups = {
 		pmg_base_building_subsistence_pastures
@@ -60,9 +60,9 @@ building_subsistence_pastures = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_subsistence_fishing_villages = {
+building_subsistence_fishing_villages = { #自给渔村
 	building_group = bg_subsistence_agriculture
-	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	texture = "gfx/interface/icons/building_icons/自给渔村.dds"
 
 	production_method_groups = {
 		pmg_base_building_subsistence_fishing_villages
@@ -80,9 +80,9 @@ building_subsistence_fishing_villages = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
-building_subsistence_rice_paddies = {
+building_subsistence_rice_paddies = { #自给稻田
 	building_group = bg_subsistence_agriculture
-	texture = "gfx/interface/icons/building_icons/building_subsistence_farm.dds"
+	texture = "gfx/interface/icons/building_icons/自给稻田.dds"
 
 	production_method_groups = {
 		pmg_base_building_subsistence_rice_paddies

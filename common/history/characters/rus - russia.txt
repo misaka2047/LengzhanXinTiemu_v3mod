@@ -2,7 +2,7 @@
 	c:RUS = { #苏联
 		create_character = {
 			# “慈父”斯大林
-			dna = dna_tsar_alexander_02
+    		dna = dna_stalin
 			first_name = Joseph
 			last_name = Stalin
 			historical = yes
@@ -20,7 +20,7 @@
 				brave
 				ambitious
 				bigoted
-                                experienced_political_operator
+                experienced_political_operator
 			}
 		}
 

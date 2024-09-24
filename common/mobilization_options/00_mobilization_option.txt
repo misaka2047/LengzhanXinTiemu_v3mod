@@ -545,12 +545,12 @@ mobilization_option_machinegunners = {
     group = special_weapons
 }
 
-mobilization_option_chemical_weapons = {
+mobilization_option_chemical_weapons = { #化学武器
 	texture = "gfx/interface/icons/mobilization_options/chemical_weapons.dds"
 
 	possible = {
 		market ?= {
-			mg:fertilizer ?= {
+			mg:dye ?= {
 				market_goods_sell_orders > 0
 			}
 		}
@@ -580,7 +580,7 @@ mobilization_option_chemical_weapons = {
 		tech_javelin_missiles
 	}
 	upkeep_modifier = {
-		goods_input_artillery_add = 0.5
+		goods_input_dye_add = 2
 	}
 	unit_modifier = {
 		unit_offense_add = 20

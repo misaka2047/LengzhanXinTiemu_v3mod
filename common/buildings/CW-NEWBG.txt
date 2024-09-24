@@ -1,4 +1,4 @@
-building_breeding_farm = {
+building_breeding_farm = { #养殖场
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/breeding_farm.dds"
 	city_type = city
@@ -17,12 +17,12 @@ pmg_automation_building_breeding_farm
 	}
 
 	required_construction = construction_cost_low
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
 
 
-building_sugar_factory = {
+building_sugar_factory = { #制糖厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/sugar_factory.dds"
 	city_type = city
@@ -41,12 +41,12 @@ pmg_automation_building_sugar_factory
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 
-building_beverage_factory = {
+building_beverage_factory = { #饮料工厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/beverage_factory.dds"
 	city_type = city
@@ -65,12 +65,12 @@ pmg_automation_building_beverage_factory
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 
-building_fiber_factory = {
+building_fiber_factory = { #纤维工厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/fiber_factory.dds"
 	city_type = city
@@ -88,12 +88,12 @@ pmg_automation_building_fiber_factory
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
 
-building_rubber_factory = {
+building_rubber_factory = { #橡胶工厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/rubber_factory.dds"
 	city_type = city
@@ -111,12 +111,12 @@ pmg_automation_building_rubber_factory
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
 
-building_clean_energy_power_station = {
+building_clean_energy_power_station = { #清洁能源发电站
 	building_group = bg_power
 	texture = "gfx/interface/icons/building_icons/clean_energy_power_station.dds"
 	city_type = city
@@ -134,12 +134,12 @@ pmg_automation_building_clean_energy_power_station
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
 
-building_plastic_products_factory = {
+building_plastic_products_factory = { #塑料制品厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/plastic_products_factory.dds"
 	city_type = city
@@ -157,8 +157,8 @@ pmg_automation_building_plastic_products_factory
 	}
 
 	required_construction = construction_cost_medium
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
 
@@ -181,14 +181,11 @@ pmg_automation_building_chemical_plant
 	}
 
 	required_construction = construction_cost_high
-	
 	ownership_type = self
-
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
-
-building_refinery = {
+building_refinery = { #炼油厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/refinery.dds"
 	city_type = city
@@ -207,12 +204,11 @@ pmg_automation_building_refinery
 	}
 
 	required_construction = construction_cost_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_heavy_industry.dds"
 }
 
-
-building_real_estate_developers = {
+building_real_estate_developers = { #房地产开发商
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/real_estate_developers.dds"
 	city_type = city
@@ -226,16 +222,14 @@ pmg_base_building_real_estate_developers
 pmg_advance_building_real_estate_developers
 pmg_transportation
 pmg_automation_building_real_estate_developers
-
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-
-building_machine_factory = {
+building_machine_factory = { #机器工厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/machine_factory.dds"
 	city_type = city
@@ -253,12 +247,11 @@ pmg_automation_building_machine_factory
 	}
 
 	required_construction = construction_cost_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_home_appliance_factory = {
+building_home_appliance_factory = { #家电工厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/home_appliance_factory.dds"
 	city_type = city
@@ -277,12 +270,11 @@ pmg_automation_building_home_appliance_factory
 	}
 
 	required_construction = construction_cost_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_car_factory = {
+building_car_factory = { #汽车制造厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/car_factory.dds"
 	city_type = city
@@ -301,12 +293,11 @@ pmg_automation_building_car_factory
 	}
 
 	required_construction = construction_cost_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_electronic_parts_factory = {
+building_electronic_parts_factory = { #电子零件工厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/electronic_parts_factory.dds"
 	city_type = city
@@ -325,12 +316,11 @@ pmg_automation_building_electronic_parts_factory
 	}
 
 	required_construction = construction_cost_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_pharmaceutical_factory = {
+building_pharmaceutical_factory = { #医疗用品厂
 	building_group = bg_light_industry
 	texture = "gfx/interface/icons/building_icons/pharmaceutical_factory.dds"
 	city_type = city
@@ -347,13 +337,12 @@ pmg_automation_building_pharmaceutical_factory
 
 	}
 
-	required_construction = construction_cost_medium
-	
-ownership_type = self
+	required_construction = construction_cost_high
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_large_equipment_factory = {
+building_large_equipment_factory = { #大型设备工厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/large_equipment_factory.dds"
 	city_type = city
@@ -371,12 +360,11 @@ pmg_automation_building_large_equipment_factory
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_aircraft_factory = {
+building_aircraft_factory = { #飞机制造厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/aircraft_factory.dds"
 	city_type = city
@@ -394,12 +382,11 @@ pmg_automation_building_aircraft_factory
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-building_computer_factory = {
+building_computer_factory = { #计算机工厂
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/computer_factory.dds"
 	city_type = city
@@ -413,17 +400,14 @@ building_computer_factory = {
 pmg_base_building_computer_factory
 pmg_transportation
 pmg_automation_building_computer_factory
-
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-
-building_rocket_center = {
+building_rocket_center = { #火箭中心
 	building_group = bg_heavy_industry
 	texture = "gfx/interface/icons/building_icons/rocket_center.dds"
 	city_type = city
@@ -437,17 +421,14 @@ building_rocket_center = {
 pmg_base_building_rocket_center
 pmg_transportation
 pmg_automation_building_rocket_center
-
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_light_industry.dds"
 }
 
-
-
-building_highway = {
+building_highway = { #公路
 	building_group = bg_public_infrastructure
 	texture = "gfx/interface/icons/building_icons/highway.dds"
 
@@ -458,15 +439,14 @@ building_highway = {
 	production_method_groups = {
 pmg_base_building_highway
 pmg_automation_building_highway
-
 	}
 
 	required_construction = construction_cost_very_high
 	ai_value = 10000
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-
-building_airport = {
+building_airport = { #机场
 	building_group = bg_private_infrastructure
 	texture = "gfx/interface/icons/building_icons/airport.dds"
 
@@ -479,16 +459,14 @@ building_airport = {
 	production_method_groups = {
 pmg_base_building_airport
 pmg_automation_building_airport
-
 	}
 
 	required_construction = construction_cost_very_high
-	
-ownership_type = self
+	ownership_type = self
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }
 
-
-building_research_institution = {
+building_research_institution = { #科研机构
 	building_group = bg_technology
 	texture = "gfx/interface/icons/building_icons/research_institution.dds"
 	city_type = city
@@ -504,9 +482,8 @@ building_research_institution = {
 pmg_base_building_research_institution
 pmg_transportation
 pmg_automation_building_research_institution
-
 	}
 	ai_value = 2000
 	required_construction = construction_cost_very_high
-	
+	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_monuments.dds"
 }

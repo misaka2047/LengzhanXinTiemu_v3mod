@@ -188,6 +188,28 @@
 	s:STATE_HAUSALAND={
 		region_state:NIG={
 			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:NIG"
+						levels=7
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_religious_bureaucrats" "pm_automation_building_government_administration_1" "pm_professional_bureaucrats" "pm_base_building_government_administration_2" }
+			}
+			create_building={
+				building="building_barracks"
+				add_ownership={
+					country={
+						country="c:NIG"
+						levels=10
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" "pm_professional_army" }
+			}
+			create_building={
 				building="building_textile_mills"
 				add_ownership={
 				}

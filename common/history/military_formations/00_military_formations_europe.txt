@@ -18,7 +18,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_MORAVIA
 				count = 10
 			}
@@ -77,13 +77,13 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_NORTHERN_TRANSYLVANIA
 				count = 5
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_WEST_SLOVAKIA
 				count = 5
 			}
@@ -133,7 +133,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_VENETIA
 				count = 5
 			}
@@ -180,7 +180,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_SLAVONIA
 				count = 5
 			}
@@ -250,7 +250,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ILE_DE_FRANCE
 				count = 10
 			}
@@ -280,7 +280,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_GUYENNE
 				count = 15
 			}
@@ -316,7 +316,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_CHAMPAGNE
 				count = 5
 			}
@@ -357,7 +357,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_CHAMPAGNE
 				count = 5
 			}
@@ -711,7 +711,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_WURTTEMBERG
 				count = 2
 			}
@@ -755,7 +755,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_SAXONY
 				count = 2
 			}
@@ -835,7 +835,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_FRANCONIA
 				count = 2
 			}
@@ -887,7 +887,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_HESSE
 				count = 1
 			}
@@ -957,7 +957,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ELBE
 				count = 2
 			}
@@ -1223,7 +1223,7 @@
 			}
 
 			combat_unit = { # Sjællandske Lanseregiment
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ZEALAND
 				count = 1
 			}
@@ -1294,7 +1294,7 @@
 			}
 
 			combat_unit = { # Holstenske Lanseregiment
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_SCHLESWIG_HOLSTEIN
 				count = 1
 			}
@@ -1408,7 +1408,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_ATTICA
 				count = 1
 			}
@@ -1416,18 +1416,6 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_ATTICA
-				count = 1
-			}
-		}
-
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_balkans
-			name = "希腊皇家海军"
-
-			combat_unit = { # Corvette Prinkips Maximilianos (ex Psara)
-				type = unit_type:combat_unit_type_frigate
-				state_region = s:STATE_WEST_AEGEAN_ISLANDS
 				count = 1
 			}
 		}
@@ -1646,7 +1634,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_PIEDMONT
 				count = 1
 			}
@@ -1752,7 +1740,7 @@
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
+				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_TUSCANY
 				count = 1
 			}

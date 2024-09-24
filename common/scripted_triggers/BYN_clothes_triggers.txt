@@ -68,63 +68,123 @@ BYN_general_clothes_trigger = { #民国陆军将领通用
 exists = scope:character
 scope:character = { 
 is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
 owner = { 
-NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
-NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
-AND = { exists = c:CHI owner = c:CHI } 
+	OR = { 
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_semi_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
 }
 has_role = general
 commander_rank >= 0
-} 
+	} 
 }
 
 BYN_admiral_clothes_trigger = { #民国海军将领通用
 exists = scope:character
 scope:character = { 
 is_ruler = no
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
 owner = { 
-NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
-NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
-AND = { exists = c:CHI owner = c:CHI } 
+	OR = { 
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_semi_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
 }
 has_role = admiral
 commander_rank >= 0
-} 
+	} 
 }
 
 BYN_officers_clothes_pop_trigger = { #民国军官通用
 exists = scope:pop
 scope:pop = { 
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
 owner = { 
-NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
-NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
-AND = { exists = c:CHI owner = c:CHI } 
+	OR = { 
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_semi_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
 }
 is_pop_type = officers 
-} 
+	} 
 }
 
 BYN_soldier_clothes_pop_trigger = { #民国士兵通用
 exists = scope:pop
 scope:pop = { 
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
 owner = { 
-NAND = { OR = { has_law = law_type:law_parliamentary_republic has_law = law_type:law_presidential_republic } has_law = law_type:law_autocracy AND = { exists = c:CHI owner = c:CHI } }
-NAND = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } 
-AND = { exists = c:CHI owner = c:CHI } 
+	OR = { 
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_semi_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
 }
 is_pop_type = soldiers
+	}
 }
-}
-
-
-
-
 
 BYN_ig_army_clothes_trigger = { #民国军队集团
 exists = scope:character
 scope:character = {
 is_ruler = no
-owner = { NOT = { has_law = law_type:law_monarchy country_has_primary_culture = cu:manchu } country_has_primary_culture = cu:han OR = { AND = { exists = c:CHI owner = c:CHI } AND = { exists = c:SRC owner = c:SRC } } }
+	OR = { 
+		culture = cu:han 
+		culture = cu:yue 
+		culture = cu:min
+		culture = cu:hakka
+		culture = cu:zhuang
+		culture = cu:miao
+		culture = cu:manchu
+		culture = cu:yi
+	}
+owner = { 
+	OR = { 
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_semi_presidential_republic
+		has_law = law_type:law_parliamentary_republic
+	}
+}
 interest_group = { is_interest_group_type = ig_armed_forces }
 }	
 }
@@ -161,7 +221,10 @@ is_ruler = no
 		culture = cu:moluccan
 		culture = cu:sumatran
 		}
+	OR = { 
 interest_group = { is_interest_group_type = ig_industrialists }
+interest_group = { is_interest_group_type = ig_armed_forces }
+}
 }	
 }
 
@@ -200,7 +263,6 @@ is_ruler = no
 OR = {
 interest_group = { is_interest_group_type = ig_trade_unions }
 interest_group = { is_interest_group_type = ig_rural_folk }
-interest_group = { is_interest_group_type = ig_armed_forces }
 }
 }	
 }

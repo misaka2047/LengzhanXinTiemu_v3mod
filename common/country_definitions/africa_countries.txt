@@ -191,14 +191,14 @@ TAN = {
 	capital = STATE_TANGANYIKA
 }
 
-NIG = {
+NIG = { #尼日利亚
 	color = { 158 143 192 }
 	
 	country_type = recognized
 	
-	tier = kingdom
+	tier = empire
 	
-	cultures = { british scottish }
+	cultures = { british hausa yoruba ibo }
 	capital = STATE_NIGERIA
 }
 SRL = {

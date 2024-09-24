@@ -1,4 +1,36 @@
-﻿DIPLOMACY = {	
+﻿DIPLOMACY = {
+	c:KOR = {
+		create_diplomatic_pact = {
+			country = c:RUS
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:PRC
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:PRK
+			type = rivalry
+		}
+	}
+	c:PRK = {
+		create_diplomatic_pact = {
+			country = c:USA
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:JAP
+			type = rivalry
+		}
+		create_diplomatic_pact = {
+			country = c:KOR
+			type = rivalry
+		}
+	}
 	c:RUS = {
 		create_diplomatic_pact = {
 			country = c:USA

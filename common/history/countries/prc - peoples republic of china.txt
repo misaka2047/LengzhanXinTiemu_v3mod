@@ -25,9 +25,8 @@ COUNTRIES = {
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_politicized_military #政治化军队
 		activate_law = law_type:law_censorship #出版物审查
-		activate_law = law_type:law_10_hour_working_system
+		activate_law = law_type:law_10_hour_working_system #十小时工作制
 		activate_law = law_type:law_migration_controls #移民控制
-
 
 		set_institution_investment_level = {
 			institution = institution_national_defense
@@ -55,7 +54,6 @@ COUNTRIES = {
 		}
 
 		ig:ig_intelligentsia = { #知识分子
-			set_interest_group_name = ig_administrative_bureaucrat #公务员
 			add_ideology = ideology_anti_clerical #反教权主义者
 		}
 

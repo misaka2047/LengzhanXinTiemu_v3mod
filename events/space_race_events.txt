@@ -8,12 +8,13 @@ space_race.1 = {
 	flavor = space_race.1.f
 	
     event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -41,12 +42,13 @@ space_race.2 = {
 	flavor = space_race.2.f
 	
     event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/satellite.dds"
 	
 	duration = 3
 	
@@ -70,12 +72,13 @@ space_race.3 = {
 	flavor = space_race.3.f
 	
     event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 	
 	duration = 3
 	
@@ -99,12 +102,13 @@ space_race.4 = {
 	flavor = space_race.4.f
 	
     event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_pictures/moon_walk.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/planetarium_moon.dds"
 	
 	duration = 3
 	
@@ -128,12 +132,13 @@ space_race.5 = {
 	flavor = space_race.5.f
 	
     event_image = {
-		video = "unspecific_world_fair"
+		texture = "gfx/event_pictures/spacestation_event.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 	
 	duration = 3
 	
@@ -157,12 +162,13 @@ space_race.181 = {
 	flavor = space_race.18.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -188,12 +194,13 @@ space_race.182 = {
 	flavor = space_race.18.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -219,12 +226,13 @@ space_race.183 = {
 	flavor = space_race.18.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -250,12 +258,13 @@ space_race.184 = {
 	flavor = space_race.18.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -281,12 +290,13 @@ space_race.191 = {
 	flavor = space_race.19.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -316,12 +326,13 @@ space_race.192 = {
 	flavor = space_race.19.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -351,12 +362,13 @@ space_race.193 = {
 	flavor = space_race.19.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -386,12 +398,13 @@ space_race.194 = {
 	flavor = space_race.19.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -421,12 +434,13 @@ space_race.201 = {
 	flavor = space_race.20.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -456,12 +470,13 @@ space_race.202 = {
 	flavor = space_race.20.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -491,12 +506,13 @@ space_race.203 = {
 	flavor = space_race.20.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -526,12 +542,13 @@ space_race.204 = {
 	flavor = space_race.20.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/universe.dds"
 	}
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -561,12 +578,13 @@ space_race.161 = {
 	flavor = space_race.16.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -608,12 +626,13 @@ space_race.162 = {
 	flavor = space_race.16.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -655,12 +674,13 @@ space_race.163 = {
 	flavor = space_race.16.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -702,12 +722,13 @@ space_race.164 = {
 	flavor = space_race.16.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -749,12 +770,13 @@ space_race.121 = {
 	flavor = space_race.12.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -788,12 +810,13 @@ space_race.122 = {
 	flavor = space_race.12.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -827,12 +850,13 @@ space_race.123 = {
 	flavor = space_race.12.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -866,12 +890,13 @@ space_race.124 = {
 	flavor = space_race.12.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -905,12 +930,13 @@ space_race.131 = {
 	flavor = space_race.13.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -956,12 +982,13 @@ space_race.132 = {
 	flavor = space_race.13.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -1007,12 +1034,13 @@ space_race.133 = {
 	flavor = space_race.13.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -1058,12 +1086,13 @@ space_race.134 = {
 	flavor = space_race.13.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/africa/leader_arguing"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	
@@ -1109,12 +1138,13 @@ space_race.6 = {
 	flavor = space_race.6.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/satellite_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/satellite.dds"
 	
 	duration = 3
 	
@@ -1204,12 +1234,13 @@ space_race.7 = {
 	flavor = space_race.7.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/spacestation_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 	
 	duration = 3
 	
@@ -1235,12 +1266,13 @@ space_race.8 = {
 	flavor = space_race.8.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/spacewalk_event.dds"
 	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 	
-	on_created_soundeffect ="event:/SFX/UI/Alerts/event_appear"
-	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 	
 	duration = 3
 	
@@ -1331,12 +1363,13 @@ space_race.9 = {
 	flavor = space_race.9.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/spacestation_event.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/spacestation.dds"
 	
 	duration = 3
 	
@@ -1378,12 +1411,13 @@ space_race.10 = {
 	flavor = space_race.10.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		texture = "gfx/event_pictures/moon_land.dds"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/planetarium_moon.dds"
 	
 	duration = 3
 	
@@ -1476,12 +1510,12 @@ space_race.14 = {
 	flavor = space_race.14.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		video = "unspecific_politicians_arguing"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 3
 	immediate = {}	
@@ -1504,12 +1538,12 @@ space_race.15 = {
 	flavor = space_race.15.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		video = "unspecific_politicians_arguing"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
 	
 	duration = 3
 	immediate = {}	
@@ -1533,12 +1567,12 @@ space_race.17 = {
 	flavor = space_race.17.f
 	
 	event_image = {
-		video = "asia_sepoy_mutiny"
+		video = "unspecific_politicians_arguing"
 	}
-	
+
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	
-	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
 	
 	duration = 3
 	immediate = {}	

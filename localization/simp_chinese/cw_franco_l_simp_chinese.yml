@@ -9,7 +9,7 @@
   je_franco_main_reason: "[ROOT.GetCountry.GetName]被民主国家阵营和社会主义国家阵营所孤立，经济发展停滞不前，内战的创伤尚未愈合。[ROOT.GetCountry.GetRuler.GetFullName]必须将[ROOT.GetCountry.GetName]从崩溃的边缘拯救出来——稍有不慎，[ROOT.GetCountry.GetName]的分离主义者、社会主义者和自由主义者将分裂我们的国家，酿成第二次内战。"
 
   je_franco_autocracy: "国家的拯救者：独裁专制"
-  je_franco_autocracy_goal: "保持独裁制，打压左翼势力使之不至于举足轻重，镇压一切革命与分离运动。"
+  je_franco_autocracy_goal: "保持[ROOT.GetCountry.GetRuler.GetFullName]对[ROOT.GetCountry.GetName]的绝对统治，镇压左翼分子和分离主义者，直到进度条满。"
   je_franco_autocracy_reason: "只有[ROOT.GetCountry.GetRuler.GetFullName]的铁腕统治才能维护[ROOT.GetCountry.GetName]的统一和稳定。一切破坏[ROOT.GetCountry.GetName]稳定的人，要么逃往比利牛斯山脉的另一端，要么在我们的监狱里腐烂。"
 
   je_franco_economy: "国家的拯救者：经济复兴"

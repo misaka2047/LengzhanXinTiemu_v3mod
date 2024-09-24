@@ -444,6 +444,11 @@ POPS = {
 				religion = catholic
 				size = 40000
 			}
+			create_pop = {
+				culture = albanian
+				religion = atheist
+				size = 40000
+			}
 		}
 	}
 	s:STATE_BOSNIA = {
@@ -1078,7 +1083,11 @@ POPS = {
 	s:STATE_HAUSALAND = {
 		region_state:NIG = {
 			create_pop = {
-				culture = yoruba
+				culture = british
+				size = 24350
+			}
+			create_pop = {
+				culture = hausa
 				size = 8860000
 			}
 		}
@@ -1086,13 +1095,25 @@ POPS = {
 	s:STATE_BENIN = {
 		region_state:NIG = {
 			create_pop = {
+				culture = british
+				size = 24350
+			}
+			create_pop = {
 				culture = yoruba
-				size = 4870000
+				size = 2435000
+			}
+			create_pop = {
+				culture = ibo
+				size = 2435000
 			}
 		}
 	}
 	s:STATE_YORUBA_STATES = {
 		region_state:NIG = {
+			create_pop = {
+				culture = british
+				size = 24350
+			}
 			create_pop = {
 				culture = yoruba
 				size = 5593000
@@ -1102,7 +1123,11 @@ POPS = {
 	s:STATE_NIGER_DELTA = {
 		region_state:NIG = {
 			create_pop = {
-				culture = yoruba
+				culture = british
+				size = 24350
+			}
+			create_pop = {
+				culture = ibo
 				size = 1160000
 			}
 		}
@@ -1118,7 +1143,11 @@ POPS = {
 	s:STATE_BORNU = {
 		region_state:NIG = {
 			create_pop = {
-				culture = yoruba
+				culture = british
+				size = 24350
+			}
+			create_pop = {
+				culture = hausa
 				size = 166000
 			}
 		}
@@ -1126,7 +1155,11 @@ POPS = {
 	s:STATE_NIGERIA = {
 		region_state:NIG = {
 			create_pop = {
-				culture = yoruba
+				culture = british
+				size = 24350
+			}
+			create_pop = {
+				culture = hausa
 				size = 1160000
 			}
 		}
@@ -1134,7 +1167,11 @@ POPS = {
 	s:STATE_EAST_HAUSALAND = {
 		region_state:NIG = {
 			create_pop = {
-				culture = yoruba
+				culture = british
+				size = 24350
+			}
+			create_pop = {
+				culture = hausa
 				size = 332000
 			}
 		}
@@ -2428,6 +2465,18 @@ POPS = {
 				size = 1200000
 			}
 			create_pop = {
+				culture = ukrainian
+				size = 18000
+			}	
+			create_pop = {
+				culture = byelorussian
+				size = 18000
+			}	
+			create_pop = {
+				culture = manchu
+				size = 18000
+			}	
+			create_pop = {
 				culture = siberian
 				size = 800000
 			}
@@ -2580,9 +2629,17 @@ POPS = {
 	s:STATE_SAKHALIN = {
 		region_state:RUS = {
 			create_pop = {
-				culture = japanese
+				culture = siberian
 				size = 285000
 			}
+			create_pop = {
+				culture = russian
+				size = 18000
+			}	
+			create_pop = {
+				culture = manchu
+				size = 18000
+			}	
 		}
 	}
 	s:STATE_SEOUL = {
@@ -2724,7 +2781,6 @@ POPS = {
 		region_state:AST = {
 			create_pop = {
 				culture = melanesian
-				religion = protestant
 				size = 1070000
 			}
 			create_pop = {
@@ -2738,13 +2794,8 @@ POPS = {
 				size = 20000
 			}
 			create_pop = {
-				culture = han
-				size = 20000
-			}
-			create_pop = {
 				culture = australian
-				religion = catholic
-				size = 20000
+				size = 40000
 			}
 		}
 	}
@@ -2754,6 +2805,11 @@ POPS = {
 				culture = filipino
 				size = 1490000
 			}
+			create_pop = {
+				culture = filipino
+				religion = animist
+				size = 20000
+			}
 		}
 	}
 	s:STATE_LUZON = {
@@ -2762,6 +2818,11 @@ POPS = {
 				culture = filipino
 				size = 3010000
 			}
+			create_pop = {
+				culture = filipino
+				religion = animist
+				size = 20000
+			}
 		}
 	}
 	s:STATE_VISAYAS = {
@@ -2769,6 +2830,11 @@ POPS = {
 			create_pop = {
 				culture = filipino
 				size = 5300000
+			}
+			create_pop = {
+				culture = filipino
+				religion = animist
+				size = 20000
 			}
 		}
 	}
@@ -2849,6 +2915,62 @@ POPS = {
 				culture = australian
 				size = 1830000
 			}
+			create_pop = {
+				culture = south_italian
+				size = 12800
+			}
+			create_pop = {
+				culture = north_italian
+				size = 5666
+			}
+			create_pop = {
+				culture = malay
+				size = 3400
+			}
+			create_pop = {
+				culture = dutch
+				size = 2196
+			}
+			create_pop = {
+				culture = han
+				religion = sunni
+				size = 20750
+			}
+			create_pop = {
+				culture = melanesian
+				size = 20750
+			}
+		}
+		region_state:IDN = {
+			create_pop = {
+				culture = australian
+				size = 31000
+			}
+			create_pop = {
+				culture = south_italian
+				size = 12800
+			}
+			create_pop = {
+				culture = north_italian
+				size = 5666
+			}
+			create_pop = {
+				culture = malay
+				size = 3400
+			}
+			create_pop = {
+				culture = dutch
+				size = 2196
+			}
+			create_pop = {
+				culture = han
+				religion = sunni
+				size = 20750
+			}
+			create_pop = {
+				culture = melanesian
+				size = 20750
+			}
 		}
 	}
 	s:STATE_NORTHERN_TERRITORY = {
@@ -2863,7 +2985,7 @@ POPS = {
 		region_state:NZL = {
 			create_pop = {
 				culture = australian
-				size = 2100000
+				size = 4200000
 			}
 		}
 	}
@@ -2871,7 +2993,7 @@ POPS = {
 		region_state:NZL = {
 			create_pop = {
 				culture = australian
-				size = 1830000
+				size = 3660000
 			}
 		}
 	}

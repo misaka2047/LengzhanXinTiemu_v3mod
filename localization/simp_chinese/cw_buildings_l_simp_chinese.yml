@@ -5,7 +5,6 @@
  building_car_factory: "汽车制造厂"
  building_textile_mills: "纺织厂"
  building_furniture_manufacturies: "家具制造厂"
- building_glassworks: "玻璃厂"
  building_tooling_workshops: "工具厂"
  building_tooling_workshops_lens_option: "扩建$building_tooling_workshops$"
  building_paper_mills: "造纸厂"

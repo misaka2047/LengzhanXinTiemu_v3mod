@@ -1,7 +1,7 @@
 CHARACTERS = {
      c:PRC = { #中共
 		create_character = {
-    			dna = dna_taizu
+    		dna = dna_taizu
 			first_name = "Zedong"
 			last_name = "Mao" 
 			ruler = yes
@@ -25,21 +25,12 @@ CHARACTERS = {
 		}
 
 		create_character = {
-			first_name = "Thanh"
-			last_name = "Jiang" 
-			female = yes #女性
 			ig_leader = yes
-			historical = yes
-			birth_date = 1914.1.1
 			culture = cu:han
 			religion = rel:atheist #无神论
 			interest_group = ig_trade_unions
 			ideology = ideology_mao
 			traits = {
-				    charismatic
-		                    ambitious
-				    bigoted							
-				    firebrand
 			}
 		}
 
@@ -99,6 +90,24 @@ CHARACTERS = {
 				charismatic
 			}
 		} 
+
+		create_character = { #朱瑞
+			first_name = "Hswe"
+			last_name = "Zhu"
+			historical = yes
+			birth_date = 1905.9.13
+			religion = rel:atheist #无神论
+			is_general = yes # both ruler and general
+			commander_rank =commander_rank_4
+			interest_group = ig_armed_forces
+			ideology = ideology_communist #共产主义者
+			traits = {
+				direct #直率
+				brave #勇敢
+				basic_artillery_commander #炮兵指挥官
+				expert_offensive_planner #熟练的进攻策划师
+			}	
+		}
 
 		create_character = {
 			first_name = "XiaoPing"

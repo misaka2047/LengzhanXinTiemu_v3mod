@@ -5116,9 +5116,9 @@ TAN = {
 	}
 }
 
-NIG = { 
+NIG = { #尼日利亚
 	dynamic_country_name = {
-		name = dyn_c_jzz_NIG
+		name = dyn_c_jzz_NIG #富拉尼帝国
 		
 		adjective = NIG_ADJ
 		#is_main_tag_only = yes 
@@ -5129,18 +5129,21 @@ NIG = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_republic_NIG
+		name = dyn_c_republic_NIG #尼日利亚联邦共和国
 		
 		adjective = NIG_ADJ
 		#is_main_tag_only = yes
 		priority = 0
 		
 		trigger = {
+		OR = {
 			coa_def_republic_flag_trigger = yes
+			has_law = law_type:law_semi_presidential_republic
+		}
 			NOT = { coa_def_communist_flag_trigger = yes }
 		}
 	}
-	dynamic_country_name = {#
+	dynamic_country_name = {#尼日利亚人民共和国
 		name = dyn_c_societ_republic_NIG
 		
 		adjective = NIG_ADJ
@@ -5152,7 +5155,7 @@ NIG = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_shenquan_NIG
+		name = dyn_shenquan_NIG #尼日利亚神权国
 		
 		adjective = NIG_ADJ
 		#is_main_tag_only = yes
@@ -5163,7 +5166,7 @@ NIG = {
 		}
 	}
 	dynamic_country_name = {
-		name = NIG
+		name = dyn_SHENG_NIG #尼日利亚殖民地和保护国
 		
 		adjective = NIG_ADJ
 		use_overlord_prefix = yes
@@ -5171,10 +5174,55 @@ NIG = {
 		priority = 100000
 		
 		trigger = {
-			coa_def_subject_trigger = yes
-		}
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:NIG
+					type = protectorate #保护国
+					is_initiator = yes
+				}
+			}
+		}  
 	}
-}
+	dynamic_country_name = {
+		name = NIG #英属尼日利亚
+		
+		adjective = NIG_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:NIG
+					type = dominion #自治领
+					is_initiator = yes
+				}
+			}
+		}  
+	}
+	dynamic_country_name = {
+		name = NIG #英属尼日利亚
+		
+		adjective = NIG_ADJ
+		use_overlord_prefix = yes
+		#is_main_tag_only = yes
+		priority = 100000
+		
+		trigger = {
+			exists = c:GBR
+			c:GBR = {
+				has_diplomatic_pact = {
+					who = c:NIG
+					type = puppet #傀儡国
+					is_initiator = yes
+				}
+			}
+		}  
+	}
+} 
 
 SRL = { 
 	dynamic_country_name = {

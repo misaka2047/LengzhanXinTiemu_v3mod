@@ -7,6 +7,7 @@
 		effect_starting_politics_liberal = yes
 		# Laws
                 activate_law = law_type:law_universal_suffrage #普选制
+		activate_law = law_type:law_elected_bureaucrats #选举官僚制
 		activate_law = law_type:law_encourage_immigration #鼓励移民
 		activate_law = law_type:law_right_of_assembly #集会权
 		activate_law = law_type:law_encourage_fertility #鼓励抚养
@@ -20,7 +21,6 @@
 		activate_law = law_type:law_commercialized_agriculture #商品化农业
 		activate_law = law_type:law_national_guard #国民警卫队
 		activate_law = law_type:law_freedom_of_conscience #信仰自由
-		activate_law = law_type:law_elected_bureaucrats #选举官僚制
 		activate_law = law_type:law_case_law_system #海洋法系	
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_slavery_banned

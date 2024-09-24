@@ -1,4 +1,6 @@
-﻿ideology_paternalistic = { #意识形态家长式的
+﻿
+
+ideology_paternalistic = { #意识形态家长式的
 	icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
 	
 	lawgroup_legal_system = {

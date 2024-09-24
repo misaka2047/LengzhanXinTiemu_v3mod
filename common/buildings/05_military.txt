@@ -1,9 +1,9 @@
 ﻿############ BARRACKS
 
-building_barracks = {
+building_barracks = { #兵营
 	building_group = bg_army
 	recruits_combat_units = yes
-	texture = "gfx/interface/icons/building_icons/building_barracks.dds"
+	texture = "gfx/interface/icons/building_icons/兵营.dds"
 	city_type = city
 	
 	has_max_level = yes
@@ -21,7 +21,7 @@ building_barracks = {
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_military.dds"
 }
 
-building_conscription_center = {
+building_conscription_center = { #征兵中心
 	building_group = bg_conscription
 	buildable = no
 	expandable = no
@@ -34,7 +34,7 @@ building_conscription_center = {
 	city_type = none
 
 	recruits_combat_units = yes
-	texture = "gfx/interface/icons/building_icons/building_conscription_center.dds"
+	texture = "gfx/interface/icons/building_icons/征兵中心.dds"
 
 	production_method_groups = {
 		pmg_training_conscription
