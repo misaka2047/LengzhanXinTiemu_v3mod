@@ -1,0 +1,114 @@
+je_south_korea_democracy_main = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		exists = c:KOR
+		c:KOR = ROOT
+	}
+	
+	possible = {
+		exists = c:KOR
+		c:KOR = ROOT
+        NOT = {
+            has_global_variable = south_korea_democracy_completed
+        }
+	}
+
+    immediate = {
+        set_variable = {
+            name = south_korea_democracy_var
+            value = 0
+        }
+    }
+    current_value = {
+        value = var:south_korea_democracy_var
+    }
+	goal_add_value = {
+		add = 100
+	}
+	complete = {
+        scope:journal_entry = {
+            is_goal_complete = yes
+        }
+	}
+    on_complete = {
+        trigger_event = {
+            id = south_korea_democracy.12
+        }
+    }
+    timeout = 5000
+    on_timeout = {
+        trigger_event = {
+            id = south_korea_democracy.10
+        }
+    }
+    on_monthly_pulse = {
+        random_events = {
+            500 = 0
+            20 = south_korea_democracy.2
+            20 = south_korea_democracy.4
+            20 = south_korea_democracy.5
+            20 = south_korea_democracy.9
+        }
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_law = law_type:law_landed_voting
+                        has_law = law_type:law_wealth_voting
+                        has_law = law_type:law_census_voting
+                        has_law = law_type:law_universal_suffrage
+                        has_law = law_type:law_anarchy
+                    }
+                    NOT = {
+                        has_global_variable = south_korea_democracy_completed
+                    }
+                }
+                trigger_event = {
+                    id = south_korea_democracy.13
+                    days = 3
+                }
+            }
+        }
+    }
+    progressbar = yes
+
+    on_weekly_pulse = {
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_law = law_type:law_landed_voting
+                        has_law = law_type:law_wealth_voting
+                        has_law = law_type:law_census_voting
+                        has_law = law_type:law_universal_suffrage
+                        has_law = law_type:law_anarchy
+                    }
+                }
+                change_variable = {
+                    name = south_korea_democracy_var
+                    add = 1
+                }
+            }
+        }
+        effect = {
+            if = {
+                limit = {
+                    OR = {
+                        
+                    }
+                }
+                change_variable = {
+                    name = south_korea_democracy_var
+                    add = 1
+                }
+            }
+        }
+    }
+
+	weight = 10000
+	
+	should_be_pinned_by_default = yes
+}

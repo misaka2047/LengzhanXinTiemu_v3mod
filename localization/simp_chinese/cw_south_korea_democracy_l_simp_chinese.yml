@@ -62,9 +62,17 @@
   south_korea_democracy.10.b: "我们不会翼赞一个独裁者。"
 
   south_korea_democracy.11.t: "野兽的心境"
-  south_korea_democracy.11.d: "在一次政府高层人物的秘密活动中，[Root.GetRuler.GetFullName]被其手下刺杀。无论是民主分子还是独裁的继任者，都对大独裁者的死所形成的政治真空虎视眈眈。"
-  south_korea_democracy.11.f: "在秘密宴会厅里，[Root.GetRuler.GetFullName]与心腹讨论着最近反对党的抗议活动。有些人洋洋得意地主张应该将反对分子“杀光”，以表示自己对大统领的无比忠诚。在摇曳的灯光与歌声之中，在场的人没有怀疑一名高官的离席行为——他很快就回到了餐桌，默默地喝了一杯酒。"
+  south_korea_democracy.11.d: "在一次政府高层人物的秘密活动中，[Root.GetCountry.GetRuler.GetFullName]被其手下刺杀。无论是民主分子还是独裁的继任者，都对大独裁者的死所形成的政治真空虎视眈眈。"
+  south_korea_democracy.11.f: "在秘密宴会厅里，[Root.GetCountry.GetRuler.GetFullName]与心腹讨论着最近反对党的抗议活动。有些人洋洋得意地主张应该将反对分子“杀光”，以表示自己对大统领的无比忠诚。在摇曳的灯光与歌声之中，在场的人没有怀疑一名高官的离席行为——他很快就回到了餐桌，默默地喝了一杯酒。"
   south_korea_democracy.11.a: "……射向维新的心脏。"
 
-  south_korea_democracy.12.t: ""
+  south_korea_democracy.12.t: "献给你的进行曲"
+  south_korea_democracy.12.d: "迫于压力，[ROOT.GetCountry.GetRuler.GetFullName]宣布将解除言论管制措施，重启公平公正的民主选举程序，恢复议会的运作，自由与民主被再度庄严载入宪法。[ROOT.GetCountry.GetName]人民争取自由民主的斗争最终以胜利告终。"
+  south_korea_democracy.12.f: "爱 荣誉 名声 什么都没有留下 一辈子坚持的理想 就像热血般的誓盟\n同志已经牺牲 只留下旗帜在飘扬 直到新社会到来 我们不能动摇\n岁月虽然会流逝 山川却会知道 醒来时的呐喊 犹如沸血般的嘶吼\n我将一往无前 还活着的人就跟着前进吧\n我将一往无前 还活着的人就跟着前进吧"
+  south_korea_democracy.12.a: "今日的胜利将告慰先烈的英灵。"
+
+  south_korea_democracy.13.t: "民主的雷霆"
+  south_korea_democracy.13.d: "[ROOT.GetCountry.GetName]迎来了民主时代，然而，人民对民主的期望并未得到满足，旧日独裁政体的阴影使得新政府行事处处掣肘。"
+  south_korea_democracy.13.f: "派系之争、内讧诋毁、党同伐异……何为民主？他们曾经期待的民主政治似乎只是一场华丽的幻影，现实中的政治仍然是一场权力的游戏。民选的政客与官僚集团格格不入，政府的决策总是被各种力量所左右——民意却被置于次要位置。"
+  south_korea_democracy.13.a: "一地鸡毛。"
 
