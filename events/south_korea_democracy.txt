@@ -1,0 +1,84 @@
+namespace = south_korea_democracy
+
+south_korea_democracy.1 = {
+	type = country_event
+	placement = root
+	
+	title = south_korea_democracy.1.t
+	desc = south_korea_democracy.1.d
+	flavor = south_korea_democracy.1.f
+	
+    event_image = {
+		texture = "gfx/event_pictures/rocket_launch_event.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
+
+	icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }    
+    option = {
+		name = south_korea_democracy.1.a
+        add_modifier = {
+            name = ridiculous_rounding_modifier
+            years = 5
+        }
+		default_option = yes
+    }
+    option = {
+        name = south_korea_democracy.1.b
+        change_variable = {
+            name = south_korea_democracy_var
+            add = 5
+        }
+        add_radicals = {
+			value = very_large_radicals
+		}
+    }
+}
+
+south_korea_democracy.2 = {
+    type = country_event
+    placement = root
+    
+    title = south_korea_democracy.2.t
+    desc = south_korea_democracy.2.d
+    flavor = south_korea_democracy.2.f
+    
+    event_image = {
+        texture = "gfx/event_pictures/rocket_launch_event.dds"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    on_opened_soundeffect = "event:/SFX/Events/unspecific/airship"
+
+    icon = "gfx/interface/icons/event_icons/verrier_astronomy_alert.dds"
+    
+    duration = 3
+    
+    immediate = {
+    }    
+    option = {
+        name = south_korea_democracy.2.a
+        activate_law = law_type:law_outlawed_dissent
+        default_option = yes
+        add_radicals = {
+            value = medium_radicals
+        }
+    }
+    option = {
+        name = south_korea_democracy.2.b
+        activate_law = law_type:law_outlawed_dissent
+        change_variable = {
+            name = south_korea_democracy_var
+            add = 5
+        }
+        add_radicals = {
+            value = very_large_radicals
+        }
+    }
+}
