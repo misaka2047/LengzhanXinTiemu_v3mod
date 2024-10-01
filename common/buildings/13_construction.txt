@@ -18,7 +18,7 @@ building_construction_sector = { #建造部门
 
 	}
 	
-	ai_value = 0 # Construction sector should generally be preferred over other equal-priority spending items
+	ai_value = 2000 # Construction sector should generally be preferred over other equal-priority spending items
 
 	background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_farming.dds"
 }
