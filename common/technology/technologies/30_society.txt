@@ -1,3 +1,66 @@
+romanticism = { #浪漫主义
+	# Unlocks Arts Academy building
+	# Unlocks Greener Grass Campaign Decree
+	# Unlocks Agrarianism - Economic System Law
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/romanticism.dds"
+	category = society
+	
+	modifier = {
+		country_prestige_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		tech_literary_creation
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+atonal_music = { #无调性音乐
+	# Unlocks Arts Academy building
+	# Unlocks Greener Grass Campaign Decree
+	# Unlocks Agrarianism - Economic System Law
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/romanticism.dds"
+	category = society
+	
+	modifier = {
+		country_prestige_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		romanticism
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
+experimental_music = { #实验音乐
+	# Unlocks Arts Academy building
+	# Unlocks Greener Grass Campaign Decree
+	# Unlocks Agrarianism - Economic System Law
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/romanticism.dds"
+	category = society
+	
+	modifier = {
+		country_prestige_mult = 0.05
+	}
+	
+	unlocking_technologies = {
+		atonal_music
+	}
+	
+	ai_weight = {
+		value = 3 # Very important in general
+	}
+}
+
 labor_movement = { #劳工运动
 	# Unlocks Regulatory Bodies - Labor Rights Law
 	# Unlocks Restricted Child Labor - Children's Rights Laws
@@ -239,8 +302,7 @@ tech_keynesianism = {#凯恩斯主义
 	}
 modifier = {
 		country_gold_reserve_limit_mult = 0.2 #黄金储备上限
-		state_capitalists_investment_pool_efficiency_mult = 0.15
-		state_shopkeepers_investment_pool_efficiency_mult = 0.15
+		state_capitalists_investment_pool_efficiency_mult = 0.05
 		building_cash_reserves_mult = 0.2
 	}
 }
@@ -270,10 +332,7 @@ tech_new_keynesianism = {#新凯恩斯主义
 	}
 modifier = {
 		country_gold_reserve_limit_mult = 0.2 #黄金储备上限
-		state_clergymen_investment_pool_contribution_add = 0.10
-state_aristocrats_investment_pool_contribution_add = 0.10
-state_capitalists_investment_pool_contribution_add = 0.10
-country_government_dividends_efficiency_add = 0.05
+		state_capitalists_investment_pool_contribution_add = 0.01
 	}
 }
 tech_general_equilibrium_theory = {#一般均衡理论
@@ -292,7 +351,7 @@ modifier = {
 }
 tech_behavioral_economics = {#行为经济学
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/行为科学学派.dds"
 	category = society
 	ai_weight = {
 		value = 2
@@ -303,9 +362,8 @@ tech_empirical_school
 	}
 modifier = {
 		country_gold_reserve_limit_mult = 0.2 #黄金储备上限
-		state_aristocrats_investment_pool_contribution_add = 0.10
-state_capitalists_investment_pool_contribution_add = 0.10
-country_government_dividends_efficiency_add = 0.05
+		state_capitalists_investment_pool_contribution_add = 0.01
+		country_government_dividends_efficiency_add = 0.05
 	}
 }
 tech_neoclassical_economics = {#新古典经济学
@@ -478,7 +536,7 @@ state_urbanization_per_level_mult = -0.05
 }
 tech_behavioral_science_school = {#行为科学学派
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/行为科学学派.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -526,7 +584,7 @@ state_urbanization_per_level_mult = -0.05
 }
 tech_modern_management = {#现代管理学
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/现代主义.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -556,7 +614,7 @@ modifier = {
 }
 tech_modernism = {#现代主义
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/现代主义.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -727,7 +785,7 @@ feminism = { #现代女权
 
 tech_postmodernism = {#后现代主义
 	era = era_4
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/后现代主义.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -741,7 +799,7 @@ modifier = {
 }
 tech_power_supply = {#电力供应
 	era = era_2
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/electricity.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -752,7 +810,7 @@ tech_power_supply = {#电力供应
 }
 tech_application_of_computer_city_management = {#计算机城市管理应用
 	era = era_3
-	texture = "gfx/interface/icons/invention_icons/urbanization.dds"
+	texture = "gfx/interface/icons/goods_icons/计算机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -769,7 +827,7 @@ modifier = {
 }
 tech_internet = {#互联网
 	era = era_4
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/计算机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -785,7 +843,7 @@ modifier = {
 }
 tech_big_data = {#大数据
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/计算机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -969,7 +1027,7 @@ tech_modernism
 }
 tech_lightweight_building_materials = {#轻型建筑材料
 	era = era_4
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/轻型建筑材料.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -980,7 +1038,7 @@ tech_lightweight_building_materials = {#轻型建筑材料
 }
 tech_construction_tools = {#施工工具
 	era = era_2
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/tools.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -992,7 +1050,7 @@ tech_road_administration_department
 }
 tech_complete_construction_vehicles = {#完备施工车辆
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/automobiles.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1008,7 +1066,7 @@ modifier = {
 }
 tech_complete_construction_machinery = {#完备施工机械
 	era = era_4
-	texture = "gfx/interface/icons/invention_icons/steel_frame_buildings.dds"
+	texture = "gfx/interface/icons/invention_icons/动力机械工程.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1031,7 +1089,7 @@ tech_giant_tower_crane
 }
 tech_real_estate_development = {#房地产开发
 	era = era_2
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/住房.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1042,7 +1100,7 @@ tech_real_estate_development = {#房地产开发
 }
 tech_real_estate_agency = {#地产中介
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/住房.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1156,7 +1214,7 @@ tech_new_public_management
 }
 tech_computer_office = {#计算机办公
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/计算机.dds"
 	category = society
 	ai_weight = {
 		value = 2
@@ -1347,7 +1405,7 @@ modifier = {
 }
 tech_material_science = {#材料科学
 	era = era_2
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/轻型建筑材料.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1358,7 +1416,7 @@ tech_material_science = {#材料科学
 }
 tech_power_mechanical_engineering = {#动力机械工程
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/动力机械工程.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1386,7 +1444,7 @@ tech_electronic_office
 }
 tech_computer_ai_science = {#计算机AI科学
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/goods_icons/计算机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1398,7 +1456,7 @@ tech_internet
 }
 tech_analytical_ultracentrifuge = {#分析型超速离心机
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/离心机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1508,7 +1566,7 @@ country_institution_home_affairs_max_investment_add = 1
 }
 tech_international_trade_theory = {#国际贸易理论
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/国际贸易理论.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1522,7 +1580,7 @@ modifier = {
 }
 tech_intellectual_property = {#知识产权
 	era = era_4
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/知识产权.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1568,7 +1626,7 @@ country_institution_home_affairs_max_investment_add = 1
 }
 tech_international_public_relations = {#国际公共关系
 	era = era_2
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/国际贸易理论.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1678,7 +1736,7 @@ blood_nationalism = { #血缘民族主义
 	# Permits for the formation of a number of pan-nationalist countries
 	# Permits the Unify Germany and Unify Italy Diplomatic Plays
 	era = era_3
-	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/血缘民族主义.dds"
 	category = society
 	
 	modifier = {
@@ -1698,7 +1756,7 @@ culture_nationalism = { #文化民族主义
 	# Permits for the formation of a number of pan-nationalist countries
 	# Permits the Unify Germany and Unify Italy Diplomatic Plays
 	era = era_3
-	texture = "gfx/interface/icons/invention_icons/pan_nationalism.dds"
+	texture = "gfx/interface/icons/invention_icons/文化民族主义.dds"
 	category = society
 	
 	modifier = {
@@ -1716,7 +1774,7 @@ culture_nationalism = { #文化民族主义
 
 tech_international_politics = {#国际政治
 	era = era_3
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/国际政治.dds"
 	category = society
 	ai_weight = {
 		value = 1
@@ -1731,7 +1789,7 @@ country_infamy_generation_against_unrecognized_mult = -0.2
 }
 tech_modern_diplomacy = {#现代外交学
 	era = era_5
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/现代主义.dds"
 	category = society
 	ai_weight = {
 		value = 1

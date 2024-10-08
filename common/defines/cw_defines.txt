@@ -61,7 +61,10 @@ NEconomy = { #建筑修改
 
 
 NPops = {
-
+	WEALTH_PROGRESS_WANTED_BUFFER = 1.01		# A pop wants at least as much income as this x the next level buy package costs to increase its wealth
+	WEALTH_PROGRESS_ACCEPTABLE_DEFICIT = 0.95	# A pop won't change wealth level if they can still afford this much of their current buy package costs
+	WEALTH_PROGRESS_INCREASE = 1				# How fast wealth increases when a pop has money for higher grade buy packages. This factor is modified by how large the difference between income and cost is
+	WEALTH_PROGRESS_DECREASE = 0.1
 	WORKING_ADULT_RATIO_BASE = 0.4				# Base ratio of working adults to dependents, this can be overridden by pop type definition and country modifiers.
 
 }
