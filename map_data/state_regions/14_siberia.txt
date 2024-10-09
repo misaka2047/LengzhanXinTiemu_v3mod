@@ -52,6 +52,7 @@ STATE_TOBOLSK = {
         bg_coal_mining = 54
         bg_logging = 24
         bg_oil_extraction = 60
+        bg_sulfur_mining = 60
     }
 }
 

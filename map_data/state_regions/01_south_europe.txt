@@ -982,6 +982,7 @@ STATE_WESTERN_THRACE = {
         bg_iron_mining = 27
         bg_logging = 5
         bg_fishing = 10
+        bg_oil_extraction = 5
     }
     naval_exit_id = 3035
 }

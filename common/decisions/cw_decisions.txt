@@ -1,5 +1,6 @@
 
 
+
 war_propaganda_resolution = { #战争宣传
 	is_shown = {
 			is_ai = no

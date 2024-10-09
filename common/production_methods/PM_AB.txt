@@ -1964,7 +1964,7 @@ country_construction_add = 0.25
 	}									
 	state_modifiers = {									
 		workforce_scaled = {								
-state_construction_mult = 0.002										
+state_construction_mult = 0.001									
 		}								
 	}									
 }										
@@ -1987,7 +1987,7 @@ country_construction_add = 0.75
 	}									
 	state_modifiers = {									
 		workforce_scaled = {								
-state_construction_mult = 0.008										
+state_construction_mult = 0.004									
 		}								
 	}									
 }										
@@ -2010,7 +2010,7 @@ pm_base_building_construction_sector_2 = { #建造部门_2
 	}									
 	state_modifiers = {									
 		workforce_scaled = {								
-state_construction_mult = 0.016										
+state_construction_mult = 0.008										
 		}								
 	}									
 }										
@@ -2036,7 +2036,7 @@ country_construction_add = 1.25
 	}									
 	state_modifiers = {									
 		workforce_scaled = {								
-state_construction_mult = 0.032										
+state_construction_mult = 0.016										
 		}								
 	}									
 }										
@@ -2055,7 +2055,7 @@ pm_base_building_breeding_farm_1 = { #养殖场_1
 }										
 										
 pm_base_building_breeding_farm_2 = { #养殖场_2										
-	unlocking_technologies = {tech_fertilizer_synthesis}
+	unlocking_technologies = { tech_mature_food_industry }
 	texture = gfx/interface/icons/production_method_icons/base2.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
@@ -2069,7 +2069,7 @@ pm_base_building_breeding_farm_2 = { #养殖场_2
 }										
 										
 pm_advance_building_breeding_farm_3 = { #养殖场_3										
-	unlocking_technologies = {tech_greenhouse_technology}
+	unlocking_technologies = { tech_pet }
 	texture = gfx/interface/icons/production_method_icons/refining1.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
@@ -3467,7 +3467,7 @@ pm_base_building_livestock_ranch_1 = { #畜牧场_1
 }										
 										
 pm_base_building_livestock_ranch_2 = { #畜牧场_2										
-	unlocking_technologies = {tech_fertilizer_synthesis}									
+	unlocking_technologies = { tech_mature_food_industry }									
 	texture = gfx/interface/icons/production_method_icons/base2.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
@@ -3480,7 +3480,7 @@ pm_base_building_livestock_ranch_2 = { #畜牧场_2
 }										
 										
 pm_base_building_livestock_ranch_3 = { #畜牧场_3										
-	unlocking_technologies = {tech_greenhouse_technology}									
+	unlocking_technologies = { tech_pet }									
 	texture = gfx/interface/icons/production_method_icons/base3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								

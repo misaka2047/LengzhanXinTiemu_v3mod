@@ -1,4 +1,9 @@
 ﻿DIPLOMACY = { #好感
+	c:CHL = { #智利
+		set_relations = { country = c:BOL value = -100 }
+		set_relations = { country = c:PEU value = -100 }
+		set_relations = { country = c:ARG value = -50 }
+	}
 	c:KOR = {
 		set_relations = { country = c:RUS value = -50 }
 		set_relations = { country = c:PRC value = -50 }
@@ -301,7 +306,6 @@
 		set_relations = { country = c:USA value = -20 }
 		set_relations = { country = c:MEX value = -30 }
 		set_relations = { country = c:UCA value = -30 }
-		set_relations = { country = c:CHL value = -30 }
 		set_relations = { country = c:BOL value = -30 }
 	}
 	c:SWE = {

@@ -1,11 +1,11 @@
-﻿gov_occupied_japan = {
+﻿gov_occupied_japan = { #日本临时政府
 	transfer_of_power = dictatorial
 	
 	male_ruler = "RULER_TITLE_SCAP"
 	female_ruler = "RULER_TITLE_SCAP" 
 	
 	possible = {
-		country_has_primary_culture = cu:japanese
+		country_has_primary_culture = cu:dahe
 		has_law = law_type:law_parliamentary_republic
 		has_journal_entry = je_japan_occupied
 	}
@@ -203,6 +203,7 @@ gov_parliamentary_dictatorship = {
 	possible = {
 		has_law = law_type:law_parliamentary_republic
 		has_law = law_type:law_autocracy 
+		NOT = { has_journal_entry = je_japan_occupied }
 	}
 
 	on_government_type_change = {

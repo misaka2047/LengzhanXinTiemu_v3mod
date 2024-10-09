@@ -6,20 +6,18 @@
 		add_taxed_goods = g:wine
 		effect_starting_politics_liberal = yes
 		# Laws
+		activate_law = law_type:law_continental_law_system #大陆法系
+		activate_law = law_type:law_commercialized_small_farmers #商品化小农制
 		activate_law = law_type:law_regulatory_bodies #国家监管机构
-		activate_law = law_type:law_right_of_assembly #集会权
 		activate_law = law_type:law_non_militarized_country #非军事化国家
 		activate_law = law_type:law_private_capital_support #私人资本扶植（科研）
-		activate_law = law_type:law_old_age_pension #养老金
                 activate_law = law_type:law_universal_suffrage #普选制
 		activate_law = law_type:law_dedicated_police #专职警察部队
-		activate_law = law_type:law_commercialized_agriculture #商品化农业
 		activate_law = law_type:law_free_trade #自由贸易
 		activate_law = law_type:law_encourage_immigration #鼓励移民
 		activate_law = law_type:law_national_guard #国民警卫队
 		activate_law = law_type:law_freedom_of_conscience #信仰自由
 		activate_law = law_type:law_elected_bureaucrats #选举官僚制
-		activate_law = law_type:law_case_law_system #海洋法系	
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_slavery_banned
 		activate_law = law_type:law_racial_segregation #种族隔离
@@ -62,6 +60,12 @@
 		set_institution_investment_level = {
 			institution = institution_police #执法
 			level = 3
+		}
+
+		add_modifier = {
+			name = fra_military_weakness_modifier #第二次世界大战的创伤
+			years = 10
+			is_decaying = yes
 		}
 	}
 }

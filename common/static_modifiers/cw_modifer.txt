@@ -1,3 +1,104 @@
+dazhanshenglizhe = { #大战胜利者
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_conscription_rate_mult = -0.03 #可征召营队
+	unit_morale_damage_mult = -0.05 #部队士气打击
+	country_military_goods_cost_mult = 0.5 #军用商品花费
+}
+
+hunluandezhengfu = { #混乱的政府
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_mult = -0.05
+	country_legitimacy_base_add = -10 #政权合法性
+}
+
+chongfenjiuye = { #充分就业
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	state_building_conscription_center_max_level_add = -25
+}
+
+dimidejingji_modifier = { #低迷的经济
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	state_construction_mult = -0.05 #地区建造效率
+	state_infrastructure_mult = -0.05 #省份基础设施
+}
+
+ouzhoulianmeng = { #欧洲联盟
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_bureaucracy_investment_cost_factor_mult = -0.05 #机构行政力花费
+}
+
+shixianfangwuhezuo_modifier = { #实现防务合作
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	building_training_rate_mult = 0.2
+	power_bloc_target_sway_cost_mult = -0.25
+}
+
+junshichongjian = { #军事重建
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+	building_training_rate_mult = 0.05
+}
+
+shixianqianxiziyou_modifier = { #实现迁徙自由
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_migration_quota_mult = 0.25
+	country_mass_migration_attraction_mult = 0.25	
+}
+
+guliyimin = { #鼓励移民
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_migration_quota_mult = 0.25
+}
+
+shipinbiaozhunhuawancheng_modifier = { #食品标准化
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_group_bg_agriculture_throughput_add = 0.1
+	state_mortality_mult = -0.1
+		
+		# Higher SoL
+	state_standard_of_living_add = 1
+}
+
+huifunongyeshengchan = { # 恢复农业生产
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_group_bg_agriculture_throughput_add = 0.1
+}
+
+chongzuyunshuxitong_modifier = { #重组运输系统
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_convoys_capacity_mult = 0.2
+	state_infrastructure_from_population_mult = 0.33
+	state_infrastructure_from_population_max_mult = 0.33 
+		
+		# Increased land trade capacity
+	market_land_trade_capacity_add = 50
+}
+
+jianlikuajingtielu = { #建立跨境铁路
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_infrastructure_from_population_mult = 0.33
+	state_infrastructure_from_population_max_mult = 0.33 
+}
+
+shichangyitihuawancheng = { #市场一体化完成
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_company_throughput_bonus_add = 0.1
+    	tariff_export_add = 0.2                          #出口关税
+    	tariff_import_add = 0.2                         #进口关税
+	state_infrastructure_mult = 0.1
+	country_convoy_contribution_to_market_owner_add = 0.4
+}
+
+jianlikuaguogongsi = { #建立跨国公司
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_company_throughput_bonus_add = 0.1
+}
+
+modifier_maoyilianmeng = { #贸易联盟
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_trade_route_quantity_mult = 0.1
+	country_convoy_contribution_to_market_owner_add = 0.2
+}
+
 retreat_toa_treasure_island = { #退守宝岛
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
 	country_prestige_mult = -0.1
@@ -140,17 +241,17 @@ a_divided_leadership_team = { #分裂的领导班子
 	country_bureaucracy_mult = -0.05
 }
 
-russo_chinese.5.t = { #马林科夫的演说
+russo_chinese.5.t = { #贝利亚的演说
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	interest_group_ig_trade_unions_pol_str_mult = 0.1
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.1
 }
 
 russo_chinese.6.t = { #赫鲁晓夫的演说
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	interest_group_ig_intelligentsia_pol_str_mult = 0.1
+	interest_group_ig_rural_folk_pol_str_mult = 0.1
 }
 
-russo_chinese.7.t = { #贝利亚的演说
+russo_chinese.7.t = { #精彩的演说
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_rural_folk_pol_str_mult = 0.1
 }
@@ -163,6 +264,9 @@ russo_chinese.8.t = { #朱可夫的演说
 land_reform = { #土地改革
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
 	interest_group_ig_landowners_pol_str_mult = -0.5
+	state_tax_capacity_mult = 0.05 #征税能力
+	state_poor_standard_of_living_add = 1 #下等阶层的生活水平
+	unit_supply_consumption_mult = -0.05
 }
 
 absolute_economic_hegemony = { #绝对经济霸权

@@ -3,7 +3,13 @@
 		effect_starting_technology_tier_2_tech = yes
 		set_next_election_date = 1946.7.1
 		set_tax_level = medium
+		set_military_wage_level = low
+		set_government_wage_level = low
 		
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:wine
+		add_taxed_goods = g:liquor
+
 		# Laws
 		activate_law = law_type:law_parliamentary_republic #议会共和制   
 		activate_law = law_type:law_national_supremacy #民族至上

@@ -5,7 +5,7 @@
 		# Laws 
 		activate_law = law_type:law_council_republic
 		activate_law = law_type:law_single_party_state #一党制国家
-		activate_law = law_type:law_Corporatism_ownership #法团
+		activate_law = law_type:law_corporatism_ownership #法团
 		activate_law = law_type:law_freedom_of_conscience #信仰自由
 		activate_law = law_type:law_state_led #科学院主导
  		activate_law = law_type:law_compulsory_primary_school

@@ -14,7 +14,7 @@ sandazhanyi.1 = {
 
 	on_created_soundeffect = "file:/music/Por-una-Cabeza-Carlos-Gardel.ogg"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
 
 	duration = 1
 	
@@ -54,7 +54,7 @@ sandazhanyi.2 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
 
 	duration = 1
 	
@@ -94,7 +94,7 @@ sandazhanyi.3 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
 
 	duration = 1
 	

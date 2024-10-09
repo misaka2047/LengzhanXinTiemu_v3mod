@@ -110,6 +110,8 @@ algerian_war.3 = {
     option = {
         name = algerian_war.3.a
         default_option = true
+        add_primary_culture = cu:maghrebi
+        add_primary_culture = cu:berber
     }
 }
 

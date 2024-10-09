@@ -7,6 +7,7 @@
 
 		activate_law = law_type:law_presidential_republic #总统共和制
 		activate_law = law_type:law_universal_suffrage #普选制
+            	activate_law = law_type:law_8_hour_working_system #八小时工作制
 		activate_law = law_type:law_continental_law_system #大陆法系
 		activate_law = law_type:law_right_of_assembly #集会权
 		activate_law = law_type:law_appointed_bureaucrats #任命官僚制
@@ -25,7 +26,6 @@
 		activate_law = law_type:law_proportional_taxation #比例税制
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_interventionism #经济干预
-            activate_law = law_type:law_10_hour_working_system
 	
 		set_institution_investment_level = {
 			institution = institution_social_security #社会保障

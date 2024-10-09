@@ -2,7 +2,7 @@
 	c:RUS = { #苏联
 		create_character = {
 			# “慈父”斯大林
-    		dna = dna_stalin
+    			dna = dna_stalin
 			first_name = Joseph
 			last_name = Stalin
 			historical = yes
@@ -14,13 +14,12 @@
 			ig_leader = yes
 			birth_date = 1878.12.18
 			traits = { #特质
-				strong #健硕
-				charismatic #魅力四射
-				inspirational_orator #鼓舞人心的演说家
-				brave
-				ambitious
-				bigoted
-                experienced_political_operator
+				meticulous #谨小慎微
+				cautious #谨慎
+				reserved #内敛
+				master_bureaucrat #高明官僚
+				expert_political_operator #政治运作专家
+				persistent #执着	 
 			}
 		}
 

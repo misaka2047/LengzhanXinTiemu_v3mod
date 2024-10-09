@@ -1950,7 +1950,12 @@ pm_automation_building_construction_sector_1 = { #建造部门_1
 		workforce_scaled = {								
 country_construction_add = 1										
 		}								
-	}									
+	}
+	state_modifiers = {									
+		workforce_scaled = {								
+state_construction_mult = 0.001									
+		}								
+	}								
 }										
 										
 pm_automation_building_construction_sector_2 = { #建造部门_2										
@@ -1973,7 +1978,12 @@ pm_automation_building_construction_sector_2 = { #建造部门_2
 		workforce_scaled = {								
 country_construction_add = 2										
 		}								
-	}									
+	}	
+	state_modifiers = {									
+		workforce_scaled = {								
+state_construction_mult = 0.004									
+		}								
+	}								
 	unlocking_production_methods = {									
 		pm_base_building_construction_sector_1								
 		pm_base_building_construction_sector_2								
@@ -2002,10 +2012,11 @@ pm_automation_building_construction_sector_3 = { #建造部门_3
 country_construction_add = 3										
 		}								
 	}									
-										
-	unlocking_production_methods = {									
-		pm_base_building_construction_sector_2								
-	}									
+	state_modifiers = {									
+		workforce_scaled = {								
+state_construction_mult = 0.008										
+		}								
+	}																		
 }										
 										
 pm_automation_building_construction_sector_4 = { #建造部门_4										
@@ -2030,11 +2041,7 @@ pm_automation_building_construction_sector_4 = { #建造部门_4
 		workforce_scaled = {								
 country_construction_add = 4										
 		}								
-	}									
-	unlocking_production_methods = {									
-		pm_advance_building_construction_sector_3								
-	}									
-										
+	}																	
 }										
 										
 pm_automation_building_breeding_farm_2 = { #养殖场_1										
@@ -2057,13 +2064,13 @@ pm_automation_building_breeding_farm_2 = { #养殖场_1
 }										
 										
 pm_automation_building_breeding_farm_3 = { #养殖场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = { tech_large_scale_equipment_manufacturing }
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 8000							
@@ -2077,13 +2084,13 @@ pm_automation_building_breeding_farm_3 = { #养殖场_2
 }										
 										
 pm_automation_building_breeding_farm_4 = { #养殖场_3										
-	unlocking_technologies = {tech_popularization_of_tractors}
+	unlocking_technologies = { tech_large_scale_equipment_manufacturing }
 	texture = gfx/interface/icons/production_method_icons/automation4.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3223,13 +3230,13 @@ pm_automation_building_rye_farm_2 = { #黑麦农场_1
 }										
 										
 pm_automation_building_rye_farm_3 = { #黑麦农场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000						
@@ -3249,7 +3256,7 @@ pm_automation_building_rye_farm_4 = { #黑麦农场_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3283,13 +3290,13 @@ pm_automation_building_wheat_farm_2 = { #小麦农场_1
 }										
 										
 pm_automation_building_wheat_farm_3 = { #小麦农场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000						
@@ -3309,7 +3316,7 @@ pm_automation_building_wheat_farm_4 = { #小麦农场_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3343,13 +3350,13 @@ pm_automation_building_rice_farm_2 = { #水稻农场_1
 }										
 										
 pm_automation_building_rice_farm_3 = { #水稻农场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3369,7 +3376,7 @@ pm_automation_building_rice_farm_4 = { #水稻农场_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3403,13 +3410,13 @@ pm_automation_building_maize_farm_2 = { #玉米农场_1
 }										
 										
 pm_automation_building_maize_farm_3 = { #玉米农场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3429,7 +3436,7 @@ pm_automation_building_maize_farm_4 = { #玉米农场_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3463,13 +3470,13 @@ pm_automation_building_millet_farm_2 = { #杂谷农场_1
 }										
 										
 pm_automation_building_millet_farm_3 = { #杂谷农场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000						
@@ -3489,7 +3496,7 @@ pm_automation_building_millet_farm_4 = { #杂谷农场_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3523,13 +3530,13 @@ pm_automation_building_vineyard_plantation_2 = { #葡萄园_1
 }										
 										
 pm_automation_building_vineyard_plantation_3 = { #葡萄园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3549,7 +3556,7 @@ pm_automation_building_vineyard_plantation_4 = { #葡萄园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3583,13 +3590,13 @@ pm_automation_building_livestock_ranch_2 = { #畜牧场_1
 }										
 										
 pm_automation_building_livestock_ranch_3 = { #畜牧场_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}									
+	unlocking_technologies = { tech_large_scale_equipment_manufacturing }									
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3603,13 +3610,13 @@ pm_automation_building_livestock_ranch_3 = { #畜牧场_2
 }										
 										
 pm_automation_building_livestock_ranch_4 = { #畜牧场_3										
-	unlocking_technologies = {tech_popularization_of_tractors}									
+	unlocking_technologies = { tech_large_scale_equipment_manufacturing }									
 	texture = gfx/interface/icons/production_method_icons/automation4.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3643,13 +3650,13 @@ pm_automation_building_rubber_plantation_2 = { #橡胶种植园_1
 }										
 										
 pm_automation_building_rubber_plantation_3 = { #橡胶种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000						
@@ -3669,7 +3676,7 @@ pm_automation_building_rubber_plantation_4 = { #橡胶种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3703,13 +3710,13 @@ pm_automation_building_coffee_plantation_2 = { #咖啡种植园_1
 }										
 										
 pm_automation_building_coffee_plantation_3 = { #咖啡种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3729,7 +3736,7 @@ pm_automation_building_coffee_plantation_4 = { #咖啡种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3763,13 +3770,13 @@ pm_automation_building_cotton_plantation_2 = { #棉花种植园_1
 }										
 										
 pm_automation_building_cotton_plantation_3 = { #棉花种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3789,7 +3796,7 @@ pm_automation_building_cotton_plantation_4 = { #棉花种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3823,13 +3830,13 @@ pm_automation_building_tea_plantation_2 = { #茶叶种植园_1
 }										
 										
 pm_automation_building_tea_plantation_3 = { #茶叶种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000					
@@ -3849,7 +3856,7 @@ pm_automation_building_tea_plantation_4 = { #茶叶种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3883,13 +3890,13 @@ pm_automation_building_tobacco_plantation_2 = { #烟草种植园_1
 }										
 										
 pm_automation_building_tobacco_plantation_3 = { #烟草种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3909,7 +3916,7 @@ pm_automation_building_tobacco_plantation_4 = { #烟草种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -3943,13 +3950,13 @@ pm_automation_building_sugar_plantation_2 = { #糖料作物种植园_1
 }										
 										
 pm_automation_building_sugar_plantation_3 = { #糖料作物种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -3969,7 +3976,7 @@ pm_automation_building_sugar_plantation_4 = { #糖料作物种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -4003,13 +4010,13 @@ pm_automation_building_banana_plantation_2 = { #香蕉种植园_1
 }										
 										
 pm_automation_building_banana_plantation_3 = { #香蕉种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -4029,7 +4036,7 @@ pm_automation_building_banana_plantation_4 = { #香蕉种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								
@@ -4063,13 +4070,13 @@ pm_automation_building_silk_plantation_2 = { #丝绸种植园_1
 }										
 										
 pm_automation_building_silk_plantation_3 = { #丝绸种植园_2										
-	unlocking_technologies = {tech_small_agricultural_machinery}
+	unlocking_technologies = {tech_small_agricultural_enginesry}
 	texture = gfx/interface/icons/production_method_icons/automation3.dds									
 	building_modifiers = {									
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 		}								
 		level_scaled = {								
 			building_employment_laborers_add = 4000							
@@ -4089,7 +4096,7 @@ pm_automation_building_silk_plantation_4 = { #丝绸种植园_3
 		workforce_scaled = {								
 			# input goods							
 			goods_input_tools_add = 10							
-			goods_input_machine_add = 6							
+			goods_input_engines_add = 6							
 			goods_input_equipment_add = 4							
 		}								
 		level_scaled = {								

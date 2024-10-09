@@ -12,7 +12,7 @@ KW_event.1 = {
     icon = "gfx/interface/icons/event_icons/bicorne_hat.dds" 	
     on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear" 	
 
-    duration = 1 # Duration to fire if triggers are met
+    duration = 3 # Duration to fire if triggers are met
 	
 	trigger = {												
 		
@@ -48,9 +48,7 @@ KW_event.1 = {
 	}
     
     option = {
-        name = historical_interstate_wars.option.1				
-        highlighted_option = yes
-		
+        name = historical_interstate_wars.option.1					
 		c:KOR = { 
 			if = {
 				limit = { has_state_in_state_region = STATE_PYONGYANG }
@@ -70,19 +68,22 @@ KW_event.1 = {
 			}
 		}
 		
-			create_diplomatic_play = {
-				name = korean_war
-				type = dp_annex_war
-				target_country = c:KOR
-				
-				war = yes
-				
-				add_war_goal = {
-					holder = c:KOR
-					type = dp_annex_war
-					target_country = c:PRK
-				}
+		create_diplomatic_play = {
+			name = korean_war
+		
+			target_country = c:KOR
+			
+			war = yes
+			
+			type = dp_annex_war
+
+			add_war_goal = {
+				holder = c:KOR
+				type = annex_country
+				target_country = c:PRK
 			}
+		}	
+
 		    random_diplomatic_play = { limit = { name = korean_war } add_escalation = 90 }
 		}
 		
@@ -91,15 +92,14 @@ KW_event.1 = {
 		ai_chance = { 
 			base = 90 
 		}
-		
-    }
+	}
 	
 
 KW_event.2 = {
 	type = country_event
 	placement = ROOT
 	
-	duration = 1
+	duration = 3
 
 	title = war.kwussr.t
 	desc = war.kwussr.d
@@ -143,7 +143,7 @@ KW_event.3 = {
 	type = country_event
 	placement = ROOT
 	
-	duration = 1
+	duration = 3
 
 	title = war.kwusa.t
 	desc = war.kwusa.d
@@ -187,7 +187,7 @@ KW_event.4 = {
 	type = country_event
 	placement = ROOT
 	
-	duration = 1
+	duration = 3
 
 	title = war.kwchn.t
 	desc = war.kwchn.d

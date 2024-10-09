@@ -151,11 +151,13 @@ STATE_NORTH_SUMATRA = {
     arable_land = 500
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_coffee_plantations bg_dye_plantations bg_tea_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
     capped_resources = {
+        bg_iron_mining = 48
         bg_coal_mining = 40
         bg_sulfur_mining = 48
         bg_logging = 39
         bg_fishing = 13
         bg_rubber = 28
+        bg_gold_mining = 10
     }
     naval_exit_id = 3120
 }
@@ -195,11 +197,13 @@ STATE_WESTERN_NEW_GUINEA = {
     arable_land = 200
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_coffee_plantations bg_dye_plantations bg_sugar_plantations bg_banana_plantations }
     capped_resources = {
+        bg_sulfur_mining = 24
         bg_iron_mining = 24
         bg_logging = 20
         bg_fishing = 9
         bg_rubber = 8
         bg_oil_extraction = 10
+        bg_gold_mining = 10
     }
     naval_exit_id = 3125
 }
@@ -412,6 +416,7 @@ STATE_CENTRAL_JAVA = {
     arable_land = 500
     arable_resources = { bg_rice_farms bg_livestock_ranches bg_coffee_plantations bg_cotton_plantations bg_dye_plantations bg_tea_plantations bg_tobacco_plantations bg_sugar_plantations bg_banana_plantations }
     capped_resources = {
+        bg_iron_mining = 32
         bg_sulfur_mining = 32
         bg_logging = 6
         bg_fishing = 4

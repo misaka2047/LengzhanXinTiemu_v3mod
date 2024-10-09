@@ -102,7 +102,7 @@
  ideology_corporatist: "法团主义者"
  ideology_corporatist_desc: "#lore 这个集团认为可以通过宗教原则解决阶级间的冲突。#!"
  ideology_corporatist_leader: "法团主义者"
- ideology_corporatist_leader_desc: "#lore 这个领袖认为可以通过上层阶级的让步和不同社会群体的合作来解决阶级冲突。#!"
+ ideology_corporatist_leader_desc: "#lore 这个领袖认为可以通过上层阶级的让步和不同社会群体的合作来解决阶级冲突。#!" 
  ideology_agrarian_jeffersonian: "杰斐逊主义者"
  ideology_agrarian_jeffersonian_desc: "#lore 这个集团认为，小自耕农阶层构成了国家的基础，支持以农本主义作为自由社会的根基。#!"
  #flavor ideologies
@@ -126,9 +126,9 @@
  ideology_heavenly_kingdom_theocratic_desc: "#lore 这个集团认为，凡是被基督救赎的人们都将成为天父的子女，并倾向于神权形式的政府。#!"
  ideology_papal_moralist: "教廷"
  ideology_papal_moralist_desc: "#lore 这个集团强烈支持维护天主教会的世俗权力和教权。#!"
- ideology_liberal_modern: "新自由主义者" #现代自由主义者
+ ideology_liberal_modern: "现代自由主义者"
  ideology_liberal_modern_desc: "#lore 这个集团认为自由和法律平等是需要保障的重要价值观。#!"
- ideology_egalitarian_modern: "平等主义者"
+ ideology_egalitarian_modern: "现代平等主义者"
  ideology_egalitarian_modern_desc: "#lore 这个集团认为平等和人道地对待所有人应当是政治政策的基石。#!"
  liberal_and_egalitarian_amended_tt: "[GetIdeology('ideology_liberal').GetName]和[GetIdeology('ideology_egalitarian').GetName][Concept('concept_ideology','$concept_ideologies$')]对于$lawgroup_rights_of_women$的立场将改变"
 #Government Principles group
@@ -245,7 +245,7 @@
  law_freedom_of_conscience_desc: "国家有官方的国教，但人民可以自己选择信仰什么。只有特别奇异的宗教才受到歧视。"
  law_total_separation: "完全分离"
  law_total_separation_desc: "任何教会或信仰不得干涉政府职能。任何宗教都不会受到歧视。"
- law_atheist_state: "无神论国家"
+ law_atheist_state: "国家无神论"
  law_atheist_state_desc: "传播宗教信仰是被禁止的，且信仰宗教是不被认同的。所有宗教信仰都受到歧视。"
  law_secularization: "世俗化"
  law_secularization_desc: "政府掌控教会并且不再将任何有神论宗教视为国教，任何教会或信仰不得干涉政府职能。任何宗教都不会受到歧视。"

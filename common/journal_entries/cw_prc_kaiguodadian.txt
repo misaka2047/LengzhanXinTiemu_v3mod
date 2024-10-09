@@ -66,4 +66,5 @@ je_5_year_plan = {  #五年计划
 	}
 
 	progressbar = yes
+	should_be_pinned_by_default = yes
 }

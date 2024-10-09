@@ -1,0 +1,496 @@
+namespace = spa
+spa.1 = { #国家的拯救者:政府改组
+	type = country_event
+	placement = ROOT
+
+	title = spa.1.t
+	desc = spa.1.e
+	flavor = spa.1.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spa.1.a #扶植伊莎贝尔派
+		default_option = yes
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_multi_party_cooperation_system
+		create_character = {
+			#胡安.卡洛斯
+			heir = yes			
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_industrialists #实业家
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+	}
+	option = {
+		name = spa.1.b #继续扶植佛朗哥派
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_multi_party_cooperation_system
+
+		create_character = {
+			#胡安.卡洛斯
+			heir = yes			
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_industrialists #实业家
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+	}
+	option = {
+		name = spa.1.c #进一步打压卡洛斯派
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_multi_party_cooperation_system
+		create_character = {
+			#胡安.卡洛斯
+			heir = yes			
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_landowners #地主
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+	}
+	option = {
+		name = spa.1.d #继续扶植国家工团主义者
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_multi_party_cooperation_system
+		create_character = {
+			#胡安.卡洛斯
+			heir = yes			
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_national_syndicalists #国家工团主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_national_syndicalists #国家工团主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_industrialists #实业家
+			ideology = ideology_national_syndicalists #国家工团主义者
+		}
+	}
+	option = {
+		name = spa.1.g #尝试彻底铲除左派
+		activate_law = law_type:law_monarchy
+		activate_law = law_type:law_multi_party_cooperation_system
+		create_character = {
+			#胡安.卡洛斯
+			heir = yes			
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_caudillismo_leader #考迪罗主义者
+		}
+	}
+}
+
+spa.2 = { #佛朗哥的葬礼
+	type = country_event
+	placement = ROOT
+
+	title = spa.2.t
+	desc = spa.2.e
+	flavor = spa.2.f
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	event_image = {
+		video = "gfx/event_pictures/unspecific_factory_closed.bk2"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/factory_closed"
+
+	duration = 3
+
+	trigger = {
+	}
+
+	option = {
+		name = spa.2.a #扶植伊莎贝尔派
+		default_option = yes
+		ruler = {
+			kill_character = yes
+		}
+
+		activate_law = law_type:law_census_voting
+
+		create_character = {
+			#胡安.卡洛斯
+			ruler = yes
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			heir = yes
+			age = 9
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_industrialists #实业家
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+	}
+	option = {
+		name = spa.2.b #打压佛朗哥派
+		ruler = {
+			kill_character = yes
+		}
+
+		activate_law = law_type:law_census_voting
+
+		create_character = {
+			#胡安.卡洛斯
+			ruler = yes
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			heir = yes
+			age = 9
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+	}
+	option = {
+		name = spa.2.c #尝试彻底铲除卡洛斯派
+		ruler = {
+			kill_character = yes
+		}
+
+		activate_law = law_type:law_census_voting
+
+		create_character = {
+			#胡安.卡洛斯
+			ruler = yes
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			heir = yes
+			age = 9
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_landowners #地主
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+	}
+	option = {
+		name = spa.2.d #打压国家工团主义者
+		ruler = {
+			kill_character = yes
+		}
+
+		activate_law = law_type:law_census_voting
+
+		create_character = {
+			#胡安.卡洛斯
+			ruler = yes
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			heir = yes
+			age = 9
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_devout #教会
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_Isabelle #伊莎贝尔派
+		}
+	}
+	option = {
+		name = spa.2.g #拉拢左派
+		ruler = {
+			kill_character = yes
+		}
+
+		activate_law = law_type:law_census_voting
+
+		create_character = {
+			#胡安.卡洛斯
+			ruler = yes
+			first_name = Juan
+			last_name = Carlos
+			birth_date = 1938.1.5
+			historical = yes
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			heir = yes
+			age = 9
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_Isabelle #伊莎贝尔派
+			traits = {
+			}
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_social_democrat #社民主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_anarchist #无政府主义者
+		}
+
+		create_character = {
+			ig_leader = yes
+			culture = cu:spanish
+			interest_group = ig_trade_unions #利益集团工会
+			ideology = ideology_vanguardist #马列主义者
+		}
+	}
+}

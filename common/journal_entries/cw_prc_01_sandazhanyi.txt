@@ -1,5 +1,5 @@
 je_prc_sandazhanyi = {  #三大战役
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
 	
 	group = je_group_internal_affairs
 	

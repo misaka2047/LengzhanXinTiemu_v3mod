@@ -145,7 +145,7 @@ building_livestock_ranch = {
 
 
 	unlocking_technologies = {
-		tech_basic_agricultural_production
+		antibiotics
 	}
 
 	production_method_groups = {

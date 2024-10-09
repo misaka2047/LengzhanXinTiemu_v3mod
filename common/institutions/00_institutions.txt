@@ -2,7 +2,7 @@
 	icon = "gfx/interface/icons/institution_icons/social_security.dds"
 	background_texture = "gfx/interface/illustrations/institutions/social_security.dds"
 	modifier = {
-		state_welfare_payments_add = 0.01
+		state_welfare_payments_add = 0.2
 	}
 }
 

@@ -10,6 +10,7 @@
 	}
 	possible = { 
 		game_date > 1948.9.9
+		game_date < 1948.10.1
 	}
 	
 	when_taken = {
@@ -34,6 +35,7 @@ KOR_decision = { #成立韩国
 	}
 	possible = { 
 		game_date > 1948.8.15
+		game_date < 1948.9.1
 	}
 	
 	when_taken = {

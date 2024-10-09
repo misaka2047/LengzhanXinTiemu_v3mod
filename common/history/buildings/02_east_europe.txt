@@ -2,50 +2,6 @@
 	s:STATE_INGRIA={
 		region_state:RUS={
 			create_building={
-				building="building_military_shipyards"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_military_shipyards_1" "pm_transportation_1" "pm_automation_building_military_shipyards_3" }
-			}
-			create_building={
-				building="building_port"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=7
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_port_1" "pm_transportation_1" "pm_automation_building_port_3" }
-			}
-			create_building={
-				building="building_steel_mills"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=40
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_transportation_2" "pm_base_building_steel_mills_2" "pm_advance_building_steel_mills_3" "pm_automation_building_steel_mills_2" }
-			}
-			create_building={
-				building="building_construction_sector"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_construction_sector_0" "pm_none" "pm_transportation_1" "pm_automation_building_construction_sector_1" }
-			}
-			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -55,72 +11,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_base_building_government_administration_1" "pm_automation_building_government_administration_1" "pm_professional_bureaucrats" "pm_secular_bureaucrats" }
-			}
-			create_building={
-				building="building_arms_industry"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_arms_industry_1" "pm_transportation_1" "pm_automation_building_arms_industry_3" }
-			}
-			create_building={
-				building="building_refinery"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_refinery_1" "pm_none" "pm_transportation_1" "pm_automation_building_refinery_1" }
-			}
-			create_building={
-				building="building_artillery_foundries"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_artillery_foundries_1" "pm_transportation_1" "pm_automation_building_artillery_foundries_3" }
-			}
-			create_building={
-				building="building_munition_plants"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_automation_building_munition_plants_3" "pm_transportation_1" "pm_base_building_munition_plants_2" }
-			}
-			create_building={
-				building="building_war_machine_industry"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=3
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_war_machine_industry_1" "pm_transportation_1" "pm_automation_building_war_machine_industry_3" }
-			}
-			create_building={
-				building="building_aircraft_factory"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_aircraft_factory_1" "pm_transportation_1" "pm_automation_building_aircraft_factory_4" }
 			}
 		}
 	}
@@ -1263,72 +1153,6 @@
 	s:STATE_CHERSON={
 		region_state:RUS={
 			create_building={
-				building="building_railway"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_railway_1" "pm_automation_building_railway_2" }
-			}
-			create_building={
-				building="building_coal_mine"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=25
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_coal_mine_2" "pm_none" "pm_transportation_2" "pm_automation_building_coal_mine_2" }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=10
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_fishing_wharf_1" "pm_transportation_2" "pm_automation_building_fishing_wharf_2" }
-			}
-			create_building={
-				building="building_logging_camp"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_logging_camp_1" "pm_advance_building_logging_camp_2" "pm_transportation_2" "pm_automation_building_logging_camp_2" }
-			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=30
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_wheat_farm_2" "pm_transportation_2" "pm_automation_building_wheat_farm_2" }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=15
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_livestock_ranch_2" "pm_transportation_2" "pm_automation_building_livestock_ranch_2" }
-			}
-			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -2046,15 +1870,11 @@
 	}
 	s:STATE_WALLACHIA={
 		region_state:ROM={
-		}
-	}
-	s:STATE_BESSARABIA={
-		region_state:RUS={
 			create_building={
 				building="building_railway"
 				add_ownership={
 					country={
-						country="c:RUS"
+						country="c:ROM"
 						levels=5
 					}
 				}
@@ -2062,55 +1882,11 @@
 				activate_production_methods={ "pm_base_building_railway_1" "pm_automation_building_railway_2" }
 			}
 			create_building={
-				building="building_cotton_plantation"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=21
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_cotton_plantation_2" "pm_transportation_2" "pm_automation_building_cotton_plantation_2" }
-			}
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=20
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_wheat_farm_2" "pm_transportation_2" "pm_automation_building_wheat_farm_2" }
-			}
-			create_building={
-				building="building_textile_mills"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=31
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_textile_mills_2" "pm_advance_building_textile_mills_3" "pm_transportation_2" "pm_automation_building_textile_mills_2" }
-			}
-			create_building={
-				building="building_fishing_wharf"
-				add_ownership={
-					country={
-						country="c:RUS"
-						levels=9
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_base_building_fishing_wharf_1" "pm_transportation_2" "pm_automation_building_fishing_wharf_2" }
-			}
-			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					country={
-						country="c:RUS"
-						levels=6
+						country="c:ROM"
+						levels=8
 					}
 				}
 				reserves=1
@@ -2120,8 +1896,8 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:RUS"
-						levels=5
+						country="c:ROM"
+						levels=15
 					}
 				}
 				reserves=1
@@ -2131,13 +1907,17 @@
 				building="building_barracks"
 				add_ownership={
 					country={
-						country="c:RUS"
-						levels=14
+						country="c:ROM"
+						levels=15
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" "pm_politicized_military" }
 			}
+		}
+	}
+	s:STATE_BESSARABIA={
+		region_state:RUS={
 		}
 	}
 }

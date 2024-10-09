@@ -1,4 +1,4 @@
-﻿ideology_patriarchal_suffrage = { #父权主义者
+﻿ideology_patriarchal_suffrage = { #现代父权主义者
 	icon = "gfx/interface/icons/ideology_icons/patriarchal.dds"
 	
 	priority = 100 # Overrides other non-leader ideologies with a lower prio

@@ -1,0 +1,141 @@
+stalin_inheritance = { #斯大林继承
+
+	group = je_group_internal_affairs
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+    is_shown_when_inactive = { #显示
+        exists = c:RUS
+        THIS = c:RUS
+    }
+	possible = { #激活条件
+		game_date >= 1946.7.1
+	}
+	complete = { #完成条件
+		game_date >= 1952.10.5
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.4 } #苏联共产党第十九次代表大会
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+stalin's_funeral = { #斯大林的葬礼
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+    is_shown_when_inactive = { #显示
+        exists = c:RUS
+        THIS = c:RUS
+    }
+	complete = { #完成条件
+		game_date >= 1953.3.6
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.9 } #斯大林的葬礼
+	add_journal_entry = { type = kremlin_ministerial_conference }
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+kremlin_ministerial_conference = { #克里姆林宫部长会议
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+	complete = { #完成条件
+		game_date >= 1953.6.26
+	}
+    on_complete = {
+        trigger_event = { id = russo_chinese.11 } 
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+the_people's_army = { #人民的军队
+
+	group = je_group_internal_affairs
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+
+    on_complete = {
+        activate_law = law_type:law_national_guard #改变法律为国民警卫队
+        activate_law = law_type:law_cooperative_ownership #改变法律为合作社所有制
+		add_modifier = {
+			name = the_voice_of_the_people #人民之声
+			years = 20
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+liberalization_of_the_Soviet_Union = { #苏联自由化
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	possible = { #激活条件
+	}
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+    on_complete = {
+        activate_law = law_type:law_right_of_assembly #改变法律为集会权
+        activate_law = law_type:law_census_voting #改变法律为资格性选举制
+		add_modifier = {
+			name = the_voice_of_the_people #人民之声
+			years = 20
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+anti_Stalinism_movement = { #反斯大林主义运动
+	icon = "gfx/interface/icons/event_icons/event_election.dds"
+	possible = { #激活条件
+	}
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+    on_complete = {
+        activate_law = law_type:law_censorship #改变法律为出版物审查
+        activate_law = law_type:law_oligarchy #改变法律为寡头制
+		add_modifier = {
+			name = the_voice_of_the_people #人民之声
+			years = 20
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+continuation_of_Stalinism = { #斯大林主义的延续
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+	possible = { #激活条件
+	}
+	complete = { #完成条件
+		game_date >= 1954.6.26
+	}
+    on_complete = {
+		add_modifier = {
+			name = stalinism #斯大林主义
+			years = -1
+		}
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

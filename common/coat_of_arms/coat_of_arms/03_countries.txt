@@ -1,3 +1,12 @@
+ION_communist = { #民主希腊
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	
+	textured_emblem = {
+		texture = "ION_communist.dds"
+	}
+}
+
 BAF = { # 巴尔干联邦
 	pattern = "pattern_solid.tga"
 	color1 = "blue"
@@ -872,6 +881,7 @@ PER = { # 伊朗
 	texture = "PER.dds"		
 	}
 }
+
 VBH = { #波罗的海总督区
 	pattern = "pattern_solid.tga"
 	color1 = "red"

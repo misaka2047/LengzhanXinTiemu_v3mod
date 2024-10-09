@@ -358,6 +358,16 @@
 	}
 	s:STATE_WESTERN_AUSTRALIA={
 		region_state:IDN={
+			create_building={
+				building="building_port"
+				add_ownership={
+					country={
+						country="c:IDN"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 		}
 		region_state:AST={
 			create_building={

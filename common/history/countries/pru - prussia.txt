@@ -5,10 +5,10 @@
 		# Laws 
 		activate_law = law_type:law_council_republic #社会主义共和制
 		activate_law = law_type:law_single_party_state #一党制国家
+		activate_law = law_type:law_state_atheism #国家无神论
 		activate_law = law_type:law_regulatory_bodies #国家监管机构
 		activate_law = law_type:law_non_militarized_country #非军事化国家
  		activate_law = law_type:law_compulsory_primary_school
-		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_10_hour_working_system
 		activate_law = law_type:law_state_led #科学院主导
 		activate_law = law_type:law_continental_law_system #大陆法系
@@ -30,9 +30,6 @@
 		set_tax_level = very_high 
 
 		add_taxed_goods = g:liquor
-		add_taxed_goods = g:luxury_clothes
-		add_taxed_goods = g:luxury_furniture
-		add_taxed_goods = g:tea
 		add_taxed_goods = g:tobacco
 
 		set_institution_investment_level = {
@@ -47,11 +44,19 @@
 
 		ig:ig_landowners = { #地主
 			set_interest_group_name = ig_landowners
+			remove_ideology = ideology_junker_paternalistic #容克主义者
+			add_ideology = ideology_republican_paternalistic #缙绅主义者
 		}
 
 		ig:ig_armed_forces = { #军队
 			remove_ideology = ideology_loyalist #效忠派
 			add_ideology = ideology_proletarian #无产阶级主义者
+		}
+
+		add_modifier = {
+			name = fra_military_weakness_modifier #第二次世界大战的创伤
+			years = 10
+			is_decaying = yes
 		}
 	}
 }

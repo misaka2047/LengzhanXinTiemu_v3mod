@@ -665,6 +665,27 @@ law_council_republic = {
 		if = {
 			limit = {
 				any_interest_group = {
+					OR = { 
+						has_ideology = ideology:ideology_welfare #福利主义者
+						has_ideology = ideology:ideology_social_democrats #社会民主主义者
+					}
+				}
+			}
+			every_interest_group = {
+				limit = {
+					OR = { 
+						has_ideology = ideology:ideology_welfare #福利主义者
+						has_ideology = ideology:ideology_social_democrats #社会民主主义者
+					}
+				}
+				remove_ideology = ideology_welfare #福利主义者
+				remove_ideology = ideology_social_democrats #社会民主主义者
+				add_ideology = ideology_proletarian #无产阶级主义者
+			}
+		}	
+		if = {
+			limit = {
+				any_interest_group = {
 					has_ideology = ideology:ideology_constitutionalist
 				}
 			}
@@ -688,17 +709,6 @@ law_council_republic = {
 				}
 			}
 			can_impose_law_default = yes
-		}
-	}
-	
-	on_activate = {
-		ig:ig_trade_unions ?= { #工会
-			if = {
-				limit = {
-					NOT = { has_ideology = ideology:ideology_proletarian } #无产阶级主义者
-				}			
-				add_ideology = ideology_proletarian #无产阶级主义者
-			}
 		}
 	}
 

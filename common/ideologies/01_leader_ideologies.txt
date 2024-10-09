@@ -2007,7 +2007,7 @@ ideology_fascist = { #法西斯主义者
 		law_technocracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
-		law_multi_party_cooperation_system = disapprove
+		law_multi_party_cooperation_system = strongly_approve
 		law_census_voting = strongly_disapprove
 		law_wealth_voting = strongly_disapprove
 		law_landed_voting = strongly_disapprove				
@@ -2923,6 +2923,7 @@ ideology_authoritarian = { #威权主义者
 	}
 
 	lawgroup_distribution_of_power = {
+		law_multi_party_cooperation_system = strongly_approve #一党专政
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
 		law_multi_party_cooperation_system = disapprove
@@ -2931,7 +2932,7 @@ ideology_authoritarian = { #威权主义者
 		law_landed_voting = disapprove
 		law_technocracy = neutral
 		law_oligarchy = approve
-		law_autocracy = approve
+		law_autocracy = strongly_approve #独裁制
 		law_single_party_state = approve
 	}
 
@@ -3772,7 +3773,6 @@ ideology_integralist = { #整合主义者
 		law_freedom_of_conscience = disapprove
 		law_total_separation = strongly_disapprove
 		law_state_atheism = strongly_disapprove
-		law_secularization = strongly_disapprove #世俗化
 	}
 
 	lawgroup_citizenship = {
@@ -3784,6 +3784,7 @@ ideology_integralist = { #整合主义者
 	}
 
 	lawgroup_distribution_of_power = {
+		law_multi_party_cooperation_system = strongly_approve #一党专政
 		law_autocracy = strongly_approve
 		law_single_party_state = approve
 		law_oligarchy = approve

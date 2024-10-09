@@ -1,10 +1,8 @@
 ﻿COUNTRIES = {
 	c:GRE = {
-		set_next_election_date = 1946.2.1
+		set_next_election_date = 1946.7.1
 		effect_starting_technology_tier_3_tech = yes
-		add_technology_researched = urban_planning
-		add_technology_researched = law_enforcement
-		add_technology_researched = currency_standards
+
 		# Laws
 		activate_law = law_type:law_freedom_of_conscience #信仰自由
 		activate_law = law_type:law_appointed_bureaucrats #任命官僚制
@@ -44,9 +42,8 @@
 			add_ideology = ideology_orthodox_patriarch
 		}
 
-			ig:ig_landowners = {
+		ig:ig_landowners = {
 			add_ruling_interest_group = yes
-		
 		}
 	}
 }

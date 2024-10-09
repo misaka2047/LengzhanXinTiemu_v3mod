@@ -5,7 +5,7 @@ building_breeding_farm = { #养殖场
 	levels_per_mesh = 5
 	
 	unlocking_technologies = {
-		tech_basic_agricultural_production
+		antibiotics
 	}
 
 	production_method_groups = {

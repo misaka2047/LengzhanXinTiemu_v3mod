@@ -134,13 +134,30 @@ tech_modern_civil_light_industry = { #现代民用轻工业
 }
 tech_basic_agricultural_production = { #基本农业生产
 	era = era_1
-	texture = "gfx/interface/icons/goods_icons/fertilizer.dds"
+	texture = "gfx/interface/icons/invention_icons/粮食.dds"
 	category = production
 	ai_weight = {
 		value = 3
 	}
 	}
-tech_fertilizer_synthesis = { #合成氨
+
+tech_synthetic_ammonia = { #合成氨
+	era = era_1
+	texture = "gfx/interface/icons/goods_icons/dye.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_basic_agricultural_production
+	}
+
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05 #农业吞吐量
+	}
+}
+
+tech_fertilizer_synthesis = { #化肥合成
 	era = era_3
 	texture = "gfx/interface/icons/goods_icons/fertilizer.dds"
 	category = production
@@ -276,7 +293,7 @@ tech_electronic_tools = { #电子化工具
 }
 tech_petroleum_extraction_and_application = { #石油提取与应用
 	era = era_1
-	texture = "gfx/interface/icons/goods_icons/oil.dds"
+	texture = "gfx/interface/icons/invention_icons/石油.dds"
 	category = production
 	ai_weight = {
 		value = 3
@@ -295,7 +312,7 @@ tech_metal_oxide_catalysts = { #金属氧化物催化剂
 }
 tech_integrated_petroleum_exploration_technology = { #石油综合勘探技术
 	era = era_3
-	texture = "gfx/interface/icons/goods_icons/oil.dds"
+	texture = "gfx/interface/icons/invention_icons/石油.dds"
 	category = production
 	ai_weight = {
 		value = 3
@@ -317,7 +334,7 @@ tech_hydraulic_fracturing_ = { #水力压裂技术
 }
 tech_shale_oil_and_gas_extraction = { #页岩油气开采
 	era = era_5
-	texture = "gfx/interface/icons/goods_icons/天然气.dds"
+	texture = "gfx/interface/icons/invention_icons/煤气罐.dds"
 	category = production
 	ai_weight = {
 		value = 3
@@ -339,7 +356,7 @@ tech_basic_power_generation = { #基本发电
 }
 tech_refined_fuel = { #精炼燃料
 	era = era_2
-	texture = "gfx/interface/icons/goods_icons/oil.dds"
+	texture = "gfx/interface/icons/invention_icons/汽油.dds"
 	category = production
 	ai_weight = {
 		value = 2
@@ -350,7 +367,7 @@ tech_refined_fuel = { #精炼燃料
 }
 tech_combined_combustion_support = { #化合助燃
 	era = era_3
-	texture = "gfx/interface/icons/goods_icons/oil.dds"
+	texture = "gfx/interface/icons/invention_icons/汽油.dds"
 	category = production
 	ai_weight = {
 		value = 2
@@ -392,6 +409,25 @@ tech_basic_chemical_industry = { #基本化工产业
 		tech_petroleum_extraction_and_application
 	}
 }
+
+antibiotics = { #抗生素
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/antibiotics.dds"
+	category = production
+	
+	modifier = {
+		country_institution_health_system_max_investment_add = 1
+	}
+	
+	unlocking_technologies = {
+		tech_basic_chemical_industry
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
 tech_gas_chromatography = { #气相色谱法
 	era = era_2
 	texture = "gfx/interface/icons/goods_icons/dye.dds"
@@ -536,8 +572,9 @@ tech_mature_steel_smelting = { #成熟钢铁冶炼
 		tech_basic_steel_smelting
 	}
 }
-tech_open_hearth_steelmaking_method = { #平炉炼钢法
-	era = era_3
+
+tech_oxygen_top_blown_converter_steelmaking_method = { #氧气顶吹转炉炼钢法
+	era = era_2
 	texture = "gfx/interface/icons/goods_icons/steel.dds"
 	category = production
 	ai_weight = {
@@ -547,7 +584,20 @@ tech_open_hearth_steelmaking_method = { #平炉炼钢法
 		tech_mature_steel_smelting
 	}
 }
-tech_oxygen_top_blown_converter_steelmaking_method = { #氧气顶吹转炉炼钢法
+
+tech_open_hearth_steelmaking_method = { #电渣重熔
+	era = era_3
+	texture = "gfx/interface/icons/goods_icons/steel.dds"
+	category = production
+	ai_weight = {
+		value = 3
+	}
+	unlocking_technologies = {
+		tech_oxygen_top_blown_converter_steelmaking_method
+	}
+}
+
+tech_electric_arc_furnace_steelmaking_method = { #电弧炉炼钢法
 	era = era_4
 	texture = "gfx/interface/icons/goods_icons/steel.dds"
 	category = production
@@ -558,17 +608,24 @@ tech_oxygen_top_blown_converter_steelmaking_method = { #氧气顶吹转炉炼钢
 		tech_open_hearth_steelmaking_method
 	}
 }
-tech_electric_arc_furnace_steelmaking_method = { #电弧炉炼钢法
+
+tech_modern_steelmaking_formula = { #现代炼钢配方
 	era = era_5
 	texture = "gfx/interface/icons/goods_icons/steel.dds"
 	category = production
 	ai_weight = {
 		value = 3
 	}
+
+	modifier = {
+		building_steel_mills_throughput_add = 0.15 #炼钢厂吞吐量
+	}
+
 	unlocking_technologies = {
-		tech_oxygen_top_blown_converter_steelmaking_method
+		tech_electric_arc_furnace_steelmaking_method
 	}
 }
+
 tech_engine_manufacturing = { #引擎制造
 	era = era_2
 	texture = "gfx/interface/icons/goods_icons/locomotives.dds"

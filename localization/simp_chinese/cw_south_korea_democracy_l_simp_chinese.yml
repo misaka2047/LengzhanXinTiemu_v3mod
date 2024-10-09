@@ -7,9 +7,7 @@
   south_korea_democracy.1.d: "[ROOT.GetCountry.GetRuler.GetFullName]试图通过修改宪法的方式取消总统的任期限制，增强自己独裁统治的合法性。然而，他的提案距离满足三分之二议员同意的标准还有一票的差距。[ROOT.GetCountry.GetRuler.GetFullName]的支持者则认为我们可以在这种情况下找借口强行通过这项宪法修正案。"
   south_korea_democracy.1.f: "国会现有议席204席，在籍议员203人，赞成修宪135名，反对修宪60名，弃权6名、无效1名，缺席1人。203票的2/3是135.3333，根据四舍五入原理，即是135票，所以，我们有理由认为这项修宪已经通过……至少从数学上来说。"
   south_korea_democracy.1.a: "十分甚至九分的正确。"
-  south_korea_democracy.1.b: "[ROOT.GetCountry.GetRuler.GetFullName]正在践踏我们的宪法！"
-
-  ridiculous_rounding_modifier: "荒诞的修宪"
+  south_korea_democracy.1.b: "太扯淡了。"
 
   south_korea_democracy.2.t: "安保法修正案"
   south_korea_democracy.2.d: "[ROOT.GetCountry.GetRuler.GetFullName]试图拓展《国家安保法》的适用范围，将其变成自己打压异己、巩固独裁统治的工具。"

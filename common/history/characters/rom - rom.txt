@@ -49,6 +49,24 @@
 		}	
 
 		create_character = {
+			#尼古拉·齐奥塞斯库
+			first_name = "Nikola"
+			last_name = "Ceausescu"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1918.1.26
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+				ambitious #雄心勃勃
+				charismatic #魅力四射
+				innovative #创新精神
+				firebrand #煽动大师
+			}
+		}
+
+		create_character = {
 			#安娜·波克尔
 			first_name = "Anna"
 			last_name = "Pokel"

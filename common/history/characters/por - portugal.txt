@@ -9,7 +9,7 @@
 			ig_leader = yes
 			birth_date = 1889.4.28
 			interest_group = ig_devout #教会
-			ideology = ideology_authoritarian #威权主义者
+			ideology = ideology_caudillismo_leader #考迪罗主义者
 			traits = {
 			}
 		}

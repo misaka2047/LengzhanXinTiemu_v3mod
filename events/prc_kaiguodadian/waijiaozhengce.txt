@@ -1,8 +1,5 @@
 namespace = waijiaozhengce
 
-
-
-
 waijiaozhengce.1 = {
 	type = country_event
 	placement = ROOT
@@ -19,7 +16,7 @@ waijiaozhengce.1 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+	icon = "gfx/interface/icons/event_icons/active_peace_deal.dds"
 	
 	trigger = {
 	

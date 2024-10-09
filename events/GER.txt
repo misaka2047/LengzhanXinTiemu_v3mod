@@ -17,7 +17,7 @@ GER_event.1 = { #成立西德
 
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
-	duration = 0
+	duration = 3
 	
 	trigger = { 
 	}
@@ -126,9 +126,9 @@ GER_event.2 = { #成立东德
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/southamerica/aristocrats"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/东德.dds"
 
-	duration = 0
+	duration = 3
 	
 	trigger = { 
 	}

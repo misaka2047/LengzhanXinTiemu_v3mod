@@ -1,8 +1,5 @@
 namespace = kaiguodadian
 
-
-
-
 kaiguodadian.1 = {
 	type = country_event
 	placement = ROOT
@@ -19,7 +16,7 @@ kaiguodadian.1 = {
 
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/新中国.dds"
 	
 	trigger = {
 	
@@ -28,10 +25,6 @@ kaiguodadian.1 = {
 	option = {
 		name = formation.cn.a
 		default_option = yes
-		add_modifier = {
-			name = kaiguodadian_modifier
-			months = 12
-		}
 		c:PRC = {
 			set_variable = {
 				name = kaiguodadadadian_var

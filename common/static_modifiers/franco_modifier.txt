@@ -1,4 +1,4 @@
-franco_modifier = {
+franco_modifier = { #
     icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
     country_prestige_mult = 0.25
     country_authority_mult = 0.5

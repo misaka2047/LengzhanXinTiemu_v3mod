@@ -1,6 +1,6 @@
 
 je_kaiguodadian = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/中国政协徽.dds"
 
 	group = je_group_internal_affairs
 	
@@ -82,7 +82,7 @@ je_kaiguodadian = {
 }
 
 je_xinanjiaofei = {
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+	icon = "gfx/interface/icons/event_icons/event_war.dds"
 
 	group = je_group_internal_affairs
 	
@@ -312,4 +312,5 @@ je_5_year_plan = {  #五年计划
 	}
 
 	progressbar = yes
+	should_be_pinned_by_default = yes
 }

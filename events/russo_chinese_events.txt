@@ -383,24 +383,24 @@ russo_chinese.4 = { #苏联共产党第十九次代表大会
 
 	option = {
 		name = russo_chinese.4.a #斯大林同志的助手：马林科夫同志！
-        trigger_event = { id = russo_chinese.5 } 
+       		trigger_event = { id = russo_chinese.7 } 
 	}
 	option = {
 		name = russo_chinese.4.b #斯大林同志的干将：赫鲁晓夫同志！
 		default_option = yes
-       trigger_event = { id = russo_chinese.6 } 
+       		trigger_event = { id = russo_chinese.7 } 
 	}
 	option = {
 		name = russo_chinese.4.c #斯大林同志的尖刀：贝利亚同志！
-       trigger_event = { id = russo_chinese.7 } 
+       		trigger_event = { id = russo_chinese.5 } 
 	}
 	option = {
 		name = russo_chinese.4.d #斯大林同志的元帅：朱可夫同志！
-       trigger_event = { id = russo_chinese.8 } 
+       		trigger_event = { id = russo_chinese.8 } 
 	}
 }
 
-russo_chinese.5 = { #马林科夫的演说
+russo_chinese.5 = { #贝利亚的演说
 	type = country_event
 	placement = ROOT
 
@@ -431,7 +431,7 @@ russo_chinese.5 = { #马林科夫的演说
 	}
 }
 
-russo_chinese.6 = { #赫鲁晓夫的演说
+russo_chinese.6 = { #赫鲁晓夫的演说（弃用）
 	type = country_event
 	placement = ROOT
 
@@ -462,7 +462,7 @@ russo_chinese.6 = { #赫鲁晓夫的演说
 	}
 }
 
-russo_chinese.7 = { #贝利亚的演说
+russo_chinese.7 = { #精彩的演说
 	type = country_event
 	placement = ROOT
 
@@ -552,19 +552,21 @@ russo_chinese.9 = { #斯大林逝世
 			kill_character = yes
 		}
 		create_character = {
-			#马林科夫
-			first_name = Georgi·Maximilianovich
-			last_name = Marinkov
-			interest_group = ig_trade_unions #利益集团工会
-			ideology = ideology_vanguardist #意识形态先锋队主义者
-			historical = yes
+			#格奥尔基·马克西米连诺维奇·马林科夫
 			ruler = yes
 			ig_leader = yes
+			first_name = Georgi·Maximilianovich
+			last_name = Marinkov
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
 			birth_date = 1902.1.8
-			traits = { #特质
-				brave
-				ambitious
-                        experienced_political_operator
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
 			}
 		}
         trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
@@ -577,16 +579,18 @@ russo_chinese.9 = { #斯大林逝世
 		}
 		create_character = {
 			#赫鲁晓夫
-			historical = yes
+            		dna = dna_tsar_nicolas_01
 			ruler = yes
 			is_general = yes
 			hq = region_russia
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_3
 			first_name = Nikita·Sergeyevich
 			last_name = Khrushchev
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
 			birth_date = 1894.4.17
-			ig_leader = yes
-			interest_group = ig_intelligentsia #知识分子
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
 			ideology = ideology_reformer #改良主义者
 			traits = {
 				hedonist #享乐主义者
@@ -604,18 +608,19 @@ russo_chinese.9 = { #斯大林逝世
 		}
 		create_character = {
 			#贝利亚
-			historical = yes
 			ruler = yes
 			is_general = yes
 			hq = region_caucasus #高加索战区总部
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_5
 			first_name = Lavrenti·Pavlovich
 			last_name = Berial
+			historical = yes
 			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
 			birth_date = 1899.3.29
 			ig_leader = yes
-			interest_group = ig_rural_folk #乡村民众
-			ideology = ideology_reformer #改良主义者
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_authoritarian #威权主义者
 			traits = {
 				cruel #残暴
 				reserved
@@ -632,23 +637,22 @@ russo_chinese.9 = { #斯大林逝世
 		}
 		create_character = {
 			#朱可夫
-			historical = yes
 			ruler = yes
 			is_general = yes
 			hq = region_russia
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_5
 			first_name = Georgy·Konstantinovich
 			last_name = Zhukov
 			birth_date = 1896.12.1
-			ig_leader = yes
+			historical = yes
+			religion = rel:atheist #无神论
 			interest_group = ig_armed_forces #军队
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			ideology = ideology_authoritarian #威权主义者
 			traits = {
 				direct
 				persistent
-				expert_offensive_planner #熟练的进攻策划师
-                                                                    defense_in_depth_specialist
-                                                                    expert_artillery_commander
+                                defense_in_depth_specialist
+                                expert_artillery_commander
 			}
 		}
         trigger_event = { id = russo_chinese.10 } #触发“反对派发动党内斗争”事件
@@ -757,8 +761,8 @@ russo_chinese.12 = { #清洗部长会议
 			first_name = Dengwan
 			last_name = Lin1
 			ig_leader = yes
-			interest_group = ig_intelligentsia #知识分子
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_vanguardist #意识形态马列主义者
 			traits = { #特质
 				brave
 				ambitious
@@ -769,33 +773,35 @@ russo_chinese.12 = { #清洗部长会议
 			first_name = Dengwan
 			last_name = Lin1
 			ig_leader = yes
-			interest_group = ig_rural_folk #乡村民众
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_vanguardist #意识形态马列主义者
 			traits = { #特质
 				brave
 				ambitious
                         experienced_political_operator
 			}
 		}
+		heir = {
+			kill_character = yes
+		}
 		create_character = {
 			#朱可夫
-			historical = yes
 			ruler = yes
 			is_general = yes
 			hq = region_russia
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_5
 			first_name = Georgy·Konstantinovich
 			last_name = Zhukov
 			birth_date = 1896.12.1
-			ig_leader = yes
+			historical = yes
+			religion = rel:atheist #无神论
 			interest_group = ig_armed_forces #军队
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			ideology = ideology_authoritarian #威权主义者
 			traits = {
 				direct
 				persistent
-				expert_offensive_planner #熟练的进攻策划师
-                                                                    defense_in_depth_specialist
-                                                                    expert_artillery_commander
+                                defense_in_depth_specialist
+                                expert_artillery_commander
 			}
 		}
 	}
@@ -827,31 +833,59 @@ russo_chinese.13 = { #赫鲁晓夫被捕
 		name = russo_chinese.13.a 
 		add_journal_entry = { type = liberalization_of_the_Soviet_Union } #苏维埃联盟自由化
 		create_character = {
-			first_name = Dengwan
-			last_name = Lin1
+			#赫鲁晓夫
+            		dna = dna_tsar_nicolas_01
 			ig_leader = yes
-			interest_group = ig_intelligentsia #知识分子
-			ideology = ideology_vanguardist #意识形态先锋队主义者
-			traits = { #特质
-				brave
-				ambitious
-                        experienced_political_operator
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_3
+			first_name = Nikita·Sergeyevich
+			last_name = Khrushchev
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
+			birth_date = 1894.4.17
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_reformer #改良主义者
+			traits = {
+				hedonist #享乐主义者
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
+			}
+		}
+		create_character = {
+			#格奥尔基·马克西米连诺维奇·马林科夫
+			ig_leader = yes
+			first_name = Georgi·Maximilianovich
+			last_name = Marinkov
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			birth_date = 1902.1.8
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_social_democrat #社民主义者
+			traits = {
+				ambitious #雄心勃勃
+				tactful #圆滑
+				persistent #执着
 			}
 		}
 		create_character = {
 			#贝利亚
-			historical = yes
 			ruler = yes
 			is_general = yes
 			hq = region_caucasus #高加索战区总部
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_5
 			first_name = Lavrenti·Pavlovich
 			last_name = Berial
+			historical = yes
 			culture=cu:georgian #格鲁吉亚
+			religion = rel:atheist #无神论
 			birth_date = 1899.3.29
 			ig_leader = yes
-			interest_group = ig_rural_folk #乡村民众
-			ideology = ideology_reformer #改良主义者
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_authoritarian #威权主义者
 			traits = {
 				cruel #残暴
 				reserved
@@ -892,8 +926,8 @@ russo_chinese.14 = { #贝利亚被捕
 			first_name = Dengwan
 			last_name = Lin1
 			ig_leader = yes
-			interest_group = ig_rural_folk #乡村民众
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			interest_group = ig_petty_bourgeoisie #小市民
+			ideology = ideology_vanguardist #意识形态马列主义者
 			traits = { #特质
 				brave
 				ambitious
@@ -902,17 +936,19 @@ russo_chinese.14 = { #贝利亚被捕
 		}
 		create_character = {
 			#赫鲁晓夫
-			historical = yes
+            		dna = dna_tsar_nicolas_01
 			ruler = yes
 			is_general = yes
 			hq = region_russia
-			commander_rank = commander_rank_ruler
+			commander_rank = commander_rank_3
 			first_name = Nikita·Sergeyevich
 			last_name = Khrushchev
+			culture=cu:ukrainian #乌克兰
+			religion = rel:atheist #无神论
 			birth_date = 1894.4.17
-			ig_leader = yes
-			interest_group = ig_intelligentsia #知识分子
-			ideology = ideology_reformer #改良主义者
+			historical = yes
+			interest_group = ig_rural_folk #乡村民众
+			ideology = ideology_communist #共产主义者
 			traits = {
 				hedonist #享乐主义者
 				ambitious #雄心勃勃
@@ -950,15 +986,45 @@ russo_chinese.15 = { #朱可夫的阴谋被揭露
 		name = russo_chinese.15.a 
 		add_journal_entry = { type = continuation_of_Stalinism } #斯大林主义的延续
 		create_character = {
-			first_name = Dengwan
-			last_name = Lin1
+			#朱可夫
 			ig_leader = yes
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Georgy·Konstantinovich
+			last_name = Zhukov
+			birth_date = 1896.12.1
+			historical = yes
+			religion = rel:atheist #无神论
 			interest_group = ig_armed_forces #军队
-			ideology = ideology_vanguardist #意识形态先锋队主义者
-			traits = { #特质
-				brave
-				ambitious
-                        experienced_political_operator
+			ideology = ideology_authoritarian #威权主义者
+			traits = {
+				direct
+				persistent
+                                defense_in_depth_specialist
+                                expert_artillery_commander
+			}
+		}
+		create_character = {
+			#亚历山大·米哈伊洛维奇·华西列夫斯基
+			is_general = yes
+			hq = region_russia
+			commander_rank = commander_rank_5
+			first_name = Alexander·Mikhailovich
+			last_name = Vasilevsky
+			birth_date = 1895.9.30
+			ig_leader = yes
+			historical = yes
+			culture=cu:russian #俄罗斯
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces #军队
+			ideology = ideology_vanguardist #意识形态列宁主义者
+			traits = {
+				direct
+				persistent
+				expert_offensive_planner #熟练的进攻策划师
+                                                                    defense_in_depth_specialist
+                                                                    expert_artillery_commander
 			}
 		}
 		remove_modifier = oppose_the_central_committee #反对中央

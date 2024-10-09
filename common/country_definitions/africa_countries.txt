@@ -5,7 +5,7 @@ AOF	 = { #西非
 
 	tier = kingdom
 	
-	cultures = { french }
+	cultures = { french hausa }
 	capital = STATE_WESTERN_MALI
 }
 

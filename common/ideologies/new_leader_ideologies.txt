@@ -906,7 +906,6 @@ ideology_leaders_of_socialists_with_characteristics = { #特色社会主义者
 	character_ideology = yes
 
 	lawgroup_economic_system = {	
-		law_laissez_faire = strongly_approve #自由放任
 		law_interventionism = strongly_approve #经济干预
 		law_agrarianism = neutral #农本主义
 		law_traditionalism = disapprove #传统主义	

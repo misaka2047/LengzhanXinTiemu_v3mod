@@ -1,18 +1,15 @@
 ﻿CHARACTERS = {
 	c:ION = {
 		create_character = {
-			# Sir Howard Douglas, Lord High Commissioner of the Ionian Islands from 1835 to 1840
-			#role = politician # Remove this line
-			first_name = "Howard"
-			last_name = "Douglas"
+			first_name = "Markkos"
+			last_name = "Wafiadis"
+			historical = yes
 			ruler = yes
-			ig_leader = yes
-			age = 56 # born around 1780
-			culture=cu:british # Scottish, but born in England
-			interest_group = ig_armed_forces
-			ideology = ideology_moderate
+			is_general = yes
+			religion = rel:atheist #无神论
+			interest_group = ig_armed_forces    
+			ideology = ideology_communist #共产主义者
 			traits = {
-				direct
 			}
 		}	
 	}

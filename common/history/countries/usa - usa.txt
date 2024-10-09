@@ -97,6 +97,12 @@
 			is_decaying = yes
 		}
 
+		add_modifier = {
+			name = fra_military_weakness_modifier #第二次世界大战的创伤
+			years = 1
+			is_decaying = yes
+		}
+
 		trigger_event = {
 			id = space_race.1
 			months = 10
