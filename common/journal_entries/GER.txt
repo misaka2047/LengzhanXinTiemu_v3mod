@@ -1,3 +1,70 @@
+je_jianliminzhudeguo = { #建立民主德国
+	should_be_pinned_by_default = yes
+	icon = "gfx/interface/icons/event_icons/东德.dds"
+
+	group = je_group_internal_affairs
+
+	is_shown_when_inactive = {
+			is_ai = no
+		    c:PRU ?= THIS	
+		    exists = c:BRD
+	}
+	
+	possible = {
+		    c:PRU ?= THIS	
+		    exists = c:BRD
+	}
+
+	complete = {
+		    exists = c:BRD
+		custom_tooltip = {
+			text = custom_loc_jianliminzhudeguo_goal
+		}
+		any_scope_state = {
+			state_region = s:STATE_BRANDENBURG
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_MECKLENBURG
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_ANHALT
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				level >= 5
+			}
+		}
+		any_scope_state = {
+			state_region = s:STATE_SAXONY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_government_administration
+				level >= 5
+			}
+		}
+		produced_bureaucracy > 4000	
+	}
+	
+	on_complete = {
+		trigger_event = {
+			id = GER_event.2
+			popup = yes
+	    }
+	}
+		
+	weight = 1000
+}
+
 je_ger = { #统一德国
 	should_be_pinned_by_default = yes
 	icon = "gfx/interface/icons/invention_icons/wargaming.dds"

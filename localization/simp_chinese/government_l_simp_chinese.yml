@@ -1,5 +1,7 @@
 ﻿l_simp_chinese:
  #Monarchies
+ gov_regency_government: "摄政政府"
+ gov_regency_government_desc: "这种[concept_government_type]下，国家由[Concept('concept_ruler','$RULER_TITLE_PRINCA_REGENT$')]或[Concept('concept_ruler','$RULER_TITLE_QUEEN_MOTHER$')]统治，其为代替君主行使国家领导权的实权领袖。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_absolute_kingdom: "专制君主国"
  gov_absolute_kingdom_desc: "这种[concept_government_type]下，权力完全属于[Concept('concept_ruler','$RULER_TITLE_KING$')]或[Concept('concept_ruler','$RULER_TITLE_QUEEN$')]。\n\n$TRANSFER_OF_POWER_NAME_DESC$"
  gov_kingdom: "君主国"
@@ -284,6 +286,8 @@
  TRANSFER_OF_POWER_PLAYER_TOOLTIP_DESC: "[GetPlayer.GetGovernment.GetTransferOfPowerDesc]"
  #Titles
  RULER_TITLE_DEFAULT: "统治者"
+ RULER_TITLE_PRINCA_REGENT: "摄政王"
+ RULER_TITLE_QUEEN_MOTHER: "王太后"
  RULER_TITLE_KING: "国王"
  RULER_TITLE_QUEEN: "女王"
  RULER_TITLE_EMPEROR: "皇帝"

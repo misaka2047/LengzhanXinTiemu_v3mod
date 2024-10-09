@@ -214,7 +214,7 @@ state_trait_three_gorges = {
 	}
 }
 
-state_trait_north_china_coalfield = {
+state_trait_north_china_coalfield = { #华北煤田
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	
 	modifier = {

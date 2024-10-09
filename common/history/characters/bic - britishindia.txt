@@ -18,6 +18,21 @@
 				    firebrand
 				    mountain_commander
 			}
-		}	
+		}
+		create_character = {
+			#康奈·柴特吉
+			first_name = "Kangnai"
+			last_name = "Chaiteji"
+			historical = yes
+    			is_agitator = yes #鼓动者
+			birth_date = 1933.1.1
+			culture = cu:bengali
+			religion = rel:atheist #无神论
+			interest_group = ig_trade_unions #工会
+			ideology = ideology_mao
+			traits = {
+				demagogue #煽动者
+			}
+		}
 	}
 }

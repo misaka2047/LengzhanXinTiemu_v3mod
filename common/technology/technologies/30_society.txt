@@ -979,7 +979,7 @@ tech_3d_film_modeling = {#三维电影建模
 }
 tech_construction_department = {#施工部门
 	era = era_1
-	texture = "gfx/interface/icons/production_method_icons/Acidolysis.dds"
+	texture = "gfx/interface/icons/invention_icons/挖机.dds"
 	category = society
 	ai_weight = {
 		value = 3
@@ -1066,7 +1066,7 @@ modifier = {
 }
 tech_complete_construction_machinery = {#完备施工机械
 	era = era_4
-	texture = "gfx/interface/icons/invention_icons/动力机械工程.dds"
+	texture = "gfx/interface/icons/invention_icons/挖机.dds"
 	category = society
 	ai_weight = {
 		value = 3

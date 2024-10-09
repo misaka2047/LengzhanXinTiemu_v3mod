@@ -42,8 +42,6 @@
 		law_compulsory_primary_school = strongly_approve
 	}
 
-
-
 	possible = {
 		NOT = { has_role = agitator }
 		# no monarchists in countries with strong republican tradition

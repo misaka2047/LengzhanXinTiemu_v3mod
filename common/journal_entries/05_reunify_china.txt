@@ -104,13 +104,10 @@
 			owns_entire_state_region = STATE_NANJING
 			owns_entire_state_region = STATE_BEIJING
 		}
-		custom_tooltip = {
-			text = has_formed_china_tt
-			c:CHN ?= this
-		}
 	}
 	
 	on_complete = {
+        	set_country_type = recognized
 		if = {
 			limit = {
 				has_modifier = the_peoples_liberation_army_controls_half_of_the_country

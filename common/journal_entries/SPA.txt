@@ -1,0 +1,37 @@
+je_franco_government_reshuffle = { #国家的拯救者:政府改组
+
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+    
+    group = je_group_internal_affairs
+
+	complete = { #完成条件
+		game_date >= 1947.1.1
+	}
+    on_complete = {
+        trigger_event = { id = spa.1 } #国家的拯救者:政府改组
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+franco's_funeral = { #佛朗哥的葬礼
+
+	group = je_group_internal_affairs
+
+	icon = "gfx/interface/icons/event_icons/event_skull.dds"
+    is_shown_when_inactive = { #显示
+        exists = c:SPA
+        THIS = c:SPA
+    }
+	complete = { #完成条件
+		game_date >= 1975.11.20
+	}
+    on_complete = {
+        trigger_event = { id = spa.2 } #佛朗哥的葬礼
+        remove_modifier = age_of_caudillos_modifier
+    }
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}

@@ -27,7 +27,7 @@ je_franco_main = {
     weight = 1000
 }
 
-je_franco_autocracy = {
+je_franco_autocracy = { #国家的拯救者独裁专制
     icon = "gfx/interface/icons/event_icons/event_portrait.dds"
     
     group = je_group_internal_affairs
@@ -36,7 +36,10 @@ je_franco_autocracy = {
         scope:journal_entry = {
             is_goal_complete = yes
         }
-        has_law = law_type:law_autocracy
+	OR = {
+        	has_law = law_type:law_autocracy
+        	has_law = law_type:law_multi_party_cooperation_system
+	}
         NOT = {
             any_civil_war = {
                 civil_war_progress > 0.5
@@ -75,6 +78,7 @@ je_franco_autocracy = {
         OR = {
             NOT = {
                 has_law = law_type:law_autocracy
+                has_law = law_type:law_multi_party_cooperation_system
                 has_law = law_type:law_oligarchy
                 has_law = law_type:law_single_party_state
             }

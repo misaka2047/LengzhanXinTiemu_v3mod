@@ -1,0 +1,410 @@
+je_ouzhougongheti = { #欧洲共同体
+	icon = "gfx/interface/icons/event_icons/欧盟.dds"
+
+	group = je_group_foreign_affairs
+	
+	modifiers_while_active = {
+		modifier_maoyilianmeng
+	}
+
+	is_shown_when_inactive = {
+	NOT = {
+        	has_law = law_type:law_council_republic
+	}
+OR = {
+		c:GBR = ROOT
+		country_has_primary_culture = cu:south_german
+		c:BEL = ROOT
+		country_has_primary_culture = cu:bulgarian
+		country_has_primary_culture = cu:croat
+		country_has_primary_culture = cu:czech
+		country_has_primary_culture = cu:danish
+		country_has_primary_culture = cu:estonian
+		country_has_primary_culture = cu:finnish
+		c:FRA = ROOT
+		country_has_primary_culture = cu:north_german
+		country_has_primary_culture = cu:greek
+		country_has_primary_culture = cu:hungarian
+		country_has_primary_culture = cu:irish
+		country_has_primary_culture = cu:north_italian
+		country_has_primary_culture = cu:south_italian
+		country_has_primary_culture = cu:latvian
+		country_has_primary_culture = cu:lithuanian
+		country_has_primary_culture = cu:maltese
+		country_has_primary_culture = cu:dutch
+		country_has_primary_culture = cu:polish
+		c:POR = ROOT
+		country_has_primary_culture = cu:romanian
+		country_has_primary_culture = cu:slovak
+		country_has_primary_culture = cu:slovene
+		c:SPA = ROOT
+		}
+	}
+	
+	possible = {
+		game_date >= 1952.7.23
+	NOT = {
+        	has_law = law_type:law_council_republic
+	}
+OR = {
+		c:FRA = ROOT
+		c:BAV = ROOT
+		c:ITA = ROOT
+		c:NET = ROOT
+		c:BEL = ROOT
+		c:LUX = ROOT
+        c:FRA = { 
+            relations:root >= 20 
+        }
+        c:BAV = { 
+            relations:root >= 20 
+        }
+}
+}
+
+	should_be_pinned_by_default = yes
+	
+	immediate = {
+		set_variable = {
+			name = shichangyitihua_var #市场一体化
+			value = 0
+		}
+		set_variable = {
+			name = chongzuyunshuxitong_var #重组运输系统
+			value = 0
+		}
+		set_variable = {
+			name = shipinbiaozhunhua_var #食品标准化
+			value = 0
+		}
+		set_variable = {
+			name = qianxiziyou_var #迁徙自由
+			value = 0
+		}
+		set_variable = {
+			name = fangwuhezuo_var #防务合作
+			value = 0
+		}
+		set_variable = {
+			name = chenglioumeng_var #成立欧盟
+			value = 0
+		}
+	}
+	
+	complete = {
+		var:shichangyitihua_var >= 1
+		var:chongzuyunshuxitong_var >= 1
+		var:shipinbiaozhunhua_var >= 1
+		var:qianxiziyou_var >= 1
+		var:fangwuhezuo_var >= 1
+		var:chenglioumeng_var >= 1
+	}
+
+	timeout = 15000
+
+    on_timeout = {
+		add_journal_entry = {
+			type = je_ouzhoulianmeng
+		}
+    } 
+
+	scripted_button = shichangyitihua_button_key
+	scripted_button = chongzuyunshuxitong_button_key
+	scripted_button = shipinbiaozhunhua_button_key
+	scripted_button = qianxiziyou_button_key
+	scripted_button = fangwuhezuo_button_key
+	scripted_button = chenglioumeng_button_key
+}
+
+je_shichangyitihua = { #市场一体化
+	icon = "gfx/interface/icons/event_icons/欧元.dds"
+
+	group = je_group_internal_affairs
+
+	modifiers_while_active = {
+		jianlikuaguogongsi
+	}
+
+	complete = {
+		OR = {
+			has_law = law_type:law_protectionism
+			has_law = law_type:law_free_trade
+		}
+		OR = {
+			has_law = law_type:law_interventionism
+			has_law = law_type:law_laissez_faire
+			has_law = law_type:law_corporatism_ownership
+		}
+		NOT = {
+        		has_law = law_type:law_isolationism
+		}
+		custom_tooltip = {
+			text = custom_loc_shichangyitihua_goal
+				scope:journal_entry = {
+				is_goal_complete = yes
+			}
+		}
+		in_default = no
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = shichangyitihuawancheng
+			months = long_modifier_time
+		}
+		change_variable = {
+			name = shichangyitihua_var
+			add = 2
+		}
+	}
+
+	current_value = {
+		value = root.gdp
+	}
+
+	goal_add_value = {
+		value = root.gdp
+		multiply = 0.25
+	}
+
+	progressbar = yes
+	should_be_pinned_by_default = yes
+}
+
+je_chongzuyunshuxitong = { #重组运输系统
+	icon = "gfx/interface/icons/event_icons/欧盟交通部.dds"
+
+	group = je_group_internal_affairs
+
+	modifiers_while_active = {
+		jianlikuajingtielu
+	}
+
+	complete = {
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_railway
+				level >= 10
+			}
+		}	
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_port
+				level >= 10
+			}
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_highway
+				level >= 4
+			}
+		}
+		any_scope_state = {
+			any_scope_building = {
+				is_building_type = building_airport
+				level >= 10
+			}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = chongzuyunshuxitong_modifier
+			months = long_modifier_time
+		}
+		change_variable = {
+			name = chongzuyunshuxitong_var
+			add = 2
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_shipinbiaozhunhua = { #食品标准化
+	icon = "gfx/interface/icons/event_icons/欧盟食品标准.dds"
+
+	group = je_group_internal_affairs
+
+	modifiers_while_active = {
+		huifunongyeshengchan
+	}
+
+	complete = {
+		has_technology_researched = tech_advanced_food_industry
+		has_law = law_type:law_commercialized_agriculture
+		any_scope_building = {
+			filter = {
+					is_building_type = building_food_industry
+			}
+			percent >= 0.5
+			trigger_if = {
+				limit = {
+					owner = {
+					}
+				}
+					has_active_production_method = pm_automation_building_food_industry_3
+			}
+			trigger_else = {
+				OR = {
+					has_active_production_method = pm_automation_building_food_industry_3
+					has_active_production_method = pm_automation_building_food_industry_4
+                }
+			}
+			cash_reserves_ratio > 0.25
+			weekly_profit > 0
+			occupancy > 0.5
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = shipinbiaozhunhuawancheng_modifier
+			months = long_modifier_time
+		}
+		change_variable = {
+			name = shipinbiaozhunhua_var
+			add = 2
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_qianxiziyou = { #实现迁徙自由
+	icon = "gfx/interface/icons/event_icons/自由迁徙.dds"
+
+	group = je_group_internal_affairs
+
+	modifiers_while_active = {
+		guliyimin
+	}
+
+	complete = {
+		NOT = {
+        		has_law = law_type:law_closed_borders
+		}
+			has_law = law_type:law_total_separation
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = shixianqianxiziyou_modifier
+			months = long_modifier_time
+		}
+		change_variable = {
+			name = qianxiziyou_var
+			add = 2
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_fangwuhezuo = { #实现防务合作
+	icon = "gfx/interface/icons/event_icons/欧盟快速反应部队.dds"
+
+	group = je_group_foreign_affairs
+
+	modifiers_while_active = {
+		junshichongjian
+	}
+
+    complete = {
+OR = {
+        c:GBR = { 
+            relations:root >= 50 
+        }
+        c:FRA = { 
+            relations:root >= 50 
+        }
+        c:BAV = { 
+            relations:root >= 50 
+        }
+}
+	army_size >= 10
+        NOT = { 
+		has_law = law_type:law_peasant_levies
+		has_law = law_type:law_national_militia
+		has_law = law_type:law_non_militarized_country
+	}
+    }
+
+	on_complete = {
+		add_modifier = {
+			name = shixianfangwuhezuo_modifier
+			months = long_modifier_time
+		}
+		change_variable = {
+			name = fangwuhezuo_var
+			add = 2
+		}
+	}
+	
+	should_be_pinned_by_default = yes
+	
+}
+
+je_ouzhoulianmeng = { #欧洲联盟
+	icon = "gfx/interface/icons/event_icons/欧盟.dds"
+
+	group = je_group_foreign_affairs
+	
+	modifiers_while_active = {
+		ouzhoulianmeng
+	}
+
+	is_shown_when_inactive = {
+	}
+	
+	possible = {
+	}
+
+	should_be_pinned_by_default = yes
+	
+	immediate = {
+		set_variable = {
+			name = shichangyitihua_var #市场一体化
+			value = 0
+		}
+		set_variable = {
+			name = chongzuyunshuxitong_var #重组运输系统
+			value = 0
+		}
+		set_variable = {
+			name = shipinbiaozhunhua_var #食品标准化
+			value = 0
+		}
+		set_variable = {
+			name = qianxiziyou_var #迁徙自由
+			value = 0
+		}
+		set_variable = {
+			name = fangwuhezuo_var #防务合作
+			value = 0
+		}
+		set_variable = {
+			name = chenglioumeng_var #成立欧盟
+			value = 0
+		}
+	}
+	
+	complete = {
+		var:shichangyitihua_var >= 1
+		var:chongzuyunshuxitong_var >= 1
+		var:shipinbiaozhunhua_var >= 1
+		var:qianxiziyou_var >= 1
+		var:fangwuhezuo_var >= 1
+		var:chenglioumeng_var >= 1
+	}
+
+	scripted_button = shichangyitihua_button_key
+	scripted_button = chongzuyunshuxitong_button_key
+	scripted_button = shipinbiaozhunhua_button_key
+	scripted_button = qianxiziyou_button_key
+	scripted_button = fangwuhezuo_button_key
+	scripted_button = chenglioumengs_button_key
+}

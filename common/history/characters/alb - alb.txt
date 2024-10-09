@@ -12,12 +12,31 @@
 			ruler = yes
 			birth_date = 1908.10.16
 			interest_group = ig_trade_unions #工会
-			ideology = ideology_vanguardist #意识形态先锋队主义者
+			ideology = ideology_stalin #意识形态斯大林主义者
 			traits = {
 				arrogant #傲慢
+				stalwart_defender #坚定防御者
 				trench_rat #堑壕之鼠
 				defense_in_depth_specialist #纵深防御专家
+				expert_defensive_strategist #熟练的防守策划师
 			}
-		}		
+		}
+
+			create_character = {
+			#涅奇米叶·霍查
+			first_name = "Nechimiye"
+			last_name = "Hoxha"
+			ig_leader = yes #利益集团领袖
+			historical = yes
+    			female = yes
+			birth_date = 1921.2.7
+			religion = rel:atheist #无神论
+			interest_group = ig_intelligentsia #知识分子
+			ideology = ideology_stalin #意识形态斯大林主义者
+			traits = {
+				expensive_tastes #昂贵嗜好
+				hedonist #享乐主义者
+			}
+		}	
 	}
 }

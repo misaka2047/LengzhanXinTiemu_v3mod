@@ -3,18 +3,25 @@ COUNTRIES = {
 		effect_starting_technology_tier_4_tech = yes
 		add_technology_researched = sericulture
 		
+		set_tax_level = medium
+		set_military_wage_level = low
+		set_government_wage_level = low
+		
+		add_taxed_goods = g:tobacco
+		add_taxed_goods = g:wine
+		add_taxed_goods = g:liquor
+
 		set_market_capital = STATE_XIAN	
 		
 		# Laws 
-		activate_law = law_type:law_council_republic #委员会共和制
-		activate_law = law_type:law_multi_party_cooperation_system #一党专政
+		activate_law = law_type:law_council_republic #社会主义共和制
+		activate_law = law_type:law_single_party_state #一党制国家
+		activate_law = law_type:law_regulatory_bodies #国家监管机构
 		activate_law = law_type:law_interventionism #经济干预
-		activate_law = law_type:law_restricted_child_labor #限制童工
-		activate_law = law_type:law_poor_laws #济贫法
+		activate_law = law_type:law_abolish_child_laborl #废除童工
 		activate_law = law_type:law_protectionism #贸易保护
 		activate_law = law_type:law_cultural_exclusion #文化排斥
 		activate_law = law_type:law_guaranteed_liberties #保障自由
-		activate_law = law_type:law_regulatory_bodies #国家监管机构
 		activate_law = law_type:law_total_separation #完全分离
 		activate_law = law_type:law_continental_law_system #大陆法系
 		activate_law = law_type:law_graduated_taxation #累进税制
@@ -53,7 +60,7 @@ COUNTRIES = {
 			set_interest_group_name = ig_workers_and_peasants #工农群众
 		}
 
-		ig:ig_intelligentsia = { #知识分子
+		ig:ig_intelligentsia = { #文人
 			add_ideology = ideology_anti_clerical #反教权主义者
 		}
 

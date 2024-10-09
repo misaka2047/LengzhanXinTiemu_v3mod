@@ -41,6 +41,10 @@ kaiguodadadian_button_key = {
 	}
 	effect = {
 		trigger_event = { id = kaiguodadian.1 days = 0 popup = yes }
+		add_modifier = {
+			name = kaiguodadian_modifier
+			months = 12
+		}
 		change_variable = {
 			name = kaiguodadadian_var
 			add = 1

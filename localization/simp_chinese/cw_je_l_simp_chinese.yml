@@ -29,7 +29,7 @@
  je_prc_sandazhanyi_reason: "打败国民党，统一中国"
 
  je_kaiguodadian: "开国事项"
- je_kaiguodadian_reason: "国民党已经被赶出中国大陆，革命取得了阶段性的胜利。不过在世人面前宣告我们的胜利之前，我们还有一些工作要做。"
+ je_kaiguodadian_reason: "随着和国民党反动派的对决宣告胜利，我们现在是时候正式接管作为中国合法政府的地位了。尽管还有许多工作亟需完成，但前路已经豁然开朗。"
  je_prc_sandazhanyi_reason: "开国事项介绍"
 
  je_xinanjiaofei: "西南剿匪"
@@ -42,7 +42,7 @@
  xinanjiaofei_button_key: "西南剿匪"
  xinanjiaofei_button_key_DESC: ""
  kaiguodadadian_button_key: "举办开国大典"
- kaiguodadadian_button_key_DESC: "完成西南剿匪和制订外交方针两项工作，我们会举办开国大典"
+ kaiguodadadian_button_key_DESC: "完成西南剿匪和制订外交方针两项工作，我们会举办开国大典。"
  waijiaozhengce_button_key: "指定外交方针"
  waijiaozhengce_button_key_DESC: ""
  tudigaige_button_key: "土地改革与社会主义改造"

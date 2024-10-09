@@ -6,25 +6,45 @@
 	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL" #女性国家元首称呼
 	
 	possible = { #条件
-			is_subject = yes #是附庸
-	OR = {
-		has_law = law_type:law_presidential_republic #总统共和制
-		has_law = law_type:law_semi_presidential_republic #半总统共和制
-		has_law = law_type:law_parliamentary_republic #议会共和制
-	}
-	OR = {
-		has_law = law_type:law_frontier_colonization #边疆安置
-		has_law = law_type:law_colonial_resettlement #民族安置
-		has_law = law_type:law_colonial_exploitation #民族剥削
-		has_law = law_type:law_open_door #门户开放
-	}
-	OR = {
-				is_subject_of = c:GBR
-				is_subject_of = c:FRA
-				is_subject_of = c:SPA
-				is_subject_of = c:BEL
-				is_subject_of = c:POR
+		OR = {
+			has_law = law_type:law_presidential_republic #总统共和制
+			has_law = law_type:law_semi_presidential_republic #半总统共和制
+			has_law = law_type:law_parliamentary_republic #议会共和制
 		}
+		OR = {
+			AND = { exists = c:VIE c:VIE = ROOT }
+			AND = { exists = c:JOH c:JOH = ROOT }
+			AND = { exists = c:SEL c:SEL = ROOT }
+			AND = { exists = c:AST c:AST = ROOT }
+			AND = { exists = c:NZT c:NZT = ROOT }
+			AND = { exists = c:BUR c:BUR = ROOT }
+			AND = { exists = c:BIC c:BIC = ROOT }
+			AND = { exists = c:KAT c:KAT = ROOT }
+			AND = { exists = c:AOF c:AOF = ROOT }
+			AND = { exists = c:AEF c:AEF = ROOT }
+			AND = { exists = c:SUD c:SUD = ROOT }
+			AND = { exists = c:ERT c:ERT = ROOT }
+			AND = { exists = c:GAM c:GAM = ROOT }
+			AND = { exists = c:GNB c:GNB = ROOT }
+			AND = { exists = c:SRL c:SRL = ROOT }
+			AND = { exists = c:GHA c:GHA = ROOT }
+			AND = { exists = c:NIG c:NIG = ROOT }
+			AND = { exists = c:CMR c:CMR = ROOT }
+			AND = { exists = c:EGU c:EGU = ROOT }
+			AND = { exists = c:KON c:KON = ROOT }
+			AND = { exists = c:UGA c:UGA = ROOT }
+			AND = { exists = c:KNY c:KNY = ROOT }
+			AND = { exists = c:SML c:SML = ROOT }
+			AND = { exists = c:TAN c:TAN = ROOT }
+			AND = { exists = c:AGJ c:AGJ = ROOT }
+			AND = { exists = c:ZAM c:ZAM = ROOT }
+			AND = { exists = c:MOZ c:MOZ = ROOT }
+			AND = { exists = c:SAF c:SAF = ROOT }
+			AND = { exists = c:BTW c:BTW = ROOT }
+			AND = { exists = c:ZIM c:ZIM = ROOT }
+			AND = { exists = c:MAD c:MAD = ROOT }
+		}
+		is_subject = yes #是附庸
 	}
 
 	on_government_type_change = {

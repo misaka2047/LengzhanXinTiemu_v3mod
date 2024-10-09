@@ -338,6 +338,7 @@ ideology_caudillismo = { #考迪罗主义者
 	}
 	
 	lawgroup_distribution_of_power = {
+		law_multi_party_cooperation_system = strongly_approve #一党专政
 		law_landed_voting = strongly_approve
 		law_autocracy = strongly_approve
 		law_single_party_state = approve

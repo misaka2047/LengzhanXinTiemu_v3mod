@@ -1,0 +1,19 @@
+DIPLOMATIC_PLAYS = {
+	c:GRE = {
+		create_diplomatic_play = {
+			name = texan_war_of_xilajiefang
+
+			target_country = c:ION
+			
+			war = yes
+			
+			type = dp_annex_war
+			
+			add_war_goal = {
+				holder = c:ION
+				type = annex_country
+				target_country = c:GRE
+			}
+		}		
+	}
+}

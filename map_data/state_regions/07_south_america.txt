@@ -83,6 +83,7 @@ STATE_MIRANDA = {
         bg_fishing = 5
         bg_rubber = 4
         bg_oil_extraction = 60
+        bg_gold_mining = 10
     }
     naval_exit_id = 3025
 }

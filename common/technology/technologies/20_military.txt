@@ -54,7 +54,7 @@ modifier = {
 }
 tech_weapon_manufacturing = { #武器制造
 	era = era_1
-	texture = "gfx\interface\icons\goods_icons\small_arms.dds"
+	texture = "gfx\interface\icons\invention_icons\轻武器.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -65,7 +65,7 @@ tech_weapon_manufacturing = { #武器制造
 }
 tech_assault_rifles = { #突击步枪
 	era = era_2
-	texture = "gfx\interface\icons\invention_icons\assault_rifle.dds"
+	texture = "gfx\interface\icons\invention_icons\轻武器.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -79,7 +79,7 @@ modifier = {
 }
 tech_modularized_light_weapons = { #模块化轻武器
 	era = era_3
-	texture = "gfx\interface\icons\invention_icons\assault_rifle.dds"
+	texture = "gfx\interface\icons\invention_icons\轻武器.dds"
 	category = military
 	ai_weight = {
 		value = 1
@@ -93,7 +93,7 @@ modifier = {
 }
 tech_intelligent_weapons = { #智能化武器
 	era = era_4
-	texture = "gfx\interface\icons\invention_icons\assault_rifle.dds"
+	texture = "gfx\interface\icons\invention_icons\轻武器.dds"
 	category = military
 	ai_weight = {
 		value = 1

@@ -1559,7 +1559,7 @@ STATES = {
 	
 	s:STATE_MACEDONIA = {
 		create_state = {
-			country = c:GRE
+			country = c:ION
 			owned_provinces = {
 				x01D060 x021374 x506020 x70A0E0 x75CAD1 x90E0A0 xBA7B5B xD2619E xE48F39 
 			}
@@ -1570,7 +1570,7 @@ STATES = {
 	
 	s:STATE_WESTERN_THRACE = {
 		create_state = {
-			country = c:GRE
+			country = c:ION
 			owned_provinces = {
 				x0261AB x6181D2 x702020 xB2249C xBE51B7 xEDECFB xF02020 
 			}

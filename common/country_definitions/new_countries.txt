@@ -1,5 +1,18 @@
-﻿HND = {
-	color = { 150 77 240 }
+﻿
+BAV = {
+	color = { 121  175  235 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { north_german }
+	capital = STATE_BAVARIA
+	is_named_from_capital = yes
+}
+
+HND = {
+	color = { 199 102 22 }
 	
 	country_type = recognized
 	
@@ -7,6 +20,18 @@
 	
 	cultures = { kanauji marathi bihari tamil oriya gujarati }
 	capital = STATE_DELHI
+}
+
+ION = { #民主希腊
+	color = { 153  141  117 }
+	
+	country_type = recognized
+
+	tier = kingdom
+	
+	cultures = { greek }	
+	capital = STATE_MACEDONIA
+	is_named_from_capital = yes
 }
 
 BAF = { #巴尔干联邦
@@ -207,17 +232,6 @@ KAT = {
 	
 	cultures = { british }
 	capital = STATE_YEMEN
-}
-
-DAI = {
-	color = { 136  117  90 }
-	
-	country_type = unrecognized
-	
-	tier = kingdom
-	
-	cultures = { vietnamese }
-	capital = STATE_TONKIN
 }
 
 VIE = {
@@ -494,7 +508,7 @@ ML2 =
 	capital = STATE_BESSARABIA
 }
 
-BRD = {
+BRD = { #西德
 	color = { 30 49 83 }
 	
 	country_type = recognized

@@ -119,9 +119,9 @@ law_open_door = { #门户开放（殖民地/半殖民地贸易政策）
 	progressiveness = 50
 	
 	modifier = {
-		country_trade_route_competitiveness_mult = 0.5
-		country_trade_route_quantity_mult = 0.5
-		country_trade_route_cost_mult = -0.5
+		country_trade_route_competitiveness_mult = 0.25
+		country_trade_route_quantity_mult = 0.25
+		country_trade_route_cost_mult = -0.25
 		country_leverage_resistance_mult = -0.25
 	}
 

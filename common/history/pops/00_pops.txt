@@ -115,8 +115,24 @@ POPS = {
 				size = 1540000
 			}
 			create_pop = {
-				culture = turkish
+				culture = north_german
 				size = 900000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -125,6 +141,22 @@ POPS = {
 			create_pop = {
 				culture = north_german
 				size = 5110000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -142,6 +174,22 @@ POPS = {
 				culture = north_german
 				size = 3030000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 	}
 	s:STATE_NORTH_RHINE = {
@@ -150,6 +198,22 @@ POPS = {
 				culture = north_german
 				size = 10000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 		region_state:HAN = {
 			create_pop = {
@@ -157,8 +221,24 @@ POPS = {
 				size = 5250000
 			}
 			create_pop = {
-				culture = turkish
+				culture = north_german
 				size = 900000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -183,6 +263,22 @@ POPS = {
 				religion = protestant
 				size = 2000000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 	}
 	s:STATE_SCHLESWIG_HOLSTEIN = {
@@ -197,6 +293,22 @@ POPS = {
 				culture = north_german
 				size = 3050000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 	}
 	s:STATE_WURTTEMBERG = {
@@ -205,11 +317,43 @@ POPS = {
 				culture = south_german
 				size = 3090000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 		region_state:RHN = {
 			create_pop = {
 				culture = south_german
 				size = 175000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -219,11 +363,43 @@ POPS = {
 				culture = south_german
 				size = 300000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 		region_state:RHN = {
 			create_pop = {
 				culture = south_german
 				size = 2100000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -233,11 +409,43 @@ POPS = {
 				culture = north_german
 				size = 1500000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 		region_state:BAV = {
 			create_pop = {
 				culture = north_german
 				size = 1500000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -246,6 +454,22 @@ POPS = {
 			create_pop = {
 				culture = north_german
 				size = 620000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 		region_state:PRU = {
@@ -262,6 +486,22 @@ POPS = {
 				culture = south_german
 				size = 4110000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 	}
 	s:STATE_FRANCONIA = {
@@ -269,6 +509,22 @@ POPS = {
 			create_pop = {
 				culture = south_german
 				size = 2510000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -291,11 +547,43 @@ POPS = {
 				culture = north_german
 				size = 3000000
 			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
+			}
 		}
 		region_state:HAN = {
 			create_pop = {
 				culture = north_german
 				size = 800000
+			}
+			create_pop = {
+				culture = turkish
+				size = 1000
+			}
+			create_pop = {
+				culture = portuguese
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
+			create_pop = {
+				culture = serb
+				size = 71200
 			}
 		}
 	}
@@ -432,22 +720,22 @@ POPS = {
 		region_state:ALB = {
 			create_pop = {
 				culture = albanian
-				size = 1009086
+				size = 2009086
 			}
 			create_pop = {
 				culture = albanian
 				religion = orthodox
-				size = 60000
+				size = 120000
 			}
 			create_pop = {
 				culture = albanian
 				religion = catholic
-				size = 40000
+				size = 80000
 			}
 			create_pop = {
 				culture = albanian
 				religion = atheist
-				size = 40000
+				size = 80000
 			}
 		}
 	}
@@ -588,7 +876,7 @@ POPS = {
 		}
 	}
 	s:STATE_MACEDONIA = {
-		region_state:GRE = {
+		region_state:ION = {
 			create_pop = {
 				culture = greek
 				size = 1156000
@@ -596,7 +884,7 @@ POPS = {
 		}
 	}
 	s:STATE_WESTERN_THRACE = {
-		region_state:GRE = {
+		region_state:ION = {
 			create_pop = {
 				culture = greek
 				size = 382990
@@ -966,7 +1254,7 @@ POPS = {
 		region_state:SPA = {
 			create_pop = {
 				culture = spanish
-				size = 1000
+				size = 71200
 			}
 			create_pop = {
 				culture = berber
@@ -2013,6 +2301,10 @@ POPS = {
 				culture = patagonian
 				size = 226000
 			}
+			create_pop = {
+				culture = welsh
+				size = 71200
+			}
 		}
 	}
 	s:STATE_AMAZONAS = {
@@ -2550,24 +2842,29 @@ POPS = {
 		region_state:BUR = {
 			create_pop = {
 				culture = british
-				size = 433
+				size = 7996
+			}
+			create_pop = {
+				culture = kachin
+				religion = animist
+				size = 6080090
+			}
+			create_pop = {
+				culture = burmese
+				size = 280800
 			}
 			create_pop = {
 				culture = shan
-				size = 8796
+				size = 60000
 			}
 			create_pop = {
-				culture = han
-				size = 8796
+				culture = tibetan
+				size = 20000
 			}
 			create_pop = {
 				culture = avadhi
 				religion = hindu
-				size = 8796
-			}
-			create_pop = {
-				culture = panjabi
-				size = 8796
+				size = 19000
 			}
 			create_pop = {
 				culture = bengali
@@ -2575,13 +2872,27 @@ POPS = {
 				size = 8796
 			}
 			create_pop = {
-				culture = kachin
-				religion = protestant
-				size = 6000000
+				culture = nepali
+				size = 8796
+			}
+			create_pop = {
+				culture = han
+				size = 7996
 			}
 			create_pop = {
 				culture = kachin
-				size = 470030
+				religion = protestant
+				size = 7996
+			}
+			create_pop = {
+				culture = kachin
+				religion = catholic
+				size = 7996
+			}
+			create_pop = {
+				culture = kachin
+				religion = theravada
+				size = 4000
 			}
 		}
 	}
@@ -2590,7 +2901,7 @@ POPS = {
 		region_state:BUR = {
 			create_pop = {
 				culture = british
-				size = 433
+				size = 7996
 			}
 			create_pop = {
 				culture = shan

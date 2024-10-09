@@ -4733,11 +4733,11 @@ ALB = {
 		}
 	}
 }
-ION = { 
+ION = { #民主希腊
 	dynamic_country_name = {
-		name = dyn_c_jzz_ION
+		name = dyn_c_jzz_ION #希腊王国
 		
-		adjective = ION_ADJ
+		adjective = GRE_ADJ
 		#is_main_tag_only = yes 
 		priority = 0
 		
@@ -4746,32 +4746,9 @@ ION = {
 		}
 	}
 	dynamic_country_name = {
-		name = dyn_c_republic_ION
+		name = dyn_shenquan_ION #希腊教权国
 		
-		adjective = ION_ADJ
-		#is_main_tag_only = yes
-		priority = 0
-		
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			NOT = { coa_def_communist_flag_trigger = yes }
-		}
-	}
-	dynamic_country_name = {#
-		name = dyn_c_societ_republic_ION
-		
-		adjective = ION_ADJ
-		#is_main_tag_only = yes
-		priority = 0
-		
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_shenquan_ION
-		
-		adjective = ION_ADJ
+		adjective = GRE_ADJ
 		#is_main_tag_only = yes
 		priority = 0
 		

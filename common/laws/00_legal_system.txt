@@ -43,7 +43,6 @@ law_case_law_system = { #海洋法系
 
 	modifier = {
 		country_law_enactment_time_mult = -0.1 #立法时间减少
-		country_law_enactment_success_add = -0.02 #立法成功率（百分比）
 		country_trade_route_competitiveness_mult = 0.15 #国家贸易路线竞争力
 	}
 }
@@ -63,8 +62,7 @@ law_continental_law_system = { #大陆法系
 
 	modifier = {
 		country_authority_add = 200 #权威力
-		country_law_enactment_success_add = 0.05 #立法成功率（百分比）
-		country_law_enactment_time_mult = 0.1 #立法时间增加
+		country_bureaucracy_investment_cost_factor_mult = -0.05 #机构行政力花费
 		country_trade_route_quantity_mult = 0.1 #国家贸易路线数量
 	}
 }

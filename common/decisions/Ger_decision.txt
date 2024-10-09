@@ -9,7 +9,8 @@ BRD_decision = { #成立西德
 				exists = c:BRD
 			}
     }
-	possible = { game_date > 1949.5.23
+	possible = { 
+		game_date > 1949.5.23
 	}
 	
 	when_taken = {
@@ -19,13 +20,15 @@ BRD_decision = { #成立西德
 		}
 	}
 	ai_chance = {
-		base = 90}
+		base = 114514
+	}
 }
 
 
 
 DDR_decision = { #成立东德
 	is_shown = { 
+			is_ai = yes
 		NOT = { 
 			has_modifier = the_country_of_our_ancestors_modifier
 		}
@@ -46,7 +49,8 @@ DDR_decision = { #成立东德
 	    }
     }
 	ai_chance = {
-		base = 90}
+		base = 114514
+	}
 }
 
 AUS_decision = { #奥地利统一
@@ -68,6 +72,7 @@ AUS_decision = { #奥地利统一
 		}
 	}
 	ai_chance = {
-		base = 90}
+		base = 114514
+	}
 }
 

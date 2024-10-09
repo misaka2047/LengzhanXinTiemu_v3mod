@@ -1,4 +1,28 @@
-﻿gov_guberniya = {
+﻿gov_regency_government = { #摄政政府
+	transfer_of_power = hereditary
+	
+	male_ruler = "RULER_TITLE_PRINCA_REGENT" 
+	female_ruler = "RULER_TITLE_QUEEN_MOTHER"
+
+	male_heir = "RULER_TITLE_PRINCE_ROYAL"
+	female_heir = "RULER_TITLE_DAUPHINE" 
+	
+	possible = {
+		has_law = law_type:law_monarchy
+		exists = c:SPA
+		c:SPA = ROOT
+		has_modifier = age_of_caudillos_modifier
+	}
+
+	on_government_type_change = {
+		change_to_hereditary = yes
+	}
+	on_post_government_type_change = {
+		post_change_to_hereditary = yes
+	}
+}
+
+gov_guberniya = {
 	transfer_of_power = dictatorial
 	new_leader_on_reform_government = no
 

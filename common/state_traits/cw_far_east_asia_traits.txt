@@ -1,4 +1,20 @@
-﻿state_trait_three_gorges = { #三峡
+﻿state_trait_iron_wall_canyon = { #铁壁峡谷
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.5
+	}
+}
+
+state_trait_cobalt_copper_ore_vein = { #钴铜矿脉
+    icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	
+	modifier = {
+		building_iron_mine_throughput_add = 0.2
+	}
+}
+
+state_trait_three_gorges = { #三峡
 	icon = "gfx/interface/icons/state_trait_icons/fjords.dds"
 	
 	modifier = {

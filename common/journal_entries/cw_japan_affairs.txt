@@ -45,7 +45,7 @@ je_japan_mac = {
 	should_be_pinned_by_default = yes
 }
 
-je_japan_occupied = {
+je_japan_occupied = { #占领时期
     icon = "gfx/interface/icons/event_icons/waving_flag.dds"
     group = je_group_historical_content
 	complete = {
@@ -61,7 +61,7 @@ je_japan_occupied = {
             id = japan_mac.16
         }
     }
-	fail = {
+	fail = { #失败条件
 		OR = {
 			radical_fraction = {
 				value >= 0.75
@@ -71,11 +71,8 @@ je_japan_occupied = {
 			}
 		}
 	}
-	on_fail = {
+	on_fail = { #如果失败
 		# 之后整点吃鸡大赛剧情
-		trigger_event = {
-			id = japan_breakdown
-		}
 	}
 	weight = 10000
 	should_be_pinned_by_default = yes

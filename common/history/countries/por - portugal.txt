@@ -10,23 +10,21 @@
 	
 		# Laws
 		activate_law = law_type:law_parliamentary_republic #议会共和制            
-		activate_law = law_type:law_autocracy #独裁制
+		activate_law = law_type:law_militarized_police #军事化警察
+		activate_law = law_type:law_politicized_military #政治化军队
 		activate_law = law_type:law_secret_police #秘密警察
-		activate_law = law_type:law_freedom_of_conscience #信仰自由
+		activate_law = law_type:law_colonial_exploitation #民族剥削
+		activate_law = law_type:law_closed_borders #关闭边境
+		activate_law = law_type:law_isolationism #孤立主义
+		activate_law = law_type:law_charitable_health_system #慈善医院
+		activate_law = law_type:law_religious_schools #教会学校
 		activate_law = law_type:law_appointed_bureaucrats #任命官僚制
 		activate_law = law_type:law_continental_law_system #大陆法系
-		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_multicultural
-		activate_law = law_type:law_protectionism
 		activate_law = law_type:law_interventionism
-		activate_law = law_type:law_censorship #出版物审查
 		activate_law = law_type:law_serfdom_banned
-  		activate_law = law_type:law_proportional_taxation #比例税制
+  		activate_law = law_type:law_per_capita_based_taxation #人均税制
 		activate_law = law_type:law_professional_army
-		activate_law = law_type:law_dedicated_police
-            activate_law = law_type:law_public_health_insurance
-            activate_law = law_type:law_womens_suffrage
 		activate_law = law_type:law_poor_laws
             activate_law = law_type:law_compulsory_primary_school
             activate_law = law_type:law_8_hour_working_system
@@ -55,6 +53,10 @@
 
 		trigger_event = {
 			id = pol_salazar.1
+		}
+
+		add_modifier = {
+			name = age_of_caudillos_modifier
 		}
 	}
 }

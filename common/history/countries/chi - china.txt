@@ -10,20 +10,17 @@
 		set_tariffs_import_priority = g:wood
 		set_tariffs_import_priority = g:hardwood
 
-		set_tax_level = medium
+		set_tax_level = very_high 
 
 		add_taxed_goods = g:liquor
-		add_taxed_goods = g:luxury_clothes
-		add_taxed_goods = g:luxury_furniture
-		add_taxed_goods = g:tea
+		add_taxed_goods = g:tobacco
 
 		activate_law = law_type:law_presidential_republic
-		activate_law = law_type:law_multi_party_cooperation_system #一党专政
 		activate_law = law_type:law_open_door #门户开放
 		activate_law = law_type:law_encourage_fertility #鼓励抚养
 		activate_law = law_type:law_professional_army #职业军队
 		activate_law = law_type:law_women_in_the_workplace #女性工作
-		activate_law = law_type:law_militarized_police #军事化警察
+		activate_law = law_type:law_local_police #地方警察
 		activate_law = law_type:law_private_capital_support #私人资本扶植（科研）
 		activate_law = law_type:law_secret_police #秘密警察
 		activate_law = law_type:law_continental_law_system #大陆法系
@@ -36,6 +33,13 @@
 		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_interventionism #经济干预
 		activate_law = law_type:law_unrestricted_labor #无限制劳动
+
+		ig:ig_armed_forces = { #军队
+			add_ideology = ideology_reactionary #反动主义者
+			add_ideology = ideology_stratocratic #阶层主义者
+			remove_ideology = ideology_loyalist #取消效忠派
+			remove_ideology = ideology_patriotic #取消爱国主义者
+		}
 
 		ig:ig_intelligentsia = { #文人
 			add_ideology = ideology_anti_clerical #反教权主义者

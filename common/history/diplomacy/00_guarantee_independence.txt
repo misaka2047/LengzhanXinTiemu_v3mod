@@ -4,5 +4,21 @@
 			country = c:CHI
 			type = guarantee_independence
 		}	
-	}			
+		create_diplomatic_pact = {
+			country = c:GRE
+			type = guarantee_independence
+		}	
+	}
+	c:GBR ?= {
+		create_diplomatic_pact = {
+			country = c:GRE
+			type = guarantee_independence
+		}	
+	}	
+	c:YUG ?= {
+		create_diplomatic_pact = {
+			country = c:ION
+			type = guarantee_independence
+		}	
+	}	
 }

@@ -1,0 +1,34 @@
+namespace = guojialianmeng
+guojialianmeng.1 = { #成立欧盟
+	type = country_event
+	placement = root
+	
+	title = guojialianmeng.1.t
+	desc = guojialianmeng.1.d
+	flavor = guojialianmeng.1.f
+	
+	event_image = { #事件图像
+		texture = "gfx/event_pictures/oumeng.dds"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/欧盟.dds"
+	
+	duration = 3
+	
+    immediate = {
+    }
+
+    option = {
+		name = guojialianmeng.1.a
+		add_journal_entry = {
+			type = je_ouzhoulianmeng
+		}
+		add_modifier = {
+			name = ouzhoulianmeng
+			months = long_modifier_time
+		}
+		default_option = yes
+    }
+}

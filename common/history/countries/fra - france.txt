@@ -76,11 +76,6 @@
 			set_ig_suppression = yes
 		}
 
-		add_modifier = {
-			name = modifier_haitian_independence_payments_1
-			years = 1
-		}
-
 		trigger_event = {
 			id = algerian_war.1
 		}
@@ -90,13 +85,32 @@
 		}
 
 		add_modifier = {
-			name = fra_military_weakness_modifier
-			years = 10
+			name = modifier_haitian_independence_payments_1
+			years = 1
+		}
+
+		add_modifier = {
+			name = dimidejingji_modifier
+		}
+
+		add_modifier = {
+			name = chongfenjiuye
+		}
+
+		add_modifier = {
+			name = hunluandezhengfu
+		}
+
+		add_modifier = {
+			name = dazhanshenglizhe
+			years = 20
+			is_decaying = yes
 		}
 
 		add_modifier = {
 			name = fra_discrimination_modifier
 			years = 5
+			is_decaying = yes
 		}
 	}
 }

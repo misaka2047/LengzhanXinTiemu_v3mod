@@ -45,8 +45,6 @@
 			set_company_establishment_date = 1878.1.1
 		}
 
-
-
 		set_institution_investment_level = {
 			institution = institution_schools #教育
 			level = 3
@@ -54,7 +52,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_police #执法
-			level = 3
+			level = 1
 		}
 
 		ig:ig_armed_forces = {
@@ -73,6 +71,12 @@
 		trigger_event = {
 			id = japan_mac.1
 			days = 7
+		}
+
+		add_modifier = {
+			name = fra_military_weakness_modifier #第二次世界大战的创伤
+			years = 10
+			is_decaying = yes
 		}
 	}
 }

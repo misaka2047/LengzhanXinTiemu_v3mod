@@ -107,5 +107,11 @@
 			name = gbr_colony_middle_east_modifier
 			months = -1
 		}
+
+		add_modifier = {
+			name = fra_military_weakness_modifier #第二次世界大战的创伤
+			years = 10
+			is_decaying = yes
+		}
 	}
 }

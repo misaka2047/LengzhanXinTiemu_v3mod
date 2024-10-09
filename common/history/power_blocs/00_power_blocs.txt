@@ -107,4 +107,27 @@
 			}
 		}
 	}
+	c:BEL = { 
+		create_power_bloc = {
+			name = Benelux_Customs_Union #比荷卢关税同盟
+			map_color = { 235 200 127 }
+
+			founding_date = 1944.1.1
+			identity = identity_trade_league
+			principle = principle_internal_trade_1
+
+			# subjects are automatically part of the bloc
+			member = c:NET
+			member = c:LUX			
+
+		}
+		if = {
+			limit = {
+				has_dlc_feature = power_bloc_features
+			}
+			power_bloc = {
+				add_principle = principle_advanced_research_2
+			}
+		}
+	}
 }

@@ -1,0 +1,148 @@
+shichangyitihua_button_key = {
+
+	name = "shichangyitihua_button_key"
+	desc = "shichangyitihua_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:shichangyitihua_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_shichangyitihua }
+		change_variable = {
+			name = shichangyitihua_var
+			add = 1
+		}
+	}
+}
+
+chongzuyunshuxitong_button_key = {
+
+	name = "chongzuyunshuxitong_button_key"
+	desc = "chongzuyunshuxitong_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:chongzuyunshuxitong_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_chongzuyunshuxitong }
+		change_variable = {
+			name = chongzuyunshuxitong_var
+			add = 1
+		}
+	}
+}
+
+shipinbiaozhunhua_button_key = {
+
+	name = "shipinbiaozhunhua_button_key"
+	desc = "shipinbiaozhunhua_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:shipinbiaozhunhua_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_shipinbiaozhunhua }
+		change_variable = {
+			name = shipinbiaozhunhua_var
+			add = 1
+		}
+	}
+}
+
+qianxiziyou_button_key = {
+
+	name = "qianxiziyou_button_key"
+	desc = "qianxiziyou_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:qianxiziyou_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_qianxiziyou }
+		change_variable = {
+			name = qianxiziyou_var
+			add = 1
+		}
+	}
+}
+
+fangwuhezuo_button_key = {
+
+	name = "fangwuhezuo_button_key"
+	desc = "fangwuhezuo_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:fangwuhezuo_var = 0
+	}
+	effect = {
+		add_journal_entry = { type = je_fangwuhezuo }
+		change_variable = {
+			name = fangwuhezuo_var
+			add = 1
+		}
+	}
+}
+
+chenglioumeng_button_key = {
+
+	name = "chenglioumeng_button_key"
+	desc = "chenglioumeng_button_key_DESC"
+	
+	
+	visible = { always = yes }
+
+	ai_chance = {
+		base = 10
+	}
+
+	possible = {
+		var:chenglioumeng_var = 0
+		var:shichangyitihua_var >= 2
+		var:chongzuyunshuxitong_var >= 2
+		var:shipinbiaozhunhua_var >= 2
+		var:qianxiziyou_var >= 2
+		var:fangwuhezuo_var >= 2
+	}
+	effect = {
+		trigger_event = { id = guojialianmeng.1 days = 0 popup = yes }
+		change_variable = {
+			name = chenglioumeng_var
+			add = 1
+		}
+	}
+}

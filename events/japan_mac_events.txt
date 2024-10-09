@@ -40,6 +40,7 @@ japan_mac.1 = {
 				set_character_immortal = yes
 				traits = {
 					strong #健硕
+					persistent #执着
 					hedonist #享乐主义者
 					celebrity_commander #明星指挥官
 				}
@@ -488,7 +489,6 @@ japan_mac.16 = {
 	option = {
 		name = japan_mac.16.a
 		default_option = yes
-		ruler = { kill_character = yes }
 		c:JAP = {
 			activate_law = law_type:law_monarchy
 			create_character = { #招核天皇
@@ -516,7 +516,6 @@ japan_mac.16 = {
 	option = {
 		name = japan_mac.16.b
 		default_option = yes
-		ruler = { kill_character = yes }
 		c:JAP = {
 			activate_law = law_type:law_monarchy
 			create_character = { #日本五星天皇道格拉斯·麦克阿瑟
@@ -531,15 +530,14 @@ japan_mac.16 = {
 				ruler = yes
 				interest_group = ig_armed_forces #军队
 				ideology = ideology_authoritarian #威权主义者
+				set_character_immortal = yes
 				traits = {
 					strong #健硕
+					persistent #执着
 					hedonist #享乐主义者
 					celebrity_commander #明星指挥官
 				}
 			}
-		}
-		trigger = {
-			has_global_variable = MacArthur_Never_Gonna_Give_You_Up
 		}
 	}
 }

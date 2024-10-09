@@ -357,6 +357,10 @@ POPS = {
 				culture = ashkenazi
 				size = 26000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_PROVENCE = {
@@ -364,6 +368,10 @@ POPS = {
 			create_pop = {
 				culture = occitan
 				size = 2500000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -373,6 +381,10 @@ POPS = {
 				culture = french
 				size = 2330000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_LANGUEDOC = {
@@ -380,6 +392,10 @@ POPS = {
 			create_pop = {
 				culture = occitan
 				size = 2000000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -389,6 +405,10 @@ POPS = {
 				culture = occitan
 				size = 2100000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_LOIRE = {
@@ -396,6 +416,10 @@ POPS = {
 			create_pop = {
 				culture = french
 				size = 1390000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -407,6 +431,10 @@ POPS = {
 			}
 			create_pop = {
 				culture = flemish
+				size = 71200
+			}
+			create_pop = {
+				culture = spanish
 				size = 71200
 			}
 		}
@@ -425,6 +453,10 @@ POPS = {
 				culture = french
 				size = 1660000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_ARMAGNAC = {
@@ -432,6 +464,10 @@ POPS = {
 			create_pop = {
 				culture = occitan
 				size = 1567000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -441,6 +477,10 @@ POPS = {
 				culture = occitan
 				size = 1340000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_BRITTANY = {
@@ -448,6 +488,10 @@ POPS = {
 			create_pop = {
 				culture = breton
 				size = 2400000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -457,6 +501,10 @@ POPS = {
 				culture = french
 				size = 3870000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_CHAMPAGNE = {
@@ -464,6 +512,10 @@ POPS = {
 			create_pop = {
 				culture = french
 				size = 2570000
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -473,6 +525,10 @@ POPS = {
 				culture = french
 				size = 1810000
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_AUVERGNE = {
@@ -480,6 +536,10 @@ POPS = {
 			create_pop = {
 				culture = occitan
 				size = 878900
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}
@@ -489,6 +549,10 @@ POPS = {
 				culture = occitan
 				size = 1875600
 			}
+			create_pop = {
+				culture = spanish
+				size = 71200
+			}
 		}
 	}
 	s:STATE_ORLEANS = {
@@ -496,6 +560,10 @@ POPS = {
 			create_pop = {
 				culture = french
 				size = 2809601
+			}
+			create_pop = {
+				culture = spanish
+				size = 71200
 			}
 		}
 	}

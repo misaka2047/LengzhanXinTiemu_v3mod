@@ -199,6 +199,32 @@
 				activate_production_methods={ "pm_religious_bureaucrats" "pm_automation_building_government_administration_1" "pm_professional_bureaucrats" "pm_base_building_government_administration_2" }
 			}
 			create_building={
+				building="building_textile_mills"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NIG"
+						levels=21
+						region="STATE_HAUSALAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_transportation_2" "pm_base_building_textile_mills_2" "pm_advance_building_textile_mills_3" "pm_automation_building_textile_mills_2" }
+			}
+			create_building={
+				building="building_oil_rig"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:NIG"
+						levels=10
+						region="STATE_HAUSALAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_transportation_2" "pm_none" "pm_base_building_oil_rig_2" "pm_automation_building_oil_rig_2" }
+			}
+			create_building={
 				building="building_barracks"
 				add_ownership={
 					country={
@@ -377,6 +403,27 @@
 	}
 	s:STATE_GONDER={
 		region_state:ETH={
+			create_building={
+				building="building_government_administration"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_religious_bureaucrats" "pm_automation_building_government_administration_1" "pm_professional_bureaucrats" "pm_base_building_government_administration_2" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:ETH"
+						levels=1
+					}
+				}
+				reserves=1
+			}
 		}
 	}
 	s:STATE_KAZEMBE={
